@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ذاكر | إدارة المحتوى والكتب</title>
+<style>
+:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}
+header{background:#fff;border-bottom:1px solid var(--line);padding:16px 24px;position:sticky;top:0;z-index:10}.top{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:900;font-size:24px;color:var(--n)}.brand span{color:var(--b)}a{text-decoration:none;color:inherit}
+main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:24px}.hero h1{margin:0 0 6px}.hero p{margin:0;color:var(--m)}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.subject{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;cursor:pointer}.subject.active{border:2px solid var(--b);box-shadow:0 8px 22px #165dff18}.subject b{display:block;margin-top:8px}.subject small{color:var(--m)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:20px}.panel h2{margin-top:0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:700;cursor:pointer}.tab.active{background:var(--b);color:#fff;border-color:var(--b)}
+.uploads{display:grid;grid-template-columns:1fr 1fr;gap:14px}.upload{border:2px dashed #cfd9ee;border-radius:15px;padding:18px;background:#fbfdff}.upload h3{margin:0 0 8px}.upload p{color:var(--m);font-size:14px}.upload input{width:100%;margin-top:8px}
+.row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.field{display:grid;gap:6px}.field label{font-size:13px;color:var(--m);font-weight:700}.field select,.field input{padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.checks{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}.check{background:#f7f9ff;border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+.btn{border:0;border-radius:11px;padding:11px 16px;font-weight:800;cursor:pointer}.primary{background:var(--b);color:#fff}.ghost{background:#eef3ff;color:var(--b)}
+.preview{margin-top:16px;border-top:1px solid var(--line);padding-top:16px}.q{background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf3ff;color:var(--b);font-size:12px;font-weight:800}.ok{color:var(--g)}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.uploads,.row{grid-template-columns:1fr}.hero{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="brand">ذاكر <span>إدارة المحتوى</span></div><a href="/" class="btn ghost">العودة للموقع</a></div></header>
+<main>
+<section class="hero"><div><h1>مكتبة المناهج والكتب</h1><p>ارفع كتب الشرح وبنوك الأسئلة لكل مادة، ثم اربطها بالوحدات والدروس.</p></div><span class="badge">أولى إعدادي</span></section>
+
+<div class="grid" id="subjects">
+  <div class="subject active" data-subject="Science" data-lang="English">🧪<b>Science</b><small>لغة المحتوى: English</small></div>
+  <div class="subject" data-subject="Math" data-lang="English">🧮<b>Math</b><small>لغة المحتوى: English</small></div>
+  <div class="subject" data-subject="English" data-lang="English">Aa<b>English</b><small>لغة المحتوى: English</small></div>
+  <div class="subject" data-subject="العربي" data-lang="Arabic">📖<b>العربي</b><small>لغة المحتوى: عربي</small></div>
+  <div class="subject" data-subject="الدراسات" data-lang="Arabic">🌍<b>الدراسات</b><small>لغة المحتوى: عربي</small></div>
+</div>
+
+<section class="panel">
+  <h2 id="subjectTitle">Science</h2>
+  <div class="tabs"><button class="tab active" data-tab="books">الكتب والمصادر</button><button class="tab" data-tab="exam">مولّد الامتحانات</button></div>
+
+  <div id="booksTab">
+    <div class="uploads">
+      <div class="upload"><h3>📘 مصدر الشرح</h3><p>كتاب الوزارة، كتاب خارجي، مذكرة شرح، أو PDF مخصص للشرح فقط.</p><input type="file" multiple accept=".pdf,.doc,.docx,.txt"></div>
+      <div class="upload"><h3>📝 مصدر الأسئلة</h3><p>بنك أسئلة، تدريبات، امتحانات سابقة، أو ملفات أسئلة منفصلة عن الشرح.</p><input type="file" multiple accept=".pdf,.doc,.docx,.txt"></div>
+    </div>
+    <div class="panel" style="margin-top:14px;background:#fbfdff">
+      <h3>تصنيف المحتوى</h3>
+      <div class="row">
+        <div class="field"><label>الترم</label><select><option>الترم الأول</option><option>الترم الثاني</option></select></div>
+        <div class="field"><label>الوحدة</label><input placeholder="مثال: Unit 1"></div>
+        <div class="field"><label>الدرس</label><input placeholder="اسم الدرس"></div>
+        <div class="field"><label>نوع الملف</label><select><option>شرح</option><option>أسئلة</option><option>امتحان سابق</option><option>ملخص</option></select></div>
+      </div>
+      <div style="margin-top:14px"><button class="btn primary" onclick="alert('واجهة الرفع جاهزة. الربط بالحفظ الدائم سيتم عند توصيل التخزين.')">حفظ التصنيف</button></div>
+    </div>
+  </div>
+
+  <div id="examTab" style="display:none">
+    <h3>توليد امتحان عشوائي</h3>
+    <div class="row">
+      <div class="field"><label>النطاق</label><select id="scope"><option>حسب درس محدد</option><option>حسب وحدة</option><option>عدة دروس مختارة</option><option>المادة كاملة</option></select></div>
+      <div class="field"><label>الوحدة</label><input placeholder="Unit / الوحدة"></div>
+      <div class="field"><label>الدرس</label><input placeholder="Lesson / الدرس"></div>
+      <div class="field"><label>عدد الأسئلة</label><input type="number" value="10" min="5" max="100"></div>
+    </div>
+    <div class="checks">
+      <label class="check"><input type="checkbox" checked> اختيار من متعدد</label>
+      <label class="check"><input type="checkbox" checked> صح / خطأ</label>
+      <label class="check"><input type="checkbox"> أكمل</label>
+      <label class="check"><input type="checkbox"> سؤال مقالي</label>
+      <label class="check"><input type="checkbox" checked> توزيع صعوبة عشوائي</label>
+    </div>
+    <div class="row">
+      <div class="field"><label>سهل %</label><input type="number" value="30"></div>
+      <div class="field"><label>متوسط %</label><input type="number" value="50"></div>
+      <div class="field"><label>صعب %</label><input type="number" value="20"></div>
+      <div class="field"><label>اللغة</label><input id="langField" value="English" readonly></div>
+    </div>
+    <div style="margin-top:14px"><button class="btn primary" onclick="generateDemo()">ولّد امتحان</button></div>
+    <div class="preview" id="preview"></div>
+  </div>
+</section>
+</main>
+<script>
+let currentSubject='Science', currentLang='English';
+document.querySelectorAll('.subject').forEach(el=>el.onclick=()=>{document.querySelectorAll('.subject').forEach(x=>x.classList.remove('active'));el.classList.add('active');currentSubject=el.dataset.subject;currentLang=el.dataset.lang;document.getElementById('subjectTitle').textContent=currentSubject;document.getElementById('langField').value=currentLang});
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');const exam=b.dataset.tab==='exam';document.getElementById('booksTab').style.display=exam?'none':'block';document.getElementById('examTab').style.display=exam?'block':'none'});
+function generateDemo(){const p=document.getElementById('preview');const en=currentLang==='English';const qs=en?['Choose the correct answer about the selected lesson.','Which statement is scientifically correct?','True or False: Review the concept carefully.']:['اختر الإجابة الصحيحة وفقًا للدرس المحدد.','أي العبارات التالية صحيحة؟','صح أم خطأ: راجع المفهوم جيدًا.'];p.innerHTML='<h3>معاينة امتحان — '+currentSubject+'</h3>'+qs.map((q,i)=>'<div class="q"><span class="badge">سؤال '+(i+1)+'</span><p>'+q+'</p></div>').join('')+'<p class="ok">✓ عند ربط بنك الأسئلة والـAI سيتم توليد نسخة عشوائية حقيقية كل مرة.</p>'}
+</script>
+</body></html>
