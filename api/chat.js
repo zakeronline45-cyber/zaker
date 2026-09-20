@@ -60,12 +60,12 @@ export default async function handler(req,res){
   try{
     const {
       question,
-      subject='Science',
       grade='أولى إعدادي',
       lesson='',
       studyLanguage='English',
       sessionId=''
     }=req.body||{};
+    const subject='Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
 
     let history=null;
