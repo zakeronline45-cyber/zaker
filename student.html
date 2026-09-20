@@ -387,6 +387,18 @@ async function initAccount(){
     localStorage.setItem(childKey('zaker_ai_session_id'),aiSessionId);
   }
 
+  const {data:activeSubs}=await sb.from('subscriptions')
+    .select('id,status,ends_at,access_source,campaign_code,subject_count')
+    .eq('child_id',child.id)
+    .eq('status','active')
+    .order('ends_at',{ascending:false})
+    .limit(5);
+  const validSub=(activeSubs||[]).find(s=>!s.ends_at||new Date(s.ends_at)>new Date());
+  if(!validSub){
+    location.href='/subscribe.html?child='+encodeURIComponent(child.id);
+    return;
+  }
+
   document.getElementById('activeChildName').textContent=child.full_name;
   document.getElementById('trackName').textContent=child.track==='languages'?'مسار لغات':'مسار عربي';
   document.getElementById('gradeName').textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
