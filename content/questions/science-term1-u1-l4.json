@@ -1,0 +1,127 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 1,
+  "unitTitle": "The Matter",
+  "lesson": 4,
+  "lessonTitle": "Chemical Bonds",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u1-l4-001",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The electrons in the outermost energy level are called:",
+      "choices": [
+        "Valence electrons",
+        "Neutrons",
+        "Protons",
+        "Nucleons"
+      ],
+      "answer": "Valence electrons",
+      "sourcePage": 133
+    },
+    {
+      "id": "s1-u1-l4-002",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The representation of valence electrons around an element symbol is called the ______ symbol.",
+      "answer": "Lewis",
+      "sourcePage": 134
+    },
+    {
+      "id": "s1-u1-l4-003",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Noble gases are chemically stable because their outermost energy level is complete.",
+      "answer": "True",
+      "sourcePage": 135
+    },
+    {
+      "id": "s1-u1-l4-004",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "A sodium atom loses one electron to form the ion ______.",
+      "answer": "Na+",
+      "sourcePage": 136
+    },
+    {
+      "id": "s1-u1-l4-005",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "A chlorine atom gains one electron to form the ion ______.",
+      "answer": "Cl-",
+      "sourcePage": 136
+    },
+    {
+      "id": "s1-u1-l4-006",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Sodium and chlorine can form an ionic compound.",
+      "answer": "Because sodium loses an electron and chlorine gains an electron, forming oppositely charged ions that attract each other.",
+      "sourcePage": 138
+    },
+    {
+      "id": "s1-u1-l4-007",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare ionic and covalent bonds.",
+      "answer": "Ionic bond forms by electron transfer and electrostatic attraction between ions; covalent bond forms by sharing electrons between atoms.",
+      "sourcePage": 140
+    },
+    {
+      "id": "s1-u1-l4-008",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which compound is mainly ionic?",
+      "choices": [
+        "NaCl",
+        "H2",
+        "O2",
+        "Cl2"
+      ],
+      "answer": "NaCl",
+      "sourcePage": 142
+    },
+    {
+      "id": "s1-u1-l4-009",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which molecule contains a covalent bond?",
+      "choices": [
+        "H2",
+        "NaCl",
+        "MgO",
+        "KCl"
+      ],
+      "answer": "H2",
+      "sourcePage": 143
+    },
+    {
+      "id": "s1-u1-l4-010",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Atoms form chemical bonds.",
+      "answer": "To reach a more stable electron configuration, usually by completing the outermost energy level.",
+      "sourcePage": 145
+    },
+    {
+      "id": "s1-u1-l4-011",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "A positive ion is formed when an atom gains electrons.",
+      "answer": "False",
+      "sourcePage": 146
+    },
+    {
+      "id": "s1-u1-l4-012",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "A negative ion is formed when an atom gains electrons.",
+      "answer": "True",
+      "sourcePage": 146
+    }
+  ]
+}
