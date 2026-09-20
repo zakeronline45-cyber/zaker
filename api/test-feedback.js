@@ -16,8 +16,7 @@ export default async function handler(req,res){
     const input=wrongAnswers.slice(0,10).map((x,i)=>`#${i+1}
 Question: ${x.question}
 Student answer: ${x.studentAnswer}
-Reference answer: ${x.correctAnswer}
-Source page: ${x.sourcePage||'unknown'}`).join('\n\n');
+Reference answer: ${x.correctAnswer}`).join('\n\n');
     const r=await fetch('https://api.openai.com/v1/responses',{
       method:'POST',
       headers:{'Authorization':`Bearer ${key}`,'Content-Type':'application/json'},
