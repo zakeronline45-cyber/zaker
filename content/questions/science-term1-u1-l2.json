@@ -7,7 +7,7 @@
   "lesson": 2,
   "lessonTitle": "The Periodic Table of Elements",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
   "questions": [
     {
       "id": "s1-u1-l2-001",
@@ -222,6 +222,87 @@
       "text": "Compare alkali metals and halogens in the trend of chemical activity down their groups.",
       "answer": "Alkali metals: chemical activity increases down the group. Halogens: chemical activity decreases down the group.",
       "sourcePage": 84
+    },
+    {
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The modern periodic table contains ______ periods and ______ groups.",
+      "answer": "7; 18",
+      "sourcePage": 78,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 494",
+      "id": "s1-u1-l2-021"
+    },
+    {
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The f-block contains the ______ and ______ series.",
+      "answer": "lanthanides; actinides",
+      "sourcePage": 81,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 497",
+      "id": "s1-u1-l2-022"
+    },
+    {
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Potassium is a solid element at room temperature.",
+      "answer": "It is an alkali metal, and the alkali metals studied are solid metals except for the separately noted liquid metals outside this group.",
+      "sourcePage": 80,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 496",
+      "id": "s1-u1-l2-023"
+    },
+    {
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "An element has electron configuration 2,8,1. Determine its period and group.",
+      "answer": "Period 3, group 1A.",
+      "sourcePage": 80,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 496",
+      "id": "s1-u1-l2-024"
+    },
+    {
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "An element has electron configuration 2,8,7. Determine its period and group.",
+      "answer": "Period 3, group 7A.",
+      "sourcePage": 80,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 496",
+      "id": "s1-u1-l2-025"
+    },
+    {
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare s-block and p-block in location and number of groups.",
+      "answer": "s-block occupies the left side and contains 2 groups; p-block occupies the right side and contains 6 groups.",
+      "sourcePage": 81,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 497",
+      "id": "s1-u1-l2-026"
+    },
+    {
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Metalloids are located in the p-block and cannot be identified only by electron configuration.",
+      "answer": "True",
+      "sourcePage": 77,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L2 / PDF 493",
+      "id": "s1-u1-l2-027"
+    },
+    {
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: Two elements have the same number of valence electrons but different numbers of occupied energy levels. What is the likely relationship between them?",
+      "answer": "They are likely in the same group but in different periods.",
+      "sourcePage": 83,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified L2 concepts",
+      "id": "s1-u1-l2-028"
     }
-  ]
+  ],
+  "auditedAgainstFullPdf": true
 }
