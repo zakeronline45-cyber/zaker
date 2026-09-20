@@ -1,0 +1,264 @@
+{
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "subject": "Science",
+  "language": "English",
+  "title": "Science Main Book - First Prep - First Term",
+  "publisher": "El-Moasser",
+  "edition": "2027",
+  "totalPages": 766,
+  "units": [
+    {
+      "unit": 1,
+      "title": "The Matter",
+      "lessons": [
+        {
+          "lesson": 1,
+          "title": "Structure of the Atom",
+          "pages": {
+            "lesson": [
+              8,
+              49
+            ],
+            "explanation": [
+              8,
+              31
+            ],
+            "questions": [
+              32,
+              47
+            ],
+            "test": [
+              48,
+              49
+            ]
+          }
+        },
+        {
+          "lesson": 2,
+          "title": "The Periodic Table of Elements",
+          "pages": {
+            "lesson": [
+              50,
+              98
+            ],
+            "explanation": [
+              50,
+              75
+            ],
+            "questions": [
+              76,
+              98
+            ]
+          }
+        },
+        {
+          "lesson": 3,
+          "title": "Matter and Its Properties",
+          "pages": {
+            "lesson": [
+              99,
+              132
+            ],
+            "explanation": [
+              99,
+              118
+            ],
+            "questions": [
+              119,
+              130
+            ],
+            "test": [
+              131,
+              132
+            ]
+          }
+        },
+        {
+          "lesson": 4,
+          "title": "Chemical Bonds",
+          "pages": {
+            "lesson": [
+              133,
+              174
+            ],
+            "explanation": [
+              133,
+              156
+            ],
+            "questions": [
+              157,
+              172
+            ],
+            "test": [
+              173,
+              174
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "title": "Force Fields",
+      "lessons": [
+        {
+          "lesson": 1,
+          "title": "Electric Forces",
+          "pages": {
+            "lesson": [
+              175,
+              208
+            ],
+            "explanation": [
+              175,
+              192
+            ],
+            "questions": [
+              193,
+              208
+            ]
+          }
+        },
+        {
+          "lesson": 2,
+          "title": "Magnetic Forces",
+          "pages": {
+            "lesson": [
+              209,
+              233
+            ],
+            "explanation": [
+              209,
+              225
+            ],
+            "questions": [
+              226,
+              233
+            ]
+          }
+        },
+        {
+          "lesson": 3,
+          "title": "Gravitational Forces",
+          "pages": {
+            "lesson": [
+              234,
+              263
+            ],
+            "explanation": [
+              234,
+              247
+            ],
+            "questions": [
+              248,
+              263
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "title": "Living Organisms, Their Structure and Processes",
+      "lessons": [
+        {
+          "lesson": 1,
+          "title": "Cells and Life",
+          "pages": {
+            "lesson": [
+              265,
+              294
+            ],
+            "explanation": [
+              265,
+              279
+            ],
+            "questions": [
+              280,
+              294
+            ]
+          }
+        },
+        {
+          "lesson": 2,
+          "title": "General Characteristics of Living Organisms",
+          "pages": {
+            "lesson": [
+              295,
+              329
+            ],
+            "explanation": [
+              295,
+              311
+            ],
+            "questions": [
+              312,
+              329
+            ]
+          }
+        },
+        {
+          "lesson": 3,
+          "title": "Microbes",
+          "pages": {
+            "lesson": [
+              330,
+              353
+            ],
+            "explanation": [
+              330,
+              341
+            ],
+            "questions": [
+              342,
+              353
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "title": "The (Earth - Sun - Moon) System",
+      "lessons": [
+        {
+          "lesson": 1,
+          "title": "The Earth and the Solar System",
+          "pages": {
+            "lesson": [
+              355,
+              384
+            ],
+            "explanation": [
+              355,
+              369
+            ],
+            "questions": [
+              370,
+              384
+            ]
+          }
+        },
+        {
+          "lesson": 2,
+          "title": "Lunar Eclipse",
+          "pages": {
+            "lesson": [
+              385,
+              411
+            ],
+            "explanation": [
+              385,
+              400
+            ],
+            "questions": [
+              401,
+              411
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
