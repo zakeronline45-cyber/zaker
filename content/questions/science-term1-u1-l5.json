@@ -1,0 +1,133 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 2,
+  "unitTitle": "Force Fields",
+  "lesson": 5,
+  "lessonTitle": "Electric Forces",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u2-l5-001",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The accumulation of electric charges on the surface of an object is called ______ electricity.",
+      "answer": "static",
+      "sourcePage": 175
+    },
+    {
+      "id": "s1-u2-l5-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Charging an object by rubbing is called charging by:",
+      "choices": [
+        "friction",
+        "gravity",
+        "magnetism",
+        "heating"
+      ],
+      "answer": "friction",
+      "sourcePage": 176
+    },
+    {
+      "id": "s1-u2-l5-003",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Like electric charges repel each other.",
+      "answer": "True",
+      "sourcePage": 178
+    },
+    {
+      "id": "s1-u2-l5-004",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Unlike electric charges attract each other.",
+      "answer": "True",
+      "sourcePage": 178
+    },
+    {
+      "id": "s1-u2-l5-005",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: A rubbed plastic rod can attract small pieces of paper.",
+      "answer": "Because the rod becomes electrically charged and exerts an electrostatic force on the paper pieces.",
+      "sourcePage": 180
+    },
+    {
+      "id": "s1-u2-l5-006",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare conductors and insulators.",
+      "answer": "Conductors allow electric charges to move through them easily; insulators do not allow charges to move freely.",
+      "sourcePage": 182
+    },
+    {
+      "id": "s1-u2-l5-007",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which material is a conductor?",
+      "choices": [
+        "Copper",
+        "Glass",
+        "Plastic",
+        "Wood"
+      ],
+      "answer": "Copper",
+      "sourcePage": 183
+    },
+    {
+      "id": "s1-u2-l5-008",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which material is an insulator?",
+      "choices": [
+        "Glass",
+        "Copper",
+        "Aluminum",
+        "Iron"
+      ],
+      "answer": "Glass",
+      "sourcePage": 183
+    },
+    {
+      "id": "s1-u2-l5-009",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "A device used to detect electric charge is the ______.",
+      "answer": "electroscope",
+      "sourcePage": 187
+    },
+    {
+      "id": "s1-u2-l5-010",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: The leaves of an electroscope diverge when charged.",
+      "answer": "Because the leaves acquire like charges and repel each other.",
+      "sourcePage": 189
+    },
+    {
+      "id": "s1-u2-l5-011",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "Electric force can act without direct contact.",
+      "answer": "True",
+      "sourcePage": 190
+    },
+    {
+      "id": "s1-u2-l5-012",
+      "type": "mcq",
+      "difficulty": "hard",
+      "text": "Electrostatic coating depends mainly on:",
+      "choices": [
+        "electric attraction",
+        "gravity only",
+        "magnetic repulsion",
+        "friction only"
+      ],
+      "answer": "electric attraction",
+      "sourcePage": 192
+    }
+  ]
+}
