@@ -1,0 +1,133 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 3,
+  "unitTitle": "Living Organisms, Their Structure and Processes",
+  "lesson": 10,
+  "lessonTitle": "Microbes",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u3-l10-001",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Microscopic living organisms that cannot usually be seen with the naked eye are called ______.",
+      "answer": "microbes",
+      "sourcePage": 330
+    },
+    {
+      "id": "s1-u3-l10-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which is a beneficial bacterial association with legume roots?",
+      "choices": [
+        "Root nodule bacteria",
+        "Disease-causing virus",
+        "Mold on bread",
+        "Parasitic protozoa"
+      ],
+      "answer": "Root nodule bacteria",
+      "sourcePage": 332
+    },
+    {
+      "id": "s1-u3-l10-003",
+      "type": "reason",
+      "difficulty": "easy",
+      "text": "Give a reason: Root nodule bacteria are important to leguminous plants.",
+      "answer": "Because they help provide nitrogen compounds needed by the plant.",
+      "sourcePage": 333
+    },
+    {
+      "id": "s1-u3-l10-004",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Bacteria used in yogurt production include:",
+      "choices": [
+        "Lactobacillus",
+        "Plasmodium",
+        "Amoeba",
+        "Influenza virus"
+      ],
+      "answer": "Lactobacillus",
+      "sourcePage": 335
+    },
+    {
+      "id": "s1-u3-l10-005",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Some microbes are beneficial while others are harmful.",
+      "answer": "True",
+      "sourcePage": 336
+    },
+    {
+      "id": "s1-u3-l10-006",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Fungi may be:",
+      "choices": [
+        "unicellular or multicellular",
+        "always viruses",
+        "always plants",
+        "always bacteria"
+      ],
+      "answer": "unicellular or multicellular",
+      "sourcePage": 338
+    },
+    {
+      "id": "s1-u3-l10-007",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Protozoa are generally classified among:",
+      "choices": [
+        "eukaryotic microbes",
+        "prokaryotic bacteria",
+        "viruses only",
+        "plant tissues"
+      ],
+      "answer": "eukaryotic microbes",
+      "sourcePage": 339
+    },
+    {
+      "id": "s1-u3-l10-008",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Viruses can reproduce independently outside living cells.",
+      "answer": "False",
+      "sourcePage": 340
+    },
+    {
+      "id": "s1-u3-l10-009",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Food should be stored properly.",
+      "answer": "To reduce contamination and growth of harmful microbes.",
+      "sourcePage": 342
+    },
+    {
+      "id": "s1-u3-l10-010",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Washing hands helps prevent disease.",
+      "answer": "Because it reduces transmission of harmful microbes.",
+      "sourcePage": 343
+    },
+    {
+      "id": "s1-u3-l10-011",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare beneficial and harmful microbes.",
+      "answer": "Beneficial microbes have useful roles such as food production or supporting plants; harmful microbes may cause disease or food spoilage.",
+      "sourcePage": 344
+    },
+    {
+      "id": "s1-u3-l10-012",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "All bacteria are harmful to humans.",
+      "answer": "False",
+      "sourcePage": 345
+    }
+  ]
+}
