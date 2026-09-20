@@ -19,3 +19,5 @@
 - تقارير ولي الأمر.
 
 لا توجد أسرار أو مفاتيح API داخل المستودع.
+
+AI Gateway configured for production deployment.
