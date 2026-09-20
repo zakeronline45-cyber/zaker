@@ -1,0 +1,69 @@
+name: Deploy GitHub Pages fallback
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare fallback site
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          touch _site/.nojekyll
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path("_site/index.html")
+          s=p.read_text(encoding="utf-8")
+          app="https://zaker-ruddy.vercel.app"
+          # GitHub Pages is the backup landing page. Functional app routes stay on Vercel.
+          routes=[
+            "/login.html","/account.html","/parent.html","/student.html",
+            "/subscribe.html","/admin.html","/admin-payments.html","/admin-promotions.html"
+          ]
+          for route in routes:
+              s=s.replace(f'href="{route}', f'href="{app}{route}')
+              s=s.replace(f"href='{route}", f"href='{app}{route}")
+              s=s.replace(f"location.href='{route}", f"location.href='{app}{route}")
+              s=s.replace(f'location.href="{route}', f'location.href="{app}{route}')
+          s=s.replace("fetch('/api/", f"fetch('{app}/api/")
+          s=s.replace('fetch("/api/', f'fetch("{app}/api/')
+          p.write_text(s,encoding="utf-8")
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
