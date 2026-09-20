@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ذاكر | الدخول وإنشاء حساب</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887;--r:#e85b66}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(180deg,#f5f8ff,#fff);color:#1d2b48;min-height:100vh}
+a{text-decoration:none;color:inherit}button,input,select{font:inherit}.top{padding:18px 22px;background:#fff;border-bottom:1px solid var(--line)}.wrap{max-width:980px;margin:auto}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}
+main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 14px 35px rgba(35,60,110,.08)}h1,h2{color:var(--n)}.muted{color:var(--m);line-height:1.8}.tabs{display:flex;gap:8px;margin-bottom:18px}.tab{flex:1;border:1px solid var(--line);background:#fff;padding:11px;border-radius:10px;font-weight:900}.tab.active{background:var(--b);color:#fff;border-color:var(--b)}.form{display:grid;gap:12px}.field{display:grid;gap:6px}.field label{font-size:13px;font-weight:800;color:#506581}.field input,.field select{padding:12px;border:1px solid var(--line);border-radius:10px}.btn{border:0;border-radius:11px;padding:12px 15px;font-weight:900;cursor:pointer}.primary{background:var(--b);color:#fff}.soft{background:#eef3ff;color:var(--b)}.msg{padding:11px;border-radius:10px;margin-top:12px;display:none}.ok{background:#effbf7;color:#24765f;border:1px solid #bee9dc}.err{background:#fff2f3;color:#a94750;border:1px solid #ffd0d5}.feature{display:flex;gap:10px;margin:13px 0;align-items:flex-start}.feature b{display:block}.feature span{font-size:22px}.track-note{background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px}
+@media(max-width:760px){main{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="/">ذاكر <span>حساب الطالب</span></a></div></header>
+<main>
+<section class="card">
+  <div class="tabs"><button id="loginTab" class="tab active" onclick="showMode('login')">تسجيل الدخول</button><button id="signupTab" class="tab" onclick="showMode('signup')">إنشاء حساب</button></div>
+
+  <form id="loginForm" class="form" onsubmit="login(event)">
+    <h2>أهلًا بيك</h2>
+    <div class="field"><label>البريد الإلكتروني</label><input id="loginEmail" type="email" required autocomplete="email"></div>
+    <div class="field"><label>كلمة المرور</label><input id="loginPassword" type="password" required autocomplete="current-password"></div>
+    <button class="btn primary" type="submit">دخول</button>
+  </form>
+
+  <form id="signupForm" class="form" style="display:none" onsubmit="signup(event)">
+    <h2>اعمل حساب طالب</h2>
+    <div class="field"><label>اسم الطالب</label><input id="fullName" required></div>
+    <div class="field"><label>البريد الإلكتروني</label><input id="signupEmail" type="email" required autocomplete="email"></div>
+    <div class="field"><label>رقم الموبايل</label><input id="phone" type="tel" placeholder="01xxxxxxxxx"></div>
+    <div class="field"><label>كلمة المرور</label><input id="signupPassword" type="password" minlength="6" required autocomplete="new-password"></div>
+    <div class="field"><label>المسار الدراسي</label><select id="track" required><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
+    <button class="btn primary" type="submit">إنشاء الحساب</button>
+  </form>
+
+  <div id="msg" class="msg"></div>
+</section>
+
+<aside class="card">
+  <h1>حساب واحد لكل رحلة الطالب</h1>
+  <p class="muted">الحساب هيحفظ المسار الدراسي، الاختبارات، النتائج، نقاط الضعف، وأسئلة مدرس ذاكر AI.</p>
+  <div class="feature"><span>👤</span><div><b>ملف طالب دائم</b><div class="muted">بدل حفظ البيانات على جهاز واحد فقط.</div></div></div>
+  <div class="feature"><span>🧪</span><div><b>نتائج واختبارات</b><div class="muted">تتجمع على الحساب وتبقى جاهزة للمتابعة.</div></div></div>
+  <div class="feature"><span>💳</span><div><b>الاشتراك</b><div class="muted">بعد الدخول تقدر تختار الباقة وتكمل الدفع.</div></div></div>
+  <div class="track-note">المسار العربي واللغات منفصلين؛ كل طالب يشوف محتوى مساره فقط.</div>
+</aside>
+</main>
+<script>
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+const next=new URLSearchParams(location.search).get('next')||'/student.html';
+
+function showMode(mode){
+ document.getElementById('loginForm').style.display=mode==='login'?'grid':'none';
+ document.getElementById('signupForm').style.display=mode==='signup'?'grid':'none';
+ document.getElementById('loginTab').classList.toggle('active',mode==='login');
+ document.getElementById('signupTab').classList.toggle('active',mode==='signup');
+ hideMsg();
+}
+function message(text,ok=false){
+ const m=document.getElementById('msg');m.textContent=text;m.className='msg '+(ok?'ok':'err');m.style.display='block';
+}
+function hideMsg(){document.getElementById('msg').style.display='none'}
+async function login(e){
+ e.preventDefault();hideMsg();
+ const {data,error}=await sb.auth.signInWithPassword({email:loginEmail.value.trim(),password:loginPassword.value});
+ if(error){message(error.message);return}
+ location.href=next;
+}
+async function signup(e){
+ e.preventDefault();hideMsg();
+ const {data,error}=await sb.auth.signUp({
+   email:signupEmail.value.trim(),
+   password:signupPassword.value,
+   options:{data:{full_name:fullName.value.trim(),phone:phone.value.trim(),role:'student',track:track.value}}
+ });
+ if(error){message(error.message);return}
+ localStorage.setItem('zaker_student_track',track.value);
+ if(data.session){location.href='/subscribe.html'} else message('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.',true);
+}
+(async()=>{const {data}=await sb.auth.getSession();if(data.session) location.href=next})();
+</script>
+</body></html>
