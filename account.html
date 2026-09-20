@@ -65,13 +65,13 @@ async function loadChildren(){
  childrenCount.textContent=children.length;
  let active=0, html='';
  for(const ch of children){
-   const {data:subs}=await sb.from('subscriptions').select('id,status,amount_egp,starts_at,ends_at,plan_code,access_source,campaign_code,subject_count').eq('child_id',ch.id).order('created_at',{ascending:false}).limit(3);
+   const {data:subs}=await sb.from('subscriptions').select('id,status,amount_egp,starts_at,ends_at,plan_code,access_source,campaign_code,subject_count,subscription_subjects(subject_code)').eq('child_id',ch.id).order('created_at',{ascending:false}).limit(3);
    const activeSub=(subs||[]).find(s=>s.status==='active');
    if(activeSub) active++;
    html+=`<div class="child">
     <div class="child-head"><div><h3 style="margin:0 0 6px">${esc(ch.full_name)}</h3><span class="pill">${trackName(ch.track)}</span> <span class="pill">${gradeName(ch.grade)}</span></div>
     <div class="muted">ابن رقم ${children.indexOf(ch)+1}</div></div>
-    <div class="sub">${activeSub?'<span class="ok">اشتراك نشط</span> — '+(activeSub.access_source==='paid'?(activeSub.amount_egp+' جنيه'):(activeSub.access_source==='promo_code'?'كود دعائي'+(activeSub.campaign_code?' '+activeSub.campaign_code:''):'اشتراك دعائي مجاني'))+' — '+activeSub.subject_count+' مادة — حتى '+new Date(activeSub.ends_at).toLocaleDateString('ar-EG'):'<span class="bad">لا يوجد اشتراك نشط</span>'}</div>
+    <div class="sub">${activeSub?'<span class="ok">اشتراك نشط</span> — '+(activeSub.access_source==='paid'?(activeSub.amount_egp+' جنيه'):(activeSub.access_source==='promo_code'?'كود دعائي'+(activeSub.campaign_code?' '+activeSub.campaign_code:''):'اشتراك دعائي مجاني'))+' — '+activeSub.subject_count+' مادة'+(activeSub.subscription_subjects?.length?' ('+activeSub.subscription_subjects.map(x=>x.subject_code).join('، ')+')':'')+' — حتى '+new Date(activeSub.ends_at).toLocaleDateString('ar-EG'):'<span class="bad">لا يوجد اشتراك نشط</span>'}</div>
     <div class="actions">
       <button class="btn primary" onclick="openChild('${ch.id}')">دخول ملف الطالب</button>
       <a class="btn soft" href="/parent.html?child=${ch.id}">متابعة الأداء</a>
