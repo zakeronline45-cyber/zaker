@@ -131,11 +131,12 @@ async function submitProof(){
  const path=session.user.id+'/'+pendingPayment.id+'.'+ext;
  const up=await sb.storage.from('bank-transfer-proofs').upload(path,file,{upsert:true});
  if(up.error){alert(up.error.message);return}
- const {error}=await sb.from('payments').update({
-   sender_name:senderName,
-   bank_transfer_reference:bankTransferReference,
-   proof_url:path
- }).eq('id',pendingPayment.id);
+ const {error}=await sb.rpc('submit_bank_transfer_proof',{
+   p_payment_id:pendingPayment.id,
+   p_sender_name:senderName,
+   p_transfer_reference:bankTransferReference,
+   p_proof_path:path
+ });
  const box=document.getElementById('proofMsg');box.style.display='block';
  if(error){box.textContent='تم رفع الملف لكن حصلت مشكلة في حفظ بيانات التحويل: '+error.message;return}
  box.innerHTML='<span class="ok">تم إرسال التحويل للمراجعة.</span> لن يتفعّل الاشتراك إلا بعد مطابقة التحويل واعتماده.';
