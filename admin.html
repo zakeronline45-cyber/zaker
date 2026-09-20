@@ -58,7 +58,12 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify
     <div class="row">
       <div class="field"><label>النطاق</label><select id="scope"><option>حسب درس محدد</option><option>حسب وحدة</option><option>عدة دروس مختارة</option><option>المادة كاملة</option></select></div>
       <div class="field"><label>الوحدة</label><select id="unitSelect"><option value="1">Unit 1 — The Matter</option></select></div>
-      <div class="field"><label>الدرس</label><select id="lessonSelect"><option value="1">Lesson 1 — Structure of the Atom</option></select></div>
+      <div class="field"><label>الدرس</label><select id="lessonSelect">
+<option value="1">Lesson 1 — Structure of the Atom</option>
+<option value="2">Lesson 2 — The Periodic Table of Elements</option>
+<option value="3">Lesson 3 — Matter and Its Properties</option>
+<option value="4" disabled>Lesson 4 — Chemical Bonds (الملف المرفوع لا يحتوي بنك أسئلته كاملًا)</option>
+</select></div>
       <div class="field"><label>عدد الأسئلة</label><input id="questionCount" type="number" value="10" min="5" max="30"></div>
     </div>
     <div class="checks">
@@ -82,7 +87,7 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify
 </section>
 </main>
 <script>
-let currentSubject='Science', currentLang='English', questionBank=null;
+let currentSubject='Science', currentLang='English', questionBank=null, loadedLesson=null;
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
 document.querySelectorAll('.subject').forEach(el=>el.onclick=()=>{
@@ -97,6 +102,7 @@ document.querySelectorAll('.subject').forEach(el=>el.onclick=()=>{
   }
 });
 
+document.getElementById('lessonSelect')?.addEventListener('change',()=>{questionBank=null;loadedLesson=null;document.getElementById('preview').innerHTML='';});
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
@@ -107,14 +113,15 @@ document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
 });
 
 async function loadQuestionBank(){
-  if(questionBank) return questionBank;
+  const lesson=document.getElementById('lessonSelect')?.value || '1';
+  if(questionBank && loadedLesson===lesson) return questionBank;
   const p=document.getElementById('preview');
   p.innerHTML='<p>جارٍ تحميل بنك الأسئلة...</p>';
   try{
-    const r=await fetch('/content/questions/science-term1-u1-l1.json',{cache:'no-store'});
+    const r=await fetch('/content/questions/science-term1-u1-l'+lesson+'.json',{cache:'no-store'});
     if(!r.ok) throw new Error('تعذر تحميل بنك الأسئلة');
-    questionBank=await r.json();
-    p.innerHTML='<p class="ok">✓ تم تحميل '+questionBank.questions.length+' سؤال حقيقي من Lesson 1 — Structure of the Atom.</p>';
+    questionBank=await r.json(); loadedLesson=lesson;
+    p.innerHTML='<p class="ok">✓ تم تحميل '+questionBank.questions.length+' سؤال حقيقي من '+escapeHtml(questionBank.lessonTitle)+'.</p>';
     return questionBank;
   }catch(e){
     p.innerHTML='<p>'+escapeHtml(e.message)+'</p>';
