@@ -5,12 +5,11 @@ export default async function handler(req,res){
     return res.status(200).json({summary:'ممتاز، لا توجد أخطاء تحتاج مراجعة.',topics:[],plan:[]});
   }
   const key=process.env.OPENAI_API_KEY;
-  const pages=[...new Set(wrongAnswers.map(x=>x.sourcePage).filter(Boolean))].sort((a,b)=>a-b);
   if(!key){
     return res.status(200).json({
       summary:'عندك أخطاء في بعض مفاهيم هذا الدرس. راجع المفاهيم المرتبطة بالأسئلة التي أخطأت فيها ثم أعد الاختبار.',
-      topics:wrongAnswers.slice(0,5).map(x=>({topic:x.question,explanation:'راجع الفكرة المرتبطة بهذا السؤال وافهم سبب الخطأ قبل إعادة الحل.',correctAnswer:x.correctAnswer,page:x.sourcePage||null})),
-      plan:['راجع شرح الدرس مرة أخرى.','راجع الصفحات: '+(pages.join(', ')||'المحددة في الدرس')+'.','أعد اختبارًا جديدًا بعد المراجعة.']
+      topics:wrongAnswers.slice(0,10).map(x=>({question:x.question,studentAnswer:x.studentAnswer,correctAnswer:x.correctAnswer,explanation:'الإجابة تحتاج تعديل في الفكرة العلمية نفسها، وليس في شكل الكتابة. قارن إجابتك بالمعلومة الصحيحة وافهم الفرق قبل إعادة الحل.'})),
+      plan:['افهم سبب كل خطأ من الشرح الموجود أسفل السؤال.','راجع نفس المفهوم داخل شرح الدرس.','أعد اختبارًا جديدًا بعد ما تتأكد إن الفكرة وضحت.']
     });
   }
   try{
@@ -25,16 +24,17 @@ Source page: ${x.sourcePage||'unknown'}`).join('\n\n');
       body:JSON.stringify({
         model:'gpt-5.6-luna',
         instructions:`You are the post-test coach for "ذاكر" for first-prep Science Languages.
-Create feedback ONLY from the supplied question, student answer, reference answer, and source page.
+Create feedback ONLY from the supplied question, student answer, and reference answer.
 Do not invent curriculum facts.
 The student SHOULD see the correct answer after finishing the whole test.
+IMPORTANT: If the student's scientific meaning is actually correct and only punctuation, separators, formatting, spelling, or wording differ, do NOT describe it as a conceptual mistake. Say that the answer is scientifically correct and the grading should accept it.
 Return strict JSON only, no markdown:
 {
  "summary":"Arabic summary",
- "topics":[{"topic":"short concept name in English + Arabic","explanation":"simple Arabic explanation with essential English terms, explaining why the student's answer was wrong","correctAnswer":"the exact reference answer","page":number|null}],
+ "topics":[{"question":"the question","studentAnswer":"student answer","correctAnswer":"the exact reference answer","explanation":"simple Arabic explanation with essential English terms, explaining the real scientific difference only"}],
  "plan":["step 1","step 2","step 3"]
 }
-The plan should say what to review, cite source pages when available, and recommend re-testing.`,
+Do not mention page numbers or tell the student to return to a specific page.`,
         input:`Lesson: ${lessonTitle}\n\n${input}`
       })
     });
@@ -46,8 +46,8 @@ The plan should say what to review, cite source pages when available, and recomm
   }catch(e){
     return res.status(200).json({
       summary:'أخطاءك تتركز في مفاهيم تحتاج مراجعة قبل إعادة الاختبار.',
-      topics:wrongAnswers.slice(0,5).map(x=>({topic:x.question,explanation:'راجع المفهوم المرتبط بالسؤال وافهم لماذا إجابتك السابقة لم تكن صحيحة.',correctAnswer:x.correctAnswer,page:x.sourcePage||null})),
-      plan:['راجع شرح الدرس.','ركز على الصفحات: '+(pages.join(', ')||'المحددة في الدرس')+'.','أعد الاختبار بعد المراجعة.']
+      topics:wrongAnswers.slice(0,10).map(x=>({question:x.question,studentAnswer:x.studentAnswer,correctAnswer:x.correctAnswer,explanation:'قارن بين إجابتك والإجابة الصحيحة وركز على الفرق العلمي الحقيقي، وليس طريقة كتابة الرموز أو علامات الترقيم.'})),
+      plan:['افهم سبب كل خطأ من الشرح الموجود أسفل السؤال.','راجع المفهوم نفسه داخل شرح الدرس.','أعد اختبارًا جديدًا بعد المراجعة.']
     });
   }
 }
