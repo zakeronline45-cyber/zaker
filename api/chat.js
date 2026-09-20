@@ -70,16 +70,7 @@ export default async function handler(req,res){
 
     let history=null;
     if(sessionId){
-      try{
-        await rpc('log_ai_question',{
-          p_session_id:sessionId,
-          p_subject:subject,
-          p_lesson:lesson,
-          p_study_language:studyLanguage,
-          p_question:question
-        });
-        history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30});
-      }catch(e){}
+      try{history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30})}catch(e){}
     }
 
     const inScope=await isInCurriculum({
@@ -90,7 +81,14 @@ export default async function handler(req,res){
     });
     if(!inScope){
       const msg='This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
-      return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||1,lessonCounts:history?.lesson_counts||{}}});
+      return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||0,lessonCounts:history?.lesson_counts||{}}});
+    }
+
+    if(sessionId){
+      try{
+        await rpc('log_ai_question',{p_session_id:sessionId,p_subject:subject,p_lesson:lesson,p_study_language:studyLanguage,p_question:question});
+        history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30});
+      }catch(e){}
     }
 
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
