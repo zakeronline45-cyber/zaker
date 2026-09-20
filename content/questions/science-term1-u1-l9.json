@@ -7,127 +7,266 @@
   "lesson": 9,
   "lessonTitle": "General Characteristics of Living Organisms",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u3-l9-001",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Green plants are classified nutritionally as:",
-      "choices": [
-        "autotrophs",
-        "heterotrophs",
-        "decomposers only",
-        "parasites only"
-      ],
+      "text": "Organisms that make their own food are called ______.",
       "answer": "autotrophs",
-      "sourcePage": 295
+      "sourcePage": 295,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-002",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Animals obtain food from other organisms, so they are:",
-      "choices": [
-        "heterotrophs",
-        "autotrophs",
-        "producers",
-        "photosynthetic organisms"
-      ],
+      "text": "Organisms that depend directly or indirectly on other organisms for food are ______.",
       "answer": "heterotrophs",
-      "sourcePage": 296
+      "sourcePage": 296,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-003",
       "type": "complete",
       "difficulty": "easy",
-      "text": "The process by which green plants make food using light energy is ______.",
+      "text": "The process by which green plants make food in the presence of light is ______.",
       "answer": "photosynthesis",
-      "sourcePage": 298
+      "sourcePage": 297,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-004",
       "type": "complete",
       "difficulty": "easy",
-      "text": "Photosynthesis uses water and carbon dioxide to produce glucose and ______.",
-      "answer": "oxygen",
-      "sourcePage": 299
+      "text": "The breakdown of glucose to release energy in cells is cellular ______.",
+      "answer": "respiration",
+      "sourcePage": 298,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-005",
       "type": "reason",
-      "difficulty": "medium",
-      "text": "Give a reason: Green plants are called producers.",
-      "answer": "Because they manufacture their own food by photosynthesis.",
-      "sourcePage": 300
+      "difficulty": "easy",
+      "text": "Give a reason: Green algae are producers.",
+      "answer": "They can make their own food by photosynthesis.",
+      "sourcePage": 299,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-006",
-      "type": "true_false",
-      "difficulty": "medium",
-      "text": "Respiration releases energy from food inside living cells.",
-      "answer": "True",
-      "sourcePage": 303
+      "type": "reason",
+      "difficulty": "easy",
+      "text": "Give a reason: Rabbits are heterotrophs.",
+      "answer": "They depend on other organisms to obtain food.",
+      "sourcePage": 300,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-007",
-      "type": "mcq",
+      "type": "compare",
       "difficulty": "medium",
-      "text": "Which plant tissue mainly transports water and mineral salts?",
-      "choices": [
-        "Xylem",
-        "Phloem",
-        "Epidermis",
-        "Stomata"
-      ],
-      "answer": "Xylem",
-      "sourcePage": 306
+      "text": "Compare photosynthesis and cellular respiration.",
+      "answer": "Photosynthesis occurs in chloroplasts, uses water and carbon dioxide and stores light energy in glucose while releasing oxygen; cellular respiration occurs in mitochondria, uses glucose and oxygen and releases energy, producing water and carbon dioxide.",
+      "sourcePage": 301,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-008",
-      "type": "mcq",
-      "difficulty": "medium",
-      "text": "Which plant tissue mainly transports manufactured food?",
-      "choices": [
-        "Phloem",
-        "Xylem",
-        "Root hair only",
-        "Cortex only"
-      ],
-      "answer": "Phloem",
-      "sourcePage": 306
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Plant pores controlled by guard cells are called ______.",
+      "answer": "stomata",
+      "sourcePage": 302,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-009",
-      "type": "complete",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Removal of metabolic wastes from the body is called ______.",
-      "answer": "excretion",
-      "sourcePage": 309
+      "text": "Give a reason: Guard cells are important.",
+      "answer": "They control opening and closing of stomata, helping regulate gas exchange and water vapor loss.",
+      "sourcePage": 303,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-010",
-      "type": "true_false",
-      "difficulty": "hard",
-      "text": "Growth and reproduction are characteristics of living organisms.",
-      "answer": "True",
-      "sourcePage": 311
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which tissue transports water and mineral salts from roots?",
+      "choices": [
+        "Xylem tissue",
+        "Phloem tissue",
+        "Stomata",
+        "Guard cells"
+      ],
+      "answer": "Xylem tissue",
+      "sourcePage": 304,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-011",
-      "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: Living organisms respond to environmental changes.",
-      "answer": "Because sensitivity and response help organisms interact with their surroundings and survive.",
-      "sourcePage": 313
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which tissue transports food produced in leaves?",
+      "choices": [
+        "Phloem tissue",
+        "Xylem tissue",
+        "Root hair only",
+        "Guard cells"
+      ],
+      "answer": "Phloem tissue",
+      "sourcePage": 305,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
     },
     {
       "id": "s1-u3-l9-012",
-      "type": "compare",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Blood flows through the human circulatory system in a closed cycle.",
+      "answer": "The heart and blood vessels are connected in a closed loop that returns blood to the heart.",
+      "sourcePage": 306,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-013",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Food passage through the digestive system is not a closed path.",
+      "answer": "Food enters through the mouth and undigested wastes leave through the anus.",
+      "sourcePage": 307,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-014",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Elimination of metabolic wastes is called ______.",
+      "answer": "excretion",
+      "sourcePage": 308,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-015",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Kidney failure may require continuous dialysis.",
+      "answer": "Dialysis purifies blood from toxins, excess water, salts and urea when kidneys do not work properly.",
+      "sourcePage": 309,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-016",
+      "type": "reason",
       "difficulty": "hard",
-      "text": "Compare autotrophic and heterotrophic nutrition.",
-      "answer": "Autotrophs make their own food; heterotrophs obtain ready-made food from other organisms.",
-      "sourcePage": 315
+      "text": "Give a reason: Excretion occurs in plants although they lack specialized excretory organs.",
+      "answer": "Leaves and stomata can eliminate excess water vapor and carbon dioxide.",
+      "sourcePage": 310,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-017",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare autotrophs and heterotrophs.",
+      "answer": "Autotrophs produce their own food; heterotrophs depend on other organisms for food.",
+      "sourcePage": 311,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-018",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare transport by xylem and phloem.",
+      "answer": "Xylem transports water and mineral salts from roots upward; phloem transports food made by photosynthesis from leaves to the rest of the plant.",
+      "sourcePage": 312,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-019",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What happens if chloroplasts disappear from plant cells?",
+      "answer": "Photosynthesis stops, so the plant cannot make its own food and may die.",
+      "sourcePage": 313,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-020",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What happens if the tracheal tubes in insects become blocked?",
+      "answer": "The insect cannot respire properly and may die.",
+      "sourcePage": 314,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-021",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "What happens if the phloem tissue disappears from a plant stem?",
+      "answer": "Food produced in leaves will not be transported to roots and other parts, leading to plant death.",
+      "sourcePage": 315,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-022",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which human organ is a main excretory organ?",
+      "choices": [
+        "Kidney",
+        "Stomach",
+        "Bone",
+        "Muscle"
+      ],
+      "answer": "Kidney",
+      "sourcePage": 315,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-023",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Plant movement is always locomotion from one place to another.",
+      "answer": "False",
+      "sourcePage": 315,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
+    },
+    {
+      "id": "s1-u3-l9-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: A plant has healthy roots but xylem is blocked. Predict the first major transport problem.",
+      "answer": "Water and mineral salts will not move effectively from roots to leaves.",
+      "sourcePage": 315,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
