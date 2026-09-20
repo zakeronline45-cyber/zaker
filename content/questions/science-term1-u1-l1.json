@@ -7,7 +7,7 @@
   "lesson": 1,
   "lessonTitle": "Structure of the Atom",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
   "questions": [
     {
       "id": "s1-u1-l1-001",
@@ -308,6 +308,93 @@
       ],
       "answer": "Protons equal electrons",
       "sourcePage": 46
+    },
+    {
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The maximum number of electrons that can saturate the third main energy level M is ______.",
+      "answer": "18",
+      "sourcePage": 71,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 487",
+      "id": "s1-u1-l1-031"
+    },
+    {
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "An atom has 12 protons and 12 electrons. State its atomic number and whether it is electrically neutral.",
+      "answer": "Atomic number = 12; it is electrically neutral because protons equal electrons.",
+      "sourcePage": 72,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 488",
+      "id": "s1-u1-l1-032"
+    },
+    {
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Isotopes of the same element have the same atomic number but different mass numbers.",
+      "answer": "They have the same number of protons but different numbers of neutrons.",
+      "sourcePage": 75,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 491",
+      "id": "s1-u1-l1-033"
+    },
+    {
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which scientist discovered the atom's nucleus experimentally? ",
+      "choices": [
+        "Dalton",
+        "Rutherford",
+        "Mendeleev",
+        "Moseley"
+      ],
+      "answer": "Rutherford",
+      "sourcePage": 69,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 485",
+      "id": "s1-u1-l1-034"
+    },
+    {
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "An atom has 20 electrons distributed 2,8,8,2. Find its atomic number and number of occupied energy levels.",
+      "answer": "Atomic number = 20; occupied energy levels = 4.",
+      "sourcePage": 72,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 488",
+      "id": "s1-u1-l1-035"
+    },
+    {
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The symbol of sodium is Na, not So.",
+      "answer": "Because chemical symbols follow internationally adopted element symbols, often derived from Latin names; sodium is represented by Na.",
+      "sourcePage": 73,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 489",
+      "id": "s1-u1-l1-036"
+    },
+    {
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: An atom has mass number 40 and atomic number 20. If it forms a neutral atom, find protons, neutrons and electrons.",
+      "answer": "Protons = 20; neutrons = 20; electrons = 20.",
+      "sourcePage": 74,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified L1 concepts",
+      "id": "s1-u1-l1-037"
+    },
+    {
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The energy of level Q is greater than the energy of level N.",
+      "answer": "True",
+      "sourcePage": 70,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision L1 / PDF 486",
+      "id": "s1-u1-l1-038"
     }
-  ]
+  ],
+  "auditedAgainstFullPdf": true
 }
