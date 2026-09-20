@@ -1,0 +1,133 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 3,
+  "unitTitle": "Living Organisms, Their Structure and Processes",
+  "lesson": 8,
+  "lessonTitle": "Cells and Life",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u3-l8-001",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The basic unit of structure and function in living organisms is the ______.",
+      "answer": "cell",
+      "sourcePage": 265
+    },
+    {
+      "id": "s1-u3-l8-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which sequence is correct from simpler to more complex organization?",
+      "choices": [
+        "Cell → Tissue → Organ → System → Organism",
+        "Organ → Cell → Tissue → Organism → System",
+        "Tissue → Cell → Organ → System → Organism",
+        "Cell → Organ → Tissue → System → Organism"
+      ],
+      "answer": "Cell → Tissue → Organ → System → Organism",
+      "sourcePage": 266
+    },
+    {
+      "id": "s1-u3-l8-003",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "A tissue is a group of similar cells performing a common function.",
+      "answer": "True",
+      "sourcePage": 267
+    },
+    {
+      "id": "s1-u3-l8-004",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "A group of organs working together forms an organ ______.",
+      "answer": "system",
+      "sourcePage": 267
+    },
+    {
+      "id": "s1-u3-l8-005",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which structure is found in plant cells but not animal cells?",
+      "choices": [
+        "Chloroplast",
+        "Cell membrane",
+        "Cytoplasm",
+        "Ribosome"
+      ],
+      "answer": "Chloroplast",
+      "sourcePage": 270
+    },
+    {
+      "id": "s1-u3-l8-006",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which structure gives plant cells extra support?",
+      "choices": [
+        "Cell wall",
+        "Nucleus",
+        "Cytoplasm",
+        "Cell membrane only"
+      ],
+      "answer": "Cell wall",
+      "sourcePage": 270
+    },
+    {
+      "id": "s1-u3-l8-007",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare plant and animal cells.",
+      "answer": "Both have cell membrane, cytoplasm, and genetic material; plant cells also have a cell wall and chloroplasts and usually a large vacuole.",
+      "sourcePage": 272
+    },
+    {
+      "id": "s1-u3-l8-008",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare prokaryotic and eukaryotic cells.",
+      "answer": "Prokaryotic cells lack a true membrane-bound nucleus; eukaryotic cells have a true nucleus and membrane-bound organelles.",
+      "sourcePage": 274
+    },
+    {
+      "id": "s1-u3-l8-009",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Bacteria are examples of:",
+      "choices": [
+        "prokaryotic organisms",
+        "plant cells",
+        "animal tissues",
+        "multicellular organs"
+      ],
+      "answer": "prokaryotic organisms",
+      "sourcePage": 276
+    },
+    {
+      "id": "s1-u3-l8-010",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "Paramecium is a unicellular eukaryotic organism.",
+      "answer": "True",
+      "sourcePage": 278
+    },
+    {
+      "id": "s1-u3-l8-011",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Plant cells can carry out photosynthesis.",
+      "answer": "Because they contain chloroplasts with chlorophyll.",
+      "sourcePage": 280
+    },
+    {
+      "id": "s1-u3-l8-012",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "All living organisms are multicellular.",
+      "answer": "False",
+      "sourcePage": 282
+    }
+  ]
+}
