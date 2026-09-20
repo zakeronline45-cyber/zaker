@@ -28,7 +28,7 @@
   <h2>احسب اشتراكك</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
     <label>عدد المواد
-      <select id="subjectCount" onchange="calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px">
+      <select id="subjectCount" onchange="renderSubjectChoices();calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px">
         <option value="1">مادة واحدة</option>
         <option value="2">مادتان</option>
         <option value="3">3 مواد</option>
@@ -40,6 +40,7 @@
       <select id="childId" onchange="calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px"></select>
     </label>
   </div>
+  <div id="subjectChoices" class="status" style="margin-top:14px"></div>
   <div class="price" id="calcPrice">250 <small>جنيه / شهر</small></div>
   <p class="muted" id="calcNote">1 مادة × 250 جنيه.</p>
   <button class="btn primary" style="width:100%" onclick="startBankTransfer()">ابدأ طلب تحويل بنكي</button>
@@ -76,6 +77,8 @@ async function init(){
  promoSelect.innerHTML=children.map(ch=>'<option value="'+ch.id+'">'+ch.full_name+'</option>').join('');
  const requested=new URLSearchParams(location.search).get('child');
  if(requested&&children.some(x=>x.id===requested)) childSelect.value=requested;
+ childSelect.addEventListener('change',()=>{renderSubjectChoices();calc()});
+ renderSubjectChoices();
  if(!children.length){
    document.getElementById('current').innerHTML='لا يوجد أبناء على الحساب. <a href="/account.html">أضف ابنًا أولًا</a>.';
    document.querySelector('button[onclick="startBankTransfer()"]').disabled=true;
@@ -104,6 +107,20 @@ async function redeemPromo(){
  await init();
 }
 
+function availableSubjects(){
+  const ch=children.find(x=>x.id===document.getElementById('childId')?.value);
+  return ch?.track==='arabic'
+   ?['العلوم','الرياضيات','English','العربي','الدراسات']
+   :['Science','Math','English','العربي','الدراسات'];
+}
+function renderSubjectChoices(){
+  const need=Number(document.getElementById('subjectCount').value)||1;
+  const box=document.getElementById('subjectChoices');
+  const current=[...document.querySelectorAll('.subjectPick:checked')].map(x=>x.value);
+  box.innerHTML='<b>اختار '+need+' مادة بالضبط</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">'+
+   availableSubjects().map(s=>'<label style="background:#f7f9ff;border:1px solid var(--line);padding:8px 10px;border-radius:10px"><input class="subjectPick" type="checkbox" value="'+s+'" '+(current.includes(s)?'checked':'')+'> '+s+'</label>').join('')+
+   '</div>';
+}
 function calc(){
   const n=Number(document.getElementById('subjectCount').value)||1;
   const selectedId=document.getElementById('childId')?.value;
@@ -133,7 +150,9 @@ async function startBankTransfer(){
  if(!session){location.href='/login.html?next=/subscribe.html';return}
  const subjectCount=Number(document.getElementById('subjectCount').value)||1;
  const childId=document.getElementById('childId').value;
- const r=await fetch('/api/create-bank-transfer',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subjectCount,childId})});
+ const subjects=[...document.querySelectorAll('.subjectPick:checked')].map(x=>x.value);
+ if(subjects.length!==subjectCount){alert('اختار '+subjectCount+' مادة بالضبط');return}
+ const r=await fetch('/api/create-bank-transfer',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subjectCount,childId,subjects})});
  const j=await r.json();
  if(!r.ok){alert(j.error||'تعذر إنشاء طلب التحويل');return}
  pendingPayment=j.payment;
