@@ -7,127 +7,278 @@
   "lesson": 10,
   "lessonTitle": "Microbes",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u3-l10-001",
       "type": "complete",
       "difficulty": "easy",
-      "text": "Microscopic living organisms that cannot usually be seen with the naked eye are called ______.",
+      "text": "Microscopic living organisms that may be beneficial or harmful are called ______.",
       "answer": "microbes",
-      "sourcePage": 330
+      "sourcePage": 330,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-002",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Which is a beneficial bacterial association with legume roots?",
-      "choices": [
-        "Root nodule bacteria",
-        "Disease-causing virus",
-        "Mold on bread",
-        "Parasitic protozoa"
-      ],
-      "answer": "Root nodule bacteria",
-      "sourcePage": 332
+      "text": "Specialized structures on roots of legumes that contain beneficial bacteria are root ______.",
+      "answer": "nodules",
+      "sourcePage": 331,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-003",
       "type": "reason",
-      "difficulty": "easy",
-      "text": "Give a reason: Root nodule bacteria are important to leguminous plants.",
-      "answer": "Because they help provide nitrogen compounds needed by the plant.",
-      "sourcePage": 333
+      "difficulty": "medium",
+      "text": "Give a reason: Root nodule bacteria are important for leguminous plants.",
+      "answer": "They convert nitrogen into nitrogenous compounds useful for plant growth.",
+      "sourcePage": 332,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-004",
-      "type": "mcq",
-      "difficulty": "easy",
-      "text": "Bacteria used in yogurt production include:",
-      "choices": [
-        "Lactobacillus",
-        "Plasmodium",
-        "Amoeba",
-        "Influenza virus"
-      ],
-      "answer": "Lactobacillus",
-      "sourcePage": 335
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Decomposition bacteria increase soil fertility.",
+      "answer": "They decompose dead legume roots into soluble nitrogenous compounds and recycle necessary elements.",
+      "sourcePage": 333,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-005",
-      "type": "true_false",
-      "difficulty": "medium",
-      "text": "Some microbes are beneficial while others are harmful.",
-      "answer": "True",
-      "sourcePage": 336
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which microbe is used in yogurt production?",
+      "choices": [
+        "Lactic acid bacteria",
+        "Salmonella typhi",
+        "Entamoeba histolytica",
+        "Root nodule bacteria"
+      ],
+      "answer": "Lactic acid bacteria",
+      "sourcePage": 334,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-006",
       "type": "mcq",
       "difficulty": "medium",
-      "text": "Fungi may be:",
+      "text": "Which fungus is used in Roquefort cheese production?",
       "choices": [
-        "unicellular or multicellular",
-        "always viruses",
-        "always plants",
-        "always bacteria"
+        "Penicillium roqueforti",
+        "Penicillium notatum",
+        "Yeast only",
+        "Salmonella typhi"
       ],
-      "answer": "unicellular or multicellular",
-      "sourcePage": 338
+      "answer": "Penicillium roqueforti",
+      "sourcePage": 335,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-007",
       "type": "mcq",
       "difficulty": "medium",
-      "text": "Protozoa are generally classified among:",
+      "text": "Penicillin is extracted from:",
       "choices": [
-        "eukaryotic microbes",
-        "prokaryotic bacteria",
-        "viruses only",
-        "plant tissues"
+        "Penicillium notatum",
+        "Penicillium roqueforti",
+        "Root nodule bacteria",
+        "Entamoeba histolytica"
       ],
-      "answer": "eukaryotic microbes",
-      "sourcePage": 339
+      "answer": "Penicillium notatum",
+      "sourcePage": 336,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-008",
-      "type": "true_false",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Viruses can reproduce independently outside living cells.",
-      "answer": "False",
-      "sourcePage": 340
+      "text": "Give a reason: Yeast fungus is useful to humans.",
+      "answer": "It is used in bread and ethyl alcohol production, is a source of vitamin B complex, and is rich in antioxidants.",
+      "sourcePage": 337,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-009",
-      "type": "reason",
+      "type": "problem",
       "difficulty": "medium",
-      "text": "Give a reason: Food should be stored properly.",
-      "answer": "To reduce contamination and growth of harmful microbes.",
-      "sourcePage": 342
+      "text": "What happens if yogurt is not refrigerated after preparation?",
+      "answer": "Lactic acid bacteria continue their action, producing more lactic acid and increasing acidity.",
+      "sourcePage": 338,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-010",
-      "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: Washing hands helps prevent disease.",
-      "answer": "Because it reduces transmission of harmful microbes.",
-      "sourcePage": 343
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What happens if food is left uncovered?",
+      "answer": "It may become contaminated with harmful microbes such as Salmonella typhi or Entamoeba histolytica.",
+      "sourcePage": 339,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-011",
-      "type": "compare",
-      "difficulty": "hard",
-      "text": "Compare beneficial and harmful microbes.",
-      "answer": "Beneficial microbes have useful roles such as food production or supporting plants; harmful microbes may cause disease or food spoilage.",
-      "sourcePage": 344
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What may happen if a person eats food contaminated with Salmonella typhi?",
+      "answer": "The person may develop typhoid disease.",
+      "sourcePage": 340,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
     },
     {
       "id": "s1-u3-l10-012",
-      "type": "true_false",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What may happen if a person eats food contaminated with Entamoeba histolytica?",
+      "answer": "The person may develop amoebic dysentery.",
+      "sourcePage": 341,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-013",
+      "type": "compare",
       "difficulty": "hard",
-      "text": "All bacteria are harmful to humans.",
+      "text": "Compare amoebic dysentery and typhoid disease in the causative microbe.",
+      "answer": "Amoebic dysentery is caused by Entamoeba histolytica, a unicellular eukaryotic protozoan parasite; typhoid is caused by Salmonella typhi, a prokaryotic bacterium.",
+      "sourcePage": 342,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-014",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare the usual habitat of Entamoeba histolytica and Salmonella typhi in a patient.",
+      "answer": "Entamoeba histolytica lives mainly in the large intestine; Salmonella typhi affects the digestive tract.",
+      "sourcePage": 343,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-015",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which is a beneficial prokaryotic microbe?",
+      "choices": [
+        "Root nodule bacteria",
+        "Entamoeba histolytica",
+        "Salmonella typhi",
+        "Penicillium roqueforti"
+      ],
+      "answer": "Root nodule bacteria",
+      "sourcePage": 344,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-016",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which is a beneficial eukaryotic microbe?",
+      "choices": [
+        "Yeast fungus",
+        "Salmonella typhi",
+        "Root nodule bacteria",
+        "Decomposition bacteria"
+      ],
+      "answer": "Yeast fungus",
+      "sourcePage": 345,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-017",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Farmers may leave roots of leguminous plants in the soil after harvesting.",
+      "answer": "Decomposition can convert them into soluble nitrogenous compounds, increasing soil fertility and recycling elements.",
+      "sourcePage": 346,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-018",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: A spoonful of previously prepared yogurt is added to milk when making yogurt.",
+      "answer": "It supplies lactic acid bacteria that convert lactose into lactic acid.",
+      "sourcePage": 347,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-019",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: A little sugar may be added to salt solution when making pickles.",
+      "answer": "Sugar can act as food for beneficial lactic acid bacteria, improving taste and preservation.",
+      "sourcePage": 348,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-020",
+      "type": "reason",
+      "difficulty": "easy",
+      "text": "Give a reason: Teeth should be brushed with a personal toothbrush after meals.",
+      "answer": "To reduce bacteria accumulated in the mouth and help prevent disease and bad breath.",
+      "sourcePage": 349,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-021",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The scientist associated with discovering penicillin is Alexander ______.",
+      "answer": "Fleming",
+      "sourcePage": 350,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-022",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "List three ways harmful microbes may enter the human body.",
+      "answer": "By breathing, by ingesting contaminated food, and by penetrating skin and reaching the bloodstream.",
+      "sourcePage": 350,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-023",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "All bacteria are harmful microbes.",
       "answer": "False",
-      "sourcePage": 345
+      "sourcePage": 350,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.143-147 / PDF 559-563"
+    },
+    {
+      "id": "s1-u3-l10-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: A student classifies all fungi as harmful. Correct the classification using two lesson examples.",
+      "answer": "The idea is wrong: Penicillium roqueforti and yeast are useful fungi; some fungi can be harmful, but not all fungi are harmful.",
+      "sourcePage": 350,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
