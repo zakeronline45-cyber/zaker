@@ -1,0 +1,121 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 4,
+  "unitTitle": "The (Earth - Sun - Moon) System",
+  "lesson": 12,
+  "lessonTitle": "Lunar Eclipse",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u4-l12-001",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The Moon revolves around the ______.",
+      "answer": "Earth",
+      "sourcePage": 385
+    },
+    {
+      "id": "s1-u4-l12-002",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "The Moon's rotation period is approximately equal to its revolution period around Earth.",
+      "answer": "True",
+      "sourcePage": 386
+    },
+    {
+      "id": "s1-u4-l12-003",
+      "type": "reason",
+      "difficulty": "easy",
+      "text": "Give a reason: We usually see the same face of the Moon from Earth.",
+      "answer": "Because the Moon's rotation period equals its revolution period around Earth.",
+      "sourcePage": 387
+    },
+    {
+      "id": "s1-u4-l12-004",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The changing shapes of the Moon seen from Earth are called Moon ______.",
+      "answer": "phases",
+      "sourcePage": 388
+    },
+    {
+      "id": "s1-u4-l12-005",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "The Moon is full when:",
+      "choices": [
+        "Earth is approximately between the Sun and Moon",
+        "Moon is between Sun and Earth",
+        "Sun is between Earth and Moon",
+        "Moon is at Earth's center"
+      ],
+      "answer": "Earth is approximately between the Sun and Moon",
+      "sourcePage": 390
+    },
+    {
+      "id": "s1-u4-l12-006",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "A lunar eclipse occurs when:",
+      "choices": [
+        "Earth comes between the Sun and the Moon",
+        "Moon comes between Earth and Sun",
+        "Sun comes between Earth and Moon",
+        "Moon stops rotating"
+      ],
+      "answer": "Earth comes between the Sun and the Moon",
+      "sourcePage": 394
+    },
+    {
+      "id": "s1-u4-l12-007",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "A lunar eclipse can occur at every full Moon.",
+      "answer": "False",
+      "sourcePage": 395
+    },
+    {
+      "id": "s1-u4-l12-008",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: A lunar eclipse does not occur every full Moon.",
+      "answer": "Because the Moon's orbit is tilted, so the Sun, Earth, and Moon are not perfectly aligned every full Moon.",
+      "sourcePage": 396
+    },
+    {
+      "id": "s1-u4-l12-009",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The darkest central part of a shadow is called the ______.",
+      "answer": "umbra",
+      "sourcePage": 398
+    },
+    {
+      "id": "s1-u4-l12-010",
+      "type": "complete",
+      "difficulty": "hard",
+      "text": "The lighter outer part of a shadow is called the ______.",
+      "answer": "penumbra",
+      "sourcePage": 398
+    },
+    {
+      "id": "s1-u4-l12-011",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare total and partial lunar eclipses.",
+      "answer": "A total lunar eclipse occurs when the Moon is completely inside Earth's umbra; a partial lunar eclipse occurs when only part of the Moon enters the umbra.",
+      "sourcePage": 400
+    },
+    {
+      "id": "s1-u4-l12-012",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: The Moon may appear reddish during a total lunar eclipse.",
+      "answer": "Because some sunlight is refracted and scattered through Earth's atmosphere and reaches the Moon, with red light passing more effectively.",
+      "sourcePage": 402
+    }
+  ]
+}
