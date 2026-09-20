@@ -29,19 +29,25 @@ export default async function handler(req,res){
    if(!ur.ok||!user?.id) return res.status(401).json({error:'الجلسة غير صالحة'});
 
    const subjectCount=Math.max(1,Math.min(Number(req.body?.subjectCount)||1,10));
-   const childIndex=Number(req.body?.childIndex)===2?2:1;
+   const childId=String(req.body?.childId||'').trim();
+   if(!childId) return res.status(400).json({error:'اختر الابن أولًا'});
+
+   const children=await rest('children?guardian_user_id=eq.'+user.id+'&is_active=eq.true&select=id,full_name,track,grade,created_at&order=created_at.asc',{token});
+   const idx=children.findIndex(x=>x.id===childId);
+   if(idx<0) return res.status(403).json({error:'هذا الابن غير تابع للحساب'});
+   const childIndex=idx+1;
    const amount=amountFor(subjectCount,childIndex);
    const reference=refCode();
 
    const subs=await rest('subscriptions',{method:'POST',token,prefer:'return=representation',body:{
-     user_id:user.id,plan_code:'single',status:'pending',amount_egp:amount
+     user_id:user.id,child_id:childId,plan_code:'single',status:'pending',amount_egp:amount
    }});
    const subscription=subs[0];
    const pays=await rest('payments',{method:'POST',token,prefer:'return=representation',body:{
-     user_id:user.id,subscription_id:subscription.id,provider:'bank',payment_method:'bank_transfer',
+     user_id:user.id,child_id:childId,subscription_id:subscription.id,provider:'bank',payment_method:'bank_transfer',
      plan_code:'subjects',amount_egp:amount,currency:'EGP',status:'pending',
      reference_code:reference,subject_count:subjectCount,child_index:childIndex
    }});
-   return res.status(200).json({payment:pays[0],reference_code:reference,amount});
+   return res.status(200).json({payment:pays[0],reference_code:reference,amount,child_index:childIndex,child_name:children[idx].full_name,discount_applied:childIndex===2});
  }catch(e){return res.status(500).json({error:e?.message||'تعذر إنشاء طلب التحويل'})}
 }
