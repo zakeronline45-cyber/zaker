@@ -2,59 +2,69 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ذاكر | ولي الأمر</title>
+<title>ذاكر | متابعة ولي الأمر</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
 :root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--r:#e85b66;--g:#19b887}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px}.wrap{max-width:1150px;margin:auto}.bar{display:flex;justify-content:space-between;align-items:center}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}a{text-decoration:none;color:inherit}.btn{padding:10px 14px;border-radius:10px;background:#eef3ff;color:var(--b);font-weight:800}
-main{max-width:1150px;margin:24px auto;padding:0 16px}.note{background:#fff8e8;border:1px solid #ffe2a6;padding:13px;border-radius:12px;margin-bottom:16px;color:#7f6323}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.kpi b{display:block;font-size:28px;color:var(--n)}.kpi span{color:var(--m);font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.rows{display:grid;gap:10px}.row{background:#f8faff;border-radius:12px;padding:13px}.weak{background:#fff2f2;border:1px solid #f6c8cc}.good{background:#effbf7;border:1px solid #c9ecdf}.qitem{border:1px solid var(--line);border-radius:12px;padding:13px;margin-top:10px}.qitem h4{margin:0 0 8px;direction:ltr;text-align:left}.ans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:9px}.ans div{padding:10px;border-radius:10px}.student{background:#fff4f4}.correct{background:#effbf7}.muted{color:var(--m);font-size:13px}.pill{display:inline-block;background:#edf3ff;color:var(--b);font-size:12px;font-weight:800;padding:4px 8px;border-radius:999px}.empty{text-align:center;color:var(--m);padding:30px}@media(max-width:850px){.kpis,.grid,.ans{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kpis,.grid,.ans{grid-template-columns:1fr}}</style>
-</head>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}button,select{font:inherit}a{text-decoration:none;color:inherit}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px}.wrap{max-width:1150px;margin:auto}.bar{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}.btn{padding:10px 14px;border-radius:10px;background:#eef3ff;color:var(--b);font-weight:800;border:0;cursor:pointer}
+main{max-width:1150px;margin:24px auto;padding:0 16px}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.toolbar select{padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.kpi b{display:block;font-size:28px;color:var(--n)}.kpi span{color:var(--m);font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.rows{display:grid;gap:10px}.row{background:#f8faff;border-radius:12px;padding:13px}.weak{background:#fff2f2;border:1px solid #f6c8cc}.good{background:#effbf7;border:1px solid #c9ecdf}.qitem{border:1px solid var(--line);border-radius:12px;padding:13px;margin-top:10px}.qitem h4{margin:0 0 8px;direction:ltr;text-align:left}.ans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:9px}.ans div{padding:10px;border-radius:10px}.student{background:#fff4f4}.correct{background:#effbf7}.muted{color:var(--m);font-size:13px}.pill{display:inline-block;background:#edf3ff;color:var(--b);font-size:12px;font-weight:800;padding:4px 8px;border-radius:999px}.empty{text-align:center;color:var(--m);padding:30px}@media(max-width:850px){.kpis,.grid,.ans{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kpis,.grid,.ans{grid-template-columns:1fr}.bar{align-items:flex-start;flex-direction:column}}
+</style></head>
 <body>
-<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>ولي الأمر</span></a><a class="btn" href="/">الرئيسية</a></div></header>
+<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>ولي الأمر</span></a><div><a class="btn" href="/account.html">حسابي</a> <button class="btn" onclick="logout()">خروج</button></div></div></header>
 <main>
-<div class="note">البيانات الحالية تُقرأ من الاختبارات التي تم حلها على نفس الجهاز. عند تفعيل الحسابات سننقل الحفظ إلى حساب الطالب ليظهر لولي الأمر من أي جهاز.</div>
-<h2>ملف الطالب الكامل</h2>
+<div class="toolbar"><b>متابعة:</b><select id="childSelect" onchange="loadDashboard()"></select><a class="btn" href="/subscribe.html">الاشتراكات</a></div>
+<h2 id="childTitle">ملف الطالب</h2>
 <div class="kpis">
  <div class="card kpi"><span>عدد الاختبارات</span><b id="testsCount">0</b></div>
  <div class="card kpi"><span>متوسط الاختبارات</span><b id="avgScore">—</b></div>
  <div class="card kpi"><span>الدروس التي زارها</span><b id="lessonsSeen">0</b></div>
- <div class="card kpi"><span>نقاط تحتاج مراجعة</span><b id="weakTotal">0</b></div>
+ <div class="card kpi"><span>إجابات تحتاج مراجعة</span><b id="weakTotal">0</b></div>
 </div>
 <div class="grid">
  <section class="card"><h3>آخر الاختبارات</h3><div id="recentTests" class="rows"></div><h4>آخر النشاطات</h4><div id="activityList" class="rows"></div></section>
  <section class="card"><h3>تحليل ذاكر</h3><div id="analysisBox"></div><div id="reviewPlan" style="margin-top:12px"></div></section>
 </div>
-<section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">نفس تفاصيل الاختبار التي يراها الطالب بعد انتهاء الاختبار محفوظة هنا للمتابعة.</p><div id="wrongAnswers"></div></section>
+<section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">السؤال، إجابة الطالب، الإجابة الصحيحة، والشرح المبسط فقط — بدون مراجع صفحات.</p><div id="wrongAnswers"></div></section>
 </main>
 <script>
-const results=JSON.parse(localStorage.getItem('zaker_results')||'[]');
-const lessonsSeen=JSON.parse(localStorage.getItem('zaker_lessons_seen')||'[]');
-const activity=JSON.parse(localStorage.getItem('zaker_activity')||'[]');
-document.getElementById('lessonsSeen').textContent=lessonsSeen.length;
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let session=null,children=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-document.getElementById('testsCount').textContent=results.length;
-if(results.length){
- const avg=Math.round(results.reduce((a,r)=>a+(r.pct||0),0)/results.length);
- const all=results.flatMap(r=>r.answers||[]);
- const correct=all.filter(a=>a.correct).length,wrong=all.filter(a=>!a.correct);
- document.getElementById('avgScore').textContent=avg+'%';
- document.getElementById('correctTotal').textContent=correct;
- document.getElementById('weakTotal').textContent=wrong.length;
- document.getElementById('recentTests').innerHTML=results.slice(0,6).map(r=>'<div class="row"><div><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('ar-EG')+'</div></div><div style="font-size:22px;font-weight:900;color:'+(r.pct>=70?'#168369':'#d95a63')+'">'+r.pct+'%</div></div>').join('');
- document.getElementById('activityList').innerHTML=activity.slice(0,8).map(a=>'<div class="row"><div><b>'+(a.type==='test'?'اختبار':'درس')+'</b><div class="muted">'+esc(a.lessonTitle||'')+' — '+new Date(a.date).toLocaleString('ar-EG')+'</div></div>'+(a.pct!=null?'<b>'+a.pct+'%</b>':'')+'</div>').join('')||'<div class="empty">لا يوجد نشاط مسجل.</div>';
- const weakByLesson={};wrong.forEach(a=>weakByLesson[a.lessonTitle]=(weakByLesson[a.lessonTitle]||0)+1);
- const sorted=Object.entries(weakByLesson).sort((a,b)=>b[1]-a[1]);
- document.getElementById('analysisBox').innerHTML=sorted.length?'<div class="weak row"><div><b>أكثر درس يحتاج مراجعة</b><div class="muted">'+esc(sorted[0][0])+'</div></div><b>'+sorted[0][1]+' أخطاء</b></div><div class="good row"><div><b>التوصية</b><div class="muted">راجع شرح '+esc(sorted[0][0])+' ثم أعد اختبارًا جديدًا بعد المراجعة.</div></div></div>':'<div class="good row">لا توجد أخطاء مسجلة حتى الآن.</div>';
- const latestFeedback=results.find(r=>r.feedback)?.feedback;
- if(latestFeedback){
-   const topics=(latestFeedback.topics||[]).map(t=>'<div class="row"><div><b>'+esc(t.topic||'مفهوم يحتاج مراجعة')+'</b><div class="muted">'+esc(t.explanation||'')+(t.page?' — صفحة '+t.page:'')+'</div></div></div>').join('');
-   const plan=(latestFeedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
-   document.getElementById('reviewPlan').innerHTML='<h4>تقرير آخر اختبار</h4>'+topics+(plan?'<div class="good row"><div><b>خطة المراجعة</b><ol style="margin:8px 0 0;padding-right:20px">'+plan+'</ol></div></div>':'');
- }
- document.getElementById('wrongAnswers').innerHTML=wrong.length?wrong.slice(0,30).map(a=>'<div class="qitem"><span class="pill">'+esc(a.lessonTitle)+'</span><h4>'+esc(a.question)+'</h4><div class="ans"><div class="student"><b>إجابة الطالب</b><p>'+esc(a.studentAnswer)+'</p></div><div class="correct"><b>الإجابة الصحيحة</b><p>'+esc(a.correctAnswer)+'</p></div></div><div class="muted">صفحة المصدر: '+(a.sourcePage||'—')+'</div></div>').join(''):'<div class="empty">لا توجد إجابات خاطئة مسجلة.</div>';
-}else{
- document.getElementById('recentTests').innerHTML='<div class="empty">لم يُحل أي اختبار بعد.</div>'; document.getElementById('activityList').innerHTML=activity.slice(0,8).map(a=>'<div class="row"><div><b>'+(a.type==='test'?'اختبار':'درس')+'</b><div class="muted">'+esc(a.lessonTitle||'')+' — '+new Date(a.date).toLocaleString('ar-EG')+'</div></div></div>').join('')||'<div class="empty">لا يوجد نشاط مسجل.</div>';
- document.getElementById('analysisBox').innerHTML='<div class="empty">التحليل سيظهر بعد أول اختبار.</div>'; document.getElementById('reviewPlan').innerHTML='';
- document.getElementById('wrongAnswers').innerHTML='<div class="empty">لا توجد بيانات حتى الآن.</div>';
+const gradeName=x=>({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
+
+async function init(){
+ const s=await sb.auth.getSession();session=s.data.session;
+ if(!session){location.href='/login.html?next=/parent.html';return}
+ const {data,error}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
+ if(error){document.body.innerHTML='<main><div class="card">'+esc(error.message)+'</div></main>';return}
+ children=data||[];
+ if(!children.length){location.href='/account.html';return}
+ childSelect.innerHTML=children.map(x=>'<option value="'+x.id+'">'+esc(x.full_name)+' — '+gradeName(x.grade)+' — '+(x.track==='arabic'?'عربي':'لغات')+'</option>').join('');
+ const requested=new URLSearchParams(location.search).get('child');
+ if(requested&&children.some(x=>x.id===requested))childSelect.value=requested;
+ await loadDashboard();
 }
-</script>
-</body></html>
+async function loadDashboard(){
+ const id=childSelect.value,ch=children.find(x=>x.id===id);
+ childTitle.textContent='متابعة '+(ch?.full_name||'الطالب');
+ const {data,error}=await sb.rpc('get_child_dashboard',{p_child_id:id});
+ if(error){analysisBox.innerHTML='<div class="empty">'+esc(error.message)+'</div>';return}
+ const results=data?.tests||[],activity=data?.activity||[],lessons=data?.lessons||[];
+ const all=results.flatMap(r=>r.answers||[]),wrong=all.filter(x=>!x.correct);
+ testsCount.textContent=results.length;
+ avgScore.textContent=results.length?Math.round(results.reduce((a,r)=>a+Number(r.pct||0),0)/results.length)+'%':'—';
+ lessonsSeen.textContent=lessons.length;weakTotal.textContent=wrong.length;
+ recentTests.innerHTML=results.length?results.slice(0,8).map(r=>'<div class="row"><b>'+esc(r.lesson_title||r.subject)+'</b><div class="muted">'+new Date(r.created_at).toLocaleString('ar-EG')+'</div><div style="font-size:21px;font-weight:900">'+r.pct+'%</div></div>').join(''):'<div class="empty">لا توجد اختبارات بعد.</div>';
+ activityList.innerHTML=activity.length?activity.slice(0,10).map(a=>'<div class="row"><b>'+(a.activity_type==='test'?'اختبار':'درس')+'</b><div class="muted">'+esc(a.lesson_title||'')+' — '+new Date(a.created_at).toLocaleString('ar-EG')+'</div>'+(a.pct!=null?'<b>'+a.pct+'%</b>':'')+'</div>').join(''):'<div class="empty">لا يوجد نشاط بعد.</div>';
+ const weakBy={};wrong.forEach(x=>weakBy[x.lessonTitle||x.lesson_title||'غير محدد']=(weakBy[x.lessonTitle||x.lesson_title||'غير محدد']||0)+1);
+ const sorted=Object.entries(weakBy).sort((a,b)=>b[1]-a[1]);
+ analysisBox.innerHTML=sorted.length?'<div class="weak row"><b>أكثر درس يحتاج مراجعة</b><div>'+esc(sorted[0][0])+' — '+sorted[0][1]+' أخطاء</div></div>':'<div class="good row">لا توجد أخطاء مسجلة حتى الآن.</div>';
+ const latest=results.find(r=>r.feedback&&Object.keys(r.feedback).length)?.feedback;
+ reviewPlan.innerHTML=latest?.plan?.length?'<h4>خطة المراجعة الحالية</h4><div class="good row"><ol>'+latest.plan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>':'';
+ wrongAnswers.innerHTML=wrong.length?wrong.slice(0,40).map(a=>'<div class="qitem"><span class="pill">'+esc(a.lessonTitle||a.lesson_title||'Science')+'</span><h4>'+esc(a.question)+'</h4><div class="ans"><div class="student"><b>إجابة الطالب</b><p>'+esc(a.studentAnswer)+'</p></div><div class="correct"><b>الإجابة الصحيحة</b><p>'+esc(a.correctAnswer)+'</p></div></div></div>').join(''):'<div class="empty">لا توجد إجابات خاطئة مسجلة.</div>';
+}
+async function logout(){await sb.auth.signOut();location.href='/login.html'}
+init();
+</script></body></html>
