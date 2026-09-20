@@ -1,0 +1,133 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 2,
+  "unitTitle": "Force Fields",
+  "lesson": 7,
+  "lessonTitle": "Gravitational Forces",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u2-l7-001",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Gravitational force is classified as a:",
+      "choices": [
+        "field force",
+        "contact force",
+        "friction force only",
+        "collision force"
+      ],
+      "answer": "field force",
+      "sourcePage": 234
+    },
+    {
+      "id": "s1-u2-l7-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Friction force is classified as a:",
+      "choices": [
+        "contact force",
+        "field force",
+        "gravitational force",
+        "magnetic field force"
+      ],
+      "answer": "contact force",
+      "sourcePage": 235
+    },
+    {
+      "id": "s1-u2-l7-003",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The scientist associated with explaining gravitational attraction is Isaac ______.",
+      "answer": "Newton",
+      "sourcePage": 236
+    },
+    {
+      "id": "s1-u2-l7-004",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Earth attracts objects toward its center.",
+      "answer": "True",
+      "sourcePage": 237
+    },
+    {
+      "id": "s1-u2-l7-005",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The force by which Earth attracts objects toward its center is called ______ force.",
+      "answer": "gravitational",
+      "sourcePage": 238
+    },
+    {
+      "id": "s1-u2-l7-006",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare mass and weight.",
+      "answer": "Mass is the amount of matter in an object and is nearly constant; weight is the gravitational force acting on the object and can change with gravity.",
+      "sourcePage": 240
+    },
+    {
+      "id": "s1-u2-l7-007",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: An object's weight can change from one place to another.",
+      "answer": "Because gravitational field strength can change from one place to another.",
+      "sourcePage": 242
+    },
+    {
+      "id": "s1-u2-l7-008",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "An object's mass becomes zero in space.",
+      "answer": "False",
+      "sourcePage": 243
+    },
+    {
+      "id": "s1-u2-l7-009",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "When the distance between two objects increases, gravitational attraction generally:",
+      "choices": [
+        "decreases",
+        "increases",
+        "becomes infinite",
+        "does not depend on distance"
+      ],
+      "answer": "decreases",
+      "sourcePage": 245
+    },
+    {
+      "id": "s1-u2-l7-010",
+      "type": "mcq",
+      "difficulty": "hard",
+      "text": "When the masses of attracting objects increase, gravitational force generally:",
+      "choices": [
+        "increases",
+        "decreases",
+        "disappears",
+        "becomes zero"
+      ],
+      "answer": "increases",
+      "sourcePage": 246
+    },
+    {
+      "id": "s1-u2-l7-011",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Objects fall toward Earth when released.",
+      "answer": "Because Earth's gravitational force attracts them toward its center.",
+      "sourcePage": 248
+    },
+    {
+      "id": "s1-u2-l7-012",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "Electric, magnetic, and gravitational forces can act at a distance.",
+      "answer": "True",
+      "sourcePage": 250
+    }
+  ]
+}
