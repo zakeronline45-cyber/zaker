@@ -30,6 +30,7 @@ export default async function handler(req,res){
 
    const subjectCount=Math.max(1,Math.min(Number(req.body?.subjectCount)||1,10));
    const childId=String(req.body?.childId||'').trim();
+   const subjects=Array.isArray(req.body?.subjects)?req.body.subjects.map(x=>String(x).trim()).filter(Boolean):[];
    if(!childId) return res.status(400).json({error:'اختر الابن أولًا'});
 
    const children=await rest('children?guardian_user_id=eq.'+user.id+'&is_active=eq.true&select=id,full_name,track,grade,created_at&order=created_at.asc',{token});
@@ -40,7 +41,8 @@ export default async function handler(req,res){
    const result=await rest('rpc/create_bank_transfer_order',{method:'POST',token,body:{
      p_child_id:childId,
      p_subject_count:subjectCount,
-     p_reference_code:reference
+     p_reference_code:reference,
+     p_subjects:subjects
    }});
 
    return res.status(200).json({
