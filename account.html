@@ -74,6 +74,7 @@ async function loadChildren(){
     <div class="sub">${activeSub?'<span class="ok">اشتراك نشط</span> — '+(activeSub.access_source==='paid'?(activeSub.amount_egp+' جنيه'):(activeSub.access_source==='promo_code'?'كود دعائي'+(activeSub.campaign_code?' '+activeSub.campaign_code:''):'اشتراك دعائي مجاني'))+' — '+activeSub.subject_count+' مادة — حتى '+new Date(activeSub.ends_at).toLocaleDateString('ar-EG'):'<span class="bad">لا يوجد اشتراك نشط</span>'}</div>
     <div class="actions">
       <button class="btn primary" onclick="openChild('${ch.id}')">دخول ملف الطالب</button>
+      <a class="btn soft" href="/parent.html?child=${ch.id}">متابعة الأداء</a>
       <a class="btn soft" href="/subscribe.html?child=${ch.id}">الاشتراك / التجديد</a>
       <button class="btn soft" onclick="editChild('${ch.id}')">تعديل</button>
       <button class="btn danger" onclick="removeChild('${ch.id}')">حذف</button>
