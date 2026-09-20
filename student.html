@@ -368,7 +368,7 @@ const explanations={
 12:`<h3>Lunar Eclipse — خسوف القمر</h3><div class="ar"><b>بالعربي:</b> يدور القمر حول الأرض ويدور حول محوره في مدة متقاربة، لذلك نرى غالبًا نفس الوجه. أطوار القمر هي الأشكال المختلفة التي نراه بها أثناء دورانه حول الأرض.</div><div class="en"><b>English:</b> The Moon revolves around Earth and rotates on its axis in approximately the same period, so we usually see the same face. Moon phases are the changing shapes seen from Earth.</div><div class="ar">يحدث خسوف القمر عندما تقع الأرض بين الشمس والقمر ويعبر القمر في ظل الأرض. الخسوف الكلي يحدث عندما يدخل القمر بالكامل في منطقة الظل التام Umbra.</div><div class="en">A lunar eclipse occurs when Earth is between the Sun and the Moon and the Moon moves into Earth's shadow. A total lunar eclipse occurs when the Moon is completely inside the umbra.</div>`
 };
 let lesson=1,bank=null,test=[],idx=0,answers=[],selectedChoice=null,testScopeLabel='اختبار '+titles[1],testLessons=[1];
-let questionTimer=null,secondsLeft=90,lastPrintableReport=null;
+let lastPrintableReport=null;
 function renderObjectives(n){
  document.getElementById('lessonObjectives').innerHTML='<h3>الأهداف المستهدفة من الدرس</h3><ul>'+objectives[n].map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
  document.getElementById('lessonKeyTerms').innerHTML=(keyTerms[n]||[]).map(x=>'<span class="keyterm">'+esc(x)+'</span>').join('');
@@ -380,7 +380,7 @@ document.getElementById('lessonExplain').innerHTML=explanations[1];renderObjecti
 document.querySelectorAll('.lesson[data-lesson]').forEach(b=>b.onclick=async()=>{document.querySelectorAll('.lesson').forEach(x=>x.classList.remove('active'));b.classList.add('active');lesson=Number(b.dataset.lesson);bank=null;logLessonVisit(lesson);document.getElementById('lessonTitle').textContent=titles[lesson];const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;renderObjectives(lesson);document.getElementById('lessonExplain').innerHTML=explanations[lesson];document.getElementById('lessonNo').textContent=lesson+' / 12';resetTest();await loadBank()});
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.pane').forEach(x=>x.classList.remove('active'));document.getElementById('pane-'+b.dataset.pane).classList.add('active');if(b.dataset.pane==='profile')renderProfile()});
 async function loadBank(){try{const r=await fetch('/content/questions/science-term1-u1-l'+lesson+'.json',{cache:'no-store'});if(!r.ok)throw 0;bank=await r.json();document.getElementById('questionCount').textContent=bank.questions.length}catch(e){document.getElementById('questionCount').textContent='—'}}
-function resetTest(){clearInterval(questionTimer);document.getElementById('testStart').style.display='block';document.getElementById('testArea').style.display='none';document.getElementById('testArea').innerHTML='';test=[];idx=0;answers=[]}
+function resetTest(){document.getElementById('testStart').style.display='block';document.getElementById('testArea').style.display='none';document.getElementById('testArea').innerHTML='';test=[];idx=0;answers=[]}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 async function startTest(){
  if(!bank)await loadBank();if(!bank?.questions?.length)return;
@@ -407,32 +407,18 @@ async function startSelectedTest(){
  if(!lessons.length){alert('اختار درس واحد على الأقل');return}
  await startMultiTest(lessons,'امتحان مخصص: '+lessons.map(n=>'Lesson '+n).join(' + '),20)
 }
-function startQuestionTimer(){
- clearInterval(questionTimer);secondsLeft=90;
- const update=()=>{const el=document.getElementById('questionTimerValue');if(el)el.textContent=secondsLeft;const ring=document.getElementById('timerProgress');if(ring)ring.style.width=((secondsLeft/90)*100)+'%'};
- update();
- questionTimer=setInterval(()=>{secondsLeft--;update();if(secondsLeft<=0){clearInterval(questionTimer);timeUp()}},1000);
-}
-function timeUp(){
- const q=test[idx];
- answers.push({lesson:q.lesson||lesson,lessonTitle:titles[q.lesson||lesson],questionId:q.id,type:q.type,question:q.text,studentAnswer:'',correctAnswer:q.answer,correct:false,timedOut:true});
- idx++;
- if(idx<test.length)renderQuestion();else finishTest();
-}
 function renderQuestion(){
  const q=test[idx],a=document.getElementById('testArea');selectedChoice=null;let input='';
  if(q.type==='mcq'){input=q.choices.map(c=>'<button class="choice" data-value="'+esc(c)+'" onclick="pickChoice(this)">'+esc(c)+'</button>').join('')}
  else if(q.type==='true_false'){input='<button class="choice" data-value="True" onclick="pickChoice(this)">True</button><button class="choice" data-value="False" onclick="pickChoice(this)">False</button>'}
  else input='<textarea id="writtenAnswer" class="textanswer" placeholder="اكتب إجابتك هنا..."></textarea>';
- a.innerHTML='<div class="testhead"><b>'+esc(testScopeLabel)+'</b><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn soft" onclick="printExam()">🖨️ طباعة الامتحان</button><div class="question-timer">⏱️ <b id="questionTimerValue">90</b> ثانية</div><span>السؤال '+(idx+1)+' من '+test.length+'</span></div></div><div class="progress"><i style="width:'+(((idx)/test.length)*100)+'%"></i></div><div style="height:6px;background:#ffe4e4;border-radius:99px;margin:10px 0;overflow:hidden"><i id="timerProgress" style="display:block;height:100%;background:#ff6b6b;width:100%"></i></div><div class="qbox"><span class="pill">'+label(q.type)+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button class="btn primary" style="margin-top:12px" onclick="submitAnswer()">إرسال الإجابة</button><div id="submitMsg"></div></div>';
- startQuestionTimer();
+ a.innerHTML='<div class="testhead"><b>'+esc(testScopeLabel)+'</b><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn soft" onclick="printExam()">🖨️ طباعة الامتحان</button><span>السؤال '+(idx+1)+' من '+test.length+'</span></div></div><div class="progress"><i style="width:'+(((idx)/test.length)*100)+'%"></i></div><div class="qbox"><span class="pill">'+label(q.type)+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button class="btn primary" style="margin-top:12px" onclick="submitAnswer()">إرسال الإجابة</button><div id="submitMsg"></div></div>';
 }
 function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');selectedChoice=el.dataset.value}
 async function submitAnswer(){
  const q=test[idx];let studentAnswer=selectedChoice;
  if(!['mcq','true_false'].includes(q.type))studentAnswer=document.getElementById('writtenAnswer')?.value.trim();
  if(!studentAnswer){document.getElementById('submitMsg').innerHTML='<div class="status danger">اكتب أو اختر إجابة أولًا.</div>';return}
- clearInterval(questionTimer);
  document.querySelectorAll('button,textarea').forEach(x=>{if(x.closest('#testArea'))x.disabled=true});
  document.getElementById('submitMsg').innerHTML='<div class="submitted">تم تسجيل إجابتك... جاري الانتقال للسؤال التالي.</div>';
  let correct=false;
@@ -441,7 +427,6 @@ async function submitAnswer(){
  setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},450)
 }
 async function finishTest(){
- clearInterval(questionTimer);
  const score=answers.filter(x=>x.correct).length,total=answers.length,pct=Math.round(score/total*100),wrong=answers.filter(x=>!x.correct);
  document.getElementById('lastScore').textContent=pct+'%';
  document.getElementById('testArea').innerHTML='<div class="result"><p>انتهى الاختبار</p><b>'+pct+'%</b><p>جاري تحليل أخطائك وتحديد ما تحتاج لمراجعته...</p></div>';
@@ -486,7 +471,7 @@ function printExam(){
    else answerArea='<div class="answer-lines"></div>';
    return '<section class="q"><h3>Question '+(i+1)+': '+esc(q.text)+'</h3>'+answerArea+'</section>';
  }).join('');
- const html='<div class="head"><div class="brand">ذاكر — '+esc(testScopeLabel)+'</div><div class="meta"><div><b>اسم الطالب:</b> '+esc(student)+'</div><div><b>المادة:</b> Science</div><div><b>عدد الأسئلة:</b> '+test.length+'</div><div><b>الزمن الإلكتروني:</b> 90 ثانية لكل سؤال</div><div><b>التاريخ:</b> '+new Date().toLocaleDateString('ar-EG')+'</div><div><b>الدرجة:</b> ____ / '+test.length+'</div></div></div>'+questions;
+ const html='<div class="head"><div class="brand">ذاكر — '+esc(testScopeLabel)+'</div><div class="meta"><div><b>اسم الطالب:</b> '+esc(student)+'</div><div><b>المادة:</b> Science</div><div><b>عدد الأسئلة:</b> '+test.length+'</div><div><b>الزمن:</b> مفتوح</div><div><b>التاريخ:</b> '+new Date().toLocaleDateString('ar-EG')+'</div><div><b>الدرجة:</b> ____ / '+test.length+'</div></div></div>'+questions;
  openPrintWindow('امتحان ذاكر - '+testScopeLabel,html);
 }
 function printReport(){
@@ -603,7 +588,7 @@ function aiExplainLesson(){toggleAiGuide();setPane('ai');const i=document.getEle
 function goToTests(){if(document.getElementById('aiGuide').classList.contains('open'))toggleAiGuide();setPane('test')}
 function showProfilePane(){if(document.getElementById('aiGuide').classList.contains('open'))toggleAiGuide();setPane('profile')}
 function showSiteHelp(){
- const box=document.getElementById('floatingAiAnswer');box.style.display='block';box.innerHTML='<b>أقدر أدلك بسرعة:</b><br>📖 اختار الدرس من القائمة.<br>📝 افتح الاختبارات لبدء اختبار 90 ثانية لكل سؤال.<br>⭐ افتح ملفي لمتابعة تقدمك.<br>🤖 اسألني عن أي نقطة في درس Science الحالي.';
+ const box=document.getElementById('floatingAiAnswer');box.style.display='block';box.innerHTML='<b>أقدر أدلك بسرعة:</b><br>📖 اختار الدرس من القائمة.<br>📝 افتح الاختبارات وابدأ الحل من غير وقت محدد.<br>⭐ افتح ملفي لمتابعة تقدمك.<br>🤖 اسألني عن أي نقطة في درس Science الحالي.';
 }
 async function askFloatingAI(){
  const q=document.getElementById('floatingAiQuestion').value.trim(),a=document.getElementById('floatingAiAnswer');if(!q)return;
