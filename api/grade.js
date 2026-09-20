@@ -10,13 +10,19 @@ export default async function handler(req,res){
     const bank=await r.json();
     const q=bank.questions?.find(x=>x.id===id);
     if(!q) return res.status(404).json({error:'السؤال غير موجود'});
-    const normalize=s=>String(s??'').trim().toLowerCase().replace(/\s+/g,' ').replace(/[.,;:!?]/g,'');
+    const normalize=s=>String(s??'')
+      .trim()
+      .toLowerCase()
+      .replace(/[<>=,;:!?|/\\()\[\]{}\-–—]+/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+    const tokenList=s=>normalize(s).split(' ').filter(Boolean);
     let correct=false;
     if(['mcq','true_false','complete'].includes(q.type)){
       const a=normalize(studentAnswer), b=normalize(q.answer);
-      if(q.type==='complete' && b.includes(';')){
-        const parts=b.split(';').map(normalize).filter(Boolean);
-        correct=parts.every(p=>a.includes(p));
+      if(q.type==='complete'){
+        const at=tokenList(studentAnswer), bt=tokenList(q.answer);
+        correct=a===b || (at.length===bt.length && at.every((t,i)=>t===bt[i]));
       }else correct=a===b;
     }else{
       const key=process.env.OPENAI_API_KEY;
@@ -28,7 +34,7 @@ export default async function handler(req,res){
           headers:{'Authorization':`Bearer ${key}`,'Content-Type':'application/json'},
           body:JSON.stringify({
             model:'gpt-5.6-luna',
-            instructions:'You are grading a first-prep science answer. Compare the student answer to the reference answer. Return only CORRECT or INCORRECT. Accept equivalent wording and correct scientific meaning. Do not be overly strict about grammar or spelling.',
+            instructions:'You are grading a first-prep science answer. Compare the student answer to the reference answer. Return only CORRECT or INCORRECT. Grade scientific meaning, not punctuation, separators, formatting, grammar, or spelling. Treat equivalent lists and equivalent wording as correct when the content is correct. Do not mark an answer wrong merely because commas, <, >, slashes, dashes, or other separators were used differently.',
             input:`Question: ${q.text}\nReference answer: ${q.answer}\nStudent answer: ${studentAnswer||''}`
           })
         });
