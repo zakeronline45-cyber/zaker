@@ -1,0 +1,127 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 2,
+  "unitTitle": "Force Fields",
+  "lesson": 6,
+  "lessonTitle": "Magnetic Forces",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u2-l6-001",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "A natural magnetic material is:",
+      "choices": [
+        "Magnetite",
+        "Copper",
+        "Aluminum",
+        "Glass"
+      ],
+      "answer": "Magnetite",
+      "sourcePage": 209
+    },
+    {
+      "id": "s1-u2-l6-002",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Every magnet has two poles called ______ and ______.",
+      "answer": "north; south",
+      "sourcePage": 210
+    },
+    {
+      "id": "s1-u2-l6-003",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Like magnetic poles repel each other.",
+      "answer": "True",
+      "sourcePage": 212
+    },
+    {
+      "id": "s1-u2-l6-004",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Unlike magnetic poles repel each other.",
+      "answer": "False",
+      "sourcePage": 212
+    },
+    {
+      "id": "s1-u2-l6-005",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Iron is attracted to a magnet.",
+      "answer": "Because iron is a magnetic material.",
+      "sourcePage": 214
+    },
+    {
+      "id": "s1-u2-l6-006",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which material is non-magnetic?",
+      "choices": [
+        "Copper",
+        "Iron",
+        "Nickel",
+        "Cobalt"
+      ],
+      "answer": "Copper",
+      "sourcePage": 214
+    },
+    {
+      "id": "s1-u2-l6-007",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The region around a magnet where magnetic force can be detected is called the magnetic ______.",
+      "answer": "field",
+      "sourcePage": 216
+    },
+    {
+      "id": "s1-u2-l6-008",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Magnetic field lines are crowded near the poles.",
+      "answer": "Because the magnetic field is stronger near the poles.",
+      "sourcePage": 217
+    },
+    {
+      "id": "s1-u2-l6-009",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Magnetic field lines form closed curves around a magnet.",
+      "answer": "True",
+      "sourcePage": 218
+    },
+    {
+      "id": "s1-u2-l6-010",
+      "type": "mcq",
+      "difficulty": "hard",
+      "text": "A freely suspended magnet points approximately in the:",
+      "choices": [
+        "north-south direction",
+        "east-west direction",
+        "vertical direction",
+        "random direction"
+      ],
+      "answer": "north-south direction",
+      "sourcePage": 220
+    },
+    {
+      "id": "s1-u2-l6-011",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: A compass can be used to find direction.",
+      "answer": "Because its magnetic needle aligns with Earth's magnetic field.",
+      "sourcePage": 221
+    },
+    {
+      "id": "s1-u2-l6-012",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare natural magnets and artificial magnets.",
+      "answer": "Natural magnets occur in nature such as magnetite; artificial magnets are made by humans in different shapes and uses.",
+      "sourcePage": 222
+    }
+  ]
+}
