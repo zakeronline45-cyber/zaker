@@ -21,12 +21,12 @@ main{max-width:1200px;margin:22px auto;padding:0 16px}.grid{display:grid;grid-te
 <button class="lesson" disabled>4. Chemical Bonds — قريبًا</button>
 </aside>
 <section class="card content">
-<div class="hero"><span class="pill">أولى إعدادي لغات</span><h2 id="lessonTitle">Structure of the Atom</h2><p class="muted">شرح عربي + English، مدرس AI، واختبار حقيقي بدون كشف الإجابات للطالب.</p></div>
+<div class="hero"><span class="pill">أولى إعدادي لغات</span><h2 id="lessonTitle">Structure of the Atom</h2><p class="muted">شرح عربي + English، مدرس AI، واختبار حقيقي مع مراجعة الأخطاء والإجابات الصحيحة بعد نهاية الاختبار.</p></div>
 <div class="tabs"><button class="tab active" data-pane="explain">الشرح</button><button class="tab" data-pane="ai">اسأل مدرس ذاكر</button><button class="tab" data-pane="test">الاختبارات</button></div>
 <div class="pane active explain" id="pane-explain"><div id="lessonExplain"></div></div>
 <div class="pane" id="pane-ai"><div class="status">اسأل عن الدرس الحالي، ومدرس ذاكر يشرح بالعربي والإنجليزي معًا.</div><div class="chat"><input id="aiQuestion" placeholder="اكتب سؤالك هنا"><button class="btn primary" onclick="askAI()">اسأل</button></div><div id="aiAnswer" class="answer" style="display:none"></div></div>
 <div class="pane" id="pane-test">
-<div id="testStart"><div class="status">الاختبار 10 أسئلة عشوائية من الدرس الحالي. الإجابات الصحيحة لا تظهر للطالب.</div><button class="btn primary" onclick="startTest()">ابدأ اختبار الدرس</button></div>
+<div id="testStart"><div class="status">الاختبار 10 أسئلة عشوائية من الدرس الحالي. أثناء الاختبار لن تظهر الحلول، وبعد النهاية ستظهر الإجابة الصحيحة وشرح الخطأ.</div><button class="btn primary" onclick="startTest()">ابدأ اختبار الدرس</button></div>
 <div id="testArea" style="display:none"></div>
 </div>
 </section>
@@ -69,7 +69,7 @@ async function finishTest(){
  }catch(e){}
  const record={subject:'Science',unit:'Unit 1: The Matter',lesson,lessonTitle:titles[lesson],score,total,pct,date:new Date().toISOString(),answers,feedback};
  const old=JSON.parse(localStorage.getItem('zaker_results')||'[]');old.unshift(record);localStorage.setItem('zaker_results',JSON.stringify(old.slice(0,50)));
- const topics=(feedback.topics||[]).map(t=>'<div class="feedback-item"><h4>'+esc(t.topic||'مفهوم يحتاج مراجعة')+'</h4><div>'+esc(t.explanation||'راجع هذا المفهوم مرة أخرى.')+'</div>'+(t.page?'<div class="muted" style="margin-top:6px">راجع صفحة '+t.page+' من مصدر الدرس</div>':'')+'</div>').join('');
+ const topics=(feedback.topics||[]).map(t=>'<div class="feedback-item"><h4>'+esc(t.topic||'مفهوم يحتاج مراجعة')+'</h4><div><b>شرح الخطأ:</b> '+esc(t.explanation||'راجع هذا المفهوم مرة أخرى.')+'</div><div class="submitted" style="margin-top:8px"><b>الإجابة الصحيحة:</b> '+esc(t.correctAnswer||'—')+'</div>'+(t.page?'<div class="muted" style="margin-top:6px">راجع صفحة '+t.page+' من مصدر الدرس</div>':'')+'</div>').join('');
  const plan=(feedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
  document.getElementById('testArea').innerHTML='<div class="result"><p>نتيجتك</p><b>'+pct+'%</b><p>'+esc(feedback.summary||'راجع أخطاءك ثم أعد الاختبار.')+'</p></div>'+
  (wrong.length?'<div class="feedback-grid"><h3>إيه اللي محتاج تفهمه وتراجعه؟</h3>'+topics+'</div>':'<div class="submitted">ممتاز، مفيش أخطاء محتاجة مراجعة في الاختبار ده.</div>')+
