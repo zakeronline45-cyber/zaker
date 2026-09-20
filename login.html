@@ -25,12 +25,14 @@ main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-
   </form>
 
   <form id="signupForm" class="form" style="display:none" onsubmit="signup(event)">
-    <h2>اعمل حساب طالب</h2>
-    <div class="field"><label>اسم الطالب</label><input id="fullName" required></div>
+    <h2>اعمل حساب ولي أمر</h2>
+    <div class="field"><label>اسم ولي الأمر</label><input id="guardianName" required></div>
     <div class="field"><label>البريد الإلكتروني</label><input id="signupEmail" type="email" required autocomplete="email"></div>
     <div class="field"><label>رقم الموبايل</label><input id="phone" type="tel" placeholder="01xxxxxxxxx"></div>
     <div class="field"><label>كلمة المرور</label><input id="signupPassword" type="password" minlength="6" required autocomplete="new-password"></div>
+    <div class="field"><label>اسم الابن / الابنة</label><input id="childName" required></div>
     <div class="field"><label>المسار الدراسي</label><select id="track" required><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
+    <div class="field"><label>الصف الدراسي</label><select id="grade" required><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
     <button class="btn primary" type="submit">إنشاء الحساب</button>
   </form>
 
@@ -38,8 +40,8 @@ main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-
 </section>
 
 <aside class="card">
-  <h1>حساب واحد لكل رحلة الطالب</h1>
-  <p class="muted">الحساب هيحفظ المسار الدراسي، الاختبارات، النتائج، نقاط الضعف، وأسئلة مدرس ذاكر AI.</p>
+  <h1>حساب ولي أمر واحد لكل الأسرة</h1>
+  <p class="muted">من الحساب تضيف أبناءك، ولكل ابن بياناته ومساره وصفه واشتراكاته ونتائجه بشكل مستقل.</p>
   <div class="feature"><span>👤</span><div><b>ملف طالب دائم</b><div class="muted">بدل حفظ البيانات على جهاز واحد فقط.</div></div></div>
   <div class="feature"><span>🧪</span><div><b>نتائج واختبارات</b><div class="muted">تتجمع على الحساب وتبقى جاهزة للمتابعة.</div></div></div>
   <div class="feature"><span>💳</span><div><b>الاشتراك</b><div class="muted">بعد الدخول تقدر تختار الباقة وتكمل الدفع.</div></div></div>
@@ -74,11 +76,11 @@ async function signup(e){
  const {data,error}=await sb.auth.signUp({
    email:signupEmail.value.trim(),
    password:signupPassword.value,
-   options:{data:{full_name:fullName.value.trim(),phone:phone.value.trim(),role:'student',track:track.value}}
+   options:{data:{guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),role:'parent',child_name:childName.value.trim(),track:track.value,grade:grade.value}}
  });
  if(error){message(error.message);return}
  localStorage.setItem('zaker_student_track',track.value);
- if(data.session){location.href='/subscribe.html'} else message('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.',true);
+ if(data.session){location.href='/account.html'} else message('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.',true);
 }
 (async()=>{const {data}=await sb.auth.getSession();if(data.session) location.href=next})();
 </script>
