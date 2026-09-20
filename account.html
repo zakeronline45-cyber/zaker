@@ -55,7 +55,7 @@ async function init(){
  await loadChildren();
 }
 async function saveProfile(){
- const {error}=await sb.from('profiles').update({guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),updated_at:new Date().toISOString()}).eq('id',session.user.id);
+ const {error}=await sb.rpc('update_guardian_profile',{p_guardian_name:guardianName.value.trim(),p_phone:phone.value.trim()});
  profileMsg.textContent=error?error.message:'تم حفظ بيانات ولي الأمر.';
 }
 async function loadChildren(){
