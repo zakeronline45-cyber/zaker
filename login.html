@@ -65,11 +65,18 @@ function message(text,ok=false){
  const m=document.getElementById('msg');m.textContent=text;m.className='msg '+(ok?'ok':'err');m.style.display='block';
 }
 function hideMsg(){document.getElementById('msg').style.display='none'}
+async function routeAfterLogin(session){
+ if(!session?.user?.id){location.href=next;return}
+ const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);
+ const role=profiles?.[0]?.role||'parent';
+ if(role==='admin'){location.href='/admin.html';return}
+ location.href=next;
+}
 async function login(e){
  e.preventDefault();hideMsg();
  const {data,error}=await sb.auth.signInWithPassword({email:loginEmail.value.trim(),password:loginPassword.value});
  if(error){message(error.message);return}
- location.href=next;
+ await routeAfterLogin(data.session);
 }
 async function signup(e){
  e.preventDefault();hideMsg();
@@ -82,6 +89,6 @@ async function signup(e){
  localStorage.setItem('zaker_student_track',track.value);
  if(data.session){location.href='/account.html'} else message('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.',true);
 }
-(async()=>{const {data}=await sb.auth.getSession();if(data.session) location.href=next})();
+(async()=>{const {data}=await sb.auth.getSession();if(data.session) await routeAfterLogin(data.session)})();
 </script>
 </body></html>
