@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ذاكر | حسابي</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887;--r:#e85b66}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}button,input,select{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px}.wrap{max-width:1100px;margin:auto}.bar{display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}.btn{border:0;border-radius:11px;padding:10px 14px;font-weight:900}.primary{background:var(--b);color:#fff}.soft{background:#eef3ff;color:var(--b)}.danger{background:#fff0f1;color:var(--r)}main{max-width:1100px;margin:24px auto;padding:0 16px}.grid{display:grid;grid-template-columns:330px 1fr;gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px}.muted{color:var(--m)}.field{display:grid;gap:6px;margin-bottom:11px}.field input,.field select{padding:11px;border:1px solid var(--line);border-radius:10px}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}.kpi{background:#f7f9ff;border-radius:12px;padding:14px}.kpi b{display:block;font-size:24px;color:var(--n)}.child{border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}.child-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.pill{display:inline-block;background:#edf3ff;color:var(--b);padding:4px 8px;border-radius:99px;font-size:12px;font-weight:900}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.sub{margin-top:10px;background:#f8faff;border-radius:10px;padding:10px}.ok{color:var(--g);font-weight:900}.bad{color:var(--r);font-weight:900}@media(max-width:800px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}</style>
+</head>
+<body>
+<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>حسابي</span></a><div><a class="btn soft" href="/subscribe.html">الاشتراكات</a> <button class="btn soft" onclick="logout()">خروج</button></div></div></header>
+<main>
+<div class="kpis"><div class="kpi"><span class="muted">عدد الأبناء</span><b id="childrenCount">0</b></div><div class="kpi"><span class="muted">اشتراكات نشطة</span><b id="activeSubs">0</b></div><div class="kpi"><span class="muted">الحساب</span><b>ولي أمر</b></div></div>
+<div class="grid">
+  <aside class="card">
+    <h2>بيانات ولي الأمر</h2>
+    <div class="field"><label>اسم ولي الأمر</label><input id="guardianName"></div>
+    <div class="field"><label>رقم الموبايل</label><input id="phone"></div>
+    <button class="btn primary" onclick="saveProfile()">حفظ التعديلات</button>
+    <div id="profileMsg" class="muted" style="margin-top:10px"></div>
+
+    <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+    <h3 id="childFormTitle">إضافة ابن</h3>
+    <input type="hidden" id="editChildId">
+    <div class="field"><label>اسم الابن / الابنة</label><input id="childName"></div>
+    <div class="field"><label>المسار</label><select id="childTrack"><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
+    <div class="field"><label>الصف الدراسي</label><select id="childGrade"><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
+    <div class="actions"><button class="btn primary" onclick="saveChild()">حفظ الابن</button><button class="btn soft" onclick="clearChildForm()">إلغاء التعديل</button></div>
+  </aside>
+
+  <section class="card">
+    <h2>الأبناء والاشتراكات</h2>
+    <p class="muted">كل ابن له مساره وصفه واشتراكاته بشكل مستقل.</p>
+    <div id="childrenList">جاري التحميل...</div>
+  </section>
+</div>
+</main>
+<script>
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let session=null, children=[];
+
+const gradeName=x=>({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
+const trackName=x=>x==='arabic'?'عربي':'لغات';
+
+async function init(){
+ const g=await sb.auth.getSession();session=g.data.session;
+ if(!session){location.href='/login.html?next=/account.html';return}
+ const {data:p}=await sb.from('profiles').select('guardian_name,full_name,phone').eq('id',session.user.id).limit(1);
+ const profile=p?.[0]||{};
+ guardianName.value=profile.guardian_name||profile.full_name||'';
+ phone.value=profile.phone||'';
+ await loadChildren();
+}
+async function saveProfile(){
+ const {error}=await sb.from('profiles').update({guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),updated_at:new Date().toISOString()}).eq('id',session.user.id);
+ profileMsg.textContent=error?error.message:'تم حفظ بيانات ولي الأمر.';
+}
+async function loadChildren(){
+ const {data,error}=await sb.from('children').select('*').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
+ if(error){childrenList.textContent=error.message;return}
+ children=data||[];
+ childrenCount.textContent=children.length;
+ let active=0, html='';
+ for(const ch of children){
+   const {data:subs}=await sb.from('subscriptions').select('id,status,amount_egp,starts_at,ends_at,plan_code').eq('child_id',ch.id).order('created_at',{ascending:false}).limit(3);
+   const activeSub=(subs||[]).find(s=>s.status==='active');
+   if(activeSub) active++;
+   html+=`<div class="child">
+    <div class="child-head"><div><h3 style="margin:0 0 6px">${esc(ch.full_name)}</h3><span class="pill">${trackName(ch.track)}</span> <span class="pill">${gradeName(ch.grade)}</span></div>
+    <div class="muted">ابن رقم ${children.indexOf(ch)+1}</div></div>
+    <div class="sub">${activeSub?'<span class="ok">اشتراك نشط</span> — '+activeSub.amount_egp+' جنيه — حتى '+new Date(activeSub.ends_at).toLocaleDateString('ar-EG'):'<span class="bad">لا يوجد اشتراك نشط</span>'}</div>
+    <div class="actions">
+      <button class="btn primary" onclick="openChild('${ch.id}')">دخول ملف الطالب</button>
+      <a class="btn soft" href="/subscribe.html?child=${ch.id}">الاشتراك / التجديد</a>
+      <button class="btn soft" onclick="editChild('${ch.id}')">تعديل</button>
+      <button class="btn danger" onclick="removeChild('${ch.id}')">حذف</button>
+    </div>
+   </div>`;
+ }
+ activeSubs.textContent=active;
+ childrenList.innerHTML=html||'<div class="muted">لم تتم إضافة أبناء حتى الآن.</div>';
+}
+async function saveChild(){
+ const name=childName.value.trim();if(!name){alert('اكتب اسم الابن');return}
+ const id=editChildId.value;
+ const payload={guardian_user_id:session.user.id,full_name:name,track:childTrack.value,grade:childGrade.value,updated_at:new Date().toISOString()};
+ const r=id?await sb.from('children').update(payload).eq('id',id):await sb.from('children').insert(payload);
+ if(r.error){alert(r.error.message);return}
+ clearChildForm();await loadChildren();
+}
+function editChild(id){
+ const ch=children.find(x=>x.id===id);if(!ch)return;
+ editChildId.value=ch.id;childName.value=ch.full_name;childTrack.value=ch.track;childGrade.value=ch.grade;childFormTitle.textContent='تعديل بيانات الابن';
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function clearChildForm(){editChildId.value='';childName.value='';childTrack.value='languages';childGrade.value='prep1';childFormTitle.textContent='إضافة ابن'}
+async function removeChild(id){
+ if(!confirm('حذف الابن من الحساب؟'))return;
+ const {error}=await sb.from('children').update({is_active:false,updated_at:new Date().toISOString()}).eq('id',id);
+ if(error){alert(error.message);return} await loadChildren();
+}
+function openChild(id){
+ const ch=children.find(x=>x.id===id);if(!ch)return;
+ localStorage.setItem('zaker_active_child_id',ch.id);
+ localStorage.setItem('zaker_student_track',ch.track);
+ location.href='/student.html';
+}
+async function logout(){await sb.auth.signOut();location.href='/login.html'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+init();
+</script></body></html>
