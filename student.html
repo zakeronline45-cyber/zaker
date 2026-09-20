@@ -345,7 +345,7 @@ const explanations={
 12:`<h3>Lunar Eclipse — خسوف القمر</h3><div class="ar"><b>بالعربي:</b> يدور القمر حول الأرض ويدور حول محوره في مدة متقاربة، لذلك نرى غالبًا نفس الوجه. أطوار القمر هي الأشكال المختلفة التي نراه بها أثناء دورانه حول الأرض.</div><div class="en"><b>English:</b> The Moon revolves around Earth and rotates on its axis in approximately the same period, so we usually see the same face. Moon phases are the changing shapes seen from Earth.</div><div class="ar">يحدث خسوف القمر عندما تقع الأرض بين الشمس والقمر ويعبر القمر في ظل الأرض. الخسوف الكلي يحدث عندما يدخل القمر بالكامل في منطقة الظل التام Umbra.</div><div class="en">A lunar eclipse occurs when Earth is between the Sun and the Moon and the Moon moves into Earth's shadow. A total lunar eclipse occurs when the Moon is completely inside the umbra.</div>`
 };
 let lesson=1,bank=null,test=[],idx=0,answers=[],selectedChoice=null,testScopeLabel='اختبار '+titles[1],testLessons=[1];
-let questionTimer=null,secondsLeft=90;
+let questionTimer=null,secondsLeft=90,lastPrintableReport=null;
 function renderObjectives(n){
  document.getElementById('lessonObjectives').innerHTML='<h3>الأهداف المستهدفة من الدرس</h3><ul>'+objectives[n].map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
  document.getElementById('lessonKeyTerms').innerHTML=(keyTerms[n]||[]).map(x=>'<span class="keyterm">'+esc(x)+'</span>').join('');
@@ -401,7 +401,7 @@ function renderQuestion(){
  if(q.type==='mcq'){input=q.choices.map(c=>'<button class="choice" data-value="'+esc(c)+'" onclick="pickChoice(this)">'+esc(c)+'</button>').join('')}
  else if(q.type==='true_false'){input='<button class="choice" data-value="True" onclick="pickChoice(this)">True</button><button class="choice" data-value="False" onclick="pickChoice(this)">False</button>'}
  else input='<textarea id="writtenAnswer" class="textanswer" placeholder="اكتب إجابتك هنا..."></textarea>';
- a.innerHTML='<div class="testhead"><b>'+esc(testScopeLabel)+'</b><div class="question-timer">⏱️ <b id="questionTimerValue">90</b> ثانية</div><span>السؤال '+(idx+1)+' من '+test.length+'</span></div><div class="progress"><i style="width:'+(((idx)/test.length)*100)+'%"></i></div><div style="height:6px;background:#ffe4e4;border-radius:99px;margin:10px 0;overflow:hidden"><i id="timerProgress" style="display:block;height:100%;background:#ff6b6b;width:100%"></i></div><div class="qbox"><span class="pill">'+label(q.type)+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button class="btn primary" style="margin-top:12px" onclick="submitAnswer()">إرسال الإجابة</button><div id="submitMsg"></div></div>';
+ a.innerHTML='<div class="testhead"><b>'+esc(testScopeLabel)+'</b><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn soft" onclick="printExam()">🖨️ طباعة الامتحان</button><div class="question-timer">⏱️ <b id="questionTimerValue">90</b> ثانية</div><span>السؤال '+(idx+1)+' من '+test.length+'</span></div></div><div class="progress"><i style="width:'+(((idx)/test.length)*100)+'%"></i></div><div style="height:6px;background:#ffe4e4;border-radius:99px;margin:10px 0;overflow:hidden"><i id="timerProgress" style="display:block;height:100%;background:#ff6b6b;width:100%"></i></div><div class="qbox"><span class="pill">'+label(q.type)+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button class="btn primary" style="margin-top:12px" onclick="submitAnswer()">إرسال الإجابة</button><div id="submitMsg"></div></div>';
  startQuestionTimer();
 }
 function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');selectedChoice=el.dataset.value}
@@ -428,6 +428,7 @@ async function finishTest(){
    feedback=await r.json();
  }catch(e){}
  const record={subject:'Science',unit:testLessons.length===1?units[testLessons[0]]:'Multiple lessons',lesson:testLessons.length===1?testLessons[0]:null,lessonTitle:testScopeLabel,lessons:testLessons,score,total,pct,date:new Date().toISOString(),answers,feedback};
+ lastPrintableReport=record;
  const old=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_results'),JSON.stringify(old.slice(0,50)));
  if(activeChildId){
    try{await sb.rpc('save_student_test_result',{p_child_id:activeChildId,p_subject:'Science',p_lesson_title:testScopeLabel,p_score:score,p_total:total,p_pct:pct,p_answers:answers,p_feedback:feedback})}catch(e){}
@@ -438,7 +439,42 @@ async function finishTest(){
  document.getElementById('testArea').innerHTML='<div class="result"><p>نتيجتك</p><b>'+pct+'%</b><p>'+esc(feedback.summary||'راجع أخطاءك ثم أعد الاختبار.')+'</p></div>'+
  (wrong.length?'<div class="feedback-grid"><h3>إيه اللي محتاج تفهمه وتراجعه؟</h3>'+topics+'</div>':'<div class="submitted">ممتاز، مفيش أخطاء محتاجة مراجعة في الاختبار ده.</div>')+
  (plan?'<div class="review-plan"><b>خطة المراجعة قبل إعادة الاختبار</b><ol>'+plan+'</ol></div>':'')+
- '<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn primary" onclick="showExplain()">راجع الأهداف والشرح الآن</button><button class="btn soft" onclick="resetTest()">اختبار جديد</button></div>';
+ '<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn primary" onclick="showExplain()">راجع الأهداف والشرح الآن</button><button class="btn soft" onclick="printReport()">🖨️ طباعة التقرير</button><button class="btn soft" onclick="printExam()">📝 طباعة نسخة الامتحان</button><button class="btn soft" onclick="resetTest()">اختبار جديد</button></div>';
+}
+
+function printableStudentName(){
+ const el=document.getElementById('activeChildName');
+ return el?.textContent?.trim()||'الطالب';
+}
+function openPrintWindow(title,bodyHtml){
+ const w=window.open('','_blank','width=900,height=1000');
+ if(!w){alert('اسمح بفتح النوافذ المنبثقة للطباعة');return}
+ w.document.open();
+ w.document.write('<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>'+esc(title)+'</title><style>@page{size:A4;margin:14mm}*{box-sizing:border-box}body{font-family:Tahoma,Arial,sans-serif;color:#17284b;line-height:1.7;margin:0}.head{border-bottom:3px solid #165DFF;padding-bottom:10px;margin-bottom:18px}.brand{font-size:26px;font-weight:900;color:#173471}.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px;color:#52627f;margin-top:8px}.q{page-break-inside:avoid;border:1px solid #dfe6f1;border-radius:10px;padding:12px;margin:0 0 12px}.q h3{margin:0 0 8px;font-size:16px;direction:ltr;text-align:left}.choice-line{direction:ltr;text-align:left;border:1px solid #e6ebf3;border-radius:7px;padding:7px;margin:5px 0}.answer-lines{height:70px;border-bottom:1px dotted #aab5c7;background:repeating-linear-gradient(to bottom,transparent 0,transparent 22px,#e7ebf2 23px)}.score{font-size:34px;font-weight:900;color:#165DFF}.wrong{border-right:4px solid #e85b66}.good{border-right:4px solid #19b887}.block{border:1px solid #dfe6f1;border-radius:10px;padding:12px;margin:10px 0;page-break-inside:avoid}.label{font-weight:900;color:#173471}.muted{color:#71809a;font-size:13px}ol{padding-right:22px}@media print{button{display:none}}</style></head><body>'+bodyHtml+'<script>window.onload=()=>{setTimeout(()=>window.print(),200)}<\/script></body></html>');
+ w.document.close();
+}
+function printExam(){
+ if(!test?.length){alert('ابدأ الامتحان أولًا علشان يتجهز للطباعة');return}
+ const student=printableStudentName();
+ const questions=test.map((q,i)=>{
+   let answerArea='';
+   if(q.type==='mcq'&&Array.isArray(q.choices)) answerArea=q.choices.map((x,j)=>'<div class="choice-line">'+String.fromCharCode(65+j)+'. '+esc(x)+'</div>').join('');
+   else if(q.type==='true_false') answerArea='<div class="choice-line">True</div><div class="choice-line">False</div>';
+   else answerArea='<div class="answer-lines"></div>';
+   return '<section class="q"><h3>Question '+(i+1)+': '+esc(q.text)+'</h3>'+answerArea+'</section>';
+ }).join('');
+ const html='<div class="head"><div class="brand">ذاكر — '+esc(testScopeLabel)+'</div><div class="meta"><div><b>اسم الطالب:</b> '+esc(student)+'</div><div><b>المادة:</b> Science</div><div><b>عدد الأسئلة:</b> '+test.length+'</div><div><b>الزمن الإلكتروني:</b> 90 ثانية لكل سؤال</div><div><b>التاريخ:</b> '+new Date().toLocaleDateString('ar-EG')+'</div><div><b>الدرجة:</b> ____ / '+test.length+'</div></div></div>'+questions;
+ openPrintWindow('امتحان ذاكر - '+testScopeLabel,html);
+}
+function printReport(){
+ const r=lastPrintableReport;
+ if(!r){alert('التقرير يظهر بعد إنهاء الامتحان');return}
+ const student=printableStudentName();
+ const rows=(r.answers||[]).map((a,i)=>'<div class="block '+(a.correct?'good':'wrong')+'"><div class="label">السؤال '+(i+1)+'</div><div style="direction:ltr;text-align:left;font-weight:700">'+esc(a.question||'')+'</div><div><b>إجابة الطالب:</b> '+esc(a.studentAnswer|| (a.timedOut?'انتهى الوقت بدون إجابة':'—'))+'</div><div><b>الإجابة الصحيحة:</b> '+esc(a.correctAnswer||'—')+'</div><div><b>النتيجة:</b> '+(a.correct?'صحيحة ✓':'تحتاج مراجعة ✗')+'</div></div>').join('');
+ const feedbackTopics=(r.feedback?.topics||[]).map(t=>'<div class="block wrong"><div class="label">'+esc(t.question||t.topic||'مفهوم يحتاج مراجعة')+'</div><div><b>الشرح:</b> '+esc(t.explanation||'راجع الفرق بين إجابتك والإجابة الصحيحة.')+'</div></div>').join('');
+ const plan=(r.feedback?.plan||[]).length?'<div class="block"><div class="label">خطة المراجعة</div><ol>'+r.feedback.plan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>':'';
+ const html='<div class="head"><div class="brand">ذاكر — تقرير الاختبار</div><div class="meta"><div><b>اسم الطالب:</b> '+esc(student)+'</div><div><b>المادة:</b> Science</div><div><b>الاختبار:</b> '+esc(r.lessonTitle)+'</div><div><b>التاريخ:</b> '+new Date(r.date).toLocaleString('ar-EG')+'</div></div></div><div class="block"><div class="score">'+r.pct+'%</div><div><b>'+r.score+' من '+r.total+'</b> إجابات صحيحة</div><div class="muted">'+esc(r.feedback?.summary||'تقرير أداء الطالب في الاختبار.')+'</div></div><h2>تفاصيل الإجابات</h2>'+rows+(feedbackTopics?'<h2>شرح الأخطاء</h2>'+feedbackTopics:'')+plan;
+ openPrintWindow('تقرير ذاكر - '+r.lessonTitle,html);
 }
 function showExplain(){
  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.pane==='explain'));
