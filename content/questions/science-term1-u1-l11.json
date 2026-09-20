@@ -7,121 +7,272 @@
   "lesson": 11,
   "lessonTitle": "The Earth and the Solar System",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u4-l11-001",
       "type": "complete",
       "difficulty": "easy",
-      "text": "The Sun and the objects revolving around it form the ______ system.",
-      "answer": "solar",
-      "sourcePage": 355
+      "text": "The four closest planets to the Sun are called the ______ planets.",
+      "answer": "inner",
+      "sourcePage": 355,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-002",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "The planets revolve around the:",
-      "choices": [
-        "Sun",
-        "Moon",
-        "Earth only",
-        "Polaris"
-      ],
-      "answer": "Sun",
-      "sourcePage": 356
+      "text": "The four farthest planets from the Sun are called the ______ planets.",
+      "answer": "outer",
+      "sourcePage": 356,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-003",
-      "type": "true_false",
-      "difficulty": "easy",
-      "text": "The planets are arranged at different distances from the Sun.",
-      "answer": "True",
-      "sourcePage": 357
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare inner and outer planets.",
+      "answer": "Inner planets are the four closest, rocky planets: Mercury, Venus, Earth and Mars. Outer planets are the four farthest, gaseous planets: Jupiter, Saturn, Uranus and Neptune.",
+      "sourcePage": 357,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-004",
-      "type": "mcq",
-      "difficulty": "easy",
-      "text": "Which planet is closest to the Sun?",
-      "choices": [
-        "Mercury",
-        "Earth",
-        "Jupiter",
-        "Neptune"
-      ],
-      "answer": "Mercury",
-      "sourcePage": 358
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The planets do not collide with one another while orbiting the Sun.",
+      "answer": "They move in elliptical paths at different distances from the Sun.",
+      "sourcePage": 358,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-005",
-      "type": "mcq",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Which planet is the largest?",
-      "choices": [
-        "Jupiter",
-        "Mercury",
-        "Mars",
-        "Earth"
-      ],
-      "answer": "Jupiter",
-      "sourcePage": 359
+      "text": "Give a reason: Mercury's crust has many craters.",
+      "answer": "Because of meteor impacts on its surface.",
+      "sourcePage": 359,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-006",
       "type": "reason",
       "difficulty": "medium",
-      "text": "Give a reason: Planets do not collide with the Sun while revolving around it.",
-      "answer": "Because each planet moves in its own orbit under gravitational attraction.",
-      "sourcePage": 361
+      "text": "Give a reason: Uranus appears greenish-blue.",
+      "answer": "Because its atmosphere contains methane gas.",
+      "sourcePage": 360,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-007",
-      "type": "complete",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Earth rotates around its axis once in about ______ hours.",
-      "answer": "24",
-      "sourcePage": 365
+      "text": "Give a reason: Gaseous planets do not have volcanoes.",
+      "answer": "They have no rocky crust.",
+      "sourcePage": 361,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-008",
-      "type": "reason",
-      "difficulty": "medium",
-      "text": "Give a reason: Day and night occur.",
-      "answer": "Because Earth rotates around its axis.",
-      "sourcePage": 366
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The imaginary line through Earth's North Pole, South Pole and center is Earth's ______.",
+      "answer": "axis",
+      "sourcePage": 362,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-009",
-      "type": "complete",
-      "difficulty": "medium",
-      "text": "Earth revolves around the Sun once in about ______ days.",
-      "answer": "365.25",
-      "sourcePage": 368
+      "type": "reason",
+      "difficulty": "easy",
+      "text": "Give a reason: Day and night occur.",
+      "answer": "Earth rotates around its axis in front of the Sun.",
+      "sourcePage": 363,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-010",
       "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: The apparent length of a shadow changes during the day.",
-      "answer": "Because the angle of sunlight changes as Earth rotates.",
-      "sourcePage": 372
+      "difficulty": "medium",
+      "text": "Give a reason: Shadow lengths vary during the day.",
+      "answer": "The apparent height of the Sun changes throughout the day.",
+      "sourcePage": 364,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-011",
-      "type": "true_false",
-      "difficulty": "hard",
-      "text": "Sunlight falls on Earth's surface at different angles.",
-      "answer": "True",
-      "sourcePage": 374
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "An object's shadow is generally shortest at:",
+      "choices": [
+        "sunrise",
+        "noon",
+        "sunset",
+        "midnight"
+      ],
+      "answer": "noon",
+      "sourcePage": 365,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
     },
     {
       "id": "s1-u4-l11-012",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Winter begins astronomically in the Northern Hemisphere on ______.",
+      "answer": "22 December",
+      "sourcePage": 366,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-013",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Summer begins astronomically in the Northern Hemisphere on ______.",
+      "answer": "21 June",
+      "sourcePage": 367,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-014",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The spring equinox occurs on ______.",
+      "answer": "21 March",
+      "sourcePage": 368,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-015",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The autumn equinox occurs on ______.",
+      "answer": "23 September",
+      "sourcePage": 369,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-016",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Daylight hours vary through the seasons.",
+      "answer": "Because Earth's axis is tilted and Earth revolves around the Sun.",
+      "sourcePage": 370,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-017",
       "type": "compare",
       "difficulty": "hard",
-      "text": "Compare Earth's rotation and revolution.",
-      "answer": "Rotation is Earth's spinning around its axis and causes day and night; revolution is Earth's motion around the Sun and takes about one year.",
-      "sourcePage": 376
+      "text": "Compare winter and summer in the Northern Hemisphere in daylight duration and apparent height of the Sun.",
+      "answer": "Winter has shorter daylight and lower apparent Sun height; summer has longer daylight and higher apparent Sun height.",
+      "sourcePage": 371,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-018",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which planet is known as the Red Planet?",
+      "choices": [
+        "Mars",
+        "Earth",
+        "Venus",
+        "Neptune"
+      ],
+      "answer": "Mars",
+      "sourcePage": 372,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-019",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which planet is the largest?",
+      "choices": [
+        "Jupiter",
+        "Earth",
+        "Mercury",
+        "Mars"
+      ],
+      "answer": "Jupiter",
+      "sourcePage": 373,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-020",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which planet is the smallest?",
+      "choices": [
+        "Mercury",
+        "Earth",
+        "Mars",
+        "Neptune"
+      ],
+      "answer": "Mercury",
+      "sourcePage": 374,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-021",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "Arrange the planets in increasing distance from the Sun.",
+      "answer": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
+      "sourcePage": 375,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-022",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "A shadow is long at sunrise, shortest at noon and long again at sunset. Explain the pattern.",
+      "answer": "The apparent height of the Sun increases from sunrise to noon, then decreases toward sunset; shadow length changes inversely.",
+      "sourcePage": 375,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-023",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Earth completes one revolution around the Sun in about 365.25 days.",
+      "answer": "True",
+      "sourcePage": 375,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.154-159 / PDF 570-575"
+    },
+    {
+      "id": "s1-u4-l11-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: A student observes equal day and night lengths. Which seasonal dates in the lesson best match this observation?",
+      "answer": "The equinoxes: around 21 March or 23 September.",
+      "sourcePage": 375,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
