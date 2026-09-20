@@ -11,12 +11,44 @@
 <body>
 <header class="top"><div class="wrap bar"><a href="/" class="brand">ذاكر <span>الاشتراك</span></a><div><a class="btn soft" href="/student.html">حسابي</a> <button class="btn soft" onclick="logout()">خروج</button></div></div></header>
 <main>
-<div class="head"><h1>اختار باقتك</h1><p class="muted">الدفع يتم من خلال صفحة Paymob الآمنة. بعد نجاح العملية، الاشتراك يتفعّل من تأكيد الدفع المرسل للسيرفر.</p></div>
+<div class="head"><h1>اشتراك ذاكر</h1><p class="muted">أول مادة بـ250 جنيه شهريًا، وكل مادة إضافية تضيف 225 جنيه فقط. الطفل الثاني يحصل على خصم 25% من إجمالي اشتراكه.</p></div>
 <div id="current" class="status">جاري تحميل حالة الاشتراك...</div>
-<div class="plans">
-  <div class="plan"><h2>مادة واحدة</h2><div class="price">129 <small>جنيه / شهر</small></div><ul><li>مادة واحدة</li><li>اختبارات وتصحيح</li><li>مدرس AI للمادة</li></ul><button class="btn primary" style="width:100%" onclick="pay('single')">اشترك بـ129 جنيه</button></div>
-  <div class="plan popular"><span class="badge">الأكثر رواجًا</span><h2>الباقة الكاملة</h2><div class="price">249 <small>جنيه / شهر</small></div><ul><li>جميع مواد المسار</li><li>اختبارات شاملة</li><li>خطة مراجعة</li><li>AI كامل</li></ul><button class="btn primary" style="width:100%" onclick="pay('full')">اشترك بـ249 جنيه</button></div>
-  <div class="plan"><h2>باقة العائلة</h2><div class="price">399 <small>جنيه / شهر</small></div><ul><li>حتى طالبين</li><li>جميع المواد</li><li>ملف مستقل لكل طالب</li><li>متابعة ولي الأمر</li></ul><button class="btn primary" style="width:100%" onclick="pay('family')">اشترك بـ399 جنيه</button></div>
+
+<div class="plan" style="max-width:720px;margin:26px auto 0">
+  <h2>احسب اشتراكك</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <label>عدد المواد
+      <select id="subjectCount" onchange="calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px">
+        <option value="1">مادة واحدة</option>
+        <option value="2">مادتان</option>
+        <option value="3">3 مواد</option>
+        <option value="4">4 مواد</option>
+        <option value="5">5 مواد</option>
+      </select>
+    </label>
+    <label>الطفل
+      <select id="childIndex" onchange="calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px">
+        <option value="1">الطفل الأول</option>
+        <option value="2">الطفل الثاني — خصم 25%</option>
+      </select>
+    </label>
+  </div>
+  <div class="price" id="calcPrice">250 <small>جنيه / شهر</small></div>
+  <p class="muted" id="calcNote">1 مادة × 250 جنيه.</p>
+  <button class="btn primary" style="width:100%" onclick="startBankTransfer()">ابدأ طلب تحويل بنكي</button>
+</div>
+
+<div id="bankBox" class="plan" style="max-width:720px;margin:18px auto 0;display:none">
+  <h2>بيانات التحويل البنكي</h2>
+  <div id="bankDetails" class="status"></div>
+  <p><b>كود الطلب:</b> <span id="refCode"></span></p>
+  <p><b>المبلغ المطلوب:</b> <span id="amountDue"></span> جنيه</p>
+  <p class="muted">لو البنك بيسمح بإضافة ملاحظة للتحويل، اكتب كود الطلب كما هو. بعد التحويل ارفع الإيصال واكتب اسم المحوّل ورقم مرجع العملية.</p>
+  <label>اسم المحوّل<input id="senderName" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin:6px 0 12px"></label>
+  <label>رقم مرجع التحويل<input id="transferReference" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin:6px 0 12px"></label>
+  <label>صورة الإيصال / PDF<input id="proofFile" type="file" accept="image/*,.pdf" style="width:100%;margin:8px 0 16px"></label>
+  <button class="btn primary" style="width:100%" onclick="submitProof()">رفعت التحويل — إرسال للمراجعة</button>
+  <div id="proofMsg" class="status" style="display:none"></div>
 </div>
 </main>
 <script>
@@ -36,16 +68,66 @@ async function init(){
    ?'<span class="ok">اشتراكك نشط</span> — الباقة: '+s.plan_code+' — ينتهي: '+new Date(s.ends_at).toLocaleDateString('ar-EG')
    :'آخر طلب اشتراك: '+s.status;
 }
-async function pay(plan){
- if(!session){location.href='/login.html?next=/subscribe.html';return}
- const btn=event.currentTarget;btn.disabled=true;btn.textContent='جاري فتح الدفع...';
- try{
-   const r=await fetch('/api/create-payment',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({plan})});
-   const j=await r.json();
-   if(!r.ok) throw new Error(j.error||'تعذر بدء عملية الدفع');
-   location.href=j.checkout_url;
- }catch(e){alert(e.message);btn.disabled=false;btn.textContent='حاول مرة أخرى'}
+function calc(){
+  const n=Number(document.getElementById('subjectCount').value)||1;
+  const child=Number(document.getElementById('childIndex').value)||1;
+  const base=250+(n-1)*225;
+  const total=child===2?Math.round(base*.75*100)/100:base;
+  document.getElementById('calcPrice').innerHTML=total+' <small>جنيه / شهر</small>';
+  document.getElementById('calcNote').textContent=n===1
+    ?'أول مادة = 250 جنيه'+(child===2?'، وبعد خصم الطفل الثاني 25%.':'')
+    :'250 لأول مادة + '+(n-1)+' × 225 للمواد الإضافية'+(child===2?'، ثم خصم 25% للطفل الثاني.':'');
 }
+let pendingPayment=null;
+
+async function loadBankSettings(){
+  const {data}=await sb.from('bank_transfer_settings').select('*').eq('id',1).limit(1);
+  const x=data?.[0]||{};
+  document.getElementById('bankDetails').innerHTML=
+    '<div><b>اسم الحساب:</b> '+(x.account_name||'سيتم إضافته')+'</div>'+
+    '<div><b>البنك:</b> '+(x.bank_name||'سيتم إضافته')+'</div>'+
+    (x.account_number?'<div><b>رقم الحساب:</b> '+x.account_number+'</div>':'')+
+    (x.iban?'<div><b>IBAN:</b> '+x.iban+'</div>':'')+
+    (x.instructions?'<div style="margin-top:8px">'+x.instructions+'</div>':'');
+}
+
+async function startBankTransfer(){
+ if(!session){location.href='/login.html?next=/subscribe.html';return}
+ const subjectCount=Number(document.getElementById('subjectCount').value)||1;
+ const childIndex=Number(document.getElementById('childIndex').value)||1;
+ const r=await fetch('/api/create-bank-transfer',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subjectCount,childIndex})});
+ const j=await r.json();
+ if(!r.ok){alert(j.error||'تعذر إنشاء طلب التحويل');return}
+ pendingPayment=j.payment;
+ document.getElementById('refCode').textContent=j.reference_code;
+ document.getElementById('amountDue').textContent=j.amount;
+ await loadBankSettings();
+ document.getElementById('bankBox').style.display='block';
+ document.getElementById('bankBox').scrollIntoView({behavior:'smooth'});
+}
+
+async function submitProof(){
+ if(!pendingPayment){alert('ابدأ طلب تحويل أولًا');return}
+ const file=document.getElementById('proofFile').files[0];
+ const senderName=document.getElementById('senderName').value.trim();
+ const bankTransferReference=document.getElementById('transferReference').value.trim();
+ if(!file||!senderName||!bankTransferReference){alert('أكمل اسم المحوّل ومرجع التحويل وارفع الإيصال');return}
+ const ext=(file.name.split('.').pop()||'jpg').toLowerCase();
+ const path=session.user.id+'/'+pendingPayment.id+'.'+ext;
+ const up=await sb.storage.from('bank-transfer-proofs').upload(path,file,{upsert:true});
+ if(up.error){alert(up.error.message);return}
+ const {data:pub}=sb.storage.from('bank-transfer-proofs').getPublicUrl(path);
+ const {error}=await sb.from('payments').update({
+   sender_name:senderName,
+   bank_transfer_reference:bankTransferReference,
+   proof_url:pub.publicUrl
+ }).eq('id',pendingPayment.id);
+ const box=document.getElementById('proofMsg');box.style.display='block';
+ if(error){box.textContent='تم رفع الملف لكن حصلت مشكلة في حفظ بيانات التحويل: '+error.message;return}
+ box.innerHTML='<span class="ok">تم إرسال التحويل للمراجعة.</span> لن يتفعّل الاشتراك إلا بعد مطابقة التحويل واعتماده.';
+}
+calc();
+
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
 </script></body></html>
