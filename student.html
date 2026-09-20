@@ -92,11 +92,12 @@ main{max-width:1200px;margin:22px auto;padding:0 16px}.grid{display:grid;grid-te
 </section>
 <aside class="card right"><h3>الدرس الحالي</h3><div class="side-stat"><div class="stat"><span class="muted">Lesson</span><b id="lessonNo">1 / 12</b></div><div class="stat"><span class="muted">بنك الأسئلة</span><b id="questionCount">—</b></div><div class="stat"><span class="muted">آخر نتيجة</span><b id="lastScore">—</b></div></div></aside>
 </div>
-<div id="arabicArea" class="arabic-coming" style="display:none">
+<div id="unavailableArea" class="arabic-coming" style="display:none">
   <div class="card">
-    <span class="pill">مسار عربي</span>
-    <h2>محتوى المسار العربي لم يُرفع بعد</h2>
-    <p class="muted">سيتم بناء العلوم والرياضيات العربي من الكتب العربية الأصلية التي سترفعها، بشكل مستقل عن محتوى اللغات.</p>
+    <span id="unavailablePill" class="pill">المحتوى</span>
+    <h2 id="unavailableTitle">المحتوى لم يُرفع بعد</h2>
+    <p id="unavailableText" class="muted">سيتم تفعيل المحتوى من الكتب الأصلية الخاصة بالمسار والصف.</p>
+    <a class="btn soft" href="/account.html">العودة لحساب ولي الأمر</a>
   </div>
 </div>
 </main>
@@ -106,6 +107,10 @@ const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 let authSession=null;
 let studentTrack='';
+let activeChildId='';
+let activeChildGrade='';
+let aiSessionId='';
+function childKey(base){return activeChildId?base+'_'+activeChildId:base;}
 const qp=new URLSearchParams(location.search).get('track');
 const savedTrack=localStorage.getItem('zaker_student_track');
 if(qp==='languages'||qp==='arabic') studentTrack=qp;
@@ -123,10 +128,18 @@ function changeTrack(){
   document.getElementById('trackModal').classList.add('show');
 }
 function applyTrack(){
-  if(!studentTrack){document.getElementById('trackModal').classList.add('show');return}
+  if(!studentTrack)return;
   document.getElementById('trackName').textContent=studentTrack==='languages'?'مسار لغات':'مسار عربي';
-  document.getElementById('languagesArea').style.display=studentTrack==='languages'?'grid':'none';
-  document.getElementById('arabicArea').style.display=studentTrack==='arabic'?'block':'none';
+  const ready=studentTrack==='languages'&&activeChildGrade==='prep1';
+  document.getElementById('languagesArea').style.display=ready?'grid':'none';
+  const u=document.getElementById('unavailableArea');
+  u.style.display=ready?'none':'block';
+  if(!ready){
+    const grade=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'الصف المختار');
+    document.getElementById('unavailablePill').textContent=studentTrack==='arabic'?'مسار عربي':grade;
+    document.getElementById('unavailableTitle').textContent=studentTrack==='arabic'?'محتوى المسار العربي لم يُرفع بعد':'محتوى '+grade+' لغات لم يُرفع بعد';
+    document.getElementById('unavailableText').textContent='لن نعرض محتوى صف أو مسار مختلف. سيتم تفعيل هذا القسم عند رفع كتبه الأصلية.';
+  }
 }
 const studyLanguage='English';
 localStorage.setItem('zaker_science_language','English');
@@ -322,7 +335,7 @@ async function finishTest(){
    feedback=await r.json();
  }catch(e){}
  const record={subject:'Science',unit:testLessons.length===1?units[testLessons[0]]:'Multiple lessons',lesson:testLessons.length===1?testLessons[0]:null,lessonTitle:testScopeLabel,lessons:testLessons,score,total,pct,date:new Date().toISOString(),answers,feedback};
- const old=JSON.parse(localStorage.getItem('zaker_results')||'[]');old.unshift(record);localStorage.setItem('zaker_results',JSON.stringify(old.slice(0,50)));logActivity({type:'test',lessonTitle:testScopeLabel,pct,date:record.date});
+ const old=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_results'),JSON.stringify(old.slice(0,50)));logActivity({type:'test',lessonTitle:testScopeLabel,pct,date:record.date});
  const topics=(feedback.topics||[]).map(t=>'<div class="feedback-item"><h4>'+esc(t.question||t.topic||'السؤال')+'</h4><div class="submitted" style="margin-top:8px"><b>الإجابة الصحيحة:</b> '+esc(t.correctAnswer||'—')+'</div><div class="answer" style="margin-top:8px"><b>إجابة الطالب:</b> '+esc(t.studentAnswer||'—')+'</div><div style="margin-top:8px"><b>الشرح:</b> '+esc(t.explanation||'قارن بين إجابتك والإجابة الصحيحة وركز على الفرق العلمي الحقيقي.')+'</div></div>').join('');
  const plan=(feedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
  document.getElementById('testArea').innerHTML='<div class="result"><p>نتيجتك</p><b>'+pct+'%</b><p>'+esc(feedback.summary||'راجع أخطاءك ثم أعد الاختبار.')+'</p></div>'+
@@ -335,11 +348,11 @@ function showExplain(){
  document.querySelectorAll('.pane').forEach(x=>x.classList.toggle('active',x.id==='pane-explain'));
  window.scrollTo({top:0,behavior:'smooth'});
 }
-function logActivity(item){const a=JSON.parse(localStorage.getItem('zaker_activity')||'[]');a.unshift(item);localStorage.setItem('zaker_activity',JSON.stringify(a.slice(0,100)))}
-function logLessonVisit(n){const seen=JSON.parse(localStorage.getItem('zaker_lessons_seen')||'[]');if(!seen.includes(n)){seen.push(n);localStorage.setItem('zaker_lessons_seen',JSON.stringify(seen))}logActivity({type:'lesson',lessonTitle:titles[n],date:new Date().toISOString()})}
+function logActivity(item){const a=JSON.parse(localStorage.getItem(childKey('zaker_activity'))||'[]');a.unshift(item);localStorage.setItem(childKey('zaker_activity'),JSON.stringify(a.slice(0,100)))}
+function logLessonVisit(n){const seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');if(!seen.includes(n)){seen.push(n);localStorage.setItem(childKey('zaker_lessons_seen'),JSON.stringify(seen))}logActivity({type:'lesson',lessonTitle:titles[n],date:new Date().toISOString()})}
 function renderProfile(){
- const results=JSON.parse(localStorage.getItem('zaker_results')||'[]');
- const seen=JSON.parse(localStorage.getItem('zaker_lessons_seen')||'[]');
+ const results=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');
+ const seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');
  const all=results.flatMap(r=>r.answers||[]), wrong=all.filter(x=>!x.correct);
  document.getElementById('pfTests').textContent=results.length;
  document.getElementById('pfAvg').textContent=results.length?Math.round(results.reduce((a,r)=>a+(r.pct||0),0)/results.length)+'%':'—';
@@ -354,25 +367,32 @@ function renderProfile(){
 }
 function label(t){return({mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'}[t]||t)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent='بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:'أولى إعدادي',lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}}
+async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent='بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}}
 async function initAccount(){
   const {data}=await sb.auth.getSession();authSession=data.session;
   if(!authSession){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
 
-  let activeChildId=localStorage.getItem('zaker_active_child_id')||'';
+  activeChildId=localStorage.getItem('zaker_active_child_id')||'';
   const {data:children}=await sb.from('children').select('id,full_name,track,grade').eq('guardian_user_id',authSession.user.id).eq('is_active',true).order('created_at');
   if(!children?.length){location.href='/account.html';return}
   let child=children.find(x=>x.id===activeChildId)||children[0];
+  activeChildId=child.id;
+  activeChildGrade=child.grade;
   localStorage.setItem('zaker_active_child_id',child.id);
   localStorage.setItem('zaker_student_track',child.track);
   studentTrack=child.track;
+  aiSessionId=localStorage.getItem(childKey('zaker_ai_session_id'))||'';
+  if(!aiSessionId){
+    aiSessionId=(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now()+'-'+Math.random().toString(36).slice(2));
+    localStorage.setItem(childKey('zaker_ai_session_id'),aiSessionId);
+  }
 
   document.getElementById('activeChildName').textContent=child.full_name;
   document.getElementById('trackName').textContent=child.track==='languages'?'مسار لغات':'مسار عربي';
   document.getElementById('gradeName').textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
 
   applyTrack();
-  if(studentTrack==='languages')loadBank();
+  if(studentTrack==='languages'&&activeChildGrade==='prep1')loadBank();
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 initAccount();
