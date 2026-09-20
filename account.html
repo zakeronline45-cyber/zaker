@@ -107,7 +107,7 @@ function openChild(id){
  const ch=children.find(x=>x.id===id);if(!ch)return;
  localStorage.setItem('zaker_active_child_id',ch.id);
  localStorage.setItem('zaker_student_track',ch.track);
- location.href='/student.html';
+ location.href='/';
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
