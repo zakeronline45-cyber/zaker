@@ -13,6 +13,16 @@
 <main>
 <div class="head"><h1>اشتراك ذاكر</h1><p class="muted">أول مادة بـ250 جنيه شهريًا، وكل مادة إضافية تضيف 225 جنيه فقط. الطفل الثاني يحصل على خصم 25% من إجمالي اشتراكه.</p></div>
 <div id="current" class="status">جاري تحميل حالة الاشتراك...</div>
+<div class="plan" style="max-width:720px;margin:18px auto 0">
+  <h2>عندك كود دعائي؟</h2>
+  <p class="muted">اختار الابن واكتب الكود لتفعيل الفترة المجانية على حسابه.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <label>الابن / الابنة<select id="promoChildId" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px"></select></label>
+    <label>الكود الدعائي<input id="promoCode" placeholder="مثال: SCHOOL14" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px;text-transform:uppercase"></label>
+  </div>
+  <button class="btn soft" style="width:100%;margin-top:12px" onclick="redeemPromo()">تفعيل الكود</button>
+  <div id="promoMsg" class="status" style="display:none"></div>
+</div>
 
 <div class="plan" style="max-width:720px;margin:26px auto 0">
   <h2>احسب اشتراكك</h2>
@@ -63,6 +73,8 @@ async function init(){
  children=chs||[];
  const childSelect=document.getElementById('childId');
  childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(ch.track==='arabic'?'عربي':'لغات')+' — '+({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade)+(i===1?' — خصم الطفل الثاني 25%':'')+'</option>').join('');
+ const promoSelect=document.getElementById('promoChildId');
+ promoSelect.innerHTML=children.map(ch=>'<option value="'+ch.id+'">'+ch.full_name+'</option>').join('');
  const requested=new URLSearchParams(location.search).get('child');
  if(requested&&children.some(x=>x.id===requested)) childSelect.value=requested;
  if(!children.length){
@@ -80,6 +92,19 @@ async function init(){
    :'آخر طلب اشتراك: '+data[0].status;
  calc();
 }
+async function redeemPromo(){
+ const childId=document.getElementById('promoChildId').value;
+ const code=document.getElementById('promoCode').value.trim().toUpperCase();
+ const box=document.getElementById('promoMsg');box.style.display='block';
+ if(!childId||!code){box.textContent='اختار الابن واكتب الكود.';return}
+ const {data,error}=await sb.rpc('redeem_promo_code',{p_child_id:childId,p_code:code});
+ if(error){box.className='status err';box.textContent=error.message;return}
+ box.className='status';
+ box.innerHTML='<span class="ok">تم تفعيل الاشتراك المجاني.</span> '+data.free_days+' يوم — '+data.subject_count+' مادة.';
+ document.getElementById('promoCode').value='';
+ await init();
+}
+
 function calc(){
   const n=Number(document.getElementById('subjectCount').value)||1;
   const selectedId=document.getElementById('childId')?.value;
