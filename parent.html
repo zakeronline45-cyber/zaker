@@ -4,24 +4,47 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ذاكر | ولي الأمر</title>
 <style>
-:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a}
+:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--r:#e85b66;--g:#19b887}
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px}.wrap{max-width:1150px;margin:auto}.bar{display:flex;justify-content:space-between;align-items:center}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}a{text-decoration:none;color:inherit}.btn{padding:10px 14px;border-radius:10px;background:#eef3ff;color:var(--b);font-weight:800}
-main{max-width:1150px;margin:24px auto;padding:0 16px}.note{background:#fff8e8;border:1px solid #ffe2a6;padding:13px;border-radius:12px;margin-bottom:16px;color:#7f6323}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.kpi b{display:block;font-size:28px;color:var(--n)}.kpi span{color:var(--m);font-size:13px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:16px}.rows{display:grid;gap:10px}.row{background:#f8faff;border-radius:12px;padding:13px;display:flex;justify-content:space-between;gap:12px}.weak{background:#fff2f2}.good{background:#effbf7}@media(max-width:850px){.kpis,.grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kpis,.grid{grid-template-columns:1fr}}</style>
+main{max-width:1150px;margin:24px auto;padding:0 16px}.note{background:#fff8e8;border:1px solid #ffe2a6;padding:13px;border-radius:12px;margin-bottom:16px;color:#7f6323}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.kpi b{display:block;font-size:28px;color:var(--n)}.kpi span{color:var(--m);font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.rows{display:grid;gap:10px}.row{background:#f8faff;border-radius:12px;padding:13px}.weak{background:#fff2f2;border:1px solid #f6c8cc}.good{background:#effbf7;border:1px solid #c9ecdf}.qitem{border:1px solid var(--line);border-radius:12px;padding:13px;margin-top:10px}.qitem h4{margin:0 0 8px;direction:ltr;text-align:left}.ans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:9px}.ans div{padding:10px;border-radius:10px}.student{background:#fff4f4}.correct{background:#effbf7}.muted{color:var(--m);font-size:13px}.pill{display:inline-block;background:#edf3ff;color:var(--b);font-size:12px;font-weight:800;padding:4px 8px;border-radius:999px}.empty{text-align:center;color:var(--m);padding:30px}@media(max-width:850px){.kpis,.grid,.ans{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kpis,.grid,.ans{grid-template-columns:1fr}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>ولي الأمر</span></a><a class="btn" href="/">الرئيسية</a></div></header>
 <main>
-<div class="note">لوحة ولي الأمر جاهزة شكليًا الآن. الأرقام التالية تجريبية حتى نفعّل حسابات الطلاب ونبدأ حفظ نتائج الاختبارات فعليًا.</div>
+<div class="note">البيانات الحالية تُقرأ من الاختبارات التي تم حلها على نفس الجهاز. عند تفعيل الحسابات سننقل الحفظ إلى حساب الطالب ليظهر لولي الأمر من أي جهاز.</div>
 <h2>متابعة الطالب</h2>
 <div class="kpis">
- <div class="card kpi"><span>الدروس المكتملة</span><b>—</b></div>
- <div class="card kpi"><span>متوسط الاختبارات</span><b>—</b></div>
- <div class="card kpi"><span>وقت المذاكرة</span><b>—</b></div>
- <div class="card kpi"><span>نقاط تحتاج مراجعة</span><b>—</b></div>
+ <div class="card kpi"><span>عدد الاختبارات</span><b id="testsCount">0</b></div>
+ <div class="card kpi"><span>متوسط الاختبارات</span><b id="avgScore">—</b></div>
+ <div class="card kpi"><span>إجابات صحيحة</span><b id="correctTotal">0</b></div>
+ <div class="card kpi"><span>نقاط تحتاج مراجعة</span><b id="weakTotal">0</b></div>
 </div>
 <div class="grid">
- <section class="card"><h3>آخر النشاطات</h3><div class="rows"><div class="row"><span>سيظهر هنا آخر درس درسه الطالب</span><b>قريبًا</b></div><div class="row"><span>سيظهر هنا آخر اختبار ودرجته</span><b>قريبًا</b></div><div class="row"><span>سيظهر هنا وقت المذاكرة اليومي</span><b>قريبًا</b></div></div></section>
- <section class="card"><h3>تحليل ذاكر</h3><div class="row weak"><span>نقاط الضعف</span><b>بعد حفظ النتائج</b></div><div class="row good"><span>نقاط القوة</span><b>بعد حفظ النتائج</b></div><p style="color:#71809a;line-height:1.8">عند تفعيل الحسابات، كل اختبار يحله الطالب سيتسجل ويظهر هنا تلقائيًا مع توصية بالمراجعة.</p></section>
+ <section class="card"><h3>آخر الاختبارات</h3><div id="recentTests" class="rows"></div></section>
+ <section class="card"><h3>تحليل ذاكر</h3><div id="analysisBox"></div></section>
 </div>
+<section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">الإجابة الصحيحة تظهر هنا لولي الأمر فقط.</p><div id="wrongAnswers"></div></section>
 </main>
+<script>
+const results=JSON.parse(localStorage.getItem('zaker_results')||'[]');
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+document.getElementById('testsCount').textContent=results.length;
+if(results.length){
+ const avg=Math.round(results.reduce((a,r)=>a+(r.pct||0),0)/results.length);
+ const all=results.flatMap(r=>r.answers||[]);
+ const correct=all.filter(a=>a.correct).length,wrong=all.filter(a=>!a.correct);
+ document.getElementById('avgScore').textContent=avg+'%';
+ document.getElementById('correctTotal').textContent=correct;
+ document.getElementById('weakTotal').textContent=wrong.length;
+ document.getElementById('recentTests').innerHTML=results.slice(0,6).map(r=>'<div class="row"><div><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('ar-EG')+'</div></div><div style="font-size:22px;font-weight:900;color:'+(r.pct>=70?'#168369':'#d95a63')+'">'+r.pct+'%</div></div>').join('');
+ const weakByLesson={};wrong.forEach(a=>weakByLesson[a.lessonTitle]=(weakByLesson[a.lessonTitle]||0)+1);
+ const sorted=Object.entries(weakByLesson).sort((a,b)=>b[1]-a[1]);
+ document.getElementById('analysisBox').innerHTML=sorted.length?'<div class="weak row"><div><b>أكثر درس يحتاج مراجعة</b><div class="muted">'+esc(sorted[0][0])+'</div></div><b>'+sorted[0][1]+' أخطاء</b></div><div class="good row"><div><b>التوصية</b><div class="muted">راجع شرح '+esc(sorted[0][0])+' ثم أعد اختبارًا جديدًا بعد المراجعة.</div></div></div>':'<div class="good row">لا توجد أخطاء مسجلة حتى الآن.</div>';
+ document.getElementById('wrongAnswers').innerHTML=wrong.length?wrong.slice(0,30).map(a=>'<div class="qitem"><span class="pill">'+esc(a.lessonTitle)+'</span><h4>'+esc(a.question)+'</h4><div class="ans"><div class="student"><b>إجابة الطالب</b><p>'+esc(a.studentAnswer)+'</p></div><div class="correct"><b>الإجابة الصحيحة</b><p>'+esc(a.correctAnswer)+'</p></div></div><div class="muted">صفحة المصدر: '+(a.sourcePage||'—')+'</div></div>').join(''):'<div class="empty">لا توجد إجابات خاطئة مسجلة.</div>';
+}else{
+ document.getElementById('recentTests').innerHTML='<div class="empty">لم يُحل أي اختبار بعد.</div>';
+ document.getElementById('analysisBox').innerHTML='<div class="empty">التحليل سيظهر بعد أول اختبار.</div>';
+ document.getElementById('wrongAnswers').innerHTML='<div class="empty">لا توجد بيانات حتى الآن.</div>';
+}
+</script>
 </body></html>
