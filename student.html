@@ -323,7 +323,7 @@ function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classL
 async function submitAnswer(){const q=test[idx];let studentAnswer=selectedChoice;if(!['mcq','true_false'].includes(q.type))studentAnswer=document.getElementById('writtenAnswer')?.value.trim();if(!studentAnswer){document.getElementById('submitMsg').innerHTML='<div class="status danger">اكتب أو اختر إجابة أولًا.</div>';return}
 document.querySelectorAll('button,textarea').forEach(x=>{if(x.closest('#testArea'))x.disabled=true});document.getElementById('submitMsg').innerHTML='<div class="submitted">تم تسجيل إجابتك... جاري الانتقال للسؤال التالي.</div>';
 let correct=false;try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lesson:q.lesson||lesson,id:q.id,studentAnswer,studyLanguage})});const j=await r.json();correct=!!j.correct}catch(e){}
-answers.push({lesson:q.lesson||lesson,lessonTitle:titles[q.lesson||lesson],questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct,sourcePage:q.sourcePage});
+answers.push({lesson:q.lesson||lesson,lessonTitle:titles[q.lesson||lesson],questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct});
 setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},450)}
 async function finishTest(){
  const score=answers.filter(x=>x.correct).length,total=answers.length,pct=Math.round(score/total*100),wrong=answers.filter(x=>!x.correct);
@@ -335,7 +335,11 @@ async function finishTest(){
    feedback=await r.json();
  }catch(e){}
  const record={subject:'Science',unit:testLessons.length===1?units[testLessons[0]]:'Multiple lessons',lesson:testLessons.length===1?testLessons[0]:null,lessonTitle:testScopeLabel,lessons:testLessons,score,total,pct,date:new Date().toISOString(),answers,feedback};
- const old=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_results'),JSON.stringify(old.slice(0,50)));logActivity({type:'test',lessonTitle:testScopeLabel,pct,date:record.date});
+ const old=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_results'),JSON.stringify(old.slice(0,50)));
+ if(activeChildId){
+   try{await sb.rpc('save_student_test_result',{p_child_id:activeChildId,p_subject:'Science',p_lesson_title:testScopeLabel,p_score:score,p_total:total,p_pct:pct,p_answers:answers,p_feedback:feedback})}catch(e){}
+ }
+ logActivity({type:'test',lessonTitle:testScopeLabel,pct,date:record.date});
  const topics=(feedback.topics||[]).map(t=>'<div class="feedback-item"><h4>'+esc(t.question||t.topic||'السؤال')+'</h4><div class="submitted" style="margin-top:8px"><b>الإجابة الصحيحة:</b> '+esc(t.correctAnswer||'—')+'</div><div class="answer" style="margin-top:8px"><b>إجابة الطالب:</b> '+esc(t.studentAnswer||'—')+'</div><div style="margin-top:8px"><b>الشرح:</b> '+esc(t.explanation||'قارن بين إجابتك والإجابة الصحيحة وركز على الفرق العلمي الحقيقي.')+'</div></div>').join('');
  const plan=(feedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
  document.getElementById('testArea').innerHTML='<div class="result"><p>نتيجتك</p><b>'+pct+'%</b><p>'+esc(feedback.summary||'راجع أخطاءك ثم أعد الاختبار.')+'</p></div>'+
@@ -348,19 +352,34 @@ function showExplain(){
  document.querySelectorAll('.pane').forEach(x=>x.classList.toggle('active',x.id==='pane-explain'));
  window.scrollTo({top:0,behavior:'smooth'});
 }
-function logActivity(item){const a=JSON.parse(localStorage.getItem(childKey('zaker_activity'))||'[]');a.unshift(item);localStorage.setItem(childKey('zaker_activity'),JSON.stringify(a.slice(0,100)))}
-function logLessonVisit(n){const seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');if(!seen.includes(n)){seen.push(n);localStorage.setItem(childKey('zaker_lessons_seen'),JSON.stringify(seen))}logActivity({type:'lesson',lessonTitle:titles[n],date:new Date().toISOString()})}
-function renderProfile(){
- const results=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');
- const seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');
+function logActivity(item){
+ const a=JSON.parse(localStorage.getItem(childKey('zaker_activity'))||'[]');a.unshift(item);localStorage.setItem(childKey('zaker_activity'),JSON.stringify(a.slice(0,100)));
+ if(activeChildId) sb.rpc('log_student_activity',{p_child_id:activeChildId,p_activity_type:item.type||'activity',p_subject:'Science',p_lesson_title:item.lessonTitle||'',p_pct:item.pct??null}).catch(()=>{});
+}
+function logLessonVisit(n){
+ const seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');if(!seen.includes(n)){seen.push(n);localStorage.setItem(childKey('zaker_lessons_seen'),JSON.stringify(seen))}
+ if(activeChildId) sb.rpc('mark_lesson_seen',{p_child_id:activeChildId,p_subject:'Science',p_lesson_no:n}).catch(()=>{});
+ logActivity({type:'lesson',lessonTitle:titles[n],date:new Date().toISOString()});
+}
+async function renderProfile(){
+ let results=[],seen=[];
+ if(activeChildId){
+   try{
+     const {data}=await sb.rpc('get_child_dashboard',{p_child_id:activeChildId});
+     results=(data?.tests||[]).map(r=>({lessonTitle:r.lesson_title,pct:r.pct,date:r.created_at,answers:r.answers||[],feedback:r.feedback||{}}));
+     seen=data?.lessons||[];
+   }catch(e){}
+ }
+ if(!results.length) results=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');
+ if(!seen.length) seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');
  const all=results.flatMap(r=>r.answers||[]), wrong=all.filter(x=>!x.correct);
  document.getElementById('pfTests').textContent=results.length;
  document.getElementById('pfAvg').textContent=results.length?Math.round(results.reduce((a,r)=>a+(r.pct||0),0)/results.length)+'%':'—';
  document.getElementById('pfLessons').textContent=seen.length;
  document.getElementById('pfWeak').textContent=wrong.length;
  document.getElementById('pfHistory').innerHTML=results.length?results.slice(0,8).map(r=>'<div class="history-item"><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('ar-EG')+'</div><div class="score">'+r.pct+'%</div></div>').join(''):'<div class="muted">لسه مفيش اختبارات محفوظة.</div>';
- const weak={};wrong.forEach(x=>weak[x.lessonTitle]=(weak[x.lessonTitle]||0)+1);const sorted=Object.entries(weak).sort((a,b)=>b[1]-a[1]);
- const latest=results.find(r=>r.feedback)?.feedback;
+ const weak={};wrong.forEach(x=>weak[x.lessonTitle||'Science']=(weak[x.lessonTitle||'Science']||0)+1);const sorted=Object.entries(weak).sort((a,b)=>b[1]-a[1]);
+ const latest=results.find(r=>r.feedback&&Object.keys(r.feedback).length)?.feedback;
  let html=sorted.length?'<div class="history-item"><b>أكثر درس يحتاج مراجعة:</b> '+esc(sorted[0][0])+' — '+sorted[0][1]+' أخطاء</div>':'<div class="muted">لا توجد نقاط ضعف مسجلة.</div>';
  if(latest?.plan?.length) html+='<div class="review-plan"><b>خطة المراجعة الحالية</b><ol>'+latest.plan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>';
  document.getElementById('pfWeakness').innerHTML=html;
@@ -397,6 +416,14 @@ async function initAccount(){
   if(!validSub){
     location.href='/subscribe.html?child='+encodeURIComponent(child.id);
     return;
+  }
+  if(validSub.access_source==='paid'){
+    const {data:entitlements}=await sb.from('subscription_subjects').select('subject_code').eq('subscription_id',validSub.id);
+    const hasScience=(entitlements||[]).some(x=>x.subject_code==='Science');
+    if(child.track==='languages'&&child.grade==='prep1'&&!hasScience){
+      location.href='/subscribe.html?child='+encodeURIComponent(child.id);
+      return;
+    }
   }
 
   document.getElementById('activeChildName').textContent=child.full_name;
