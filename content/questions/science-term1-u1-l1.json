@@ -1,0 +1,313 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 1,
+  "unitTitle": "The Matter",
+  "lesson": 1,
+  "lessonTitle": "Structure of the Atom",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u1-l1-001",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which of the following represents matter?",
+      "choices": [
+        "Air",
+        "Light",
+        "Sound",
+        "None of these"
+      ],
+      "answer": "Air",
+      "sourcePage": 32
+    },
+    {
+      "id": "s1-u1-l1-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The building and structural unit of any matter is the:",
+      "choices": [
+        "Molecule",
+        "Atom",
+        "Cell",
+        "Nucleus"
+      ],
+      "answer": "Atom",
+      "sourcePage": 32
+    },
+    {
+      "id": "s1-u1-l1-003",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The scientist who formulated the first scientific theory about the atom was:",
+      "choices": [
+        "Rutherford",
+        "Dalton",
+        "Moseley",
+        "Mendeleev"
+      ],
+      "answer": "Dalton",
+      "sourcePage": 32
+    },
+    {
+      "id": "s1-u1-l1-004",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which subatomic particle has the smallest mass?",
+      "choices": [
+        "Proton",
+        "Neutron",
+        "Electron",
+        "Nucleon"
+      ],
+      "answer": "Electron",
+      "sourcePage": 32
+    },
+    {
+      "id": "s1-u1-l1-005",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "The mass of a proton is approximately:",
+      "choices": [
+        "1 g",
+        "1 kg",
+        "1 u",
+        "1 mg"
+      ],
+      "answer": "1 u",
+      "sourcePage": 32
+    },
+    {
+      "id": "s1-u1-l1-006",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The chemical symbol of sulfur is:",
+      "choices": [
+        "Si",
+        "S",
+        "K",
+        "Ca"
+      ],
+      "answer": "S",
+      "sourcePage": 32
+    },
+    {
+      "id": "s1-u1-l1-007",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Electrons revolve around the ______ at very high speeds in regions known as energy levels.",
+      "answer": "nucleus",
+      "sourcePage": 33
+    },
+    {
+      "id": "s1-u1-l1-008",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Protons are ______ charged particles, while electrons are ______ charged particles.",
+      "answer": "positively; negatively",
+      "sourcePage": 33
+    },
+    {
+      "id": "s1-u1-l1-009",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The difference between the mass number (A) and the atomic number (Z) equals the number of ______.",
+      "answer": "neutrons",
+      "sourcePage": 33
+    },
+    {
+      "id": "s1-u1-l1-010",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "Dalton considered the atom to be indivisible.",
+      "answer": "True",
+      "sourcePage": 34
+    },
+    {
+      "id": "s1-u1-l1-011",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The charge of the proton is opposite in type to the charge of the electron but equal in magnitude.",
+      "answer": "True",
+      "sourcePage": 34
+    },
+    {
+      "id": "s1-u1-l1-012",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "The atom is electrically neutral in its normal state.",
+      "answer": "True",
+      "sourcePage": 34
+    },
+    {
+      "id": "s1-u1-l1-013",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The number of neutrons is always equal to the number of protons in every atom.",
+      "answer": "False",
+      "sourcePage": 34
+    },
+    {
+      "id": "s1-u1-l1-014",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The nucleus of the atom is described as positively charged.",
+      "answer": "Because it contains positively charged protons and neutral neutrons.",
+      "sourcePage": 35
+    },
+    {
+      "id": "s1-u1-l1-015",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The mass of the atom is concentrated in the nucleus.",
+      "answer": "Because electron mass is very small compared with the masses of protons and neutrons.",
+      "sourcePage": 35
+    },
+    {
+      "id": "s1-u1-l1-016",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The atom is electrically neutral in its normal state.",
+      "answer": "Because the number of negatively charged electrons equals the number of positively charged protons.",
+      "sourcePage": 35
+    },
+    {
+      "id": "s1-u1-l1-017",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare the proton and electron in terms of relative electric charge and location in the atom.",
+      "answer": "Proton: +1, inside the nucleus. Electron: -1, revolves around the nucleus in energy levels.",
+      "sourcePage": 35
+    },
+    {
+      "id": "s1-u1-l1-018",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "An atom has atomic number 11 and mass number 23. Calculate the number of electrons and neutrons.",
+      "answer": "Electrons = 11; Neutrons = 23 - 11 = 12.",
+      "sourcePage": 37
+    },
+    {
+      "id": "s1-u1-l1-019",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "The second energy level L is saturated with:",
+      "choices": [
+        "2 electrons",
+        "8 electrons",
+        "18 electrons",
+        "32 electrons"
+      ],
+      "answer": "8 electrons",
+      "sourcePage": 38
+    },
+    {
+      "id": "s1-u1-l1-020",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "In electron configuration, energy level M is filled before energy level:",
+      "choices": [
+        "K",
+        "L",
+        "N",
+        "M"
+      ],
+      "answer": "N",
+      "sourcePage": 38
+    },
+    {
+      "id": "s1-u1-l1-021",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Isotopes of the same element agree in:",
+      "choices": [
+        "Mass number",
+        "Number of protons",
+        "Number of neutrons",
+        "All physical properties"
+      ],
+      "answer": "Number of protons",
+      "sourcePage": 38
+    },
+    {
+      "id": "s1-u1-l1-022",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The first four main energy levels are represented by the symbols ______, ______, ______ and ______.",
+      "answer": "K, L, M, N",
+      "sourcePage": 39
+    },
+    {
+      "id": "s1-u1-l1-023",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Isotopes of the same element have the same ______ but different ______.",
+      "answer": "atomic number; mass number",
+      "sourcePage": 39
+    },
+    {
+      "id": "s1-u1-l1-024",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The energy of an electron increases as its energy level becomes farther from the nucleus.",
+      "answer": "True",
+      "sourcePage": 40
+    },
+    {
+      "id": "s1-u1-l1-025",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The first energy level K is saturated with 8 electrons.",
+      "answer": "False",
+      "sourcePage": 40
+    },
+    {
+      "id": "s1-u1-l1-026",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Energy level L is filled with electrons before energy level M.",
+      "answer": "Because energy level L has lower energy than energy level M.",
+      "sourcePage": 41
+    },
+    {
+      "id": "s1-u1-l1-027",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare protium, deuterium and tritium in terms of number of protons, number of neutrons and mass number.",
+      "answer": "All have 1 proton. Protium: 0 neutrons, mass number 1. Deuterium: 1 neutron, mass number 2. Tritium: 2 neutrons, mass number 3.",
+      "sourcePage": 41
+    },
+    {
+      "id": "s1-u1-l1-028",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "An atom has 31 nucleons. Its electrons occupy 3 energy levels and the outermost level contains 5 electrons. Find its atomic number and number of neutrons.",
+      "answer": "Electron configuration = 2,8,5 so atomic number = 15. Neutrons = 31 - 15 = 16.",
+      "sourcePage": 43
+    },
+    {
+      "id": "s1-u1-l1-029",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "An atom has electrons distributed in four energy levels, and the number of electrons in its outermost level equals the number of electrons in the first energy level. If the number of protons equals the number of neutrons, determine its atomic number and mass number.",
+      "answer": "Electron configuration = 2,8,8,2 so atomic number = 20. Protons = 20 and neutrons = 20, so mass number = 40.",
+      "sourcePage": 44
+    },
+    {
+      "id": "s1-u1-l1-030",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which statement best indicates that an atom is neutral?",
+      "choices": [
+        "Protons equal neutrons",
+        "Electrons equal neutrons",
+        "Protons equal electrons",
+        "Mass number equals atomic number"
+      ],
+      "answer": "Protons equal electrons",
+      "sourcePage": 46
+    }
+  ]
+}
