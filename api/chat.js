@@ -89,23 +89,19 @@ export default async function handler(req,res){
       recentQuestions:history?.recent_questions||[]
     });
     if(!inScope){
-      const msg=studyLanguage==='Arabic'
-        ? 'السؤال ده خارج منهج Science الحالي على ذاكر. اسألني في دروس المنهج الموجود عندك، وأنا أشرحها لك خطوة بخطوة.'
-        : 'This question is outside the current Science curriculum on Zaker. Ask me about one of your syllabus lessons, and I’ll explain it step by step.';
+      const msg='This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
       return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||1,lessonCounts:history?.lesson_counts||{}}});
     }
 
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
     const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
 
-    const languageRule=studyLanguage==='Arabic'
-      ? 'اشرح بالعربية الواضحة، واكتب المصطلح العلمي الإنجليزي بين قوسين عند أول ظهوره. اجعل الأمثلة والأسئلة بالعربية ما لم يكن المصطلح العلمي نفسه إنجليزيًا.'
-      : 'Explain mainly in clear English suitable for first-prep language students, then add a short Arabic clarification for difficult ideas when useful.';
+    const languageRule='Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
 
     const instructions=`أنت "مدرس ذاكر"، مدرس شخصي ذكي لطلاب ${grade}.
 المادة الحالية: ${subject}.
 الدرس الحالي: ${lesson||'غير محدد'}.
-مسار الطالب في العلوم: ${studyLanguage}.
+مسار الطالب: Science English.
 ${languageRule}
 
 هدفك ليس فقط الإجابة، بل تكوين صورة تعليمية تدريجية عن الطالب من نمط أسئلته.
