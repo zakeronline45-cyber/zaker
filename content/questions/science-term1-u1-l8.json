@@ -7,7 +7,8 @@
   "lesson": 8,
   "lessonTitle": "Cells and Life",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u3-l8-001",
@@ -15,119 +16,269 @@
       "difficulty": "easy",
       "text": "The basic unit of structure and function in living organisms is the ______.",
       "answer": "cell",
-      "sourcePage": 265
+      "sourcePage": 265,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-002",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Which sequence is correct from simpler to more complex organization?",
-      "choices": [
-        "Cell → Tissue → Organ → System → Organism",
-        "Organ → Cell → Tissue → Organism → System",
-        "Tissue → Cell → Organ → System → Organism",
-        "Cell → Organ → Tissue → System → Organism"
-      ],
-      "answer": "Cell → Tissue → Organ → System → Organism",
-      "sourcePage": 266
+      "text": "A group of different organs working together forms a body ______.",
+      "answer": "system",
+      "sourcePage": 266,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-003",
-      "type": "true_false",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "A tissue is a group of similar cells performing a common function.",
-      "answer": "True",
-      "sourcePage": 267
+      "text": "A group of similar cells performing a common function forms a ______.",
+      "answer": "tissue",
+      "sourcePage": 267,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-004",
-      "type": "complete",
+      "type": "mcq",
       "difficulty": "easy",
-      "text": "A group of organs working together forms an organ ______.",
-      "answer": "system",
-      "sourcePage": 267
+      "text": "Bacteria are classified as:",
+      "choices": [
+        "prokaryotes",
+        "multicellular eukaryotes",
+        "plants",
+        "animals"
+      ],
+      "answer": "prokaryotes",
+      "sourcePage": 268,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-005",
       "type": "mcq",
-      "difficulty": "medium",
-      "text": "Which structure is found in plant cells but not animal cells?",
+      "difficulty": "easy",
+      "text": "Amoeba and Paramecium are examples of:",
       "choices": [
-        "Chloroplast",
-        "Cell membrane",
-        "Cytoplasm",
-        "Ribosome"
+        "unicellular eukaryotes",
+        "prokaryotes",
+        "multicellular plants",
+        "bacteria"
       ],
-      "answer": "Chloroplast",
-      "sourcePage": 270
+      "answer": "unicellular eukaryotes",
+      "sourcePage": 269,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-006",
-      "type": "mcq",
+      "type": "true_false",
       "difficulty": "medium",
-      "text": "Which structure gives plant cells extra support?",
-      "choices": [
-        "Cell wall",
-        "Nucleus",
-        "Cytoplasm",
-        "Cell membrane only"
-      ],
-      "answer": "Cell wall",
-      "sourcePage": 270
+      "text": "All prokaryotic organisms are unicellular.",
+      "answer": "True",
+      "sourcePage": 270,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-007",
       "type": "compare",
       "difficulty": "medium",
-      "text": "Compare plant and animal cells.",
-      "answer": "Both have cell membrane, cytoplasm, and genetic material; plant cells also have a cell wall and chloroplasts and usually a large vacuole.",
-      "sourcePage": 272
+      "text": "Compare prokaryotes and eukaryotes.",
+      "answer": "Prokaryotes have genetic material in the cytoplasm without a nuclear membrane and lack many organelles; eukaryotes have a true nucleus and many organelles.",
+      "sourcePage": 271,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-008",
       "type": "compare",
       "difficulty": "medium",
-      "text": "Compare prokaryotic and eukaryotic cells.",
-      "answer": "Prokaryotic cells lack a true membrane-bound nucleus; eukaryotic cells have a true nucleus and membrane-bound organelles.",
-      "sourcePage": 274
+      "text": "Compare unicellular and multicellular organisms.",
+      "answer": "Unicellular organisms consist of one unspecialized cell; multicellular organisms consist of many specialized cells.",
+      "sourcePage": 272,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-009",
       "type": "mcq",
-      "difficulty": "medium",
-      "text": "Bacteria are examples of:",
+      "difficulty": "easy",
+      "text": "Which structure distinguishes plant cells from animal cells?",
       "choices": [
-        "prokaryotic organisms",
-        "plant cells",
-        "animal tissues",
-        "multicellular organs"
+        "Cell wall",
+        "Cell membrane",
+        "Cytoplasm",
+        "Mitochondria"
       ],
-      "answer": "prokaryotic organisms",
-      "sourcePage": 276
+      "answer": "Cell wall",
+      "sourcePage": 273,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-010",
-      "type": "true_false",
-      "difficulty": "hard",
-      "text": "Paramecium is a unicellular eukaryotic organism.",
-      "answer": "True",
-      "sourcePage": 278
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which organelle is responsible for photosynthesis in plant cells?",
+      "choices": [
+        "Chloroplast",
+        "Mitochondrion",
+        "Ribosome",
+        "Nucleus"
+      ],
+      "answer": "Chloroplast",
+      "sourcePage": 274,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-011",
       "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: Plant cells can carry out photosynthesis.",
-      "answer": "Because they contain chloroplasts with chlorophyll.",
-      "sourcePage": 280
+      "difficulty": "medium",
+      "text": "Give a reason: Bacteria are classified as prokaryotes.",
+      "answer": "Their genetic material is not surrounded by a nuclear membrane.",
+      "sourcePage": 275,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
     },
     {
       "id": "s1-u3-l8-012",
-      "type": "true_false",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Mushroom fungus is eukaryotic.",
+      "answer": "Its genetic material is surrounded by a nuclear membrane separating it from the cytoplasm.",
+      "sourcePage": 276,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-013",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Stem cells can produce more stem cells.",
+      "answer": "They can renew themselves through division.",
+      "sourcePage": 277,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-014",
+      "type": "reason",
       "difficulty": "hard",
-      "text": "All living organisms are multicellular.",
+      "text": "Give a reason: Stem cells can be used to test new drugs before human use.",
+      "answer": "Their response can help evaluate drug safety and effectiveness.",
+      "sourcePage": 278,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-015",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The instrument used to see microscopic organisms is the light ______.",
+      "answer": "microscope",
+      "sourcePage": 279,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-016",
+      "type": "problem",
+      "difficulty": "easy",
+      "text": "Arrange from simplest to most complex: organ, cell, system, tissue.",
+      "answer": "Cell → tissue → organ → system.",
+      "sourcePage": 280,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-017",
+      "type": "problem",
+      "difficulty": "easy",
+      "text": "A cell has cell wall, chloroplasts and a large vacuole. Identify it.",
+      "answer": "A plant cell.",
+      "sourcePage": 281,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-018",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "A microorganism has no nuclear membrane around its genetic material. Classify it.",
+      "answer": "A prokaryote.",
+      "sourcePage": 282,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-019",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare plant and animal cells in structures that distinguish them.",
+      "answer": "Plant cells have a cell wall and chloroplasts and typically larger vacuoles; animal cells do not have a cell wall or chloroplasts.",
+      "sourcePage": 283,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-020",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Mushroom fungus and bread mold fungus are multicellular eukaryotic organisms.",
+      "answer": "True",
+      "sourcePage": 284,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-021",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Yeast fungus is always multicellular.",
       "answer": "False",
-      "sourcePage": 282
+      "sourcePage": 285,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-022",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which is an example of a specialized human cell type produced from stem cells?",
+      "choices": [
+        "Nerve cell",
+        "Virus",
+        "Rock crystal",
+        "Salt molecule"
+      ],
+      "answer": "Nerve cell",
+      "sourcePage": 285,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-023",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "A diagram shows mitochondria in an animal cell. State whether mitochondria are found in prokaryotic or eukaryotic cells according to the lesson.",
+      "answer": "Eukaryotic cells.",
+      "sourcePage": 285,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
+    },
+    {
+      "id": "s1-u3-l8-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: Why is classification useful when studying many living organisms?",
+      "answer": "It organizes organisms according to similarities and differences, making study and identification easier.",
+      "sourcePage": 285,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
