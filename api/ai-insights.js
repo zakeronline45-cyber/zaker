@@ -4,9 +4,20 @@ const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 export default async function handler(req,res){
   if(req.method!=='GET') return res.status(405).json({error:'Method not allowed'});
   try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/get_cohort_question_insights`,{
+    const auth=req.headers.authorization||'';
+    const token=auth.startsWith('Bearer ')?auth.slice(7):'';
+    if(!token) return res.status(401).json({error:'Unauthorized'});
+    const ar=await fetch(SUPABASE_URL+'/rest/v1/rpc/is_admin',{
       method:'POST',
-      headers:{'apikey':SUPABASE_KEY,'Authorization':`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json'},
+      headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
+      body:'{}'
+    });
+    const isAdmin=await ar.json().catch(()=>false);
+    if(!ar.ok||isAdmin!==true) return res.status(403).json({error:'Admin only'});
+
+    const r=await fetch(SUPABASE_URL+'/rest/v1/rpc/get_cohort_question_insights',{
+      method:'POST',
+      headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
       body:JSON.stringify({p_subject:'Science'})
     });
     const rows=await r.json();
