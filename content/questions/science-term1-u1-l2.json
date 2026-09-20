@@ -1,0 +1,227 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 1,
+  "unitTitle": "The Matter",
+  "lesson": 2,
+  "lessonTitle": "The Periodic Table of Elements",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u1-l2-001",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Moseley arranged the elements in the periodic table in ascending order according to their ______.",
+      "answer": "atomic numbers",
+      "sourcePage": 76
+    },
+    {
+      "id": "s1-u1-l2-002",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The modern periodic table consists of ______ vertical groups.",
+      "answer": "18",
+      "sourcePage": 76
+    },
+    {
+      "id": "s1-u1-l2-003",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Elements located in the d-block are called ______ metals.",
+      "answer": "transition",
+      "sourcePage": 76
+    },
+    {
+      "id": "s1-u1-l2-004",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The elements of group 1A are called:",
+      "choices": [
+        "Alkali metals",
+        "Alkaline Earth metals",
+        "Halogens",
+        "Noble gases"
+      ],
+      "answer": "Alkali metals",
+      "sourcePage": 77
+    },
+    {
+      "id": "s1-u1-l2-005",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The elements of group 2A are called:",
+      "choices": [
+        "Alkali metals",
+        "Alkaline Earth metals",
+        "Halogens",
+        "Transition metals"
+      ],
+      "answer": "Alkaline Earth metals",
+      "sourcePage": 77
+    },
+    {
+      "id": "s1-u1-l2-006",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The halogens are located in group:",
+      "choices": [
+        "1A",
+        "2A",
+        "7A",
+        "0"
+      ],
+      "answer": "7A",
+      "sourcePage": 77
+    },
+    {
+      "id": "s1-u1-l2-007",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The noble gases are located in group:",
+      "choices": [
+        "1A",
+        "2A",
+        "7A",
+        "0"
+      ],
+      "answer": "0",
+      "sourcePage": 77
+    },
+    {
+      "id": "s1-u1-l2-008",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "All elements of the d-block are transition metals.",
+      "answer": "True",
+      "sourcePage": 79
+    },
+    {
+      "id": "s1-u1-l2-009",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The p-block is located on the left side of the modern periodic table.",
+      "answer": "False",
+      "sourcePage": 79
+    },
+    {
+      "id": "s1-u1-l2-010",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "The d-block consists of 10 vertical groups.",
+      "answer": "True",
+      "sourcePage": 79
+    },
+    {
+      "id": "s1-u1-l2-011",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Scientists rearranged the elements periodically in the modern periodic table.",
+      "answer": "To facilitate the study of elements and reveal periodic relationships between their properties.",
+      "sourcePage": 80
+    },
+    {
+      "id": "s1-u1-l2-012",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare elements in the same group and elements in the same period in terms of electron configuration.",
+      "answer": "Same group: same number of electrons in the outermost energy level. Same period: same number of occupied energy levels.",
+      "sourcePage": 81
+    },
+    {
+      "id": "s1-u1-l2-013",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "An element whose atoms have 7 electrons in the outermost energy level belongs to:",
+      "choices": [
+        "Group 1A",
+        "Group 2A",
+        "Group 7A",
+        "Group 0"
+      ],
+      "answer": "Group 7A",
+      "sourcePage": 82
+    },
+    {
+      "id": "s1-u1-l2-014",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which group contains elements whose outermost energy level is completely filled?",
+      "choices": [
+        "Alkali metals",
+        "Alkaline Earth metals",
+        "Halogens",
+        "Noble gases"
+      ],
+      "answer": "Noble gases",
+      "sourcePage": 82
+    },
+    {
+      "id": "s1-u1-l2-015",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The Lewis dot structure represents the ______ electrons of an atom.",
+      "answer": "valence",
+      "sourcePage": 83
+    },
+    {
+      "id": "s1-u1-l2-016",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "The valency of chlorine is:",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "1",
+      "sourcePage": 83
+    },
+    {
+      "id": "s1-u1-l2-017",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which element is the most chemically active among the halogens?",
+      "choices": [
+        "Fluorine",
+        "Chlorine",
+        "Bromine",
+        "Iodine"
+      ],
+      "answer": "Fluorine",
+      "sourcePage": 83
+    },
+    {
+      "id": "s1-u1-l2-018",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which property generally increases down a group?",
+      "choices": [
+        "Number of occupied energy levels",
+        "Chemical activity of halogens",
+        "Electronegativity",
+        "None"
+      ],
+      "answer": "Number of occupied energy levels",
+      "sourcePage": 84
+    },
+    {
+      "id": "s1-u1-l2-019",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Elements of the same group have similar chemical properties.",
+      "answer": "Because they have the same number of electrons in their outermost energy level.",
+      "sourcePage": 84
+    },
+    {
+      "id": "s1-u1-l2-020",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare alkali metals and halogens in the trend of chemical activity down their groups.",
+      "answer": "Alkali metals: chemical activity increases down the group. Halogens: chemical activity decreases down the group.",
+      "sourcePage": 84
+    }
+  ]
+}
