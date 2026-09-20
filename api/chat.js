@@ -1,5 +1,46 @@
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const SCIENCE_SYLLABUS = [
+  'Structure of the Atom',
+  'The Periodic Table of Elements',
+  'Matter and Its Properties',
+  'Chemical Bonds',
+  'Electric Forces',
+  'Magnetic Forces',
+  'Gravitational Forces',
+  'Cells and Life',
+  'General Characteristics of Living Organisms',
+  'Microbes',
+  'The Earth and the Solar System',
+  'Lunar Eclipse'
+];
+
+async function isInCurriculum({apiKey,question,lesson,recentQuestions}){
+  const recent=(recentQuestions||[]).slice(0,6).map(x=>x.question).join('\n');
+  const r=await fetch('https://api.openai.com/v1/responses',{
+    method:'POST',
+    headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
+    body:JSON.stringify({
+      model:'gpt-5.6-luna',
+      instructions:`You are a strict curriculum gate for first-prep Science, term 1.
+Allowed syllabus ONLY:
+${SCIENCE_SYLLABUS.map((x,i)=>`${i+1}. ${x}`).join('\n')}
+
+Decide whether the student's message is answerable strictly within this syllabus.
+Rules:
+- IN_SCOPE if it directly asks about one of these lessons or is a natural follow-up to a recent in-scope question such as "explain more", "why?", "give me another example".
+- OUT_OF_SCOPE for any other school subject, general knowledge, coding, politics, entertainment, unrelated science, higher-level science, or topics not covered by this syllabus.
+- Do not expand the syllabus using general knowledge.
+Return exactly one token: IN_SCOPE or OUT_OF_SCOPE.`,
+      input:`Current lesson: ${lesson||'unspecified'}\nRecent student questions:\n${recent||'(none)'}\n\nNew message: ${question}`
+    })
+  });
+  const j=await r.json().catch(()=>({}));
+  let out=j?.output_text||'';
+  if(!out&&Array.isArray(j?.output)) out=j.output.flatMap(x=>x.content||[]).map(x=>x.text||'').join(' ');
+  return /^IN_SCOPE\b/i.test(out.trim());
+}
+
 
 async function rpc(name,body){
   const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`,{
@@ -41,6 +82,19 @@ export default async function handler(req,res){
       }catch(e){}
     }
 
+    const inScope=await isInCurriculum({
+      apiKey,
+      question,
+      lesson,
+      recentQuestions:history?.recent_questions||[]
+    });
+    if(!inScope){
+      const msg=studyLanguage==='Arabic'
+        ? 'السؤال ده خارج منهج Science الحالي على ذاكر. اسألني في دروس المنهج الموجود عندك، وأنا أشرحها لك خطوة بخطوة.'
+        : 'This question is outside the current Science curriculum on Zaker. Ask me about one of your syllabus lessons, and I’ll explain it step by step.';
+      return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||1,lessonCounts:history?.lesson_counts||{}}});
+    }
+
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
     const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
 
@@ -58,6 +112,7 @@ ${languageRule}
 إذا كان تاريخه يدل على تكرار سؤال في مفهوم معين، أشر بلطف داخل الشرح إلى أن هذا المفهوم مهم له، بدون أحكام أو تشخيصات.
 لا تقل إن الطالب "ضعيف"؛ قل إن هذا المفهوم "يحتاج تثبيتًا" أو "يتكرر فيه السؤال".
 اعتمد على السؤال الحالي وتاريخ الأسئلة فقط، ولا تخترع مستوى أو قدرات لم تظهر في البيانات.
+مهم جدًا: لا تشرح أي موضوع خارج منهج Science المحدد في قائمة الدروس المسموح بها. إذا ظهر أثناء الإجابة أن السؤال يحتاج معلومة خارج المنهج، قل إن هذه الجزئية خارج نطاق المنهج الحالي بدل التوسع فيها.
 
 ملخص تاريخ الأسئلة لهذا الطالب:
 إجمالي الأسئلة المسجلة: ${history?.total_questions||1}
