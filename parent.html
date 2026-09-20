@@ -12,21 +12,24 @@ main{max-width:1150px;margin:24px auto;padding:0 16px}.note{background:#fff8e8;b
 <header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>ولي الأمر</span></a><a class="btn" href="/">الرئيسية</a></div></header>
 <main>
 <div class="note">البيانات الحالية تُقرأ من الاختبارات التي تم حلها على نفس الجهاز. عند تفعيل الحسابات سننقل الحفظ إلى حساب الطالب ليظهر لولي الأمر من أي جهاز.</div>
-<h2>متابعة الطالب</h2>
+<h2>ملف الطالب الكامل</h2>
 <div class="kpis">
  <div class="card kpi"><span>عدد الاختبارات</span><b id="testsCount">0</b></div>
  <div class="card kpi"><span>متوسط الاختبارات</span><b id="avgScore">—</b></div>
- <div class="card kpi"><span>إجابات صحيحة</span><b id="correctTotal">0</b></div>
+ <div class="card kpi"><span>الدروس التي زارها</span><b id="lessonsSeen">0</b></div>
  <div class="card kpi"><span>نقاط تحتاج مراجعة</span><b id="weakTotal">0</b></div>
 </div>
 <div class="grid">
- <section class="card"><h3>آخر الاختبارات</h3><div id="recentTests" class="rows"></div></section>
+ <section class="card"><h3>آخر الاختبارات</h3><div id="recentTests" class="rows"></div><h4>آخر النشاطات</h4><div id="activityList" class="rows"></div></section>
  <section class="card"><h3>تحليل ذاكر</h3><div id="analysisBox"></div><div id="reviewPlan" style="margin-top:12px"></div></section>
 </div>
-<section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">الإجابة الصحيحة تظهر هنا لولي الأمر فقط.</p><div id="wrongAnswers"></div></section>
+<section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">نفس تفاصيل الاختبار التي يراها الطالب بعد انتهاء الاختبار محفوظة هنا للمتابعة.</p><div id="wrongAnswers"></div></section>
 </main>
 <script>
 const results=JSON.parse(localStorage.getItem('zaker_results')||'[]');
+const lessonsSeen=JSON.parse(localStorage.getItem('zaker_lessons_seen')||'[]');
+const activity=JSON.parse(localStorage.getItem('zaker_activity')||'[]');
+document.getElementById('lessonsSeen').textContent=lessonsSeen.length;
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 document.getElementById('testsCount').textContent=results.length;
 if(results.length){
@@ -37,6 +40,7 @@ if(results.length){
  document.getElementById('correctTotal').textContent=correct;
  document.getElementById('weakTotal').textContent=wrong.length;
  document.getElementById('recentTests').innerHTML=results.slice(0,6).map(r=>'<div class="row"><div><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('ar-EG')+'</div></div><div style="font-size:22px;font-weight:900;color:'+(r.pct>=70?'#168369':'#d95a63')+'">'+r.pct+'%</div></div>').join('');
+ document.getElementById('activityList').innerHTML=activity.slice(0,8).map(a=>'<div class="row"><div><b>'+(a.type==='test'?'اختبار':'درس')+'</b><div class="muted">'+esc(a.lessonTitle||'')+' — '+new Date(a.date).toLocaleString('ar-EG')+'</div></div>'+(a.pct!=null?'<b>'+a.pct+'%</b>':'')+'</div>').join('')||'<div class="empty">لا يوجد نشاط مسجل.</div>';
  const weakByLesson={};wrong.forEach(a=>weakByLesson[a.lessonTitle]=(weakByLesson[a.lessonTitle]||0)+1);
  const sorted=Object.entries(weakByLesson).sort((a,b)=>b[1]-a[1]);
  document.getElementById('analysisBox').innerHTML=sorted.length?'<div class="weak row"><div><b>أكثر درس يحتاج مراجعة</b><div class="muted">'+esc(sorted[0][0])+'</div></div><b>'+sorted[0][1]+' أخطاء</b></div><div class="good row"><div><b>التوصية</b><div class="muted">راجع شرح '+esc(sorted[0][0])+' ثم أعد اختبارًا جديدًا بعد المراجعة.</div></div></div>':'<div class="good row">لا توجد أخطاء مسجلة حتى الآن.</div>';
@@ -48,7 +52,7 @@ if(results.length){
  }
  document.getElementById('wrongAnswers').innerHTML=wrong.length?wrong.slice(0,30).map(a=>'<div class="qitem"><span class="pill">'+esc(a.lessonTitle)+'</span><h4>'+esc(a.question)+'</h4><div class="ans"><div class="student"><b>إجابة الطالب</b><p>'+esc(a.studentAnswer)+'</p></div><div class="correct"><b>الإجابة الصحيحة</b><p>'+esc(a.correctAnswer)+'</p></div></div><div class="muted">صفحة المصدر: '+(a.sourcePage||'—')+'</div></div>').join(''):'<div class="empty">لا توجد إجابات خاطئة مسجلة.</div>';
 }else{
- document.getElementById('recentTests').innerHTML='<div class="empty">لم يُحل أي اختبار بعد.</div>';
+ document.getElementById('recentTests').innerHTML='<div class="empty">لم يُحل أي اختبار بعد.</div>'; document.getElementById('activityList').innerHTML=activity.slice(0,8).map(a=>'<div class="row"><div><b>'+(a.type==='test'?'اختبار':'درس')+'</b><div class="muted">'+esc(a.lessonTitle||'')+' — '+new Date(a.date).toLocaleString('ar-EG')+'</div></div></div>').join('')||'<div class="empty">لا يوجد نشاط مسجل.</div>';
  document.getElementById('analysisBox').innerHTML='<div class="empty">التحليل سيظهر بعد أول اختبار.</div>'; document.getElementById('reviewPlan').innerHTML='';
  document.getElementById('wrongAnswers').innerHTML='<div class="empty">لا توجد بيانات حتى الآن.</div>';
 }
