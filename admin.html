@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ذاكر | إدارة المحتوى والكتب</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
 :root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}
+*{box-sizing:border-box}body{visibility:hidden;margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}
 header{background:#fff;border-bottom:1px solid var(--line);padding:16px 24px;position:sticky;top:0;z-index:10}.top{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{font-weight:900;font-size:24px;color:var(--n)}.brand span{color:var(--b)}a{text-decoration:none;color:inherit}
 main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:24px}.hero h1{margin:0 0 6px}.hero p{margin:0;color:var(--m)}
@@ -112,6 +113,17 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify
 </section>
 </main>
 <script>
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let adminSession=null;
+async function requireAdmin(){
+ const x=await sb.auth.getSession();adminSession=x.data.session;
+ if(!adminSession){location.href='/login.html?next=/admin.html';return false}
+ const {data}=await sb.from('profiles').select('role').eq('id',adminSession.user.id).limit(1);
+ if(data?.[0]?.role!=='admin'){location.href='/account.html';return false}
+ document.body.style.visibility='visible';return true;
+}
 let currentSubject='Science', currentLang='English', questionBank=null, loadedLesson=null;
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
@@ -159,7 +171,8 @@ function shuffled(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Ma
 async function loadAIInsights(){
   const box=document.getElementById('aiInsights');box.innerHTML='<p>جارٍ تحميل المؤشرات...</p>';
   try{
-    const r=await fetch('/api/ai-insights',{cache:'no-store'});const j=await r.json();
+    if(!adminSession){if(!(await requireAdmin()))return}
+    const r=await fetch('/api/ai-insights',{cache:'no-store',headers:{'Authorization':'Bearer '+adminSession.access_token}});const j=await r.json();
     if(!r.ok) throw new Error(j.error||'تعذر التحميل');
     box.innerHTML='<p><span class="badge">إجمالي الأسئلة: '+j.total+'</span></p>'+
       (j.rows||[]).slice(0,12).map(x=>'<div class="q"><b>'+escapeHtml(x.lesson||'غير محدد')+'</b><p>'+escapeHtml(x.study_language)+' — '+x.question_count+' سؤال</p></div>').join('');
@@ -186,5 +199,5 @@ async function generateExam(){
     }).join('')+
     '<p class="ok">✓ كل ضغطة على «ولّد امتحان» تعيد خلط بنك الأسئلة وتنتج نسخة مختلفة.</p>';
 }
-</script>
+requireAdmin();</script>
 </body></html>
