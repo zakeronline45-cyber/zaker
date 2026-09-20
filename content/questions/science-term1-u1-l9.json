@@ -1,0 +1,133 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 3,
+  "unitTitle": "Living Organisms, Their Structure and Processes",
+  "lesson": 9,
+  "lessonTitle": "General Characteristics of Living Organisms",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u3-l9-001",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Green plants are classified nutritionally as:",
+      "choices": [
+        "autotrophs",
+        "heterotrophs",
+        "decomposers only",
+        "parasites only"
+      ],
+      "answer": "autotrophs",
+      "sourcePage": 295
+    },
+    {
+      "id": "s1-u3-l9-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Animals obtain food from other organisms, so they are:",
+      "choices": [
+        "heterotrophs",
+        "autotrophs",
+        "producers",
+        "photosynthetic organisms"
+      ],
+      "answer": "heterotrophs",
+      "sourcePage": 296
+    },
+    {
+      "id": "s1-u3-l9-003",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The process by which green plants make food using light energy is ______.",
+      "answer": "photosynthesis",
+      "sourcePage": 298
+    },
+    {
+      "id": "s1-u3-l9-004",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "Photosynthesis uses water and carbon dioxide to produce glucose and ______.",
+      "answer": "oxygen",
+      "sourcePage": 299
+    },
+    {
+      "id": "s1-u3-l9-005",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Green plants are called producers.",
+      "answer": "Because they manufacture their own food by photosynthesis.",
+      "sourcePage": 300
+    },
+    {
+      "id": "s1-u3-l9-006",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Respiration releases energy from food inside living cells.",
+      "answer": "True",
+      "sourcePage": 303
+    },
+    {
+      "id": "s1-u3-l9-007",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which plant tissue mainly transports water and mineral salts?",
+      "choices": [
+        "Xylem",
+        "Phloem",
+        "Epidermis",
+        "Stomata"
+      ],
+      "answer": "Xylem",
+      "sourcePage": 306
+    },
+    {
+      "id": "s1-u3-l9-008",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which plant tissue mainly transports manufactured food?",
+      "choices": [
+        "Phloem",
+        "Xylem",
+        "Root hair only",
+        "Cortex only"
+      ],
+      "answer": "Phloem",
+      "sourcePage": 306
+    },
+    {
+      "id": "s1-u3-l9-009",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Removal of metabolic wastes from the body is called ______.",
+      "answer": "excretion",
+      "sourcePage": 309
+    },
+    {
+      "id": "s1-u3-l9-010",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "Growth and reproduction are characteristics of living organisms.",
+      "answer": "True",
+      "sourcePage": 311
+    },
+    {
+      "id": "s1-u3-l9-011",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Living organisms respond to environmental changes.",
+      "answer": "Because sensitivity and response help organisms interact with their surroundings and survive.",
+      "sourcePage": 313
+    },
+    {
+      "id": "s1-u3-l9-012",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare autotrophic and heterotrophic nutrition.",
+      "answer": "Autotrophs make their own food; heterotrophs obtain ready-made food from other organisms.",
+      "sourcePage": 315
+    }
+  ]
+}
