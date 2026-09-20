@@ -1,68 +1,88 @@
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    return res.status(500).json({ error: 'OPENAI_API_KEY غير موجود داخل Vercel' });
-  }
+async function rpc(name,body){
+  const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`,{
+    method:'POST',
+    headers:{'apikey':SUPABASE_KEY,'Authorization':`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json'},
+    body:JSON.stringify(body)
+  });
+  if(!r.ok) throw new Error('Supabase RPC '+r.status);
+  const txt=await r.text();
+  return txt?JSON.parse(txt):null;
+}
 
-  try {
-    const { question, subject = 'Science', grade = 'أولى إعدادي لغات', lesson = '' } = req.body || {};
-    if (!question || typeof question !== 'string') {
-      return res.status(400).json({ error: 'اكتب سؤالك أولًا' });
+export default async function handler(req,res){
+  if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
+  const apiKey=process.env.OPENAI_API_KEY;
+  if(!apiKey) return res.status(500).json({error:'OPENAI_API_KEY غير موجود داخل Vercel'});
+  try{
+    const {
+      question,
+      subject='Science',
+      grade='أولى إعدادي',
+      lesson='',
+      studyLanguage='English',
+      sessionId=''
+    }=req.body||{};
+    if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
+
+    let history=null;
+    if(sessionId){
+      try{
+        await rpc('log_ai_question',{
+          p_session_id:sessionId,
+          p_subject:subject,
+          p_lesson:lesson,
+          p_study_language:studyLanguage,
+          p_question:question
+        });
+        history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30});
+      }catch(e){}
     }
 
-    const instructions = `أنت "مدرس ذاكر"، مدرس ذكي لطلاب ${grade}.
-تشرح بالعربية المبسطة والإنجليزية معًا. ابدأ الفكرة بالعربي، ثم اكتب المصطلح أو الجملة الأساسية بالإنجليزية.
-لو الطالب طلب English only فاشرح بالإنجليزية بالكامل.
-ولو طلب عربي فقط فاشرح بالعربي مع إبقاء المصطلحات العلمية الإنجليزية بين قوسين.
-النطاق الحالي: Science وMath وEnglish فقط.
+    const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
+    const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
+
+    const languageRule=studyLanguage==='Arabic'
+      ? 'اشرح بالعربية الواضحة، واكتب المصطلح العلمي الإنجليزي بين قوسين عند أول ظهوره. اجعل الأمثلة والأسئلة بالعربية ما لم يكن المصطلح العلمي نفسه إنجليزيًا.'
+      : 'Explain mainly in clear English suitable for first-prep language students, then add a short Arabic clarification for difficult ideas when useful.';
+
+    const instructions=`أنت "مدرس ذاكر"، مدرس شخصي ذكي لطلاب ${grade}.
 المادة الحالية: ${subject}.
-الدرس الحالي: ${lesson || 'غير محدد'}.
-قواعدك:
-- اشرح خطوة بخطوة وبأسلوب مناسب لعمر الطالب.
-- لا تعطِ إجابة مختصرة بلا شرح.
-- استخدم أمثلة بسيطة من الحياة اليومية عند الحاجة.
-- إذا كان السؤال خارج المواد الثلاث، أخبر الطالب بلطف أن مدرس ذاكر الحالي مخصص لـ Science وMath وEnglish.
-- إذا لم تكن متأكدًا من معلومة تخص المنهج المصري الحالي، قل إنك تحتاج الرجوع إلى محتوى المنهج المعتمد بدل التخمين.
-- اجعل الرد مختصرًا نسبيًا ومفيدًا، ثم اختم بسؤال تحقق صغير عند الملاءمة.`;
+الدرس الحالي: ${lesson||'غير محدد'}.
+مسار الطالب في العلوم: ${studyLanguage}.
+${languageRule}
 
-    const r = await fetch('https://api.openai.com/v1/responses', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: 'gpt-5.6-luna',
-        instructions,
-        input: question
-      })
+هدفك ليس فقط الإجابة، بل تكوين صورة تعليمية تدريجية عن الطالب من نمط أسئلته.
+إذا كان تاريخه يدل على تكرار سؤال في مفهوم معين، أشر بلطف داخل الشرح إلى أن هذا المفهوم مهم له، بدون أحكام أو تشخيصات.
+لا تقل إن الطالب "ضعيف"؛ قل إن هذا المفهوم "يحتاج تثبيتًا" أو "يتكرر فيه السؤال".
+اعتمد على السؤال الحالي وتاريخ الأسئلة فقط، ولا تخترع مستوى أو قدرات لم تظهر في البيانات.
+
+ملخص تاريخ الأسئلة لهذا الطالب:
+إجمالي الأسئلة المسجلة: ${history?.total_questions||1}
+أكثر الدروس تكرارًا: ${counts||'لا توجد بيانات كافية بعد'}
+آخر الأسئلة:
+${recent||'- هذا أول سؤال مسجل تقريبًا'}
+
+قواعد التدريس:
+- اشرح الفكرة خطوة بخطوة وبأسلوب مناسب لعمر الطالب.
+- استخدم مثالًا بسيطًا عند الحاجة.
+- ركز على الفهم قبل الحفظ.
+- إذا لاحظت خلطًا بين مفهومين، وضح الفرق مباشرة.
+- لا تعطِ معلومة تخص المنهج إذا لم تكن متأكدًا منها.
+- اختم بسؤال تحقق صغير عندما يكون مناسبًا.`;
+
+    const r=await fetch('https://api.openai.com/v1/responses',{
+      method:'POST',
+      headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
+      body:JSON.stringify({model:'gpt-5.6-luna',instructions,input:question})
     });
-
-    const j = await r.json().catch(() => ({}));
-    if (!r.ok) {
-      const msg = j?.error?.message || j?.message || `OpenAI error ${r.status}`;
-      return res.status(r.status).json({ error: msg, statusCode: r.status });
-    }
-
-    let answer = j?.output_text;
-    if (!answer && Array.isArray(j?.output)) {
-      answer = j.output
-        .flatMap(item => Array.isArray(item?.content) ? item.content : [])
-        .map(part => part?.text || part?.value || '')
-        .filter(Boolean)
-        .join('\n');
-    }
-
-    if (!answer) {
-      return res.status(502).json({ error: 'OpenAI رجع استجابة بدون نص' });
-    }
-
-    return res.status(200).json({ answer });
-  } catch (error) {
-    return res.status(500).json({ error: error?.message || 'تعذر تشغيل المدرس الذكي الآن' });
-  }
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok) return res.status(r.status).json({error:j?.error?.message||j?.message||`OpenAI error ${r.status}`});
+    let answer=j?.output_text;
+    if(!answer&&Array.isArray(j?.output)) answer=j.output.flatMap(x=>x.content||[]).map(x=>x.text||x.value||'').filter(Boolean).join('\n');
+    if(!answer) return res.status(502).json({error:'OpenAI رجع استجابة بدون نص'});
+    return res.status(200).json({answer,learningContext:{totalQuestions:history?.total_questions||1,lessonCounts:history?.lesson_counts||{}}});
+  }catch(e){return res.status(500).json({error:e?.message||'تعذر تشغيل المدرس الذكي الآن'})}
 }
