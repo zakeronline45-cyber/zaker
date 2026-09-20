@@ -40,6 +40,14 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
 .ai-guide{position:fixed;left:22px;bottom:106px;z-index:79;width:min(340px,calc(100vw - 32px));background:#fff;border:1px solid #dce8f7;border-radius:22px;padding:16px;box-shadow:0 20px 55px rgba(24,63,125,.24);display:none}.ai-guide.open{display:block}.ai-guide h3{margin:0;color:#173471}.ai-guide .quick-ai{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.ai-guide .quick-ai button{border:1px solid #dce6f5;background:#f7faff;border-radius:11px;padding:9px;font-weight:800;color:#34517c}.ai-guide .chat{margin-top:10px}.ai-guide .answer{max-height:180px;overflow:auto}
 @media(max-width:1000px){#languagesArea.grid{grid-template-columns:1fr}.adventure-hero,.subject-ribbon{grid-column:1}.side{order:2}.content{order:3}.right{order:4}.subject-cards{grid-template-columns:repeat(2,1fr)}.path-step:nth-child(n+5){display:none}}
 @media(max-width:620px){.adventure-hero{min-height:250px;padding:18px}.adventure-hero:before{font-size:34px}.path-node{width:58px;height:58px;border-width:6px}.path-step{min-width:76px;font-size:12px}.subject-cards{grid-template-columns:1fr 1fr}.ai-fab{left:14px;bottom:14px}.ai-guide{left:14px;bottom:94px}}
+
+/* Master dashboard navigation */
+.student-master-top{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid #e9eef8;box-shadow:0 5px 18px rgba(43,76,130,.07)}
+.student-master-nav{max-width:1400px;margin:auto;min-height:82px;padding:0 18px;display:flex;align-items:center;gap:18px}
+.student-master-brand{font-size:31px;font-weight:1000;color:#173b78;display:flex;align-items:center;gap:8px}
+.student-master-links{display:flex;gap:7px;flex:1;justify-content:center}.student-master-links a,.student-master-links button{border:0;background:transparent;padding:11px 16px;border-radius:16px;font-weight:900;color:#21457d}.student-master-links .active{background:#e8f0ff;color:#1d5ed2}
+.student-master-user{display:flex;align-items:center;gap:10px}.student-master-user .coin{padding:9px 13px;border-radius:16px;background:#fff8df;border:1px solid #ffe383;font-weight:900;color:#805f0d}.student-master-avatar{width:47px;height:47px;border-radius:50%;background:linear-gradient(145deg,#ffe0bd,#f6a671);display:grid;place-items:center;font-size:26px;border:4px solid #eef4ff}.student-master-name b{display:block}.student-master-name small{color:#75839b}
+@media(max-width:850px){.student-master-links{display:none}.student-master-user .coin{display:none}}
 </style>
 </head>
 <body>
@@ -54,7 +62,22 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
     </div>
   </div>
 </div>
-<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>طالب</span></a><div style="display:flex;gap:8px"><a class="btn soft" href="/account.html">حساب ولي الأمر</a><a class="btn soft" href="/subscribe.html">الاشتراك</a><button class="btn soft" onclick="logout()">خروج</button><a class="btn soft" href="/">الرئيسية</a></div></div></header>
+<header class="student-master-top"><div class="student-master-nav">
+<a class="student-master-brand" href="/">🎓 <span>ذاكر</span></a>
+<nav class="student-master-links">
+<a href="/">🏠 الرئيسية</a>
+<a class="active" href="/student.html">📚 الدروس</a>
+<button onclick="setPane('test')">📝 الاختبارات</button>
+<button onclick="setPane('profile')">🎯 التقدم</button>
+<a href="/account.html">🏆 حسابي</a>
+</nav>
+<div class="student-master-user">
+<div class="coin">🪙 320</div>
+<div class="student-master-name"><b id="masterChildName">الطالب</b><small id="masterChildGrade">الصف</small></div>
+<div class="student-master-avatar">🧒</div>
+<button class="btn soft" onclick="logout()">خروج</button>
+</div>
+</div></header>
 <div class="trackbar"><div class="trackbar-inner"><div><b id="activeChildName">الطالب</b><div class="muted"><span id="trackName">المسار</span> — <span id="gradeName">الصف</span></div></div><a class="btn soft" href="/account.html">تغيير الطالب</a></div></div>
 <main>
 <div id="languagesArea" class="grid">
@@ -560,6 +583,8 @@ async function initAccount(){
   }
 
   document.getElementById('activeChildName').textContent=child.full_name;
+  const mcn=document.getElementById('masterChildName');if(mcn)mcn.textContent=child.full_name;
+  const mcg=document.getElementById('masterChildGrade');if(mcg)mcg.textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
   document.getElementById('trackName').textContent=child.track==='languages'?'مسار لغات':'مسار عربي';
   document.getElementById('gradeName').textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
 
