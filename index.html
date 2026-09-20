@@ -229,7 +229,7 @@ a{text-decoration:none;color:inherit}
           <div class="lesson-tabs"><span class="active">الشرح</span><span>أسئلة تفاعلية</span><span>ملخص الدرس</span></div>
           <div class="teacher-msg"><div class="mini-bot">🤖</div><div><b>مرحبًا محمد!</b><p>في هذا الدرس هنتعلم الفرق بين Atom و Molecule بطريقة بسيطة، وبعد كل جزء هسألك سؤال صغير للتأكد إن الفكرة وصلت.</p></div></div>
           <div class="atom-box"><b>مثال: Water Molecule (H₂O)</b><div class="molecule"><span class="ball blue">H</span><span class="bond"></span><span class="ball red">O</span><span class="bond"></span><span class="ball blue">H</span></div><p>الجزيء Molecule يتكون من ذرتين أو أكثر مرتبطتين كيميائيًا. جزيء الماء يتكوّن من ذرتي Hydrogen وذرة Oxygen.</p></div>
-          <div class="chatbar"><input placeholder="اكتب سؤالك هنا ..."><button class="btn btn-primary" onclick="toast('المدرس الذكي الحقيقي سيتم ربطه في المرحلة التالية')">➤</button></div>
+          <div class="chatbar"><input id="aiQuestion" placeholder="اكتب سؤالك هنا ..." autocomplete="off"><button id="aiSend" class="btn btn-primary" onclick="askAI()">➤</button></div><div id="aiAnswer" class="teacher-msg" style="display:none;margin-top:12px"><div class="mini-bot">🤖</div><div><b>مدرس ذاكر</b><p id="aiAnswerText" style="white-space:pre-wrap;margin-bottom:0"></p></div></div>
         </section>
         <aside class="lesson-side"><h4>أهداف الدرس</h4><div class="checklist"><span>التعرف على Atom</span><span>التمييز بين Atom و Molecule</span><span>أمثلة من الحياة اليومية</span></div><h4 style="margin-top:22px">مصادر إضافية</h4><div class="resource">📄 ملخص PDF</div><div class="resource">▶ فيديو توضيحي</div><div class="resource">🧩 خريطة ذهنية</div><div class="resource">🧪 تجربة تفاعلية</div></aside>
       </div>
@@ -292,6 +292,19 @@ function setScreen(name){
   document.querySelector('#demo').scrollIntoView({behavior:'smooth',block:'start'});
 }
 tabs.forEach(b=>b.addEventListener('click',()=>setScreen(b.dataset.screen)));
+async function askAI(){
+  const input=document.getElementById('aiQuestion'), box=document.getElementById('aiAnswer'), text=document.getElementById('aiAnswerText'), btn=document.getElementById('aiSend');
+  const question=(input?.value||'').trim(); if(!question)return;
+  box.style.display='flex'; text.textContent='بفكر في سؤالك...'; btn.disabled=true;
+  try{
+    const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question,subject:'Science',grade:'أولى إعدادي لغات',lesson:'Atoms and Molecules'})});
+    const j=await r.json();
+    if(!r.ok) throw new Error(j.error||'تعذر الوصول للمدرس الذكي');
+    text.textContent=j.answer||'لم يصل رد.';
+  }catch(e){text.textContent='حصلت مشكلة في تشغيل المدرس الذكي: '+e.message}
+  finally{btn.disabled=false}
+}
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&document.activeElement?.id==='aiQuestion'){e.preventDefault();askAI()}});
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.__t);window.__t=setTimeout(()=>t.style.display='none',2600)}
 </script>
 </body>
