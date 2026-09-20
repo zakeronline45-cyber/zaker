@@ -26,7 +26,7 @@ async function load(){
  list.innerHTML=data.length?data.map(x=>`
  <div class="card">
   <div class="row">
-   <div><b>الطالب:</b> ${esc(x.student_name||'—')}</div>
+   <div><b>ولي الأمر:</b> ${esc(x.guardian_name||'—')}</div><div><b>الطالب:</b> ${esc(x.child_name||'—')}</div>
    <div><b>البريد:</b> ${esc(x.student_email||'—')}</div>
    <div><b>المبلغ:</b> ${x.amount_egp} جنيه</div>
    <div><b>كود الطلب:</b> ${esc(x.reference_code||'—')}</div>
@@ -35,13 +35,19 @@ async function load(){
    <div><b>عدد المواد:</b> ${x.subject_count}</div>
    <div><b>الطفل:</b> ${x.child_index===2?'الثاني — مطلوب التحقق من استحقاق الخصم':'الأول'}</div>
   </div>
-  ${x.proof_url?'<p><a class="btn soft" target="_blank" href="'+x.proof_url+'">فتح إيصال التحويل</a></p>':''}
+  ${x.proof_url?'<p><button class="btn soft" onclick="openProof(\''+escAttr(x.proof_url)+'\')">فتح إيصال التحويل</button></p>':''}
   <div style="display:flex;gap:8px;margin-top:12px">
    <button class="btn ok" onclick="approve('${x.payment_id}')">تأكيد التحويل وتفعيل الاشتراك</button>
    <button class="btn bad" onclick="rejectPay('${x.payment_id}')">رفض</button>
   </div>
  </div>`).join(''):'<div class="card muted">لا توجد تحويلات معلقة.</div>';
 }
+async function openProof(path){
+ const {data,error}=await sb.storage.from('bank-transfer-proofs').createSignedUrl(path,3600);
+ if(error){alert(error.message);return}
+ window.open(data.signedUrl,'_blank','noopener');
+}
+function escAttr(s){return String(s??'').replace(/\\/g,'\\\\').replace(/'/g,"\\'")}
 async function approve(id){
  if(!confirm('تأكدت من وصول المبلغ فعليًا للحساب البنكي؟')) return;
  const {error}=await sb.rpc('approve_bank_transfer',{p_payment_id:id});
