@@ -85,6 +85,12 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify
     <div class="preview" id="preview"></div>
   </div>
 </section>
+<section class="panel">
+  <h2>مؤشرات أسئلة الطلاب للـAI</h2>
+  <p style="color:var(--m)">تجميع عام لأسئلة Science خلال آخر 90 يومًا، بدون عرض هوية الطالب.</p>
+  <button class="btn ghost" onclick="loadAIInsights()">تحديث المؤشرات</button>
+  <div id="aiInsights" class="preview"><p>اضغط تحديث المؤشرات لعرض أكثر الدروس التي يسأل عنها الطلاب.</p></div>
+</section>
 </main>
 <script>
 let currentSubject='Science', currentLang='English', questionBank=null, loadedLesson=null;
@@ -130,6 +136,16 @@ async function loadQuestionBank(){
 }
 
 function shuffled(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+async function loadAIInsights(){
+  const box=document.getElementById('aiInsights');box.innerHTML='<p>جارٍ تحميل المؤشرات...</p>';
+  try{
+    const r=await fetch('/api/ai-insights',{cache:'no-store'});const j=await r.json();
+    if(!r.ok) throw new Error(j.error||'تعذر التحميل');
+    box.innerHTML='<p><span class="badge">إجمالي الأسئلة: '+j.total+'</span></p>'+
+      (j.rows||[]).slice(0,12).map(x=>'<div class="q"><b>'+escapeHtml(x.lesson||'غير محدد')+'</b><p>'+escapeHtml(x.study_language)+' — '+x.question_count+' سؤال</p></div>').join('');
+  }catch(e){box.innerHTML='<p>'+escapeHtml(e.message)+'</p>'}
+}
 
 async function generateExam(){
   if(currentSubject!=='Science'){
