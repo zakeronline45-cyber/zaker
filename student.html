@@ -21,8 +21,8 @@ main{max-width:1200px;margin:22px auto;padding:0 16px}.grid{display:grid;grid-te
     </div>
   </div>
 </div>
-<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>طالب</span></a><div style="display:flex;gap:8px"><a class="btn soft" href="/subscribe.html">الاشتراك</a><button class="btn soft" onclick="logout()">خروج</button><a class="btn soft" href="/">الرئيسية</a></div></div></header>
-<div class="trackbar"><div class="trackbar-inner"><div><b id="trackName">المسار</b><div class="muted">المسار الدراسي محفوظ في ملف الطالب</div></div><button class="btn soft" onclick="changeTrack()">تغيير المسار</button></div></div>
+<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>طالب</span></a><div style="display:flex;gap:8px"><a class="btn soft" href="/account.html">حساب ولي الأمر</a><a class="btn soft" href="/subscribe.html">الاشتراك</a><button class="btn soft" onclick="logout()">خروج</button><a class="btn soft" href="/">الرئيسية</a></div></div></header>
+<div class="trackbar"><div class="trackbar-inner"><div><b id="activeChildName">الطالب</b><div class="muted"><span id="trackName">المسار</span> — <span id="gradeName">الصف</span></div></div><a class="btn soft" href="/account.html">تغيير الطالب</a></div></div>
 <main>
 <div id="languagesArea" class="grid">
 <aside class="card side">
@@ -358,11 +358,21 @@ async function askAI(){const q=document.getElementById('aiQuestion').value.trim(
 async function initAccount(){
   const {data}=await sb.auth.getSession();authSession=data.session;
   if(!authSession){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
-  const {data:profiles}=await sb.from('profiles').select('track').eq('id',authSession.user.id).limit(1);
-  const dbTrack=profiles?.[0]?.track;
-  if(dbTrack==='languages'||dbTrack==='arabic'){studentTrack=dbTrack;localStorage.setItem('zaker_student_track',dbTrack)}
-  else if(studentTrack) await sb.from('profiles').update({track:studentTrack,updated_at:new Date().toISOString()}).eq('id',authSession.user.id);
-  applyTrack();if(studentTrack==='languages')loadBank();
+
+  let activeChildId=localStorage.getItem('zaker_active_child_id')||'';
+  const {data:children}=await sb.from('children').select('id,full_name,track,grade').eq('guardian_user_id',authSession.user.id).eq('is_active',true).order('created_at');
+  if(!children?.length){location.href='/account.html';return}
+  let child=children.find(x=>x.id===activeChildId)||children[0];
+  localStorage.setItem('zaker_active_child_id',child.id);
+  localStorage.setItem('zaker_student_track',child.track);
+  studentTrack=child.track;
+
+  document.getElementById('activeChildName').textContent=child.full_name;
+  document.getElementById('trackName').textContent=child.track==='languages'?'مسار لغات':'مسار عربي';
+  document.getElementById('gradeName').textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
+
+  applyTrack();
+  if(studentTrack==='languages')loadBank();
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 initAccount();
