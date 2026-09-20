@@ -163,6 +163,7 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
     <div class="profile-kpi"><span class="muted">أخطاء تحتاج مراجعة</span><b id="pfWeak">0</b></div>
   </div>
   <div class="card" style="padding:14px;margin-bottom:12px"><h4 style="margin-top:0">آخر الاختبارات</h4><div id="pfHistory"></div></div>
+  <div id="pfSavedAnalysis" class="card" style="padding:14px;margin-bottom:12px;display:none"></div>
   <div class="card" style="padding:14px"><h4 style="margin-top:0">نقاط الضعف وخطة المراجعة</h4><div id="pfWeakness"></div></div>
 </div>
 </section>
@@ -433,8 +434,9 @@ async function finishTest(){
  let feedback={summary:'',topics:[],plan:[]};
  try{
    const r=await fetch('/api/test-feedback',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lessonTitle:testScopeLabel,wrongAnswers:wrong})});
-   feedback=await r.json();
+   if(r.ok) feedback=await r.json();
  }catch(e){}
+ feedback=completeFeedback(feedback,wrong,pct);
  const record={subject:'Science',unit:testLessons.length===1?units[testLessons[0]]:'Multiple lessons',lesson:testLessons.length===1?testLessons[0]:null,lessonTitle:testScopeLabel,lessons:testLessons,score,total,pct,date:new Date().toISOString(),answers,feedback};
  lastPrintableReport=record;
  const old=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_results'),JSON.stringify(old.slice(0,50)));
@@ -449,6 +451,38 @@ async function finishTest(){
  (plan?'<div class="review-plan"><b>خطة المراجعة قبل إعادة الاختبار</b><ol>'+plan+'</ol></div>':'')+
  '<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn primary" onclick="showExplain()">راجع الأهداف والشرح الآن</button><button class="btn soft" onclick="printReport()">🖨️ طباعة التقرير</button><button class="btn soft" onclick="printExam()">📝 طباعة نسخة الامتحان</button><button class="btn soft" onclick="resetTest()">اختبار جديد</button></div>';
 }
+
+function completeFeedback(feedback,wrong,pct){
+ const safe=feedback&&typeof feedback==='object'?feedback:{};
+ const topics=Array.isArray(safe.topics)?safe.topics.filter(Boolean):[];
+ const fallbackTopics=(wrong||[]).map(a=>({
+   question:a.question||'سؤال يحتاج مراجعة',
+   studentAnswer:a.studentAnswer||'لم تُسجل إجابة',
+   correctAnswer:a.correctAnswer||'راجع إجابة الكتاب',
+   explanation:'راجع الإجابة الصحيحة وحدد الفكرة العلمية التي سببت الخطأ، ثم جرّب سؤالًا مشابهًا.'
+ }));
+ return {
+   summary:safe.summary||((wrong||[]).length?'أكملت الاختبار. راجع الأخطاء التالية ثم أعد المحاولة.':'ممتاز، إجاباتك كلها صحيحة.'),
+   topics:topics.length?topics:fallbackTopics,
+   plan:Array.isArray(safe.plan)&&safe.plan.length?safe.plan:((wrong||[]).length?['راجع الأسئلة التي أخطأت فيها والإجابات الصحيحة.','ارجع لشرح الدرس والمصطلحات الأساسية.','أعد الاختبار بعد المراجعة وقارن نتيجتك.']:[])
+ };
+}
+
+function savedAnalysisHtml(r){
+ const wrong=(r.answers||[]).filter(x=>!x.correct);
+ const feedback=completeFeedback(r.feedback,wrong,r.pct);
+ const topics=(feedback.topics||[]).map((t,i)=>'<div class="feedback-item"><h4>خطأ '+(i+1)+': '+esc(t.question||t.topic||'سؤال يحتاج مراجعة')+'</h4><div class="submitted" style="margin-top:8px"><b>الإجابة الصحيحة:</b> '+esc(t.correctAnswer||'—')+'</div><div class="answer" style="margin-top:8px"><b>إجابة الطالب:</b> '+esc(t.studentAnswer||'—')+'</div><div style="margin-top:8px"><b>التحليل:</b> '+esc(t.explanation||'راجع الفرق بين الإجابتين.')+'</div></div>').join('');
+ const plan=(feedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
+ return '<h3 style="margin-top:0">تحليل محفوظ: '+esc(r.lessonTitle||'الاختبار')+'</h3><div class="result"><p>'+new Date(r.date).toLocaleString('ar-EG')+'</p><b>'+Number(r.pct||0)+'%</b><p>'+esc(feedback.summary)+'</p></div>'+(wrong.length?'<div class="feedback-grid">'+topics+'</div>':'<div class="submitted">ممتاز، لا توجد أخطاء في هذا الاختبار.</div>')+(plan?'<div class="review-plan"><b>خطة المراجعة</b><ol>'+plan+'</ol></div>':'')+'<div style="margin-top:12px"><button class="btn soft" onclick="printSavedAnalysis()">🖨️ طباعة التحليل</button></div>';
+}
+
+let profileResults=[];
+function openSavedAnalysis(index){
+ const r=profileResults[index];if(!r)return;
+ lastPrintableReport=r;
+ const box=document.getElementById('pfSavedAnalysis');box.innerHTML=savedAnalysisHtml(r);box.style.display='block';box.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function printSavedAnalysis(){printReport()}
 
 function printableStudentName(){
  const el=document.getElementById('activeChildName');
@@ -503,18 +537,19 @@ async function renderProfile(){
  if(activeChildId){
    try{
      const {data}=await sb.rpc('get_child_dashboard',{p_child_id:activeChildId});
-     results=(data?.tests||[]).map(r=>({lessonTitle:r.lesson_title,pct:r.pct,date:r.created_at,answers:r.answers||[],feedback:r.feedback||{}}));
+     results=(data?.tests||[]).map(r=>({lessonTitle:r.lesson_title,score:r.score,total:r.total,pct:r.pct,date:r.created_at,answers:r.answers||[],feedback:r.feedback||{}}));
      seen=data?.lessons||[];
    }catch(e){}
  }
  if(!results.length) results=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');
+ profileResults=results;
  if(!seen.length) seen=JSON.parse(localStorage.getItem(childKey('zaker_lessons_seen'))||'[]');
  const all=results.flatMap(r=>r.answers||[]), wrong=all.filter(x=>!x.correct);
  document.getElementById('pfTests').textContent=results.length;
  document.getElementById('pfAvg').textContent=results.length?Math.round(results.reduce((a,r)=>a+(r.pct||0),0)/results.length)+'%':'—';
  document.getElementById('pfLessons').textContent=seen.length;
  document.getElementById('pfWeak').textContent=wrong.length;
- document.getElementById('pfHistory').innerHTML=results.length?results.slice(0,8).map(r=>'<div class="history-item"><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('ar-EG')+'</div><div class="score">'+r.pct+'%</div></div>').join(''):'<div class="muted">لسه مفيش اختبارات محفوظة.</div>';
+ document.getElementById('pfHistory').innerHTML=results.length?results.slice(0,20).map((r,i)=>'<div class="history-item"><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('ar-EG')+'</div><div class="score">'+r.pct+'%</div><button class="btn soft" style="margin-top:8px" onclick="openSavedAnalysis('+i+')">عرض التحليل المحفوظ</button></div>').join(''):'<div class="muted">لسه مفيش اختبارات محفوظة.</div>';
  const weak={};wrong.forEach(x=>weak[x.lessonTitle||'Science']=(weak[x.lessonTitle||'Science']||0)+1);const sorted=Object.entries(weak).sort((a,b)=>b[1]-a[1]);
  const latest=results.find(r=>r.feedback&&Object.keys(r.feedback).length)?.feedback;
  let html=sorted.length?'<div class="history-item"><b>أكثر درس يحتاج مراجعة:</b> '+esc(sorted[0][0])+' — '+sorted[0][1]+' أخطاء</div>':'<div class="muted">لا توجد نقاط ضعف مسجلة.</div>';
