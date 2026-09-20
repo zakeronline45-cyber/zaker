@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ذاكر | الطالب</title>
+<title>ذاكر | الطالب</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
 :root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887;--r:#e85b66}
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}button,input,textarea{font:inherit}button{cursor:pointer}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px;position:sticky;top:0;z-index:5}.wrap{max-width:1200px;margin:auto}.bar{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}a{text-decoration:none;color:inherit}.btn{border:0;border-radius:11px;padding:10px 14px;font-weight:800}.primary{background:var(--b);color:#fff}.soft{background:#eef3ff;color:var(--b)}.danger{background:#fff1f2;color:var(--r)}
@@ -21,7 +21,7 @@ main{max-width:1200px;margin:22px auto;padding:0 16px}.grid{display:grid;grid-te
     </div>
   </div>
 </div>
-<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>طالب</span></a><a class="btn soft" href="/">الرئيسية</a></div></header>
+<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>طالب</span></a><div style="display:flex;gap:8px"><a class="btn soft" href="/subscribe.html">الاشتراك</a><button class="btn soft" onclick="logout()">خروج</button><a class="btn soft" href="/">الرئيسية</a></div></div></header>
 <div class="trackbar"><div class="trackbar-inner"><div><b id="trackName">المسار</b><div class="muted">المسار الدراسي محفوظ في ملف الطالب</div></div><button class="btn soft" onclick="changeTrack()">تغيير المسار</button></div></div>
 <main>
 <div id="languagesArea" class="grid">
@@ -101,15 +101,20 @@ main{max-width:1200px;margin:22px auto;padding:0 16px}.grid{display:grid;grid-te
 </div>
 </main>
 <script>
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let authSession=null;
 let studentTrack='';
 const qp=new URLSearchParams(location.search).get('track');
 const savedTrack=localStorage.getItem('zaker_student_track');
 if(qp==='languages'||qp==='arabic') studentTrack=qp;
 else if(savedTrack==='languages'||savedTrack==='arabic') studentTrack=savedTrack;
 
-function setTrack(track){
+async function setTrack(track){
   studentTrack=track==='arabic'?'arabic':'languages';
   localStorage.setItem('zaker_student_track',studentTrack);
+  if(authSession?.user?.id) await sb.from('profiles').update({track:studentTrack,updated_at:new Date().toISOString()}).eq('id',authSession.user.id);
   document.getElementById('trackModal').classList.remove('show');
   applyTrack();
 }
@@ -350,5 +355,15 @@ function renderProfile(){
 function label(t){return({mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'}[t]||t)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent='بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:'أولى إعدادي',lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}}
-applyTrack();if(studentTrack==='languages')loadBank();
+async function initAccount(){
+  const {data}=await sb.auth.getSession();authSession=data.session;
+  if(!authSession){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
+  const {data:profiles}=await sb.from('profiles').select('track').eq('id',authSession.user.id).limit(1);
+  const dbTrack=profiles?.[0]?.track;
+  if(dbTrack==='languages'||dbTrack==='arabic'){studentTrack=dbTrack;localStorage.setItem('zaker_student_track',dbTrack)}
+  else if(studentTrack) await sb.from('profiles').update({track:studentTrack,updated_at:new Date().toISOString()}).eq('id',authSession.user.id);
+  applyTrack();if(studentTrack==='languages')loadBank();
+}
+async function logout(){await sb.auth.signOut();location.href='/login.html'}
+initAccount();
 </script></body></html>
