@@ -7,121 +7,284 @@
   "lesson": 4,
   "lessonTitle": "Chemical Bonds",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u1-l4-001",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "The electrons in the outermost energy level are called:",
-      "choices": [
-        "Valence electrons",
-        "Neutrons",
-        "Protons",
-        "Nucleons"
-      ],
-      "answer": "Valence electrons",
-      "sourcePage": 133
+      "text": "A metal atom that loses one or more electrons forms a ______ ion.",
+      "answer": "positive",
+      "sourcePage": 133,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-002",
       "type": "complete",
       "difficulty": "easy",
-      "text": "The representation of valence electrons around an element symbol is called the ______ symbol.",
-      "answer": "Lewis",
-      "sourcePage": 134
+      "text": "A nonmetal atom that gains one or more electrons forms a ______ ion.",
+      "answer": "negative",
+      "sourcePage": 134,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-003",
-      "type": "true_false",
+      "type": "mcq",
       "difficulty": "easy",
-      "text": "Noble gases are chemically stable because their outermost energy level is complete.",
-      "answer": "True",
-      "sourcePage": 135
+      "text": "An ionic bond is formed mainly by:",
+      "choices": [
+        "sharing electrons only",
+        "electrostatic attraction between oppositely charged ions",
+        "sharing neutrons",
+        "sharing protons"
+      ],
+      "answer": "electrostatic attraction between oppositely charged ions",
+      "sourcePage": 135,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-004",
-      "type": "complete",
+      "type": "mcq",
       "difficulty": "easy",
-      "text": "A sodium atom loses one electron to form the ion ______.",
-      "answer": "Na+",
-      "sourcePage": 136
+      "text": "A covalent bond is formed when atoms:",
+      "choices": [
+        "transfer neutrons",
+        "share valence electrons",
+        "lose all electrons",
+        "share protons"
+      ],
+      "answer": "share valence electrons",
+      "sourcePage": 136,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-005",
       "type": "complete",
-      "difficulty": "medium",
-      "text": "A chlorine atom gains one electron to form the ion ______.",
-      "answer": "Cl-",
-      "sourcePage": 136
+      "difficulty": "easy",
+      "text": "The bond in H2 is a ______ covalent bond.",
+      "answer": "single",
+      "sourcePage": 137,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-006",
-      "type": "reason",
+      "type": "complete",
       "difficulty": "medium",
-      "text": "Give a reason: Sodium and chlorine can form an ionic compound.",
-      "answer": "Because sodium loses an electron and chlorine gains an electron, forming oppositely charged ions that attract each other.",
-      "sourcePage": 138
+      "text": "The bond in O2 is a ______ covalent bond.",
+      "answer": "double",
+      "sourcePage": 138,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-007",
-      "type": "compare",
+      "type": "complete",
       "difficulty": "medium",
-      "text": "Compare ionic and covalent bonds.",
-      "answer": "Ionic bond forms by electron transfer and electrostatic attraction between ions; covalent bond forms by sharing electrons between atoms.",
-      "sourcePage": 140
+      "text": "The bond in N2 is a ______ covalent bond.",
+      "answer": "triple",
+      "sourcePage": 139,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-008",
-      "type": "mcq",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Which compound is mainly ionic?",
-      "choices": [
-        "NaCl",
-        "H2",
-        "O2",
-        "Cl2"
-      ],
-      "answer": "NaCl",
-      "sourcePage": 142
+      "text": "Give a reason: Noble gases are chemically stable.",
+      "answer": "Because their outermost energy level is completely filled with electrons.",
+      "sourcePage": 140,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-009",
-      "type": "mcq",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Which molecule contains a covalent bond?",
-      "choices": [
-        "H2",
-        "NaCl",
-        "MgO",
-        "KCl"
-      ],
-      "answer": "H2",
-      "sourcePage": 143
+      "text": "Give a reason: Magnesium ion carries two positive charges.",
+      "answer": "Because a magnesium atom loses two valence electrons.",
+      "sourcePage": 141,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-010",
       "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: Atoms form chemical bonds.",
-      "answer": "To reach a more stable electron configuration, usually by completing the outermost energy level.",
-      "sourcePage": 145
+      "difficulty": "medium",
+      "text": "Give a reason: The ionic compound is electrically neutral.",
+      "answer": "Because the total positive charges equal the total negative charges.",
+      "sourcePage": 142,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-011",
-      "type": "true_false",
-      "difficulty": "hard",
-      "text": "A positive ion is formed when an atom gains electrons.",
-      "answer": "False",
-      "sourcePage": 146
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare ionic bonding and covalent bonding.",
+      "answer": "Ionic bonding forms by transfer of electrons and electrostatic attraction between ions; covalent bonding forms by sharing electrons between atoms.",
+      "sourcePage": 143,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
     },
     {
       "id": "s1-u1-l4-012",
-      "type": "true_false",
+      "type": "compare",
       "difficulty": "hard",
-      "text": "A negative ion is formed when an atom gains electrons.",
+      "text": "Compare ionic and covalent compounds in electrical conductivity and melting/boiling points.",
+      "answer": "Ionic compounds conduct when molten or in aqueous solution and usually have high melting/boiling points; covalent compounds generally do not conduct and usually have lower melting/boiling points.",
+      "sourcePage": 144,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-013",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which molecule contains a double covalent bond?",
+      "choices": [
+        "H2",
+        "O2",
+        "N2",
+        "NaCl"
+      ],
+      "answer": "O2",
+      "sourcePage": 145,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-014",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which molecule contains a triple covalent bond?",
+      "choices": [
+        "H2",
+        "O2",
+        "N2",
+        "HCl"
+      ],
+      "answer": "N2",
+      "sourcePage": 146,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-015",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "A calcium atom loses two electrons. State the ion formed and its charge.",
+      "answer": "Ca2+, carrying two positive charges.",
+      "sourcePage": 147,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-016",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "A sulfur atom gains two electrons. State the ion formed and its charge.",
+      "answer": "S2-, carrying two negative charges.",
+      "sourcePage": 148,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-017",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which formula represents sodium chloride?",
+      "choices": [
+        "NaCl",
+        "Na2Cl",
+        "NaCl2",
+        "ClNa2"
+      ],
+      "answer": "NaCl",
+      "sourcePage": 149,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-018",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which formula represents magnesium oxide?",
+      "choices": [
+        "MgO",
+        "Mg2O",
+        "MgO2",
+        "Mg2O2"
+      ],
+      "answer": "MgO",
+      "sourcePage": 150,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-019",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Sodium and magnesium atoms cannot combine directly to form a simple ionic compound with each other.",
+      "answer": "Both are metals that tend to lose electrons and form positive ions, so there is no opposite ion charge to attract.",
+      "sourcePage": 151,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-020",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Carbon atoms can form straight, branched and cyclic chains.",
+      "answer": "Because carbon atoms can bond with one another by covalent bonds.",
+      "sourcePage": 152,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-021",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "An element X has four hydrogen atoms bonded to it in CH4. Identify X and the bond type.",
+      "answer": "X is carbon (C); the bonds are single covalent bonds.",
+      "sourcePage": 153,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-022",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Covalent bonding can occur between atoms of the same nonmetal element.",
       "answer": "True",
-      "sourcePage": 146
+      "sourcePage": 153,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-023",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "An atom becomes a positive ion when it gains electrons.",
+      "answer": "False",
+      "sourcePage": 153,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.94-101 / PDF 510-517"
+    },
+    {
+      "id": "s1-u1-l4-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: An atom has 1 valence electron and another has 7. Predict the most likely bond type and explain briefly.",
+      "answer": "Ionic bond; the first atom can lose one electron and the second can gain it, forming oppositely charged ions.",
+      "sourcePage": 153,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
