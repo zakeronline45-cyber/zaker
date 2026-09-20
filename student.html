@@ -80,7 +80,7 @@ async function finishTest(){
  }catch(e){}
  const record={subject:'Science',unit:'Unit 1: The Matter',lesson,lessonTitle:titles[lesson],score,total,pct,date:new Date().toISOString(),answers,feedback};
  const old=JSON.parse(localStorage.getItem('zaker_results')||'[]');old.unshift(record);localStorage.setItem('zaker_results',JSON.stringify(old.slice(0,50)));logActivity({type:'test',lessonTitle:titles[lesson],pct,date:record.date});
- const topics=(feedback.topics||[]).map(t=>'<div class="feedback-item"><h4>'+esc(t.topic||'مفهوم يحتاج مراجعة')+'</h4><div><b>شرح الخطأ:</b> '+esc(t.explanation||'راجع هذا المفهوم مرة أخرى.')+'</div><div class="submitted" style="margin-top:8px"><b>الإجابة الصحيحة:</b> '+esc(t.correctAnswer||'—')+'</div>'+(t.page?'<div class="muted" style="margin-top:6px">راجع صفحة '+t.page+' من مصدر الدرس</div>':'')+'</div>').join('');
+ const topics=(feedback.topics||[]).map(t=>'<div class="feedback-item"><h4>'+esc(t.question||t.topic||'السؤال')+'</h4><div class="submitted" style="margin-top:8px"><b>الإجابة الصحيحة:</b> '+esc(t.correctAnswer||'—')+'</div><div class="answer" style="margin-top:8px"><b>إجابة الطالب:</b> '+esc(t.studentAnswer||'—')+'</div><div style="margin-top:8px"><b>الشرح:</b> '+esc(t.explanation||'قارن بين إجابتك والإجابة الصحيحة وركز على الفرق العلمي الحقيقي.')+'</div></div>').join('');
  const plan=(feedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
  document.getElementById('testArea').innerHTML='<div class="result"><p>نتيجتك</p><b>'+pct+'%</b><p>'+esc(feedback.summary||'راجع أخطاءك ثم أعد الاختبار.')+'</p></div>'+
  (wrong.length?'<div class="feedback-grid"><h3>إيه اللي محتاج تفهمه وتراجعه؟</h3>'+topics+'</div>':'<div class="submitted">ممتاز، مفيش أخطاء محتاجة مراجعة في الاختبار ده.</div>')+
