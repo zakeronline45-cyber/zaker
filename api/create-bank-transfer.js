@@ -35,19 +35,21 @@ export default async function handler(req,res){
    const children=await rest('children?guardian_user_id=eq.'+user.id+'&is_active=eq.true&select=id,full_name,track,grade,created_at&order=created_at.asc',{token});
    const idx=children.findIndex(x=>x.id===childId);
    if(idx<0) return res.status(403).json({error:'هذا الابن غير تابع للحساب'});
-   const childIndex=idx+1;
-   const amount=amountFor(subjectCount,childIndex);
    const reference=refCode();
 
-   const subs=await rest('subscriptions',{method:'POST',token,prefer:'return=representation',body:{
-     user_id:user.id,child_id:childId,plan_code:'single',status:'pending',amount_egp:amount
+   const result=await rest('rpc/create_bank_transfer_order',{method:'POST',token,body:{
+     p_child_id:childId,
+     p_subject_count:subjectCount,
+     p_reference_code:reference
    }});
-   const subscription=subs[0];
-   const pays=await rest('payments',{method:'POST',token,prefer:'return=representation',body:{
-     user_id:user.id,child_id:childId,subscription_id:subscription.id,provider:'bank',payment_method:'bank_transfer',
-     plan_code:'subjects',amount_egp:amount,currency:'EGP',status:'pending',
-     reference_code:reference,subject_count:subjectCount,child_index:childIndex
-   }});
-   return res.status(200).json({payment:pays[0],reference_code:reference,amount,child_index:childIndex,child_name:children[idx].full_name,discount_applied:childIndex===2});
+
+   return res.status(200).json({
+     payment:{id:result.payment_id},
+     reference_code:reference,
+     amount:result.amount,
+     child_index:result.child_index,
+     child_name:children[idx].full_name,
+     discount_applied:!!result.discount_applied
+   });
  }catch(e){return res.status(500).json({error:e?.message||'تعذر إنشاء طلب التحويل'})}
 }
