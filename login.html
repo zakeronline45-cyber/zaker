@@ -52,7 +52,7 @@ main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-const next=new URLSearchParams(location.search).get('next')||'/student.html';
+const next=new URLSearchParams(location.search).get('next')||'/';
 
 function showMode(mode){
  document.getElementById('loginForm').style.display=mode==='login'?'grid':'none';
@@ -70,7 +70,7 @@ async function routeAfterLogin(session){
  const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);
  const role=profiles?.[0]?.role||'parent';
  if(role==='admin'){location.href='/admin.html';return}
- location.href=next;
+ location.href=next||'/';
 }
 async function login(e){
  e.preventDefault();hideMsg();
