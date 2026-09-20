@@ -9,7 +9,7 @@
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}button{font:inherit;cursor:pointer}a{text-decoration:none;color:inherit}.top{background:#fff;border-bottom:1px solid var(--line);padding:15px 20px}.wrap{max-width:1100px;margin:auto}.bar{display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{font-weight:900;font-size:25px;color:var(--n)}.brand span{color:var(--b)}.btn{border:0;border-radius:11px;padding:11px 15px;font-weight:900}.primary{background:var(--b);color:#fff}.soft{background:#eef3ff;color:var(--b)}main{max-width:1100px;margin:32px auto;padding:0 16px}.head{text-align:center;max-width:700px;margin:auto}.head h1{color:var(--n)}.muted{color:var(--m);line-height:1.8}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.plan{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;position:relative}.plan.popular{border:2px solid var(--b)}.badge{position:absolute;top:-12px;right:18px;background:var(--b);color:#fff;border-radius:99px;padding:6px 10px;font-size:12px;font-weight:900}.price{font-size:38px;font-weight:900;color:var(--n);margin:12px 0}.price small{font-size:14px;color:var(--m)}ul{line-height:2}.status{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin:18px 0}.ok{color:var(--g);font-weight:900}.err{color:var(--r);font-weight:900}@media(max-width:760px){.plans{grid-template-columns:1fr}}</style>
 </head>
 <body>
-<header class="top"><div class="wrap bar"><a href="/" class="brand">ذاكر <span>الاشتراك</span></a><div><a class="btn soft" href="/student.html">حسابي</a> <button class="btn soft" onclick="logout()">خروج</button></div></div></header>
+<header class="top"><div class="wrap bar"><a href="/" class="brand">ذاكر <span>الاشتراك</span></a><div><a class="btn soft" href="/account.html">حسابي</a> <button class="btn soft" onclick="logout()">خروج</button></div></div></header>
 <main>
 <div class="head"><h1>اشتراك ذاكر</h1><p class="muted">أول مادة بـ250 جنيه شهريًا، وكل مادة إضافية تضيف 225 جنيه فقط. الطفل الثاني يحصل على خصم 25% من إجمالي اشتراكه.</p></div>
 <div id="current" class="status">جاري تحميل حالة الاشتراك...</div>
@@ -26,11 +26,8 @@
         <option value="5">5 مواد</option>
       </select>
     </label>
-    <label>الطفل
-      <select id="childIndex" onchange="calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px">
-        <option value="1">الطفل الأول</option>
-        <option value="2">الطفل الثاني — خصم 25%</option>
-      </select>
+    <label>الابن / الابنة
+      <select id="childId" onchange="calc()" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin-top:6px"></select>
     </label>
   </div>
   <div class="price" id="calcPrice">250 <small>جنيه / شهر</small></div>
@@ -55,28 +52,45 @@
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-let session=null;
+let session=null, children=[];
 
 async function init(){
  const x=await sb.auth.getSession();session=x.data.session;
  if(!session){location.href='/login.html?next=/subscribe.html';return}
- const {data,error}=await sb.from('subscriptions').select('*').eq('user_id',session.user.id).order('created_at',{ascending:false}).limit(1);
+
+ const {data:chs,error:chErr}=await sb.from('children').select('*').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
+ if(chErr){document.getElementById('current').textContent=chErr.message;return}
+ children=chs||[];
+ const childSelect=document.getElementById('childId');
+ childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(ch.track==='arabic'?'عربي':'لغات')+' — '+({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade)+(i===1?' — خصم الطفل الثاني 25%':'')+'</option>').join('');
+ const requested=new URLSearchParams(location.search).get('child');
+ if(requested&&children.some(x=>x.id===requested)) childSelect.value=requested;
+ if(!children.length){
+   document.getElementById('current').innerHTML='لا يوجد أبناء على الحساب. <a href="/account.html">أضف ابنًا أولًا</a>.';
+   document.querySelector('button[onclick="startBankTransfer()"]').disabled=true;
+   return;
+ }
+
+ const {data,error}=await sb.from('subscriptions').select('*,children(full_name)').eq('user_id',session.user.id).order('created_at',{ascending:false}).limit(5);
  const box=document.getElementById('current');
- if(error||!data?.length){box.textContent='لا يوجد اشتراك نشط حاليًا.';return}
- const s=data[0];
- box.innerHTML=s.status==='active'
-   ?'<span class="ok">اشتراكك نشط</span> — الباقة: '+s.plan_code+' — ينتهي: '+new Date(s.ends_at).toLocaleDateString('ar-EG')
-   :'آخر طلب اشتراك: '+s.status;
+ if(error||!data?.length){box.textContent='لا يوجد اشتراك نشط حاليًا.';calc();return}
+ const active=(data||[]).find(s=>s.status==='active');
+ box.innerHTML=active
+   ?'<span class="ok">يوجد اشتراك نشط</span> — '+(active.children?.full_name||'طالب')+' — ينتهي: '+new Date(active.ends_at).toLocaleDateString('ar-EG')
+   :'آخر طلب اشتراك: '+data[0].status;
+ calc();
 }
 function calc(){
   const n=Number(document.getElementById('subjectCount').value)||1;
-  const child=Number(document.getElementById('childIndex').value)||1;
+  const selectedId=document.getElementById('childId')?.value;
+  const idx=children.findIndex(x=>x.id===selectedId);
+  const childIndex=idx+1;
   const base=250+(n-1)*225;
-  const total=child===2?Math.round(base*.75*100)/100:base;
+  const total=childIndex===2?Math.round(base*.75*100)/100:base;
   document.getElementById('calcPrice').innerHTML=total+' <small>جنيه / شهر</small>';
-  document.getElementById('calcNote').textContent=n===1
-    ?'أول مادة = 250 جنيه'+(child===2?'، وبعد خصم الطفل الثاني 25%.':'')
-    :'250 لأول مادة + '+(n-1)+' × 225 للمواد الإضافية'+(child===2?'، ثم خصم 25% للطفل الثاني.':'');
+  document.getElementById('calcNote').textContent=(n===1
+    ?'أول مادة = 250 جنيه'
+    :'250 لأول مادة + '+(n-1)+' × 225 للمواد الإضافية')+(childIndex===2?'، وخصم الطفل الثاني 25% مطبق تلقائيًا.':'');
 }
 let pendingPayment=null;
 
@@ -94,13 +108,14 @@ async function loadBankSettings(){
 async function startBankTransfer(){
  if(!session){location.href='/login.html?next=/subscribe.html';return}
  const subjectCount=Number(document.getElementById('subjectCount').value)||1;
- const childIndex=Number(document.getElementById('childIndex').value)||1;
- const r=await fetch('/api/create-bank-transfer',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subjectCount,childIndex})});
+ const childId=document.getElementById('childId').value;
+ const r=await fetch('/api/create-bank-transfer',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subjectCount,childId})});
  const j=await r.json();
  if(!r.ok){alert(j.error||'تعذر إنشاء طلب التحويل');return}
  pendingPayment=j.payment;
  document.getElementById('refCode').textContent=j.reference_code;
  document.getElementById('amountDue').textContent=j.amount;
+ document.getElementById('calcNote').textContent=(j.child_name||'الطالب')+(j.discount_applied?' — تم تطبيق خصم الطفل الثاني 25%':'');
  await loadBankSettings();
  document.getElementById('bankBox').style.display='block';
  document.getElementById('bankBox').scrollIntoView({behavior:'smooth'});
@@ -116,18 +131,15 @@ async function submitProof(){
  const path=session.user.id+'/'+pendingPayment.id+'.'+ext;
  const up=await sb.storage.from('bank-transfer-proofs').upload(path,file,{upsert:true});
  if(up.error){alert(up.error.message);return}
- const {data:pub}=sb.storage.from('bank-transfer-proofs').getPublicUrl(path);
  const {error}=await sb.from('payments').update({
    sender_name:senderName,
    bank_transfer_reference:bankTransferReference,
-   proof_url:pub.publicUrl
+   proof_url:path
  }).eq('id',pendingPayment.id);
  const box=document.getElementById('proofMsg');box.style.display='block';
  if(error){box.textContent='تم رفع الملف لكن حصلت مشكلة في حفظ بيانات التحويل: '+error.message;return}
  box.innerHTML='<span class="ok">تم إرسال التحويل للمراجعة.</span> لن يتفعّل الاشتراك إلا بعد مطابقة التحويل واعتماده.';
 }
-calc();
-
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
 </script></body></html>
