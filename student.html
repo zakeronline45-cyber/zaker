@@ -412,15 +412,19 @@ async function initAccount(){
     .eq('status','active')
     .order('ends_at',{ascending:false})
     .limit(5);
-  const validSub=(activeSubs||[]).find(s=>!s.ends_at||new Date(s.ends_at)>new Date());
-  if(!validSub){
+  const validSubs=(activeSubs||[]).filter(s=>!s.ends_at||new Date(s.ends_at)>new Date());
+  if(!validSubs.length){
     location.href='/subscribe.html?child='+encodeURIComponent(child.id);
     return;
   }
-  if(validSub.access_source==='paid'){
-    const {data:entitlements}=await sb.from('subscription_subjects').select('subject_code').eq('subscription_id',validSub.id);
-    const hasScience=(entitlements||[]).some(x=>x.subject_code==='Science');
-    if(child.track==='languages'&&child.grade==='prep1'&&!hasScience){
+  if(child.track==='languages'&&child.grade==='prep1'){
+    const paidIds=validSubs.filter(s=>s.access_source==='paid').map(s=>s.id);
+    let hasScience=validSubs.some(s=>s.access_source!=='paid');
+    if(!hasScience&&paidIds.length){
+      const {data:entitlements}=await sb.from('subscription_subjects').select('subscription_id,subject_code').in('subscription_id',paidIds);
+      hasScience=(entitlements||[]).some(x=>x.subject_code==='Science');
+    }
+    if(!hasScience){
       location.href='/subscribe.html?child='+encodeURIComponent(child.id);
       return;
     }
