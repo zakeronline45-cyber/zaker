@@ -7,127 +7,278 @@
   "lesson": 5,
   "lessonTitle": "Electric Forces",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u2-l5-001",
       "type": "complete",
       "difficulty": "easy",
-      "text": "The accumulation of electric charges on the surface of an object is called ______ electricity.",
-      "answer": "static",
-      "sourcePage": 175
+      "text": "Charging two uncharged objects by rubbing them together is called charging by ______.",
+      "answer": "friction",
+      "sourcePage": 175,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-002",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Charging an object by rubbing is called charging by:",
-      "choices": [
-        "friction",
-        "gravity",
-        "magnetism",
-        "heating"
-      ],
-      "answer": "friction",
-      "sourcePage": 176
+      "text": "The accumulation of electric charges on object surfaces is called ______ electricity.",
+      "answer": "static",
+      "sourcePage": 176,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-003",
-      "type": "true_false",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Like electric charges repel each other.",
-      "answer": "True",
-      "sourcePage": 178
+      "text": "The region around an electric charge in which its effect appears is called the electric ______.",
+      "answer": "field",
+      "sourcePage": 177,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-004",
-      "type": "true_false",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Unlike electric charges attract each other.",
-      "answer": "True",
-      "sourcePage": 178
+      "text": "Charging an uncharged object by touching it with another charged object is charging by ______.",
+      "answer": "contact",
+      "sourcePage": 178,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-005",
-      "type": "reason",
+      "type": "mcq",
       "difficulty": "medium",
-      "text": "Give a reason: A rubbed plastic rod can attract small pieces of paper.",
-      "answer": "Because the rod becomes electrically charged and exerts an electrostatic force on the paper pieces.",
-      "sourcePage": 180
+      "text": "In the electrostatic series, when two materials are rubbed, the material higher in the series tends to become:",
+      "choices": [
+        "positively charged",
+        "negatively charged",
+        "neutral always",
+        "magnetic"
+      ],
+      "answer": "positively charged",
+      "sourcePage": 179,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-006",
       "type": "compare",
       "difficulty": "medium",
-      "text": "Compare conductors and insulators.",
-      "answer": "Conductors allow electric charges to move through them easily; insulators do not allow charges to move freely.",
-      "sourcePage": 182
+      "text": "Compare electrically conducting and nonconducting materials.",
+      "answer": "Conductors allow electric charges to flow through them; insulators do not allow charges to flow easily.",
+      "sourcePage": 180,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-007",
-      "type": "mcq",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Which material is a conductor?",
-      "choices": [
-        "Copper",
-        "Glass",
-        "Plastic",
-        "Wood"
-      ],
-      "answer": "Copper",
-      "sourcePage": 183
+      "text": "Give a reason: A copper rod should have an insulating wooden handle when rubbed.",
+      "answer": "Because copper conducts electric charge, while wood is an electrical insulator.",
+      "sourcePage": 181,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-008",
-      "type": "mcq",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "Which material is an insulator?",
-      "choices": [
-        "Glass",
-        "Copper",
-        "Aluminum",
-        "Iron"
-      ],
-      "answer": "Glass",
-      "sourcePage": 183
+      "text": "Give a reason: A person may feel a slight electric shock after walking barefoot on a carpet and touching a metal handle.",
+      "answer": "Static charge formed by friction discharges through the metal handle.",
+      "sourcePage": 182,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-009",
-      "type": "complete",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "A device used to detect electric charge is the ______.",
-      "answer": "electroscope",
-      "sourcePage": 187
+      "text": "Give a reason: Fuel transport vehicles use metal chains touching the ground.",
+      "answer": "To discharge static electricity produced by friction and reduce ignition risk.",
+      "sourcePage": 183,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-010",
       "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: The leaves of an electroscope diverge when charged.",
-      "answer": "Because the leaves acquire like charges and repel each other.",
-      "sourcePage": 189
+      "difficulty": "medium",
+      "text": "Give a reason: Two silk pieces rubbed separately with cotton repel each other.",
+      "answer": "Both acquire the same type of electric charge, and like charges repel.",
+      "sourcePage": 184,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-011",
-      "type": "true_false",
-      "difficulty": "hard",
-      "text": "Electric force can act without direct contact.",
-      "answer": "True",
-      "sourcePage": 190
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "A device used to detect whether an object is electrically charged is the ______.",
+      "answer": "electroscope",
+      "sourcePage": 185,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
     },
     {
       "id": "s1-u2-l5-012",
-      "type": "mcq",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The leaves of an electroscope diverge after a charged object touches its disc.",
+      "answer": "The leaves acquire like charges and repel each other.",
+      "sourcePage": 186,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-013",
+      "type": "compare",
       "difficulty": "hard",
-      "text": "Electrostatic coating depends mainly on:",
+      "text": "Compare charging by friction and charging by contact.",
+      "answer": "Friction charges two initially uncharged materials by electron transfer during rubbing; contact charges an uncharged object by touching it with a charged object.",
+      "sourcePage": 187,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-014",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "A lightning rod is mainly used to:",
       "choices": [
-        "electric attraction",
-        "gravity only",
-        "magnetic repulsion",
-        "friction only"
+        "measure current",
+        "protect buildings from lightning strikes",
+        "detect magnets",
+        "produce static charge"
       ],
-      "answer": "electric attraction",
-      "sourcePage": 192
+      "answer": "protect buildings from lightning strikes",
+      "sourcePage": 188,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-015",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Electrostatic coating is useful because it:",
+      "choices": [
+        "heats paint",
+        "makes paint magnetic",
+        "helps the paint layer become uniform and reduces waste",
+        "removes all charge"
+      ],
+      "answer": "helps the paint layer become uniform and reduces waste",
+      "sourcePage": 189,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-016",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Electric field lines do not intersect.",
+      "answer": "At any point the electric field has one definite direction, so two field lines cannot cross.",
+      "sourcePage": 190,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-017",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Electric field lines start from positive charges and end at negative charges.",
+      "answer": "True",
+      "sourcePage": 191,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-018",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "Electric field lines penetrate the inside of charged objects in the diagrams studied.",
+      "answer": "False",
+      "sourcePage": 192,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-019",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "A glass rod rubbed with silk is brought near a negatively charged light ball and the ball moves toward the rod. What is the rod's charge?",
+      "answer": "Positive.",
+      "sourcePage": 193,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-020",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "Two light balls repel each other after rubbing. What can you conclude about their charges?",
+      "answer": "They carry like charges.",
+      "sourcePage": 194,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-021",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which material is an electrical conductor?",
+      "choices": [
+        "Copper",
+        "Glass",
+        "Silk",
+        "Wood"
+      ],
+      "answer": "Copper",
+      "sourcePage": 195,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-022",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which is an electrical insulator?",
+      "choices": [
+        "Glass",
+        "Copper",
+        "Iron",
+        "Aluminum"
+      ],
+      "answer": "Glass",
+      "sourcePage": 195,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-023",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: Touching the electroscope disc by hand before use is useful.",
+      "answer": "To discharge any residual electric charge and return the electroscope to a neutral state.",
+      "sourcePage": 195,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.108-113 / PDF 524-529"
+    },
+    {
+      "id": "s1-u2-l5-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: A charged object brought near an electroscope changes leaf divergence without touching. What does this demonstrate?",
+      "answer": "Electric force can act at a distance through an electric field.",
+      "sourcePage": 195,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
