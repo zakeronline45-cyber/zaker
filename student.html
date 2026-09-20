@@ -406,10 +406,10 @@ function renderQuestion(){
 }
 function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');selectedChoice=el.dataset.value}
 async function submitAnswer(){
- clearInterval(questionTimer);
  const q=test[idx];let studentAnswer=selectedChoice;
  if(!['mcq','true_false'].includes(q.type))studentAnswer=document.getElementById('writtenAnswer')?.value.trim();
- if(!studentAnswer){document.getElementById('submitMsg').innerHTML='<div class="status danger">اكتب أو اختر إجابة أولًا.</div>';startQuestionTimer();return}
+ if(!studentAnswer){document.getElementById('submitMsg').innerHTML='<div class="status danger">اكتب أو اختر إجابة أولًا.</div>';return}
+ clearInterval(questionTimer);
  document.querySelectorAll('button,textarea').forEach(x=>{if(x.closest('#testArea'))x.disabled=true});
  document.getElementById('submitMsg').innerHTML='<div class="submitted">تم تسجيل إجابتك... جاري الانتقال للسؤال التالي.</div>';
  let correct=false;
