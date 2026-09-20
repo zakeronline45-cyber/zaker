@@ -1,0 +1,9 @@
+{
+  "name": "zaker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "ai": "^6.0.34"
+  }
+}
