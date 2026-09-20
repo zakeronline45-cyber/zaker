@@ -7,127 +7,278 @@
   "lesson": 7,
   "lessonTitle": "Gravitational Forces",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u2-l7-001",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Gravitational force is classified as a:",
-      "choices": [
-        "field force",
-        "contact force",
-        "friction force only",
-        "collision force"
-      ],
-      "answer": "field force",
-      "sourcePage": 234
+      "text": "The force that pulls objects toward the center of Earth is Earth's gravitational ______.",
+      "answer": "force",
+      "sourcePage": 234,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-002",
-      "type": "mcq",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Friction force is classified as a:",
-      "choices": [
-        "contact force",
-        "field force",
-        "gravitational force",
-        "magnetic field force"
-      ],
-      "answer": "contact force",
-      "sourcePage": 235
+      "text": "The region in which Earth's gravitational force appears is its gravitational ______.",
+      "answer": "field",
+      "sourcePage": 235,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-003",
       "type": "complete",
       "difficulty": "easy",
-      "text": "The scientist associated with explaining gravitational attraction is Isaac ______.",
-      "answer": "Newton",
-      "sourcePage": 236
+      "text": "The amount of matter in an object is its ______.",
+      "answer": "mass",
+      "sourcePage": 236,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-004",
-      "type": "true_false",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Earth attracts objects toward its center.",
-      "answer": "True",
-      "sourcePage": 237
+      "text": "Earth's gravitational force acting on an object is its ______.",
+      "answer": "weight",
+      "sourcePage": 237,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-005",
-      "type": "complete",
-      "difficulty": "medium",
-      "text": "The force by which Earth attracts objects toward its center is called ______ force.",
-      "answer": "gravitational",
-      "sourcePage": 238
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The SI unit of mass is:",
+      "choices": [
+        "kilogram",
+        "newton",
+        "N/kg",
+        "meter"
+      ],
+      "answer": "kilogram",
+      "sourcePage": 238,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-006",
-      "type": "compare",
-      "difficulty": "medium",
-      "text": "Compare mass and weight.",
-      "answer": "Mass is the amount of matter in an object and is nearly constant; weight is the gravitational force acting on the object and can change with gravity.",
-      "sourcePage": 240
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The SI unit of weight is:",
+      "choices": [
+        "newton",
+        "kilogram",
+        "meter",
+        "second"
+      ],
+      "answer": "newton",
+      "sourcePage": 239,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-007",
-      "type": "reason",
+      "type": "problem",
       "difficulty": "medium",
-      "text": "Give a reason: An object's weight can change from one place to another.",
-      "answer": "Because gravitational field strength can change from one place to another.",
-      "sourcePage": 242
+      "text": "Calculate the weight of an 80 g object at Earth's surface if g = 10 N/kg.",
+      "answer": "0.8 N.",
+      "sourcePage": 240,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-008",
-      "type": "true_false",
+      "type": "problem",
       "difficulty": "medium",
-      "text": "An object's mass becomes zero in space.",
-      "answer": "False",
-      "sourcePage": 243
+      "text": "An object's weight is 500 N where g = 10 N/kg. Find its mass.",
+      "answer": "50 kg.",
+      "sourcePage": 241,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-009",
-      "type": "mcq",
+      "type": "true_false",
       "difficulty": "medium",
-      "text": "When the distance between two objects increases, gravitational attraction generally:",
-      "choices": [
-        "decreases",
-        "increases",
-        "becomes infinite",
-        "does not depend on distance"
-      ],
-      "answer": "decreases",
-      "sourcePage": 245
+      "text": "An object's mass remains constant when moving from one place to another.",
+      "answer": "True",
+      "sourcePage": 242,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-010",
-      "type": "mcq",
-      "difficulty": "hard",
-      "text": "When the masses of attracting objects increase, gravitational force generally:",
-      "choices": [
-        "increases",
-        "decreases",
-        "disappears",
-        "becomes zero"
-      ],
-      "answer": "increases",
-      "sourcePage": 246
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: An object's weight changes from one place to another.",
+      "answer": "Because gravitational field intensity changes with location, while mass remains constant.",
+      "sourcePage": 243,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-011",
       "type": "reason",
-      "difficulty": "hard",
-      "text": "Give a reason: Objects fall toward Earth when released.",
-      "answer": "Because Earth's gravitational force attracts them toward its center.",
-      "sourcePage": 248
+      "difficulty": "medium",
+      "text": "Give a reason: The weight of an object decreases as it moves away from Earth's surface.",
+      "answer": "Earth's gravitational field intensity decreases with increasing distance from Earth's center.",
+      "sourcePage": 244,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
     },
     {
       "id": "s1-u2-l7-012",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare mass and weight.",
+      "answer": "Mass is the amount of matter, measured in kg and remains constant; weight is gravitational force, measured in N and changes with gravitational field intensity.",
+      "sourcePage": 245,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-013",
+      "type": "compare",
+      "difficulty": "medium",
+      "text": "Compare field forces and contact forces.",
+      "answer": "Field forces act at a distance within a field; contact forces require physical contact between objects.",
+      "sourcePage": 246,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-014",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which is a field force?",
+      "choices": [
+        "Gravitational force",
+        "Friction force",
+        "Collision force",
+        "Elastic force"
+      ],
+      "answer": "Gravitational force",
+      "sourcePage": 247,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-015",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which is a contact force?",
+      "choices": [
+        "Friction force",
+        "Gravitational force",
+        "Magnetic force",
+        "Electrostatic force"
+      ],
+      "answer": "Friction force",
+      "sourcePage": 248,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-016",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Collision force is a contact force.",
+      "answer": "It appears only when two objects touch or collide.",
+      "sourcePage": 249,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-017",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The regular rise and fall of sea level due mainly to gravitational attraction is called ______.",
+      "answer": "tides",
+      "sourcePage": 250,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-018",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Tides are useful in generating electricity.",
+      "answer": "Their regular movement can be used as a renewable energy source.",
+      "sourcePage": 251,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-019",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: The Moon continues in orbital motion around Earth.",
+      "answer": "Because of the mutual gravitational attraction between the Moon and Earth.",
+      "sourcePage": 252,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-020",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "The Moon's gravitational field intensity is one-sixth Earth's. What is the Moon-weight of an object that weighs 60 N on Earth?",
+      "answer": "10 N.",
+      "sourcePage": 253,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-021",
       "type": "true_false",
+      "difficulty": "medium",
+      "text": "An object's mass becomes zero in outer space.",
+      "answer": "False",
+      "sourcePage": 254,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-022",
+      "type": "mcq",
       "difficulty": "hard",
-      "text": "Electric, magnetic, and gravitational forces can act at a distance.",
-      "answer": "True",
-      "sourcePage": 250
+      "text": "Which statement about black holes is correct according to the lesson?",
+      "choices": [
+        "They have no gravity",
+        "They are regions of immense gravity formed when a massive star collapses at the end of its life.",
+        "They are planets",
+        "They are contact forces"
+      ],
+      "answer": "They are regions of immense gravity formed when a massive star collapses at the end of its life.",
+      "sourcePage": 254,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-023",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "Two objects keep the same masses but the distance between their centers increases. What happens to their gravitational attraction?",
+      "answer": "It decreases.",
+      "sourcePage": 254,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.118-124 / PDF 534-540"
+    },
+    {
+      "id": "s1-u2-l7-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: A student says 'mass and weight are the same because both increase on a larger planet.' Correct the idea.",
+      "answer": "Mass does not change with location; weight changes because gravitational field intensity changes.",
+      "sourcePage": 254,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
