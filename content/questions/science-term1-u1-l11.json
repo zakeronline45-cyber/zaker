@@ -1,0 +1,127 @@
+{
+  "subject": "Science",
+  "grade": "أولى إعدادي",
+  "term": 1,
+  "unit": 4,
+  "unitTitle": "The (Earth - Sun - Moon) System",
+  "lesson": 11,
+  "lessonTitle": "The Earth and the Solar System",
+  "language": "English",
+  "source": "El-Moasser Science Main Book 2027",
+  "questions": [
+    {
+      "id": "s1-u4-l11-001",
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "The Sun and the objects revolving around it form the ______ system.",
+      "answer": "solar",
+      "sourcePage": 355
+    },
+    {
+      "id": "s1-u4-l11-002",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "The planets revolve around the:",
+      "choices": [
+        "Sun",
+        "Moon",
+        "Earth only",
+        "Polaris"
+      ],
+      "answer": "Sun",
+      "sourcePage": 356
+    },
+    {
+      "id": "s1-u4-l11-003",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "The planets are arranged at different distances from the Sun.",
+      "answer": "True",
+      "sourcePage": 357
+    },
+    {
+      "id": "s1-u4-l11-004",
+      "type": "mcq",
+      "difficulty": "easy",
+      "text": "Which planet is closest to the Sun?",
+      "choices": [
+        "Mercury",
+        "Earth",
+        "Jupiter",
+        "Neptune"
+      ],
+      "answer": "Mercury",
+      "sourcePage": 358
+    },
+    {
+      "id": "s1-u4-l11-005",
+      "type": "mcq",
+      "difficulty": "medium",
+      "text": "Which planet is the largest?",
+      "choices": [
+        "Jupiter",
+        "Mercury",
+        "Mars",
+        "Earth"
+      ],
+      "answer": "Jupiter",
+      "sourcePage": 359
+    },
+    {
+      "id": "s1-u4-l11-006",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Planets do not collide with the Sun while revolving around it.",
+      "answer": "Because each planet moves in its own orbit under gravitational attraction.",
+      "sourcePage": 361
+    },
+    {
+      "id": "s1-u4-l11-007",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Earth rotates around its axis once in about ______ hours.",
+      "answer": "24",
+      "sourcePage": 365
+    },
+    {
+      "id": "s1-u4-l11-008",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: Day and night occur.",
+      "answer": "Because Earth rotates around its axis.",
+      "sourcePage": 366
+    },
+    {
+      "id": "s1-u4-l11-009",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "Earth revolves around the Sun once in about ______ days.",
+      "answer": "365.25",
+      "sourcePage": 368
+    },
+    {
+      "id": "s1-u4-l11-010",
+      "type": "reason",
+      "difficulty": "hard",
+      "text": "Give a reason: The apparent length of a shadow changes during the day.",
+      "answer": "Because the angle of sunlight changes as Earth rotates.",
+      "sourcePage": 372
+    },
+    {
+      "id": "s1-u4-l11-011",
+      "type": "true_false",
+      "difficulty": "hard",
+      "text": "Sunlight falls on Earth's surface at different angles.",
+      "answer": "True",
+      "sourcePage": 374
+    },
+    {
+      "id": "s1-u4-l11-012",
+      "type": "compare",
+      "difficulty": "hard",
+      "text": "Compare Earth's rotation and revolution.",
+      "answer": "Rotation is Earth's spinning around its axis and causes day and night; revolution is Earth's motion around the Sun and takes about one year.",
+      "sourcePage": 376
+    }
+  ]
+}
