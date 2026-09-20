@@ -21,7 +21,7 @@ main{max-width:1150px;margin:24px auto;padding:0 16px}.note{background:#fff8e8;b
 </div>
 <div class="grid">
  <section class="card"><h3>آخر الاختبارات</h3><div id="recentTests" class="rows"></div></section>
- <section class="card"><h3>تحليل ذاكر</h3><div id="analysisBox"></div></section>
+ <section class="card"><h3>تحليل ذاكر</h3><div id="analysisBox"></div><div id="reviewPlan" style="margin-top:12px"></div></section>
 </div>
 <section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">الإجابة الصحيحة تظهر هنا لولي الأمر فقط.</p><div id="wrongAnswers"></div></section>
 </main>
@@ -40,10 +40,16 @@ if(results.length){
  const weakByLesson={};wrong.forEach(a=>weakByLesson[a.lessonTitle]=(weakByLesson[a.lessonTitle]||0)+1);
  const sorted=Object.entries(weakByLesson).sort((a,b)=>b[1]-a[1]);
  document.getElementById('analysisBox').innerHTML=sorted.length?'<div class="weak row"><div><b>أكثر درس يحتاج مراجعة</b><div class="muted">'+esc(sorted[0][0])+'</div></div><b>'+sorted[0][1]+' أخطاء</b></div><div class="good row"><div><b>التوصية</b><div class="muted">راجع شرح '+esc(sorted[0][0])+' ثم أعد اختبارًا جديدًا بعد المراجعة.</div></div></div>':'<div class="good row">لا توجد أخطاء مسجلة حتى الآن.</div>';
+ const latestFeedback=results.find(r=>r.feedback)?.feedback;
+ if(latestFeedback){
+   const topics=(latestFeedback.topics||[]).map(t=>'<div class="row"><div><b>'+esc(t.topic||'مفهوم يحتاج مراجعة')+'</b><div class="muted">'+esc(t.explanation||'')+(t.page?' — صفحة '+t.page:'')+'</div></div></div>').join('');
+   const plan=(latestFeedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
+   document.getElementById('reviewPlan').innerHTML='<h4>تقرير آخر اختبار</h4>'+topics+(plan?'<div class="good row"><div><b>خطة المراجعة</b><ol style="margin:8px 0 0;padding-right:20px">'+plan+'</ol></div></div>':'');
+ }
  document.getElementById('wrongAnswers').innerHTML=wrong.length?wrong.slice(0,30).map(a=>'<div class="qitem"><span class="pill">'+esc(a.lessonTitle)+'</span><h4>'+esc(a.question)+'</h4><div class="ans"><div class="student"><b>إجابة الطالب</b><p>'+esc(a.studentAnswer)+'</p></div><div class="correct"><b>الإجابة الصحيحة</b><p>'+esc(a.correctAnswer)+'</p></div></div><div class="muted">صفحة المصدر: '+(a.sourcePage||'—')+'</div></div>').join(''):'<div class="empty">لا توجد إجابات خاطئة مسجلة.</div>';
 }else{
  document.getElementById('recentTests').innerHTML='<div class="empty">لم يُحل أي اختبار بعد.</div>';
- document.getElementById('analysisBox').innerHTML='<div class="empty">التحليل سيظهر بعد أول اختبار.</div>';
+ document.getElementById('analysisBox').innerHTML='<div class="empty">التحليل سيظهر بعد أول اختبار.</div>'; document.getElementById('reviewPlan').innerHTML='';
  document.getElementById('wrongAnswers').innerHTML='<div class="empty">لا توجد بيانات حتى الآن.</div>';
 }
 </script>
