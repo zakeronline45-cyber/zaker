@@ -1,39 +1,298 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b4f6c">
-<title>ذاكر | مدرسك الذكي</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#165DFF">
+<title>ذاكر | مدرسك الشخصي في كل وقت</title>
 <style>
-:root{--ink:#102a43;--muted:#66788a;--brand:#0b4f6c;--brand2:#0e7490;--soft:#f3f8fa;--line:#d9e5ea;--white:#fff;--success:#168a65}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1160px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid #edf2f4}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:23px}.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:white;display:grid;place-items:center;font-weight:800}.desktop-nav{display:flex;gap:28px;font-weight:600;color:#40596b}.btn{border:0;border-radius:12px;padding:11px 18px;cursor:pointer;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;box-shadow:0 8px 22px #0b4f6c24}.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--brand)}.btn-lg{padding:14px 22px}.wide{width:100%}.hero{padding:72px 0 56px;background:radial-gradient(circle at 85% 15%,#dff4f4 0,transparent 30%),linear-gradient(180deg,#fbfeff,#fff)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}.eyebrow{display:inline-flex;padding:7px 12px;border-radius:99px;background:#e8f6f7;color:var(--brand);font-weight:700;font-size:13px}.hero h1{font-size:48px;line-height:1.25;margin:18px 0 14px}.hero h1 span{color:var(--brand2)}.lead{font-size:18px;line-height:1.9;color:var(--muted)}.hero-actions{display:flex;gap:12px;margin:28px 0 20px;flex-wrap:wrap}.trust-row{display:flex;gap:16px;flex-wrap:wrap;color:#587082;font-size:13px}.glass{background:#ffffffd9;border:1px solid #dce9ed;border-radius:24px;padding:24px;box-shadow:0 24px 60px #0b4f6c1a}.mini-top{display:flex;align-items:center;justify-content:space-between}.pill{background:#e7f5f0;color:var(--success);padding:6px 10px;border-radius:99px;font-size:12px;font-weight:700}.progress{height:10px;background:#eaf0f3;border-radius:99px;overflow:hidden;margin:18px 0 4px}.progress i{display:block;height:100%;width:68%;background:linear-gradient(90deg,var(--brand2),#4db6ac)}.task{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);padding:13px;border-radius:15px;margin-top:10px}.task.active{background:#f3fbfb;border-color:#b9dfe4}.task-icon{width:42px;height:42px;border-radius:12px;background:#e9f4f7;display:grid;place-items:center;font-weight:800;color:var(--brand)}.task small{display:block;color:var(--muted)}.task em{font-style:normal;font-weight:700;color:#698091}.insight{display:flex;gap:10px;margin-top:16px;background:#fff8e8;border:1px solid #f4dfab;padding:13px;border-radius:14px}.insight p{margin:3px 0 0;font-size:13px;color:#6d5b33}.section{padding:84px 0}.soft{background:var(--soft)}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.section-head span{color:var(--brand2);font-weight:700}.section-head h2{font-size:34px;line-height:1.45;margin:8px 0}.features-grid,.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature,.price-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff}.feature p,.price-card p,.price-card li{color:var(--muted);line-height:1.8}.demo-grid,.parent-card{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}.dashboard-preview{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 24px 50px #143b4d14}.dash-head,.report-top{display:flex;align-items:center;justify-content:space-between}.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#dff2f4;color:var(--brand);font-weight:800}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.kpis div{padding:14px;border-radius:14px;background:#f7fafb;text-align:center}.kpis strong{display:block;font-size:22px;color:var(--brand)}.kpis span{font-size:12px;color:var(--muted)}.chart-bars{height:150px;display:flex;gap:9px;align-items:flex-end}.chart-bars i{flex:1;background:linear-gradient(180deg,#31a2b4,#0b4f6c);border-radius:8px 8px 3px 3px}.report-card{border-radius:22px;background:#0c3f59;color:#fff;padding:24px}.score-ring{width:160px;height:160px;margin:20px auto;border:14px solid #2e6f85;border-top-color:#f6bd60;border-radius:50%;display:grid;place-items:center;text-align:center}.report-line{display:flex;justify-content:space-between;border-top:1px solid #ffffff1f;padding:12px 0}.price-card{position:relative}.price-card.popular{border:2px solid var(--brand2);transform:translateY(-8px);box-shadow:0 18px 45px #0b4f6c18}.tag{position:absolute;top:-14px;right:20px;background:var(--brand2);color:#fff;padding:5px 10px;border-radius:99px;font-size:12px}.price{font-size:38px;font-weight:800;margin:8px 0;color:var(--brand)}.footer{background:#082f44;color:#fff;text-align:center;padding:46px 0}.footer .brand{justify-content:center}.footer p{color:#c0d4dc}.modal{position:fixed;inset:0;background:#061b27b8;z-index:50;display:grid;place-items:center;padding:18px}.hidden{display:none!important}.modal-panel{width:min(900px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:22px;position:relative}.close{position:absolute;left:14px;top:12px;width:38px;height:38px;border:0;border-radius:50%;background:#eef3f5;font-size:25px;cursor:pointer}.demo-app{padding:28px;background:#f5f8f9;min-height:540px}.lesson-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px}.weak{display:grid;gap:8px;margin-top:16px}.weak span{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;justify-content:space-between}.tutor{min-height:560px;display:flex;flex-direction:column}.tutor-head{padding:20px;border-bottom:1px solid var(--line)}.chat{flex:1;padding:24px;background:#f7fafb;display:flex;flex-direction:column;gap:12px}.bubble{max-width:78%;padding:13px 16px;border-radius:16px;line-height:1.8}.bubble.ai{background:#fff;border:1px solid var(--line);align-self:flex-start}.bubble.user{background:#0b4f6c;color:#fff;align-self:flex-end}.chat-input{display:flex;gap:10px;padding:16px;border-top:1px solid var(--line)}.chat-input input{flex:1;border:1px solid var(--line);border-radius:12px;padding:12px}.toast{position:fixed;bottom:22px;right:22px;background:#0b4f6c;color:#fff;padding:12px 16px;border-radius:12px;z-index:80}@media(max-width:900px){.desktop-nav{display:none}.hero-grid,.demo-grid,.parent-card{grid-template-columns:1fr}.features-grid,.pricing-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:40px}}@media(max-width:620px){.features-grid,.pricing-grid{grid-template-columns:1fr}.hero h1{font-size:33px}.section{padding:60px 0}.hero-actions .btn{width:100%}.kpis{grid-template-columns:1fr}.price-card.popular{transform:none}}
+:root{
+  --blue:#165DFF;--blue2:#4D7CFE;--navy:#12326B;--cyan:#20C4D9;--green:#21C99A;
+  --red:#FF6B6B;--orange:#FFB44A;--purple:#7C5CFC;--ink:#1B2B4B;--muted:#72819B;
+  --bg:#F5F8FF;--line:#E6EBF5;--white:#fff;--shadow:0 16px 40px rgba(32,60,120,.11);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);background:#fff}
+button,input{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:900;color:var(--navy);margin-left:auto}
+.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--purple));display:grid;place-items:center;color:white;font-size:25px;box-shadow:0 8px 18px rgba(22,93,255,.24)}
+.navlinks{display:flex;gap:26px;font-weight:700;color:#52647f;font-size:14px}
+.actions{display:flex;gap:10px;margin-right:auto}
+.btn{border:0;border-radius:12px;padding:12px 18px;font-weight:800;transition:.2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 8px 18px rgba(22,93,255,.22)}
+.btn-outline{background:#fff;border:1px solid #cbd7f0;color:var(--blue)}
+.btn-soft{background:#eef4ff;color:var(--blue)}
+.hero{background:
+ radial-gradient(circle at 15% 18%,rgba(124,92,252,.12),transparent 23%),
+ radial-gradient(circle at 85% 15%,rgba(32,196,217,.14),transparent 26%),
+ linear-gradient(180deg,#f9fbff 0%,#fff 100%);padding:76px 0 58px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.hero h1{font-size:52px;line-height:1.23;margin:0 0 18px;color:#173471}
+.hero h1 span{color:var(--blue)}
+.lead{font-size:20px;line-height:1.9;color:#667792;margin:0 0 26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.note{color:#8896aa;font-size:14px}
+.robot-stage{position:relative;min-height:430px;display:grid;place-items:center}
+.robot-glow{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,#DDEBFF 0,#edf7ff 48%,transparent 70%)}
+.robot{position:relative;width:270px;height:300px}
+.robot-head{position:absolute;top:18px;left:47px;width:176px;height:120px;background:#fff;border:7px solid #dbe5ff;border-radius:46% 46% 40% 40%;box-shadow:0 18px 34px rgba(27,43,75,.18)}
+.robot-face{position:absolute;inset:20px;background:linear-gradient(145deg,#173b7a,#0c2148);border-radius:38px;display:flex;align-items:center;justify-content:center;gap:24px}
+.eye{width:18px;height:27px;background:#22dcff;border-radius:50%;box-shadow:0 0 16px #22dcff}
+.robot-body{position:absolute;top:128px;left:62px;width:146px;height:140px;background:#fff;border:7px solid #dbe5ff;border-radius:42px 42px 50px 50px;box-shadow:0 16px 28px rgba(27,43,75,.14)}
+.robot-core{width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#38dff7,#165dff 70%);margin:35px auto;box-shadow:0 0 0 9px #edf4ff}
+.arm{position:absolute;width:50px;height:105px;background:#fff;border:7px solid #dbe5ff;border-radius:30px}
+.arm.a{top:138px;left:25px;transform:rotate(18deg)}
+.arm.b{top:138px;right:25px;transform:rotate(-18deg)}
+.book-stack{position:absolute;bottom:20px;left:-16px;width:150px}
+.book{height:30px;border-radius:9px;margin-top:-4px;color:#fff;padding:6px 14px;font-weight:800;box-shadow:0 7px 12px rgba(0,0,0,.08)}
+.book.sci{background:#21c99a}.book.math{background:#f55b68}.book.eng{background:#264fbd}
+.speech{position:absolute;top:30px;right:-20px;background:#fff;border:1px solid var(--line);padding:14px 16px;border-radius:18px;box-shadow:var(--shadow);font-weight:800;color:#35517e}
+.benefits{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:46px}
+.benefit{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center;box-shadow:0 8px 20px rgba(31,60,110,.06)}
+.bicon{width:48px;height:48px;border-radius:50%;background:#edf3ff;color:var(--blue);display:grid;place-items:center;margin:0 auto 10px;font-size:22px}
+.benefit b{display:block;font-size:14px}.benefit small{color:var(--muted)}
+.section{padding:82px 0}
+.soft{background:var(--bg)}
+.section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+.kicker{color:var(--blue);font-weight:900;font-size:14px}
+.section-head h2{font-size:36px;margin:9px 0 10px;color:#173471}
+.section-head p{color:var(--muted);font-size:18px;line-height:1.8}
+.dashboard-shell{background:#f7f9ff;border:1px solid var(--line);border-radius:26px;padding:18px;box-shadow:var(--shadow);display:grid;grid-template-columns:220px 1fr;gap:18px}
+.sidebar{background:#fff;border-radius:20px;padding:18px;border:1px solid var(--line)}
+.profile{text-align:center;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.avatar{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#ffd5b3,#f7a772);display:grid;place-items:center;margin:auto;font-weight:900;font-size:20px}
+.profile b{display:block;margin-top:9px}.profile small{color:var(--muted)}
+.menu{margin-top:16px;display:grid;gap:6px}
+.menu button{border:0;background:transparent;text-align:right;padding:11px 12px;border-radius:11px;color:#536681;font-weight:700}
+.menu button.active,.menu button:hover{background:#edf3ff;color:var(--blue)}
+.dashboard{padding:10px}
+.hello{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}
+.hello h3{font-size:24px;margin:0 0 5px}.hello p{margin:0;color:var(--muted)}
+.search{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 14px;color:#98a5b8;min-width:260px}
+.dash-top{display:grid;grid-template-columns:1.5fr .75fr;gap:16px;margin-top:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 20px rgba(40,70,130,.05)}
+.task-card{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.task-card h4{margin:0 0 6px;font-size:17px}.task-card p{margin:0;color:var(--muted);font-size:14px}
+.progress-ring{width:106px;height:106px;border-radius:50%;background:conic-gradient(var(--purple) 0 72%,#21c99a 72% 87%,#e9eef8 87%);display:grid;place-items:center}
+.progress-ring:after{content:"72%";width:76px;height:76px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:900;font-size:20px;color:#244476}
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.subject{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}
+.sub-icon{font-size:32px;margin-bottom:7px}.subject h4{margin:4px 0 12px}.bar{height:8px;background:#edf0f6;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--blue));border-radius:99px}
+.subject small{display:flex;justify-content:space-between;color:var(--muted);margin-top:8px}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.quick .card{display:flex;align-items:center;gap:12px}.qicon{font-size:26px}.quick b{display:block}.quick small{color:var(--muted)}
+.demo-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.demo-tab{border:1px solid #d7e1f3;background:#fff;color:#536681;padding:10px 16px;border-radius:999px;font-weight:800}
+.demo-tab.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.screen{display:none}.screen.active{display:block}
+.lesson-layout{display:grid;grid-template-columns:220px 1fr 280px;gap:16px;background:#f7f9ff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:var(--shadow)}
+.course-nav,.lesson-main,.lesson-side{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+.course-nav h4{margin:0 0 14px}.unit{margin-bottom:12px}.unit>b{font-size:13px}.unit ol{padding-right:20px;color:#60708a;font-size:13px;line-height:2}.unit li.active{color:var(--blue);font-weight:900}
+.lesson-main h3{margin-top:0}.lesson-tabs{display:flex;gap:8px;margin-bottom:16px}.lesson-tabs span{background:#f3f6fb;border-radius:9px;padding:8px 12px;font-size:13px;font-weight:800}.lesson-tabs span.active{background:var(--blue);color:#fff}
+.teacher-msg{display:flex;gap:14px;background:#f7fbff;border:1px solid #deedff;border-radius:14px;padding:14px}.mini-bot{width:48px;height:48px;border-radius:50%;background:#eaf2ff;display:grid;place-items:center;font-size:26px}
+.atom-box{margin-top:15px;border-radius:16px;background:linear-gradient(135deg,#eef5ff,#fff);padding:18px;border:1px solid #dfe9f7}
+.molecule{display:flex;align-items:center;justify-content:center;gap:0;margin:14px 0}.ball{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:inset -8px -8px 12px rgba(0,0,0,.12)}.ball.red{background:#f24c56}.ball.blue{background:#4680ff}.bond{width:44px;height:10px;background:#9aa9bd}
+.lesson-side h4{margin-top:0}.checklist{display:grid;gap:9px;font-size:14px}.checklist span:before{content:"✓";color:var(--green);font-weight:900;margin-left:7px}.resource{display:flex;gap:8px;align-items:center;border:1px solid var(--line);padding:10px;border-radius:11px;margin-top:8px;font-size:13px}
+.chatbar{display:flex;gap:8px;margin-top:15px}.chatbar input{flex:1;border:1px solid var(--line);border-radius:11px;padding:11px}
+.quiz-layout{display:grid;grid-template-columns:1fr 290px;gap:16px;background:#f7f9ff;border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow)}
+.quiz-main,.result-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.quiz-head{display:flex;justify-content:space-between;color:#697a93;font-size:14px}.quiz-progress{height:7px;background:#edf1f7;border-radius:99px;margin:12px 0 24px;overflow:hidden}.quiz-progress i{display:block;width:30%;height:100%;background:var(--blue)}
+.question{font-size:24px;color:#233d70;margin-bottom:18px;direction:ltr;text-align:left}
+.answers{display:grid;gap:10px}.answer{border:1px solid #d8e1ef;border-radius:12px;padding:13px 14px;background:#fff;text-align:left;direction:ltr}.answer.correct{border-color:#54c9a6;background:#eefbf7}.answer.wrong{border-color:#f49da2;background:#fff2f3}
+.feedback{margin-top:16px;padding:15px;border-radius:13px;background:#ecfaf5;border:1px solid #bdebdc;color:#1d7d60;line-height:1.7}
+.quiz-side{text-align:center}.timer{font-size:26px;font-weight:900;color:#344f7f}.tips{margin-top:18px;text-align:right;color:#6b7b92;font-size:14px;line-height:1.8}
+.result-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px}.scorebox{text-align:center}.scorecircle{width:145px;height:145px;border-radius:50%;background:conic-gradient(var(--green) 0 80%,#edf1f7 80%);display:grid;place-items:center;margin:0 auto 14px}.scorecircle:after{content:"8/10";width:108px;height:108px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:28px;font-weight:900;color:#204478}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.stat{border-radius:12px;padding:14px;background:#f6f8fc;text-align:center}.stat b{display:block;font-size:24px}.stat.good{background:#effbf7;color:#13856a}.stat.bad{background:#fff2f2;color:#d84f58}
+.topic{margin-top:15px}.topic-head{display:flex;justify-content:space-between;font-size:14px}.topic .bar{margin-top:6px}
+.alert{margin-top:18px;border-radius:13px;padding:14px;background:#fff1f2;border:1px solid #ffd0d5;color:#a94750}
+.parent-layout{display:grid;grid-template-columns:210px 1fr;gap:16px;background:#f7f9ff;border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:var(--shadow)}
+.parent-main{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.parent-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.pkpi{background:#f7f9ff;border-radius:14px;padding:15px;text-align:center}.pkpi b{display:block;font-size:26px;color:#2a4d84}.pkpi span{font-size:12px;color:var(--muted)}
+.analytics{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:16px}.chart{height:210px;border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;align-items:flex-end;gap:12px}.chart i{flex:1;border-radius:8px 8px 2px 2px;background:linear-gradient(180deg,#82a5ff,#165dff)}.donut{height:210px;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center}.donut-ring{width:130px;height:130px;border-radius:50%;background:conic-gradient(var(--cyan) 0 38%,var(--orange) 38% 70%,var(--blue) 70%);display:grid;place-items:center}.donut-ring:after{content:"المواد";width:82px;height:82px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:800;color:#5c6d87}
+.ai-note{margin-top:16px;background:#f1f6ff;border:1px solid #d7e5ff;border-radius:14px;padding:15px;line-height:1.8;color:#506581}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;position:relative}
+.price.popular{border:2px solid var(--blue);box-shadow:var(--shadow);transform:translateY(-8px)}
+.badge{position:absolute;top:-13px;right:20px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:900}
+.price h3{margin:0}.amount{font-size:40px;font-weight:900;color:#183b77;margin:12px 0}.amount small{font-size:14px;color:var(--muted)}.price ul{padding-right:18px;color:#64758d;line-height:2}.price li::marker{color:var(--blue)}
+.mobile-preview{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:center}
+.phone{width:290px;height:570px;border:12px solid #1e2740;border-radius:42px;background:#fff;box-shadow:0 24px 60px rgba(28,40,80,.24);padding:18px;position:relative}
+.phone:before{content:"";position:absolute;top:0;left:82px;width:100px;height:22px;background:#1e2740;border-radius:0 0 14px 14px}
+.mobile-top{margin-top:16px;display:flex;justify-content:space-between}.mobile-title{font-size:18px;font-weight:900;margin:16px 0}.mobile-subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.m-sub{padding:12px 5px;border-radius:12px;color:#fff;text-align:center;font-size:12px}.m-sub.sci{background:#21c99a}.m-sub.math{background:#3682ff}.m-sub.eng{background:#ff6b6b}.mobile-card{background:#f6f8fc;border-radius:14px;padding:14px;margin-top:15px}.mobile-bottom{position:absolute;left:18px;right:18px;bottom:14px;border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-around;color:#7f8ba0;font-size:12px}
+.footer{background:#102752;color:#fff;padding:48px 0;text-align:center}.footer p{color:#b9c7df}.footer .brand{justify-content:center;margin:0}
+#toast{position:fixed;bottom:22px;left:22px;background:#102752;color:#fff;padding:13px 17px;border-radius:12px;box-shadow:var(--shadow);z-index:99;display:none}
+@media(max-width:980px){
+ .navlinks{display:none}.hero-grid,.mobile-preview{grid-template-columns:1fr}.hero h1{font-size:42px}
+ .benefits{grid-template-columns:repeat(2,1fr)}.dashboard-shell{grid-template-columns:1fr}.sidebar{display:none}
+ .lesson-layout{grid-template-columns:1fr}.course-nav,.lesson-side{display:none}.quiz-layout,.result-layout,.parent-layout,.analytics{grid-template-columns:1fr}
+ .parent-layout>.sidebar{display:none}.pricing{grid-template-columns:1fr}.price.popular{transform:none}.parent-kpis{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+ .actions .btn-outline{display:none}.hero{padding-top:48px}.hero h1{font-size:34px}.lead{font-size:17px}
+ .benefits,.subjects,.quick{grid-template-columns:1fr}.dash-top{grid-template-columns:1fr}.search{display:none}.section{padding:58px 0}
+ .section-head h2{font-size:28px}.robot-stage{min-height:350px;transform:scale(.86)}.parent-kpis{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="container nav"><a class="brand" href="#home"><span class="brand-mark">ذ</span><span>ذاكر</span></a><nav class="desktop-nav"><a href="#features">المميزات</a><a href="#demo">جرّب</a><a href="#parents">ولي الأمر</a><a href="#pricing">الأسعار</a></nav><button class="btn btn-primary" data-open="student">ابدأ الآن</button></div></header>
+<header class="topbar">
+  <div class="container nav">
+    <a href="#home" class="brand"><span class="logo">🎓</span><span>ذاكر</span></a>
+    <nav class="navlinks">
+      <a href="#subjects">المواد</a><a href="#how">كيف يعمل</a><a href="#features">مميزاتنا</a><a href="#parents">للآباء والأمهات</a><a href="#pricing">الأسعار</a>
+    </nav>
+    <div class="actions"><button class="btn btn-outline" onclick="toast('تسجيل الدخول سيتم تفعيله مع Supabase')">تسجيل الدخول</button><button class="btn btn-primary" onclick="document.querySelector('#demo').scrollIntoView()">اشترك الآن</button></div>
+  </div>
+</header>
+
 <main id="home">
-<section class="hero"><div class="container hero-grid"><div><div class="eyebrow">منصة تعليم ذكية لطلاب الإعدادي لغات</div><h1>مش فيديوهات وخلاص.<br><span>مدرس شخصي ذكي</span> يعرف ابنك محتاج إيه.</h1><p class="lead">ذاكر يبني خطة مذاكرة يومية، يشرح بالعربي مع المصطلحات الإنجليزية، يختبر الطالب، ويكتشف نقاط الضعف تلقائيًا ثم يعالجها.</p><div class="hero-actions"><button class="btn btn-primary btn-lg" data-open="student">جرّب لوحة الطالب</button><button class="btn btn-ghost btn-lg" data-open="tutor">اسأل المدرس الذكي</button></div><div class="trust-row"><span>✓ Science</span><span>✓ Math</span><span>✓ English</span><span>✓ أولى إعدادي لغات</span></div></div>
-<div class="glass"><div class="mini-top"><strong>خطة اليوم</strong><span class="pill">18 دقيقة</span></div><div class="progress"><i></i></div><small>68% من هدف الأسبوع</small><div class="task active"><span class="task-icon">⚛</span><div><b>Science</b><small>Atomic structure — مراجعة ذكية</small></div><em>8 د</em></div><div class="task"><span class="task-icon">∑</span><div><b>Math</b><small>Algebra — 5 أسئلة</small></div><em>6 د</em></div><div class="task"><span class="task-icon">Aa</span><div><b>English</b><small>Vocabulary — Quick drill</small></div><em>4 د</em></div><div class="insight"><span>💡</span><div><b>ملاحظة المدرس الذكي</b><p>مستواك ممتاز في Science، لكن محتاج تراجع توزيع الإلكترونات مرة ثانية.</p></div></div></div></div></section>
-<section id="features" class="section"><div class="container"><div class="section-head"><span>ليه ذاكر مختلف؟</span><h2>منصة تتعلم من الطالب قبل ما الطالب يتعلم منها</h2></div><div class="features-grid">
-<article class="feature"><div>🧠</div><h3>AI Tutor مقيد بالمنهج</h3><p>شرح بالعربية المبسطة مع المصطلحات الإنجليزية للـLanguages.</p></article>
-<article class="feature"><div>🎯</div><h3>خطة تكيفية</h3><p>الخطة اليومية تتغير حسب أداء الطالب، مش جدول ثابت لكل الناس.</p></article>
-<article class="feature"><div>📊</div><h3>تحليل نقاط الضعف</h3><p>كل إجابة غلط تتحول إلى مهارة تحتاج مراجعة.</p></article>
-<article class="feature"><div>📝</div><h3>اختبارات ذكية</h3><p>Quiz سريع، اختبارات دورية، وتجهيز للامتحان.</p></article>
-<article class="feature"><div>👨‍👩‍👦</div><h3>لوحة ولي الأمر</h3><p>وقت المذاكرة والتقدم ونقاط القوة والضعف في شاشة واحدة.</p></article>
-<article class="feature"><div>🏫</div><h3>يتوسع للمدارس</h3><p>Dashboard للمدرسة والفصل والمدرس في المرحلة التالية.</p></article>
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h1>مدرّسك الشخصي<br><span>في كل وقت</span></h1>
+        <p class="lead">شرح مبسّط · أسئلة ذكية · متابعة مستمرة<br>لطلاب الإعدادي لغات</p>
+        <div class="hero-actions"><button class="btn btn-primary" onclick="document.querySelector('#demo').scrollIntoView()">ابدأ مجانًا الآن</button><button class="btn btn-outline" onclick="document.querySelector('#how').scrollIntoView()">شاهد كيف يعمل</button></div>
+        <div class="note">جرّب دروسًا واختبارات محدودة مجانًا</div>
+      </div>
+      <div class="robot-stage">
+        <div class="robot-glow"></div>
+        <div class="robot">
+          <div class="speech">تعلّم بذكاء<br>حقق مستقبلك ✨</div>
+          <div class="robot-head"><div class="robot-face"><span class="eye"></span><span class="eye"></span></div></div>
+          <div class="arm a"></div><div class="arm b"></div>
+          <div class="robot-body"><div class="robot-core"></div></div>
+          <div class="book-stack"><div class="book sci">Science</div><div class="book math">Math</div><div class="book eng">English</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="benefits" id="features">
+      <div class="benefit"><div class="bicon">🤖</div><b>مدرس AI متخصص</b><small>في منهجك</small></div>
+      <div class="benefit"><div class="bicon">🧪</div><b>اختبارات وتصحيح فوري</b><small>Feedback لحظي</small></div>
+      <div class="benefit"><div class="bicon">📈</div><b>متابعة نقاط الضعف</b><small>وخطة مراجعة</small></div>
+      <div class="benefit"><div class="bicon">📊</div><b>تقارير تفصيلية</b><small>لولي الأمر</small></div>
+      <div class="benefit"><div class="bicon">📚</div><b>محتوى مطابق</b><small>لأحدث المناهج</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="demo">
+  <div class="container">
+    <div class="section-head"><span class="kicker">تجربة المنصة</span><h2>كل رحلة التعلم في مكان واحد</h2><p>تنقّل بين الشاشات التالية وشاهد الشكل النهائي المستهدف لمنصة ذاكر.</p></div>
+    <div class="demo-tabs">
+      <button class="demo-tab active" data-screen="dashboard">الرئيسية</button>
+      <button class="demo-tab" data-screen="lesson">الدرس</button>
+      <button class="demo-tab" data-screen="quiz">الاختبار</button>
+      <button class="demo-tab" data-screen="result">النتيجة</button>
+      <button class="demo-tab" data-screen="parent">ولي الأمر</button>
+    </div>
+
+    <div class="screen active" id="screen-dashboard">
+      <div class="dashboard-shell">
+        <aside class="sidebar">
+          <div class="profile"><div class="avatar">م</div><b>محمد أحمد</b><small>أولى إعدادي</small></div>
+          <div class="menu"><button class="active">🏠 الرئيسية</button><button>📚 المواد</button><button>🤖 مدرّسي AI</button><button>🧪 الاختبارات</button><button>🗓 خطة المراجعة</button><button>🏅 إنجازاتي</button><button>⚙ الإعدادات</button></div>
+        </aside>
+        <div class="dashboard">
+          <div class="hello"><div><h3>مرحبًا محمد 👋</h3><p>مستمر في رحلتك نحو التفوق!</p></div><div class="search">ابحث عن درس أو سؤال ... 🔎</div></div>
+          <div class="dash-top">
+            <div class="card task-card"><div><span class="kicker">مهمتك اليوم</span><h4>Forces and Motion</h4><p>أكمل هذا الدرس من مادة Science</p><br><button class="btn btn-primary" onclick="setScreen('lesson')">ابدأ الآن</button></div><div style="font-size:55px">🎯</div></div>
+            <div class="card" style="display:flex;align-items:center;justify-content:center"><div class="progress-ring"></div></div>
+          </div>
+          <h3 id="subjects">المواد الدراسية</h3>
+          <div class="subjects">
+            <div class="subject"><div class="sub-icon">🧪</div><h4>Science</h4><div class="bar"><i style="width:70%"></i></div><small><span>التقدم</span><b>70%</b></small><button class="btn btn-primary" style="margin-top:12px;width:100%" onclick="setScreen('lesson')">متابعة الدروس</button></div>
+            <div class="subject"><div class="sub-icon">🧮</div><h4>Math</h4><div class="bar"><i style="width:80%"></i></div><small><span>التقدم</span><b>80%</b></small><button class="btn btn-primary" style="margin-top:12px;width:100%">متابعة الدروس</button></div>
+            <div class="subject"><div class="sub-icon">🗼</div><h4>English</h4><div class="bar"><i style="width:65%"></i></div><small><span>التقدم</span><b>65%</b></small><button class="btn btn-primary" style="margin-top:12px;width:100%">متابعة الدروس</button></div>
+          </div>
+          <div class="quick">
+            <div class="card"><span class="qicon">🏅</span><div><b>إنجازات جديدة</b><small>حصلت على 5 شارات</small></div></div>
+            <div class="card"><span class="qicon">⏱</span><div><b>مراجعة نقاط الضعف</b><small>3 موضوعات بحاجة لمراجعة</small></div></div>
+            <div class="card"><span class="qicon">🧪</span><div><b>اختبار شامل قادم</b><small>بعد يومين</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-lesson">
+      <div class="lesson-layout">
+        <aside class="course-nav"><h4>Science — Unit 1</h4><div class="unit"><b>Unit 1: Matter</b><ol><li>States of Matter</li><li class="active">Atoms and Molecules</li><li>Elements and Compounds</li><li>Mixtures</li></ol></div><div class="unit"><b>Unit 2: Forces</b></div><div class="unit"><b>Unit 3: Energy</b></div><div class="unit"><b>Unit 4: The Earth</b></div></aside>
+        <section class="lesson-main">
+          <h3>Atoms and Molecules</h3>
+          <div class="lesson-tabs"><span class="active">الشرح</span><span>أسئلة تفاعلية</span><span>ملخص الدرس</span></div>
+          <div class="teacher-msg"><div class="mini-bot">🤖</div><div><b>مرحبًا محمد!</b><p>في هذا الدرس هنتعلم الفرق بين Atom و Molecule بطريقة بسيطة، وبعد كل جزء هسألك سؤال صغير للتأكد إن الفكرة وصلت.</p></div></div>
+          <div class="atom-box"><b>مثال: Water Molecule (H₂O)</b><div class="molecule"><span class="ball blue">H</span><span class="bond"></span><span class="ball red">O</span><span class="bond"></span><span class="ball blue">H</span></div><p>الجزيء Molecule يتكون من ذرتين أو أكثر مرتبطتين كيميائيًا. جزيء الماء يتكوّن من ذرتي Hydrogen وذرة Oxygen.</p></div>
+          <div class="chatbar"><input placeholder="اكتب سؤالك هنا ..."><button class="btn btn-primary" onclick="toast('المدرس الذكي الحقيقي سيتم ربطه في المرحلة التالية')">➤</button></div>
+        </section>
+        <aside class="lesson-side"><h4>أهداف الدرس</h4><div class="checklist"><span>التعرف على Atom</span><span>التمييز بين Atom و Molecule</span><span>أمثلة من الحياة اليومية</span></div><h4 style="margin-top:22px">مصادر إضافية</h4><div class="resource">📄 ملخص PDF</div><div class="resource">▶ فيديو توضيحي</div><div class="resource">🧩 خريطة ذهنية</div><div class="resource">🧪 تجربة تفاعلية</div></aside>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-quiz">
+      <div class="quiz-layout">
+        <section class="quiz-main">
+          <div class="quiz-head"><span>السؤال 3 من 10</span><span>⏱ 09:15</span></div>
+          <div class="quiz-progress"><i></i></div>
+          <div class="question">Which of the following is a molecule?</div>
+          <div class="answers">
+            <button class="answer">A &nbsp; Oxygen (O)</button>
+            <button class="answer correct">B &nbsp; Water (H₂O)</button>
+            <button class="answer">C &nbsp; Sodium (Na)</button>
+            <button class="answer">D &nbsp; Helium (He)</button>
+          </div>
+          <div class="feedback"><b>إجابة صحيحة! 🎉</b><br>Water (H₂O) is a molecule because it is made of two or more atoms chemically bonded together.</div>
+          <div style="display:flex;justify-content:flex-end;margin-top:16px"><button class="btn btn-primary" onclick="setScreen('result')">التالي</button></div>
+        </section>
+        <aside class="card quiz-side"><div class="timer">09:15</div><p>اختبار Science</p><div class="tips"><b>نصيحة:</b><br>اقرأ كل اختيار بهدوء. بعد انتهاء الاختبار هنعرفك الموضوعات اللي محتاجة مراجعة.</div></aside>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-result">
+      <div class="result-layout">
+        <div class="result-card scorebox"><h2>نتيجة الاختبار</h2><div class="scorecircle"></div><h3>ممتاز 🎉</h3><div class="stat-row"><div class="stat"><b>10</b><span>إجمالي الأسئلة</span></div><div class="stat good"><b>8</b><span>إجابات صحيحة</span></div><div class="stat bad"><b>2</b><span>إجابات خاطئة</span></div></div></div>
+        <div class="result-card"><h3>الموضوعات</h3><div class="topic"><div class="topic-head"><span>Atoms and Molecules</span><b>90%</b></div><div class="bar"><i style="width:90%"></i></div></div><div class="topic"><div class="topic-head"><span>Elements and Compounds</span><b>70%</b></div><div class="bar"><i style="width:70%;background:#ff6b6b"></i></div></div><div class="topic"><div class="topic-head"><span>Mixtures</span><b>100%</b></div><div class="bar"><i style="width:100%;background:#21c99a"></i></div></div><div class="alert"><b>نقطة تحتاج لمراجعة ⚠</b><br>Elements and Compounds — سنضيفها تلقائيًا لخطة المراجعة.</div><div style="display:flex;gap:10px;margin-top:16px"><button class="btn btn-primary">انتقل لخطة المراجعة</button><button class="btn btn-outline">إعادة الاختبار</button></div></div>
+      </div>
+    </div>
+
+    <div class="screen" id="screen-parent">
+      <div class="parent-layout">
+        <aside class="sidebar" style="display:block"><div class="profile"><div class="avatar">أ</div><b>أحمد محمد</b><small>ولي أمر</small></div><div class="menu"><button class="active">🏠 الرئيسية</button><button>📊 تقارير الأداء</button><button>🧪 الاختبارات</button><button>💳 الاشتراكات</button><button>⚙ الإعدادات</button></div></aside>
+        <div class="parent-main"><h3>متابعة مستوى ابنك محمد</h3><div class="parent-kpis"><div class="pkpi"><b>85%</b><span>نسبة إكمال الدروس</span></div><div class="pkpi"><b>24</b><span>ساعة مذاكرة هذا الشهر</span></div><div class="pkpi"><b style="color:#e35760">3</b><span>نقاط تحتاج متابعة</span></div><div class="pkpi"><b style="color:#22a783">72%</b><span>المتوسط العام</span></div></div><div class="analytics"><div class="chart"><i style="height:38%"></i><i style="height:48%"></i><i style="height:57%"></i><i style="height:64%"></i><i style="height:74%"></i><i style="height:82%"></i></div><div class="donut"><div class="donut-ring"></div></div></div><div class="ai-note"><b>ملاحظات من الذكاء الاصطناعي</b><br>محمد يحقق تقدمًا جيدًا. نوصي بمراجعة Elements and Compounds لمدة 15 دقيقة قبل الاختبار القادم، مع الاستمرار على نفس معدل المذاكرة.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how"><div class="container mobile-preview"><div><span class="kicker">موبايل أولًا</span><h2 style="font-size:36px;color:#173471">ذاكر معك في أي وقت</h2><p class="lead">واجهة خفيفة على الموبايل تخلّي الطالب يبدأ من آخر نقطة، يشوف هدفه اليومي، ويكمّل Science وMath وEnglish بسهولة.</p><button class="btn btn-primary" onclick="toast('تطبيق الموبايل يأتي بعد نجاح نسخة الويب/PWA')">ابدأ من الويب الآن</button></div><div class="phone"><div class="mobile-top"><b>ذاكر 🎓</b><span>👤</span></div><div class="mobile-title">مرحبًا محمد 👋<br><small style="color:#7f8ba0">ماذا تريد أن تتعلم اليوم؟</small></div><div class="mobile-subjects"><div class="m-sub sci">🧪<br>Science</div><div class="m-sub math">🧮<br>Math</div><div class="m-sub eng">Aa<br>English</div></div><div class="mobile-card"><b>🎯 مهمتك اليوم</b><p style="font-size:12px;color:#73819a">Forces and Motion — Science</p><button class="btn btn-primary" style="width:100%">ابدأ الآن</button></div><div class="mobile-card"><b>تقدمك الأسبوعي</b><div class="bar" style="margin-top:10px"><i style="width:72%"></i></div><small style="color:#7f8ba0">72% من هدف الأسبوع</small></div><div class="mobile-bottom"><span>🏠<br>الرئيسية</span><span>📚<br>الدروس</span><span>🧪<br>اختبارات</span><span>👤<br>حسابي</span></div></div></div></section>
+
+<section class="section soft" id="parents"><div class="container"><div class="section-head"><span class="kicker">للآباء والأمهات</span><h2>متابعة حقيقية، مش مجرد "ذاكرت؟"</h2><p>تقارير أسبوعية واضحة توضح الوقت الفعلي، النتائج، الالتزام، ونقاط الضعف التي تحتاج تدخلًا.</p></div></div></section>
+
+<section class="section" id="pricing"><div class="container"><div class="section-head"><span class="kicker">اختر خطتك المناسبة</span><h2>باقات بسيطة وواضحة</h2><p>ابدأ مجانًا، ثم اختر الباقة الأنسب بعد تجربة المنصة.</p></div><div class="pricing">
+  <div class="price"><h3>مادة واحدة</h3><div class="amount">129 <small>جنيه / شهريًا</small></div><ul><li>مادة واحدة من اختيارك</li><li>شرح ودروس يومية</li><li>اختبارات وتصحيح فوري</li><li>AI Tutor للمادة</li></ul><button class="btn btn-outline" style="width:100%" onclick="toast('سيتم ربط الدفع لاحقًا')">ابدأ الآن</button></div>
+  <div class="price popular"><div class="badge">الأكثر رواجًا</div><h3>الباقة الكاملة</h3><div class="amount">249 <small>جنيه / شهريًا</small></div><ul><li>Science + Math + English</li><li>اختبارات شاملة</li><li>خطة مراجعة شخصية</li><li>دعم AI كامل</li></ul><button class="btn btn-primary" style="width:100%" onclick="toast('سيتم ربط الدفع لاحقًا')">ابدأ الآن</button></div>
+  <div class="price"><h3>باقة العائلة</h3><div class="amount">399 <small>جنيه / شهريًا</small></div><ul><li>حتى طالبين</li><li>جميع المواد</li><li>متابعة منفصلة لكل طالب</li><li>تقارير ولي الأمر</li></ul><button class="btn btn-outline" style="width:100%" onclick="toast('سيتم ربط الدفع لاحقًا')">ابدأ الآن</button></div>
 </div></div></section>
-<section id="demo" class="section soft"><div class="container demo-grid"><div><span class="eyebrow">Demo واقعي</span><h2>الطالب مش محتاج يعرف يبدأ منين</h2><p class="lead">اختبار تشخيصي قصير ثم خطة تلقائية: شرح → سؤال → Feedback → مراجعة لاحقة.</p><button class="btn btn-primary" data-open="student">افتح تجربة الطالب</button></div><div class="dashboard-preview"><div class="dash-head"><div><small>صباح الخير 👋</small><h3>محمود، نكمل هدف الأسبوع؟</h3></div><span class="avatar">م</span></div><div class="kpis"><div><strong>82%</strong><span>Science</span></div><div><strong>71%</strong><span>Math</span></div><div><strong>76%</strong><span>English</span></div></div><div class="chart-bars"><i style="height:42%"></i><i style="height:58%"></i><i style="height:53%"></i><i style="height:72%"></i><i style="height:83%"></i><i style="height:78%"></i><i style="height:91%"></i></div></div></div></section>
-<section id="parents" class="section"><div class="container parent-card"><div><span class="eyebrow">للأب والأم</span><h2>بدل سؤال: "ذاكرت؟"<br>شوف هو اتعلم إيه فعلًا.</h2><p class="lead">التقرير الأسبوعي يوضح الوقت الفعلي، الدروس المتقنة، المهارات الضعيفة، نتيجة الاختبارات، ونسبة الالتزام بالخطة.</p></div><div class="report-card"><div class="report-top"><b>تقرير أسبوعي</b><span>الأسبوع 3</span></div><div class="score-ring"><strong>78%</strong><span>مستوى عام</span></div><div class="report-line"><span>الالتزام بالخطة</span><b>5 / 6 أيام</b></div><div class="report-line"><span>أقوى مادة</span><b>Science</b></div><div class="report-line"><span>تحتاج متابعة</span><b>Algebra</b></div></div></div></section>
-<section id="pricing" class="section soft"><div class="container"><div class="section-head"><span>نموذج ربحي واضح</span><h2>اشتراك بسيط للأهل، قيمة تعليمية عالية</h2></div><div class="pricing-grid"><article class="price-card"><h3>مادة واحدة</h3><div class="price">129 <small>ج/شهر</small></div><p>Science أو Math أو English</p><button class="btn btn-ghost wide" data-buy="single">اشترك</button></article><article class="price-card popular"><div class="tag">الأكثر طلبًا</div><h3>كل المواد</h3><div class="price">249 <small>ج/شهر</small></div><p>3 مواد + خطة يومية + لوحة ولي الأمر</p><button class="btn btn-primary wide" data-buy="all">ابدأ التجربة</button></article><article class="price-card"><h3>Family</h3><div class="price">399 <small>ج/شهر</small></div><p>لطالبين داخل الأسرة مع تقارير منفصلة</p><button class="btn btn-ghost wide" data-buy="family">اشترك</button></article></div></div></section>
 </main>
-<footer class="footer"><div class="container"><div class="brand"><span class="brand-mark">ذ</span><span>ذاكر</span></div><p>تعليم أذكى. متابعة أوضح. نتيجة أفضل.</p><small>© 2026 ذاكر — MVP</small></div></footer>
-<div id="modal" class="modal hidden"><div class="modal-panel"><button class="close" id="closeModal">×</button><div id="modalBody"></div></div></div>
-<template id="studentTpl"><div class="demo-app"><h2>صباح الخير يا محمود 👋</h2><div class="kpis"><div><strong>12</strong><span>جلسة هذا الأسبوع</span></div><div><strong>84%</strong><span>متوسط الاختبارات</span></div><div><strong>5</strong><span>أيام التزام</span></div></div><div class="lesson-card"><b>Science — Atomic Structure</b><p>مراجعة سريعة + 5 أسئلة على توزيع الإلكترونات</p><button class="btn btn-primary" data-switch="tutor">ابدأ الدرس</button></div><div class="weak"><span>Electron distribution <b>61%</b></span><span>Algebraic expressions <b>66%</b></span><span>Past simple verbs <b>70%</b></span></div></div></template>
-<template id="tutorTpl"><div class="tutor"><div class="tutor-head"><h3>مدرس ذاكر الذكي — Science</h3><small>أولى إعدادي لغات</small></div><div id="chat" class="chat"><div class="bubble ai">أهلاً 👋 اسألني في Science أو Math أو English، وهشرح لك بالعربي مع المصطلحات الإنجليزية.</div><div class="bubble user">مش فاهم توزيع الإلكترونات.</div><div class="bubble ai">تخيل الذرة عمارة، وكل Energy Level دور. المستوى الأول يسع 2 إلكترون، والثاني حتى 8. Sodium عدده الذري 11 → 2, 8, 1.</div></div><div class="chat-input"><input id="chatText" placeholder="اكتب سؤالك هنا..."><button id="sendChat" class="btn btn-primary">إرسال</button></div></div></template>
+
+<footer class="footer"><div class="container"><div class="brand"><span class="logo">🎓</span><span style="color:white">ذاكر</span></div><p>مستقبل أفضل يبدأ من هنا</p><small>© 2026 ذاكر — النسخة التجريبية</small></div></footer>
+<div id="toast"></div>
+
 <script>
-const modal=document.getElementById('modal'),body=document.getElementById('modalBody'),close=document.getElementById('closeModal');
-function openTpl(id){body.innerHTML='';body.appendChild(document.getElementById(id).content.cloneNode(true));modal.classList.remove('hidden');wire()}
-function wire(){document.querySelectorAll('[data-switch="tutor"]').forEach(b=>b.onclick=()=>openTpl('tutorTpl'));const send=document.getElementById('sendChat');if(send){send.onclick=()=>{const i=document.getElementById('chatText'),v=i.value.trim();if(!v)return;const c=document.getElementById('chat');c.insertAdjacentHTML('beforeend','<div class="bubble user">'+v.replace(/[<>]/g,'')+'</div><div class="bubble ai">دي نسخة MVP. في النسخة الإنتاجية هشرح حسب المنهج وأحوّل الأخطاء تلقائيًا إلى نقاط مراجعة.</div>');i.value='';c.scrollTop=c.scrollHeight};document.getElementById('chatText').onkeydown=e=>e.key==='Enter'&&send.click()}}
-document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openTpl(b.dataset.open==='tutor'?'tutorTpl':'studentTpl'));
-document.querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>{const x=document.createElement('div');x.className='toast';x.textContent='تم تسجيل اهتمامك بالاشتراك التجريبي';document.body.appendChild(x);setTimeout(()=>x.remove(),2500)});
-close.onclick=()=>modal.classList.add('hidden');modal.onclick=e=>{if(e.target===modal)modal.classList.add('hidden')};
+const tabs=[...document.querySelectorAll('.demo-tab')];
+function setScreen(name){
+  tabs.forEach(b=>b.classList.toggle('active',b.dataset.screen===name));
+  document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id==='screen-'+name));
+  document.querySelector('#demo').scrollIntoView({behavior:'smooth',block:'start'});
+}
+tabs.forEach(b=>b.addEventListener('click',()=>setScreen(b.dataset.screen)));
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.__t);window.__t=setTimeout(()=>t.style.display='none',2600)}
 </script>
-</body></html>
+</body>
+</html>
