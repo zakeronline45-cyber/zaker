@@ -7,115 +7,248 @@
   "lesson": 12,
   "lessonTitle": "Lunar Eclipse",
   "language": "English",
-  "source": "El-Moasser Science Main Book 2027",
+  "source": "El-Moasser Science Main Book 2027 + Assessments + Final Revision + Final Exams",
+  "auditedAgainstFullPdf": true,
   "questions": [
     {
       "id": "s1-u4-l12-001",
       "type": "complete",
       "difficulty": "easy",
-      "text": "The Moon revolves around the ______.",
-      "answer": "Earth",
-      "sourcePage": 385
+      "text": "The different stages of the Moon during its orbit around Earth are called Moon ______.",
+      "answer": "phases",
+      "sourcePage": 385,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-002",
-      "type": "true_false",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "The Moon's rotation period is approximately equal to its revolution period around Earth.",
-      "answer": "True",
-      "sourcePage": 386
+      "text": "The dark area behind an opaque object in the path of light is called a ______.",
+      "answer": "shadow",
+      "sourcePage": 386,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-003",
-      "type": "reason",
+      "type": "complete",
       "difficulty": "easy",
-      "text": "Give a reason: We usually see the same face of the Moon from Earth.",
-      "answer": "Because the Moon's rotation period equals its revolution period around Earth.",
-      "sourcePage": 387
+      "text": "The partially illuminated region around a shadow is called the ______.",
+      "answer": "penumbra",
+      "sourcePage": 387,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-004",
-      "type": "complete",
+      "type": "compare",
       "difficulty": "easy",
-      "text": "The changing shapes of the Moon seen from Earth are called Moon ______.",
-      "answer": "phases",
-      "sourcePage": 388
+      "text": "Compare transparent and opaque objects in their effect on light.",
+      "answer": "Transparent objects allow light to pass and do not cast normal shadows; opaque objects block light and cast shadows.",
+      "sourcePage": 388,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-005",
-      "type": "mcq",
-      "difficulty": "medium",
-      "text": "The Moon is full when:",
-      "choices": [
-        "Earth is approximately between the Sun and Moon",
-        "Moon is between Sun and Earth",
-        "Sun is between Earth and Moon",
-        "Moon is at Earth's center"
-      ],
-      "answer": "Earth is approximately between the Sun and Moon",
-      "sourcePage": 390
+      "type": "complete",
+      "difficulty": "easy",
+      "text": "A lunar eclipse occurs when Earth is aligned between the ______ and the ______.",
+      "answer": "Sun; Moon",
+      "sourcePage": 389,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-006",
-      "type": "mcq",
+      "type": "reason",
       "difficulty": "medium",
-      "text": "A lunar eclipse occurs when:",
-      "choices": [
-        "Earth comes between the Sun and the Moon",
-        "Moon comes between Earth and Sun",
-        "Sun comes between Earth and Moon",
-        "Moon stops rotating"
-      ],
-      "answer": "Earth comes between the Sun and the Moon",
-      "sourcePage": 394
+      "text": "Give a reason: We usually see the same face of the Moon from Earth.",
+      "answer": "The Moon takes approximately the same time to rotate around its axis as to revolve around Earth.",
+      "sourcePage": 390,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-007",
-      "type": "true_false",
-      "difficulty": "medium",
-      "text": "A lunar eclipse can occur at every full Moon.",
-      "answer": "False",
-      "sourcePage": 395
+      "type": "reason",
+      "difficulty": "easy",
+      "text": "Give a reason: The Moon appears illuminated although it is a dark body.",
+      "answer": "It reflects sunlight falling on it.",
+      "sourcePage": 391,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-008",
-      "type": "reason",
+      "type": "complete",
       "difficulty": "medium",
-      "text": "Give a reason: A lunar eclipse does not occur every full Moon.",
-      "answer": "Because the Moon's orbit is tilted, so the Sun, Earth, and Moon are not perfectly aligned every full Moon.",
-      "sourcePage": 396
+      "text": "At the beginning of the Arabic month, the Moon is in the ______ Crescent phase.",
+      "answer": "Waxing",
+      "sourcePage": 392,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-009",
       "type": "complete",
       "difficulty": "medium",
-      "text": "The darkest central part of a shadow is called the ______.",
-      "answer": "umbra",
-      "sourcePage": 398
+      "text": "Around day 14 of the Arabic month, the Moon is in the ______ Moon phase.",
+      "answer": "Full",
+      "sourcePage": 393,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-010",
-      "type": "complete",
+      "type": "reason",
       "difficulty": "hard",
-      "text": "The lighter outer part of a shadow is called the ______.",
-      "answer": "penumbra",
-      "sourcePage": 398
+      "text": "Give a reason: A lunar eclipse does not occur every Full Moon.",
+      "answer": "The Moon's orbital plane is tilted relative to Earth's orbital plane, so perfect alignment does not occur every month.",
+      "sourcePage": 394,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-011",
       "type": "compare",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Compare total and partial lunar eclipses.",
-      "answer": "A total lunar eclipse occurs when the Moon is completely inside Earth's umbra; a partial lunar eclipse occurs when only part of the Moon enters the umbra.",
-      "sourcePage": 400
+      "answer": "In a total eclipse the Moon is completely within Earth's shadow and appears as a dark disc; in a partial eclipse only part of the Moon is within Earth's shadow and the Moon appears partially dark.",
+      "sourcePage": 395,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
     },
     {
       "id": "s1-u4-l12-012",
-      "type": "reason",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What happens when Earth is completely aligned between the Sun and the Moon during the Full Moon phase?",
+      "answer": "A lunar eclipse occurs.",
+      "sourcePage": 396,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-013",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "What happens when only part of the Moon lies within Earth's shadow?",
+      "answer": "A partial lunar eclipse occurs and the Moon appears partially dark.",
+      "sourcePage": 397,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-014",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "A transparent object placed in front of a light source casts a normal dark shadow.",
+      "answer": "False",
+      "sourcePage": 398,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-015",
+      "type": "true_false",
+      "difficulty": "medium",
+      "text": "A lunar eclipse may be observed once or twice a year according to the lesson.",
+      "answer": "True",
+      "sourcePage": 399,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-016",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The Moon completes one revolution around Earth in about ______ days.",
+      "answer": "29.5",
+      "sourcePage": 400,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-017",
+      "type": "complete",
+      "difficulty": "medium",
+      "text": "The Moon completes one rotation around its axis in about ______ days.",
+      "answer": "29.5",
+      "sourcePage": 401,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-018",
+      "type": "problem",
       "difficulty": "hard",
-      "text": "Give a reason: The Moon may appear reddish during a total lunar eclipse.",
-      "answer": "Because some sunlight is refracted and scattered through Earth's atmosphere and reaches the Moon, with red light passing more effectively.",
-      "sourcePage": 402
+      "text": "Arrange these phases from greater illuminated area to smaller: Full Moon, Waning Gibbous, First Quarter, Waxing Crescent, New Moon.",
+      "answer": "Full Moon → Waning Gibbous → First Quarter → Waxing Crescent → New Moon.",
+      "sourcePage": 402,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-019",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "According to the lesson table, identify the phase around day 8 of the Arabic month.",
+      "answer": "First Quarter.",
+      "sourcePage": 403,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-020",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "According to the lesson table, identify the phase around day 21.",
+      "answer": "Last (Third) Quarter.",
+      "sourcePage": 404,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-021",
+      "type": "problem",
+      "difficulty": "medium",
+      "text": "A figure shows Earth between the Sun and Moon and the Moon completely inside Earth's shadow. Name the phenomenon.",
+      "answer": "Total lunar eclipse.",
+      "sourcePage": 405,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-022",
+      "type": "reason",
+      "difficulty": "medium",
+      "text": "Give a reason: An opaque object casts a shadow while a transparent object does not.",
+      "answer": "Opaque objects block light rays, while transparent objects allow light to pass through.",
+      "sourcePage": 405,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-023",
+      "type": "true_false",
+      "difficulty": "easy",
+      "text": "The New Moon phase is when the side facing Earth is completely illuminated.",
+      "answer": "False",
+      "sourcePage": 405,
+      "sourceSection": "source-derived",
+      "sourceReference": "Final Revision pp.160-165 / PDF 576-581"
+    },
+    {
+      "id": "s1-u4-l12-024",
+      "type": "problem",
+      "difficulty": "hard",
+      "text": "Consultant-generated application: A student says 'every Full Moon must produce an eclipse because Earth is between Sun and Moon.' Correct the idea.",
+      "answer": "A Full Moon does not always produce an eclipse because the Moon's orbit is tilted, so the three bodies are not perfectly aligned every month.",
+      "sourcePage": 405,
+      "sourceSection": "consultant-generated-from-source",
+      "sourceReference": "Generated from verified lesson concepts"
     }
   ]
 }
