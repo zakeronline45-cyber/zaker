@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ذاكر | مراجعة التحويلات</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887;--r:#e85b66}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}button{font:inherit;cursor:pointer}.top{background:#fff;border-bottom:1px solid var(--line);padding:15px 20px}.wrap{max-width:1100px;margin:auto}.brand{font-weight:900;font-size:24px;color:var(--n)}main{max-width:1100px;margin:25px auto;padding:0 16px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}.muted{color:var(--m)}.btn{border:0;border-radius:10px;padding:10px 13px;font-weight:900}.ok{background:var(--g);color:#fff}.bad{background:var(--r);color:#fff}.soft{background:#eef3ff;color:var(--b)}.row{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.proof{max-width:320px;border-radius:12px;border:1px solid var(--line)}@media(max-width:700px){.row{grid-template-columns:1fr}}</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><span class="brand">ذاكر — مراجعة التحويلات البنكية</span></div></header>
+<main><div id="status" class="card">جاري التحقق من الصلاحية...</div><div id="list"></div></main>
+<script>
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+
+async function load(){
+ const {data:s}=await sb.auth.getSession();
+ if(!s.session){location.href='/login.html?next=/admin-payments.html';return}
+ const {data,error}=await sb.rpc('get_pending_bank_transfers');
+ const status=document.getElementById('status'),list=document.getElementById('list');
+ if(error){status.textContent='الحساب الحالي ليس له صلاحية إدارة التحويلات.';return}
+ status.textContent='طلبات التحويل المعلقة: '+data.length;
+ list.innerHTML=data.length?data.map(x=>`
+ <div class="card">
+  <div class="row">
+   <div><b>الطالب:</b> ${esc(x.student_name||'—')}</div>
+   <div><b>البريد:</b> ${esc(x.student_email||'—')}</div>
+   <div><b>المبلغ:</b> ${x.amount_egp} جنيه</div>
+   <div><b>كود الطلب:</b> ${esc(x.reference_code||'—')}</div>
+   <div><b>اسم المحوّل:</b> ${esc(x.sender_name||'—')}</div>
+   <div><b>مرجع التحويل:</b> ${esc(x.bank_transfer_reference||'—')}</div>
+   <div><b>عدد المواد:</b> ${x.subject_count}</div>
+   <div><b>الطفل:</b> ${x.child_index===2?'الثاني — مطلوب التحقق من استحقاق الخصم':'الأول'}</div>
+  </div>
+  ${x.proof_url?'<p><a class="btn soft" target="_blank" href="'+x.proof_url+'">فتح إيصال التحويل</a></p>':''}
+  <div style="display:flex;gap:8px;margin-top:12px">
+   <button class="btn ok" onclick="approve('${x.payment_id}')">تأكيد التحويل وتفعيل الاشتراك</button>
+   <button class="btn bad" onclick="rejectPay('${x.payment_id}')">رفض</button>
+  </div>
+ </div>`).join(''):'<div class="card muted">لا توجد تحويلات معلقة.</div>';
+}
+async function approve(id){
+ if(!confirm('تأكدت من وصول المبلغ فعليًا للحساب البنكي؟')) return;
+ const {error}=await sb.rpc('approve_bank_transfer',{p_payment_id:id});
+ if(error){alert(error.message);return} load();
+}
+async function rejectPay(id){
+ if(!confirm('رفض طلب التحويل؟')) return;
+ const {error}=await sb.rpc('reject_bank_transfer',{p_payment_id:id});
+ if(error){alert(error.message);return} load();
+}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+load();
+</script></body></html>
