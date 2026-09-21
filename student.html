@@ -250,7 +250,7 @@ function applyTrack(){
   const u=document.getElementById('unavailableArea');
   u.style.display=ready?'none':'block';
   if(!ready){
-    const grade=window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[activeChildGrade]||'Selected Grade'):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'الصف المختار');
+    const grade=window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[activeChildGrade]||'Selected Grade'):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'الصف المختار');
     document.getElementById('unavailablePill').textContent=window.zakerLang?.()==='en'?(studentTrack==='arabic'?'Arabic Track':grade):(studentTrack==='arabic'?'مسار عربي':grade);
     document.getElementById('unavailableTitle').textContent=window.zakerLang?.()==='en'?(studentTrack==='arabic'?'Arabic Track content is not available yet':grade+' Languages content is not available yet'):(studentTrack==='arabic'?'محتوى المسار العربي لم يُرفع بعد':'محتوى '+grade+' لغات لم يُرفع بعد');
     document.getElementById('unavailableText').textContent=window.zakerLang?.()==='en'?'We will not show content from a different grade or track. This section will activate when its original books are available.':'لن نعرض محتوى صف أو مسار مختلف. سيتم تفعيل هذا القسم عند رفع كتبه الأصلية.';
@@ -585,7 +585,7 @@ async function renderProfile(){
 }
 function label(t){const en=window.zakerLang?.()==='en';return (en?{mcq:'Multiple Choice',true_false:'True / False',complete:'Complete',reason:'Give Reason',compare:'Compare',problem:'Problem'}:{mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'})[t]||t}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent=window.zakerLang?.()==='en'?'Thinking about your question...':'بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||(window.zakerLang?.()==='en'?'No response received':'لم يصل رد')}catch(e){a.textContent=(window.zakerLang?.()==='en'?'Something went wrong: ':'حصلت مشكلة: ')+e.message}}
+async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent=window.zakerLang?.()==='en'?'Thinking about your question...':'بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||(window.zakerLang?.()==='en'?'No response received':'لم يصل رد')}catch(e){a.textContent=(window.zakerLang?.()==='en'?'Something went wrong: ':'حصلت مشكلة: ')+e.message}}
 async function initAccount(){
   const {data}=await sb.auth.getSession();authSession=data.session;
   if(!authSession){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
@@ -632,9 +632,9 @@ async function initAccount(){
 
   document.getElementById('activeChildName').textContent=child.full_name;
   const mcn=document.getElementById('masterChildName');if(mcn)mcn.textContent=child.full_name;
-  const mcg=document.getElementById('masterChildGrade');if(mcg)mcg.textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
+  const mcg=document.getElementById('masterChildGrade');if(mcg)mcg.textContent=({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
   document.getElementById('trackName').textContent=child.track==='languages'?'مسار لغات':'مسار عربي';
-  document.getElementById('gradeName').textContent=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
+  document.getElementById('gradeName').textContent=({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[child.grade]||child.grade);
 
   applyTrack();const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;
   if(studentTrack==='languages'&&activeChildGrade==='prep1')loadBank();
@@ -662,7 +662,7 @@ function showSiteHelp(){
 async function askFloatingAI(){
  const q=document.getElementById('floatingAiQuestion').value.trim(),a=document.getElementById('floatingAiAnswer');if(!q)return;
  a.style.display='block';a.textContent='بفكر في سؤالك...';
- try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,grade:({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}
+ try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,grade:({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 initAccount();
