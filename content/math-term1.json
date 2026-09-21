@@ -60,10 +60,10 @@
         },
         {
           "id": "m1-1-004",
-          "type": "reason",
+          "type": "solve",
           "difficulty": "medium",
-          "text": "Explain the main idea of Proportion.",
-          "answer": "A proportion is an equality between two ratios. Cross multiplication is used to test and solve proportions."
+          "text": "Solve the proportion 5/8 = x/24.",
+          "answer": "15"
         },
         {
           "id": "m1-1-005",
@@ -146,10 +146,10 @@
         },
         {
           "id": "m1-2-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Applications of Ratio and Proportion — Scale Drawings.",
-          "answer": "Scale drawings compare a length in a drawing or model with the real length after using the same units."
+          "text": "A drawing uses a scale of 1:200. Find the real length represented by 4 cm on the drawing.",
+          "answer": "800 cm"
         },
         {
           "id": "m1-2-005",
@@ -233,10 +233,10 @@
         },
         {
           "id": "m1-3-004",
-          "type": "reason",
+          "type": "solve",
           "difficulty": "medium",
-          "text": "Explain the main idea of Applications of Ratio and Proportion — Proportional Division.",
-          "answer": "Proportional division splits money, land, profit, or another quantity into shares according to a given ratio."
+          "text": "Divide 1500 in the ratio 2:3. Find both shares.",
+          "answer": "600, 900"
         },
         {
           "id": "m1-3-005",
@@ -320,10 +320,10 @@
         },
         {
           "id": "m1-4-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Applications of Ratio and Proportion — Percentages.",
-          "answer": "Percentages express a part out of one hundred and are used in discounts, increases, decreases, profit, and everyday problems."
+          "text": "Find 15% of 360.",
+          "answer": "54"
         },
         {
           "id": "m1-4-005",
@@ -409,10 +409,10 @@
         },
         {
           "id": "m1-5-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Sets and Their Operations.",
-          "answer": "A set is a well-defined collection of objects. Main operations include union, intersection, difference, and complement."
+          "text": "If A={1,2,3,4} and B={3,4,5}, find A∩B.",
+          "answer": "{3,4}"
         },
         {
           "id": "m1-5-005",
@@ -497,10 +497,10 @@
         },
         {
           "id": "m1-6-004",
-          "type": "reason",
+          "type": "solve",
           "difficulty": "medium",
-          "text": "Explain the main idea of Operations on Integers.",
-          "answer": "Integer operations follow sign rules for addition, subtraction, multiplication, and division."
+          "text": "Calculate: −18 + 7 + 5.",
+          "answer": "−6"
         },
         {
           "id": "m1-6-005",
@@ -584,10 +584,10 @@
         },
         {
           "id": "m1-7-004",
-          "type": "reason",
+          "type": "solve",
           "difficulty": "medium",
-          "text": "Explain the main idea of Operations on Rational Numbers.",
-          "answer": "Rational numbers can be written as fractions a/b where b is not zero. Operations use fraction rules and simplification."
+          "text": "Calculate: 3/4 − 1/6.",
+          "answer": "7/12"
         },
         {
           "id": "m1-7-005",
@@ -672,10 +672,10 @@
         },
         {
           "id": "m1-8-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Mathematical Expressions and Formulas / Algebraic Terms.",
-          "answer": "Algebraic expressions use variables, constants, coefficients, and operations. Formulas express relationships between quantities."
+          "text": "For 6x − 4, find the coefficient of x and the constant term.",
+          "answer": "coefficient 6, constant −4"
         },
         {
           "id": "m1-8-005",
@@ -758,10 +758,10 @@
         },
         {
           "id": "m1-9-004",
-          "type": "reason",
+          "type": "solve",
           "difficulty": "medium",
-          "text": "Explain the main idea of Addition and Subtraction of Algebraic Expressions.",
-          "answer": "Like terms have the same variable part and can be combined by adding or subtracting their coefficients."
+          "text": "Simplify: 7x + 3 − 2x + 5.",
+          "answer": "5x + 8"
         },
         {
           "id": "m1-9-005",
@@ -845,10 +845,10 @@
         },
         {
           "id": "m1-10-004",
-          "type": "reason",
+          "type": "solve",
           "difficulty": "medium",
-          "text": "Explain the main idea of Linear Equations.",
-          "answer": "A linear equation has a variable to the first power. Solving means finding the value that makes both sides equal."
+          "text": "Solve: 4x − 7 = 21.",
+          "answer": "7"
         },
         {
           "id": "m1-10-005",
@@ -933,10 +933,10 @@
         },
         {
           "id": "m1-11-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Types of Angles and Relationships Between Them.",
-          "answer": "Angles are classified by measure and can form complementary, supplementary, adjacent, or vertically opposite relationships."
+          "text": "Find the complement of 37°.",
+          "answer": "53°"
         },
         {
           "id": "m1-11-005",
@@ -1020,10 +1020,10 @@
         },
         {
           "id": "m1-12-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of More Angle Relationships.",
-          "answer": "Angle relationships help determine unknown measures using straight lines, angles around a point, and vertically opposite angles."
+          "text": "Two angles lie on a straight line. One angle is 126°. Find the other.",
+          "answer": "54°"
         },
         {
           "id": "m1-12-005",
@@ -1108,10 +1108,10 @@
         },
         {
           "id": "m1-13-004",
-          "type": "reason",
+          "type": "proof",
           "difficulty": "medium",
-          "text": "Explain the main idea of Parallelism.",
-          "answer": "When a transversal cuts parallel lines, corresponding and alternate angles are equal and interior angles on the same side are supplementary."
+          "text": "Two parallel lines are cut by a transversal. Explain why a pair of corresponding angles are equal.",
+          "answer": "Because corresponding angles formed by a transversal with two parallel lines are equal."
         },
         {
           "id": "m1-13-005",
@@ -1195,10 +1195,10 @@
         },
         {
           "id": "m1-14-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of The Triangle.",
-          "answer": "Triangles are classified by sides and angles. The sum of the interior angles of a triangle is 180 degrees."
+          "text": "Two angles of a triangle are 48° and 67°. Find the third angle.",
+          "answer": "65°"
         },
         {
           "id": "m1-14-005",
@@ -1281,10 +1281,10 @@
         },
         {
           "id": "m1-15-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Quadrilaterals.",
-          "answer": "A quadrilateral has four sides and the sum of its interior angles is 360 degrees."
+          "text": "Three angles of a quadrilateral are 85°, 95°, and 110°. Find the fourth angle.",
+          "answer": "70°"
         },
         {
           "id": "m1-15-005",
@@ -1369,10 +1369,10 @@
         },
         {
           "id": "m1-16-004",
-          "type": "reason",
+          "type": "proof",
           "difficulty": "medium",
-          "text": "Explain the main idea of Special Quadrilaterals.",
-          "answer": "Special quadrilaterals include parallelograms, rectangles, rhombi, squares, and trapezoids, each with characteristic side and angle properties."
+          "text": "Explain why every square is also a rectangle.",
+          "answer": "A square has four right angles, so it satisfies the defining angle property of a rectangle."
         },
         {
           "id": "m1-16-005",
@@ -1455,10 +1455,10 @@
         },
         {
           "id": "m1-17-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Polygons.",
-          "answer": "A polygon is a closed figure made of line segments. The sum of interior angles depends on the number of sides."
+          "text": "Find the sum of the interior angles of an octagon.",
+          "answer": "1080°"
         },
         {
           "id": "m1-17-005",
@@ -1542,10 +1542,10 @@
         },
         {
           "id": "m1-18-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Coordinates.",
-          "answer": "Coordinates locate points on the Cartesian plane using an ordered pair (x,y) and the horizontal and vertical axes."
+          "text": "For the point (−3,5), state the x-coordinate and y-coordinate.",
+          "answer": "x = −3, y = 5"
         },
         {
           "id": "m1-18-005",
@@ -1628,10 +1628,10 @@
         },
         {
           "id": "m1-19-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Organizing Data.",
-          "answer": "Data can be organized in tables and frequency distributions to make information easier to read and compare."
+          "text": "In the data 2,3,3,4,4,4, find the frequency of 4.",
+          "answer": "3"
         },
         {
           "id": "m1-19-005",
@@ -1714,10 +1714,10 @@
         },
         {
           "id": "m1-20-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Arithmetic Mean.",
-          "answer": "The arithmetic mean is found by dividing the sum of values by the number of values."
+          "text": "Find the arithmetic mean of 5, 7, 8, and 12.",
+          "answer": "8"
         },
         {
           "id": "m1-20-005",
@@ -1800,10 +1800,10 @@
         },
         {
           "id": "m1-21-004",
-          "type": "reason",
+          "type": "find",
           "difficulty": "medium",
-          "text": "Explain the main idea of Pie Charts.",
-          "answer": "A pie chart represents parts of a whole as sectors of a circle. Sector angles are proportional to frequencies."
+          "text": "A category is 30% of a pie chart. Find its sector angle.",
+          "answer": "108°"
         },
         {
           "id": "m1-21-005",
