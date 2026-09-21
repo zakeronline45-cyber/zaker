@@ -55,7 +55,7 @@ main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;gr
    <button class="btn primary" onclick="startCurrentTest()">اختبار الدرس — 10 أسئلة</button>
    <button class="btn soft" onclick="startSectionTest()">اختبار الوحدة — 20 سؤالًا</button>
    <button class="btn soft" onclick="startFullTest()">امتحان شامل الترم — 30 سؤالًا</button>
-  </div><p class="muted">الحد الأقصى لكل سؤال 90 ثانية.</p></div>
+  </div></div>
  </div>
  <div id="testArea" style="display:none"></div>
 </div>
@@ -73,7 +73,7 @@ main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;gr
 
 <script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-let session=null,child=null,curriculum=null,currentId=1,current=null,test=[],idx=0,answers=[],selectedChoice=null,timer=null,timeLeft=90,testLabel='',testModuleIds=[],profileResults=[];
+let session=null,child=null,curriculum=null,currentId=1,current=null,test=[],idx=0,answers=[],selectedChoice=null,timer=null,testLabel='',testModuleIds=[],profileResults=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const childKey=base=>child?.id?base+'_'+child.id:base;
 
@@ -105,7 +105,7 @@ function startSectionTest(){const ids=curriculum.modules.filter(m=>m.unit===curr
 function startFullTest(){startTest(curriculum.modules.map(m=>m.id),'دراسات اجتماعية — امتحان شامل الترم الأول',30)}
 function startTest(ids,label,count){const pool=poolForModules(ids);if(!pool.length){alert('لا توجد أسئلة من النوع المختار.');return}test=shuffle(pool).slice(0,Math.min(count,pool.length));idx=0;answers=[];testLabel=label;testModuleIds=ids;testStart.style.display='none';testArea.style.display='block';renderQuestion()}
 function resetTest(){clearInterval(timer);testStart.style.display='block';testArea.style.display='none';testArea.innerHTML='';test=[];idx=0;answers=[]}
-function renderQuestion(){clearInterval(timer);selectedChoice=null;const q=test[idx];let input='';if(q.type==='mcq')input=(q.choices||[]).map(c=>'<button class="choice" data-value="'+esc(c)+'" onclick="pickChoice(this)">'+esc(c)+'</button>').join('');else input='<textarea id="writtenAnswer" class="textanswer" placeholder="اكتب إجابتك هنا..."></textarea>';testArea.innerHTML='<div class="testhead"><b>'+esc(testLabel)+'</b><div class="timer">⏱ <span id="timeLeft">90</span> ثانية</div></div><div class="progress"><i style="width:'+((idx/test.length)*100)+'%"></i></div><div class="qbox"><span class="pill">'+labelType(q.type)+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button class="btn primary" style="margin-top:12px" onclick="submitAnswer(false)">إرسال الإجابة</button><div id="submitMsg"></div></div>';timeLeft=90;timer=setInterval(()=>{timeLeft--;const el=document.getElementById('timeLeft');if(el)el.textContent=timeLeft;if(timeLeft<=0){clearInterval(timer);submitAnswer(true)}},1000)}
+function renderQuestion(){clearInterval(timer);selectedChoice=null;const q=test[idx];let input='';if(q.type==='mcq')input=(q.choices||[]).map(c=>'<button class="choice" data-value="'+esc(c)+'" onclick="pickChoice(this)">'+esc(c)+'</button>').join('');else input='<textarea id="writtenAnswer" class="textanswer" placeholder="اكتب إجابتك هنا..."></textarea>';testArea.innerHTML='<div class="testhead"><b>'+esc(testLabel)+'</b></div><div class="progress"><i style="width:'+((idx/test.length)*100)+'%"></i></div><div class="qbox"><span class="pill">'+labelType(q.type)+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button class="btn primary" style="margin-top:12px" onclick="submitAnswer(false)">إرسال الإجابة</button><div id="submitMsg"></div></div>'}
 function labelType(t){return({mcq:'اختيار من متعدد',complete:'أكمل',reason:'علّل / فسّر',true_false:'صح / خطأ',compare:'قارن',map:'خرائط',writing:'تعبير'}[t]||t)}
 function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');selectedChoice=el.dataset.value}
 async function submitAnswer(timedOut){clearInterval(timer);const q=test[idx];let studentAnswer=selectedChoice;if(q.type!=='mcq')studentAnswer=document.getElementById('writtenAnswer')?.value.trim();if(!studentAnswer&&!timedOut){submitMsg.innerHTML='<div class="status">اكتب أو اختر إجابة أولًا.</div>';return}if(timedOut&&!studentAnswer)studentAnswer='';document.querySelectorAll('#testArea button,#testArea textarea').forEach(x=>x.disabled=true);submitMsg.innerHTML='<div class="submitted">تم تسجيل إجابتك... جاري التصحيح.</div>';let correct=false;try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject:'Social Studies',module:q.module,id:q.id,studentAnswer,studyLanguage:'Arabic'})});const j=await r.json();correct=!!j.correct}catch(e){}answers.push({module:q.module,lessonTitle:q.moduleTitle,questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct,timedOut:!!timedOut});setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},350)}
