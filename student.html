@@ -211,7 +211,7 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
 <button class="ai-fab" onclick="toggleAiGuide()" aria-label="مساعد ذاكر">🤖</button>
 <nav class="student-bottom-nav"><a href="/"><span>🏠</span>الرئيسية</a><button class="active" data-nav="explain" onclick="setPane('explain')"><span>📚</span>الدراسة</button><button data-nav="test" onclick="setPane('test')"><span>📝</span>اختباراتي</button><button data-nav="profile" onclick="setPane('profile')"><span>📊</span>تقاريري</button><a href="/account.html"><span>👤</span>حسابي</a></nav>
 </main>
-<script>
+<script src="/zaker-i18n.js"></script><script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
@@ -658,4 +658,4 @@ async function askFloatingAI(){
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 initAccount();
-</script><script src="/zaker-i18n.js"></script></body></html>
+</script></body></html>
