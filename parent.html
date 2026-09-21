@@ -10,7 +10,7 @@
 main{max-width:1150px;margin:24px auto;padding:0 16px}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.toolbar select{padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.kpi b{display:block;font-size:28px;color:var(--n)}.kpi span{color:var(--m);font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.rows{display:grid;gap:10px}.row{background:#f8faff;border-radius:12px;padding:13px}.weak{background:#fff2f2;border:1px solid #f6c8cc}.good{background:#effbf7;border:1px solid #c9ecdf}.qitem{border:1px solid var(--line);border-radius:12px;padding:13px;margin-top:10px}.qitem h4{margin:0 0 8px;direction:ltr;text-align:left}.ans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:9px}.ans div{padding:10px;border-radius:10px}.student{background:#fff4f4}.correct{background:#effbf7}.muted{color:var(--m);font-size:13px}.pill{display:inline-block;background:#edf3ff;color:var(--b);font-size:12px;font-weight:800;padding:4px 8px;border-radius:999px}.empty{text-align:center;color:var(--m);padding:30px}@media(max-width:850px){.kpis,.grid,.ans{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kpis,.grid,.ans{grid-template-columns:1fr}.bar{align-items:flex-start;flex-direction:column}}
 </style></head>
 <body>
-<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>ولي الأمر</span></a><div><a class="btn" href="/account.html">حسابي</a> <button class="btn" onclick="logout()">خروج</button></div></div></header>
+<header class="top"><div class="wrap bar"><a class="brand" href="/">ذاكر <span>ولي الأمر</span></a><div><select id="zakerLangSwitch" class="btn" onchange="setZakerLanguage(this.value)"><option value="en">EN</option><option value="ar">AR</option></select> <a class="btn" href="/account.html">حسابي</a> <button class="btn" onclick="logout()">خروج</button></div></div></header>
 <main>
 <div class="toolbar"><b>متابعة:</b><select id="childSelect" onchange="loadDashboard()"></select><a class="btn" href="/subscribe.html">الاشتراكات</a></div>
 <h2 id="childTitle">ملف الطالب</h2>
@@ -40,6 +40,7 @@ async function init(){
  const {data,error}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(error){document.body.innerHTML='<main><div class="card">'+esc(error.message)+'</div></main>';return}
  children=data||[];
+ if(children.length&&!localStorage.getItem('zaker_ui_lang')) setZakerLanguage(children[0].track==='languages'?'en':'ar');
  if(!children.length){location.href='/account.html';return}
  childSelect.innerHTML=children.map(x=>'<option value="'+x.id+'">'+esc(x.full_name)+' — '+gradeName(x.grade)+' — '+(x.track==='arabic'?'عربي':'لغات')+'</option>').join('');
  const requested=new URLSearchParams(location.search).get('child');
@@ -67,4 +68,4 @@ async function loadDashboard(){
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
-</script></body></html>
+</script><script src="/zaker-i18n.js"></script></body></html>
