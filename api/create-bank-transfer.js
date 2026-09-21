@@ -1,10 +1,11 @@
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_ANON='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 
-function amountFor(subjectCount,childIndex){
+function amountFor(subjectCount,childIndex,track='languages'){
   const n=Math.max(1,Math.min(Number(subjectCount)||1,10));
-  const base=250+(n-1)*225;
-  return childIndex===2?Math.round(base*0.75*100)/100:base;
+  const base=track==='arabic'?200+(n-1)*175:250+(n-1)*225;
+  const factor=childIndex===2?.75:childIndex===3?.50:1;
+  return Math.round(base*factor*100)/100;
 }
 function refCode(){
   return 'ZK-'+Date.now().toString(36).slice(-5).toUpperCase()+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
@@ -51,7 +52,10 @@ export default async function handler(req,res){
      amount:result.amount,
      child_index:result.child_index,
      child_name:children[idx].full_name,
-     discount_applied:!!result.discount_applied
+     discount_applied:!!result.discount_applied,
+     discount_percent:Number(result.discount_percent||0),
+     base_amount:Number(result.base_amount||result.amount||0),
+     track:result.track||children[idx].track
    });
  }catch(e){return res.status(500).json({error:e?.message||'تعذر إنشاء طلب التحويل'})}
 }
