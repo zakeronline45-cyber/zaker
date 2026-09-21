@@ -31,6 +31,12 @@ const ARABIC_SYLLABUS = [
   'الفعل اللازم والفعل المتعدي','الفعل المجرد والفعل المزيد','أنواع الفعل المعتل','أنواع الفعل الصحيح','ظن وأخواتها',
   'كتابة الهمزة على الألف','كتابة الهمزة على الواو','كتابة الهمزة على الياء','الخط العربي','السيرة الذاتية','السيرة الغيرية'
 ];
+const SOCIAL_STUDIES_SYLLABUS = [
+  'قارة أفريقيا — الموقع والكشوف الجغرافية','مظاهر سطح قارة أفريقيا','نهر النيل والحضارات القديمة في أفريقيا',
+  'عصر الدولة القديمة — عصر بناة الأهرام','عصر الدولة الوسطى — عصر الرخاء الاقتصادي','عصر الدولة الحديثة — عصر المجد الحربي',
+  'نظم الغابات في أفريقيا — الغابات المدارية المطيرة وغابات البحر المتوسط','نظم الحشائش والصحاري الحارة في أفريقيا','النظم البيئية المائية في أفريقيا',
+  'انتشار الإسلام في أفريقيا','دور مصر الحضاري في قارة أفريقيا'
+];
 
 async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject}){
   const recent=(recentQuestions||[]).slice(0,6).map(x=>x.question).join('\n');
@@ -39,7 +45,7 @@ async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject}){
     headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
     body:JSON.stringify({
       model:'gpt-5.6-luna',
-      instructions:`You are a strict curriculum gate for first-prep ${subject}, term 1.\nAllowed syllabus ONLY:\n${(subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:SCIENCE_SYLLABUS).map((x,i)=>`${i+1}. ${x}`).join('\n')}
+      instructions:`You are a strict curriculum gate for first-prep ${subject}, term 1.\nAllowed syllabus ONLY:\n${(subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:subject==='Social Studies'?SOCIAL_STUDIES_SYLLABUS:SCIENCE_SYLLABUS).map((x,i)=>`${i+1}. ${x}`).join('\n')}
 
 Decide whether the student's message is answerable strictly within this syllabus.
 Rules:
@@ -81,7 +87,7 @@ export default async function handler(req,res){
       studyLanguage='English',
       sessionId=''
     }=req.body||{};
-    const safeSubject=subject==='English'?'English':subject==='Arabic'?'Arabic':'Science';
+    const safeSubject=subject==='English'?'English':subject==='Arabic'?'Arabic':subject==='Social Studies'?'Social Studies':'Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
 
     let history=null;
@@ -97,7 +103,7 @@ export default async function handler(req,res){
       subject:safeSubject
     });
     if(!inScope){
-      const msg=safeSubject==='English'?'This question is outside the current First Prep English curriculum on Zaker. Ask me about the current units, language, vocabulary, skills, or stories.':safeSubject==='Arabic'?'هذا السؤال خارج منهج اللغة العربية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن القراءة والنصوص أو البلاغة أو النحو أو الإملاء أو التعبير الموجود في المنهج.':'This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
+      const msg=safeSubject==='English'?'This question is outside the current First Prep English curriculum on Zaker. Ask me about the current units, language, vocabulary, skills, or stories.':safeSubject==='Arabic'?'هذا السؤال خارج منهج اللغة العربية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن القراءة والنصوص أو البلاغة أو النحو أو الإملاء أو التعبير الموجود في المنهج.':safeSubject==='Social Studies'?'هذا السؤال خارج منهج الدراسات الاجتماعية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن دروس الجغرافيا أو التاريخ أو الحضارة أو النظم البيئية الموجودة في المنهج.':'This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
       return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||0,lessonCounts:history?.lesson_counts||{}}});
     }
 
@@ -111,12 +117,12 @@ export default async function handler(req,res){
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
     const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
 
-    const languageRule=safeSubject==='English'?'Explain in clear English suitable for first-prep students. Keep the answer in English unless the student explicitly asks for an Arabic clarification. Focus on vocabulary, grammar, reading, writing, speaking and story comprehension within the listed syllabus.':safeSubject==='Arabic'?'اشرح باللغة العربية الفصحى المبسطة المناسبة لطالب الصف الأول الإعدادي. التزم بمصطلحات المنهج في القراءة والنصوص والبلاغة والنحو والإملاء والتعبير. استخدم أمثلة قصيرة واضحة ولا تخرج عن الدروس المسموح بها.':'Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
+    const languageRule=safeSubject==='English'?'Explain in clear English suitable for first-prep students. Keep the answer in English unless the student explicitly asks for an Arabic clarification. Focus on vocabulary, grammar, reading, writing, speaking and story comprehension within the listed syllabus.':(safeSubject==='Arabic'||safeSubject==='Social Studies')?'اشرح باللغة العربية الفصحى المبسطة المناسبة لطالب الصف الأول الإعدادي. التزم بمصطلحات المنهج الحالي فقط، واستخدم أمثلة قصيرة واضحة ولا تخرج عن الدروس المسموح بها.':'Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
 
     const instructions=`أنت "مدرس ذاكر"، مدرس شخصي ذكي لطلاب ${grade}.
 المادة الحالية: ${safeSubject}.
 الدرس الحالي: ${lesson||'غير محدد'}.
-مسار الطالب: ${safeSubject==='English'?'English — shared across Arabic and Languages tracks':safeSubject==='Arabic'?'Arabic — shared across Arabic and Languages tracks':'Science English'}.
+مسار الطالب: ${safeSubject==='English'?'English — shared across Arabic and Languages tracks':safeSubject==='Arabic'?'Arabic — shared across Arabic and Languages tracks':safeSubject==='Social Studies'?'Social Studies — Arabic UI shared across Arabic and Languages tracks':'Science English'}.
 ${languageRule}
 
 هدفك ليس فقط الإجابة، بل تكوين صورة تعليمية تدريجية عن الطالب من نمط أسئلته.
