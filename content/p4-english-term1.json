@@ -1,0 +1,520 @@
+{
+  "subject": "P4 English",
+  "displayName": "English",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "shared",
+  "source": "El-Moasser English Primary 4 First Term 2027",
+  "modules": [
+    {
+      "id": 1,
+      "unit": "Unit 1",
+      "title": "The Five Senses",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"The Five Senses\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "The Five Senses"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"The Five Senses\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-english-1-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Five Senses\".",
+          "answer": "the core concept",
+          "id": "p4-english-1-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"The Five Senses\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-english-1-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"The Five Senses\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-english-1-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"The Five Senses\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-english-1-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"The Five Senses\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-english-1-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "unit": "Unit 2",
+      "title": "My Community",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"My Community\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "My Community"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"My Community\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-english-2-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"My Community\".",
+          "answer": "the core concept",
+          "id": "p4-english-2-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"My Community\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-english-2-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"My Community\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-english-2-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"My Community\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-english-2-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"My Community\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-english-2-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "unit": "Unit 3",
+      "title": "Animals in Our World",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Animals in Our World\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Animals in Our World"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Animals in Our World\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-english-3-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Animals in Our World\".",
+          "answer": "the core concept",
+          "id": "p4-english-3-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Animals in Our World\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-english-3-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"Animals in Our World\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-english-3-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"Animals in Our World\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-english-3-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Animals in Our World\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-english-3-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "unit": "Unit 4",
+      "title": "Egypt My Homeland",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Egypt My Homeland\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Egypt My Homeland"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Egypt My Homeland\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-english-4-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Egypt My Homeland\".",
+          "answer": "the core concept",
+          "id": "p4-english-4-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Egypt My Homeland\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-english-4-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"Egypt My Homeland\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-english-4-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"Egypt My Homeland\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-english-4-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Egypt My Homeland\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-english-4-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "unit": "Unit 5",
+      "title": "A Day at Work",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"A Day at Work\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "A Day at Work"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"A Day at Work\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-english-5-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"A Day at Work\".",
+          "answer": "the core concept",
+          "id": "p4-english-5-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"A Day at Work\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-english-5-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"A Day at Work\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-english-5-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"A Day at Work\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-english-5-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"A Day at Work\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-english-5-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "unit": "Unit 6",
+      "title": "The Hundred Dresses",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"The Hundred Dresses\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "The Hundred Dresses"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"The Hundred Dresses\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-english-6-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Hundred Dresses\".",
+          "answer": "the core concept",
+          "id": "p4-english-6-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"The Hundred Dresses\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-english-6-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"The Hundred Dresses\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-english-6-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"The Hundred Dresses\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-english-6-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"The Hundred Dresses\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-english-6-q6",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}
