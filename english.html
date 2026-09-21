@@ -22,7 +22,7 @@ main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;gr
 <body>
 <header class="top"><div class="topin">
 <a class="brand" href="/">🎓 Zaker</a>
-<nav class="nav"><a href="/">Home</a><a href="/student.html?view=explain">Science</a><a href="/english.html">English</a><a href="/arabic.html">Arabic</a><a href="/social-studies.html" data-zaker-no-translate>الدراسات</a><button onclick="setPane('test')">Tests</button><button onclick="setPane('profile')">Reports</button><a href="/account.html">My Account</a></nav>
+<nav class="nav"><a href="/">Home</a><a href="/student.html?view=explain">Science</a><a href="/english.html">English</a><a href="/arabic.html">Arabic</a><a href="/social-studies.html" data-zaker-no-translate>الدراسات الاجتماعية</a><button onclick="setPane('test')">Tests</button><button onclick="setPane('profile')">Reports</button><a href="/account.html">My Account</a></nav>
 <div class="user"><select id="zakerLangSwitch" class="btn soft" onchange="setZakerLanguage(this.value)"><option value="en">EN</option><option value="ar">AR</option></select><button class="btn soft" onclick="logout()">Logout</button></div>
 </div></header>
 <div class="trackbar"><div class="in"><div><b id="studentName">Student</b><div class="muted"><span id="studentGrade">First Prep</span> — <span id="studentTrack">Track</span> — English</div></div><a class="btn soft" href="/account.html">Change Student</a></div></div>
@@ -70,7 +70,7 @@ main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;gr
 
 <aside class="card right"><h3 style="margin-top:0">English Progress</h3><div class="stat"><span>Question Bank</span><b id="questionCount">0</b></div><div class="stat"><span>Last Score</span><b id="lastScore">—</b></div><div class="stat"><span>Modules</span><b id="moduleCount">20</b></div><div class="status">English is available to both Arabic and Languages tracks.</div></aside>
 </div></main>
-<nav class="bottom"><a href="/"><span>🏠</span>Home</a><a href="/student.html?view=explain"><span>🧪</span>Science</a><a href="/english.html"><span>🔤</span>English</a><a href="/arabic.html"><span>📚</span>Arabic</a><a href="/social-studies.html" data-zaker-no-translate><span>🌍</span>الدراسات</a><button onclick="setPane('test')"><span>📝</span>Tests</button><button onclick="setPane('profile')"><span>📊</span>Reports</button></nav>
+<nav class="bottom"><a href="/"><span>🏠</span>Home</a><a href="/student.html?view=explain"><span>🧪</span>Science</a><a href="/english.html"><span>🔤</span>English</a><a href="/arabic.html"><span>📚</span>Arabic</a><a href="/social-studies.html" data-zaker-no-translate><span>🌍</span>الدراسات الاجتماعية</a><button onclick="setPane('test')"><span>📝</span>Tests</button><button onclick="setPane('profile')"><span>📊</span>Reports</button></nav>
 
 <script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
