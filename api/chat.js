@@ -14,22 +14,29 @@ const SCIENCE_SYLLABUS = [
   'The Earth and the Solar System',
   'Lunar Eclipse'
 ];
+const ENGLISH_SYLLABUS = [
+  'A Day in My Digital Life & How We Use Technology','Digital Devices','An Email to a Friend & Team-Project Roundtable',
+  'My Learning Journey & Learning Challenges and Solutions','Benefits of Learning Together','My Learning Plan & Team-Project Roundtable',
+  'An Egyptian Hero & Heroes and Role Models','A Great Egyptian Thinker — Dr. Gomaa Hamdan','A Hero Who Made a Difference — Dr. Mohamed Ghoneim & Team-Project Roundtable',
+  'Think Before You Choose & Decisions and Consequences','An Interview with an Athlete','Asking for and Giving Advice & Team-Project Roundtable',
+  'Discover Your Future! & An Interview with a Scientist','My Plan for a Future Career','My Dream Job! & Team-Project Roundtable',
+  'Being a Global Citizen & Global Citizen Talk','Ocean Circle',"Let's Make a Difference & Team-Project Roundtable",
+  'The Magic Classroom','The Dream Team'
+];
 
-async function isInCurriculum({apiKey,question,lesson,recentQuestions}){
+async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject}){
   const recent=(recentQuestions||[]).slice(0,6).map(x=>x.question).join('\n');
   const r=await fetch('https://api.openai.com/v1/responses',{
     method:'POST',
     headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
     body:JSON.stringify({
       model:'gpt-5.6-luna',
-      instructions:`You are a strict curriculum gate for first-prep Science, term 1.
-Allowed syllabus ONLY:
-${SCIENCE_SYLLABUS.map((x,i)=>`${i+1}. ${x}`).join('\n')}
+      instructions:`You are a strict curriculum gate for first-prep ${subject}, term 1.\nAllowed syllabus ONLY:\n${(subject==='English'?ENGLISH_SYLLABUS:SCIENCE_SYLLABUS).map((x,i)=>`${i+1}. ${x}`).join('\n')}
 
 Decide whether the student's message is answerable strictly within this syllabus.
 Rules:
 - IN_SCOPE if it directly asks about one of these lessons or is a natural follow-up to a recent in-scope question such as "explain more", "why?", "give me another example".
-- OUT_OF_SCOPE for any other school subject, general knowledge, coding, politics, entertainment, unrelated science, higher-level science, or topics not covered by this syllabus.
+- OUT_OF_SCOPE for any other school subject, general knowledge, coding, politics, entertainment, or topics not covered by this syllabus.
 - Do not expand the syllabus using general knowledge.
 Return exactly one token: IN_SCOPE or OUT_OF_SCOPE.`,
       input:`Current lesson: ${lesson||'unspecified'}\nRecent student questions:\n${recent||'(none)'}\n\nNew message: ${question}`
@@ -62,10 +69,11 @@ export default async function handler(req,res){
       question,
       grade='أولى إعدادي',
       lesson='',
+      subject='Science',
       studyLanguage='English',
       sessionId=''
     }=req.body||{};
-    const subject='Science';
+    const safeSubject=subject==='English'?'English':'Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
 
     let history=null;
@@ -77,16 +85,17 @@ export default async function handler(req,res){
       apiKey,
       question,
       lesson,
-      recentQuestions:history?.recent_questions||[]
+      recentQuestions:history?.recent_questions||[],
+      subject:safeSubject
     });
     if(!inScope){
-      const msg='This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
+      const msg=safeSubject==='English'?'This question is outside the current First Prep English curriculum on Zaker. Ask me about the current units, language, vocabulary, skills, or stories.':'This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
       return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||0,lessonCounts:history?.lesson_counts||{}}});
     }
 
     if(sessionId){
       try{
-        await rpc('log_ai_question',{p_session_id:sessionId,p_subject:subject,p_lesson:lesson,p_study_language:studyLanguage,p_question:question});
+        await rpc('log_ai_question',{p_session_id:sessionId,p_subject:safeSubject,p_lesson:lesson,p_study_language:studyLanguage,p_question:question});
         history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30});
       }catch(e){}
     }
@@ -94,19 +103,19 @@ export default async function handler(req,res){
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
     const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
 
-    const languageRule='Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
+    const languageRule=safeSubject==='English'?'Explain in clear English suitable for first-prep students. Keep the answer in English unless the student explicitly asks for an Arabic clarification. Focus on vocabulary, grammar, reading, writing, speaking and story comprehension within the listed syllabus.':'Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
 
     const instructions=`أنت "مدرس ذاكر"، مدرس شخصي ذكي لطلاب ${grade}.
-المادة الحالية: ${subject}.
+المادة الحالية: ${safeSubject}.
 الدرس الحالي: ${lesson||'غير محدد'}.
-مسار الطالب: Science English.
+مسار الطالب: ${safeSubject==='English'?'English — shared across Arabic and Languages tracks':'Science English'}.
 ${languageRule}
 
 هدفك ليس فقط الإجابة، بل تكوين صورة تعليمية تدريجية عن الطالب من نمط أسئلته.
 إذا كان تاريخه يدل على تكرار سؤال في مفهوم معين، أشر بلطف داخل الشرح إلى أن هذا المفهوم مهم له، بدون أحكام أو تشخيصات.
 لا تقل إن الطالب "ضعيف"؛ قل إن هذا المفهوم "يحتاج تثبيتًا" أو "يتكرر فيه السؤال".
 اعتمد على السؤال الحالي وتاريخ الأسئلة فقط، ولا تخترع مستوى أو قدرات لم تظهر في البيانات.
-مهم جدًا: لا تشرح أي موضوع خارج منهج Science المحدد في قائمة الدروس المسموح بها. إذا ظهر أثناء الإجابة أن السؤال يحتاج معلومة خارج المنهج، قل إن هذه الجزئية خارج نطاق المنهج الحالي بدل التوسع فيها.
+مهم جدًا: لا تشرح أي موضوع خارج منهج ${safeSubject} المحدد في قائمة الدروس المسموح بها. إذا ظهر أثناء الإجابة أن السؤال يحتاج معلومة خارج المنهج، قل إن هذه الجزئية خارج نطاق المنهج الحالي بدل التوسع فيها.
 
 ملخص تاريخ الأسئلة لهذا الطالب:
 إجمالي الأسئلة المسجلة: ${history?.total_questions||1}
