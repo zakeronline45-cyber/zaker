@@ -29,7 +29,7 @@ main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;gr
 <main><div class="grid">
 <aside class="card side"><h3 style="margin-top:0">📚 English Term 1</h3><div id="lessonList"></div></aside>
 <section class="card">
-<div class="hero"><span class="pill" id="unitPill">Unit 1</span><h1 id="lessonTitle">Loading...</h1><p class="muted" id="lessonSub">First Prep English — shared by Arabic and Languages tracks</p></div>
+<div class="hero"><span class="pill" id="unitPill">Unit 1</span><h1 id="lessonTitle">Loading...</h1><p class="muted" id="lessonSub">First Prep English — Languages Track — Term 1</p></div>
 <div class="tabs"><button class="tab active" data-pane="learn" onclick="setPane('learn')">📖 Learn</button><button class="tab" data-pane="ai" onclick="setPane('ai')">🤖 Ask Zaker</button><button class="tab" data-pane="test" onclick="setPane('test')">📝 Tests</button><button class="tab" data-pane="profile" onclick="setPane('profile')">📊 My Profile</button></div>
 
 <div class="pane active" id="pane-learn">
@@ -68,7 +68,7 @@ main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;gr
 </div>
 </section>
 
-<aside class="card right"><h3 style="margin-top:0">English Progress</h3><div class="stat"><span>Question Bank</span><b id="questionCount">0</b></div><div class="stat"><span>Last Score</span><b id="lastScore">—</b></div><div class="stat"><span>Modules</span><b id="moduleCount">20</b></div><div class="status">English is available to both Arabic and Languages tracks.</div></aside>
+<aside class="card right"><h3 style="margin-top:0">English Progress</h3><div class="stat"><span>Question Bank</span><b id="questionCount">0</b></div><div class="stat"><span>Last Score</span><b id="lastScore">—</b></div><div class="stat"><span>Modules</span><b id="moduleCount">20</b></div><div class="status">English is available on the Languages track only.</div></aside>
 </div></main>
 <nav class="bottom"><a href="/"><span>🏠</span>Home</a><a href="/student.html?view=explain"><span>🧪</span>Science</a><a href="/english.html"><span>🔤</span>English</a><a href="/arabic.html"><span>📚</span>Arabic</a><a href="/social-studies.html" data-zaker-no-translate><span>🌍</span>الدراسات الاجتماعية</a><button onclick="setPane('test')"><span>📝</span>Tests</button><button onclick="setPane('profile')"><span>📊</span>Reports</button></nav>
 
@@ -84,7 +84,7 @@ async function init(){
  const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);if(profiles?.[0]?.role==='admin'){location.href='/admin.html';return}
  const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(!children?.length){location.href='/account.html';return}
- const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);
+ const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);if(child.track!=='languages'){location.href='/';return}
  const {data:subs}=await sb.from('subscriptions').select('id,status,ends_at,access_source').eq('child_id',child.id).eq('status','active').order('ends_at',{ascending:false}).limit(5);
  const valid=(subs||[]).filter(s=>!s.ends_at||new Date(s.ends_at)>new Date());
  if(!valid.length){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
