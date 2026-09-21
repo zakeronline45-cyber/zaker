@@ -79,7 +79,7 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
 <button data-nav="profile" onclick="setPane('profile')">📊 التقارير</button>
 <a href="/account.html">🏆 حسابي</a>
 </nav>
-<div class="student-master-user">
+<div class="student-master-user"><select id="zakerLangSwitch" class="btn soft" onchange="setZakerLanguage(this.value)" aria-label="Language"><option value="en">EN</option><option value="ar">AR</option></select>
 <div class="coin">🪙 320</div>
 <div class="student-master-name"><b id="masterChildName">الطالب</b><small id="masterChildGrade">الصف</small></div>
 <div class="student-master-avatar">🧒</div>
@@ -147,6 +147,14 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
 <div class="pane" id="pane-test">
 <div id="testStart">
   <div class="status">أثناء الاختبار لن تظهر الحلول. بعد النهاية سيظهر: السؤال، الإجابة الصحيحة، إجابة الطالب، والشرح.</div>
+  <div class="exam-builder" style="margin-bottom:12px"><h3 style="margin-top:0">اختيار نوع الأسئلة</h3><p class="muted">اختر نوع الأسئلة قبل بدء الاختبار.</p>
+  <div class="checks" id="questionTypeMode">
+   <label class="check"><input type="radio" name="studentQType" value="mixed" checked> متنوع</label>
+   <label class="check"><input type="radio" name="studentQType" value="mcq"> اختياري</label>
+   <label class="check"><input type="radio" name="studentQType" value="complete"> أكمل</label>
+   <label class="check"><input type="radio" name="studentQType" value="reason"> علّل</label>
+   <label class="check"><input type="radio" name="studentQType" value="problem"> مسألة</label>
+  </div></div>
   <button class="btn primary" onclick="startTest()">اختبار الدرس الحالي — 10 أسئلة</button>
 
   <div class="exam-builder">
@@ -392,10 +400,12 @@ document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelect
 async function loadBank(){try{const r=await fetch('/content/questions/science-term1-u1-l'+lesson+'.json',{cache:'no-store'});if(!r.ok)throw 0;bank=await r.json();document.getElementById('questionCount').textContent=bank.questions.length}catch(e){document.getElementById('questionCount').textContent='—'}}
 function resetTest(){document.getElementById('testStart').style.display='block';document.getElementById('testArea').style.display='none';document.getElementById('testArea').innerHTML='';test=[];idx=0;answers=[]}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function selectedQuestionTypes(){const mode=document.querySelector('input[name="studentQType"]:checked')?.value||'mixed';return mode==='mixed'?['mcq','true_false','complete','reason','compare','problem']:[mode]}
+function filterQuestionTypes(arr){const types=selectedQuestionTypes();return (arr||[]).filter(q=>types.includes(q.type))}
 async function startTest(){
  if(!bank)await loadBank();if(!bank?.questions?.length)return;
  testScopeLabel='اختبار '+titles[lesson];testLessons=[lesson];
- test=shuffle(bank.questions.map(q=>({...q,lesson}))).slice(0,Math.min(10,bank.questions.length));
+ const pool=filterQuestionTypes(bank.questions.map(q=>({...q,lesson})));if(!pool.length){alert('لا توجد أسئلة من النوع المختار في هذا الدرس');return} test=shuffle(pool).slice(0,Math.min(10,pool.length));
  idx=0;answers=[];document.getElementById('testStart').style.display='none';document.getElementById('testArea').style.display='block';renderQuestion()
 }
 async function loadLessonBank(n){
@@ -406,8 +416,8 @@ async function loadLessonBank(n){
 }
 async function startMultiTest(lessons,label,count=20){
  const pools=await Promise.all(lessons.map(loadLessonBank));
- const all=pools.flat();
- if(!all.length)return;
+ const all=filterQuestionTypes(pools.flat());
+ if(!all.length){alert('لا توجد أسئلة من النوع المختار في الدروس المحددة');return}
  testScopeLabel=label;testLessons=[...lessons];
  test=shuffle(all).slice(0,Math.min(count,all.length));idx=0;answers=[];
  document.getElementById('testStart').style.display='none';document.getElementById('testArea').style.display='block';renderQuestion()
@@ -501,7 +511,7 @@ function openPrintWindow(title,bodyHtml){
  const w=window.open('','_blank','width=900,height=1000');
  if(!w){alert('اسمح بفتح النوافذ المنبثقة للطباعة');return}
  w.document.open();
- w.document.write('<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>'+esc(title)+'</title><style>@page{size:A4;margin:14mm}*{box-sizing:border-box}body{font-family:Tahoma,Arial,sans-serif;color:#17284b;line-height:1.7;margin:0}.head{border-bottom:3px solid #165DFF;padding-bottom:10px;margin-bottom:18px}.brand{font-size:26px;font-weight:900;color:#173471}.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px;color:#52627f;margin-top:8px}.q{page-break-inside:avoid;border:1px solid #dfe6f1;border-radius:10px;padding:12px;margin:0 0 12px}.q h3{margin:0 0 8px;font-size:16px;direction:ltr;text-align:left}.choice-line{direction:ltr;text-align:left;border:1px solid #e6ebf3;border-radius:7px;padding:7px;margin:5px 0}.answer-lines{height:70px;border-bottom:1px dotted #aab5c7;background:repeating-linear-gradient(to bottom,transparent 0,transparent 22px,#e7ebf2 23px)}.score{font-size:34px;font-weight:900;color:#165DFF}.wrong{border-right:4px solid #e85b66}.good{border-right:4px solid #19b887}.block{border:1px solid #dfe6f1;border-radius:10px;padding:12px;margin:10px 0;page-break-inside:avoid}.label{font-weight:900;color:#173471}.muted{color:#71809a;font-size:13px}ol{padding-right:22px}@media print{button{display:none}}</style></head><body>'+bodyHtml+'<script>window.onload=()=>{setTimeout(()=>window.print(),200)}<\/script></body></html>');
+ w.document.write('<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>'+esc(title)+'</title><style>@page{size:A4;margin:14mm}*{box-sizing:border-box}body{font-family:Tahoma,Arial,sans-serif;color:#17284b;line-height:1.7;margin:0}.head{border-bottom:3px solid #165DFF;padding-bottom:10px;margin-bottom:18px}.brand{font-size:26px;font-weight:900;color:#173471}.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px;color:#52627f;margin-top:8px}.q{page-break-inside:avoid;border:1px solid #dfe6f1;border-radius:10px;padding:12px;margin:0 0 12px}.q h3{margin:0 0 8px;font-size:16px;direction:ltr;text-align:left}.choice-line{direction:ltr;text-align:left;border:1px solid #e6ebf3;border-radius:7px;padding:7px;margin:5px 0}.answer-lines{height:70px;border-bottom:1px dotted #aab5c7;background:repeating-linear-gradient(to bottom,transparent 0,transparent 22px,#e7ebf2 23px)}.score{font-size:34px;font-weight:900;color:#165DFF}.wrong{border-right:4px solid #e85b66}.good{border-right:4px solid #19b887}.block{border:1px solid #dfe6f1;border-radius:10px;padding:12px;margin:10px 0;page-break-inside:avoid}.label{font-weight:900;color:#173471}.muted{color:#71809a;font-size:13px}ol{padding-right:22px}@media print{button{display:none}}</style></head><body>'+bodyHtml+'<script>window.onload=()=>{setTimeout(()=>window.print(),200)}<\/script><script src="/zaker-i18n.js"></script></body></html>');
  w.document.close();
 }
 function printExam(){
@@ -581,6 +591,7 @@ async function initAccount(){
   localStorage.setItem('zaker_active_child_id',child.id);
   localStorage.setItem('zaker_student_track',child.track);
   studentTrack=child.track;
+  if(!localStorage.getItem('zaker_ui_lang')) setZakerLanguage(child.track==='languages'?'en':'ar');
   aiSessionId=localStorage.getItem(childKey('zaker_ai_session_id'))||'';
   if(!aiSessionId){
     aiSessionId=(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now()+'-'+Math.random().toString(36).slice(2));
