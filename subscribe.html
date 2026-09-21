@@ -72,7 +72,7 @@ async function init(){
  if(chErr){document.getElementById('current').textContent=chErr.message;return}
  children=chs||[];
  const childSelect=document.getElementById('childId');
- childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(window.zakerLang?.()==='en'?(ch.track==='arabic'?'Arabic':'Languages'):(ch.track==='arabic'?'عربي':'لغات'))+' — '+(window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[ch.grade]||ch.grade):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade))+(i===1?(window.zakerLang?.()==='en'?' — 25% second-child discount':' — خصم الطفل الثاني 25%'):'')+'</option>').join('');
+ childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(window.zakerLang?.()==='en'?(ch.track==='arabic'?'Arabic':'Languages'):(ch.track==='arabic'?'عربي':'لغات'))+' — '+(window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[ch.grade]||ch.grade):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade))+(i===1?(window.zakerLang?.()==='en'?' — 25% second-child discount':' — خصم الطفل الثاني 25%'):'')+'</option>').join('');
  const promoSelect=document.getElementById('promoChildId');
  promoSelect.innerHTML=children.map(ch=>'<option value="'+ch.id+'">'+ch.full_name+'</option>').join('');
  const requested=new URLSearchParams(location.search).get('child');
