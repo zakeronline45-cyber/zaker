@@ -1,0 +1,690 @@
+{
+  "subject": "P4 Science",
+  "displayName": "Science",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source": "El-Moasser Science Fourth Primary First Term 2027",
+  "modules": [
+    {
+      "id": 1,
+      "unit": "Unit 1",
+      "title": "Nature in Our Surroundings",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Nature in Our Surroundings\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Nature in Our Surroundings"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Nature in Our Surroundings\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-1-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Nature in Our Surroundings\".",
+          "answer": "the core concept",
+          "id": "p4-science-1-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Nature in Our Surroundings\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-1-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"Nature in Our Surroundings\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-1-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"Nature in Our Surroundings\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-1-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Nature in Our Surroundings\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-1-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "unit": "Unit 2",
+      "title": "How Insects Grow",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"How Insects Grow\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "How Insects Grow"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"How Insects Grow\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-2-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"How Insects Grow\".",
+          "answer": "the core concept",
+          "id": "p4-science-2-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"How Insects Grow\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-2-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"How Insects Grow\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-2-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"How Insects Grow\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-2-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"How Insects Grow\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-2-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "unit": "Unit 3",
+      "title": "How Plants Grow",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"How Plants Grow\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "How Plants Grow"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"How Plants Grow\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-3-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"How Plants Grow\".",
+          "answer": "the core concept",
+          "id": "p4-science-3-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"How Plants Grow\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-3-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"How Plants Grow\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-3-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"How Plants Grow\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-3-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"How Plants Grow\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-3-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "unit": "Unit 4",
+      "title": "Properties of Light",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Properties of Light\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Properties of Light"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Properties of Light\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-4-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Properties of Light\".",
+          "answer": "the core concept",
+          "id": "p4-science-4-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Properties of Light\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-4-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"Properties of Light\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-4-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"Properties of Light\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-4-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Properties of Light\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-4-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "unit": "Unit 5",
+      "title": "Properties of Sound",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Properties of Sound\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Properties of Sound"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Properties of Sound\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-5-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Properties of Sound\".",
+          "answer": "the core concept",
+          "id": "p4-science-5-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Properties of Sound\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-5-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"Properties of Sound\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-5-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"Properties of Sound\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-5-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Properties of Sound\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-5-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "unit": "Unit 6",
+      "title": "The Force of Wind",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"The Force of Wind\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "The Force of Wind"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"The Force of Wind\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-6-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Force of Wind\".",
+          "answer": "the core concept",
+          "id": "p4-science-6-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"The Force of Wind\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-6-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"The Force of Wind\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-6-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"The Force of Wind\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-6-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"The Force of Wind\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-6-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "unit": "Unit 7",
+      "title": "The Force of Rubber",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"The Force of Rubber\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "The Force of Rubber"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"The Force of Rubber\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-7-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Force of Rubber\".",
+          "answer": "the core concept",
+          "id": "p4-science-7-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"The Force of Rubber\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-7-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"The Force of Rubber\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-7-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"The Force of Rubber\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-7-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"The Force of Rubber\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-7-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "unit": "Unit 8",
+      "title": "Soil, Water, and Life in Egypt",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Soil, Water, and Life in Egypt\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Soil, Water, and Life in Egypt"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Soil, Water, and Life in Egypt\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-science-8-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Soil, Water, and Life in Egypt\".",
+          "answer": "the core concept",
+          "id": "p4-science-8-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Soil, Water, and Life in Egypt\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-science-8-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "reason",
+          "text": "Briefly explain the main idea in \"Soil, Water, and Life in Egypt\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-science-8-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "complete",
+          "text": "State one key term or idea from \"Soil, Water, and Life in Egypt\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-science-8-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Soil, Water, and Life in Egypt\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-science-8-q6",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}
