@@ -1,13 +1,19 @@
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
   const {subject='Science',lesson,module,id,studentAnswer,studyLanguage='English'}=req.body||{};
-  if(!id || (subject==='Science'&&!lesson) || ((subject==='English'||subject==='Arabic'||subject==='Social Studies'||subject==='Math'||subject==='Mathematics Arabic')&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
+  const modularSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
+  if(!id || (subject==='Science'&&!lesson) || (modularSubjects.includes(subject)&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
   try{
     const host=req.headers.host;
     const proto=(req.headers['x-forwarded-proto']||'https');
     let q=null;
-    if(subject==='English'||subject==='Arabic'||subject==='Social Studies'||subject==='Math'||subject==='Mathematics Arabic'){
-      const file=subject==='Arabic'?'arabic-term1.json':subject==='Social Studies'?'social-studies-term1.json':subject==='Math'?'math-term1.json':subject==='Mathematics Arabic'?'math-ar-term1.json':'english-term1.json';
+    if(modularSubjects.includes(subject)){
+      const fileMap={
+        'Arabic':'arabic-term1.json','Social Studies':'social-studies-term1.json','Math':'math-term1.json','Mathematics Arabic':'math-ar-term1.json','English':'english-term1.json',
+        'P4 Math':'p4-math-term1.json','P4 Mathematics Arabic':'p4-math-ar-term1.json','P4 Science':'p4-science-term1.json','P4 Science Arabic':'p4-science-ar-term1.json',
+        'P4 English':'p4-english-term1.json','P4 Arabic':'p4-arabic-term1.json','P4 Social Studies':'p4-social-studies-term1.json'
+      };
+      const file=fileMap[subject];
       const r=await fetch(`${proto}://${host}/content/${file}`,{cache:'no-store'});
       if(!r.ok) return res.status(404).json({error:subject+' question bank unavailable'});
       const bank=await r.json();
@@ -43,7 +49,7 @@ export default async function handler(req,res){
           headers:{'Authorization':`Bearer ${key}`,'Content-Type':'application/json'},
           body:JSON.stringify({
             model:'gpt-5.6-luna',
-            instructions:`You are grading a first-prep ${subject} answer. Compare the student answer with the reference by meaning and task requirements. Return only CORRECT or INCORRECT. For English writing/rewrite tasks, accept grammatically reasonable answers that satisfy the prompt even if wording differs. For Arabic writing, reading, rhetoric and grammar tasks, accept equivalent correct Arabic meanings and valid formulations; do not require exact wording unless the item is a fixed grammar/spelling answer. For Social Studies, accept equivalent correct Arabic explanations of geographic, historical, economic, or civic ideas when the meaning matches the reference. For Math and Mathematics Arabic, accept mathematically equivalent answers and equivalent numeric forms. Ignore harmless punctuation differences.`,
+            instructions:`You are grading a ${subject} answer for the grade supplied by the platform. Compare the student answer with the reference by meaning and task requirements. Return only CORRECT or INCORRECT. For English writing/rewrite tasks, accept grammatically reasonable answers that satisfy the prompt even if wording differs. For Arabic writing, reading, rhetoric and grammar tasks, accept equivalent correct Arabic meanings and valid formulations; do not require exact wording unless the item is a fixed grammar/spelling answer. For Social Studies, accept equivalent correct Arabic explanations of geographic, historical, economic, or civic ideas when the meaning matches the reference. For Math and Mathematics Arabic, accept mathematically equivalent answers and equivalent numeric forms. Ignore harmless punctuation differences.`,
             input:`Question: ${q.text}\nReference answer: ${q.answer}\nStudent answer: ${studentAnswer||''}`
           })
         });
