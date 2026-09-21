@@ -72,7 +72,7 @@ async function init(){
  if(chErr){document.getElementById('current').textContent=chErr.message;return}
  children=chs||[];
  const childSelect=document.getElementById('childId');
- childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(ch.track==='arabic'?'عربي':'لغات')+' — '+({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade)+(i===1?' — خصم الطفل الثاني 25%':'')+'</option>').join('');
+ childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(window.zakerLang?.()==='en'?(ch.track==='arabic'?'Arabic':'Languages'):(ch.track==='arabic'?'عربي':'لغات'))+' — '+(window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[ch.grade]||ch.grade):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade))+(i===1?(window.zakerLang?.()==='en'?' — 25% second-child discount':' — خصم الطفل الثاني 25%'):'')+'</option>').join('');
  const promoSelect=document.getElementById('promoChildId');
  promoSelect.innerHTML=children.map(ch=>'<option value="'+ch.id+'">'+ch.full_name+'</option>').join('');
  const requested=new URLSearchParams(location.search).get('child');
@@ -80,44 +80,40 @@ async function init(){
  childSelect.addEventListener('change',()=>{renderSubjectChoices();calc()});
  renderSubjectChoices();
  if(!children.length){
-   document.getElementById('current').innerHTML='لا يوجد أبناء على الحساب. <a href="/account.html">أضف ابنًا أولًا</a>.';
+   document.getElementById('current').innerHTML=window.zakerLang?.()==='en'?'No children on this account. <a href="/account.html">Add a child first</a>.':'لا يوجد أبناء على الحساب. <a href="/account.html">أضف ابنًا أولًا</a>.';
    document.querySelector('button[onclick="startBankTransfer()"]').disabled=true;
    return;
  }
 
  const {data,error}=await sb.from('subscriptions').select('*,children(full_name)').eq('user_id',session.user.id).order('created_at',{ascending:false}).limit(5);
  const box=document.getElementById('current');
- if(error||!data?.length){box.textContent='لا يوجد اشتراك نشط حاليًا.';calc();return}
+ if(error||!data?.length){box.textContent=window.zakerT('لا يوجد اشتراك نشط حاليًا.','No active subscription currently.');calc();return}
  const active=(data||[]).find(s=>s.status==='active');
- box.innerHTML=active
-   ?'<span class="ok">يوجد اشتراك نشط</span> — '+(active.children?.full_name||'طالب')+' — ينتهي: '+new Date(active.ends_at).toLocaleDateString('ar-EG')
-   :'آخر طلب اشتراك: '+data[0].status;
+ box.innerHTML=active?(window.zakerLang?.()==='en'?'<span class="ok">Active subscription</span> — '+(active.children?.full_name||'Student')+' — ends: '+new Date(active.ends_at).toLocaleDateString('en-GB'):'<span class="ok">يوجد اشتراك نشط</span> — '+(active.children?.full_name||'طالب')+' — ينتهي: '+new Date(active.ends_at).toLocaleDateString('ar-EG')):(window.zakerLang?.()==='en'?'Latest subscription request: ':'آخر طلب اشتراك: ')+data[0].status;
  calc();
 }
 async function redeemPromo(){
  const childId=document.getElementById('promoChildId').value;
  const code=document.getElementById('promoCode').value.trim().toUpperCase();
  const box=document.getElementById('promoMsg');box.style.display='block';
- if(!childId||!code){box.textContent='اختار الابن واكتب الكود.';return}
+ if(!childId||!code){box.textContent=window.zakerT('اختار الابن واكتب الكود.','Choose the child and enter the code.');return}
  const {data,error}=await sb.rpc('redeem_promo_code',{p_child_id:childId,p_code:code});
  if(error){box.className='status err';box.textContent=error.message;return}
  box.className='status';
- box.innerHTML='<span class="ok">تم تفعيل الاشتراك المجاني.</span> '+data.free_days+' يوم — '+data.subject_count+' مادة.';
+ box.innerHTML=window.zakerLang?.()==='en'?'<span class="ok">Free subscription activated.</span> '+data.free_days+' days — '+data.subject_count+' subjects.':'<span class="ok">تم تفعيل الاشتراك المجاني.</span> '+data.free_days+' يوم — '+data.subject_count+' مادة.';
  document.getElementById('promoCode').value='';
  await init();
 }
 
 function availableSubjects(){
   const ch=children.find(x=>x.id===document.getElementById('childId')?.value);
-  return ch?.track==='arabic'
-   ?['العلوم','الرياضيات','English','العربي','الدراسات']
-   :['Science','Math','English','العربي','الدراسات'];
+  if(window.zakerLang?.()==='en')return ['Science','Math','English','Arabic','Social Studies']; return ch?.track==='arabic'?['العلوم','الرياضيات','English','العربي','الدراسات']:['Science','Math','English','العربي','الدراسات'];
 }
 function renderSubjectChoices(){
   const need=Number(document.getElementById('subjectCount').value)||1;
   const box=document.getElementById('subjectChoices');
   const current=[...document.querySelectorAll('.subjectPick:checked')].map(x=>x.value);
-  box.innerHTML='<b>اختار '+need+' مادة بالضبط</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">'+
+  box.innerHTML='<b>'+(window.zakerLang?.()==='en'?'Choose exactly '+need+' subject(s)':'اختار '+need+' مادة بالضبط')+'</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">'+
    availableSubjects().map(s=>'<label style="background:#f7f9ff;border:1px solid var(--line);padding:8px 10px;border-radius:10px"><input class="subjectPick" type="checkbox" value="'+s+'" '+(current.includes(s)?'checked':'')+'> '+s+'</label>').join('')+
    '</div>';
 }
@@ -128,10 +124,8 @@ function calc(){
   const childIndex=idx+1;
   const base=250+(n-1)*225;
   const total=childIndex===2?Math.round(base*.75*100)/100:base;
-  document.getElementById('calcPrice').innerHTML=total+' <small>جنيه / شهر</small>';
-  document.getElementById('calcNote').textContent=(n===1
-    ?'أول مادة = 250 جنيه'
-    :'250 لأول مادة + '+(n-1)+' × 225 للمواد الإضافية')+(childIndex===2?'، وخصم الطفل الثاني 25% مطبق تلقائيًا.':'');
+  document.getElementById('calcPrice').innerHTML=total+' <small>'+(window.zakerLang?.()==='en'?'EGP / month':'جنيه / شهر')+'</small>';
+  document.getElementById('calcNote').textContent=window.zakerLang?.()==='en'?(n===1?'First subject = EGP 250':'EGP 250 for the first subject + '+(n-1)+' × EGP 225 for extra subjects')+(childIndex===2?', with the 25% second-child discount applied automatically.':''):(n===1?'أول مادة = 250 جنيه':'250 لأول مادة + '+(n-1)+' × 225 للمواد الإضافية')+(childIndex===2?'، وخصم الطفل الثاني 25% مطبق تلقائيًا.':'');
 }
 let pendingPayment=null;
 
@@ -139,9 +133,9 @@ async function loadBankSettings(){
   const {data}=await sb.from('bank_transfer_settings').select('*').eq('id',1).limit(1);
   const x=data?.[0]||{};
   document.getElementById('bankDetails').innerHTML=
-    '<div><b>اسم الحساب:</b> '+(x.account_name||'سيتم إضافته')+'</div>'+
-    '<div><b>البنك:</b> '+(x.bank_name||'سيتم إضافته')+'</div>'+
-    (x.account_number?'<div><b>رقم الحساب:</b> '+x.account_number+'</div>':'')+
+    (window.zakerLang?.()==='en'?'<div><b>Account Name:</b> '+(x.account_name||'To be added')+'</div>':'<div><b>اسم الحساب:</b> '+(x.account_name||'سيتم إضافته')+'</div>')+
+    (window.zakerLang?.()==='en'?'<div><b>Bank:</b> '+(x.bank_name||'To be added')+'</div>':'<div><b>البنك:</b> '+(x.bank_name||'سيتم إضافته')+'</div>')+
+    (x.account_number?(window.zakerLang?.()==='en'?'<div><b>Account Number:</b> '+x.account_number+'</div>':'<div><b>رقم الحساب:</b> '+x.account_number+'</div>'):'')+
     (x.iban?'<div><b>IBAN:</b> '+x.iban+'</div>':'')+
     (x.instructions?'<div style="margin-top:8px">'+x.instructions+'</div>':'');
 }
@@ -151,25 +145,25 @@ async function startBankTransfer(){
  const subjectCount=Number(document.getElementById('subjectCount').value)||1;
  const childId=document.getElementById('childId').value;
  const subjects=[...document.querySelectorAll('.subjectPick:checked')].map(x=>x.value);
- if(subjects.length!==subjectCount){alert('اختار '+subjectCount+' مادة بالضبط');return}
+ if(subjects.length!==subjectCount){alert(window.zakerLang?.()==='en'?'Choose exactly '+subjectCount+' subject(s)':'اختار '+subjectCount+' مادة بالضبط');return}
  const r=await fetch('/api/create-bank-transfer',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subjectCount,childId,subjects})});
  const j=await r.json();
- if(!r.ok){alert(j.error||'تعذر إنشاء طلب التحويل');return}
+ if(!r.ok){alert(j.error||window.zakerT('تعذر إنشاء طلب التحويل','Could not create the transfer request'));return}
  pendingPayment=j.payment;
  document.getElementById('refCode').textContent=j.reference_code;
  document.getElementById('amountDue').textContent=j.amount;
- document.getElementById('calcNote').textContent=(j.child_name||'الطالب')+(j.discount_applied?' — تم تطبيق خصم الطفل الثاني 25%':'');
+ document.getElementById('calcNote').textContent=(j.child_name||window.zakerT('الطالب','Student'))+(j.discount_applied?window.zakerT(' — تم تطبيق خصم الطفل الثاني 25%',' — 25% second-child discount applied'):'');
  await loadBankSettings();
  document.getElementById('bankBox').style.display='block';
  document.getElementById('bankBox').scrollIntoView({behavior:'smooth'});
 }
 
 async function submitProof(){
- if(!pendingPayment){alert('ابدأ طلب تحويل أولًا');return}
+ if(!pendingPayment){alert(window.zakerT('ابدأ طلب تحويل أولًا','Start a bank transfer request first'));return}
  const file=document.getElementById('proofFile').files[0];
  const senderName=document.getElementById('senderName').value.trim();
  const bankTransferReference=document.getElementById('transferReference').value.trim();
- if(!file||!senderName||!bankTransferReference){alert('أكمل اسم المحوّل ومرجع التحويل وارفع الإيصال');return}
+ if(!file||!senderName||!bankTransferReference){alert(window.zakerT('أكمل اسم المحوّل ومرجع التحويل وارفع الإيصال','Enter sender name, transfer reference, and upload the receipt'));return}
  const ext=(file.name.split('.').pop()||'jpg').toLowerCase();
  const path=session.user.id+'/'+pendingPayment.id+'.'+ext;
  const up=await sb.storage.from('bank-transfer-proofs').upload(path,file,{upsert:true});
@@ -181,8 +175,8 @@ async function submitProof(){
    p_proof_path:path
  });
  const box=document.getElementById('proofMsg');box.style.display='block';
- if(error){box.textContent='تم رفع الملف لكن حصلت مشكلة في حفظ بيانات التحويل: '+error.message;return}
- box.innerHTML='<span class="ok">تم إرسال التحويل للمراجعة.</span> لن يتفعّل الاشتراك إلا بعد مطابقة التحويل واعتماده.';
+ if(error){box.textContent=window.zakerT('تم رفع الملف لكن حصلت مشكلة في حفظ بيانات التحويل: ','The file was uploaded, but saving transfer details failed: ')+error.message;return}
+ box.innerHTML=window.zakerLang?.()==='en'?'<span class="ok">Transfer submitted for review.</span> The subscription will activate after the transfer is verified and approved.':'<span class="ok">تم إرسال التحويل للمراجعة.</span> لن يتفعّل الاشتراك إلا بعد مطابقة التحويل واعتماده.';
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
