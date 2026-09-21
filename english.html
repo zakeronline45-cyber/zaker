@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#4b1678">
+<title>Zaker | English</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/zaker-i18n.js"></script>
+<style>
+:root{--p:#4b1678;--p2:#742499;--o:#ff7418;--ink:#241331;--muted:#756a80;--line:#eadff0;--bg:#f7f4fa;--g:#178b5d;--r:#d82e47}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.top{position:sticky;top:0;z-index:50;background:linear-gradient(135deg,#351044,#742499);color:#fff;box-shadow:0 8px 25px #35104430}.topin{max-width:1400px;margin:auto;min-height:78px;padding:0 18px;display:flex;align-items:center;gap:16px}.brand{font-size:28px;font-weight:900}.nav{display:flex;gap:6px;flex:1;justify-content:center}.nav a,.nav button{border:0;background:transparent;color:#fff;padding:10px 14px;border-radius:11px;font-weight:800}.nav a:hover,.nav button:hover{background:#ffffff18}.user{display:flex;align-items:center;gap:8px}.btn{border:0;border-radius:11px;padding:10px 14px;font-weight:800}.soft{background:#f2e7f7;color:var(--p)}.top .soft{background:#ffffff18;color:#fff;border:1px solid #ffffff38}.primary{background:var(--p);color:#fff}.danger{background:#fff0f1;color:var(--r)}
+.trackbar{max-width:1400px;margin:14px auto 0;padding:0 16px}.trackbar .in{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 8px 22px #3510440d}
+main{max-width:1400px;margin:14px auto 80px;padding:0 16px}.grid{display:grid;grid-template-columns:270px minmax(0,1fr) 250px;gap:15px;align-items:start}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:17px;box-shadow:0 10px 28px #3510440d}.side{position:sticky;top:108px;max-height:calc(100vh - 130px);overflow:auto}.unit-title{font-weight:900;color:var(--p);margin:14px 0 7px}.lesson{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px 11px;margin:6px 0;color:#4e4560}.lesson.active{background:#f3e7f8;color:var(--p);border-color:#cfaedf;font-weight:900}.hero{background:linear-gradient(135deg,#f2e7f8,#fff);border:1px solid var(--line);border-radius:18px;padding:18px}.hero h1{margin:0 0 7px;color:#351044;font-size:24px}.muted{color:var(--muted)}.pill{display:inline-block;background:#f2e7f7;color:var(--p);font-size:12px;font-weight:900;border-radius:999px;padding:5px 9px}.tabs{display:flex;gap:7px;background:#faf7fc;border-radius:15px;padding:7px;margin:14px 0;flex-wrap:wrap}.tab{border:0;background:#fff;border-radius:999px;padding:9px 13px;font-weight:800;color:#5a4864}.tab.active{background:var(--p);color:#fff}.pane{display:none}.pane.active{display:block}
+.section{border:1px solid var(--line);border-radius:15px;padding:14px;margin:11px 0}.section h3{margin:0 0 9px;color:#351044}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{background:#f8f5fb;border:1px solid var(--line);border-radius:999px;padding:7px 10px}.vocab{display:grid;grid-template-columns:1fr 1.5fr;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}.vocab div{padding:9px;border-bottom:1px solid var(--line)}.vocab div:nth-child(odd){font-weight:900;background:#fbf8fd}.vocab div:nth-last-child(-n+2){border-bottom:0}.passage{line-height:1.8;background:#fbf8fd;border-left:4px solid var(--p);padding:13px;border-radius:10px}
+.exam-builder{background:#fbf8fd;border:1px solid var(--line);border-radius:15px;padding:14px;margin:12px 0}.checks{display:flex;gap:8px;flex-wrap:wrap}.check{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px}.testhead{display:flex;justify-content:space-between;gap:10px;align-items:center}.timer{background:#fff0f0;color:#c93545;border:1px solid #ffd0d4;border-radius:999px;padding:8px 13px;font-weight:900}.progress{height:8px;background:#eee8f1;border-radius:99px;overflow:hidden;margin:10px 0}.progress i{display:block;height:100%;background:var(--p)}.qbox{border:1px solid var(--line);border-radius:16px;padding:16px}.qtext{font-size:18px;font-weight:800;line-height:1.7}.choice{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:11px;padding:11px;margin:8px 0}.choice.selected{border-color:var(--p);background:#f5ecf9}.textanswer{width:100%;min-height:100px;border:1px solid var(--line);border-radius:11px;padding:11px}.submitted{background:#effbf7;border:1px solid #c6eadc;color:#216c56;border-radius:10px;padding:10px;margin-top:10px}.status{background:#f8f5fb;border:1px solid var(--line);border-radius:10px;padding:10px;margin:10px 0}.result{text-align:center;background:#faf7fc;border-radius:15px;padding:20px}.result b{display:block;font-size:38px;color:var(--p)}.feedback{display:grid;gap:10px;margin-top:12px}.feedback .item{border:1px solid var(--line);border-radius:12px;padding:12px}.profile-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.kpi{background:#faf7fc;border-radius:12px;padding:12px}.kpi b{display:block;font-size:22px;color:#351044}.history{border:1px solid var(--line);border-radius:11px;padding:11px;margin:8px 0}.right .stat{background:#faf7fc;border-radius:13px;padding:13px;margin:8px 0}.right .stat b{display:block;font-size:22px;color:#351044}.ai{display:flex;gap:8px}.ai input{flex:1;border:1px solid var(--line);border-radius:11px;padding:11px}.answer{white-space:pre-wrap;background:#faf7fc;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}
+.bottom{display:none}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}.side{position:static;max-height:none}.right{display:none}.nav{display:none}}
+@media(max-width:700px){body{padding-bottom:74px}.profile-kpis{grid-template-columns:1fr 1fr}.vocab{grid-template-columns:1fr}.vocab div{border-bottom:1px solid var(--line)!important}.tabs{display:grid;grid-template-columns:1fr 1fr}.bottom{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);left:0;right:0;bottom:0;z-index:100;background:#351044;color:#fff;padding:9px 4px}.bottom a,.bottom button{border:0;background:transparent;color:#fff;display:grid;place-items:center;gap:2px;font-size:11px}.bottom span{font-size:20px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+<a class="brand" href="/">🎓 Zaker</a>
+<nav class="nav"><a href="/">Home</a><a href="/student.html?view=explain">Science</a><a href="/english.html">English</a><button onclick="setPane('test')">Tests</button><button onclick="setPane('profile')">Reports</button><a href="/account.html">My Account</a></nav>
+<div class="user"><select id="zakerLangSwitch" class="btn soft" onchange="setZakerLanguage(this.value)"><option value="en">EN</option><option value="ar">AR</option></select><button class="btn soft" onclick="logout()">Logout</button></div>
+</div></header>
+<div class="trackbar"><div class="in"><div><b id="studentName">Student</b><div class="muted"><span id="studentGrade">First Prep</span> — <span id="studentTrack">Track</span> — English</div></div><a class="btn soft" href="/account.html">Change Student</a></div></div>
+<main><div class="grid">
+<aside class="card side"><h3 style="margin-top:0">📚 English Term 1</h3><div id="lessonList"></div></aside>
+<section class="card">
+<div class="hero"><span class="pill" id="unitPill">Unit 1</span><h1 id="lessonTitle">Loading...</h1><p class="muted" id="lessonSub">First Prep English — shared by Arabic and Languages tracks</p></div>
+<div class="tabs"><button class="tab active" data-pane="learn" onclick="setPane('learn')">📖 Learn</button><button class="tab" data-pane="ai" onclick="setPane('ai')">🤖 Ask Zaker</button><button class="tab" data-pane="test" onclick="setPane('test')">📝 Tests</button><button class="tab" data-pane="profile" onclick="setPane('profile')">📊 My Profile</button></div>
+
+<div class="pane active" id="pane-learn">
+ <div class="section"><h3>Learning Focus</h3><div id="skills"></div></div>
+ <div class="section"><h3>Vocabulary</h3><div id="vocab" class="vocab"></div></div>
+ <div class="section"><h3>Language in Use</h3><ul id="grammar"></ul></div>
+ <div class="section"><h3>Reading / Context</h3><div id="passage" class="passage"></div></div>
+</div>
+
+<div class="pane" id="pane-ai">
+ <div class="section"><h3>Ask Zaker English Tutor</h3><p class="muted">Ask about vocabulary, grammar, reading, writing, speaking, or the current story.</p><div class="ai"><input id="aiQuestion" placeholder="Type your English question here..."><button class="btn primary" onclick="askAI()">Ask</button></div><div id="aiAnswer" class="answer" style="display:none"></div></div>
+</div>
+
+<div class="pane" id="pane-test">
+ <div id="testStart">
+  <div class="exam-builder"><h3 style="margin-top:0">Question Type</h3><div class="checks">
+   <label class="check"><input type="radio" name="qtype" value="mixed" checked> Mixed</label>
+   <label class="check"><input type="radio" name="qtype" value="mcq"> MCQ</label>
+   <label class="check"><input type="radio" name="qtype" value="complete"> Complete</label>
+   <label class="check"><input type="radio" name="qtype" value="rewrite"> Rewrite</label>
+   <label class="check"><input type="radio" name="qtype" value="writing"> Writing</label>
+  </div></div>
+  <div class="exam-builder"><h3 style="margin-top:0">Choose a Test</h3><div class="checks">
+   <button class="btn primary" onclick="startCurrentTest()">Current Module — 10 Questions</button>
+   <button class="btn soft" onclick="startUnitTest()">Current Unit — 20 Questions</button>
+   <button class="btn soft" onclick="startFullTest()">Full Term — 30 Questions</button>
+  </div><p class="muted">Each question has a maximum of 90 seconds.</p></div>
+ </div>
+ <div id="testArea" style="display:none"></div>
+</div>
+
+<div class="pane" id="pane-profile">
+ <div class="profile-kpis"><div class="kpi"><span>English Tests</span><b id="pfTests">0</b></div><div class="kpi"><span>Average</span><b id="pfAvg">—</b></div><div class="kpi"><span>Modules Viewed</span><b id="pfLessons">0</b></div><div class="kpi"><span>Mistakes</span><b id="pfWeak">0</b></div></div>
+ <div class="section"><h3>Recent English Tests</h3><div id="pfHistory"></div></div>
+ <div class="section"><h3>Weaknesses & Review Plan</h3><div id="pfWeakness"></div></div>
+</div>
+</section>
+
+<aside class="card right"><h3 style="margin-top:0">English Progress</h3><div class="stat"><span>Question Bank</span><b id="questionCount">0</b></div><div class="stat"><span>Last Score</span><b id="lastScore">—</b></div><div class="stat"><span>Modules</span><b id="moduleCount">20</b></div><div class="status">English is available to both Arabic and Languages tracks.</div></aside>
+</div></main>
+<nav class="bottom"><a href="/"><span>🏠</span>Home</a><a href="/student.html?view=explain"><span>🧪</span>Science</a><a href="/english.html"><span>🔤</span>English</a><button onclick="setPane('test')"><span>📝</span>Tests</button><button onclick="setPane('profile')"><span>📊</span>Reports</button></nav>
+
+<script>
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+let session=null,child=null,curriculum=null,currentId=1,current=null,test=[],idx=0,answers=[],selectedChoice=null,timer=null,timeLeft=90,testLabel='',testModuleIds=[],profileResults=[];
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const childKey=base=>child?.id?base+'_'+child.id:base;
+const uiLang=()=>window.zakerLang?.()||localStorage.getItem('zaker_ui_lang')||'en';
+
+async function init(){
+ const x=await sb.auth.getSession();session=x.data.session;if(!session){location.href='/login.html?next=/english.html';return}
+ const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);if(profiles?.[0]?.role==='admin'){location.href='/admin.html';return}
+ const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
+ if(!children?.length){location.href='/account.html';return}
+ const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);
+ const {data:subs}=await sb.from('subscriptions').select('id,status,ends_at,access_source').eq('child_id',child.id).eq('status','active').order('ends_at',{ascending:false}).limit(5);
+ const valid=(subs||[]).filter(s=>!s.ends_at||new Date(s.ends_at)>new Date());
+ if(!valid.length){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
+ const paidIds=valid.filter(s=>s.access_source==='paid').map(s=>s.id);let hasEnglish=valid.some(s=>s.access_source!=='paid');
+ if(!hasEnglish&&paidIds.length){const {data:e}=await sb.from('subscription_subjects').select('subscription_id,subject_code').in('subscription_id',paidIds);hasEnglish=(e||[]).some(x=>String(x.subject_code).toLowerCase()==='english')}
+ if(!hasEnglish){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
+ document.getElementById('studentName').textContent=child.full_name;
+ document.getElementById('studentGrade').textContent=({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[child.grade]||child.grade);
+ document.getElementById('studentTrack').textContent=child.track==='arabic'?'Arabic Track':'Languages Track';
+ const r=await fetch('/content/english-term1.json',{cache:'no-store'});curriculum=await r.json();document.getElementById('moduleCount').textContent=curriculum.modules.length;document.getElementById('questionCount').textContent=curriculum.modules.reduce((a,m)=>a+(m.questions?.length||0),0);
+ renderList();selectModule(Number(new URLSearchParams(location.search).get('module'))||1);
+ const view=new URLSearchParams(location.search).get('view');if(['learn','ai','test','profile'].includes(view))setPane(view);
+}
+
+function renderList(){
+ const groups={};curriculum.modules.forEach(m=>(groups[m.unit]??=[]).push(m));
+ lessonList.innerHTML=Object.entries(groups).map(([u,mods])=>'<div class="unit-title">'+esc(mods[0].unitTitle)+'</div>'+mods.map(m=>'<button class="lesson" data-id="'+m.id+'" onclick="selectModule('+m.id+')">'+esc(m.title)+'</button>').join('')).join('');
+}
+function selectModule(id){
+ currentId=id;current=curriculum.modules.find(x=>x.id===id)||curriculum.modules[0];
+ document.querySelectorAll('.lesson').forEach(x=>x.classList.toggle('active',Number(x.dataset.id)===current.id));
+ unitPill.textContent=(current.unit<=6?'Unit '+current.unit:current.unitTitle);lessonTitle.textContent=current.title;lessonSub.textContent=current.unitTitle+' — First Prep English';
+ skills.innerHTML='<ul>'+current.skills.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+ vocab.innerHTML=current.vocab.map(([w,d])=>'<div>'+esc(w)+'</div><div>'+esc(d)+'</div>').join('');
+ grammar.innerHTML=current.grammar.map(x=>'<li>'+esc(x)+'</li>').join('');
+ passage.textContent=current.passage;
+ logLesson(current);
+ resetTest();history.replaceState(null,'','/english.html?module='+current.id);
+}
+function setPane(name){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.pane===name));document.querySelectorAll('.pane').forEach(x=>x.classList.toggle('active',x.id==='pane-'+name));if(name==='profile')renderProfile();document.querySelector('main')?.scrollIntoView({behavior:'smooth',block:'start'})}
+function selectedType(){return document.querySelector('input[name="qtype"]:checked')?.value||'mixed'}
+function poolForModules(ids){let all=curriculum.modules.filter(m=>ids.includes(m.id)).flatMap(m=>(m.questions||[]).map(q=>({...q,module:m.id,moduleTitle:m.title})));const t=selectedType();if(t!=='mixed')all=all.filter(q=>q.type===t);return all}
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function startCurrentTest(){startTest([current.id],'English — '+current.title,10)}
+function startUnitTest(){const ids=curriculum.modules.filter(m=>m.unit===current.unit).map(m=>m.id);startTest(ids,'English — '+current.unitTitle,20)}
+function startFullTest(){startTest(curriculum.modules.map(m=>m.id),'English — Full Term',30)}
+function startTest(ids,label,count){const pool=poolForModules(ids);if(!pool.length){alert('No questions are available for the selected type.');return}test=shuffle(pool).slice(0,Math.min(count,pool.length));idx=0;answers=[];testLabel=label;testModuleIds=ids;testStart.style.display='none';testArea.style.display='block';renderQuestion()}
+function resetTest(){clearInterval(timer);testStart.style.display='block';testArea.style.display='none';testArea.innerHTML='';test=[];idx=0;answers=[]}
+function renderQuestion(){
+ clearInterval(timer);selectedChoice=null;const q=test[idx];let input='';
+ if(q.type==='mcq')input=(q.choices||[]).map(c=>'<button class="choice" data-value="'+esc(c)+'" onclick="pickChoice(this)">'+esc(c)+'</button>').join('');
+ else input='<textarea id="writtenAnswer" class="textanswer" placeholder="Type your answer here..."></textarea>';
+ testArea.innerHTML='<div class="testhead"><b>'+esc(testLabel)+'</b><div class="timer">⏱ <span id="timeLeft">90</span>s</div></div><div class="progress"><i style="width:'+((idx/test.length)*100)+'%"></i></div><div class="qbox"><span class="pill">'+esc(q.type.toUpperCase())+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button id="submitBtn" class="btn primary" style="margin-top:12px" onclick="submitAnswer(false)">Submit Answer</button><div id="submitMsg"></div></div>';
+ timeLeft=90;timer=setInterval(()=>{timeLeft--;const el=document.getElementById('timeLeft');if(el)el.textContent=timeLeft;if(timeLeft<=0){clearInterval(timer);submitAnswer(true)}},1000);
+}
+function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');selectedChoice=el.dataset.value}
+async function submitAnswer(timedOut){
+ clearInterval(timer);const q=test[idx];let studentAnswer=selectedChoice;if(q.type!=='mcq')studentAnswer=document.getElementById('writtenAnswer')?.value.trim();
+ if(!studentAnswer&&!timedOut){submitMsg.innerHTML='<div class="status">Write or choose an answer first.</div>';return}
+ if(timedOut&&!studentAnswer)studentAnswer='';
+ document.querySelectorAll('#testArea button,#testArea textarea').forEach(x=>x.disabled=true);submitMsg.innerHTML='<div class="submitted">Answer saved. Checking...</div>';
+ let correct=false;
+ try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject:'English',module:q.module,id:q.id,studentAnswer,studyLanguage:'English'})});const j=await r.json();correct=!!j.correct}catch(e){}
+ answers.push({module:q.module,lessonTitle:q.moduleTitle,questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct,timedOut:!!timedOut});
+ setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},350);
+}
+async function finishTest(){
+ clearInterval(timer);const score=answers.filter(x=>x.correct).length,total=answers.length,pct=total?Math.round(score/total*100):0,wrong=answers.filter(x=>!x.correct);lastScore.textContent=pct+'%';
+ testArea.innerHTML='<div class="result"><p>Test completed</p><b>'+pct+'%</b><p>Analyzing your mistakes...</p></div>';
+ let feedback={summary:'',topics:[],plan:[]};try{const r=await fetch('/api/test-feedback',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject:'English',lessonTitle:testLabel,wrongAnswers:wrong})});if(r.ok)feedback=await r.json()}catch(e){}
+ if(!feedback.summary)feedback.summary=wrong.length?'Review the mistakes below, then try another test.':'Excellent — all answers are correct.';
+ const record={subject:'English',unit:testModuleIds.length===1?current.unitTitle:'Multiple modules',lesson:null,lessonTitle:testLabel,modules:testModuleIds,score,total,pct,date:new Date().toISOString(),answers,feedback};
+ const old=JSON.parse(localStorage.getItem(childKey('zaker_english_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_english_results'),JSON.stringify(old.slice(0,60)));
+ try{await sb.rpc('save_student_test_result',{p_child_id:child.id,p_subject:'English',p_lesson_title:testLabel,p_score:score,p_total:total,p_pct:pct,p_answers:answers,p_feedback:feedback})}catch(e){}
+ logActivity({type:'test',lessonTitle:testLabel,pct});
+ const topics=(feedback.topics||wrong).map((t,i)=>'<div class="item"><b>Mistake '+(i+1)+'</b><div style="margin-top:6px">'+esc(t.question||'')+'</div><div><b>Your answer:</b> '+esc(t.studentAnswer||'—')+'</div><div><b>Correct / expected:</b> '+esc(t.correctAnswer||'—')+'</div>'+(t.explanation?'<div class="muted" style="margin-top:6px">'+esc(t.explanation)+'</div>':'')+'</div>').join('');
+ const plan=(feedback.plan||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
+ testArea.innerHTML='<div class="result"><p>Your result</p><b>'+pct+'%</b><p>'+esc(feedback.summary)+'</p></div>'+(wrong.length?'<div class="feedback">'+topics+'</div>':'<div class="submitted">Excellent — no mistakes in this test.</div>')+(plan?'<div class="section"><h3>Review Plan</h3><ol>'+plan+'</ol></div>':'')+'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="btn primary" onclick="setPane(\'learn\')">Review Module</button><button class="btn soft" onclick="resetTest()">New Test</button><button class="btn soft" onclick="setPane(\'profile\')">View Reports</button></div>';
+}
+function logActivity(item){try{const a=JSON.parse(localStorage.getItem(childKey('zaker_english_activity'))||'[]');a.unshift({...item,date:new Date().toISOString()});localStorage.setItem(childKey('zaker_english_activity'),JSON.stringify(a.slice(0,100)))}catch(e){};sb.rpc('log_student_activity',{p_child_id:child.id,p_activity_type:item.type||'activity',p_subject:'English',p_lesson_title:item.lessonTitle||'',p_pct:item.pct??null}).catch(()=>{})}
+function logLesson(m){const key=childKey('zaker_english_modules_seen');let seen=JSON.parse(localStorage.getItem(key)||'[]');if(!seen.includes(m.id)){seen.push(m.id);localStorage.setItem(key,JSON.stringify(seen))}sb.rpc('mark_lesson_seen',{p_child_id:child.id,p_subject:'English',p_lesson_no:m.id}).catch(()=>{});logActivity({type:'lesson',lessonTitle:m.title})}
+async function renderProfile(){
+ let results=[];try{const {data}=await sb.rpc('get_child_dashboard',{p_child_id:child.id});results=(data?.tests||[]).filter(r=>String(r.subject||'').toLowerCase()==='english').map(r=>({lessonTitle:r.lesson_title,score:r.score,total:r.total,pct:r.pct,date:r.created_at,answers:r.answers||[],feedback:r.feedback||{}}))}catch(e){}
+ if(!results.length)results=JSON.parse(localStorage.getItem(childKey('zaker_english_results'))||'[]');profileResults=results;
+ const seen=JSON.parse(localStorage.getItem(childKey('zaker_english_modules_seen'))||'[]'),wrong=results.flatMap(r=>r.answers||[]).filter(a=>!a.correct);
+ pfTests.textContent=results.length;pfAvg.textContent=results.length?Math.round(results.reduce((a,r)=>a+Number(r.pct||0),0)/results.length)+'%':'—';pfLessons.textContent=seen.length;pfWeak.textContent=wrong.length;
+ pfHistory.innerHTML=results.length?results.slice(0,20).map(r=>'<div class="history"><b>'+esc(r.lessonTitle)+'</b><div class="muted">'+new Date(r.date).toLocaleString('en-GB')+'</div><b>'+r.pct+'%</b></div>').join(''):'<div class="muted">No English tests saved yet.</div>';
+ const by={};wrong.forEach(x=>by[x.lessonTitle||'English']=(by[x.lessonTitle||'English']||0)+1);const sorted=Object.entries(by).sort((a,b)=>b[1]-a[1]);const latest=results.find(r=>r.feedback?.plan?.length)?.feedback;
+ pfWeakness.innerHTML=sorted.length?'<div class="history"><b>Most review needed:</b> '+esc(sorted[0][0])+' — '+sorted[0][1]+' mistakes</div>':'<div class="muted">No recorded weaknesses.</div>';
+ if(latest?.plan?.length)pfWeakness.innerHTML+='<div class="section"><b>Current review plan</b><ol>'+latest.plan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>';
+}
+async function askAI(){
+ const q=aiQuestion.value.trim();if(!q)return;aiAnswer.style.display='block';aiAnswer.textContent='Thinking...';
+ try{const sid=localStorage.getItem(childKey('zaker_ai_session_id'))||(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now());localStorage.setItem(childKey('zaker_ai_session_id'),sid);const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'English',grade:'First Prep',lesson:current.title,studyLanguage:'English',sessionId:sid})});const j=await r.json();if(!r.ok)throw new Error(j.error||'Tutor unavailable');aiAnswer.textContent=j.answer||'No response received'}catch(e){aiAnswer.textContent='Something went wrong: '+e.message}
+}
+async function logout(){await sb.auth.signOut();location.href='/login.html'}
+init();
+</script>
+</body></html>
