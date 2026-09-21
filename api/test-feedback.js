@@ -1,6 +1,6 @@
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
-  const {lessonTitle,wrongAnswers=[]}=req.body||{};
+  const {subject='Science',lessonTitle,wrongAnswers=[]}=req.body||{};
   if(!Array.isArray(wrongAnswers)||!wrongAnswers.length){
     return res.status(200).json({summary:'ممتاز، لا توجد أخطاء تحتاج مراجعة.',topics:[],plan:[]});
   }
@@ -22,7 +22,7 @@ Reference answer: ${x.correctAnswer}`).join('\n\n');
       headers:{'Authorization':`Bearer ${key}`,'Content-Type':'application/json'},
       body:JSON.stringify({
         model:'gpt-5.6-luna',
-        instructions:`You are the post-test coach for "ذاكر" for first-prep Science Languages.
+        instructions:`You are the post-test coach for "ذاكر" for first-prep ${subject}.
 Create feedback ONLY from the supplied question, student answer, and reference answer.
 Do not invent curriculum facts.
 The student SHOULD see the correct answer after finishing the whole test.
@@ -30,11 +30,11 @@ IMPORTANT: If the student's scientific meaning is actually correct and only punc
 Return strict JSON only, no markdown:
 {
  "summary":"Arabic summary",
- "topics":[{"question":"the question","studentAnswer":"student answer","correctAnswer":"the exact reference answer","explanation":"simple Arabic explanation with essential English terms, explaining the real scientific difference only"}],
+ "topics":[{"question":"the question","studentAnswer":"student answer","correctAnswer":"the exact reference answer","explanation":"simple clear explanation suitable for the subject; for English, explain language/vocabulary/grammar errors in clear English"}],
  "plan":["step 1","step 2","step 3"]
 }
 Do not mention page numbers or tell the student to return to a specific page.`,
-        input:`Lesson: ${lessonTitle}\n\n${input}`
+        input:`Subject: ${subject}\nLesson: ${lessonTitle}\n\n${input}`
       })
     });
     const j=await r.json().catch(()=>({}));
