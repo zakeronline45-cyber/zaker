@@ -1,0 +1,3988 @@
+{
+  "subject": "English",
+  "grade": "First Prep",
+  "term": 1,
+  "sharedTracks": [
+    "languages",
+    "arabic"
+  ],
+  "source": "El-Moasser English Guide, First Preparatory, First Term 2026-2027",
+  "sourceNote": "Zaker learning content is an original structured study layer based on the uploaded syllabus; it does not reproduce the book pages.",
+  "units": [
+    {
+      "unit": 1,
+      "title": "Life in a Digital World"
+    },
+    {
+      "unit": 2,
+      "title": "Learning to Learn"
+    },
+    {
+      "unit": 3,
+      "title": "Role Models"
+    },
+    {
+      "unit": 4,
+      "title": "Smart Choices"
+    },
+    {
+      "unit": 5,
+      "title": "Future Dreams"
+    },
+    {
+      "unit": 6,
+      "title": "Global Citizens"
+    },
+    {
+      "unit": 7,
+      "title": "Story 1: The Magic Classroom"
+    },
+    {
+      "unit": 8,
+      "title": "Story 2: The Dream Team"
+    }
+  ],
+  "modules": [
+    {
+      "id": 1,
+      "unit": 1,
+      "unitTitle": "Life in a Digital World",
+      "title": "A Day in My Digital Life & How We Use Technology",
+      "vocab": [
+        [
+          "digital",
+          "using computer technology or electronic devices"
+        ],
+        [
+          "tablet",
+          "a portable computer with a touch screen"
+        ],
+        [
+          "ebook",
+          "a book read on a screen"
+        ],
+        [
+          "social media",
+          "online platforms where people connect and share content"
+        ],
+        [
+          "screen time",
+          "time spent using digital devices"
+        ],
+        [
+          "website",
+          "a group of pages on the internet"
+        ],
+        [
+          "night mode",
+          "a darker screen setting"
+        ],
+        [
+          "search",
+          "to look for information"
+        ]
+      ],
+      "grammar": [
+        "Present Simple for facts, habits and daily routines.",
+        "Adverbs of frequency: always, usually, often, sometimes, rarely, never.",
+        "Adverbs of frequency usually come before the main verb but after verb be."
+      ],
+      "skills": [
+        "Read about digital routines and identify the main idea and details.",
+        "Talk about daily routines and technology use.",
+        "Write a short paragraph about your daily digital routine."
+      ],
+      "passage": "Tarek uses technology every day. He checks his phone in the morning, uses a tablet to search for information, and reads ebooks on his laptop. He tries to reduce screen time at night and uses night mode to protect his eyes.",
+      "questions": [
+        {
+          "id": "e1-m1-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"using computer technology or electronic devices\"?",
+          "choices": [
+            "digital",
+            "ebook",
+            "social media",
+            "tablet"
+          ],
+          "answer": "digital"
+        },
+        {
+          "id": "e1-m1-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a portable computer with a touch screen\"?",
+          "choices": [
+            "ebook",
+            "screen time",
+            "social media",
+            "tablet"
+          ],
+          "answer": "tablet"
+        },
+        {
+          "id": "e1-m1-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a book read on a screen\"?",
+          "choices": [
+            "ebook",
+            "screen time",
+            "social media",
+            "website"
+          ],
+          "answer": "ebook"
+        },
+        {
+          "id": "e1-m1-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"online platforms where people connect and share content\"?",
+          "choices": [
+            "night mode",
+            "screen time",
+            "social media",
+            "website"
+          ],
+          "answer": "social media"
+        },
+        {
+          "id": "e1-m1-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"time spent using digital devices\"?",
+          "choices": [
+            "night mode",
+            "screen time",
+            "search",
+            "website"
+          ],
+          "answer": "screen time"
+        },
+        {
+          "id": "e1-m1-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a group of pages on the internet\"?",
+          "choices": [
+            "digital",
+            "night mode",
+            "search",
+            "website"
+          ],
+          "answer": "website"
+        },
+        {
+          "id": "e1-m1-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Using computer technology or electronic devices: ______.",
+          "answer": "digital"
+        },
+        {
+          "id": "e1-m1-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a portable computer with a touch screen\" is ______.",
+          "answer": "tablet"
+        },
+        {
+          "id": "e1-m1-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Present Simple for facts, habits and daily routines.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Present Simple for facts, habits and daily routines."
+        },
+        {
+          "id": "e1-m1-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Tarek uses technology every day. He checks his phone in the morning, uses a tablet to search for information, and reads ebooks on his laptop. He tries to reduce screen time at night and uses night mode to protect his eyes. What is the main idea?",
+          "choices": [
+            "The passage is mainly about a day in my digital life & how we use technology.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about a day in my digital life & how we use technology."
+        },
+        {
+          "id": "e1-m1-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "ebook",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "ebook"
+        },
+        {
+          "id": "e1-m1-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"social media\" in a correct sentence related to Life in a Digital World.",
+          "answer": "A correct meaningful sentence using \"social media\" in context."
+        },
+        {
+          "id": "e1-m1-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: A Day in My Digital Life & How We Use Technology. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "unit": 1,
+      "unitTitle": "Life in a Digital World",
+      "title": "Digital Devices",
+      "vocab": [
+        [
+          "tasks",
+          "jobs or pieces of work"
+        ],
+        [
+          "webcam",
+          "a small camera used for video calls"
+        ],
+        [
+          "microphone",
+          "equipment used to record sound"
+        ],
+        [
+          "printer",
+          "a device that prints text or images"
+        ],
+        [
+          "keyboard",
+          "a device used to type"
+        ],
+        [
+          "headphones",
+          "equipment worn on the ears to listen to sound"
+        ],
+        [
+          "assignment",
+          "schoolwork given to a student"
+        ],
+        [
+          "smartboard",
+          "an interactive board used in classrooms"
+        ]
+      ],
+      "grammar": [
+        "Be used to + infinitive explains the purpose of an object.",
+        "Word families help you recognize noun, verb and adjective forms."
+      ],
+      "skills": [
+        "Describe devices and their uses.",
+        "Read an email about digital devices.",
+        "Use word families in context."
+      ],
+      "passage": "Jouri uses different digital devices for school. She types assignments on a keyboard, joins video calls with a webcam and microphone, and prints homework using a printer.",
+      "questions": [
+        {
+          "id": "e1-m2-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"jobs or pieces of work\"?",
+          "choices": [
+            "microphone",
+            "printer",
+            "tasks",
+            "webcam"
+          ],
+          "answer": "tasks"
+        },
+        {
+          "id": "e1-m2-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a small camera used for video calls\"?",
+          "choices": [
+            "keyboard",
+            "microphone",
+            "printer",
+            "webcam"
+          ],
+          "answer": "webcam"
+        },
+        {
+          "id": "e1-m2-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"equipment used to record sound\"?",
+          "choices": [
+            "headphones",
+            "keyboard",
+            "microphone",
+            "printer"
+          ],
+          "answer": "microphone"
+        },
+        {
+          "id": "e1-m2-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a device that prints text or images\"?",
+          "choices": [
+            "assignment",
+            "headphones",
+            "keyboard",
+            "printer"
+          ],
+          "answer": "printer"
+        },
+        {
+          "id": "e1-m2-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a device used to type\"?",
+          "choices": [
+            "assignment",
+            "headphones",
+            "keyboard",
+            "smartboard"
+          ],
+          "answer": "keyboard"
+        },
+        {
+          "id": "e1-m2-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"equipment worn on the ears to listen to sound\"?",
+          "choices": [
+            "assignment",
+            "headphones",
+            "smartboard",
+            "tasks"
+          ],
+          "answer": "headphones"
+        },
+        {
+          "id": "e1-m2-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Jobs or pieces of work: ______.",
+          "answer": "tasks"
+        },
+        {
+          "id": "e1-m2-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a small camera used for video calls\" is ______.",
+          "answer": "webcam"
+        },
+        {
+          "id": "e1-m2-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Be used to + infinitive explains the purpose of an object.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Be used to + infinitive explains the purpose of an object."
+        },
+        {
+          "id": "e1-m2-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Jouri uses different digital devices for school. She types assignments on a keyboard, joins video calls with a webcam and microphone, and prints homework using a printer. What is the main idea?",
+          "choices": [
+            "The passage is mainly about digital devices.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about digital devices."
+        },
+        {
+          "id": "e1-m2-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "microphone",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "microphone"
+        },
+        {
+          "id": "e1-m2-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"printer\" in a correct sentence related to Life in a Digital World.",
+          "answer": "A correct meaningful sentence using \"printer\" in context."
+        },
+        {
+          "id": "e1-m2-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Digital Devices. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "unit": 1,
+      "unitTitle": "Life in a Digital World",
+      "title": "An Email to a Friend & Team-Project Roundtable",
+      "vocab": [
+        [
+          "trust",
+          "to believe someone is honest"
+        ],
+        [
+          "safety",
+          "the state of being protected"
+        ],
+        [
+          "performance",
+          "how well someone does something"
+        ],
+        [
+          "latest",
+          "newest or most recent"
+        ],
+        [
+          "routine",
+          "a regular way of doing things"
+        ],
+        [
+          "news",
+          "new information about events"
+        ],
+        [
+          "friendly",
+          "kind and pleasant"
+        ],
+        [
+          "respectful",
+          "showing respect"
+        ]
+      ],
+      "grammar": [
+        "Capital letters are used at the beginning of sentences and for names, places, languages and nationalities.",
+        "Emails include greeting, introduction, main part, closing sentence and signature."
+      ],
+      "skills": [
+        "Write an email about technology or daily life.",
+        "Use punctuation and capital letters accurately.",
+        "Take part in a team discussion."
+      ],
+      "passage": "Ahmed writes an email to his friend about his digital day. He explains his routine, mentions the latest news he reads online, and reminds his friend to stay safe and respectful on the internet.",
+      "questions": [
+        {
+          "id": "e1-m3-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to believe someone is honest\"?",
+          "choices": [
+            "latest",
+            "performance",
+            "safety",
+            "trust"
+          ],
+          "answer": "trust"
+        },
+        {
+          "id": "e1-m3-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the state of being protected\"?",
+          "choices": [
+            "latest",
+            "performance",
+            "routine",
+            "safety"
+          ],
+          "answer": "safety"
+        },
+        {
+          "id": "e1-m3-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"how well someone does something\"?",
+          "choices": [
+            "latest",
+            "news",
+            "performance",
+            "routine"
+          ],
+          "answer": "performance"
+        },
+        {
+          "id": "e1-m3-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"newest or most recent\"?",
+          "choices": [
+            "friendly",
+            "latest",
+            "news",
+            "routine"
+          ],
+          "answer": "latest"
+        },
+        {
+          "id": "e1-m3-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a regular way of doing things\"?",
+          "choices": [
+            "friendly",
+            "news",
+            "respectful",
+            "routine"
+          ],
+          "answer": "routine"
+        },
+        {
+          "id": "e1-m3-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"new information about events\"?",
+          "choices": [
+            "friendly",
+            "news",
+            "respectful",
+            "trust"
+          ],
+          "answer": "news"
+        },
+        {
+          "id": "e1-m3-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: To believe someone is honest: ______.",
+          "answer": "trust"
+        },
+        {
+          "id": "e1-m3-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"the state of being protected\" is ______.",
+          "answer": "safety"
+        },
+        {
+          "id": "e1-m3-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Capital letters are used at the beginning of sentences and for names, places, languages and nationalities.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Capital letters are used at the beginning of sentences and for names, places, languages and nationalities."
+        },
+        {
+          "id": "e1-m3-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Ahmed writes an email to his friend about his digital day. He explains his routine, mentions the latest news he reads online, and reminds his friend to stay safe and respectful on the internet. What is the main idea?",
+          "choices": [
+            "The passage is mainly about an email to a friend & team-project roundtable.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about an email to a friend & team-project roundtable."
+        },
+        {
+          "id": "e1-m3-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "performance",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "performance"
+        },
+        {
+          "id": "e1-m3-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"latest\" in a correct sentence related to Life in a Digital World.",
+          "answer": "A correct meaningful sentence using \"latest\" in context."
+        },
+        {
+          "id": "e1-m3-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: An Email to a Friend & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "unit": 2,
+      "unitTitle": "Learning to Learn",
+      "title": "My Learning Journey & Learning Challenges and Solutions",
+      "vocab": [
+        [
+          "auditory",
+          "related to hearing"
+        ],
+        [
+          "kinesthetic",
+          "related to hands-on physical actions"
+        ],
+        [
+          "visual",
+          "related to seeing"
+        ],
+        [
+          "goal",
+          "something you want to achieve"
+        ],
+        [
+          "challenge",
+          "a difficult task or problem"
+        ],
+        [
+          "research",
+          "careful study to discover information"
+        ],
+        [
+          "habit",
+          "something you do regularly"
+        ],
+        [
+          "solution",
+          "a way to solve a problem"
+        ]
+      ],
+      "grammar": [
+        "Can / can't describe ability.",
+        "Present Continuous describes actions happening now or around now."
+      ],
+      "skills": [
+        "Identify different learning styles.",
+        "Describe learning goals and challenges.",
+        "Suggest solutions to learning problems."
+      ],
+      "passage": "Mariam learns best when she sees diagrams and takes notes, so she is mainly a visual learner. Her goal is to improve English. She is working on a study plan and trying new strategies.",
+      "questions": [
+        {
+          "id": "e1-m4-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"related to hearing\"?",
+          "choices": [
+            "auditory",
+            "goal",
+            "kinesthetic",
+            "visual"
+          ],
+          "answer": "auditory"
+        },
+        {
+          "id": "e1-m4-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"related to hands-on physical actions\"?",
+          "choices": [
+            "challenge",
+            "goal",
+            "kinesthetic",
+            "visual"
+          ],
+          "answer": "kinesthetic"
+        },
+        {
+          "id": "e1-m4-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"related to seeing\"?",
+          "choices": [
+            "challenge",
+            "goal",
+            "research",
+            "visual"
+          ],
+          "answer": "visual"
+        },
+        {
+          "id": "e1-m4-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"something you want to achieve\"?",
+          "choices": [
+            "challenge",
+            "goal",
+            "habit",
+            "research"
+          ],
+          "answer": "goal"
+        },
+        {
+          "id": "e1-m4-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a difficult task or problem\"?",
+          "choices": [
+            "challenge",
+            "habit",
+            "research",
+            "solution"
+          ],
+          "answer": "challenge"
+        },
+        {
+          "id": "e1-m4-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"careful study to discover information\"?",
+          "choices": [
+            "auditory",
+            "habit",
+            "research",
+            "solution"
+          ],
+          "answer": "research"
+        },
+        {
+          "id": "e1-m4-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Related to hearing: ______.",
+          "answer": "auditory"
+        },
+        {
+          "id": "e1-m4-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"related to hands-on physical actions\" is ______.",
+          "answer": "kinesthetic"
+        },
+        {
+          "id": "e1-m4-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Can / can't describe ability.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Can / can't describe ability."
+        },
+        {
+          "id": "e1-m4-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Mariam learns best when she sees diagrams and takes notes, so she is mainly a visual learner. Her goal is to improve English. She is working on a study plan and trying new strategies. What is the main idea?",
+          "choices": [
+            "The passage is mainly about my learning journey & learning challenges and solutions.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about my learning journey & learning challenges and solutions."
+        },
+        {
+          "id": "e1-m4-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "visual",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "visual"
+        },
+        {
+          "id": "e1-m4-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"goal\" in a correct sentence related to Learning to Learn.",
+          "answer": "A correct meaningful sentence using \"goal\" in context."
+        },
+        {
+          "id": "e1-m4-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: My Learning Journey & Learning Challenges and Solutions. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "unit": 2,
+      "unitTitle": "Learning to Learn",
+      "title": "Benefits of Learning Together",
+      "vocab": [
+        [
+          "benefit",
+          "a helpful result or advantage"
+        ],
+        [
+          "cooperation",
+          "working together"
+        ],
+        [
+          "leadership",
+          "the ability to guide a group"
+        ],
+        [
+          "confident",
+          "sure of yourself"
+        ],
+        [
+          "creative",
+          "able to produce new ideas"
+        ],
+        [
+          "communicate",
+          "to share ideas or information"
+        ],
+        [
+          "develop",
+          "to grow or improve"
+        ],
+        [
+          "solutions",
+          "answers to problems"
+        ]
+      ],
+      "grammar": [
+        "Use can to talk about what teamwork can help people do.",
+        "Use present continuous to describe a team working now."
+      ],
+      "skills": [
+        "Explain the benefits of teamwork.",
+        "Describe roles in a group.",
+        "Read about collaborative learning."
+      ],
+      "passage": "Students can learn a lot by working together. Cooperation helps them share ideas, find solutions and develop leadership. A good team communicates clearly and makes every member feel confident.",
+      "questions": [
+        {
+          "id": "e1-m5-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a helpful result or advantage\"?",
+          "choices": [
+            "benefit",
+            "confident",
+            "cooperation",
+            "leadership"
+          ],
+          "answer": "benefit"
+        },
+        {
+          "id": "e1-m5-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"working together\"?",
+          "choices": [
+            "confident",
+            "cooperation",
+            "creative",
+            "leadership"
+          ],
+          "answer": "cooperation"
+        },
+        {
+          "id": "e1-m5-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the ability to guide a group\"?",
+          "choices": [
+            "communicate",
+            "confident",
+            "creative",
+            "leadership"
+          ],
+          "answer": "leadership"
+        },
+        {
+          "id": "e1-m5-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"sure of yourself\"?",
+          "choices": [
+            "communicate",
+            "confident",
+            "creative",
+            "develop"
+          ],
+          "answer": "confident"
+        },
+        {
+          "id": "e1-m5-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"able to produce new ideas\"?",
+          "choices": [
+            "communicate",
+            "creative",
+            "develop",
+            "solutions"
+          ],
+          "answer": "creative"
+        },
+        {
+          "id": "e1-m5-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to share ideas or information\"?",
+          "choices": [
+            "benefit",
+            "communicate",
+            "develop",
+            "solutions"
+          ],
+          "answer": "communicate"
+        },
+        {
+          "id": "e1-m5-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A helpful result or advantage: ______.",
+          "answer": "benefit"
+        },
+        {
+          "id": "e1-m5-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"working together\" is ______.",
+          "answer": "cooperation"
+        },
+        {
+          "id": "e1-m5-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use can to talk about what teamwork can help people do.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use can to talk about what teamwork can help people do."
+        },
+        {
+          "id": "e1-m5-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Students can learn a lot by working together. Cooperation helps them share ideas, find solutions and develop leadership. A good team communicates clearly and makes every member feel confident. What is the main idea?",
+          "choices": [
+            "The passage is mainly about benefits of learning together.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about benefits of learning together."
+        },
+        {
+          "id": "e1-m5-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "leadership",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "leadership"
+        },
+        {
+          "id": "e1-m5-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"confident\" in a correct sentence related to Learning to Learn.",
+          "answer": "A correct meaningful sentence using \"confident\" in context."
+        },
+        {
+          "id": "e1-m5-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Benefits of Learning Together. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "unit": 2,
+      "unitTitle": "Learning to Learn",
+      "title": "My Learning Plan & Team-Project Roundtable",
+      "vocab": [
+        [
+          "plan",
+          "a detailed way of doing something"
+        ],
+        [
+          "practice",
+          "regular training to improve"
+        ],
+        [
+          "communication",
+          "sharing information with others"
+        ],
+        [
+          "record",
+          "to keep information for later"
+        ],
+        [
+          "pronunciation",
+          "the way a word is spoken"
+        ],
+        [
+          "habit",
+          "something done regularly"
+        ],
+        [
+          "indicate",
+          "to show"
+        ],
+        [
+          "reflect",
+          "to think carefully about experience"
+        ]
+      ],
+      "grammar": [
+        "Use future intentions and study-plan language clearly.",
+        "Use sequencing words to organize a plan."
+      ],
+      "skills": [
+        "Create a personal learning plan.",
+        "Set steps and reflect on progress.",
+        "Discuss a plan in a team roundtable."
+      ],
+      "passage": "Ali makes a weekly learning plan. He records new words, practices pronunciation, and reflects on his progress every Friday. His plan helps him build better study habits.",
+      "questions": [
+        {
+          "id": "e1-m6-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a detailed way of doing something\"?",
+          "choices": [
+            "communication",
+            "plan",
+            "practice",
+            "record"
+          ],
+          "answer": "plan"
+        },
+        {
+          "id": "e1-m6-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"regular training to improve\"?",
+          "choices": [
+            "communication",
+            "practice",
+            "pronunciation",
+            "record"
+          ],
+          "answer": "practice"
+        },
+        {
+          "id": "e1-m6-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"sharing information with others\"?",
+          "choices": [
+            "communication",
+            "habit",
+            "pronunciation",
+            "record"
+          ],
+          "answer": "communication"
+        },
+        {
+          "id": "e1-m6-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to keep information for later\"?",
+          "choices": [
+            "habit",
+            "indicate",
+            "pronunciation",
+            "record"
+          ],
+          "answer": "record"
+        },
+        {
+          "id": "e1-m6-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the way a word is spoken\"?",
+          "choices": [
+            "habit",
+            "indicate",
+            "pronunciation",
+            "reflect"
+          ],
+          "answer": "pronunciation"
+        },
+        {
+          "id": "e1-m6-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"something done regularly\"?",
+          "choices": [
+            "habit",
+            "indicate",
+            "plan",
+            "reflect"
+          ],
+          "answer": "habit"
+        },
+        {
+          "id": "e1-m6-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A detailed way of doing something: ______.",
+          "answer": "plan"
+        },
+        {
+          "id": "e1-m6-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"regular training to improve\" is ______.",
+          "answer": "practice"
+        },
+        {
+          "id": "e1-m6-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use future intentions and study-plan language clearly.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use future intentions and study-plan language clearly."
+        },
+        {
+          "id": "e1-m6-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Ali makes a weekly learning plan. He records new words, practices pronunciation, and reflects on his progress every Friday. His plan helps him build better study habits. What is the main idea?",
+          "choices": [
+            "The passage is mainly about my learning plan & team-project roundtable.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about my learning plan & team-project roundtable."
+        },
+        {
+          "id": "e1-m6-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "communication",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "communication"
+        },
+        {
+          "id": "e1-m6-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"record\" in a correct sentence related to Learning to Learn.",
+          "answer": "A correct meaningful sentence using \"record\" in context."
+        },
+        {
+          "id": "e1-m6-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: My Learning Plan & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "unit": 3,
+      "unitTitle": "Role Models",
+      "title": "An Egyptian Hero & Heroes and Role Models",
+      "vocab": [
+        [
+          "hero",
+          "a person admired for brave or great actions"
+        ],
+        [
+          "role model",
+          "a person whose behavior others want to follow"
+        ],
+        [
+          "respect",
+          "admiration for someone"
+        ],
+        [
+          "determined",
+          "not giving up easily"
+        ],
+        [
+          "achievement",
+          "something important you succeed in doing"
+        ],
+        [
+          "qualities",
+          "features of a person's character"
+        ],
+        [
+          "brave",
+          "showing courage"
+        ],
+        [
+          "inspire",
+          "to encourage someone to do something good"
+        ]
+      ],
+      "grammar": [
+        "Past Simple describes completed actions in the past.",
+        "Use adjectives to describe a role model's character."
+      ],
+      "skills": [
+        "Read about Egyptian heroes and role models.",
+        "Describe why someone is inspiring.",
+        "Write about a person you admire."
+      ],
+      "passage": "A role model is someone whose actions inspire others. Egyptian heroes are remembered for courage, determination and important achievements. Their stories can encourage young people to work hard.",
+      "questions": [
+        {
+          "id": "e1-m7-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person admired for brave or great actions\"?",
+          "choices": [
+            "determined",
+            "hero",
+            "respect",
+            "role model"
+          ],
+          "answer": "hero"
+        },
+        {
+          "id": "e1-m7-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person whose behavior others want to follow\"?",
+          "choices": [
+            "achievement",
+            "determined",
+            "respect",
+            "role model"
+          ],
+          "answer": "role model"
+        },
+        {
+          "id": "e1-m7-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"admiration for someone\"?",
+          "choices": [
+            "achievement",
+            "determined",
+            "qualities",
+            "respect"
+          ],
+          "answer": "respect"
+        },
+        {
+          "id": "e1-m7-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"not giving up easily\"?",
+          "choices": [
+            "achievement",
+            "brave",
+            "determined",
+            "qualities"
+          ],
+          "answer": "determined"
+        },
+        {
+          "id": "e1-m7-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"something important you succeed in doing\"?",
+          "choices": [
+            "achievement",
+            "brave",
+            "inspire",
+            "qualities"
+          ],
+          "answer": "achievement"
+        },
+        {
+          "id": "e1-m7-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"features of a person's character\"?",
+          "choices": [
+            "brave",
+            "hero",
+            "inspire",
+            "qualities"
+          ],
+          "answer": "qualities"
+        },
+        {
+          "id": "e1-m7-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A person admired for brave or great actions: ______.",
+          "answer": "hero"
+        },
+        {
+          "id": "e1-m7-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a person whose behavior others want to follow\" is ______.",
+          "answer": "role model"
+        },
+        {
+          "id": "e1-m7-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Past Simple describes completed actions in the past.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Past Simple describes completed actions in the past."
+        },
+        {
+          "id": "e1-m7-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: A role model is someone whose actions inspire others. Egyptian heroes are remembered for courage, determination and important achievements. Their stories can encourage young people to work hard. What is the main idea?",
+          "choices": [
+            "The passage is mainly about an egyptian hero & heroes and role models.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about an egyptian hero & heroes and role models."
+        },
+        {
+          "id": "e1-m7-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "respect",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "respect"
+        },
+        {
+          "id": "e1-m7-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"determined\" in a correct sentence related to Role Models.",
+          "answer": "A correct meaningful sentence using \"determined\" in context."
+        },
+        {
+          "id": "e1-m7-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: An Egyptian Hero & Heroes and Role Models. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "unit": 3,
+      "unitTitle": "Role Models",
+      "title": "A Great Egyptian Thinker — Dr. Gomaa Hamdan",
+      "vocab": [
+        [
+          "university",
+          "a place for higher education"
+        ],
+        [
+          "award",
+          "a prize for achievement"
+        ],
+        [
+          "agreement",
+          "when people share the same opinion"
+        ],
+        [
+          "powerful",
+          "having strong influence"
+        ],
+        [
+          "personality",
+          "a person's character"
+        ],
+        [
+          "geographer",
+          "a person who studies geography"
+        ],
+        [
+          "deep thinker",
+          "someone who thinks carefully about complex ideas"
+        ],
+        [
+          "location",
+          "the place where something is"
+        ]
+      ],
+      "grammar": [
+        "Use Past Simple to describe a person's life and achievements.",
+        "Use relative clauses and descriptive phrases to add information."
+      ],
+      "skills": [
+        "Read a short biography.",
+        "Identify achievements and personal qualities.",
+        "Summarize a role model's contribution."
+      ],
+      "passage": "Dr. Gomaa Hamdan was a famous Egyptian geographer and deep thinker. His work connected geography, history and society. He became known for powerful ideas about Egypt and its location.",
+      "questions": [
+        {
+          "id": "e1-m8-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a place for higher education\"?",
+          "choices": [
+            "agreement",
+            "award",
+            "powerful",
+            "university"
+          ],
+          "answer": "university"
+        },
+        {
+          "id": "e1-m8-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a prize for achievement\"?",
+          "choices": [
+            "agreement",
+            "award",
+            "personality",
+            "powerful"
+          ],
+          "answer": "award"
+        },
+        {
+          "id": "e1-m8-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"when people share the same opinion\"?",
+          "choices": [
+            "agreement",
+            "geographer",
+            "personality",
+            "powerful"
+          ],
+          "answer": "agreement"
+        },
+        {
+          "id": "e1-m8-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"having strong influence\"?",
+          "choices": [
+            "deep thinker",
+            "geographer",
+            "personality",
+            "powerful"
+          ],
+          "answer": "powerful"
+        },
+        {
+          "id": "e1-m8-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person's character\"?",
+          "choices": [
+            "deep thinker",
+            "geographer",
+            "location",
+            "personality"
+          ],
+          "answer": "personality"
+        },
+        {
+          "id": "e1-m8-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person who studies geography\"?",
+          "choices": [
+            "deep thinker",
+            "geographer",
+            "location",
+            "university"
+          ],
+          "answer": "geographer"
+        },
+        {
+          "id": "e1-m8-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A place for higher education: ______.",
+          "answer": "university"
+        },
+        {
+          "id": "e1-m8-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a prize for achievement\" is ______.",
+          "answer": "award"
+        },
+        {
+          "id": "e1-m8-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use Past Simple to describe a person's life and achievements.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use Past Simple to describe a person's life and achievements."
+        },
+        {
+          "id": "e1-m8-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Dr. Gomaa Hamdan was a famous Egyptian geographer and deep thinker. His work connected geography, history and society. He became known for powerful ideas about Egypt and its location. What is the main idea?",
+          "choices": [
+            "The passage is mainly about a great egyptian thinker — dr. gomaa hamdan.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about a great egyptian thinker — dr. gomaa hamdan."
+        },
+        {
+          "id": "e1-m8-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "agreement",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "agreement"
+        },
+        {
+          "id": "e1-m8-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"powerful\" in a correct sentence related to Role Models.",
+          "answer": "A correct meaningful sentence using \"powerful\" in context."
+        },
+        {
+          "id": "e1-m8-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: A Great Egyptian Thinker — Dr. Gomaa Hamdan. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "unit": 3,
+      "unitTitle": "Role Models",
+      "title": "A Hero Who Made a Difference — Dr. Mohamed Ghoneim & Team-Project Roundtable",
+      "vocab": [
+        [
+          "patient",
+          "a person receiving medical treatment"
+        ],
+        [
+          "disease",
+          "an illness"
+        ],
+        [
+          "biography",
+          "the story of a person's life"
+        ],
+        [
+          "dedication",
+          "strong commitment to a purpose"
+        ],
+        [
+          "overcome",
+          "to succeed in dealing with a problem"
+        ],
+        [
+          "kidney",
+          "an organ that filters waste from blood"
+        ],
+        [
+          "transplant",
+          "an operation that replaces an organ"
+        ],
+        [
+          "impact",
+          "a strong effect"
+        ]
+      ],
+      "grammar": [
+        "Use Past Simple and present facts in a biography.",
+        "Use because and so to link reasons and results."
+      ],
+      "skills": [
+        "Read about a medical role model.",
+        "Explain how dedication creates impact.",
+        "Present a short team biography."
+      ],
+      "passage": "Dr. Mohamed Ghoneim is known for his medical work and dedication to patients. His efforts in kidney treatment and transplantation made a major impact and inspired many people.",
+      "questions": [
+        {
+          "id": "e1-m9-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person receiving medical treatment\"?",
+          "choices": [
+            "biography",
+            "dedication",
+            "disease",
+            "patient"
+          ],
+          "answer": "patient"
+        },
+        {
+          "id": "e1-m9-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"an illness\"?",
+          "choices": [
+            "biography",
+            "dedication",
+            "disease",
+            "overcome"
+          ],
+          "answer": "disease"
+        },
+        {
+          "id": "e1-m9-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the story of a person's life\"?",
+          "choices": [
+            "biography",
+            "dedication",
+            "kidney",
+            "overcome"
+          ],
+          "answer": "biography"
+        },
+        {
+          "id": "e1-m9-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"strong commitment to a purpose\"?",
+          "choices": [
+            "dedication",
+            "kidney",
+            "overcome",
+            "transplant"
+          ],
+          "answer": "dedication"
+        },
+        {
+          "id": "e1-m9-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to succeed in dealing with a problem\"?",
+          "choices": [
+            "impact",
+            "kidney",
+            "overcome",
+            "transplant"
+          ],
+          "answer": "overcome"
+        },
+        {
+          "id": "e1-m9-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"an organ that filters waste from blood\"?",
+          "choices": [
+            "impact",
+            "kidney",
+            "patient",
+            "transplant"
+          ],
+          "answer": "kidney"
+        },
+        {
+          "id": "e1-m9-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A person receiving medical treatment: ______.",
+          "answer": "patient"
+        },
+        {
+          "id": "e1-m9-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"an illness\" is ______.",
+          "answer": "disease"
+        },
+        {
+          "id": "e1-m9-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use Past Simple and present facts in a biography.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use Past Simple and present facts in a biography."
+        },
+        {
+          "id": "e1-m9-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Dr. Mohamed Ghoneim is known for his medical work and dedication to patients. His efforts in kidney treatment and transplantation made a major impact and inspired many people. What is the main idea?",
+          "choices": [
+            "The passage is mainly about a hero who made a difference — dr. mohamed ghoneim & team-project roundtable.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about a hero who made a difference — dr. mohamed ghoneim & team-project roundtable."
+        },
+        {
+          "id": "e1-m9-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "biography",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "biography"
+        },
+        {
+          "id": "e1-m9-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"dedication\" in a correct sentence related to Role Models.",
+          "answer": "A correct meaningful sentence using \"dedication\" in context."
+        },
+        {
+          "id": "e1-m9-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: A Hero Who Made a Difference — Dr. Mohamed Ghoneim & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "unit": 4,
+      "unitTitle": "Smart Choices",
+      "title": "Think Before You Choose & Decisions and Consequences",
+      "vocab": [
+        [
+          "decision",
+          "a choice made after thinking"
+        ],
+        [
+          "affect",
+          "to cause a change in something"
+        ],
+        [
+          "negative",
+          "bad or harmful"
+        ],
+        [
+          "consequence",
+          "a result of an action"
+        ],
+        [
+          "valuable",
+          "important or useful"
+        ],
+        [
+          "lesson",
+          "something learned from experience"
+        ],
+        [
+          "careless",
+          "not giving enough attention"
+        ],
+        [
+          "responsible",
+          "dependable and careful"
+        ]
+      ],
+      "grammar": [
+        "Use should / shouldn't to give advice.",
+        "Use cause-and-effect language to discuss consequences."
+      ],
+      "skills": [
+        "Compare choices and consequences.",
+        "Explain responsible decision-making.",
+        "Read situations and choose sensible actions."
+      ],
+      "passage": "Smart choices need careful thinking. A decision can affect you and other people. Responsible people consider possible consequences before they act and learn from past experiences.",
+      "questions": [
+        {
+          "id": "e1-m10-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a choice made after thinking\"?",
+          "choices": [
+            "affect",
+            "consequence",
+            "decision",
+            "negative"
+          ],
+          "answer": "decision"
+        },
+        {
+          "id": "e1-m10-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to cause a change in something\"?",
+          "choices": [
+            "affect",
+            "consequence",
+            "negative",
+            "valuable"
+          ],
+          "answer": "affect"
+        },
+        {
+          "id": "e1-m10-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"bad or harmful\"?",
+          "choices": [
+            "consequence",
+            "lesson",
+            "negative",
+            "valuable"
+          ],
+          "answer": "negative"
+        },
+        {
+          "id": "e1-m10-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a result of an action\"?",
+          "choices": [
+            "careless",
+            "consequence",
+            "lesson",
+            "valuable"
+          ],
+          "answer": "consequence"
+        },
+        {
+          "id": "e1-m10-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"important or useful\"?",
+          "choices": [
+            "careless",
+            "lesson",
+            "responsible",
+            "valuable"
+          ],
+          "answer": "valuable"
+        },
+        {
+          "id": "e1-m10-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"something learned from experience\"?",
+          "choices": [
+            "careless",
+            "decision",
+            "lesson",
+            "responsible"
+          ],
+          "answer": "lesson"
+        },
+        {
+          "id": "e1-m10-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A choice made after thinking: ______.",
+          "answer": "decision"
+        },
+        {
+          "id": "e1-m10-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"to cause a change in something\" is ______.",
+          "answer": "affect"
+        },
+        {
+          "id": "e1-m10-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use should / shouldn't to give advice.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use should / shouldn't to give advice."
+        },
+        {
+          "id": "e1-m10-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Smart choices need careful thinking. A decision can affect you and other people. Responsible people consider possible consequences before they act and learn from past experiences. What is the main idea?",
+          "choices": [
+            "The passage is mainly about think before you choose & decisions and consequences.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about think before you choose & decisions and consequences."
+        },
+        {
+          "id": "e1-m10-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "negative",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "negative"
+        },
+        {
+          "id": "e1-m10-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"consequence\" in a correct sentence related to Smart Choices.",
+          "answer": "A correct meaningful sentence using \"consequence\" in context."
+        },
+        {
+          "id": "e1-m10-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Think Before You Choose & Decisions and Consequences. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "unit": 4,
+      "unitTitle": "Smart Choices",
+      "title": "An Interview with an Athlete",
+      "vocab": [
+        [
+          "athlete",
+          "a person who competes in sports"
+        ],
+        [
+          "tough",
+          "difficult or hard"
+        ],
+        [
+          "problem-solving",
+          "the process of finding solutions"
+        ],
+        [
+          "influence",
+          "the power to change people or things"
+        ],
+        [
+          "risk",
+          "the chance that something bad may happen"
+        ],
+        [
+          "impact",
+          "a strong effect"
+        ],
+        [
+          "injury",
+          "physical harm to the body"
+        ],
+        [
+          "recover",
+          "to get better after illness or injury"
+        ]
+      ],
+      "grammar": [
+        "Should / shouldn't give advice about risk and training.",
+        "Use Past Simple for completed events in an athlete's experience."
+      ],
+      "skills": [
+        "Read an interview and identify advice.",
+        "Discuss risks and wise choices.",
+        "Use context to guess word meanings."
+      ],
+      "passage": "An athlete explains that training can be tough. After an injury, he had to recover carefully and make a wise decision about returning to competition. He learned to think about risks before acting.",
+      "questions": [
+        {
+          "id": "e1-m11-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person who competes in sports\"?",
+          "choices": [
+            "athlete",
+            "influence",
+            "problem-solving",
+            "tough"
+          ],
+          "answer": "athlete"
+        },
+        {
+          "id": "e1-m11-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"difficult or hard\"?",
+          "choices": [
+            "influence",
+            "problem-solving",
+            "risk",
+            "tough"
+          ],
+          "answer": "tough"
+        },
+        {
+          "id": "e1-m11-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the process of finding solutions\"?",
+          "choices": [
+            "impact",
+            "influence",
+            "problem-solving",
+            "risk"
+          ],
+          "answer": "problem-solving"
+        },
+        {
+          "id": "e1-m11-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the power to change people or things\"?",
+          "choices": [
+            "impact",
+            "influence",
+            "injury",
+            "risk"
+          ],
+          "answer": "influence"
+        },
+        {
+          "id": "e1-m11-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the chance that something bad may happen\"?",
+          "choices": [
+            "impact",
+            "injury",
+            "recover",
+            "risk"
+          ],
+          "answer": "risk"
+        },
+        {
+          "id": "e1-m11-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a strong effect\"?",
+          "choices": [
+            "athlete",
+            "impact",
+            "injury",
+            "recover"
+          ],
+          "answer": "impact"
+        },
+        {
+          "id": "e1-m11-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A person who competes in sports: ______.",
+          "answer": "athlete"
+        },
+        {
+          "id": "e1-m11-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"difficult or hard\" is ______.",
+          "answer": "tough"
+        },
+        {
+          "id": "e1-m11-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Should / shouldn't give advice about risk and training.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Should / shouldn't give advice about risk and training."
+        },
+        {
+          "id": "e1-m11-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: An athlete explains that training can be tough. After an injury, he had to recover carefully and make a wise decision about returning to competition. He learned to think about risks before acting. What is the main idea?",
+          "choices": [
+            "The passage is mainly about an interview with an athlete.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about an interview with an athlete."
+        },
+        {
+          "id": "e1-m11-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "problem-solving",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "problem-solving"
+        },
+        {
+          "id": "e1-m11-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"influence\" in a correct sentence related to Smart Choices.",
+          "answer": "A correct meaningful sentence using \"influence\" in context."
+        },
+        {
+          "id": "e1-m11-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: An Interview with an Athlete. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "unit": 4,
+      "unitTitle": "Smart Choices",
+      "title": "Asking for and Giving Advice & Team-Project Roundtable",
+      "vocab": [
+        [
+          "nervous",
+          "worried or anxious"
+        ],
+        [
+          "emotion",
+          "a feeling such as happiness or anger"
+        ],
+        [
+          "effectively",
+          "in a successful way"
+        ],
+        [
+          "stressed",
+          "worried because of pressure"
+        ],
+        [
+          "explore",
+          "to learn about or investigate"
+        ],
+        [
+          "option",
+          "a possible choice"
+        ],
+        [
+          "evaluate",
+          "to judge the value of something"
+        ],
+        [
+          "advice",
+          "an opinion about what someone should do"
+        ]
+      ],
+      "grammar": [
+        "Use should / shouldn't for advice.",
+        "Advice can begin with: You should..., You shouldn't..., Why don't you...?, If I were you, I'd..."
+      ],
+      "skills": [
+        "Ask for and give advice.",
+        "Write a short blog post about a problem and solution.",
+        "Discuss choices in a team."
+      ],
+      "passage": "When someone feels stressed, useful advice can help. A friend may suggest making a plan, asking for help, exploring a new hobby or thinking carefully before choosing an option.",
+      "questions": [
+        {
+          "id": "e1-m12-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"worried or anxious\"?",
+          "choices": [
+            "effectively",
+            "emotion",
+            "nervous",
+            "stressed"
+          ],
+          "answer": "nervous"
+        },
+        {
+          "id": "e1-m12-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a feeling such as happiness or anger\"?",
+          "choices": [
+            "effectively",
+            "emotion",
+            "explore",
+            "stressed"
+          ],
+          "answer": "emotion"
+        },
+        {
+          "id": "e1-m12-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"in a successful way\"?",
+          "choices": [
+            "effectively",
+            "explore",
+            "option",
+            "stressed"
+          ],
+          "answer": "effectively"
+        },
+        {
+          "id": "e1-m12-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"worried because of pressure\"?",
+          "choices": [
+            "evaluate",
+            "explore",
+            "option",
+            "stressed"
+          ],
+          "answer": "stressed"
+        },
+        {
+          "id": "e1-m12-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to learn about or investigate\"?",
+          "choices": [
+            "advice",
+            "evaluate",
+            "explore",
+            "option"
+          ],
+          "answer": "explore"
+        },
+        {
+          "id": "e1-m12-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a possible choice\"?",
+          "choices": [
+            "advice",
+            "evaluate",
+            "nervous",
+            "option"
+          ],
+          "answer": "option"
+        },
+        {
+          "id": "e1-m12-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Worried or anxious: ______.",
+          "answer": "nervous"
+        },
+        {
+          "id": "e1-m12-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a feeling such as happiness or anger\" is ______.",
+          "answer": "emotion"
+        },
+        {
+          "id": "e1-m12-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use should / shouldn't for advice.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use should / shouldn't for advice."
+        },
+        {
+          "id": "e1-m12-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: When someone feels stressed, useful advice can help. A friend may suggest making a plan, asking for help, exploring a new hobby or thinking carefully before choosing an option. What is the main idea?",
+          "choices": [
+            "The passage is mainly about asking for and giving advice & team-project roundtable.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about asking for and giving advice & team-project roundtable."
+        },
+        {
+          "id": "e1-m12-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "effectively",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "effectively"
+        },
+        {
+          "id": "e1-m12-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"stressed\" in a correct sentence related to Smart Choices.",
+          "answer": "A correct meaningful sentence using \"stressed\" in context."
+        },
+        {
+          "id": "e1-m12-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Asking for and Giving Advice & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "unit": 5,
+      "unitTitle": "Future Dreams",
+      "title": "Discover Your Future! & An Interview with a Scientist",
+      "vocab": [
+        [
+          "achievement",
+          "something important you have succeeded in doing"
+        ],
+        [
+          "ambition",
+          "a strong desire to achieve something"
+        ],
+        [
+          "confidence",
+          "belief in your abilities"
+        ],
+        [
+          "career",
+          "the work you do for a long part of your life"
+        ],
+        [
+          "develop",
+          "to grow or improve"
+        ],
+        [
+          "experiment",
+          "a scientific test"
+        ],
+        [
+          "scientist",
+          "a person who studies science"
+        ],
+        [
+          "chemistry",
+          "the science of substances and their changes"
+        ]
+      ],
+      "grammar": [
+        "Use will and be going to to talk about the future.",
+        "Use want to / hope to / plan to for future goals."
+      ],
+      "skills": [
+        "Explore future careers.",
+        "Read an interview with a scientist.",
+        "Talk about ambitions and skills."
+      ],
+      "passage": "Nour wants to become a scientist. She enjoys experiments and hopes to study chemistry. She is developing her skills because she knows that a future career needs hard work and confidence.",
+      "questions": [
+        {
+          "id": "e1-m13-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"something important you have succeeded in doing\"?",
+          "choices": [
+            "achievement",
+            "ambition",
+            "career",
+            "confidence"
+          ],
+          "answer": "achievement"
+        },
+        {
+          "id": "e1-m13-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a strong desire to achieve something\"?",
+          "choices": [
+            "ambition",
+            "career",
+            "confidence",
+            "develop"
+          ],
+          "answer": "ambition"
+        },
+        {
+          "id": "e1-m13-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"belief in your abilities\"?",
+          "choices": [
+            "career",
+            "confidence",
+            "develop",
+            "experiment"
+          ],
+          "answer": "confidence"
+        },
+        {
+          "id": "e1-m13-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the work you do for a long part of your life\"?",
+          "choices": [
+            "career",
+            "develop",
+            "experiment",
+            "scientist"
+          ],
+          "answer": "career"
+        },
+        {
+          "id": "e1-m13-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to grow or improve\"?",
+          "choices": [
+            "chemistry",
+            "develop",
+            "experiment",
+            "scientist"
+          ],
+          "answer": "develop"
+        },
+        {
+          "id": "e1-m13-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a scientific test\"?",
+          "choices": [
+            "achievement",
+            "chemistry",
+            "experiment",
+            "scientist"
+          ],
+          "answer": "experiment"
+        },
+        {
+          "id": "e1-m13-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Something important you have succeeded in doing: ______.",
+          "answer": "achievement"
+        },
+        {
+          "id": "e1-m13-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a strong desire to achieve something\" is ______.",
+          "answer": "ambition"
+        },
+        {
+          "id": "e1-m13-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use will and be going to to talk about the future.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use will and be going to to talk about the future."
+        },
+        {
+          "id": "e1-m13-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Nour wants to become a scientist. She enjoys experiments and hopes to study chemistry. She is developing her skills because she knows that a future career needs hard work and confidence. What is the main idea?",
+          "choices": [
+            "The passage is mainly about discover your future! & an interview with a scientist.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about discover your future! & an interview with a scientist."
+        },
+        {
+          "id": "e1-m13-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "confidence",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "confidence"
+        },
+        {
+          "id": "e1-m13-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"career\" in a correct sentence related to Future Dreams.",
+          "answer": "A correct meaningful sentence using \"career\" in context."
+        },
+        {
+          "id": "e1-m13-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Discover Your Future! & An Interview with a Scientist. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "unit": 5,
+      "unitTitle": "Future Dreams",
+      "title": "My Plan for a Future Career",
+      "vocab": [
+        [
+          "success",
+          "the achievement of a goal"
+        ],
+        [
+          "skill",
+          "an ability developed through practice"
+        ],
+        [
+          "wish",
+          "a strong hope"
+        ],
+        [
+          "university",
+          "a place for higher education"
+        ],
+        [
+          "talent",
+          "a natural ability"
+        ],
+        [
+          "education",
+          "the process of learning"
+        ],
+        [
+          "training",
+          "practice that prepares you for work"
+        ],
+        [
+          "achieve",
+          "to succeed in reaching something"
+        ]
+      ],
+      "grammar": [
+        "Use future forms to describe plans and predictions.",
+        "Use because to explain why a career matches your skills."
+      ],
+      "skills": [
+        "Create a career plan.",
+        "Match talents and skills to careers.",
+        "Write about future education and training."
+      ],
+      "passage": "Mona wants a career in medicine. She plans to study hard, improve her science skills and go to university. She knows that success needs education, training and patience.",
+      "questions": [
+        {
+          "id": "e1-m14-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the achievement of a goal\"?",
+          "choices": [
+            "skill",
+            "success",
+            "university",
+            "wish"
+          ],
+          "answer": "success"
+        },
+        {
+          "id": "e1-m14-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"an ability developed through practice\"?",
+          "choices": [
+            "skill",
+            "talent",
+            "university",
+            "wish"
+          ],
+          "answer": "skill"
+        },
+        {
+          "id": "e1-m14-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a strong hope\"?",
+          "choices": [
+            "education",
+            "talent",
+            "university",
+            "wish"
+          ],
+          "answer": "wish"
+        },
+        {
+          "id": "e1-m14-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a place for higher education\"?",
+          "choices": [
+            "education",
+            "talent",
+            "training",
+            "university"
+          ],
+          "answer": "university"
+        },
+        {
+          "id": "e1-m14-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a natural ability\"?",
+          "choices": [
+            "achieve",
+            "education",
+            "talent",
+            "training"
+          ],
+          "answer": "talent"
+        },
+        {
+          "id": "e1-m14-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the process of learning\"?",
+          "choices": [
+            "achieve",
+            "education",
+            "success",
+            "training"
+          ],
+          "answer": "education"
+        },
+        {
+          "id": "e1-m14-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: The achievement of a goal: ______.",
+          "answer": "success"
+        },
+        {
+          "id": "e1-m14-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"an ability developed through practice\" is ______.",
+          "answer": "skill"
+        },
+        {
+          "id": "e1-m14-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use future forms to describe plans and predictions.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use future forms to describe plans and predictions."
+        },
+        {
+          "id": "e1-m14-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Mona wants a career in medicine. She plans to study hard, improve her science skills and go to university. She knows that success needs education, training and patience. What is the main idea?",
+          "choices": [
+            "The passage is mainly about my plan for a future career.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about my plan for a future career."
+        },
+        {
+          "id": "e1-m14-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "wish",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "wish"
+        },
+        {
+          "id": "e1-m14-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"university\" in a correct sentence related to Future Dreams.",
+          "answer": "A correct meaningful sentence using \"university\" in context."
+        },
+        {
+          "id": "e1-m14-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: My Plan for a Future Career. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "unit": 5,
+      "unitTitle": "Future Dreams",
+      "title": "My Dream Job! & Team-Project Roundtable",
+      "vocab": [
+        [
+          "owner",
+          "a person who owns something"
+        ],
+        [
+          "prediction",
+          "a statement about what may happen"
+        ],
+        [
+          "focused",
+          "giving full attention"
+        ],
+        [
+          "review",
+          "an evaluation or opinion"
+        ],
+        [
+          "treat",
+          "to give medical care"
+        ],
+        [
+          "caring",
+          "kind and concerned about others"
+        ],
+        [
+          "course",
+          "a set of lessons or training"
+        ],
+        [
+          "inspire",
+          "to encourage someone"
+        ]
+      ],
+      "grammar": [
+        "Use future language for dream jobs and predictions.",
+        "Use opinion expressions: In my opinion, I think, I believe."
+      ],
+      "skills": [
+        "Describe a dream job.",
+        "Write a review with reasons and a recommendation.",
+        "Create a career mind map in a team."
+      ],
+      "passage": "Youssef dreams of a job that helps people. He is focused on his goals and plans to take a training course. He believes a good career should match his interests and allow him to make a difference.",
+      "questions": [
+        {
+          "id": "e1-m15-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person who owns something\"?",
+          "choices": [
+            "focused",
+            "owner",
+            "prediction",
+            "review"
+          ],
+          "answer": "owner"
+        },
+        {
+          "id": "e1-m15-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a statement about what may happen\"?",
+          "choices": [
+            "focused",
+            "prediction",
+            "review",
+            "treat"
+          ],
+          "answer": "prediction"
+        },
+        {
+          "id": "e1-m15-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"giving full attention\"?",
+          "choices": [
+            "caring",
+            "focused",
+            "review",
+            "treat"
+          ],
+          "answer": "focused"
+        },
+        {
+          "id": "e1-m15-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"an evaluation or opinion\"?",
+          "choices": [
+            "caring",
+            "course",
+            "review",
+            "treat"
+          ],
+          "answer": "review"
+        },
+        {
+          "id": "e1-m15-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to give medical care\"?",
+          "choices": [
+            "caring",
+            "course",
+            "inspire",
+            "treat"
+          ],
+          "answer": "treat"
+        },
+        {
+          "id": "e1-m15-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"kind and concerned about others\"?",
+          "choices": [
+            "caring",
+            "course",
+            "inspire",
+            "owner"
+          ],
+          "answer": "caring"
+        },
+        {
+          "id": "e1-m15-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A person who owns something: ______.",
+          "answer": "owner"
+        },
+        {
+          "id": "e1-m15-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a statement about what may happen\" is ______.",
+          "answer": "prediction"
+        },
+        {
+          "id": "e1-m15-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use future language for dream jobs and predictions.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use future language for dream jobs and predictions."
+        },
+        {
+          "id": "e1-m15-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Youssef dreams of a job that helps people. He is focused on his goals and plans to take a training course. He believes a good career should match his interests and allow him to make a difference. What is the main idea?",
+          "choices": [
+            "The passage is mainly about my dream job! & team-project roundtable.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about my dream job! & team-project roundtable."
+        },
+        {
+          "id": "e1-m15-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "focused",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "focused"
+        },
+        {
+          "id": "e1-m15-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"review\" in a correct sentence related to Future Dreams.",
+          "answer": "A correct meaningful sentence using \"review\" in context."
+        },
+        {
+          "id": "e1-m15-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: My Dream Job! & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "unit": 6,
+      "unitTitle": "Global Citizens",
+      "title": "Being a Global Citizen & Global Citizen Talk",
+      "vocab": [
+        [
+          "citizen",
+          "a member of a country or community"
+        ],
+        [
+          "globe",
+          "the world"
+        ],
+        [
+          "culture",
+          "the ideas and traditions of a group"
+        ],
+        [
+          "volunteer",
+          "a person who helps without being paid"
+        ],
+        [
+          "peace",
+          "a state without conflict"
+        ],
+        [
+          "environment",
+          "the natural world around us"
+        ],
+        [
+          "rights",
+          "things people are allowed to have or do"
+        ],
+        [
+          "responsibility",
+          "a duty to take care of something"
+        ]
+      ],
+      "grammar": [
+        "Use obligation and responsibility language: must, should, have to.",
+        "Use inclusive language when discussing communities."
+      ],
+      "skills": [
+        "Explain what a global citizen does.",
+        "Discuss rights and responsibilities.",
+        "Speak respectfully about different cultures."
+      ],
+      "passage": "A global citizen cares about people and the environment. Global citizens respect different cultures, volunteer in their communities, protect rights and take responsibility for their actions.",
+      "questions": [
+        {
+          "id": "e1-m16-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a member of a country or community\"?",
+          "choices": [
+            "citizen",
+            "culture",
+            "globe",
+            "volunteer"
+          ],
+          "answer": "citizen"
+        },
+        {
+          "id": "e1-m16-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the world\"?",
+          "choices": [
+            "culture",
+            "globe",
+            "peace",
+            "volunteer"
+          ],
+          "answer": "globe"
+        },
+        {
+          "id": "e1-m16-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the ideas and traditions of a group\"?",
+          "choices": [
+            "culture",
+            "environment",
+            "peace",
+            "volunteer"
+          ],
+          "answer": "culture"
+        },
+        {
+          "id": "e1-m16-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a person who helps without being paid\"?",
+          "choices": [
+            "environment",
+            "peace",
+            "rights",
+            "volunteer"
+          ],
+          "answer": "volunteer"
+        },
+        {
+          "id": "e1-m16-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a state without conflict\"?",
+          "choices": [
+            "environment",
+            "peace",
+            "responsibility",
+            "rights"
+          ],
+          "answer": "peace"
+        },
+        {
+          "id": "e1-m16-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the natural world around us\"?",
+          "choices": [
+            "citizen",
+            "environment",
+            "responsibility",
+            "rights"
+          ],
+          "answer": "environment"
+        },
+        {
+          "id": "e1-m16-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A member of a country or community: ______.",
+          "answer": "citizen"
+        },
+        {
+          "id": "e1-m16-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"the world\" is ______.",
+          "answer": "globe"
+        },
+        {
+          "id": "e1-m16-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use obligation and responsibility language: must, should, have to.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use obligation and responsibility language: must, should, have to."
+        },
+        {
+          "id": "e1-m16-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: A global citizen cares about people and the environment. Global citizens respect different cultures, volunteer in their communities, protect rights and take responsibility for their actions. What is the main idea?",
+          "choices": [
+            "The passage is mainly about being a global citizen & global citizen talk.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about being a global citizen & global citizen talk."
+        },
+        {
+          "id": "e1-m16-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "culture",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "culture"
+        },
+        {
+          "id": "e1-m16-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"volunteer\" in a correct sentence related to Global Citizens.",
+          "answer": "A correct meaningful sentence using \"volunteer\" in context."
+        },
+        {
+          "id": "e1-m16-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Being a Global Citizen & Global Citizen Talk. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "unit": 6,
+      "unitTitle": "Global Citizens",
+      "title": "Ocean Circle",
+      "vocab": [
+        [
+          "diversity",
+          "the state of being different"
+        ],
+        [
+          "impact",
+          "a strong effect"
+        ],
+        [
+          "danger",
+          "the possibility of harm"
+        ],
+        [
+          "global responsibility",
+          "a duty shared by people around the world"
+        ],
+        [
+          "participate",
+          "to take part in something"
+        ],
+        [
+          "generation",
+          "people born around the same time"
+        ],
+        [
+          "reusable",
+          "able to be used again"
+        ],
+        [
+          "reduce",
+          "to make something smaller or less"
+        ]
+      ],
+      "grammar": [
+        "Use must / mustn't and should / shouldn't for environmental responsibility.",
+        "Use present simple to state environmental facts."
+      ],
+      "skills": [
+        "Read about protecting oceans.",
+        "Explain causes and solutions to pollution.",
+        "Discuss individual and global responsibility."
+      ],
+      "passage": "Oceans are in danger from pollution and waste. People can reduce plastic use, choose reusable items, join clean-ups and teach others. Protecting oceans is a global responsibility for present and future generations.",
+      "questions": [
+        {
+          "id": "e1-m17-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the state of being different\"?",
+          "choices": [
+            "danger",
+            "diversity",
+            "global responsibility",
+            "impact"
+          ],
+          "answer": "diversity"
+        },
+        {
+          "id": "e1-m17-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a strong effect\"?",
+          "choices": [
+            "danger",
+            "global responsibility",
+            "impact",
+            "participate"
+          ],
+          "answer": "impact"
+        },
+        {
+          "id": "e1-m17-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"the possibility of harm\"?",
+          "choices": [
+            "danger",
+            "generation",
+            "global responsibility",
+            "participate"
+          ],
+          "answer": "danger"
+        },
+        {
+          "id": "e1-m17-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a duty shared by people around the world\"?",
+          "choices": [
+            "generation",
+            "global responsibility",
+            "participate",
+            "reusable"
+          ],
+          "answer": "global responsibility"
+        },
+        {
+          "id": "e1-m17-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to take part in something\"?",
+          "choices": [
+            "generation",
+            "participate",
+            "reduce",
+            "reusable"
+          ],
+          "answer": "participate"
+        },
+        {
+          "id": "e1-m17-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"people born around the same time\"?",
+          "choices": [
+            "diversity",
+            "generation",
+            "reduce",
+            "reusable"
+          ],
+          "answer": "generation"
+        },
+        {
+          "id": "e1-m17-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: The state of being different: ______.",
+          "answer": "diversity"
+        },
+        {
+          "id": "e1-m17-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"a strong effect\" is ______.",
+          "answer": "impact"
+        },
+        {
+          "id": "e1-m17-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use must / mustn't and should / shouldn't for environmental responsibility.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use must / mustn't and should / shouldn't for environmental responsibility."
+        },
+        {
+          "id": "e1-m17-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: Oceans are in danger from pollution and waste. People can reduce plastic use, choose reusable items, join clean-ups and teach others. Protecting oceans is a global responsibility for present and future generations. What is the main idea?",
+          "choices": [
+            "The passage is mainly about ocean circle.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about ocean circle."
+        },
+        {
+          "id": "e1-m17-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "danger",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "danger"
+        },
+        {
+          "id": "e1-m17-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"global responsibility\" in a correct sentence related to Global Citizens.",
+          "answer": "A correct meaningful sentence using \"global responsibility\" in context."
+        },
+        {
+          "id": "e1-m17-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Ocean Circle. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "unit": 6,
+      "unitTitle": "Global Citizens",
+      "title": "Let's Make a Difference & Team-Project Roundtable",
+      "vocab": [
+        [
+          "proud",
+          "pleased because of something good"
+        ],
+        [
+          "care",
+          "to feel concern and take action"
+        ],
+        [
+          "poster",
+          "a large printed notice or picture"
+        ],
+        [
+          "recycling",
+          "processing used materials so they can be used again"
+        ],
+        [
+          "included",
+          "made part of a group"
+        ],
+        [
+          "difference",
+          "a change or effect"
+        ],
+        [
+          "project",
+          "a planned piece of work"
+        ],
+        [
+          "action",
+          "something done to achieve a result"
+        ]
+      ],
+      "grammar": [
+        "Use clear action verbs in campaigns and social media posts.",
+        "Use positive imperatives: Reduce waste. Join the clean-up. Be kind."
+      ],
+      "skills": [
+        "Create a social media post for a positive cause.",
+        "Plan a community project.",
+        "Use clear short sentences and a call to action."
+      ],
+      "passage": "A school group starts a clean-up project. Students make posters, separate recycling, invite everyone to participate and share a social media post. They feel proud because small actions can make a difference.",
+      "questions": [
+        {
+          "id": "e1-m18-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"pleased because of something good\"?",
+          "choices": [
+            "care",
+            "poster",
+            "proud",
+            "recycling"
+          ],
+          "answer": "proud"
+        },
+        {
+          "id": "e1-m18-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to feel concern and take action\"?",
+          "choices": [
+            "care",
+            "included",
+            "poster",
+            "recycling"
+          ],
+          "answer": "care"
+        },
+        {
+          "id": "e1-m18-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a large printed notice or picture\"?",
+          "choices": [
+            "difference",
+            "included",
+            "poster",
+            "recycling"
+          ],
+          "answer": "poster"
+        },
+        {
+          "id": "e1-m18-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"processing used materials so they can be used again\"?",
+          "choices": [
+            "difference",
+            "included",
+            "project",
+            "recycling"
+          ],
+          "answer": "recycling"
+        },
+        {
+          "id": "e1-m18-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"made part of a group\"?",
+          "choices": [
+            "action",
+            "difference",
+            "included",
+            "project"
+          ],
+          "answer": "included"
+        },
+        {
+          "id": "e1-m18-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a change or effect\"?",
+          "choices": [
+            "action",
+            "difference",
+            "project",
+            "proud"
+          ],
+          "answer": "difference"
+        },
+        {
+          "id": "e1-m18-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Pleased because of something good: ______.",
+          "answer": "proud"
+        },
+        {
+          "id": "e1-m18-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"to feel concern and take action\" is ______.",
+          "answer": "care"
+        },
+        {
+          "id": "e1-m18-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use clear action verbs in campaigns and social media posts.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use clear action verbs in campaigns and social media posts."
+        },
+        {
+          "id": "e1-m18-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: A school group starts a clean-up project. Students make posters, separate recycling, invite everyone to participate and share a social media post. They feel proud because small actions can make a difference. What is the main idea?",
+          "choices": [
+            "The passage is mainly about let's make a difference & team-project roundtable.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about let's make a difference & team-project roundtable."
+        },
+        {
+          "id": "e1-m18-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "poster",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "poster"
+        },
+        {
+          "id": "e1-m18-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"recycling\" in a correct sentence related to Global Citizens.",
+          "answer": "A correct meaningful sentence using \"recycling\" in context."
+        },
+        {
+          "id": "e1-m18-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: Let's Make a Difference & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "unit": 7,
+      "unitTitle": "Story 1",
+      "title": "The Magic Classroom",
+      "vocab": [
+        [
+          "curious",
+          "wanting to know more"
+        ],
+        [
+          "announcement",
+          "important information shared with a group"
+        ],
+        [
+          "responsibility",
+          "a duty"
+        ],
+        [
+          "teamwork",
+          "working together"
+        ],
+        [
+          "confident",
+          "sure of yourself"
+        ],
+        [
+          "shy",
+          "nervous with other people"
+        ],
+        [
+          "support",
+          "to help someone"
+        ],
+        [
+          "mystery",
+          "something difficult to explain"
+        ]
+      ],
+      "grammar": [
+        "Use Past Simple to retell story events.",
+        "Use sequence words: first, then, after that, finally."
+      ],
+      "skills": [
+        "Identify characters and setting.",
+        "Retell events in order.",
+        "Discuss how teamwork and responsibility affect the characters."
+      ],
+      "passage": "The story follows Mr. Adam and his students, including Sara, Omar and Zain. The children enter an unusual learning experience in the Magic Classroom. They need curiosity, responsibility and teamwork as they face new situations together.",
+      "questions": [
+        {
+          "id": "e1-m19-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"wanting to know more\"?",
+          "choices": [
+            "announcement",
+            "curious",
+            "responsibility",
+            "teamwork"
+          ],
+          "answer": "curious"
+        },
+        {
+          "id": "e1-m19-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"important information shared with a group\"?",
+          "choices": [
+            "announcement",
+            "confident",
+            "responsibility",
+            "teamwork"
+          ],
+          "answer": "announcement"
+        },
+        {
+          "id": "e1-m19-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a duty\"?",
+          "choices": [
+            "confident",
+            "responsibility",
+            "shy",
+            "teamwork"
+          ],
+          "answer": "responsibility"
+        },
+        {
+          "id": "e1-m19-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"working together\"?",
+          "choices": [
+            "confident",
+            "shy",
+            "support",
+            "teamwork"
+          ],
+          "answer": "teamwork"
+        },
+        {
+          "id": "e1-m19-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"sure of yourself\"?",
+          "choices": [
+            "confident",
+            "mystery",
+            "shy",
+            "support"
+          ],
+          "answer": "confident"
+        },
+        {
+          "id": "e1-m19-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"nervous with other people\"?",
+          "choices": [
+            "curious",
+            "mystery",
+            "shy",
+            "support"
+          ],
+          "answer": "shy"
+        },
+        {
+          "id": "e1-m19-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: Wanting to know more: ______.",
+          "answer": "curious"
+        },
+        {
+          "id": "e1-m19-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"important information shared with a group\" is ______.",
+          "answer": "announcement"
+        },
+        {
+          "id": "e1-m19-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use Past Simple to retell story events.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use Past Simple to retell story events."
+        },
+        {
+          "id": "e1-m19-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: The story follows Mr. Adam and his students, including Sara, Omar and Zain. The children enter an unusual learning experience in the Magic Classroom. They need curiosity, responsibility and teamwork as they face new situations together. What is the main idea?",
+          "choices": [
+            "The passage is mainly about the magic classroom.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about the magic classroom."
+        },
+        {
+          "id": "e1-m19-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "responsibility",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "responsibility"
+        },
+        {
+          "id": "e1-m19-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"teamwork\" in a correct sentence related to Story 1.",
+          "answer": "A correct meaningful sentence using \"teamwork\" in context."
+        },
+        {
+          "id": "e1-m19-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: The Magic Classroom. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "unit": 8,
+      "unitTitle": "Story 2",
+      "title": "The Dream Team",
+      "vocab": [
+        [
+          "team",
+          "a group working together"
+        ],
+        [
+          "goal",
+          "something you want to achieve"
+        ],
+        [
+          "challenge",
+          "a difficult task"
+        ],
+        [
+          "encourage",
+          "to give someone confidence"
+        ],
+        [
+          "effort",
+          "hard work"
+        ],
+        [
+          "cooperate",
+          "to work together"
+        ],
+        [
+          "improve",
+          "to become better"
+        ],
+        [
+          "success",
+          "achieving what you wanted"
+        ]
+      ],
+      "grammar": [
+        "Use Past Simple to describe story events.",
+        "Use because, so and but to connect ideas about actions and results."
+      ],
+      "skills": [
+        "Identify main characters and their roles.",
+        "Explain how teamwork helps solve challenges.",
+        "Write a short character or event summary."
+      ],
+      "passage": "The Dream Team follows a group of students who learn to work together toward shared goals. Each character has different strengths, and the team improves when they encourage one another and cooperate.",
+      "questions": [
+        {
+          "id": "e1-m20-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a group working together\"?",
+          "choices": [
+            "challenge",
+            "encourage",
+            "goal",
+            "team"
+          ],
+          "answer": "team"
+        },
+        {
+          "id": "e1-m20-002",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"something you want to achieve\"?",
+          "choices": [
+            "challenge",
+            "effort",
+            "encourage",
+            "goal"
+          ],
+          "answer": "goal"
+        },
+        {
+          "id": "e1-m20-003",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"a difficult task\"?",
+          "choices": [
+            "challenge",
+            "cooperate",
+            "effort",
+            "encourage"
+          ],
+          "answer": "challenge"
+        },
+        {
+          "id": "e1-m20-004",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to give someone confidence\"?",
+          "choices": [
+            "cooperate",
+            "effort",
+            "encourage",
+            "improve"
+          ],
+          "answer": "encourage"
+        },
+        {
+          "id": "e1-m20-005",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"hard work\"?",
+          "choices": [
+            "cooperate",
+            "effort",
+            "improve",
+            "success"
+          ],
+          "answer": "effort"
+        },
+        {
+          "id": "e1-m20-006",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which word means: \"to work together\"?",
+          "choices": [
+            "cooperate",
+            "improve",
+            "success",
+            "team"
+          ],
+          "answer": "cooperate"
+        },
+        {
+          "id": "e1-m20-007",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete with the correct word: A group working together: ______.",
+          "answer": "team"
+        },
+        {
+          "id": "e1-m20-008",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Complete: A word from this module that means \"something you want to achieve\" is ______.",
+          "answer": "goal"
+        },
+        {
+          "id": "e1-m20-009",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Choose the sentence that best matches the language focus of this module.",
+          "choices": [
+            "Use Past Simple to describe story events.",
+            "Use random words without a clear sentence structure.",
+            "Ignore tense and punctuation completely.",
+            "Every sentence must be written in the passive voice."
+          ],
+          "answer": "Use Past Simple to describe story events."
+        },
+        {
+          "id": "e1-m20-010",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "Read the passage: The Dream Team follows a group of students who learn to work together toward shared goals. Each character has different strengths, and the team improves when they encourage one another and cooperate. What is the main idea?",
+          "choices": [
+            "The passage is mainly about the dream team.",
+            "The passage is mainly about a football match only.",
+            "The passage is mainly about buying food.",
+            "The passage is mainly about ancient monuments."
+          ],
+          "answer": "The passage is mainly about the dream team."
+        },
+        {
+          "id": "e1-m20-011",
+          "type": "mcq",
+          "difficulty": "medium",
+          "text": "According to the module passage, which word is part of this topic?",
+          "choices": [
+            "challenge",
+            "volcano",
+            "telescope",
+            "currency"
+          ],
+          "answer": "challenge"
+        },
+        {
+          "id": "e1-m20-012",
+          "type": "rewrite",
+          "difficulty": "medium",
+          "text": "Use the word \"encourage\" in a correct sentence related to Story 2.",
+          "answer": "A correct meaningful sentence using \"encourage\" in context."
+        },
+        {
+          "id": "e1-m20-013",
+          "type": "writing",
+          "difficulty": "hard",
+          "text": "Write 4–6 sentences about: The Dream Team. Use vocabulary from the module and correct grammar.",
+          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+        }
+      ]
+    }
+  ]
+}
