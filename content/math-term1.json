@@ -1,0 +1,1839 @@
+{
+  "subject": "Math",
+  "displayName": "Math",
+  "grade": "First Prep",
+  "term": 1,
+  "track": "languages",
+  "source": "El-Moasser Maths — First Prep — First Term 2027",
+  "sourceNote": "Zaker structures the uploaded book into lessons and original practice; it does not reproduce book pages.",
+  "modules": [
+    {
+      "id": 1,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Proportion",
+      "summary": "A proportion is an equality between two ratios. Cross multiplication is used to test and solve proportions.",
+      "concepts": [
+        "ratio",
+        "proportion",
+        "cross multiplication"
+      ],
+      "formulas": [
+        "a/b = c/d",
+        "a × d = b × c"
+      ],
+      "examples": [
+        "3/4 = 6/8",
+        "If 6/9 = x/15, then x = 10."
+      ],
+      "questions": [
+        {
+          "id": "m1-1-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Proportion?",
+          "choices": [
+            "ratio",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "ratio"
+        },
+        {
+          "id": "m1-1-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: a/b = c/d",
+          "answer": "a/b = c/d"
+        },
+        {
+          "id": "m1-1-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "A proportion is an equality between two ratios. Cross multiplication is used to test and solve proportions.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-1-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Proportion.",
+          "answer": "A proportion is an equality between two ratios. Cross multiplication is used to test and solve proportions."
+        },
+        {
+          "id": "m1-1-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "ratio / proportion / cross multiplication"
+        },
+        {
+          "id": "m1-1-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Solve 4/5 = x/20.",
+          "answer": "16"
+        },
+        {
+          "id": "m1-1-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Are 6/8 and 9/12 proportional?",
+          "answer": "Yes"
+        },
+        {
+          "id": "m1-1-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Find x if 3:x = 6:14.",
+          "answer": "7"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Applications of Ratio and Proportion — Scale Drawings",
+      "summary": "Scale drawings compare a length in a drawing or model with the real length after using the same units.",
+      "concepts": [
+        "scale drawing",
+        "drawing length",
+        "real length"
+      ],
+      "formulas": [
+        "scale = drawing length / real length"
+      ],
+      "examples": [
+        "1 : 500,000 means 1 cm on the map represents 5 km in reality."
+      ],
+      "questions": [
+        {
+          "id": "m1-2-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Applications of Ratio and Proportion — Scale Drawings?",
+          "choices": [
+            "scale drawing",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "scale drawing"
+        },
+        {
+          "id": "m1-2-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: scale = drawing length / real length",
+          "answer": "scale = drawing length / real length"
+        },
+        {
+          "id": "m1-2-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Scale drawings compare a length in a drawing or model with the real length after using the same units.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-2-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Applications of Ratio and Proportion — Scale Drawings.",
+          "answer": "Scale drawings compare a length in a drawing or model with the real length after using the same units."
+        },
+        {
+          "id": "m1-2-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "scale drawing / drawing length / real length"
+        },
+        {
+          "id": "m1-2-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "A map scale is 1:100000. What real distance does 3 cm represent in km?",
+          "answer": "3"
+        },
+        {
+          "id": "m1-2-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Drawing length is 5 cm and real length is 250 cm. Write the scale in simplest form.",
+          "answer": "1:50"
+        },
+        {
+          "id": "m1-2-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "At scale 1:200, what drawing length represents 600 cm?",
+          "answer": "3 cm"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Applications of Ratio and Proportion — Proportional Division",
+      "summary": "Proportional division splits money, land, profit, or another quantity into shares according to a given ratio.",
+      "concepts": [
+        "proportional division",
+        "ratio parts",
+        "share"
+      ],
+      "formulas": [
+        "one part = total / sum of ratio parts",
+        "share = one part × its ratio number"
+      ],
+      "examples": [
+        "Divide 1200 in the ratio 2:1 → 800 and 400."
+      ],
+      "questions": [
+        {
+          "id": "m1-3-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Applications of Ratio and Proportion — Proportional Division?",
+          "choices": [
+            "proportional division",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "proportional division"
+        },
+        {
+          "id": "m1-3-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: one part = total / sum of ratio parts",
+          "answer": "one part = total / sum of ratio parts"
+        },
+        {
+          "id": "m1-3-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Proportional division splits money, land, profit, or another quantity into shares according to a given ratio.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-3-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Applications of Ratio and Proportion — Proportional Division.",
+          "answer": "Proportional division splits money, land, profit, or another quantity into shares according to a given ratio."
+        },
+        {
+          "id": "m1-3-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "proportional division / ratio parts / share"
+        },
+        {
+          "id": "m1-3-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Divide 900 in ratio 2:1.",
+          "answer": "600, 300"
+        },
+        {
+          "id": "m1-3-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Divide 720 in ratio 3:2:1. Find the largest share.",
+          "answer": "360"
+        },
+        {
+          "id": "m1-3-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Two shares are in ratio 5:3 and total 640. Find the smaller share.",
+          "answer": "240"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Applications of Ratio and Proportion — Percentages",
+      "summary": "Percentages express a part out of one hundred and are used in discounts, increases, decreases, profit, and everyday problems.",
+      "concepts": [
+        "percentage",
+        "increase",
+        "decrease"
+      ],
+      "formulas": [
+        "percentage = part / whole × 100",
+        "part = percentage × whole / 100"
+      ],
+      "examples": [
+        "20% of 150 = 30"
+      ],
+      "questions": [
+        {
+          "id": "m1-4-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Applications of Ratio and Proportion — Percentages?",
+          "choices": [
+            "percentage",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "percentage"
+        },
+        {
+          "id": "m1-4-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: percentage = part / whole × 100",
+          "answer": "percentage = part / whole × 100"
+        },
+        {
+          "id": "m1-4-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Percentages express a part out of one hundred and are used in discounts, increases, decreases, profit, and everyday problems.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-4-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Applications of Ratio and Proportion — Percentages.",
+          "answer": "Percentages express a part out of one hundred and are used in discounts, increases, decreases, profit, and everyday problems."
+        },
+        {
+          "id": "m1-4-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "percentage / increase / decrease"
+        },
+        {
+          "id": "m1-4-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Find 25% of 200.",
+          "answer": "50"
+        },
+        {
+          "id": "m1-4-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "A price 300 is reduced by 10%. Find the new price.",
+          "answer": "270"
+        },
+        {
+          "id": "m1-4-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "30 is what percent of 120?",
+          "answer": "25%"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Sets and Their Operations",
+      "summary": "A set is a well-defined collection of objects. Main operations include union, intersection, difference, and complement.",
+      "concepts": [
+        "set",
+        "union",
+        "intersection",
+        "difference"
+      ],
+      "formulas": [
+        "A ∪ B",
+        "A ∩ B",
+        "A − B"
+      ],
+      "examples": [
+        "If A={1,2,3} and B={3,4}, then A∩B={3}."
+      ],
+      "questions": [
+        {
+          "id": "m1-5-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Sets and Their Operations?",
+          "choices": [
+            "set",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "set"
+        },
+        {
+          "id": "m1-5-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: A ∪ B",
+          "answer": "A ∪ B"
+        },
+        {
+          "id": "m1-5-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "A set is a well-defined collection of objects. Main operations include union, intersection, difference, and complement.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-5-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Sets and Their Operations.",
+          "answer": "A set is a well-defined collection of objects. Main operations include union, intersection, difference, and complement."
+        },
+        {
+          "id": "m1-5-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "set / union / intersection / difference"
+        },
+        {
+          "id": "m1-5-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "If A={1,2,3}, B={3,4}, find A∩B.",
+          "answer": "{3}"
+        },
+        {
+          "id": "m1-5-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "For A={1,2}, B={2,3}, find A∪B.",
+          "answer": "{1,2,3}"
+        },
+        {
+          "id": "m1-5-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "If A={1,2,3}, B={2}, find A−B.",
+          "answer": "{1,3}"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Operations on Integers",
+      "summary": "Integer operations follow sign rules for addition, subtraction, multiplication, and division.",
+      "concepts": [
+        "integers",
+        "opposite numbers",
+        "absolute value"
+      ],
+      "formulas": [
+        "(+)(+) = +",
+        "(+)(−) = − for multiplication/division"
+      ],
+      "examples": [
+        "−7 + 12 = 5",
+        "−4 × −3 = 12"
+      ],
+      "questions": [
+        {
+          "id": "m1-6-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Operations on Integers?",
+          "choices": [
+            "integers",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "integers"
+        },
+        {
+          "id": "m1-6-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: (+)(+) = +",
+          "answer": "(+)(+) = +"
+        },
+        {
+          "id": "m1-6-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Integer operations follow sign rules for addition, subtraction, multiplication, and division.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-6-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Operations on Integers.",
+          "answer": "Integer operations follow sign rules for addition, subtraction, multiplication, and division."
+        },
+        {
+          "id": "m1-6-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "integers / opposite numbers / absolute value"
+        },
+        {
+          "id": "m1-6-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Calculate −7+12.",
+          "answer": "5"
+        },
+        {
+          "id": "m1-6-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Calculate −6×−4.",
+          "answer": "24"
+        },
+        {
+          "id": "m1-6-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Calculate 15−23.",
+          "answer": "−8"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "unit": 1,
+      "unitTitle": "Numbers and operations on them",
+      "title": "Operations on Rational Numbers",
+      "summary": "Rational numbers can be written as fractions a/b where b is not zero. Operations use fraction rules and simplification.",
+      "concepts": [
+        "rational number",
+        "fraction",
+        "common denominator"
+      ],
+      "formulas": [
+        "a/b + c/d = (ad+bc)/bd",
+        "a/b × c/d = ac/bd"
+      ],
+      "examples": [
+        "1/2 + 1/3 = 5/6"
+      ],
+      "questions": [
+        {
+          "id": "m1-7-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Operations on Rational Numbers?",
+          "choices": [
+            "rational number",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "rational number"
+        },
+        {
+          "id": "m1-7-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: a/b + c/d = (ad+bc)/bd",
+          "answer": "a/b + c/d = (ad+bc)/bd"
+        },
+        {
+          "id": "m1-7-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Rational numbers can be written as fractions a/b where b is not zero. Operations use fraction rules and simplification.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-7-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Operations on Rational Numbers.",
+          "answer": "Rational numbers can be written as fractions a/b where b is not zero. Operations use fraction rules and simplification."
+        },
+        {
+          "id": "m1-7-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "rational number / fraction / common denominator"
+        },
+        {
+          "id": "m1-7-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Calculate 1/2+1/4.",
+          "answer": "3/4"
+        },
+        {
+          "id": "m1-7-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Calculate 2/3×3/5.",
+          "answer": "2/5"
+        },
+        {
+          "id": "m1-7-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Calculate 5/6−1/3.",
+          "answer": "1/2"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "unit": 2,
+      "unitTitle": "Algebra",
+      "title": "Mathematical Expressions and Formulas / Algebraic Terms",
+      "summary": "Algebraic expressions use variables, constants, coefficients, and operations. Formulas express relationships between quantities.",
+      "concepts": [
+        "variable",
+        "coefficient",
+        "constant",
+        "formula"
+      ],
+      "formulas": [
+        "term = coefficient × variable",
+        "substitution replaces variables with values"
+      ],
+      "examples": [
+        "In 5x+3, 5 is the coefficient and 3 is the constant."
+      ],
+      "questions": [
+        {
+          "id": "m1-8-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Mathematical Expressions and Formulas / Algebraic Terms?",
+          "choices": [
+            "variable",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "variable"
+        },
+        {
+          "id": "m1-8-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: term = coefficient × variable",
+          "answer": "term = coefficient × variable"
+        },
+        {
+          "id": "m1-8-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Algebraic expressions use variables, constants, coefficients, and operations. Formulas express relationships between quantities.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-8-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Mathematical Expressions and Formulas / Algebraic Terms.",
+          "answer": "Algebraic expressions use variables, constants, coefficients, and operations. Formulas express relationships between quantities."
+        },
+        {
+          "id": "m1-8-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "variable / coefficient / constant / formula"
+        },
+        {
+          "id": "m1-8-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "In 7x+4, what is the coefficient of x?",
+          "answer": "7"
+        },
+        {
+          "id": "m1-8-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Evaluate 3x+2 when x=4.",
+          "answer": "14"
+        },
+        {
+          "id": "m1-8-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "How many terms are in 5x−2y+7?",
+          "answer": "3"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "unit": 2,
+      "unitTitle": "Algebra",
+      "title": "Addition and Subtraction of Algebraic Expressions",
+      "summary": "Like terms have the same variable part and can be combined by adding or subtracting their coefficients.",
+      "concepts": [
+        "like terms",
+        "simplify",
+        "algebraic expression"
+      ],
+      "formulas": [
+        "ax + bx = (a+b)x"
+      ],
+      "examples": [
+        "3x + 5x − 2 = 8x − 2"
+      ],
+      "questions": [
+        {
+          "id": "m1-9-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Addition and Subtraction of Algebraic Expressions?",
+          "choices": [
+            "like terms",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "like terms"
+        },
+        {
+          "id": "m1-9-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: ax + bx = (a+b)x",
+          "answer": "ax + bx = (a+b)x"
+        },
+        {
+          "id": "m1-9-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Like terms have the same variable part and can be combined by adding or subtracting their coefficients.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-9-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Addition and Subtraction of Algebraic Expressions.",
+          "answer": "Like terms have the same variable part and can be combined by adding or subtracting their coefficients."
+        },
+        {
+          "id": "m1-9-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "like terms / simplify / algebraic expression"
+        },
+        {
+          "id": "m1-9-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Simplify 3x+5x.",
+          "answer": "8x"
+        },
+        {
+          "id": "m1-9-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Simplify 7a−2a+4.",
+          "answer": "5a+4"
+        },
+        {
+          "id": "m1-9-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Simplify 4x+3−x+2.",
+          "answer": "3x+5"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "unit": 2,
+      "unitTitle": "Algebra",
+      "title": "Linear Equations",
+      "summary": "A linear equation has a variable to the first power. Solving means finding the value that makes both sides equal.",
+      "concepts": [
+        "linear equation",
+        "solution",
+        "inverse operation"
+      ],
+      "formulas": [
+        "ax+b=c",
+        "x=(c−b)/a"
+      ],
+      "examples": [
+        "3x+2=11 → x=3"
+      ],
+      "questions": [
+        {
+          "id": "m1-10-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Linear Equations?",
+          "choices": [
+            "linear equation",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "linear equation"
+        },
+        {
+          "id": "m1-10-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: ax+b=c",
+          "answer": "ax+b=c"
+        },
+        {
+          "id": "m1-10-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "A linear equation has a variable to the first power. Solving means finding the value that makes both sides equal.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-10-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Linear Equations.",
+          "answer": "A linear equation has a variable to the first power. Solving means finding the value that makes both sides equal."
+        },
+        {
+          "id": "m1-10-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "linear equation / solution / inverse operation"
+        },
+        {
+          "id": "m1-10-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Solve 3x+2=11.",
+          "answer": "3"
+        },
+        {
+          "id": "m1-10-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Solve 5x=35.",
+          "answer": "7"
+        },
+        {
+          "id": "m1-10-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Solve 2x−6=10.",
+          "answer": "8"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "Types of Angles and Relationships Between Them",
+      "summary": "Angles are classified by measure and can form complementary, supplementary, adjacent, or vertically opposite relationships.",
+      "concepts": [
+        "acute angle",
+        "right angle",
+        "obtuse angle",
+        "complementary angles"
+      ],
+      "formulas": [
+        "complementary sum = 90°",
+        "supplementary sum = 180°"
+      ],
+      "examples": [
+        "35° and 55° are complementary."
+      ],
+      "questions": [
+        {
+          "id": "m1-11-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Types of Angles and Relationships Between Them?",
+          "choices": [
+            "acute angle",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "acute angle"
+        },
+        {
+          "id": "m1-11-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: complementary sum = 90°",
+          "answer": "complementary sum = 90°"
+        },
+        {
+          "id": "m1-11-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Angles are classified by measure and can form complementary, supplementary, adjacent, or vertically opposite relationships.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-11-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Types of Angles and Relationships Between Them.",
+          "answer": "Angles are classified by measure and can form complementary, supplementary, adjacent, or vertically opposite relationships."
+        },
+        {
+          "id": "m1-11-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "acute angle / right angle / obtuse angle / complementary angles"
+        },
+        {
+          "id": "m1-11-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Classify 35°.",
+          "answer": "acute"
+        },
+        {
+          "id": "m1-11-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Find the complement of 28°.",
+          "answer": "62°"
+        },
+        {
+          "id": "m1-11-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Find the supplement of 115°.",
+          "answer": "65°"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "More Angle Relationships",
+      "summary": "Angle relationships help determine unknown measures using straight lines, angles around a point, and vertically opposite angles.",
+      "concepts": [
+        "straight angle",
+        "angles around a point",
+        "vertical angles"
+      ],
+      "formulas": [
+        "angles on a straight line = 180°",
+        "angles around a point = 360°"
+      ],
+      "examples": [
+        "If one vertical angle is 70°, the opposite angle is 70°."
+      ],
+      "questions": [
+        {
+          "id": "m1-12-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to More Angle Relationships?",
+          "choices": [
+            "straight angle",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "straight angle"
+        },
+        {
+          "id": "m1-12-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: angles on a straight line = 180°",
+          "answer": "angles on a straight line = 180°"
+        },
+        {
+          "id": "m1-12-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Angle relationships help determine unknown measures using straight lines, angles around a point, and vertically opposite angles.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-12-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of More Angle Relationships.",
+          "answer": "Angle relationships help determine unknown measures using straight lines, angles around a point, and vertically opposite angles."
+        },
+        {
+          "id": "m1-12-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "straight angle / angles around a point / vertical angles"
+        },
+        {
+          "id": "m1-12-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Angles on a straight line: one is 72°. Find the other.",
+          "answer": "108°"
+        },
+        {
+          "id": "m1-12-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Angles around a point sum to?",
+          "answer": "360°"
+        },
+        {
+          "id": "m1-12-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "A vertical opposite angle to 48° measures?",
+          "answer": "48°"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "Parallelism",
+      "summary": "When a transversal cuts parallel lines, corresponding and alternate angles are equal and interior angles on the same side are supplementary.",
+      "concepts": [
+        "parallel lines",
+        "transversal",
+        "corresponding angles",
+        "alternate angles"
+      ],
+      "formulas": [
+        "corresponding angles are equal",
+        "same-side interior angles sum to 180°"
+      ],
+      "examples": [
+        "A corresponding angle to 65° is also 65°."
+      ],
+      "questions": [
+        {
+          "id": "m1-13-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Parallelism?",
+          "choices": [
+            "parallel lines",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "parallel lines"
+        },
+        {
+          "id": "m1-13-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: corresponding angles are equal",
+          "answer": "corresponding angles are equal"
+        },
+        {
+          "id": "m1-13-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "When a transversal cuts parallel lines, corresponding and alternate angles are equal and interior angles on the same side are supplementary.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-13-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Parallelism.",
+          "answer": "When a transversal cuts parallel lines, corresponding and alternate angles are equal and interior angles on the same side are supplementary."
+        },
+        {
+          "id": "m1-13-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "parallel lines / transversal / corresponding angles / alternate angles"
+        },
+        {
+          "id": "m1-13-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "A transversal cuts parallel lines. A corresponding angle is 64°. Find its corresponding angle.",
+          "answer": "64°"
+        },
+        {
+          "id": "m1-13-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Same-side interior angle is 110°. Find the other.",
+          "answer": "70°"
+        },
+        {
+          "id": "m1-13-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "An alternate angle to 52° between parallel lines is?",
+          "answer": "52°"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "The Triangle",
+      "summary": "Triangles are classified by sides and angles. The sum of the interior angles of a triangle is 180 degrees.",
+      "concepts": [
+        "triangle",
+        "isosceles",
+        "equilateral",
+        "right triangle"
+      ],
+      "formulas": [
+        "A+B+C=180°"
+      ],
+      "examples": [
+        "If two angles are 50° and 60°, the third is 70°."
+      ],
+      "questions": [
+        {
+          "id": "m1-14-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to The Triangle?",
+          "choices": [
+            "triangle",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "triangle"
+        },
+        {
+          "id": "m1-14-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: A+B+C=180°",
+          "answer": "A+B+C=180°"
+        },
+        {
+          "id": "m1-14-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Triangles are classified by sides and angles. The sum of the interior angles of a triangle is 180 degrees.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-14-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of The Triangle.",
+          "answer": "Triangles are classified by sides and angles. The sum of the interior angles of a triangle is 180 degrees."
+        },
+        {
+          "id": "m1-14-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "triangle / isosceles / equilateral / right triangle"
+        },
+        {
+          "id": "m1-14-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Triangle angles are 50°,60°,x. Find x.",
+          "answer": "70°"
+        },
+        {
+          "id": "m1-14-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "An equilateral triangle angle measures?",
+          "answer": "60°"
+        },
+        {
+          "id": "m1-14-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "A right triangle has another angle 35°. Find the third.",
+          "answer": "55°"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "Quadrilaterals",
+      "summary": "A quadrilateral has four sides and the sum of its interior angles is 360 degrees.",
+      "concepts": [
+        "quadrilateral",
+        "parallelogram",
+        "trapezoid"
+      ],
+      "formulas": [
+        "sum of interior angles = 360°"
+      ],
+      "examples": [
+        "If three angles are 90°, 80°, and 100°, the fourth is 90°."
+      ],
+      "questions": [
+        {
+          "id": "m1-15-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Quadrilaterals?",
+          "choices": [
+            "quadrilateral",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "quadrilateral"
+        },
+        {
+          "id": "m1-15-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: sum of interior angles = 360°",
+          "answer": "sum of interior angles = 360°"
+        },
+        {
+          "id": "m1-15-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "A quadrilateral has four sides and the sum of its interior angles is 360 degrees.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-15-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Quadrilaterals.",
+          "answer": "A quadrilateral has four sides and the sum of its interior angles is 360 degrees."
+        },
+        {
+          "id": "m1-15-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "quadrilateral / parallelogram / trapezoid"
+        },
+        {
+          "id": "m1-15-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Three quadrilateral angles are 90°,80°,100°. Find the fourth.",
+          "answer": "90°"
+        },
+        {
+          "id": "m1-15-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Sum of interior angles of a quadrilateral?",
+          "answer": "360°"
+        },
+        {
+          "id": "m1-15-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "How many sides has a quadrilateral?",
+          "answer": "4"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "Special Quadrilaterals",
+      "summary": "Special quadrilaterals include parallelograms, rectangles, rhombi, squares, and trapezoids, each with characteristic side and angle properties.",
+      "concepts": [
+        "rectangle",
+        "rhombus",
+        "square",
+        "parallelogram"
+      ],
+      "formulas": [
+        "rectangle angles = 90°",
+        "square: all sides equal and all angles 90°"
+      ],
+      "examples": [
+        "Every square is a rectangle and a rhombus."
+      ],
+      "questions": [
+        {
+          "id": "m1-16-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Special Quadrilaterals?",
+          "choices": [
+            "rectangle",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "rectangle"
+        },
+        {
+          "id": "m1-16-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: rectangle angles = 90°",
+          "answer": "rectangle angles = 90°"
+        },
+        {
+          "id": "m1-16-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Special quadrilaterals include parallelograms, rectangles, rhombi, squares, and trapezoids, each with characteristic side and angle properties.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-16-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Special Quadrilaterals.",
+          "answer": "Special quadrilaterals include parallelograms, rectangles, rhombi, squares, and trapezoids, each with characteristic side and angle properties."
+        },
+        {
+          "id": "m1-16-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "rectangle / rhombus / square / parallelogram"
+        },
+        {
+          "id": "m1-16-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "How many right angles has a rectangle?",
+          "answer": "4"
+        },
+        {
+          "id": "m1-16-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Which shape has four equal sides and four right angles?",
+          "answer": "square"
+        },
+        {
+          "id": "m1-16-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Opposite sides of a parallelogram are?",
+          "answer": "parallel and equal"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "Polygons",
+      "summary": "A polygon is a closed figure made of line segments. The sum of interior angles depends on the number of sides.",
+      "concepts": [
+        "polygon",
+        "regular polygon",
+        "interior angle"
+      ],
+      "formulas": [
+        "sum of interior angles = (n−2)×180°"
+      ],
+      "examples": [
+        "Pentagon interior angle sum = 540°."
+      ],
+      "questions": [
+        {
+          "id": "m1-17-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Polygons?",
+          "choices": [
+            "polygon",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "polygon"
+        },
+        {
+          "id": "m1-17-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: sum of interior angles = (n−2)×180°",
+          "answer": "sum of interior angles = (n−2)×180°"
+        },
+        {
+          "id": "m1-17-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "A polygon is a closed figure made of line segments. The sum of interior angles depends on the number of sides.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-17-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Polygons.",
+          "answer": "A polygon is a closed figure made of line segments. The sum of interior angles depends on the number of sides."
+        },
+        {
+          "id": "m1-17-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "polygon / regular polygon / interior angle"
+        },
+        {
+          "id": "m1-17-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Find interior angle sum of a pentagon.",
+          "answer": "540°"
+        },
+        {
+          "id": "m1-17-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Find interior angle sum of a hexagon.",
+          "answer": "720°"
+        },
+        {
+          "id": "m1-17-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "How many sides has an octagon?",
+          "answer": "8"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "unit": 3,
+      "unitTitle": "Geometry and Measurement",
+      "title": "Coordinates",
+      "summary": "Coordinates locate points on the Cartesian plane using an ordered pair (x,y) and the horizontal and vertical axes.",
+      "concepts": [
+        "ordered pair",
+        "x-axis",
+        "y-axis",
+        "origin"
+      ],
+      "formulas": [
+        "point = (x,y)"
+      ],
+      "examples": [
+        "The point (3,−2) is 3 units right and 2 units down from the origin."
+      ],
+      "questions": [
+        {
+          "id": "m1-18-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Coordinates?",
+          "choices": [
+            "ordered pair",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "ordered pair"
+        },
+        {
+          "id": "m1-18-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: point = (x,y)",
+          "answer": "point = (x,y)"
+        },
+        {
+          "id": "m1-18-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Coordinates locate points on the Cartesian plane using an ordered pair (x,y) and the horizontal and vertical axes.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-18-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Coordinates.",
+          "answer": "Coordinates locate points on the Cartesian plane using an ordered pair (x,y) and the horizontal and vertical axes."
+        },
+        {
+          "id": "m1-18-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "ordered pair / x-axis / y-axis / origin"
+        },
+        {
+          "id": "m1-18-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "What is the origin?",
+          "answer": "(0,0)"
+        },
+        {
+          "id": "m1-18-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "In point (4,−3), what is x-coordinate?",
+          "answer": "4"
+        },
+        {
+          "id": "m1-18-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Point (0,5) lies on which axis?",
+          "answer": "y-axis"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "unit": 4,
+      "unitTitle": "Statistics",
+      "title": "Organizing Data",
+      "summary": "Data can be organized in tables and frequency distributions to make information easier to read and compare.",
+      "concepts": [
+        "data",
+        "frequency",
+        "table"
+      ],
+      "formulas": [
+        "frequency = number of occurrences"
+      ],
+      "examples": [
+        "If 5 appears three times, its frequency is 3."
+      ],
+      "questions": [
+        {
+          "id": "m1-19-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Organizing Data?",
+          "choices": [
+            "data",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "data"
+        },
+        {
+          "id": "m1-19-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: frequency = number of occurrences",
+          "answer": "frequency = number of occurrences"
+        },
+        {
+          "id": "m1-19-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "Data can be organized in tables and frequency distributions to make information easier to read and compare.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-19-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Organizing Data.",
+          "answer": "Data can be organized in tables and frequency distributions to make information easier to read and compare."
+        },
+        {
+          "id": "m1-19-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "data / frequency / table"
+        },
+        {
+          "id": "m1-19-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Values 2,2,3,5. Frequency of 2?",
+          "answer": "2"
+        },
+        {
+          "id": "m1-19-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "What does frequency mean?",
+          "answer": "number of occurrences"
+        },
+        {
+          "id": "m1-19-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Organize 1,2,2,3: what is total number of observations?",
+          "answer": "4"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "unit": 4,
+      "unitTitle": "Statistics",
+      "title": "Arithmetic Mean",
+      "summary": "The arithmetic mean is found by dividing the sum of values by the number of values.",
+      "concepts": [
+        "arithmetic mean",
+        "sum",
+        "number of values"
+      ],
+      "formulas": [
+        "mean = sum of values / number of values"
+      ],
+      "examples": [
+        "Mean of 2,4,6 = 4."
+      ],
+      "questions": [
+        {
+          "id": "m1-20-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Arithmetic Mean?",
+          "choices": [
+            "arithmetic mean",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "arithmetic mean"
+        },
+        {
+          "id": "m1-20-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: mean = sum of values / number of values",
+          "answer": "mean = sum of values / number of values"
+        },
+        {
+          "id": "m1-20-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "The arithmetic mean is found by dividing the sum of values by the number of values.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-20-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Arithmetic Mean.",
+          "answer": "The arithmetic mean is found by dividing the sum of values by the number of values."
+        },
+        {
+          "id": "m1-20-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "arithmetic mean / sum / number of values"
+        },
+        {
+          "id": "m1-20-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Mean of 4,6,8.",
+          "answer": "6"
+        },
+        {
+          "id": "m1-20-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "Mean of 3,5,7,9.",
+          "answer": "6"
+        },
+        {
+          "id": "m1-20-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "If mean of 2 values is 10 and one value is 6, find the other.",
+          "answer": "14"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "unit": 4,
+      "unitTitle": "Statistics",
+      "title": "Pie Charts",
+      "summary": "A pie chart represents parts of a whole as sectors of a circle. Sector angles are proportional to frequencies.",
+      "concepts": [
+        "pie chart",
+        "sector",
+        "central angle"
+      ],
+      "formulas": [
+        "sector angle = value / total × 360°"
+      ],
+      "examples": [
+        "25% of a pie chart = 90°."
+      ],
+      "questions": [
+        {
+          "id": "m1-21-001",
+          "type": "mcq",
+          "difficulty": "easy",
+          "text": "Which topic belongs to Pie Charts?",
+          "choices": [
+            "pie chart",
+            "unrelated topic",
+            "chemical bond",
+            "historical event"
+          ],
+          "answer": "pie chart"
+        },
+        {
+          "id": "m1-21-002",
+          "type": "complete",
+          "difficulty": "easy",
+          "text": "Complete a key rule: sector angle = value / total × 360°",
+          "answer": "sector angle = value / total × 360°"
+        },
+        {
+          "id": "m1-21-003",
+          "type": "true_false",
+          "difficulty": "easy",
+          "text": "A pie chart represents parts of a whole as sectors of a circle. Sector angles are proportional to frequencies.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True"
+        },
+        {
+          "id": "m1-21-004",
+          "type": "reason",
+          "difficulty": "medium",
+          "text": "Explain the main idea of Pie Charts.",
+          "answer": "A pie chart represents parts of a whole as sectors of a circle. Sector angles are proportional to frequencies."
+        },
+        {
+          "id": "m1-21-005",
+          "type": "complete",
+          "difficulty": "medium",
+          "text": "Write one key concept from this lesson.",
+          "answer": "pie chart / sector / central angle"
+        },
+        {
+          "id": "m1-21-006",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "A category is 50% of a pie chart. Find its angle.",
+          "answer": "180°"
+        },
+        {
+          "id": "m1-21-007",
+          "type": "problem",
+          "difficulty": "medium",
+          "text": "A category is 25% of a pie chart. Find its angle.",
+          "answer": "90°"
+        },
+        {
+          "id": "m1-21-008",
+          "type": "problem",
+          "difficulty": "hard",
+          "text": "Value 20 out of total 80: find sector angle.",
+          "answer": "90°"
+        }
+      ]
+    }
+  ]
+}
