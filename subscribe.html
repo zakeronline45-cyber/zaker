@@ -11,7 +11,24 @@
 <body>
 <header class="top"><div class="wrap bar"><a href="/" class="brand">ذاكر <span>الاشتراك</span></a><div><select id="zakerLangSwitch" class="btn soft" onchange="setZakerLanguage(this.value)" aria-label="Language"><option value="en">EN</option><option value="ar">AR</option></select> <a class="btn soft" href="/account.html">حسابي</a> <button class="btn soft" onclick="logout()">خروج</button></div></div></header>
 <main>
-<div class="head"><h1>اشتراك ذاكر</h1><p class="muted">أول مادة بـ250 جنيه شهريًا، وكل مادة إضافية تضيف 225 جنيه فقط. الطفل الثاني يحصل على خصم 25% من إجمالي اشتراكه.</p></div>
+<div class="head"><h1>اشتراك ذاكر</h1><p class="muted">الأسعار تختلف حسب المسار، مع خصومات تلقائية للأبناء الثاني والثالث.</p></div>
+<div class="plans">
+  <div class="plan">
+    <h2>📘 المسار العربي</h2>
+    <div class="price">200 <small>جنيه / أول مادة</small></div>
+    <ul><li>كل مادة إضافية: 175 جنيه</li><li>الطفل الثاني: خصم 25%</li><li>الطفل الثالث: خصم 50%</li></ul>
+  </div>
+  <div class="plan popular"><span class="badge">لغات</span>
+    <h2>🌐 مسار Languages</h2>
+    <div class="price">250 <small>جنيه / أول مادة</small></div>
+    <ul><li>كل مادة إضافية: 225 جنيه</li><li>الطفل الثاني: خصم 25%</li><li>الطفل الثالث: خصم 50%</li></ul>
+  </div>
+  <div class="plan">
+    <h2>👨‍👩‍👧‍👦 خصم الأسرة</h2>
+    <div class="price">حتى 50%</div>
+    <ul><li>الطفل الأول: بدون خصم</li><li>الطفل الثاني: 25%</li><li>الطفل الثالث: 50%</li></ul>
+  </div>
+</div>
 <div id="current" class="status">جاري تحميل حالة الاشتراك...</div>
 <div class="plan" style="max-width:720px;margin:18px auto 0">
   <h2>عندك كود دعائي؟</h2>
@@ -41,8 +58,8 @@
     </label>
   </div>
   <div id="subjectChoices" class="status" style="margin-top:14px"></div>
-  <div class="price" id="calcPrice">250 <small>جنيه / شهر</small></div>
-  <p class="muted" id="calcNote">1 مادة × 250 جنيه.</p>
+  <div class="price" id="calcPrice">— <small>جنيه / شهر</small></div>
+  <p class="muted" id="calcNote">اختر الطفل وعدد المواد لحساب الاشتراك.</p>
   <button class="btn primary" style="width:100%" onclick="startBankTransfer()">ابدأ طلب تحويل بنكي</button>
 </div>
 
@@ -72,7 +89,7 @@ async function init(){
  if(chErr){document.getElementById('current').textContent=chErr.message;return}
  children=chs||[];
  const childSelect=document.getElementById('childId');
- childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(window.zakerLang?.()==='en'?(ch.track==='arabic'?'Arabic':'Languages'):(ch.track==='arabic'?'عربي':'لغات'))+' — '+(window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[ch.grade]||ch.grade):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade))+(i===1?(window.zakerLang?.()==='en'?' — 25% second-child discount':' — خصم الطفل الثاني 25%'):'')+'</option>').join('');
+ childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(window.zakerLang?.()==='en'?(ch.track==='arabic'?'Arabic':'Languages'):(ch.track==='arabic'?'عربي':'لغات'))+' — '+(window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[ch.grade]||ch.grade):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade))+(i===1?(window.zakerLang?.()==='en'?' — 25% second-child discount':' — خصم الطفل الثاني 25%'):i===2?(window.zakerLang?.()==='en'?' — 50% third-child discount':' — خصم الطفل الثالث 50%'):'')+'</option>').join('');
  const promoSelect=document.getElementById('promoChildId');
  promoSelect.innerHTML=children.map(ch=>'<option value="'+ch.id+'">'+ch.full_name+'</option>').join('');
  const requested=new URLSearchParams(location.search).get('child');
@@ -129,10 +146,15 @@ function calc(){
   const selectedId=document.getElementById('childId')?.value;
   const idx=children.findIndex(x=>x.id===selectedId);
   const childIndex=idx+1;
-  const base=250+(n-1)*225;
-  const total=childIndex===2?Math.round(base*.75*100)/100:base;
+  const ch=children[idx]||{};
+  const isArabic=ch.track==='arabic';
+  const first=isArabic?200:250, extra=isArabic?175:225;
+  const base=first+(n-1)*extra;
+  const discount=childIndex===2?25:childIndex===3?50:0;
+  const total=Math.round(base*(1-discount/100)*100)/100;
   document.getElementById('calcPrice').innerHTML=total+' <small>'+(window.zakerLang?.()==='en'?'EGP / month':'جنيه / شهر')+'</small>';
-  document.getElementById('calcNote').textContent=window.zakerLang?.()==='en'?(n===1?'First subject = EGP 250':'EGP 250 for the first subject + '+(n-1)+' × EGP 225 for extra subjects')+(childIndex===2?', with the 25% second-child discount applied automatically.':''):(n===1?'أول مادة = 250 جنيه':'250 لأول مادة + '+(n-1)+' × 225 للمواد الإضافية')+(childIndex===2?'، وخصم الطفل الثاني 25% مطبق تلقائيًا.':'');
+  const baseText=(n===1?'أول مادة = '+first+' جنيه':first+' لأول مادة + '+(n-1)+' × '+extra+' للمواد الإضافية');
+  document.getElementById('calcNote').textContent=baseText+(discount?'، وخصم الطفل '+(childIndex===2?'الثاني 25%':'الثالث 50%')+' مطبق تلقائيًا.':'');
 }
 let pendingPayment=null;
 
@@ -159,7 +181,7 @@ async function startBankTransfer(){
  pendingPayment=j.payment;
  document.getElementById('refCode').textContent=j.reference_code;
  document.getElementById('amountDue').textContent=j.amount;
- document.getElementById('calcNote').textContent=(j.child_name||window.zakerT('الطالب','Student'))+(j.discount_applied?window.zakerT(' — تم تطبيق خصم الطفل الثاني 25%',' — 25% second-child discount applied'):'');
+ document.getElementById('calcNote').textContent=(j.child_name||window.zakerT('الطالب','Student'))+(j.discount_percent?(' — تم تطبيق خصم '+j.discount_percent+'%'):'');
  await loadBankSettings();
  document.getElementById('bankBox').style.display='block';
  document.getElementById('bankBox').scrollIntoView({behavior:'smooth'});
