@@ -32,7 +32,7 @@ const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 let session=null,children=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const gradeName=x=>window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
+const gradeName=x=>window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
 
 async function init(){
  const s=await sb.auth.getSession();session=s.data.session;
