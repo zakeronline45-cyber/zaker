@@ -26,11 +26,11 @@ Reference answer: ${x.correctAnswer}`).join('\n\n');
 Create feedback ONLY from the supplied question, student answer, and reference answer.
 Do not invent curriculum facts.
 The student SHOULD see the correct answer after finishing the whole test.
-IMPORTANT: If the student's scientific meaning is actually correct and only punctuation, separators, formatting, spelling, or wording differ, do NOT describe it as a conceptual mistake. Say that the answer is scientifically correct and the grading should accept it.
+IMPORTANT: If the student's meaning or required language rule is actually correct and only harmless punctuation, separators, formatting, spelling variation, or wording differ, do NOT describe it as a conceptual mistake. Treat equivalent correct answers fairly. For Arabic grammar/spelling fixed-answer items, preserve the actual rule.
 Return strict JSON only, no markdown:
 {
- "summary":"Arabic summary",
- "topics":[{"question":"the question","studentAnswer":"student answer","correctAnswer":"the exact reference answer","explanation":"simple clear explanation suitable for the subject; for English, explain language/vocabulary/grammar errors in clear English"}],
+ "summary":"summary in the natural language of the subject: Arabic for Arabic/Science Arabic-style feedback, English for English",
+ "topics":[{"question":"the question","studentAnswer":"student answer","correctAnswer":"the exact reference answer","explanation":"simple clear explanation suitable for the subject; for English use clear English, and for Arabic use clear Arabic and identify the reading/rhetoric/grammar/spelling/writing rule involved"}],
  "plan":["step 1","step 2","step 3"]
 }
 Do not mention page numbers or tell the student to return to a specific page.`,
