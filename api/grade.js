@@ -1,14 +1,22 @@
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
-  const {lesson,id,studentAnswer,studyLanguage='English'}=req.body||{};
-  if(!lesson||!id) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
+  const {subject='Science',lesson,module,id,studentAnswer,studyLanguage='English'}=req.body||{};
+  if(!id || (subject==='Science'&&!lesson) || (subject==='English'&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
   try{
     const host=req.headers.host;
     const proto=(req.headers['x-forwarded-proto']||'https');
-    const r=await fetch(`${proto}://${host}/content/questions/science-term1-u1-l${lesson}.json`,{cache:'no-store'});
-    if(!r.ok) return res.status(404).json({error:'بنك الأسئلة غير متاح'});
-    const bank=await r.json();
-    const q=bank.questions?.find(x=>x.id===id);
+    let q=null;
+    if(subject==='English'){
+      const r=await fetch(`${proto}://${host}/content/english-term1.json`,{cache:'no-store'});
+      if(!r.ok) return res.status(404).json({error:'English question bank unavailable'});
+      const bank=await r.json();
+      q=bank.modules?.find(x=>Number(x.id)===Number(module))?.questions?.find(x=>x.id===id);
+    }else{
+      const r=await fetch(`${proto}://${host}/content/questions/science-term1-u1-l${lesson}.json`,{cache:'no-store'});
+      if(!r.ok) return res.status(404).json({error:'بنك الأسئلة غير متاح'});
+      const bank=await r.json();
+      q=bank.questions?.find(x=>x.id===id);
+    }
     if(!q) return res.status(404).json({error:'السؤال غير موجود'});
     const normalize=s=>String(s??'')
       .trim()
@@ -18,7 +26,7 @@ export default async function handler(req,res){
       .trim();
     const tokenList=s=>normalize(s).split(' ').filter(Boolean);
     let correct=false;
-    if(studyLanguage!=='Arabic' && ['mcq','true_false','complete'].includes(q.type)){
+    if(['mcq','true_false','complete'].includes(q.type)){
       const a=normalize(studentAnswer), b=normalize(q.answer);
       if(q.type==='complete'){
         const at=tokenList(studentAnswer), bt=tokenList(q.answer);
@@ -34,7 +42,7 @@ export default async function handler(req,res){
           headers:{'Authorization':`Bearer ${key}`,'Content-Type':'application/json'},
           body:JSON.stringify({
             model:'gpt-5.6-luna',
-            instructions:'You are grading a first-prep science answer. Compare the student answer to the English reference answer by scientific meaning. The student may answer in Arabic or English. Return only CORRECT or INCORRECT. Ignore punctuation, separators, formatting, grammar, spelling, and language differences. Treat equivalent meanings and equivalent lists as correct.',
+            instructions:`You are grading a first-prep ${subject} answer. Compare the student answer with the reference by meaning and task requirements. Return only CORRECT or INCORRECT. For English writing/rewrite tasks, accept grammatically reasonable answers that satisfy the prompt even if wording differs. Ignore harmless punctuation and capitalization differences.`,
             input:`Question: ${q.text}\nReference answer: ${q.answer}\nStudent answer: ${studentAnswer||''}`
           })
         });
