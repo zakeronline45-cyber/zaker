@@ -5,20 +5,19 @@
 <title>ذاكر | الدخول وإنشاء حساب</title>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
-:root{--b:#165DFF;--n:#173471;--bg:#f5f8ff;--line:#e4eaf5;--m:#71809a;--g:#19b887;--r:#e85b66}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(180deg,#f5f8ff,#fff);color:#1d2b48;min-height:100vh}
-a{text-decoration:none;color:inherit}button,input,select{font:inherit}.top{padding:18px 22px;background:#fff;border-bottom:1px solid var(--line)}.wrap{max-width:980px;margin:auto}.brand{font-size:25px;font-weight:900;color:var(--n)}.brand span{color:var(--b)}
-main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 14px 35px rgba(35,60,110,.08)}h1,h2{color:var(--n)}.muted{color:var(--m);line-height:1.8}.tabs{display:flex;gap:8px;margin-bottom:18px}.tab{flex:1;border:1px solid var(--line);background:#fff;padding:11px;border-radius:10px;font-weight:900}.tab.active{background:var(--b);color:#fff;border-color:var(--b)}.form{display:grid;gap:12px}.field{display:grid;gap:6px}.field label{font-size:13px;font-weight:800;color:#506581}.field input,.field select{padding:12px;border:1px solid var(--line);border-radius:10px}.btn{border:0;border-radius:11px;padding:12px 15px;font-weight:900;cursor:pointer}.primary{background:var(--b);color:#fff}.soft{background:#eef3ff;color:var(--b)}.msg{padding:11px;border-radius:10px;margin-top:12px;display:none}.ok{background:#effbf7;color:#24765f;border:1px solid #bee9dc}.err{background:#fff2f3;color:#a94750;border:1px solid #ffd0d5}.feature{display:flex;gap:10px;margin:13px 0;align-items:flex-start}.feature b{display:block}.feature span{font-size:22px}.track-note{background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px}
-@media(max-width:760px){main{grid-template-columns:1fr}}
+:root{--b:#6f2392;--n:#351044;--bg:#f8f6fa;--line:#eadff0;--m:#766b80;--g:#168b5d;--r:#d82e47;--orange:#ff7418}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at 12% 20%,#f0dff7 0,transparent 31%),linear-gradient(180deg,#faf8fb,#f5f0f7);color:#241331;min-height:100vh}a{text-decoration:none;color:inherit}button,input,select{font:inherit}.top{background:linear-gradient(135deg,#351044,#742499);color:#fff;box-shadow:0 8px 25px #3510442b}.wrap{max-width:1100px;margin:auto}.topin{min-height:76px;padding:0 18px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:29px;font-weight:900;color:#fff}.brand span{display:block;color:#ffffffbd;font-size:11px;font-weight:500;margin-top:2px}.back{border:1px solid #ffffff4d;background:#ffffff13;color:#fff;padding:9px 13px;border-radius:11px;font-weight:800}
+main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:20px;align-items:stretch}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 16px 42px rgba(63,20,92,.11)}.login-card{order:2}h1,h2{color:var(--n)}.form h2{margin:4px 0 2px}.form-intro{color:var(--m);margin:0 0 6px;line-height:1.7}.muted{color:var(--m);line-height:1.8}.tabs{display:flex;gap:8px;margin-bottom:20px;background:#f8f2fa;padding:6px;border-radius:14px}.tab{flex:1;border:0;background:transparent;padding:11px;border-radius:10px;font-weight:900;color:var(--m);cursor:pointer}.tab.active{background:var(--b);color:#fff;box-shadow:0 7px 18px #6f239233}.form{display:grid;gap:13px}.field{display:grid;gap:7px}.field label{font-size:13px;font-weight:900;color:#55415f}.field input,.field select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;outline:none;transition:.2s}.field input:focus,.field select:focus{border-color:#a96ac1;box-shadow:0 0 0 4px #6f239214}.btn{border:0;border-radius:12px;padding:13px 15px;font-weight:900;cursor:pointer}.primary{background:linear-gradient(135deg,#6f2392,#4b1678);color:#fff;box-shadow:0 9px 22px #5a1a7a35}.msg{padding:11px;border-radius:10px;margin-top:12px;display:none}.ok{background:#effbf7;color:#24765f;border:1px solid #bee9dc}.err{background:#fff2f3;color:#a94750;border:1px solid #ffd0d5}.intro{position:relative;overflow:hidden;background:linear-gradient(145deg,#351044,#7927a7);color:#fff;border:0;padding:36px}.intro:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:#ffffff0c;left:-90px;top:-100px}.intro:after{content:"🎓";position:absolute;left:30px;bottom:-22px;font-size:150px;opacity:.09}.intro>*{position:relative;z-index:1}.intro h1{color:#fff;font-size:31px;margin:0 0 10px}.intro .muted{color:#ffffffd1}.feature{display:flex;gap:12px;margin:18px 0;align-items:flex-start;background:#ffffff0d;border:1px solid #ffffff1c;padding:13px;border-radius:15px}.feature b{display:block;margin-bottom:4px}.feature span{font-size:25px}.feature .muted{font-size:13px}.track-note{background:#ff74181c;border:1px solid #ffb37a55;border-radius:14px;padding:13px;margin-top:18px;color:#fff}.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.trust span{background:#ffffff15;border-radius:99px;padding:7px 10px;font-size:12px}@media(max-width:800px){.top{border-radius:0 0 22px 22px}.topin{min-height:86px}.back{font-size:12px}main{grid-template-columns:1fr;margin-top:18px}.login-card{order:1}.intro{order:2;padding:25px}.intro h1{font-size:24px}.card{border-radius:19px;padding:20px}.feature{margin:10px 0}.intro:after{font-size:95px}.brand{font-size:26px}}
 </style></head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="/">ذاكر <span>حساب الطالب</span></a></div></header>
+<header class="top"><div class="wrap topin"><a class="brand" href="/">🎓 ذاكر<span>رحلتك نحو التفوق</span></a><a class="back" href="/">العودة للرئيسية</a></div></header>
 <main>
-<section class="card">
+<section class="card login-card">
   <div class="tabs"><button id="loginTab" class="tab active" onclick="showMode('login')">تسجيل الدخول</button><button id="signupTab" class="tab" onclick="showMode('signup')">إنشاء حساب</button></div>
 
   <form id="loginForm" class="form" onsubmit="login(event)">
     <h2>أهلًا بيك</h2>
+    <p class="form-intro">سجّل دخولك وكمّل مذاكرتك من آخر نقطة وصلت لها.</p>
     <div class="field"><label>البريد الإلكتروني</label><input id="loginEmail" type="email" required autocomplete="email"></div>
     <div class="field"><label>كلمة المرور</label><input id="loginPassword" type="password" required autocomplete="current-password"></div>
     <button class="btn primary" type="submit">دخول</button>
@@ -26,6 +25,7 @@ main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-
 
   <form id="signupForm" class="form" style="display:none" onsubmit="signup(event)">
     <h2>اعمل حساب ولي أمر</h2>
+    <p class="form-intro">حساب واحد لمتابعة الأبناء والاشتراكات والنتائج.</p>
     <div class="field"><label>اسم ولي الأمر</label><input id="guardianName" required></div>
     <div class="field"><label>البريد الإلكتروني</label><input id="signupEmail" type="email" required autocomplete="email"></div>
     <div class="field"><label>رقم الموبايل</label><input id="phone" type="tel" placeholder="01xxxxxxxxx"></div>
@@ -39,13 +39,14 @@ main{max-width:980px;margin:40px auto;padding:0 16px;display:grid;grid-template-
   <div id="msg" class="msg"></div>
 </section>
 
-<aside class="card">
-  <h1>حساب ولي أمر واحد لكل الأسرة</h1>
+<aside class="card intro">
+  <h1>تعليم أذكى.. ومتابعة أسهل</h1>
   <p class="muted">من الحساب تضيف أبناءك، ولكل ابن بياناته ومساره وصفه واشتراكاته ونتائجه بشكل مستقل.</p>
   <div class="feature"><span>👤</span><div><b>ملف طالب دائم</b><div class="muted">بدل حفظ البيانات على جهاز واحد فقط.</div></div></div>
   <div class="feature"><span>🧪</span><div><b>نتائج واختبارات</b><div class="muted">تتجمع على الحساب وتبقى جاهزة للمتابعة.</div></div></div>
   <div class="feature"><span>💳</span><div><b>الاشتراك</b><div class="muted">بعد الدخول تقدر تختار الباقة وتكمل الدفع.</div></div></div>
   <div class="track-note">المسار العربي واللغات منفصلين؛ كل طالب يشوف محتوى مساره فقط.</div>
+  <div class="trust"><span>✓ شرح مبسط</span><span>✓ اختبارات بلا وقت</span><span>✓ تحليل أخطاء</span><span>✓ تقارير محفوظة</span></div>
 </aside>
 </main>
 <script>
