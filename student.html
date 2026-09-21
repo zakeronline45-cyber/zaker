@@ -244,16 +244,16 @@ function changeTrack(){
 }
 function applyTrack(){
   if(!studentTrack)return;
-  document.getElementById('trackName').textContent=studentTrack==='languages'?'مسار لغات':'مسار عربي';
+  document.getElementById('trackName').textContent=window.zakerLang?.()==='en'?(studentTrack==='languages'?'Languages Track':'Arabic Track'):(studentTrack==='languages'?'مسار لغات':'مسار عربي');
   const ready=studentTrack==='languages'&&activeChildGrade==='prep1';
   document.getElementById('languagesArea').style.display=ready?'grid':'none';
   const u=document.getElementById('unavailableArea');
   u.style.display=ready?'none':'block';
   if(!ready){
-    const grade=({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'الصف المختار');
-    document.getElementById('unavailablePill').textContent=studentTrack==='arabic'?'مسار عربي':grade;
-    document.getElementById('unavailableTitle').textContent=studentTrack==='arabic'?'محتوى المسار العربي لم يُرفع بعد':'محتوى '+grade+' لغات لم يُرفع بعد';
-    document.getElementById('unavailableText').textContent='لن نعرض محتوى صف أو مسار مختلف. سيتم تفعيل هذا القسم عند رفع كتبه الأصلية.';
+    const grade=window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[activeChildGrade]||'Selected Grade'):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'الصف المختار');
+    document.getElementById('unavailablePill').textContent=window.zakerLang?.()==='en'?(studentTrack==='arabic'?'Arabic Track':grade):(studentTrack==='arabic'?'مسار عربي':grade);
+    document.getElementById('unavailableTitle').textContent=window.zakerLang?.()==='en'?(studentTrack==='arabic'?'Arabic Track content is not available yet':grade+' Languages content is not available yet'):(studentTrack==='arabic'?'محتوى المسار العربي لم يُرفع بعد':'محتوى '+grade+' لغات لم يُرفع بعد');
+    document.getElementById('unavailableText').textContent=window.zakerLang?.()==='en'?'We will not show content from a different grade or track. This section will activate when its original books are available.':'لن نعرض محتوى صف أو مسار مختلف. سيتم تفعيل هذا القسم عند رفع كتبه الأصلية.';
   }
 }
 const studyLanguage='English';
@@ -398,12 +398,12 @@ function renderObjectives(n){
  document.getElementById('lessonObjectives').innerHTML='<h3>'+(en?'Learning Objectives':'الأهداف المستهدفة من الدرس')+'</h3><ul>'+objectiveList.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
  document.getElementById('lessonKeyTerms').innerHTML=(keyTerms[n]||[]).map(x=>'<span class="keyterm">'+esc(x)+'</span>').join('');
  document.getElementById('lessonDeepPoints').innerHTML='<ul>'+(lessonDeepPoints[n]||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
- document.getElementById('lessonExamples').innerHTML=(lessonExamples[n]||[]).map(x=>'<div class="example-card"><b>'+esc(en?(x.title==='مثال مبسط'?'Simple Example':'Curriculum Example'):x.title)+'</b><div style="margin-top:6px">'+esc(x.text)+'</div></div>').join('');
+ const exampleList=en?(lessonExamples[n]||[]).filter(x=>x.title==='مثال من فكرة الكتاب'):(lessonExamples[n]||[]); document.getElementById('lessonExamples').innerHTML=exampleList.map(x=>'<div class="example-card"><b>'+esc(en?'Curriculum Example':x.title)+'</b><div style="margin-top:6px">'+esc(x.text)+'</div></div>').join('');
  const check=en?('Before the test: can you explain the key ideas in '+titles[n]+' and solve a simple example?'):(quickChecks[n]||'');
  document.getElementById('quickCheck').innerHTML='<b>'+(en?'Check Your Understanding Before the Test':'تحقق من فهمك قبل الاختبار')+'</b><div style="margin-top:6px">'+esc(check)+'</div>';
 }
-document.getElementById('lessonExplain').innerHTML=explanations[1];renderObjectives(1);
-document.querySelectorAll('.lesson[data-lesson]').forEach(b=>b.onclick=async()=>{document.querySelectorAll('.lesson').forEach(x=>x.classList.remove('active'));b.classList.add('active');lesson=Number(b.dataset.lesson);bank=null;logLessonVisit(lesson);document.getElementById('lessonTitle').textContent=titles[lesson];const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;renderObjectives(lesson);document.getElementById('lessonExplain').innerHTML=explanations[lesson];document.getElementById('lessonNo').textContent=lesson+' / 12';resetTest();await loadBank()});
+function lessonExplanationHtml(n){if(window.zakerLang?.()!=='en')return explanations[n];const box=document.createElement('div');box.innerHTML=explanations[n];box.querySelectorAll('.ar').forEach(x=>x.remove());const h=box.querySelector('h3');if(h)h.textContent=titles[n];return box.innerHTML} document.getElementById('lessonExplain').innerHTML=lessonExplanationHtml(1);renderObjectives(1);
+document.querySelectorAll('.lesson[data-lesson]').forEach(b=>b.onclick=async()=>{document.querySelectorAll('.lesson').forEach(x=>x.classList.remove('active'));b.classList.add('active');lesson=Number(b.dataset.lesson);bank=null;logLessonVisit(lesson);document.getElementById('lessonTitle').textContent=titles[lesson];const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;renderObjectives(lesson);document.getElementById('lessonExplain').innerHTML=lessonExplanationHtml(lesson);document.getElementById('lessonNo').textContent=lesson+' / 12';resetTest();await loadBank()});
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.pane').forEach(x=>x.classList.remove('active'));document.getElementById('pane-'+b.dataset.pane).classList.add('active');if(b.dataset.pane==='profile')renderProfile()});
 async function loadBank(){try{const r=await fetch('/content/questions/science-term1-u1-l'+lesson+'.json',{cache:'no-store'});if(!r.ok)throw 0;bank=await r.json();document.getElementById('questionCount').textContent=bank.questions.length}catch(e){document.getElementById('questionCount').textContent='—'}}
 function resetTest(){document.getElementById('testStart').style.display='block';document.getElementById('testArea').style.display='none';document.getElementById('testArea').innerHTML='';test=[];idx=0;answers=[]}
