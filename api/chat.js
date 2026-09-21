@@ -44,14 +44,29 @@ const SOCIAL_STUDIES_SYLLABUS = [
   'انتشار الإسلام في أفريقيا','دور مصر الحضاري في قارة أفريقيا'
 ];
 
-async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject}){
+
+const P4_SYLLABI={
+ 'P4 Math':['Place Value','Addition and Subtraction Strategies','Concepts of Measurement','Area and Perimeter','Multiplication as a Relationship','Factors and Multiples','Multiplication and Division: Computation and Relationships','Order of Operations'],
+ 'P4 Mathematics Arabic':['القيمة المكانية','استراتيجيات الجمع والطرح','مفاهيم القياس','المساحة والمحيط','الضرب كعلاقة','العوامل والمضاعفات','الضرب والقسمة: العمليات والعلاقات','ترتيب العمليات'],
+ 'P4 Science':['Nature in Our Surroundings','How Insects Grow','How Plants Grow','Properties of Light','Properties of Sound','The Force of Wind','The Force of Rubber','Soil, Water, and Life in Egypt'],
+ 'P4 Science Arabic':['الطبيعة من حولنا','كيف تنمو الحشرات؟','كيف تنمو النباتات؟','خصائص الضوء','خصائص الصوت','قوة الرياح','قوة المطاط','التربة والماء والحياة في مصر'],
+ 'P4 English':['The Five Senses','My Community','Animals in Our World','Egypt My Homeland','A Day at Work','The Hundred Dresses'],
+ 'P4 Arabic':['أنا وحلمي','أخلاق في حياتي','رسالة من أطفال مصر'],
+ 'P4 Social Studies':['اتجاهاتنا ترسم خطواتنا','مدينتنا وحياتنا اليومية','مصر وطننا']
+};
+function syllabusFor(subject){
+ if(P4_SYLLABI[subject]) return P4_SYLLABI[subject];
+ return subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:subject==='Social Studies'?SOCIAL_STUDIES_SYLLABUS:subject==='Math'?MATH_SYLLABUS:subject==='Mathematics Arabic'?MATH_AR_SYLLABUS:SCIENCE_SYLLABUS;
+}
+
+async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject,grade}){
   const recent=(recentQuestions||[]).slice(0,6).map(x=>x.question).join('\n');
   const r=await fetch('https://api.openai.com/v1/responses',{
     method:'POST',
     headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
     body:JSON.stringify({
       model:'gpt-5.6-luna',
-      instructions:`You are a strict curriculum gate for first-prep ${subject}, term 1.\nAllowed syllabus ONLY:\n${(subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:subject==='Social Studies'?SOCIAL_STUDIES_SYLLABUS:subject==='Math'?MATH_SYLLABUS:subject==='Mathematics Arabic'?MATH_AR_SYLLABUS:SCIENCE_SYLLABUS).map((x,i)=>`${i+1}. ${x}`).join('\n')}
+      instructions:`You are a strict curriculum gate for ${grade||'the current grade'} ${subject}, term 1.\nAllowed syllabus ONLY:\n${syllabusFor(subject).map((x,i)=>`${i+1}. ${x}`).join('\n')}
 
 Decide whether the student's message is answerable strictly within this syllabus.
 Rules:
@@ -93,7 +108,8 @@ export default async function handler(req,res){
       studyLanguage='English',
       sessionId=''
     }=req.body||{};
-    const safeSubject=subject==='English'?'English':subject==='Arabic'?'Arabic':subject==='Social Studies'?'Social Studies':subject==='Math'?'Math':subject==='Mathematics Arabic'?'Mathematics Arabic':'Science';
+    const allowedSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','Science','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
+    const safeSubject=allowedSubjects.includes(subject)?subject:'Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
 
     let history=null;
@@ -106,10 +122,12 @@ export default async function handler(req,res){
       question,
       lesson,
       recentQuestions:history?.recent_questions||[],
-      subject:safeSubject
+      subject:safeSubject,
+      grade
     });
     if(!inScope){
-      const msg=safeSubject==='English'?'This question is outside the current First Prep English curriculum on Zaker. Ask me about the current units, language, vocabulary, skills, or stories.':safeSubject==='Arabic'?'هذا السؤال خارج منهج اللغة العربية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن القراءة والنصوص أو البلاغة أو النحو أو التعبير الموجود في المنهج.':safeSubject==='Social Studies'?'هذا السؤال خارج منهج الدراسات الاجتماعية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن دروس الجغرافيا أو التاريخ أو الحضارة أو النظم البيئية الموجودة في المنهج.':safeSubject==='Math'?'This question is outside the current First Prep Math Term 1 curriculum on Zaker. Ask me about one of the current Math lessons.':safeSubject==='Mathematics Arabic'?'هذا السؤال خارج منهج رياضيات الصف الأول الإعدادي الترم الأول على ذاكر. اسألني عن أحد دروس الرياضيات الحالية.':'This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
+      const isArabicSubject=['Arabic','Social Studies','Mathematics Arabic','P4 Mathematics Arabic','P4 Science Arabic','P4 Arabic','P4 Social Studies'].includes(safeSubject);
+      const msg=isArabicSubject?'هذا السؤال خارج منهج المادة الحالي للصف '+grade+' — الترم الأول على ذاكر. اسألني عن أحد أجزاء المنهج المسموح بها.':'This question is outside the current '+grade+' '+safeSubject+' Term 1 curriculum on Zaker. Ask me about one of the current syllabus sections.';
       return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||0,lessonCounts:history?.lesson_counts||{}}});
     }
 
@@ -123,12 +141,15 @@ export default async function handler(req,res){
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
     const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
 
-    const languageRule=safeSubject==='English'?'Explain in clear English suitable for first-prep students. Keep the answer in English unless the student explicitly asks for an Arabic clarification. Focus on vocabulary, grammar, reading, writing, speaking and story comprehension within the listed syllabus.':(safeSubject==='Arabic'||safeSubject==='Social Studies'||safeSubject==='Mathematics Arabic')?'اشرح باللغة العربية الفصحى المبسطة المناسبة لطالب الصف الأول الإعدادي. التزم بمصطلحات المنهج الحالي فقط، واستخدم أمثلة قصيرة واضحة ولا تخرج عن الدروس المسموح بها.':safeSubject==='Math'?'Explain in clear English suitable for first-prep Math students. Show steps, formulas, and a short worked example when useful. Stay strictly within the listed Term 1 lessons.':'Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
+    const arabicSubjects=['Arabic','Social Studies','Mathematics Arabic','P4 Mathematics Arabic','P4 Science Arabic','P4 Arabic','P4 Social Studies'];
+    const mathSubjects=['Math','P4 Math'];
+    const englishSubjects=['English','P4 English'];
+    const languageRule=englishSubjects.includes(safeSubject)?'Explain in clear English suitable for '+grade+' students. Keep the answer in English unless the student explicitly asks for Arabic clarification. Focus only on the listed curriculum.':arabicSubjects.includes(safeSubject)?'اشرح باللغة العربية الفصحى المبسطة المناسبة لطالب '+grade+'. التزم بمصطلحات المنهج الحالي فقط، واستخدم أمثلة قصيرة واضحة ولا تخرج عن الأجزاء المسموح بها.':mathSubjects.includes(safeSubject)?'Explain in clear English suitable for '+grade+' Math students. Show steps and short worked examples when useful. Stay strictly within Term 1.':'Explain mainly in clear English suitable for '+grade+' students. You may add a short Arabic clarification only when it helps understanding, but keep the subject terminology in English.';
 
     const instructions=`أنت "مدرس ذاكر"، مدرس شخصي ذكي لطلاب ${grade}.
 المادة الحالية: ${safeSubject}.
 الدرس الحالي: ${lesson||'غير محدد'}.
-مسار الطالب: ${safeSubject==='English'?'English — shared across Arabic and Languages tracks':safeSubject==='Arabic'?'Arabic — shared across Arabic and Languages tracks':safeSubject==='Social Studies'?'Social Studies — Arabic UI shared across Arabic and Languages tracks':'Science English'}.
+مسار الطالب: ${safeSubject.includes('Arabic')||safeSubject.includes('Social Studies')?'مادة مشتركة/عربي حسب إعداد المادة':safeSubject==='P4 English'?'English — shared across Arabic and Languages tracks':safeSubject.includes('Math')?'Math curriculum':'Science curriculum'}.
 ${languageRule}
 
 هدفك ليس فقط الإجابة، بل تكوين صورة تعليمية تدريجية عن الطالب من نمط أسئلته.
