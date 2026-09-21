@@ -69,16 +69,17 @@ async function loadChildren(){
    const {data:subs}=await sb.from('subscriptions').select('id,status,amount_egp,starts_at,ends_at,plan_code,access_source,campaign_code,subject_count,subscription_subjects(subject_code)').eq('child_id',ch.id).order('created_at',{ascending:false}).limit(3);
    const activeSub=(subs||[]).find(s=>s.status==='active');
    if(activeSub) active++;
-   html+=`<div class="child">
+   const isCurrent=localStorage.getItem('zaker_active_child_id')===ch.id;
+   html+=`<div class="child" style="${isCurrent?'border:2px solid var(--purple);box-shadow:0 8px 24px rgba(75,22,120,.12)':''}">
     <div class="child-head"><div><h3 style="margin:0 0 6px">${esc(ch.full_name)}</h3><span class="pill">${trackName(ch.track)}</span> <span class="pill">${gradeName(ch.grade)}</span></div>
-    <div class="muted">ابن رقم ${children.indexOf(ch)+1}</div></div>
+    <div class="muted">ابن رقم ${children.indexOf(ch)+1}${isCurrent?' — الطالب الحالي':''}</div></div>
     <div class="sub">${activeSub?(window.zakerLang?.()==='en'?'<span class="ok">Active Subscription</span> — ':'<span class="ok">اشتراك نشط</span> — ')+(activeSub.access_source==='paid'?(activeSub.amount_egp+(window.zakerLang?.()==='en'?' EGP':' جنيه')):(activeSub.access_source==='promo_code'?(window.zakerLang?.()==='en'?'Promo Code':'كود دعائي')+(activeSub.campaign_code?' '+activeSub.campaign_code:''):(window.zakerLang?.()==='en'?'Free Promotional Subscription':'اشتراك دعائي مجاني')))+' — '+activeSub.subject_count+(window.zakerLang?.()==='en'?' subject':' مادة')+(activeSub.subscription_subjects?.length?' ('+activeSub.subscription_subjects.map(x=>x.subject_code).join(', ')+')':'')+(window.zakerLang?.()==='en'?' — until ':' — حتى ')+new Date(activeSub.ends_at).toLocaleDateString(window.zakerLang?.()==='en'?'en-GB':'ar-EG'):(window.zakerLang?.()==='en'?'<span class="bad">No active subscription</span>':'<span class="bad">لا يوجد اشتراك نشط</span>')}</div>
     <div class="actions">
-      <button class="btn primary" onclick="openChild('${ch.id}')">${window.zakerT('دخول ملف الطالب','Open Student Profile')}</button>
+      <button class="btn primary" onclick="openChild('${ch.id}')">${isCurrent?window.zakerT('الطالب الحالي ✓','Current Student ✓'):window.zakerT('اختيار هذا الطالب','Select This Student')}</button>
       <a class="btn soft" href="/parent.html?child=${ch.id}">${window.zakerT('متابعة الأداء','View Performance')}</a>
       <a class="btn soft" href="/subscribe.html?child=${ch.id}">${window.zakerT('الاشتراك / التجديد','Subscribe / Renew')}</a>
       <button class="btn soft" onclick="editChild('${ch.id}')">${window.zakerT('تعديل','Edit')}</button>
-      <button class="btn danger" onclick="removeChild('${ch.id}')">${window.zakerT('حذف','Delete')}</button>
+      <button class="btn danger" onclick="removeChild('${ch.id}')">${window.zakerT('حذف الطالب من الحساب','Remove Student')}</button>
     </div>
    </div>`;
  }
@@ -100,9 +101,16 @@ function editChild(id){
 }
 function clearChildForm(){editChildId.value='';childName.value='';childTrack.value='languages';childGrade.value='prep1';childFormTitle.textContent=window.zakerT('إضافة ابن','Add Child')}
 async function removeChild(id){
- if(!confirm(window.zakerT('حذف الابن من الحساب؟','Remove this child from the account?')))return;
- const {error}=await sb.from('children').update({is_active:false,updated_at:new Date().toISOString()}).eq('id',id);
- if(error){alert(error.message);return} await loadChildren();
+ const ch=children.find(x=>x.id===id);if(!ch)return;
+ if(!confirm(window.zakerT('هل تريد حذف '+ch.full_name+' من الحساب؟ لن يظهر بعد ذلك ضمن الطلاب.','Remove '+ch.full_name+' from this account?')))return;
+ const {error}=await sb.from('children').update({is_active:false,updated_at:new Date().toISOString()}).eq('id',id).eq('guardian_user_id',session.user.id);
+ if(error){alert(error.message);return}
+ if(localStorage.getItem('zaker_active_child_id')===id){
+   const next=children.find(x=>x.id!==id);
+   if(next){localStorage.setItem('zaker_active_child_id',next.id);localStorage.setItem('zaker_student_track',next.track)}
+   else{localStorage.removeItem('zaker_active_child_id');localStorage.removeItem('zaker_student_track')}
+ }
+ await loadChildren();
 }
 function openChild(id){
  const ch=children.find(x=>x.id===id);if(!ch)return;
