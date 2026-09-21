@@ -128,7 +128,6 @@ function renderQuestion(){
  if(q.type==='mcq')input=(q.choices||[]).map(c=>'<button class="choice" data-value="'+esc(c)+'" onclick="pickChoice(this)">'+esc(c)+'</button>').join('');
  else input='<textarea id="writtenAnswer" class="textanswer" placeholder="Type your answer here..."></textarea>';
  testArea.innerHTML='<div class="testhead"><b>'+esc(testLabel)+'</b></div><div class="progress"><i style="width:'+((idx/test.length)*100)+'%"></i></div><div class="qbox"><span class="pill">'+esc(q.type.toUpperCase())+'</span><p class="qtext">'+esc(q.text)+'</p>'+input+'<button id="submitBtn" class="btn primary" style="margin-top:12px" onclick="submitAnswer(false)">Submit Answer</button><div id="submitMsg"></div></div>';
- timeLeft=90;timer=setInterval(()=>{timeLeft--;const el=document.getElementById('timeLeft');if(el)el.textContent=timeLeft;if(timeLeft<=0){clearInterval(timer);submitAnswer(true)}},1000);
 }
 function pickChoice(el){document.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));el.classList.add('selected');selectedChoice=el.dataset.value}
 async function submitAnswer(timedOut){
