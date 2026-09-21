@@ -81,7 +81,7 @@ async function init(){
  const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);if(profiles?.[0]?.role==='admin'){location.href='/admin.html';return}
  const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(!children?.length){location.href='/account.html';return}
- const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);
+ const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);if(child.grade!=='prep1'){location.href='/';return}
  const {data:subs}=await sb.from('subscriptions').select('id,status,ends_at,access_source').eq('child_id',child.id).eq('status','active').order('ends_at',{ascending:false}).limit(5);
  const valid=(subs||[]).filter(s=>!s.ends_at||new Date(s.ends_at)>new Date());
  if(!valid.length){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
