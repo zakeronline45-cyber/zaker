@@ -1,13 +1,13 @@
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
   const {subject='Science',lesson,module,id,studentAnswer,studyLanguage='English'}=req.body||{};
-  if(!id || (subject==='Science'&&!lesson) || ((subject==='English'||subject==='Arabic')&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
+  if(!id || (subject==='Science'&&!lesson) || ((subject==='English'||subject==='Arabic'||subject==='Social Studies')&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
   try{
     const host=req.headers.host;
     const proto=(req.headers['x-forwarded-proto']||'https');
     let q=null;
-    if(subject==='English'||subject==='Arabic'){
-      const file=subject==='Arabic'?'arabic-term1.json':'english-term1.json';
+    if(subject==='English'||subject==='Arabic'||subject==='Social Studies'){
+      const file=subject==='Arabic'?'arabic-term1.json':subject==='Social Studies'?'social-studies-term1.json':'english-term1.json';
       const r=await fetch(`${proto}://${host}/content/${file}`,{cache:'no-store'});
       if(!r.ok) return res.status(404).json({error:subject+' question bank unavailable'});
       const bank=await r.json();
@@ -43,7 +43,7 @@ export default async function handler(req,res){
           headers:{'Authorization':`Bearer ${key}`,'Content-Type':'application/json'},
           body:JSON.stringify({
             model:'gpt-5.6-luna',
-            instructions:`You are grading a first-prep ${subject} answer. Compare the student answer with the reference by meaning and task requirements. Return only CORRECT or INCORRECT. For English writing/rewrite tasks, accept grammatically reasonable answers that satisfy the prompt even if wording differs. For Arabic writing, reading, rhetoric and grammar tasks, accept equivalent correct Arabic meanings and valid formulations; do not require exact wording unless the item is a fixed grammar/spelling answer. Ignore harmless punctuation differences.`,
+            instructions:`You are grading a first-prep ${subject} answer. Compare the student answer with the reference by meaning and task requirements. Return only CORRECT or INCORRECT. For English writing/rewrite tasks, accept grammatically reasonable answers that satisfy the prompt even if wording differs. For Arabic writing, reading, rhetoric and grammar tasks, accept equivalent correct Arabic meanings and valid formulations; do not require exact wording unless the item is a fixed grammar/spelling answer. For Social Studies, accept equivalent correct Arabic explanations of geographic, historical, economic, or civic ideas when the meaning matches the reference. Ignore harmless punctuation differences.`,
             input:`Question: ${q.text}\nReference answer: ${q.answer}\nStudent answer: ${studentAnswer||''}`
           })
         });
