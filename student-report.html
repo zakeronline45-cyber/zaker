@@ -19,7 +19,6 @@ ${weakRows.length?weakRows.slice(0,8).map(x=>'<div class="block bad"><b>'+esc(x[
 <h2>التوصيات وخطة المراجعة</h2><div class="block">${latestPlan.length?'<ol>'+latestPlan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>':'<ol><li>مراجعة الدروس التي ظهرت بها أخطاء.</li><li>إعادة الاختبار بعد المراجعة وقياس التحسن.</li><li>الاستمرار على اختبار قصير بعد كل درس.</li></ol>'}</div>
 <h2>آخر الإجابات التي تحتاج مراجعة</h2>${wrong.length?wrong.slice(0,12).map((a,i)=>'<div class="block bad"><b>سؤال '+(i+1)+'</b><p style="direction:ltr;text-align:left">'+esc(a.question||'')+'</p><div><b>إجابة الطالب:</b> '+esc(a.studentAnswer||'—')+'</div><div><b>الإجابة الصحيحة:</b> '+esc(a.correctAnswer||'—')+'</div></div>').join(''):'<div class="block good">لا توجد إجابات خاطئة مسجلة.</div>'}
 <div class="muted" style="margin-top:24px;border-top:1px solid var(--line);padding-top:12px">هذا التقرير تم إنشاؤه من بيانات منصة ذاكر وقت إصدار الرابط.</div>`}
-}
 function downloadPdf(){const name=(payload?.student?.full_name||'student-report').replace(/\s+/g,'-');html2pdf().set({margin:8,filename:'Zaker-'+name+'.pdf',image:{type:'jpeg',quality:.98},html2canvas:{scale:2,useCORS:true},jsPDF:{unit:'mm',format:'a4',orientation:'portrait'}}).from(report).save()}
 load();
 </script></body></html>
