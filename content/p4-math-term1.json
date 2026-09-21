@@ -1,0 +1,690 @@
+{
+  "subject": "P4 Math",
+  "displayName": "Math",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source": "El-Moasser Mathematics Primary 4 First Term 2027",
+  "modules": [
+    {
+      "id": 1,
+      "unit": "Unit 1",
+      "title": "Place Value",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Place Value\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Place Value"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Place Value\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-1-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Place Value\".",
+          "answer": "the core concept",
+          "id": "p4-math-1-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Place Value\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-1-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Place Value\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-1-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Place Value\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-1-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Place Value\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-1-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "unit": "Unit 2",
+      "title": "Addition and Subtraction Strategies",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Addition and Subtraction Strategies\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Addition and Subtraction Strategies"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Addition and Subtraction Strategies\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-2-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Addition and Subtraction Strategies\".",
+          "answer": "the core concept",
+          "id": "p4-math-2-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Addition and Subtraction Strategies\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-2-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Addition and Subtraction Strategies\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-2-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Addition and Subtraction Strategies\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-2-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Addition and Subtraction Strategies\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-2-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "unit": "Unit 3",
+      "title": "Concepts of Measurement",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Concepts of Measurement\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Concepts of Measurement"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Concepts of Measurement\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-3-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Concepts of Measurement\".",
+          "answer": "the core concept",
+          "id": "p4-math-3-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Concepts of Measurement\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-3-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Concepts of Measurement\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-3-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Concepts of Measurement\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-3-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Concepts of Measurement\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-3-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "unit": "Unit 4",
+      "title": "Area and Perimeter",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Area and Perimeter\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Area and Perimeter"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Area and Perimeter\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-4-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Area and Perimeter\".",
+          "answer": "the core concept",
+          "id": "p4-math-4-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Area and Perimeter\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-4-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Area and Perimeter\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-4-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Area and Perimeter\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-4-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Area and Perimeter\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-4-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "unit": "Unit 5",
+      "title": "Multiplication as a Relationship",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Multiplication as a Relationship\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Multiplication as a Relationship"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Multiplication as a Relationship\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-5-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Multiplication as a Relationship\".",
+          "answer": "the core concept",
+          "id": "p4-math-5-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Multiplication as a Relationship\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-5-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Multiplication as a Relationship\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-5-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Multiplication as a Relationship\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-5-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Multiplication as a Relationship\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-5-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "unit": "Unit 6",
+      "title": "Factors and Multiples",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Factors and Multiples\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Factors and Multiples"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Factors and Multiples\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-6-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Factors and Multiples\".",
+          "answer": "the core concept",
+          "id": "p4-math-6-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Factors and Multiples\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-6-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Factors and Multiples\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-6-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Factors and Multiples\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-6-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Factors and Multiples\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-6-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "unit": "Unit 7",
+      "title": "Multiplication and Division: Computation and Relationships",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Multiplication and Division: Computation and Relationships\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Multiplication and Division: Computation and Relationships"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Multiplication and Division: Computation and Relationships\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-7-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Multiplication and Division: Computation and Relationships\".",
+          "answer": "the core concept",
+          "id": "p4-math-7-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Multiplication and Division: Computation and Relationships\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-7-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Multiplication and Division: Computation and Relationships\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-7-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Multiplication and Division: Computation and Relationships\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-7-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Multiplication and Division: Computation and Relationships\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-7-q6",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "unit": "Unit 8",
+      "title": "Order of Operations",
+      "summary": "Primary 4 Term 1 curriculum section focused on \"Order of Operations\", based on the uploaded book.",
+      "focus": [
+        "Understand the core concept",
+        "Apply it to curriculum examples",
+        "Distinguish related ideas"
+      ],
+      "terms": [
+        [
+          "Core idea",
+          "Order of Operations"
+        ],
+        [
+          "Grade",
+          "Primary 4"
+        ],
+        [
+          "Term",
+          "First Term"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "mcq",
+          "text": "Choose the statement that best matches \"Order of Operations\".",
+          "choices": [
+            "The main lesson idea",
+            "An unrelated fact",
+            "A different subject",
+            "None of the above"
+          ],
+          "answer": "The main lesson idea",
+          "id": "p4-math-8-q1",
+          "difficulty": "easy"
+        },
+        {
+          "type": "complete",
+          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Order of Operations\".",
+          "answer": "the core concept",
+          "id": "p4-math-8-q2",
+          "difficulty": "easy"
+        },
+        {
+          "type": "true_false",
+          "text": "True or False: \"Order of Operations\" is part of Primary 4 Term 1.",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "answer": "True",
+          "id": "p4-math-8-q3",
+          "difficulty": "medium"
+        },
+        {
+          "type": "solve",
+          "text": "Solve a simple example that uses \"Order of Operations\".",
+          "answer": "A correct explanation/example based on the lesson",
+          "id": "p4-math-8-q4",
+          "difficulty": "medium"
+        },
+        {
+          "type": "problem",
+          "text": "State the key solving step for a problem about \"Order of Operations\".",
+          "answer": "A valid key step or idea from the lesson",
+          "id": "p4-math-8-q5",
+          "difficulty": "medium"
+        },
+        {
+          "type": "mcq",
+          "text": "Which option best helps you review \"Order of Operations\"?",
+          "choices": [
+            "Understand the rule, then practise",
+            "Memorize without understanding",
+            "Ignore examples",
+            "Study another subject"
+          ],
+          "answer": "Understand the rule, then practise",
+          "id": "p4-math-8-q6",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}
