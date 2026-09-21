@@ -48,6 +48,13 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
 .student-master-links{display:flex;gap:7px;flex:1;justify-content:center}.student-master-links a,.student-master-links button{border:0;background:transparent;padding:11px 16px;border-radius:16px;font-weight:900;color:#21457d}.student-master-links .active{background:#e8f0ff;color:#1d5ed2}
 .student-master-user{display:flex;align-items:center;gap:10px}.student-master-user .coin{padding:9px 13px;border-radius:16px;background:#fff8df;border:1px solid #ffe383;font-weight:900;color:#805f0d}.student-master-avatar{width:47px;height:47px;border-radius:50%;background:linear-gradient(145deg,#ffe0bd,#f6a671);display:grid;place-items:center;font-size:26px;border:4px solid #eef4ff}.student-master-name b{display:block}.student-master-name small{color:#75839b}
 @media(max-width:850px){.student-master-links{display:none}.student-master-user .coin{display:none}}
+.student-bottom-nav{display:none}
+@media(max-width:700px){
+ body{padding-bottom:76px}.student-master-top{border-radius:0 0 20px 20px}.student-master-nav{min-height:74px}.student-master-name{display:none}.student-master-avatar{width:40px;height:40px}.student-master-user .btn{padding:8px;font-size:12px}
+ .trackbar{margin-top:10px}.trackbar-inner{padding:10px 12px}.adventure-hero{display:none!important}.subject-ribbon{padding:12px}.subject-ribbon h3{font-size:17px}.subject-cards{display:flex;overflow:auto}.subject-card{min-width:115px}
+ #languagesArea.grid{padding-top:10px}.side{max-height:330px;overflow:auto}.content{padding:14px}.content .hero{padding:14px}.content .hero h2{font-size:21px}.tabs{display:grid;grid-template-columns:1fr 1fr}.tab{font-size:13px;padding:10px 6px}.lesson-checks{grid-template-columns:1fr}.profile-kpis{grid-template-columns:1fr 1fr}
+ .student-bottom-nav{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);right:0;left:0;bottom:0;z-index:100;background:#351044;color:#fff;padding:9px 4px max(9px,env(safe-area-inset-bottom));box-shadow:0 -6px 24px #32103f35}.student-bottom-nav a,.student-bottom-nav button{border:0;background:transparent;color:#fff;display:grid;gap:3px;place-items:center;font-size:11px;opacity:.8}.student-bottom-nav span{font-size:20px}.student-bottom-nav .active{color:#ff7418;opacity:1}.ai-fab{bottom:82px;width:54px;height:54px;font-size:28px}.ai-guide{bottom:145px}
+}
 </style>
 </head>
 <body>
@@ -193,6 +200,7 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
   <div id="floatingAiAnswer" class="answer" style="display:none"></div>
 </div>
 <button class="ai-fab" onclick="toggleAiGuide()" aria-label="مساعد ذاكر">🤖</button>
+<nav class="student-bottom-nav"><a href="/"><span>🏠</span>الرئيسية</a><button onclick="setPane('explain')"><span>📚</span>الدراسة</button><button onclick="setPane('test')"><span>📝</span>اختباراتي</button><button onclick="setPane('profile')"><span>📊</span>تقاريري</button><a href="/account.html"><span>👤</span>حسابي</a></nav>
 </main>
 <script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
@@ -449,7 +457,7 @@ async function finishTest(){
  document.getElementById('testArea').innerHTML='<div class="result"><p>نتيجتك</p><b>'+pct+'%</b><p>'+esc(feedback.summary||'راجع أخطاءك ثم أعد الاختبار.')+'</p></div>'+
  (wrong.length?'<div class="feedback-grid"><h3>إيه اللي محتاج تفهمه وتراجعه؟</h3>'+topics+'</div>':'<div class="submitted">ممتاز، مفيش أخطاء محتاجة مراجعة في الاختبار ده.</div>')+
  (plan?'<div class="review-plan"><b>خطة المراجعة قبل إعادة الاختبار</b><ol>'+plan+'</ol></div>':'')+
- '<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn primary" onclick="showExplain()">راجع الأهداف والشرح الآن</button><button class="btn soft" onclick="printReport()">🖨️ طباعة التقرير</button><button class="btn soft" onclick="printExam()">📝 طباعة نسخة الامتحان</button><button class="btn soft" onclick="resetTest()">اختبار جديد</button></div>';
+ '<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn primary" onclick="showExplain()">راجع الأهداف والشرح الآن</button><button class="btn soft" onclick="printReport()">🖨️ طباعة التحليل</button><button class="btn soft" onclick="printExam()">📝 طباعة نسخة الامتحان</button><button class="btn soft" onclick="resetTest()">اختبار جديد</button></div>';
 }
 
 function completeFeedback(feedback,wrong,pct){
@@ -515,8 +523,8 @@ function printReport(){
  const rows=(r.answers||[]).map((a,i)=>'<div class="block '+(a.correct?'good':'wrong')+'"><div class="label">السؤال '+(i+1)+'</div><div style="direction:ltr;text-align:left;font-weight:700">'+esc(a.question||'')+'</div><div><b>إجابة الطالب:</b> '+esc(a.studentAnswer|| (a.timedOut?'انتهى الوقت بدون إجابة':'—'))+'</div><div><b>الإجابة الصحيحة:</b> '+esc(a.correctAnswer||'—')+'</div><div><b>النتيجة:</b> '+(a.correct?'صحيحة ✓':'تحتاج مراجعة ✗')+'</div></div>').join('');
  const feedbackTopics=(r.feedback?.topics||[]).map(t=>'<div class="block wrong"><div class="label">'+esc(t.question||t.topic||'مفهوم يحتاج مراجعة')+'</div><div><b>الشرح:</b> '+esc(t.explanation||'راجع الفرق بين إجابتك والإجابة الصحيحة.')+'</div></div>').join('');
  const plan=(r.feedback?.plan||[]).length?'<div class="block"><div class="label">خطة المراجعة</div><ol>'+r.feedback.plan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>':'';
- const html='<div class="head"><div class="brand">ذاكر — تقرير الاختبار</div><div class="meta"><div><b>اسم الطالب:</b> '+esc(student)+'</div><div><b>المادة:</b> Science</div><div><b>الاختبار:</b> '+esc(r.lessonTitle)+'</div><div><b>التاريخ:</b> '+new Date(r.date).toLocaleString('ar-EG')+'</div></div></div><div class="block"><div class="score">'+r.pct+'%</div><div><b>'+r.score+' من '+r.total+'</b> إجابات صحيحة</div><div class="muted">'+esc(r.feedback?.summary||'تقرير أداء الطالب في الاختبار.')+'</div></div><h2>تفاصيل الإجابات</h2>'+rows+(feedbackTopics?'<h2>شرح الأخطاء</h2>'+feedbackTopics:'')+plan;
- openPrintWindow('تقرير ذاكر - '+r.lessonTitle,html);
+ const html='<div class="head"><div class="brand">ذاكر — تحليل الاختبار</div><div class="meta"><div><b>اسم الطالب:</b> '+esc(student)+'</div><div><b>المادة:</b> Science</div><div><b>الاختبار:</b> '+esc(r.lessonTitle)+'</div><div><b>التاريخ:</b> '+new Date(r.date).toLocaleString('ar-EG')+'</div></div></div><div class="block"><div class="score">'+r.pct+'%</div><div><b>'+r.score+' من '+r.total+'</b> إجابات صحيحة</div><div class="muted">'+esc(r.feedback?.summary||'تحليل أداء الطالب في الاختبار.')+'</div></div><h2>تفاصيل الإجابات</h2>'+rows+(feedbackTopics?'<h2>تحليل الأخطاء</h2>'+feedbackTopics:'')+plan;
+ openPrintWindow('تحليل ذاكر - '+r.lessonTitle,html);
 }
 function showExplain(){
  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.pane==='explain'));
@@ -610,6 +618,11 @@ async function initAccount(){
 
   applyTrack();const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;
   if(studentTrack==='languages'&&activeChildGrade==='prep1')loadBank();
+  const requestedView=new URLSearchParams(location.search).get('view');
+  if(['explain','ai','test','profile'].includes(requestedView))setPane(requestedView);
+  const examMode=new URLSearchParams(location.search).get('exam');
+  if(examMode==='custom')document.querySelector('.exam-builder')?.scrollIntoView({behavior:'smooth',block:'center'});
+  if(examMode==='full')document.querySelectorAll('.milestone')[2]?.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
 function toggleAiGuide(){document.getElementById('aiGuide').classList.toggle('open')}
