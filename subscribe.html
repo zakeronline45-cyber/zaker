@@ -92,10 +92,18 @@ async function init(){
  childSelect.innerHTML=children.map((ch,i)=>'<option value="'+ch.id+'">'+ch.full_name+' — '+(window.zakerLang?.()==='en'?(ch.track==='arabic'?'Arabic':'Languages'):(ch.track==='arabic'?'عربي':'لغات'))+' — '+(window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[ch.grade]||ch.grade):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[ch.grade]||ch.grade))+(i===1?(window.zakerLang?.()==='en'?' — 25% second-child discount':' — خصم الطفل الثاني 25%'):i===2?(window.zakerLang?.()==='en'?' — 50% third-child discount':' — خصم الطفل الثالث 50%'):'')+'</option>').join('');
  const promoSelect=document.getElementById('promoChildId');
  promoSelect.innerHTML=children.map(ch=>'<option value="'+ch.id+'">'+ch.full_name+'</option>').join('');
- const requested=new URLSearchParams(location.search).get('child');
+ const params=new URLSearchParams(location.search);
+ const requested=params.get('child');
+ const requestedSubjects=(params.get('subjects')||'').split(',').map(x=>decodeURIComponent(x).trim()).filter(Boolean);
  if(requested&&children.some(x=>x.id===requested)) childSelect.value=requested;
+ if(requestedSubjects.length){
+   document.getElementById('subjectCount').value=String(Math.min(requestedSubjects.length,availableSubjects().length));
+ }
  childSelect.addEventListener('change',()=>{renderSubjectChoices();calc()});
  renderSubjectChoices();
+ if(requestedSubjects.length){
+   document.querySelectorAll('.subjectPick').forEach(x=>{x.checked=requestedSubjects.includes(x.value)});
+ }
  if(!children.length){
    document.getElementById('current').innerHTML=window.zakerLang?.()==='en'?'No children on this account. <a href="/account.html">Add a child first</a>.':'لا يوجد أبناء على الحساب. <a href="/account.html">أضف ابنًا أولًا</a>.';
    document.querySelector('button[onclick="startBankTransfer()"]').disabled=true;
