@@ -25,7 +25,7 @@
     <input type="hidden" id="editChildId">
     <div class="field"><label>اسم الابن / الابنة</label><input id="childName"></div>
     <div class="field"><label>المسار</label><select id="childTrack"><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
-    <div class="field"><label>الصف الدراسي</label><select id="childGrade"><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
+    <div class="field"><label>الصف الدراسي</label><select id="childGrade"><option value="p4">رابعة ابتدائي</option><option value="p5">خامسة ابتدائي</option><option value="p6">سادسة ابتدائي</option><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
     <div class="actions"><button class="btn primary" onclick="saveChild()">حفظ الابن</button><button class="btn soft" onclick="clearChildForm()">إلغاء التعديل</button></div>
   </aside>
 
@@ -43,7 +43,7 @@ const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 let session=null, children=[];
 
-const gradeName=x=>window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
+const gradeName=x=>window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
 const trackName=x=>window.zakerLang?.()==='en'?(x==='arabic'?'Arabic':'Languages'):(x==='arabic'?'عربي':'لغات');
 
 async function init(){
