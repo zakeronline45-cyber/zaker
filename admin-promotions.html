@@ -9,19 +9,19 @@
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:#1d2b48}button,input,select{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 20px}.wrap{max-width:1180px;margin:auto}.bar{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:24px;font-weight:900;color:var(--n)}.btn{border:0;border-radius:10px;padding:10px 13px;font-weight:900}.primary{background:var(--b);color:#fff}.soft{background:#eef3ff;color:var(--b)}.danger{background:#fff1f2;color:var(--r)}main{max-width:1180px;margin:24px auto;padding:0 16px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}.field{display:grid;gap:6px;margin-bottom:11px}.field input,.field select{padding:11px;border:1px solid var(--line);border-radius:10px}.muted{color:var(--m)}.child,.promo{border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}.pill{display:inline-block;background:#edf3ff;color:var(--b);padding:4px 8px;border-radius:99px;font-size:12px;font-weight:900}.ok{color:var(--g);font-weight:900}.bad{color:var(--r);font-weight:900}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}@media(max-width:820px){.grid{grid-template-columns:1fr}}</style>
 </head>
 <body>
-<header class="top"><div class="wrap bar"><span class="brand">ذاكر — الاشتراكات الدعائية</span><div><a class="btn soft" href="/admin-payments.html">التحويلات</a> <a class="btn soft" href="/admin.html">الإدارة</a></div></div></header>
+<header class="top"><div class="wrap bar"><span class="brand">ذاكر — الاشتراكات الدعائية</span><div><a class="btn soft" href="/admin-payments.html">التحويلات</a> <a class="btn soft" href="/admin.html">الإدارة</a> <a class="btn soft" href="/?preview=1">معاينة الموقع</a> <button class="btn danger" onclick="logout()">خروج</button></div></div></header>
 <main>
 <div id="authStatus" class="card">جاري التحقق من صلاحية الإدارة...</div>
 <div class="grid">
 <section class="card">
-  <h2>إنشاء Promo Code</h2>
+  <h2 id="promoFormTitle">إنشاء Promo Code</h2>
   <div class="field"><label>الكود</label><input id="promoCode" placeholder="مثال: SCHOOL14"></div>
   <div class="field"><label>اسم الحملة</label><input id="campaignName" placeholder="مثال: حملة مدارس بني سويف"></div>
   <div class="field"><label>مدة المجاني</label><select id="freeDays"><option value="7">7 أيام</option><option value="14" selected>14 يوم</option><option value="30">30 يوم</option></select></div>
   <div class="field"><label>عدد المواد</label><select id="subjectCount"><option value="1">مادة واحدة</option><option value="2">مادتان</option><option value="3">3 مواد</option><option value="5">كل المواد الحالية</option></select></div>
   <div class="field"><label>أقصى عدد استخدامات</label><input id="maxUses" type="number" min="0" placeholder="اتركه 0 = بدون حد"></div>
   <div class="field"><label>تاريخ الانتهاء (اختياري)</label><input id="endsAt" type="datetime-local"></div>
-  <button class="btn primary" onclick="createPromo()">إنشاء الكود</button>
+  <div class="actions"><button id="savePromoBtn" class="btn primary" onclick="savePromo()">إنشاء الكود</button><button id="cancelEditBtn" class="btn soft" style="display:none" onclick="cancelPromoEdit()">إلغاء التعديل</button></div>
   <div id="promoMsg" class="muted" style="margin-top:10px"></div>
 </section>
 
@@ -41,7 +41,7 @@
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-let timer=null, session=null;
+let timer=null, session=null, promoRows=[], editingPromoId=null;
 
 async function init(){
  const s=await sb.auth.getSession();session=s.data.session;
@@ -52,17 +52,20 @@ async function init(){
  renderPromos(data||[]);
  await searchChildren();
 }
-async function createPromo(){
+async function savePromo(){
  const code=promoCode.value.trim().toUpperCase(),campaign=campaignName.value.trim();
  if(!code||!campaign){promoMsg.textContent='اكتب الكود واسم الحملة.';return}
  const end=endsAt.value?new Date(endsAt.value).toISOString():null;
- const {error}=await sb.rpc('admin_create_promo_code',{
+ const rpc=editingPromoId?'admin_update_promo_code':'admin_create_promo_code';
+ const params={
   p_code:code,p_campaign_name:campaign,p_free_days:Number(freeDays.value),
   p_subject_count:Number(subjectCount.value),p_max_uses:Number(maxUses.value)||null,
   p_starts_at:new Date().toISOString(),p_ends_at:end
- });
- promoMsg.textContent=error?error.message:'تم إنشاء الكود '+code;
- if(!error){promoCode.value='';campaignName.value='';await reloadPromos()}
+ };
+ if(editingPromoId)params.p_id=editingPromoId;
+ const {error}=await sb.rpc(rpc,params);
+ promoMsg.textContent=error?error.message:(editingPromoId?'تم تعديل الكود '+code:'تم إنشاء الكود '+code);
+ if(!error){cancelPromoEdit();await reloadPromos()}
 }
 async function reloadPromos(){
  const {data,error}=await sb.rpc('admin_list_promo_codes');
@@ -70,14 +73,22 @@ async function reloadPromos(){
  renderPromos(data||[]);
 }
 function renderPromos(rows){
+ promoRows=rows;
  promoList.innerHTML=rows.length?rows.map(x=>`
   <div class="promo">
     <div><b>${esc(x.code)}</b> — ${esc(x.campaign_name)}</div>
     <div class="muted">${x.free_days} يوم · ${x.subject_count} مادة · الاستخدام ${x.used_count}/${x.max_uses??'∞'}</div>
     <div class="muted">${x.ends_at?'ينتهي '+new Date(x.ends_at).toLocaleString('ar-EG'):'بدون تاريخ انتهاء محدد'}</div>
-    <div class="actions"><button class="btn ${x.active?'danger':'primary'}" onclick="togglePromo('${x.id}',${!x.active})">${x.active?'إيقاف':'تفعيل'}</button></div>
+    <div class="actions"><button class="btn soft" onclick="editPromo('${x.id}')">تعديل</button><button class="btn ${x.active?'danger':'primary'}" onclick="togglePromo('${x.id}',${!x.active})">${x.active?'إلغاء / إيقاف':'تفعيل'}</button><button class="btn danger" onclick="deletePromo('${x.id}')">مسح نهائي</button></div>
   </div>`).join(''):'لا توجد أكواد.';
 }
+function editPromo(id){
+ const x=promoRows.find(r=>String(r.id)===String(id));if(!x)return;
+ editingPromoId=x.id;promoCode.value=x.code||'';campaignName.value=x.campaign_name||'';freeDays.value=String(x.free_days||14);subjectCount.value=String(x.subject_count||1);maxUses.value=x.max_uses??'';endsAt.value=x.ends_at?new Date(new Date(x.ends_at).getTime()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,16):'';
+ promoFormTitle.textContent='تعديل الكود الدعائي';savePromoBtn.textContent='حفظ التعديل';cancelEditBtn.style.display='inline-block';window.scrollTo({top:0,behavior:'smooth'});
+}
+function cancelPromoEdit(){editingPromoId=null;promoCode.value='';campaignName.value='';freeDays.value='14';subjectCount.value='1';maxUses.value='';endsAt.value='';promoFormTitle.textContent='إنشاء Promo Code';savePromoBtn.textContent='إنشاء الكود';cancelEditBtn.style.display='none'}
+async function deletePromo(id){if(!confirm('مسح الكود الدعائي نهائيًا؟ لن يتم التراجع عن هذا الإجراء.'))return;const {error}=await sb.rpc('admin_delete_promo_code',{p_id:id});if(error){alert(error.message);return}reloadPromos()}
 async function togglePromo(id,active){
  const {error}=await sb.rpc('admin_set_promo_active',{p_id:id,p_active:active});
  if(error){alert(error.message);return}reloadPromos();
@@ -95,6 +106,7 @@ function searchChildren(){
       <button class="btn primary" onclick="grantPromo('${x.child_id}',7)">7 أيام</button>
       <button class="btn primary" onclick="grantPromo('${x.child_id}',14)">14 يوم</button>
       <button class="btn primary" onclick="grantPromo('${x.child_id}',30)">30 يوم</button>
+      ${x.active_until?`<button class="btn danger" onclick="revokePromo('${x.child_id}')">إلغاء الاشتراك الدعائي</button>`:''}
     </div>
    </div>`).join('')||'لا توجد نتائج.';
  },250)
@@ -108,7 +120,13 @@ async function grantPromo(childId,days){
  alert('تم منح الاشتراك المجاني لمدة '+days+' يوم');
  searchChildren();
 }
+async function revokePromo(childId){
+ if(!confirm('إلغاء الاشتراك الدعائي النشط لهذا الطالب؟ الاشتراكات المدفوعة لن تتأثر.'))return;
+ const {error}=await sb.rpc('admin_revoke_promotional_access',{p_child_id:childId});
+ if(error){alert(error.message);return}alert('تم إلغاء الاشتراك الدعائي');searchChildren();
+}
 function gradeName(x){return({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
 </script></body></html>
