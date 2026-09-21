@@ -31,6 +31,12 @@ const ARABIC_SYLLABUS = [
   'الفعل اللازم والفعل المتعدي','الفعل المجرد والفعل المزيد','أنواع الفعل المعتل','أنواع الفعل الصحيح','ظن وأخواتها',
   'كتابة الهمزة على الألف','كتابة الهمزة على الواو','كتابة الهمزة على الياء','الخط العربي','السيرة الذاتية','السيرة الغيرية'
 ];
+const MATH_SYLLABUS = [
+'Proportion','Applications of Ratio and Proportion — Scale Drawings','Applications of Ratio and Proportion — Proportional Division','Applications of Ratio and Proportion — Percentages','Sets and Their Operations','Operations on Integers','Operations on Rational Numbers','Mathematical Expressions and Formulas / Algebraic Terms','Addition and Subtraction of Algebraic Expressions','Linear Equations','Types of Angles and Relationships Between Them','More Angle Relationships','Parallelism','The Triangle','Quadrilaterals','Special Quadrilaterals','Polygons','Coordinates','Organizing Data','Arithmetic Mean','Pie Charts'
+];
+const MATH_AR_SYLLABUS = [
+'التناسب','تطبيقات النسبة والتناسب — مقياس الرسم','تطبيقات النسبة والتناسب — التقسيم التناسبي','تطبيقات النسبة والتناسب — تطبيقات النسبة المئوية','المجموعات والعمليات عليها','العمليات على الأعداد الصحيحة','العمليات على الأعداد النسبية','التعبيرات والصيغ الرياضية والحدود الجبرية','جمع وطرح التعبيرات الجبرية','المعادلات الخطية','الزوايا وأنواعها والعلاقات بينها','تابع العلاقات بين الزوايا','التوازي','المثلث','الأشكال الرباعية','تابع الأشكال الرباعية الخاصة','المضلعات','الإحداثيات','تنظيم البيانات','الوسط الحسابي','القطاعات الدائرية'
+];
 const SOCIAL_STUDIES_SYLLABUS = [
   'قارة أفريقيا — الموقع والكشوف الجغرافية','مظاهر سطح قارة أفريقيا','نهر النيل والحضارات القديمة في أفريقيا',
   'عصر الدولة القديمة — عصر بناة الأهرام','عصر الدولة الوسطى — عصر الرخاء الاقتصادي','عصر الدولة الحديثة — عصر المجد الحربي',
@@ -45,7 +51,7 @@ async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject}){
     headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
     body:JSON.stringify({
       model:'gpt-5.6-luna',
-      instructions:`You are a strict curriculum gate for first-prep ${subject}, term 1.\nAllowed syllabus ONLY:\n${(subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:subject==='Social Studies'?SOCIAL_STUDIES_SYLLABUS:SCIENCE_SYLLABUS).map((x,i)=>`${i+1}. ${x}`).join('\n')}
+      instructions:`You are a strict curriculum gate for first-prep ${subject}, term 1.\nAllowed syllabus ONLY:\n${(subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:subject==='Social Studies'?SOCIAL_STUDIES_SYLLABUS:subject==='Math'?MATH_SYLLABUS:subject==='Mathematics Arabic'?MATH_AR_SYLLABUS:SCIENCE_SYLLABUS).map((x,i)=>`${i+1}. ${x}`).join('\n')}
 
 Decide whether the student's message is answerable strictly within this syllabus.
 Rules:
@@ -87,7 +93,7 @@ export default async function handler(req,res){
       studyLanguage='English',
       sessionId=''
     }=req.body||{};
-    const safeSubject=subject==='English'?'English':subject==='Arabic'?'Arabic':subject==='Social Studies'?'Social Studies':'Science';
+    const safeSubject=subject==='English'?'English':subject==='Arabic'?'Arabic':subject==='Social Studies'?'Social Studies':subject==='Math'?'Math':subject==='Mathematics Arabic'?'Mathematics Arabic':'Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
 
     let history=null;
@@ -103,7 +109,7 @@ export default async function handler(req,res){
       subject:safeSubject
     });
     if(!inScope){
-      const msg=safeSubject==='English'?'This question is outside the current First Prep English curriculum on Zaker. Ask me about the current units, language, vocabulary, skills, or stories.':safeSubject==='Arabic'?'هذا السؤال خارج منهج اللغة العربية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن القراءة والنصوص أو البلاغة أو النحو أو الإملاء أو التعبير الموجود في المنهج.':safeSubject==='Social Studies'?'هذا السؤال خارج منهج الدراسات الاجتماعية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن دروس الجغرافيا أو التاريخ أو الحضارة أو النظم البيئية الموجودة في المنهج.':'This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
+      const msg=safeSubject==='English'?'This question is outside the current First Prep English curriculum on Zaker. Ask me about the current units, language, vocabulary, skills, or stories.':safeSubject==='Arabic'?'هذا السؤال خارج منهج اللغة العربية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن القراءة والنصوص أو البلاغة أو النحو أو الإملاء أو التعبير الموجود في المنهج.':safeSubject==='Social Studies'?'هذا السؤال خارج منهج الدراسات الاجتماعية الحالي للصف الأول الإعدادي على ذاكر. اسألني عن دروس الجغرافيا أو التاريخ أو الحضارة أو النظم البيئية الموجودة في المنهج.':safeSubject==='Math'?'This question is outside the current First Prep Math Term 1 curriculum on Zaker. Ask me about one of the current Math lessons.':safeSubject==='Mathematics Arabic'?'هذا السؤال خارج منهج رياضيات الصف الأول الإعدادي الترم الأول على ذاكر. اسألني عن أحد دروس الرياضيات الحالية.':'This question is outside the current Science English curriculum on Zaker. Ask me about one of the current syllabus lessons, and I’ll explain it step by step.';
       return res.status(200).json({answer:msg,outOfScope:true,learningContext:{totalQuestions:history?.total_questions||0,lessonCounts:history?.lesson_counts||{}}});
     }
 
@@ -117,7 +123,7 @@ export default async function handler(req,res){
     const recent=(history?.recent_questions||[]).slice(0,12).map(x=>`- [${x.lesson||'General'}] ${x.question}`).join('\n');
     const counts=history?.lesson_counts?Object.entries(history.lesson_counts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,v])=>`${k}: ${v}`).join(', '):'';
 
-    const languageRule=safeSubject==='English'?'Explain in clear English suitable for first-prep students. Keep the answer in English unless the student explicitly asks for an Arabic clarification. Focus on vocabulary, grammar, reading, writing, speaking and story comprehension within the listed syllabus.':(safeSubject==='Arabic'||safeSubject==='Social Studies')?'اشرح باللغة العربية الفصحى المبسطة المناسبة لطالب الصف الأول الإعدادي. التزم بمصطلحات المنهج الحالي فقط، واستخدم أمثلة قصيرة واضحة ولا تخرج عن الدروس المسموح بها.':'Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
+    const languageRule=safeSubject==='English'?'Explain in clear English suitable for first-prep students. Keep the answer in English unless the student explicitly asks for an Arabic clarification. Focus on vocabulary, grammar, reading, writing, speaking and story comprehension within the listed syllabus.':(safeSubject==='Arabic'||safeSubject==='Social Studies'||safeSubject==='Mathematics Arabic')?'اشرح باللغة العربية الفصحى المبسطة المناسبة لطالب الصف الأول الإعدادي. التزم بمصطلحات المنهج الحالي فقط، واستخدم أمثلة قصيرة واضحة ولا تخرج عن الدروس المسموح بها.':safeSubject==='Math'?'Explain in clear English suitable for first-prep Math students. Show steps, formulas, and a short worked example when useful. Stay strictly within the listed Term 1 lessons.':'Explain mainly in clear English suitable for first-prep language students. You may add a short Arabic clarification only when it helps understanding, but keep the scientific terminology and core answer in English.';
 
     const instructions=`أنت "مدرس ذاكر"، مدرس شخصي ذكي لطلاب ${grade}.
 المادة الحالية: ${safeSubject}.
