@@ -33,7 +33,8 @@ async function load(){
    <div><b>اسم المحوّل:</b> ${esc(x.sender_name||'—')}</div>
    <div><b>مرجع التحويل:</b> ${esc(x.bank_transfer_reference||'—')}</div>
    <div><b>عدد المواد:</b> ${x.subject_count}</div>
-   <div><b>الطفل:</b> ${x.child_index===2?'الثاني — مطلوب التحقق من استحقاق الخصم':'الأول'}</div>
+   <div><b>المواد المختارة:</b> ${(x.subjects||[]).length?(x.subjects||[]).map(esc).join(' + '):'—'}</div>
+   <div><b>الطفل:</b> ${x.child_index===2?'الثاني — خصم 25%':x.child_index===3?'الثالث — خصم 50%':'الأول'}</div>
   </div>
   ${x.proof_url?'<p><button class="btn soft" onclick="openProof(\''+escAttr(x.proof_url)+'\')">فتح إيصال التحويل</button></p>':''}
   <div style="display:flex;gap:8px;margin-top:12px">
