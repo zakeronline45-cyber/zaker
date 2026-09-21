@@ -26,7 +26,7 @@ main{max-width:1150px;margin:24px auto;padding:0 16px}.toolbar{display:flex;gap:
 </div>
 <section class="card" style="margin-top:16px"><h3>الأسئلة التي أخطأ فيها الطالب</h3><p class="muted">السؤال، إجابة الطالب، الإجابة الصحيحة، والشرح المبسط فقط — بدون مراجع صفحات.</p><div id="wrongAnswers"></div></section>
 </main>
-<script>
+<script src="/zaker-i18n.js"></script><script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
@@ -68,4 +68,4 @@ async function loadDashboard(){
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
-</script><script src="/zaker-i18n.js"></script></body></html>
+</script></body></html>
