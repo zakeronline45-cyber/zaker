@@ -56,6 +56,11 @@ body{background:linear-gradient(180deg,#eef7ff 0,#f8fbff 45%,#eefaf5 100%)}
  #languagesArea.grid{padding-top:10px}.side{max-height:330px;overflow:auto}.content{padding:14px}.content .hero{padding:14px}.content .hero h2{font-size:21px}.tabs{display:grid;grid-template-columns:1fr 1fr}.tab{font-size:13px;padding:10px 6px}.lesson-checks{grid-template-columns:1fr}.profile-kpis{grid-template-columns:1fr 1fr}
  .student-bottom-nav{position:fixed;display:grid;grid-template-columns:repeat(5,1fr);right:0;left:0;bottom:0;z-index:100;background:#351044;color:#fff;padding:9px 4px max(9px,env(safe-area-inset-bottom));box-shadow:0 -6px 24px #32103f35}.student-bottom-nav a,.student-bottom-nav button{border:0;background:transparent;color:#fff;display:grid;gap:3px;place-items:center;font-size:11px;opacity:.8}.student-bottom-nav span{font-size:20px}.student-bottom-nav .active{color:#ff7418;opacity:1}.ai-fab{bottom:82px;width:54px;height:54px;font-size:28px}.ai-guide{bottom:145px}
 }
+
+html[data-zaker-lang="en"] .ar{display:none!important}
+html[data-zaker-lang="en"] .en{display:block!important;border-right:0;border-left:4px solid var(--b)}
+html[data-zaker-lang="en"] .lesson,html[data-zaker-lang="en"] .feedback-grid,html[data-zaker-lang="en"] .review-plan{text-align:left}
+html[data-zaker-lang="en"] .objectives ul,html[data-zaker-lang="en"] .deep-points ul{padding-left:20px;padding-right:0}
 </style>
 </head>
 <body>
@@ -388,11 +393,14 @@ const explanations={
 let lesson=1,bank=null,test=[],idx=0,answers=[],selectedChoice=null,testScopeLabel='اختبار '+titles[1],testLessons=[1];
 let lastPrintableReport=null;
 function renderObjectives(n){
- document.getElementById('lessonObjectives').innerHTML='<h3>الأهداف المستهدفة من الدرس</h3><ul>'+objectives[n].map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+ const en=window.zakerLang?.()==='en';
+ const objectiveList=en?(lessonDeepPoints[n]||[]):(objectives[n]||[]);
+ document.getElementById('lessonObjectives').innerHTML='<h3>'+(en?'Learning Objectives':'الأهداف المستهدفة من الدرس')+'</h3><ul>'+objectiveList.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
  document.getElementById('lessonKeyTerms').innerHTML=(keyTerms[n]||[]).map(x=>'<span class="keyterm">'+esc(x)+'</span>').join('');
  document.getElementById('lessonDeepPoints').innerHTML='<ul>'+(lessonDeepPoints[n]||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
- document.getElementById('lessonExamples').innerHTML=(lessonExamples[n]||[]).map(x=>'<div class="example-card"><b>'+esc(x.title)+'</b><div style="margin-top:6px">'+esc(x.text)+'</div></div>').join('');
- document.getElementById('quickCheck').innerHTML='<b>تحقق من فهمك قبل الاختبار</b><div style="margin-top:6px">'+esc(quickChecks[n]||'')+'</div>';
+ document.getElementById('lessonExamples').innerHTML=(lessonExamples[n]||[]).map(x=>'<div class="example-card"><b>'+esc(en?(x.title==='مثال مبسط'?'Simple Example':'Curriculum Example'):x.title)+'</b><div style="margin-top:6px">'+esc(x.text)+'</div></div>').join('');
+ const check=en?('Before the test: can you explain the key ideas in '+titles[n]+' and solve a simple example?'):(quickChecks[n]||'');
+ document.getElementById('quickCheck').innerHTML='<b>'+(en?'Check Your Understanding Before the Test':'تحقق من فهمك قبل الاختبار')+'</b><div style="margin-top:6px">'+esc(check)+'</div>';
 }
 document.getElementById('lessonExplain').innerHTML=explanations[1];renderObjectives(1);
 document.querySelectorAll('.lesson[data-lesson]').forEach(b=>b.onclick=async()=>{document.querySelectorAll('.lesson').forEach(x=>x.classList.remove('active'));b.classList.add('active');lesson=Number(b.dataset.lesson);bank=null;logLessonVisit(lesson);document.getElementById('lessonTitle').textContent=titles[lesson];const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;renderObjectives(lesson);document.getElementById('lessonExplain').innerHTML=explanations[lesson];document.getElementById('lessonNo').textContent=lesson+' / 12';resetTest();await loadBank()});
@@ -575,9 +583,9 @@ async function renderProfile(){
  if(latest?.plan?.length) html+='<div class="review-plan"><b>خطة المراجعة الحالية</b><ol>'+latest.plan.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>';
  document.getElementById('pfWeakness').innerHTML=html;
 }
-function label(t){return({mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'}[t]||t)}
+function label(t){const en=window.zakerLang?.()==='en';return (en?{mcq:'Multiple Choice',true_false:'True / False',complete:'Complete',reason:'Give Reason',compare:'Compare',problem:'Problem'}:{mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'})[t]||t}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent='بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}}
+async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent=window.zakerLang?.()==='en'?'Thinking about your question...':'بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||(window.zakerLang?.()==='en'?'No response received':'لم يصل رد')}catch(e){a.textContent=(window.zakerLang?.()==='en'?'Something went wrong: ':'حصلت مشكلة: ')+e.message}}
 async function initAccount(){
   const {data}=await sb.auth.getSession();authSession=data.session;
   if(!authSession){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
@@ -645,11 +653,11 @@ function setPane(name){
  if(name==='profile')renderProfile();
  document.querySelector('.content')?.scrollIntoView({behavior:'smooth',block:'start'});
 }
-function aiExplainLesson(){toggleAiGuide();setPane('ai');const i=document.getElementById('aiQuestion');i.value='اشرح لي '+titles[lesson]+' بطريقة بسيطة وبمثال';i.focus()}
+function aiExplainLesson(){toggleAiGuide();setPane('ai');const i=document.getElementById('aiQuestion');i.value=window.zakerLang?.()==='en'?'Explain '+titles[lesson]+' simply with an example':'اشرح لي '+titles[lesson]+' بطريقة بسيطة وبمثال';i.focus()}
 function goToTests(){if(document.getElementById('aiGuide').classList.contains('open'))toggleAiGuide();setPane('test')}
 function showProfilePane(){if(document.getElementById('aiGuide').classList.contains('open'))toggleAiGuide();setPane('profile')}
 function showSiteHelp(){
- const box=document.getElementById('floatingAiAnswer');box.style.display='block';box.innerHTML='<b>أقدر أدلك بسرعة:</b><br>📖 اختار الدرس من القائمة.<br>📝 افتح الاختبارات وابدأ الحل من غير وقت محدد.<br>⭐ افتح ملفي لمتابعة تقدمك.<br>🤖 اسألني عن أي نقطة في درس Science الحالي.';
+ const box=document.getElementById('floatingAiAnswer');box.style.display='block';box.innerHTML=window.zakerLang?.()==='en'?'<b>Quick guide:</b><br>📖 Choose a lesson from the list.<br>📝 Open Tests and start solving.<br>⭐ Open My Profile to track your progress.<br>🤖 Ask me anything about the current Science lesson.':'<b>أقدر أدلك بسرعة:</b><br>📖 اختار الدرس من القائمة.<br>📝 افتح الاختبارات وابدأ الحل من غير وقت محدد.<br>⭐ افتح ملفي لمتابعة تقدمك.<br>🤖 اسألني عن أي نقطة في درس Science الحالي.';
 }
 async function askFloatingAI(){
  const q=document.getElementById('floatingAiQuestion').value.trim(),a=document.getElementById('floatingAiAnswer');if(!q)return;
