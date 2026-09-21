@@ -132,7 +132,12 @@ async function redeemPromo(){
 
 function availableSubjects(){
   const ch=children.find(x=>x.id===document.getElementById('childId')?.value);
-  if(ch?.track==='arabic') return ['الرياضيات','العربي','الدراسات الاجتماعية']; return ['Science','Math','English','Arabic','الدراسات الاجتماعية'];
+  if(ch?.grade==='p4'){
+    if(ch.track==='arabic') return ['العلوم','الرياضيات','English','Arabic','الدراسات الاجتماعية'];
+    return ['Science','Math','English','Arabic','الدراسات الاجتماعية'];
+  }
+  if(ch?.track==='arabic') return ['الرياضيات','العربي','الدراسات الاجتماعية'];
+  return ['Science','Math','English','Arabic','الدراسات الاجتماعية'];
 }
 function syncSubjectCountOptions(){
   const max=availableSubjects().length;
