@@ -43,8 +43,8 @@ const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 let session=null, children=[];
 
-const gradeName=x=>({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
-const trackName=x=>x==='arabic'?'عربي':'لغات';
+const gradeName=x=>window.zakerLang?.()==='en'?({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x):({prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x);
+const trackName=x=>window.zakerLang?.()==='en'?(x==='arabic'?'Arabic':'Languages'):(x==='arabic'?'عربي':'لغات');
 
 async function init(){
  const g=await sb.auth.getSession();session=g.data.session;
@@ -57,7 +57,7 @@ async function init(){
 }
 async function saveProfile(){
  const {error}=await sb.rpc('update_guardian_profile',{p_guardian_name:guardianName.value.trim(),p_phone:phone.value.trim()});
- profileMsg.textContent=error?error.message:'تم حفظ بيانات ولي الأمر.';
+ profileMsg.textContent=error?error.message:window.zakerT('تم حفظ بيانات ولي الأمر.','Parent details saved.');
 }
 async function loadChildren(){
  const {data,error}=await sb.from('children').select('*').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
@@ -72,21 +72,21 @@ async function loadChildren(){
    html+=`<div class="child">
     <div class="child-head"><div><h3 style="margin:0 0 6px">${esc(ch.full_name)}</h3><span class="pill">${trackName(ch.track)}</span> <span class="pill">${gradeName(ch.grade)}</span></div>
     <div class="muted">ابن رقم ${children.indexOf(ch)+1}</div></div>
-    <div class="sub">${activeSub?'<span class="ok">اشتراك نشط</span> — '+(activeSub.access_source==='paid'?(activeSub.amount_egp+' جنيه'):(activeSub.access_source==='promo_code'?'كود دعائي'+(activeSub.campaign_code?' '+activeSub.campaign_code:''):'اشتراك دعائي مجاني'))+' — '+activeSub.subject_count+' مادة'+(activeSub.subscription_subjects?.length?' ('+activeSub.subscription_subjects.map(x=>x.subject_code).join('، ')+')':'')+' — حتى '+new Date(activeSub.ends_at).toLocaleDateString('ar-EG'):'<span class="bad">لا يوجد اشتراك نشط</span>'}</div>
+    <div class="sub">${activeSub?(window.zakerLang?.()==='en'?'<span class="ok">Active Subscription</span> — ':'<span class="ok">اشتراك نشط</span> — ')+(activeSub.access_source==='paid'?(activeSub.amount_egp+(window.zakerLang?.()==='en'?' EGP':' جنيه')):(activeSub.access_source==='promo_code'?(window.zakerLang?.()==='en'?'Promo Code':'كود دعائي')+(activeSub.campaign_code?' '+activeSub.campaign_code:''):(window.zakerLang?.()==='en'?'Free Promotional Subscription':'اشتراك دعائي مجاني')))+' — '+activeSub.subject_count+(window.zakerLang?.()==='en'?' subject':' مادة')+(activeSub.subscription_subjects?.length?' ('+activeSub.subscription_subjects.map(x=>x.subject_code).join(', ')+')':'')+(window.zakerLang?.()==='en'?' — until ':' — حتى ')+new Date(activeSub.ends_at).toLocaleDateString(window.zakerLang?.()==='en'?'en-GB':'ar-EG'):(window.zakerLang?.()==='en'?'<span class="bad">No active subscription</span>':'<span class="bad">لا يوجد اشتراك نشط</span>')}</div>
     <div class="actions">
-      <button class="btn primary" onclick="openChild('${ch.id}')">دخول ملف الطالب</button>
-      <a class="btn soft" href="/parent.html?child=${ch.id}">متابعة الأداء</a>
-      <a class="btn soft" href="/subscribe.html?child=${ch.id}">الاشتراك / التجديد</a>
-      <button class="btn soft" onclick="editChild('${ch.id}')">تعديل</button>
-      <button class="btn danger" onclick="removeChild('${ch.id}')">حذف</button>
+      <button class="btn primary" onclick="openChild('${ch.id}')">${window.zakerT('دخول ملف الطالب','Open Student Profile')}</button>
+      <a class="btn soft" href="/parent.html?child=${ch.id}">${window.zakerT('متابعة الأداء','View Performance')}</a>
+      <a class="btn soft" href="/subscribe.html?child=${ch.id}">${window.zakerT('الاشتراك / التجديد','Subscribe / Renew')}</a>
+      <button class="btn soft" onclick="editChild('${ch.id}')">${window.zakerT('تعديل','Edit')}</button>
+      <button class="btn danger" onclick="removeChild('${ch.id}')">${window.zakerT('حذف','Delete')}</button>
     </div>
    </div>`;
  }
  activeSubs.textContent=active;
- childrenList.innerHTML=html||'<div class="muted">لم تتم إضافة أبناء حتى الآن.</div>';
+ childrenList.innerHTML=html||(window.zakerLang?.()==='en'?'<div class="muted">No children have been added yet.</div>':'<div class="muted">لم تتم إضافة أبناء حتى الآن.</div>');
 }
 async function saveChild(){
- const name=childName.value.trim();if(!name){alert('اكتب اسم الابن');return}
+ const name=childName.value.trim();if(!name){alert(window.zakerT('اكتب اسم الابن','Enter the child name'));return}
  const id=editChildId.value;
  const payload={guardian_user_id:session.user.id,full_name:name,track:childTrack.value,grade:childGrade.value,updated_at:new Date().toISOString()};
  const r=id?await sb.from('children').update(payload).eq('id',id):await sb.from('children').insert(payload);
@@ -95,12 +95,12 @@ async function saveChild(){
 }
 function editChild(id){
  const ch=children.find(x=>x.id===id);if(!ch)return;
- editChildId.value=ch.id;childName.value=ch.full_name;childTrack.value=ch.track;childGrade.value=ch.grade;childFormTitle.textContent='تعديل بيانات الابن';
+ editChildId.value=ch.id;childName.value=ch.full_name;childTrack.value=ch.track;childGrade.value=ch.grade;childFormTitle.textContent=window.zakerT('تعديل بيانات الابن','Edit Child Details');
  window.scrollTo({top:0,behavior:'smooth'});
 }
-function clearChildForm(){editChildId.value='';childName.value='';childTrack.value='languages';childGrade.value='prep1';childFormTitle.textContent='إضافة ابن'}
+function clearChildForm(){editChildId.value='';childName.value='';childTrack.value='languages';childGrade.value='prep1';childFormTitle.textContent=window.zakerT('إضافة ابن','Add Child')}
 async function removeChild(id){
- if(!confirm('حذف الابن من الحساب؟'))return;
+ if(!confirm(window.zakerT('حذف الابن من الحساب؟','Remove this child from the account?')))return;
  const {error}=await sb.from('children').update({is_active:false,updated_at:new Date().toISOString()}).eq('id',id);
  if(error){alert(error.message);return} await loadChildren();
 }
