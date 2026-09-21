@@ -47,7 +47,7 @@ function translate(root=document.body){
  if(l!=='en')return;
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
- nodes.forEach(n=>{const next=translateText(n.nodeValue);if(next!==n.nodeValue)n.nodeValue=next});
+ nodes.forEach(n=>{if(n.parentElement?.closest('[data-zaker-no-translate]'))return;const next=translateText(n.nodeValue);if(next!==n.nodeValue)n.nodeValue=next});
  root.querySelectorAll('[placeholder]').forEach(e=>{const p=e.getAttribute('placeholder');if(attrs[p])e.setAttribute('placeholder',attrs[p])});
  root.querySelectorAll('[aria-label]').forEach(e=>{const a=e.getAttribute('aria-label');if(exact[a])e.setAttribute('aria-label',exact[a])});
 }
