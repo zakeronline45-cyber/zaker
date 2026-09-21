@@ -33,13 +33,38 @@ main{padding:24px 0 100px}.welcome{display:grid;grid-template-columns:1.25fr .75
 <script src="/zaker-i18n.js"></script><script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);let homeSession=null,homeChild=null,homeChildren=[],homeEntitlements={active:new Set(),pending:new Set(),promoAll:false,activeUntil:new Map()};const gradeLabel=x=>window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x||'Grade'):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x||'الصف الدراسي');function childKey(base){return homeChild?.id?base+'_'+homeChild.id:base}
 function applyHomeTrackSubjects(){
- const ar=homeChild?.track==='arabic';
+ const ar=homeChild?.track==='arabic',grade=homeChild?.grade;
  const ids={science:'homeScience',mathEn:'homeMathEn',mathAr:'homeMathAr',english:'homeEnglish',arabic:'homeArabic',studies:'homeStudies',scienceAction:'homeScienceAction',englishAction:'homeEnglishAction'};
  const show=(id,on)=>{const el=document.getElementById(id);if(el)el.style.display=on?'':'none'};
- const prep1=homeChild?.grade==='prep1';show(ids.science,prep1&&!ar);show(ids.mathEn,prep1&&!ar);show(ids.english,prep1&&!ar);show(ids.mathAr,prep1&&ar);show(ids.arabic,prep1);show(ids.studies,prep1);show(ids.scienceAction,prep1&&!ar);show(ids.englishAction,prep1&&!ar);
+ const prep1=grade==='prep1',p4=grade==='p4';
+ if(prep1){
+   show(ids.science,!ar);show(ids.mathEn,!ar);show(ids.english,!ar);show(ids.mathAr,ar);show(ids.arabic,true);show(ids.studies,true);show(ids.scienceAction,!ar);show(ids.englishAction,!ar);
+   return;
+ }
+ if(p4){
+   show(ids.science,true);show(ids.mathEn,!ar);show(ids.mathAr,ar);show(ids.english,true);show(ids.arabic,true);show(ids.studies,true);show(ids.scienceAction,false);show(ids.englishAction,true);
+   return;
+ }
+ Object.values(ids).forEach(id=>show(id,false));
 }
 function homeSubjectCatalog(){
- const ar=homeChild?.track==='arabic';
+ const ar=homeChild?.track==='arabic',grade=homeChild?.grade;
+ if(grade==='p4'){
+   if(ar)return [
+    {code:'العلوم',label:'العلوم',card:'homeScience',href:'/primary4.html?subject=science-ar'},
+    {code:'الرياضيات',label:'الرياضيات',card:'homeMathAr',href:'/primary4.html?subject=math-ar'},
+    {code:'English',label:'English',card:'homeEnglish',href:'/primary4.html?subject=english'},
+    {code:'Arabic',label:'اللغة العربية',card:'homeArabic',href:'/primary4.html?subject=arabic'},
+    {code:'الدراسات الاجتماعية',label:'الدراسات الاجتماعية',card:'homeStudies',href:'/primary4.html?subject=studies'}
+   ];
+   return [
+    {code:'Science',label:'Science',card:'homeScience',href:'/primary4.html?subject=science'},
+    {code:'Math',label:'Math',card:'homeMathEn',href:'/primary4.html?subject=math'},
+    {code:'English',label:'English',card:'homeEnglish',href:'/primary4.html?subject=english'},
+    {code:'Arabic',label:'اللغة العربية',card:'homeArabic',href:'/primary4.html?subject=arabic'},
+    {code:'الدراسات الاجتماعية',label:'الدراسات الاجتماعية',card:'homeStudies',href:'/primary4.html?subject=studies'}
+   ];
+ }
  if(ar)return [
   {code:'الرياضيات',label:'الرياضيات',card:'homeMathAr',href:'/math-ar.html'},
   {code:'العربي',label:'اللغة العربية',card:'homeArabic',href:'/arabic.html'},
@@ -58,6 +83,7 @@ function normSubject(s){
  if(['arabic','العربي','اللغة العربية'].includes(s))return 'arabic';
  if(['social studies','social_studies','studies','الدراسات','الدراسات الاجتماعية'].includes(s))return 'studies';
  if(['الرياضيات','رياضيات','mathematics arabic'].includes(s))return 'math-ar';
+ if(['العلوم','science arabic'].includes(s))return 'science-ar';
  if(s==='science')return 'science';
  if(s==='math')return 'math';
  if(s==='english')return 'english';
@@ -105,8 +131,8 @@ async function loadHomeSubscriptionState(){
 }
 function renderHomeSubscription(){
  const box=document.getElementById('homeSubChoices');if(!box)return;
- if(homeChild?.grade!=='prep1'){
-   box.innerHTML='<div class="subnote">الاشتراك في المواد سيظهر هنا بمجرد إضافة محتوى هذا الصف. المحتوى المتاح حاليًا: أولى إعدادي — الترم الأول.</div>';
+ if(!['prep1','p4'].includes(homeChild?.grade)){
+   box.innerHTML='<div class="subnote">الاشتراك في المواد سيظهر هنا بمجرد إضافة محتوى هذا الصف.</div>';
    document.getElementById('homeSubPrice').textContent='لا توجد مواد متاحة للاشتراك لهذا الصف حاليًا';
    document.getElementById('homeSubCalcNote').textContent='';
    document.getElementById('homeSubButton').disabled=true;
@@ -132,5 +158,11 @@ function continueHomeSubscription(){
  location.href='/subscribe.html?child='+encodeURIComponent(homeChild.id)+'&subjects='+selected.map(encodeURIComponent).join(',');
 }
 function showStats(results){results=Array.isArray(results)?results:[];const avg=results.length?Math.round(results.reduce((s,r)=>s+Number(r.pct||0),0)/results.length):null,best=results.length?Math.max(...results.map(r=>Number(r.pct||0))):null,wrong=results.flatMap(r=>r.answers||[]).filter(a=>!a.correct).length,last=results[0]?.pct;document.getElementById('lastResult').textContent=last==null?'—':last+'%';document.getElementById('testCount').textContent=results.length;document.getElementById('avgResult').textContent=avg==null?'—':avg+'%';document.getElementById('statTests').textContent=results.length;document.getElementById('statAvg').textContent=avg==null?'—':avg+'%';document.getElementById('bestResult').textContent=best==null?'—':best+'%';document.getElementById('wrongCount').textContent=wrong}
-async function initHome(){if(new URLSearchParams(location.search).get('preview')==='1'){document.getElementById('studentName').textContent='حساب الإدارة';document.getElementById('heroName').textContent='معاينة الموقع';document.getElementById('studentGrade').textContent='وضع المعاينة — بدون ملف طالب';showStats([{pct:80,answers:[{correct:true},{correct:false}]},{pct:70,answers:[{correct:true},{correct:true}]}]);return}const {data}=await sb.auth.getSession();homeSession=data.session;if(!homeSession){location.replace('/login.html?next=/');return}const {data:profiles}=await sb.from('profiles').select('role').eq('id',homeSession.user.id).limit(1);if(profiles?.[0]?.role==='admin'){location.replace('/admin.html');return}const {data:children}=await sb.from('children').select('id,full_name,grade,track,is_active,created_at').eq('guardian_user_id',homeSession.user.id).eq('is_active',true).order('created_at');homeChildren=children||[];if(!children?.length){location.replace('/account.html');return}const saved=localStorage.getItem('zaker_active_child_id');homeChild=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',homeChild.id);localStorage.setItem('zaker_student_track',homeChild.track);if(!localStorage.getItem('zaker_ui_lang')) setZakerLanguage(homeChild.track==='languages'?'en':'ar');document.getElementById('studentName').textContent=homeChild.full_name;document.getElementById('heroName').textContent=homeChild.full_name.split(' ')[0]||homeChild.full_name;applyHomeTrackSubjects();await loadHomeSubscriptionState();document.getElementById('studentGrade').textContent=gradeLabel(homeChild.grade)+(window.zakerLang?.()==='en'?(homeChild.track==='languages'?' — Languages':' — Arabic'):(homeChild.track==='languages'?' — لغات':' — عربي'));let results=[];try{const {data}=await sb.rpc('get_child_dashboard',{p_child_id:homeChild.id});results=(data?.tests||[]).map(r=>({pct:r.pct,answers:r.answers||[]}))}catch(e){}if(!results.length)results=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');showStats(results)}async function logout(){await sb.auth.signOut();localStorage.removeItem('zaker_active_child_id');location.replace('/login.html')}initHome();
+async function initHome(){if(new URLSearchParams(location.search).get('preview')==='1'){document.getElementById('studentName').textContent='حساب الإدارة';document.getElementById('heroName').textContent='معاينة الموقع';document.getElementById('studentGrade').textContent='وضع المعاينة — بدون ملف طالب';showStats([{pct:80,answers:[{correct:true},{correct:false}]},{pct:70,answers:[{correct:true},{correct:true}]}]);return}const {data}=await sb.auth.getSession();homeSession=data.session;if(!homeSession){location.replace('/login.html?next=/');return}const {data:profiles}=await sb.from('profiles').select('role').eq('id',homeSession.user.id).limit(1);if(profiles?.[0]?.role==='admin'){location.replace('/admin.html');return}const {data:children}=await sb.from('children').select('id,full_name,grade,track,is_active,created_at').eq('guardian_user_id',homeSession.user.id).eq('is_active',true).order('created_at');homeChildren=children||[];if(!children?.length){location.replace('/account.html');return}const saved=localStorage.getItem('zaker_active_child_id');homeChild=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',homeChild.id);localStorage.setItem('zaker_student_track',homeChild.track);if(!localStorage.getItem('zaker_ui_lang')) setZakerLanguage(homeChild.track==='languages'?'en':'ar');document.getElementById('studentName').textContent=homeChild.full_name;document.getElementById('heroName').textContent=homeChild.full_name.split(' ')[0]||homeChild.full_name;applyHomeTrackSubjects();
+if(homeChild.grade==='p4'){
+ const ar=homeChild.track==='arabic';
+ const setCard=(id,label,ico)=>{const el=document.getElementById(id);if(!el)return;const b=el.querySelector('b'),i=el.querySelector('.ico');if(b)b.textContent=label;if(i&&ico)i.textContent=ico};
+ setCard('homeScience',ar?'العلوم':'Science','🧪');setCard('homeMathEn','Math','🧮');setCard('homeMathAr','الرياضيات','🧮');setCard('homeEnglish','English','Aa');setCard('homeArabic','اللغة العربية','📚');setCard('homeStudies','الدراسات الاجتماعية','🌍');
+}
+await loadHomeSubscriptionState();document.getElementById('studentGrade').textContent=gradeLabel(homeChild.grade)+(window.zakerLang?.()==='en'?(homeChild.track==='languages'?' — Languages':' — Arabic'):(homeChild.track==='languages'?' — لغات':' — عربي'));let results=[];try{const {data}=await sb.rpc('get_child_dashboard',{p_child_id:homeChild.id});results=(data?.tests||[]).map(r=>({pct:r.pct,answers:r.answers||[]}))}catch(e){}if(!results.length)results=JSON.parse(localStorage.getItem(childKey('zaker_results'))||'[]');showStats(results)}async function logout(){await sb.auth.signOut();localStorage.removeItem('zaker_active_child_id');location.replace('/login.html')}initHome();
 </script></body></html>
