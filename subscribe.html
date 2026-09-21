@@ -107,9 +107,16 @@ async function redeemPromo(){
 
 function availableSubjects(){
   const ch=children.find(x=>x.id===document.getElementById('childId')?.value);
-  if(window.zakerLang?.()==='en')return ['Science','Math','English','Arabic','الدراسات الاجتماعية']; return ch?.track==='arabic'?['العلوم','الرياضيات','English','العربي','الدراسات الاجتماعية']:['Science','Math','English','العربي','الدراسات الاجتماعية'];
+  if(ch?.track==='arabic') return ['الرياضيات','العربي','الدراسات الاجتماعية']; return ['Science','Math','English','Arabic','الدراسات الاجتماعية'];
+}
+function syncSubjectCountOptions(){
+  const max=availableSubjects().length;
+  const sel=document.getElementById('subjectCount');
+  [...sel.options].forEach(o=>o.disabled=Number(o.value)>max);
+  if(Number(sel.value)>max) sel.value=String(max);
 }
 function renderSubjectChoices(){
+  syncSubjectCountOptions();
   const need=Number(document.getElementById('subjectCount').value)||1;
   const box=document.getElementById('subjectChoices');
   const current=[...document.querySelectorAll('.subjectPick:checked')].map(x=>x.value);
