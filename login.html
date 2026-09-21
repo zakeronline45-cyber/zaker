@@ -88,7 +88,7 @@ async function signup(e){
  });
  if(error){message(error.message);return}
  localStorage.setItem('zaker_student_track',track.value);
- if(data.session){location.href='/account.html'} else message('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.',true);
+ if(data.session){location.href='/account.html'} else message(window.zakerT('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.','Account created. Check your email to confirm the account, then sign in.'),true);
 }
 (async()=>{const {data}=await sb.auth.getSession();if(data.session) await routeAfterLogin(data.session)})();
 </script>
