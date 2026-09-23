@@ -82,9 +82,16 @@ Return exactly one token: IN_SCOPE or OUT_OF_SCOPE.`,
     })
   });
   const j=await r.json().catch(()=>({}));
+  if(!r.ok){
+    // Never turn an API/billing/model failure into a false "outside curriculum" rejection.
+    // The main tutor call will either answer normally or use Zaker's local curriculum fallback.
+    return true;
+  }
   let out=j?.output_text||'';
   if(!out&&Array.isArray(j?.output)) out=j.output.flatMap(x=>x.content||[]).map(x=>x.text||'').join(' ');
-  return /^IN_SCOPE\b/i.test(out.trim());
+  const verdict=String(out||'').trim();
+  if(!verdict) return true;
+  return /^IN_SCOPE\b/i.test(verdict);
 }
 
 
