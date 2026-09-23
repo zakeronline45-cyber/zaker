@@ -70,6 +70,7 @@ async function routeAfterLogin(session){
  if(!session?.user?.id){location.href=next;return}
  const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);
  const role=profiles?.[0]?.role||'parent';
+ try{await sb.rpc('log_app_event',{p_event_type:'login',p_page:'/login.html',p_child_id:null,p_details:{role}})}catch(e){}
  if(role==='admin'){location.href='/admin.html';return}
  location.href=next||'/';
 }

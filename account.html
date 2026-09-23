@@ -88,10 +88,12 @@ async function loadChildren(){
 }
 async function saveChild(){
  const name=childName.value.trim();if(!name){alert(window.zakerT('اكتب اسم الابن','Enter the child name'));return}
- const id=editChildId.value;
- const payload={guardian_user_id:session.user.id,full_name:name,track:childTrack.value,grade:childGrade.value,updated_at:new Date().toISOString()};
- const r=id?await sb.from('children').update(payload).eq('id',id):await sb.from('children').insert(payload);
- if(r.error){alert(r.error.message);return}
+ const id=editChildId.value||null;
+ const duplicate=children.find(x=>x.id!==id&&String(x.full_name||'').trim().replace(/\s+/g,' ').toLowerCase()===name.replace(/\s+/g,' ').toLowerCase());
+ if(duplicate){alert('لا يجوز تكرار اسم الطالب داخل نفس الحساب.');return}
+ const {data,error}=await sb.rpc('save_my_child',{p_child_id:id,p_full_name:name,p_track:childTrack.value,p_grade:childGrade.value});
+ if(error){alert(error.message);return}
+ try{await sb.rpc('log_app_event',{p_event_type:id?'child_updated':'child_added',p_page:'/account.html',p_child_id:data,p_details:{name,grade:childGrade.value,track:childTrack.value}})}catch(e){}
  clearChildForm();await loadChildren();
 }
 function editChild(id){
@@ -103,8 +105,9 @@ function clearChildForm(){editChildId.value='';childName.value='';childTrack.val
 async function removeChild(id){
  const ch=children.find(x=>x.id===id);if(!ch)return;
  if(!confirm(window.zakerT('هل تريد حذف '+ch.full_name+' من الحساب؟ لن يظهر بعد ذلك ضمن الطلاب.','Remove '+ch.full_name+' from this account?')))return;
- const {error}=await sb.from('children').update({is_active:false,updated_at:new Date().toISOString()}).eq('id',id).eq('guardian_user_id',session.user.id);
+ const {error}=await sb.rpc('delete_my_child',{p_child_id:id});
  if(error){alert(error.message);return}
+ try{await sb.rpc('log_app_event',{p_event_type:'child_deleted',p_page:'/account.html',p_child_id:id,p_details:{name:ch.full_name}})}catch(e){}
  if(localStorage.getItem('zaker_active_child_id')===id){
    const next=children.find(x=>x.id!==id);
    if(next){localStorage.setItem('zaker_active_child_id',next.id);localStorage.setItem('zaker_student_track',next.track)}

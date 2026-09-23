@@ -15,6 +15,7 @@ async function settings(force=false){
 }
 async function session(){if(!client)return null;return (await client.auth.getSession()).data.session||null}
 async function profile(){const s=await session();if(!s)return null;const {data}=await client.from('profiles').select('role,is_enabled,guardian_name,full_name,phone').eq('id',s.user.id).maybeSingle();return {session:s,profile:data}}
+async function log(eventType,details={},childId=null){if(!client)return;try{await client.rpc('log_app_event',{p_event_type:eventType,p_page:location.pathname+location.search,p_child_id:childId,p_details:details||{}})}catch(e){}}
 async function hasAccess(childId,subject,lessonNo=1){
  if(!client||!childId)return false;
  const {data,error}=await client.rpc('has_subject_access',{p_child_id:childId,p_subject_code:subject,p_lesson_no:Number(lessonNo)||1});
@@ -78,9 +79,9 @@ function updateSettingsUI(s){
  }
 }
 async function init(){
- const s=await settings();updateSettingsUI(s);injectContact(s);await injectChildren();
+ const s=await settings();updateSettingsUI(s);injectContact(s);const p=await profile();if(p)await log('page_view',{role:p.profile?.role||'unknown'},localStorage.getItem('zaker_active_child_id')||null);await injectChildren();
  const rev=document.getElementById('zakerExamReviewNav');if(rev)rev.href='/exam-review.html';
 }
-window.ZakerPlatform={client,settings,session,profile,getChildren,hasAccess,setChild,init};
+window.ZakerPlatform={client,settings,session,profile,getChildren,hasAccess,setChild,log,init};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

@@ -29,8 +29,9 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify
   <div class="field"><label>الصف الدراسي</label><select id="adminGrade"><option value="all">جميع الصفوف</option><option value="p4">رابعة ابتدائي</option><option value="p5">خامسة ابتدائي</option><option value="p6">سادسة ابتدائي</option><option value="prep1">أولى إعدادي</option><option value="prep2">ثانية إعدادي</option><option value="prep3">ثالثة إعدادي</option></select></div>
   <div class="field"><label>المسار</label><select id="adminTrack"><option value="all">كل المسارات</option><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
   <div class="field"><label>الترم</label><select id="adminTerm"><option value="1">الترم الأول</option><option value="2">الترم الثاني</option></select></div>
-  <div class="field"><label>حالة المحتوى</label><input value="إدارة كاملة — غير مرتبطة بملف طالب" readonly></div>
+  <div class="field"><label>المادة للدخول</label><select id="adminOpenSubject"></select></div>
  </div>
+ <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" onclick="openAdminPreview()">دخول الصف / المادة</button><span class="badge">معاينة إدارية كاملة بدون اسم طالب</span></div>
 </section>
 
 <div class="grid" id="subjects">
@@ -130,9 +131,14 @@ async function requireAdmin(){
  if(!adminSession){location.href='/login.html?next=/admin.html';return false}
  const {data}=await sb.from('profiles').select('role').eq('id',adminSession.user.id).limit(1);
  if(data?.[0]?.role!=='admin'){location.href='/account.html';return false}
- localStorage.removeItem('zaker_active_child_id');localStorage.removeItem('zaker_student_track');document.body.style.visibility='visible';return true;
+ localStorage.removeItem('zaker_active_child_id');localStorage.removeItem('zaker_student_track');document.body.style.visibility='visible';try{await sb.rpc('log_app_event',{p_event_type:'admin_page_view',p_page:'/admin.html',p_child_id:null,p_details:{}})}catch(e){}return true;
 }
 let currentSubject='Science', currentLang='English', questionBank=null, loadedLesson=null;
+const gradeLabels={p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'ثانية إعدادي',prep3:'ثالثة إعدادي'};
+function adminSubjects(g,t){if(g==='p4')return t==='arabic'?['العلوم','الرياضيات','English','Arabic','الدراسات الاجتماعية']:['Science','Math','English','Arabic','الدراسات الاجتماعية'];if(g==='prep1')return t==='arabic'?['الرياضيات','Arabic','الدراسات الاجتماعية']:['Science','Math','English','Arabic','الدراسات الاجتماعية'];return []}
+function refreshAdminSubjectSelect(){const g=adminGrade.value,t=adminTrack.value==='all'?'languages':adminTrack.value,arr=adminSubjects(g,t);adminOpenSubject.innerHTML=arr.length?arr.map(x=>'<option value="'+x+'">'+(x==='Arabic'?'اللغة العربية':x)+'</option>').join(''):'<option value="">لا يوجد محتوى مرفوع لهذا الصف بعد</option>'}
+function openAdminPreview(){const g=adminGrade.value,t=adminTrack.value==='all'?'languages':adminTrack.value,s=adminOpenSubject.value;if(g==='all'){alert('اختر الصف الدراسي أولًا');return}if(!s){alert('لا يوجد محتوى متاح لهذا الصف حاليًا');return}location.href='/admin-preview.html?grade='+encodeURIComponent(g)+'&track='+encodeURIComponent(t)+'&subject='+encodeURIComponent(s)}
+adminGrade.addEventListener('change',refreshAdminSubjectSelect);adminTrack.addEventListener('change',refreshAdminSubjectSelect);refreshAdminSubjectSelect();
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
 document.querySelectorAll('.subject').forEach(el=>el.onclick=()=>{
