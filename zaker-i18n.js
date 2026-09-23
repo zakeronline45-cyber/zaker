@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded',()=>{
  setTimeout(()=>translate(),50);setTimeout(()=>translate(),300);
 });
 })();
+;(()=>{if(!document.querySelector('script[src="/zaker-platform.js"]')){const s=document.createElement('script');s.src='/zaker-platform.js';s.defer=true;document.head.appendChild(s)}})();

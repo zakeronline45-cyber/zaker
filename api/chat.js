@@ -28,8 +28,7 @@ const ARABIC_SYLLABUS = [
   'تاريخنا أساس لمستقبلنا — المتحف المصري الكبير','أشياء صنعت مني كاتبًا — العقاد','بطولات مصرية — محمد صلاح وعلي فرج وأحمد الجندي','شباب اليوم صناع الغد — إبراهيم ناجي',
   'دروس من الحياة','رحمة تداوي وعلم ينقذ','إنسان في عصر التكنولوجيا','دعاء شاعرة — جليلة رضا',
   'التشبيه','الأسلوب الخبري والأسلوب الإنشائي','الصور الحسية','العلاقات بين الجمل',
-  'الفعل اللازم والفعل المتعدي','الفعل المجرد والفعل المزيد','أنواع الفعل المعتل','أنواع الفعل الصحيح','ظن وأخواتها',
-  'كتابة الهمزة على الألف','كتابة الهمزة على الواو','كتابة الهمزة على الياء','الخط العربي','السيرة الذاتية','السيرة الغيرية'
+  'الفعل اللازم والفعل المتعدي','الفعل المجرد والفعل المزيد','أنواع الفعل المعتل','أنواع الفعل الصحيح','ظن وأخواتها'
 ];
 const MATH_SYLLABUS = [
 'Proportion','Applications of Ratio and Proportion — Scale Drawings','Applications of Ratio and Proportion — Proportional Division','Applications of Ratio and Proportion — Percentages','Sets and Their Operations','Operations on Integers','Operations on Rational Numbers','Mathematical Expressions and Formulas / Algebraic Terms','Addition and Subtraction of Algebraic Expressions','Linear Equations','Types of Angles and Relationships Between Them','More Angle Relationships','Parallelism','The Triangle','Quadrilaterals','Special Quadrilaterals','Polygons','Coordinates','Organizing Data','Arithmetic Mean','Pie Charts'

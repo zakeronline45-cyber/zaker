@@ -11,17 +11,17 @@
 <body>
 <header class="top"><div class="wrap bar"><a href="/" class="brand">ذاكر <span>الاشتراك</span></a><div><select id="zakerLangSwitch" class="btn soft" onchange="setZakerLanguage(this.value)" aria-label="Language"><option value="en">EN</option><option value="ar">AR</option></select> <a class="btn soft" href="/account.html">حسابي</a> <button class="btn soft" onclick="logout()">خروج</button></div></div></header>
 <main>
-<div class="head"><h1>اشتراك ذاكر</h1><p class="muted">الأسعار تختلف حسب المسار، مع خصومات تلقائية للأبناء الثاني والثالث.</p></div>
+<div class="head"><h1>اشتراك ذاكر</h1><p class="muted">الأسعار تختلف حسب المسار، مع خصومات تلقائية للأبناء الثاني والثالث.</p><b id="activeTermLabel"></b></div>
 <div class="plans">
   <div class="plan">
     <h2>📘 المسار العربي</h2>
-    <div class="price">200 <small>جنيه / أول مادة</small></div>
-    <ul><li>كل مادة إضافية: 175 جنيه</li><li>الطفل الثاني: خصم 25%</li><li>الطفل الثالث: خصم 50%</li></ul>
+    <div class="price"><span id="arabicFirstPrice">200 جنيه / أول مادة</span></div>
+    <ul><li id="arabicAdditionalPrice">كل مادة إضافية: 175 جنيه</li><li>الطفل الثاني: خصم 25%</li><li>الطفل الثالث: خصم 50%</li></ul>
   </div>
   <div class="plan popular"><span class="badge">لغات</span>
     <h2>🌐 مسار Languages</h2>
-    <div class="price">250 <small>جنيه / أول مادة</small></div>
-    <ul><li>كل مادة إضافية: 225 جنيه</li><li>الطفل الثاني: خصم 25%</li><li>الطفل الثالث: خصم 50%</li></ul>
+    <div class="price"><span id="languagesFirstPrice">250 جنيه / أول مادة</span></div>
+    <ul><li id="languagesAdditionalPrice">كل مادة إضافية: 225 جنيه</li><li>الطفل الثاني: خصم 25%</li><li>الطفل الثالث: خصم 50%</li></ul>
   </div>
   <div class="plan">
     <h2>👨‍👩‍👧‍👦 خصم الأسرة</h2>
@@ -154,14 +154,15 @@ function renderSubjectChoices(){
    availableSubjects().map(s=>'<label style="background:#f7f9ff;border:1px solid var(--line);padding:8px 10px;border-radius:10px"><input class="subjectPick" type="checkbox" value="'+s+'" '+(current.includes(s)?'checked':'')+'> '+s+'</label>').join('')+
    '</div>';
 }
-function calc(){
+async function calc(){
+  const {data:platformPricing}=await sb.rpc('get_platform_settings');
   const n=Number(document.getElementById('subjectCount').value)||1;
   const selectedId=document.getElementById('childId')?.value;
   const idx=children.findIndex(x=>x.id===selectedId);
   const childIndex=idx+1;
   const ch=children[idx]||{};
   const isArabic=ch.track==='arabic';
-  const first=isArabic?200:250, extra=isArabic?175:225;
+  const first=isArabic?Number(platformPricing?.arabic_first_subject_price||200):Number(platformPricing?.languages_first_subject_price||250), extra=isArabic?Number(platformPricing?.arabic_additional_subject_price||175):Number(platformPricing?.languages_additional_subject_price||225);
   const base=first+(n-1)*extra;
   const discount=childIndex===2?25:childIndex===3?50:0;
   const total=Math.round(base*(1-discount/100)*100)/100;

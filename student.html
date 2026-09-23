@@ -403,7 +403,7 @@ function renderObjectives(n){
  document.getElementById('quickCheck').innerHTML='<b>'+(en?'Check Your Understanding Before the Test':'تحقق من فهمك قبل الاختبار')+'</b><div style="margin-top:6px">'+esc(check)+'</div>';
 }
 function lessonExplanationHtml(n){if(window.zakerLang?.()!=='en')return explanations[n];const box=document.createElement('div');box.innerHTML=explanations[n];box.querySelectorAll('.ar').forEach(x=>x.remove());const h=box.querySelector('h3');if(h)h.textContent=titles[n];return box.innerHTML} document.getElementById('lessonExplain').innerHTML=lessonExplanationHtml(1);renderObjectives(1);
-document.querySelectorAll('.lesson[data-lesson]').forEach(b=>b.onclick=async()=>{document.querySelectorAll('.lesson').forEach(x=>x.classList.remove('active'));b.classList.add('active');lesson=Number(b.dataset.lesson);bank=null;logLessonVisit(lesson);document.getElementById('lessonTitle').textContent=titles[lesson];const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;renderObjectives(lesson);document.getElementById('lessonExplain').innerHTML=lessonExplanationHtml(lesson);document.getElementById('lessonNo').textContent=lesson+' / 12';resetTest();await loadBank()});
+document.querySelectorAll('.lesson[data-lesson]').forEach(b=>b.onclick=async()=>{const nextLesson=Number(b.dataset.lesson);const {data:allowed}=await sb.rpc('has_subject_access',{p_child_id:activeChildId,p_subject_code:'Science',p_lesson_no:nextLesson});if(!allowed){alert('الدرس الأول متاح كتجربة مجانية. اشترك في Science لفتح باقي الدروس.');location.href='/subscribe.html?child='+encodeURIComponent(activeChildId);return}document.querySelectorAll('.lesson').forEach(x=>x.classList.remove('active'));b.classList.add('active');lesson=nextLesson;bank=null;logLessonVisit(lesson);document.getElementById('lessonTitle').textContent=titles[lesson];const jn=document.getElementById('journeyLessonName');if(jn)jn.textContent='Lesson '+lesson;renderObjectives(lesson);document.getElementById('lessonExplain').innerHTML=lessonExplanationHtml(lesson);document.getElementById('lessonNo').textContent=lesson+' / 12';resetTest();await loadBank()});
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.pane').forEach(x=>x.classList.remove('active'));document.getElementById('pane-'+b.dataset.pane).classList.add('active');if(b.dataset.pane==='profile')renderProfile()});
 async function loadBank(){try{const r=await fetch('/content/questions/science-term1-u1-l'+lesson+'.json',{cache:'no-store'});if(!r.ok)throw 0;bank=await r.json();document.getElementById('questionCount').textContent=bank.questions.length}catch(e){document.getElementById('questionCount').textContent='—'}}
 function resetTest(){document.getElementById('testStart').style.display='block';document.getElementById('testArea').style.display='none';document.getElementById('testArea').innerHTML='';test=[];idx=0;answers=[]}
@@ -423,6 +423,7 @@ async function loadLessonBank(n){
  return (b.questions||[]).map(q=>({...q,lesson:n}));
 }
 async function startMultiTest(lessons,label,count=20){
+ const checks=await Promise.all(lessons.map(n=>sb.rpc('has_subject_access',{p_child_id:activeChildId,p_subject_code:'Science',p_lesson_no:n})));if(checks.some(x=>!x.data)){alert('الامتحانات المجمعة متاحة بعد الاشتراك في المادة.');return}
  const pools=await Promise.all(lessons.map(loadLessonBank));
  const all=filterQuestionTypes(pools.flat());
  if(!all.length){alert('لا توجد أسئلة من النوع المختار في الدروس المحددة');return}
@@ -606,29 +607,7 @@ async function initAccount(){
     localStorage.setItem(childKey('zaker_ai_session_id'),aiSessionId);
   }
 
-  const {data:activeSubs}=await sb.from('subscriptions')
-    .select('id,status,ends_at,access_source,campaign_code,subject_count')
-    .eq('child_id',child.id)
-    .eq('status','active')
-    .order('ends_at',{ascending:false})
-    .limit(5);
-  const validSubs=(activeSubs||[]).filter(s=>!s.ends_at||new Date(s.ends_at)>new Date());
-  if(!validSubs.length){
-    location.href='/subscribe.html?child='+encodeURIComponent(child.id);
-    return;
-  }
-  if(child.track==='languages'&&child.grade==='prep1'){
-    const paidIds=validSubs.filter(s=>s.access_source==='paid').map(s=>s.id);
-    let hasScience=validSubs.some(s=>s.access_source!=='paid');
-    if(!hasScience&&paidIds.length){
-      const {data:entitlements}=await sb.from('subscription_subjects').select('subscription_id,subject_code').in('subscription_id',paidIds);
-      hasScience=(entitlements||[]).some(x=>x.subject_code==='Science');
-    }
-    if(!hasScience){
-      location.href='/subscribe.html?child='+encodeURIComponent(child.id);
-      return;
-    }
-  }
+  const {data:scienceAllowed,error:scienceAccessErr}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:'Science',p_lesson_no:1});if(scienceAccessErr||!scienceAllowed){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return;}
 
   document.getElementById('activeChildName').textContent=child.full_name;
   const mcn=document.getElementById('masterChildName');if(mcn)mcn.textContent=child.full_name;

@@ -19,7 +19,7 @@ main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-tem
     <h2>أهلًا بيك</h2>
     <p class="form-intro">سجّل دخولك وكمّل مذاكرتك من آخر نقطة وصلت لها.</p>
     <div class="field"><label>البريد الإلكتروني</label><input id="loginEmail" type="email" required autocomplete="email"></div>
-    <div class="field"><label>كلمة المرور</label><input id="loginPassword" type="password" required autocomplete="current-password"></div>
+    <div class="field"><label>كلمة المرور</label><input id="loginPassword" type="password" required autocomplete="current-password"></div><button type="button" class="tab" style="text-align:right;padding:4px;background:none" onclick="forgotPassword()">نسيت كلمة المرور؟</button>
     <button class="btn primary" type="submit">دخول</button>
   </form>
 
@@ -32,7 +32,7 @@ main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-tem
     <div class="field"><label>كلمة المرور</label><input id="signupPassword" type="password" minlength="6" required autocomplete="new-password"></div>
     <div class="field"><label>اسم الابن / الابنة</label><input id="childName" required></div>
     <div class="field"><label>المسار الدراسي</label><select id="track" required><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
-    <div class="field"><label>الصف الدراسي</label><select id="grade" required><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
+    <div class="field"><label>الصف الدراسي</label><select id="grade" required><option value="p4">رابعة ابتدائي</option><option value="p5">خامسة ابتدائي</option><option value="p6">سادسة ابتدائي</option><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
     <button class="btn primary" type="submit">إنشاء الحساب</button>
   </form>
 
@@ -45,7 +45,7 @@ main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-tem
   <div class="feature"><span>👤</span><div><b>ملف طالب دائم</b><div class="muted">بدل حفظ البيانات على جهاز واحد فقط.</div></div></div>
   <div class="feature"><span>🧪</span><div><b>نتائج واختبارات</b><div class="muted">تتجمع على الحساب وتبقى جاهزة للمتابعة.</div></div></div>
   <div class="feature"><span>💳</span><div><b>الاشتراك</b><div class="muted">بعد الدخول تقدر تختار الباقة وتكمل الدفع.</div></div></div>
-  <div class="track-note">المسار العربي واللغات منفصلين؛ كل طالب يشوف محتوى مساره فقط.</div>
+  
   <div class="trust"><span>✓ شرح مبسط</span><span>✓ اختبارات بلا وقت</span><span>✓ تحليل أخطاء</span><span>✓ تقارير محفوظة</span></div>
 </aside>
 </main>
@@ -79,12 +79,13 @@ async function login(e){
  if(error){message(error.message);return}
  await routeAfterLogin(data.session);
 }
+async function forgotPassword(){hideMsg();const email=(loginEmail.value||signupEmail.value||'').trim();if(!email){message('اكتب بريدك الإلكتروني أولًا');return}const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+'/reset-password.html'});if(error){message(error.message);return}message('تم إرسال رابط تعيين كلمة مرور جديدة إلى بريدك.',true)}
 async function signup(e){
  e.preventDefault();hideMsg();
  const {data,error}=await sb.auth.signUp({
    email:signupEmail.value.trim(),
    password:signupPassword.value,
-   options:{data:{guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),role:'parent',child_name:childName.value.trim(),track:track.value,grade:grade.value}}
+   options:{emailRedirectTo:location.origin+'/auth-callback.html',data:{guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),role:'parent',child_name:childName.value.trim(),track:track.value,grade:grade.value}}
  });
  if(error){message(error.message);return}
  localStorage.setItem('zaker_student_track',track.value);

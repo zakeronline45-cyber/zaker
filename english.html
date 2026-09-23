@@ -85,12 +85,7 @@ async function init(){
  const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(!children?.length){location.href='/account.html';return}
  const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);if(child.grade!=='prep1'){location.href='/';return}if(child.track!=='languages'){location.href='/';return}
- const {data:subs}=await sb.from('subscriptions').select('id,status,ends_at,access_source').eq('child_id',child.id).eq('status','active').order('ends_at',{ascending:false}).limit(5);
- const valid=(subs||[]).filter(s=>!s.ends_at||new Date(s.ends_at)>new Date());
- if(!valid.length){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
- const paidIds=valid.filter(s=>s.access_source==='paid').map(s=>s.id);let hasEnglish=valid.some(s=>s.access_source!=='paid');
- if(!hasEnglish&&paidIds.length){const {data:e}=await sb.from('subscription_subjects').select('subscription_id,subject_code').in('subscription_id',paidIds);hasEnglish=(e||[]).some(x=>String(x.subject_code).toLowerCase()==='english')}
- if(!hasEnglish){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
+ const {data:hasEnglish,error:accessErr}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:"English",p_lesson_no:1});if(accessErr||!hasEnglish){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
  document.getElementById('studentName').textContent=child.full_name;
  document.getElementById('studentGrade').textContent=({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[child.grade]||child.grade);
  document.getElementById('studentTrack').textContent=child.track==='arabic'?'Arabic Track':'Languages Track';
@@ -103,7 +98,7 @@ function renderList(){
  const groups={};curriculum.modules.forEach(m=>(groups[m.unit]??=[]).push(m));
  lessonList.innerHTML=Object.entries(groups).map(([u,mods])=>'<div class="unit-title">'+esc(mods[0].unitTitle)+'</div>'+mods.map(m=>'<button class="lesson" data-id="'+m.id+'" onclick="selectModule('+m.id+')">'+esc(m.title)+'</button>').join('')).join('');
 }
-function selectModule(id){
+async function selectModule(id){if(Number(id)!==1){const {data:allowed}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:"English",p_lesson_no:Number(id)});if(!allowed){alert('الدرس الأول متاح كتجربة مجانية. اشترك في المادة لفتح باقي الدروس.');location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}}
  currentId=id;current=curriculum.modules.find(x=>x.id===id)||curriculum.modules[0];
  document.querySelectorAll('.lesson').forEach(x=>x.classList.toggle('active',Number(x.dataset.id)===current.id));
  unitPill.textContent=(current.unit<=6?'Unit '+current.unit:current.unitTitle);lessonTitle.textContent=current.title;lessonSub.textContent=current.unitTitle+' — First Prep English';
@@ -120,7 +115,7 @@ function poolForModules(ids){let all=curriculum.modules.filter(m=>ids.includes(m
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function startCurrentTest(){startTest([current.id],'English — '+current.title,10)}
 function startUnitTest(){const ids=curriculum.modules.filter(m=>m.unit===current.unit).map(m=>m.id);startTest(ids,'English — '+current.unitTitle,20)}
-function startFullTest(){startTest(curriculum.modules.map(m=>m.id),'English — Full Term',30)}
+async function startFullTest(){const {data:fullAllowed}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:"English",p_lesson_no:2});if(!fullAllowed){alert('الامتحان الشامل متاح بعد الاشتراك في المادة.');return}startTest(curriculum.modules.map(m=>m.id),'English — Full Term',30)}
 function startTest(ids,label,count){const pool=poolForModules(ids);if(!pool.length){alert('No questions are available for the selected type.');return}test=shuffle(pool).slice(0,Math.min(count,pool.length));idx=0;answers=[];testLabel=label;testModuleIds=ids;testStart.style.display='none';testArea.style.display='block';renderQuestion()}
 function resetTest(){clearInterval(timer);testStart.style.display='block';testArea.style.display='none';testArea.innerHTML='';test=[];idx=0;answers=[]}
 function renderQuestion(){
