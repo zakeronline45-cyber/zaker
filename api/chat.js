@@ -88,6 +88,44 @@ Return exactly one token: IN_SCOPE or OUT_OF_SCOPE.`,
 }
 
 
+function localCurriculumFallback({question,studyLanguage,curriculumContext,courseReference}){
+  const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[\u064B-\u065F\u0670]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+  const stop=new Set(['what','which','where','when','why','how','the','and','for','with','from','this','that','هو','هي','ما','ماذا','من','في','على','عن','ليه','لماذا','ازاي','كيف','اشرح','وضح','يعني']);
+  const qt=norm(question).split(/\s+/).filter(x=>x.length>1&&!stop.has(x));
+  const ref=courseReference||{},mods=Array.isArray(ref.modules)?ref.modules:[];
+  for(const m of mods){
+    for(const pair of (m.terms||[])){
+      if(Array.isArray(pair)&&pair.length>=2){
+        const term=norm(pair[0]);
+        if(term && (norm(question).includes(term)||qt.some(t=>term.includes(t)&&t.length>2))){
+          const ar=studyLanguage==='Arabic';
+          return ar?('من مرجع المنهج: '+pair[0]+' — '+pair[1]):('From the curriculum reference: '+pair[0]+' — '+pair[1]);
+        }
+      }
+    }
+  }
+  let best=null,bestScore=0;
+  for(const m of mods){
+    const hay=norm([m.title,m.kind,m.unit,m.summary,...(m.focus||[]),...(m.terms||[]).flat()].join(' '));
+    const score=qt.reduce((n,t)=>n+(hay.includes(t)?1:0),0);
+    if(score>bestScore){best=m;bestScore=score}
+  }
+  if(!best&&curriculumContext?.summary) best={title:'',summary:curriculumContext.summary,focus:curriculumContext.focus||[],terms:curriculumContext.terms||[]};
+  if(best&&best.summary){
+    const ar=studyLanguage==='Arabic';
+    const focus=(best.focus||[]).slice(0,3).filter(Boolean);
+    const terms=(best.terms||[]).slice(0,4).filter(x=>Array.isArray(x)&&x.length>=2);
+    let ans=ar?('من مرجع ذاكر للمنهج'+(best.title?' — '+best.title:'')+':\n'+best.summary):('From Zaker curriculum reference'+(best.title?' — '+best.title:'')+':\n'+best.summary);
+    if(focus.length) ans+='\n\n'+(ar?'النقاط الأساسية: ':'Key points: ')+focus.join(' • ');
+    if(terms.length) ans+='\n\n'+(ar?'مصطلحات مهمة:\n':'Key terms:\n')+terms.map(x=>'- '+x[0]+': '+x[1]).join('\n');
+    ans+='\n\n'+(ar?'ملحوظة: هذه إجابة مؤقتة من مرجع المنهج داخل ذاكر لأن خدمة الذكاء الاصطناعي المدفوعة غير متاحة حاليًا.':'Note: this is a temporary answer from Zaker\'s curriculum reference because the paid AI service is currently unavailable.');
+    return ans;
+  }
+  return studyLanguage==='Arabic'
+    ?'خدمة مدرس ذاكر بالذكاء الاصطناعي متوقفة مؤقتًا بسبب انتهاء رصيد الـAPI. الشرح والاختبارات ما زالت تعمل، وسيعود الرد الذكي بمجرد إضافة رصيد للـAPI.'
+    :'Zaker AI Tutor is temporarily unavailable because the API credit balance is exhausted. Lessons and tests still work, and AI answers will resume after API credits are added.';
+}
+
 async function rpc(name,body){
   const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`,{
     method:'POST',
@@ -191,7 +229,19 @@ ${courseReference?JSON.stringify(courseReference).slice(0,11000):'غير متا�
       body:JSON.stringify({model:'gpt-5.6-luna',instructions,input:question})
     });
     const j=await r.json().catch(()=>({}));
-    if(!r.ok) return res.status(r.status).json({error:j?.error?.message||j?.message||`OpenAI error ${r.status}`});
+    if(!r.ok){
+      const code=j?.error?.code||j?.code||'';
+      const msg=j?.error?.message||j?.message||'';
+      const billing=/credit_balance_exhausted|insufficient_quota|no credits remaining|spend_limit|usage_limit/i.test(code+' '+msg);
+      if(billing){
+        return res.status(200).json({
+          answer:localCurriculumFallback({question,studyLanguage,curriculumContext,courseReference}),
+          fallback:true,
+          aiUnavailableReason:'billing'
+        });
+      }
+      return res.status(r.status).json({error:studyLanguage==='Arabic'?'خدمة مدرس ذاكر غير متاحة مؤقتًا. حاول مرة أخرى بعد قليل.':'Zaker AI Tutor is temporarily unavailable. Please try again shortly.'});
+    }
     let answer=j?.output_text;
     if(!answer&&Array.isArray(j?.output)) answer=j.output.flatMap(x=>x.content||[]).map(x=>x.text||x.value||'').filter(Boolean).join('\n');
     if(!answer) return res.status(502).json({error:'OpenAI رجع استجابة بدون نص'});
