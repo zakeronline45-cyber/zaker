@@ -58,22 +58,27 @@ function syllabusFor(subject){
  return subject==='English'?ENGLISH_SYLLABUS:subject==='Arabic'?ARABIC_SYLLABUS:subject==='Social Studies'?SOCIAL_STUDIES_SYLLABUS:subject==='Math'?MATH_SYLLABUS:subject==='Mathematics Arabic'?MATH_AR_SYLLABUS:SCIENCE_SYLLABUS;
 }
 
-async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject,grade}){
+async function isInCurriculum({apiKey,question,lesson,recentQuestions,subject,grade,curriculumContext}){
   const recent=(recentQuestions||[]).slice(0,6).map(x=>x.question).join('\n');
+  const ctx=curriculumContext?JSON.stringify(curriculumContext).slice(0,2500):'';
   const r=await fetch('https://api.openai.com/v1/responses',{
     method:'POST',
     headers:{'Authorization':`Bearer ${apiKey}`,'Content-Type':'application/json'},
     body:JSON.stringify({
       model:'gpt-5.6-luna',
-      instructions:`You are a strict curriculum gate for ${grade||'the current grade'} ${subject}, term 1.\nAllowed syllabus ONLY:\n${syllabusFor(subject).map((x,i)=>`${i+1}. ${x}`).join('\n')}
+      instructions:`You are a curriculum gate for ${grade||'the current grade'} ${subject}, term 1.\nAllowed syllabus:\n${syllabusFor(subject).map((x,i)=>`${i+1}. ${x}`).join('\n')}
 
-Decide whether the student's message is answerable strictly within this syllabus.
+Current lesson: ${lesson||'unspecified'}.
+Your job is to keep the tutor inside the school subject, not to reject normal lesson questions because the exact wording is not a chapter title.
 Rules:
-- IN_SCOPE if it directly asks about one of these lessons or is a natural follow-up to a recent in-scope question such as "explain more", "why?", "give me another example".
-- OUT_OF_SCOPE for any other school subject, general knowledge, coding, politics, entertainment, or topics not covered by this syllabus.
-- Do not expand the syllabus using general knowledge.
+- IN_SCOPE if the question is educationally related to the current lesson or any allowed syllabus section: definitions, examples, functions, causes, results, comparisons, why/how, applications, vocabulary, or clarification.
+- If a current lesson is specified, treat reasonable concepts normally taught inside that lesson as IN_SCOPE even when the exact concept is not listed as a syllabus title.
+- Accept Arabic or English questions regardless of the language of the syllabus titles.
+- For Primary 4/P4, be permissive with age-appropriate questions clearly related to the selected lesson. Do not require exact keyword matches.
+- OUT_OF_SCOPE only when the question is clearly about another school subject or clearly unrelated general knowledge, coding, politics, entertainment, etc.
+- If uncertain for a normal school question that plausibly belongs to the current lesson, choose IN_SCOPE.
 Return exactly one token: IN_SCOPE or OUT_OF_SCOPE.`,
-      input:`Current lesson: ${lesson||'unspecified'}\nRecent student questions:\n${recent||'(none)'}\n\nNew message: ${question}`
+      input:`Selected lesson: ${lesson||'unspecified'}\nCurrent lesson context: ${ctx||'(not supplied)'}\nRecent student questions:\n${recent||'(none)'}\n\nStudent message: ${question}`
     })
   });
   const j=await r.json().catch(()=>({}));
@@ -105,7 +110,8 @@ export default async function handler(req,res){
       lesson='',
       subject='Science',
       studyLanguage='English',
-      sessionId=''
+      sessionId='',
+      curriculumContext=null
     }=req.body||{};
     const allowedSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','Science','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
     const safeSubject=allowedSubjects.includes(subject)?subject:'Science';
@@ -122,7 +128,8 @@ export default async function handler(req,res){
       lesson,
       recentQuestions:history?.recent_questions||[],
       subject:safeSubject,
-      grade
+      grade,
+      curriculumContext
     });
     if(!inScope){
       const isArabicSubject=['Arabic','Social Studies','Mathematics Arabic','P4 Mathematics Arabic','P4 Science Arabic','P4 Arabic','P4 Social Studies'].includes(safeSubject);
@@ -155,13 +162,16 @@ ${languageRule}
 إذا كان تاريخه يدل على تكرار سؤال في مفهوم معين، أشر بلطف داخل الشرح إلى أن هذا المفهوم مهم له، بدون أحكام أو تشخيصات.
 لا تقل إن الطالب "ضعيف"؛ قل إن هذا المفهوم "يحتاج تثبيتًا" أو "يتكرر فيه السؤال".
 اعتمد على السؤال الحالي وتاريخ الأسئلة فقط، ولا تخترع مستوى أو قدرات لم تظهر في البيانات.
-مهم جدًا: لا تشرح أي موضوع خارج منهج ${safeSubject} المحدد في قائمة الدروس المسموح بها. إذا ظهر أثناء الإجابة أن السؤال يحتاج معلومة خارج المنهج، قل إن هذه الجزئية خارج نطاق المنهج الحالي بدل التوسع فيها.
+مهم جدًا: التزم بمنهج ${safeSubject} والترم الحالي، لكن اعتبر عنوان الدرس الحالي إطارًا واسعًا يشمل المفاهيم والتعريفات والأمثلة والأسباب والنتائج والتطبيقات الطبيعية الموجودة داخل الدرس، حتى لو لم تظهر كل كلمة في قائمة عناوين الوحدات. لا ترفض سؤالًا دراسيًا طبيعيًا مرتبطًا بالدرس الحالي لمجرد اختلاف الصياغة أو لأن السؤال مكتوب بالعربية والمنهج بالإنجليزية. ارفض فقط الموضوعات الواضحة التي تخص مادة أخرى أو تقع خارج المنهج فعلًا.
 
 ملخص تاريخ الأسئلة لهذا الطالب:
 إجمالي الأسئلة المسجلة: ${history?.total_questions||1}
 أكثر الدروس تكرارًا: ${counts||'لا توجد بيانات كافية بعد'}
 آخر الأسئلة:
 ${recent||'- هذا أول سؤال مسجل تقريبًا'}
+
+سياق الجزء الحالي من المنهج:
+${curriculumContext?JSON.stringify(curriculumContext).slice(0,3500):'غير متاح — اعتمد على عنوان الدرس والمنهج المسموح'}
 
 قواعد التدريس:
 - اشرح الفكرة خطوة بخطوة وبأسلوب مناسب لعمر الطالب.
