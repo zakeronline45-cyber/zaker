@@ -55,7 +55,7 @@ function norm(s){return String(s||'').trim().toLowerCase()}
 async function hasAccess(lessonNo=1){const {data:ok,error}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:cfg.codes[0],p_lesson_no:Number(lessonNo)||1});return !error&&ok===true}
 async function init(){
  const s=await sb.auth.getSession();session=s.data.session;if(!session){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
- const {data:pr}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);if(pr?.[0]?.role==='admin'){location.href='/admin.html';return}
+ const {data:pr}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);const adminPreview=pr?.[0]?.role==='admin'&&localStorage.getItem('zaker_admin_student_preview')==='1';if(pr?.[0]?.role==='admin'&&!adminPreview){location.href='/admin.html';return}
  const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(!children?.length){location.href='/account.html';return}
  const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];if(child.grade!=='p4'){location.href='/';return}

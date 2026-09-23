@@ -105,8 +105,14 @@ function clearChildForm(){editChildId.value='';childName.value='';childTrack.val
 async function removeChild(id){
  const ch=children.find(x=>x.id===id);if(!ch)return;
  if(!confirm(window.zakerT('هل تريد حذف '+ch.full_name+' من الحساب؟ لن يظهر بعد ذلك ضمن الطلاب.','Remove '+ch.full_name+' from this account?')))return;
- const {error}=await sb.rpc('delete_my_child',{p_child_id:id});
- if(error){alert(error.message);return}
+ let {error}=await sb.rpc('remove_child_from_account',{p_child_id:id});
+ if(error){
+   const fb=await sb.from('children').update({is_active:false,updated_at:new Date().toISOString()}).eq('id',id).eq('guardian_user_id',session.user.id);
+   error=fb.error;
+ }
+ if(error){alert('تعذر حذف الطالب: '+error.message);return}
+ const check=await sb.from('children').select('id,is_active').eq('id',id).maybeSingle();
+ if(check.data?.is_active){alert('لم يتم حذف الطالب. أعد تحميل الصفحة وحاول مرة أخرى.');return}
  try{await sb.rpc('log_app_event',{p_event_type:'child_deleted',p_page:'/account.html',p_child_id:id,p_details:{name:ch.full_name}})}catch(e){}
  if(localStorage.getItem('zaker_active_child_id')===id){
    const next=children.find(x=>x.id!==id);
