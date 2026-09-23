@@ -5,684 +5,1621 @@
   "term": 1,
   "track": "languages",
   "source": "El-Moasser Science Fourth Primary First Term 2027",
+  "sourceNote": "Rebuilt lesson-by-lesson from the uploaded book contents and curriculum objectives.",
   "modules": [
     {
       "id": 1,
-      "unit": "Unit 1",
-      "title": "Nature in Our Surroundings",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"Nature in Our Surroundings\", based on the uploaded book.",
+      "unit": "Chapter 1: Nature in Our Surroundings",
+      "title": "Let's Find Living Organisms",
+      "kind": "lesson",
+      "summary": "Living organisms can be distinguished from non-living things by life characteristics such as feeding, growth and breathing.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Identify living and non-living things",
+        "Recognize feeding, growth and breathing as life characteristics"
       ],
       "terms": [
         [
-          "Core idea",
-          "Nature in Our Surroundings"
+          "living organism",
+          "A living thing such as a human, animal or plant"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "habitat",
+          "The place where a living organism lives"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-1-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"Nature in Our Surroundings\".",
+          "text": "Which statement is correct about \"Let's Find Living Organisms\"?",
+          "answer": "Plants are living organisms because they grow and need resources.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-1-q1",
-          "difficulty": "easy"
+            "Plants are living organisms because they grow and need resources.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Nature in Our Surroundings\".",
-          "answer": "the core concept",
-          "id": "p4-science-1-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-1-q2",
           "type": "true_false",
-          "text": "True or False: \"Nature in Our Surroundings\" is part of Primary 4 Term 1.",
+          "text": "Rocks and water are non-living things.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-1-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"Nature in Our Surroundings\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-1-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-1-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"Nature in Our Surroundings\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-1-q5",
+          "text": "Complete using a key term from this lesson: A living thing such as a human, animal or plant = ______.",
+          "answer": "living organism",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"Nature in Our Surroundings\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-1-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-1-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Let's Find Living Organisms\".",
+          "answer": "Plants are living organisms because they grow and need resources. Rocks and water are non-living things.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 2,
-      "unit": "Unit 2",
-      "title": "How Insects Grow",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"How Insects Grow\", based on the uploaded book.",
+      "unit": "Chapter 1: Nature in Our Surroundings",
+      "title": "How to Observe",
+      "kind": "lesson",
+      "summary": "Scientists use senses and simple tools to observe living things carefully and describe visible features.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Use observation to collect information",
+        "Choose safe tools for observing small details"
       ],
       "terms": [
         [
-          "Core idea",
-          "How Insects Grow"
+          "observe",
+          "To look carefully and collect information"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "magnifying glass",
+          "A tool that makes small details look larger"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-2-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"How Insects Grow\".",
+          "text": "Which statement is correct about \"How to Observe\"?",
+          "answer": "Observation means collecting details carefully.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-2-q1",
-          "difficulty": "easy"
+            "Observation means collecting details carefully.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"How Insects Grow\".",
-          "answer": "the core concept",
-          "id": "p4-science-2-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-2-q2",
           "type": "true_false",
-          "text": "True or False: \"How Insects Grow\" is part of Primary 4 Term 1.",
+          "text": "A magnifying glass helps us see small features.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-2-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"How Insects Grow\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-2-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-2-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"How Insects Grow\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-2-q5",
+          "text": "Complete using a key term from this lesson: To look carefully and collect information = ______.",
+          "answer": "observe",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"How Insects Grow\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-2-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-2-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"How to Observe\".",
+          "answer": "Observation means collecting details carefully. A magnifying glass helps us see small features.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 3,
-      "unit": "Unit 3",
-      "title": "How Plants Grow",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"How Plants Grow\", based on the uploaded book.",
+      "unit": "Chapter 1: Nature in Our Surroundings",
+      "title": "Colors and Shapes of Living Organisms",
+      "kind": "lesson",
+      "summary": "Living organisms differ in color, shape and external features. These differences help us describe and compare them.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Compare organisms by color and shape",
+        "Use visible properties to classify observations"
       ],
       "terms": [
         [
-          "Core idea",
-          "How Plants Grow"
+          "feature",
+          "A visible or measurable characteristic"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "shape",
+          "The form or outline of an object"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-3-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"How Plants Grow\".",
+          "text": "Which statement is correct about \"Colors and Shapes of Living Organisms\"?",
+          "answer": "Color and shape are observable properties.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-3-q1",
-          "difficulty": "easy"
+            "Color and shape are observable properties.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"How Plants Grow\".",
-          "answer": "the core concept",
-          "id": "p4-science-3-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-3-q2",
           "type": "true_false",
-          "text": "True or False: \"How Plants Grow\" is part of Primary 4 Term 1.",
+          "text": "Different organisms may have different external features.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-3-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"How Plants Grow\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-3-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-3-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"How Plants Grow\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-3-q5",
+          "text": "Complete using a key term from this lesson: A visible or measurable characteristic = ______.",
+          "answer": "feature",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"How Plants Grow\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-3-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-3-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Colors and Shapes of Living Organisms\".",
+          "answer": "Color and shape are observable properties. Different organisms may have different external features.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 4,
-      "unit": "Unit 4",
-      "title": "Properties of Light",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"Properties of Light\", based on the uploaded book.",
+      "unit": "Chapter 1: Nature in Our Surroundings",
+      "title": "Different Places, Different Living Organisms",
+      "kind": "lesson",
+      "summary": "Habitats provide living organisms with needs such as water, food and shelter; different habitats support different organisms.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Relate organisms to their habitats",
+        "Explain why habitats differ"
       ],
       "terms": [
         [
-          "Core idea",
-          "Properties of Light"
+          "habitat",
+          "A place that provides an organism's needs"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "shelter",
+          "A protected place for an organism"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-4-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"Properties of Light\".",
+          "text": "Which statement is correct about \"Different Places, Different Living Organisms\"?",
+          "answer": "Living organisms live where their needs can be met.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-4-q1",
-          "difficulty": "easy"
+            "Living organisms live where their needs can be met.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Properties of Light\".",
-          "answer": "the core concept",
-          "id": "p4-science-4-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-4-q2",
           "type": "true_false",
-          "text": "True or False: \"Properties of Light\" is part of Primary 4 Term 1.",
+          "text": "Different habitats have different conditions.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-4-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"Properties of Light\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-4-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-4-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"Properties of Light\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-4-q5",
+          "text": "Complete using a key term from this lesson: A place that provides an organism's needs = ______.",
+          "answer": "habitat",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"Properties of Light\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-4-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-4-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Different Places, Different Living Organisms\".",
+          "answer": "Living organisms live where their needs can be met. Different habitats have different conditions.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 5,
-      "unit": "Unit 5",
-      "title": "Properties of Sound",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"Properties of Sound\", based on the uploaded book.",
+      "unit": "Chapter 1: Nature in Our Surroundings",
+      "title": "Desert Living Organisms",
+      "kind": "lesson",
+      "summary": "Desert organisms have features and behaviors that help them survive heat and limited water.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Recognize desert adaptations",
+        "Relate body features and behavior to survival"
       ],
       "terms": [
         [
-          "Core idea",
-          "Properties of Sound"
+          "desert",
+          "A very dry habitat"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "adaptation",
+          "A feature or behavior that helps survival"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-5-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"Properties of Sound\".",
+          "text": "Which statement is correct about \"Desert Living Organisms\"?",
+          "answer": "Desert organisms must cope with little water.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-5-q1",
-          "difficulty": "easy"
+            "Desert organisms must cope with little water.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Properties of Sound\".",
-          "answer": "the core concept",
-          "id": "p4-science-5-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-5-q2",
           "type": "true_false",
-          "text": "True or False: \"Properties of Sound\" is part of Primary 4 Term 1.",
+          "text": "Some desert animals avoid the hottest times of day.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-5-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"Properties of Sound\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-5-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-5-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"Properties of Sound\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-5-q5",
+          "text": "Complete using a key term from this lesson: A very dry habitat = ______.",
+          "answer": "desert",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"Properties of Sound\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-5-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-5-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Desert Living Organisms\".",
+          "answer": "Desert organisms must cope with little water. Some desert animals avoid the hottest times of day.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 6,
-      "unit": "Unit 6",
-      "title": "The Force of Wind",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"The Force of Wind\", based on the uploaded book.",
+      "unit": "Chapter 2: How Insects Grow",
+      "title": "Eggs and Larvae",
+      "kind": "lesson",
+      "summary": "Many insects begin life as eggs and hatch into larvae that feed and grow.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Describe the beginning of an insect life cycle",
+        "Distinguish egg and larva stages"
       ],
       "terms": [
         [
-          "Core idea",
-          "The Force of Wind"
+          "egg",
+          "The first stage in many insect life cycles"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "larva",
+          "A young stage that feeds and grows"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-6-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"The Force of Wind\".",
+          "text": "Which statement is correct about \"Eggs and Larvae\"?",
+          "answer": "Eggs hatch into larvae.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-6-q1",
-          "difficulty": "easy"
+            "Eggs hatch into larvae.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Force of Wind\".",
-          "answer": "the core concept",
-          "id": "p4-science-6-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-6-q2",
           "type": "true_false",
-          "text": "True or False: \"The Force of Wind\" is part of Primary 4 Term 1.",
+          "text": "Larvae usually feed and grow rapidly.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-6-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"The Force of Wind\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-6-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-6-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"The Force of Wind\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-6-q5",
+          "text": "Complete using a key term from this lesson: The first stage in many insect life cycles = ______.",
+          "answer": "egg",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"The Force of Wind\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-6-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-6-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Eggs and Larvae\".",
+          "answer": "Eggs hatch into larvae. Larvae usually feed and grow rapidly.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 7,
-      "unit": "Unit 7",
-      "title": "The Force of Rubber",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"The Force of Rubber\", based on the uploaded book.",
+      "unit": "Chapter 2: How Insects Grow",
+      "title": "Pupae and Adults",
+      "kind": "lesson",
+      "summary": "In complete metamorphosis, the larva changes into a pupa and later becomes an adult insect.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Sequence larva, pupa and adult",
+        "Explain metamorphosis"
       ],
       "terms": [
         [
-          "Core idea",
-          "The Force of Rubber"
+          "pupa",
+          "A stage in which major body change occurs"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "adult",
+          "The mature stage of an insect"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-7-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"The Force of Rubber\".",
+          "text": "Which statement is correct about \"Pupae and Adults\"?",
+          "answer": "The pupa comes after the larva.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-7-q1",
-          "difficulty": "easy"
+            "The pupa comes after the larva.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Force of Rubber\".",
-          "answer": "the core concept",
-          "id": "p4-science-7-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-7-q2",
           "type": "true_false",
-          "text": "True or False: \"The Force of Rubber\" is part of Primary 4 Term 1.",
+          "text": "An adult emerges after the pupal stage.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-7-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"The Force of Rubber\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-7-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-7-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"The Force of Rubber\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-7-q5",
+          "text": "Complete using a key term from this lesson: A stage in which major body change occurs = ______.",
+          "answer": "pupa",
           "difficulty": "medium"
         },
         {
-          "type": "mcq",
-          "text": "Which option best helps you review \"The Force of Rubber\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-7-q6",
-          "difficulty": "hard"
+          "id": "p4-sci-7-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Pupae and Adults\".",
+          "answer": "The pupa comes after the larva. An adult emerges after the pupal stage.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     },
     {
       "id": 8,
-      "unit": "Unit 8",
-      "title": "Soil, Water, and Life in Egypt",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"Soil, Water, and Life in Egypt\", based on the uploaded book.",
+      "unit": "Chapter 2: How Insects Grow",
+      "title": "Body Structure of Adults",
+      "kind": "lesson",
+      "summary": "Adult insects have a body divided into three main regions and have six legs.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Identify the main insect body regions",
+        "Recognize common adult insect features"
       ],
       "terms": [
         [
-          "Core idea",
-          "Soil, Water, and Life in Egypt"
+          "head",
+          "Front body region of an insect"
         ],
         [
-          "Grade",
-          "Primary 4"
+          "thorax",
+          "Middle body region where legs attach"
         ],
         [
-          "Term",
-          "First Term"
+          "abdomen",
+          "Rear body region"
         ]
       ],
       "questions": [
         {
+          "id": "p4-sci-8-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"Soil, Water, and Life in Egypt\".",
+          "text": "Which statement is correct about \"Body Structure of Adults\"?",
+          "answer": "Adult insects have six legs.",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-science-8-q1",
-          "difficulty": "easy"
+            "Adult insects have six legs.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
         },
         {
-          "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Soil, Water, and Life in Egypt\".",
-          "answer": "the core concept",
-          "id": "p4-science-8-q2",
-          "difficulty": "easy"
-        },
-        {
+          "id": "p4-sci-8-q2",
           "type": "true_false",
-          "text": "True or False: \"Soil, Water, and Life in Egypt\" is part of Primary 4 Term 1.",
+          "text": "The insect body has head, thorax and abdomen.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-science-8-q3",
-          "difficulty": "medium"
+          ]
         },
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"Soil, Water, and Life in Egypt\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-science-8-q4",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-sci-8-q3",
           "type": "complete",
-          "text": "State one key term or idea from \"Soil, Water, and Life in Egypt\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-science-8-q5",
+          "text": "Complete using a key term from this lesson: Front body region of an insect = ______.",
+          "answer": "head",
           "difficulty": "medium"
         },
         {
+          "id": "p4-sci-8-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Body Structure of Adults\".",
+          "answer": "Adult insects have six legs. The insect body has head, thorax and abdomen.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "unit": "Chapter 3: How Plants Grow",
+      "title": "Sowing Seeds",
+      "kind": "lesson",
+      "summary": "Seeds need suitable conditions such as water, air and an appropriate temperature to begin germination.",
+      "focus": [
+        "Identify conditions for germination",
+        "Describe what happens when a seed starts to grow"
+      ],
+      "terms": [
+        [
+          "seed",
+          "A plant structure that can grow into a new plant"
+        ],
+        [
+          "germination",
+          "The start of growth from a seed"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-9-q1",
           "type": "mcq",
-          "text": "Which option best helps you review \"Soil, Water, and Life in Egypt\"?",
+          "text": "Which statement is correct about \"Sowing Seeds\"?",
+          "answer": "Water is needed for germination.",
+          "difficulty": "easy",
           "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-science-8-q6",
-          "difficulty": "hard"
+            "Water is needed for germination.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-9-q2",
+          "type": "true_false",
+          "text": "A seed begins to grow under suitable conditions.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-9-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: A plant structure that can grow into a new plant = ______.",
+          "answer": "seed",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-9-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Sowing Seeds\".",
+          "answer": "Water is needed for germination. A seed begins to grow under suitable conditions.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "unit": "Chapter 3: How Plants Grow",
+      "title": "After Sprouting",
+      "kind": "lesson",
+      "summary": "After germination, roots and shoots develop and the young plant begins to make its own food as leaves grow.",
+      "focus": [
+        "Describe early plant growth",
+        "Distinguish root and shoot roles"
+      ],
+      "terms": [
+        [
+          "root",
+          "Plant part that absorbs water and anchors the plant"
+        ],
+        [
+          "shoot",
+          "Young stem and leaves growing upward"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-10-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"After Sprouting\"?",
+          "answer": "Roots grow into the soil.",
+          "difficulty": "easy",
+          "choices": [
+            "Roots grow into the soil.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-10-q2",
+          "type": "true_false",
+          "text": "Shoots grow upward toward light.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-10-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Plant part that absorbs water and anchors the plant = ______.",
+          "answer": "root",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-10-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"After Sprouting\".",
+          "answer": "Roots grow into the soil. Shoots grow upward toward light.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "unit": "Chapter 3: How Plants Grow",
+      "title": "Flowers and Fruits",
+      "kind": "lesson",
+      "summary": "Flowers are involved in plant reproduction; after successful reproduction, fruits can form and contain seeds.",
+      "focus": [
+        "Relate flowers to fruits and seeds",
+        "Sequence flower, fruit and seed development"
+      ],
+      "terms": [
+        [
+          "flower",
+          "Plant reproductive structure"
+        ],
+        [
+          "fruit",
+          "Structure that develops and often contains seeds"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-11-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Flowers and Fruits\"?",
+          "answer": "Fruits can develop from flowers.",
+          "difficulty": "easy",
+          "choices": [
+            "Fruits can develop from flowers.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-11-q2",
+          "type": "true_false",
+          "text": "Many fruits contain seeds.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-11-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Plant reproductive structure = ______.",
+          "answer": "flower",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-11-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Flowers and Fruits\".",
+          "answer": "Fruits can develop from flowers. Many fruits contain seeds.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "unit": "Chapter 3: How Plants Grow",
+      "title": "The Plant Body",
+      "kind": "lesson",
+      "summary": "A plant has organs such as roots, stems, leaves and flowers, each with an important function.",
+      "focus": [
+        "Identify major plant organs",
+        "Match each organ to its function"
+      ],
+      "terms": [
+        [
+          "stem",
+          "Supports the plant and transports materials"
+        ],
+        [
+          "leaf",
+          "Main organ for making food using light"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-12-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"The Plant Body\"?",
+          "answer": "Roots absorb water from soil.",
+          "difficulty": "easy",
+          "choices": [
+            "Roots absorb water from soil.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-12-q2",
+          "type": "true_false",
+          "text": "Leaves use light to help make food.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-12-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Supports the plant and transports materials = ______.",
+          "answer": "stem",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-12-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"The Plant Body\".",
+          "answer": "Roots absorb water from soil. Leaves use light to help make food.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "unit": "Chapter 4: Properties of Light",
+      "title": "How Sunlight Travels",
+      "kind": "lesson",
+      "summary": "Light travels in straight lines from a source until it meets matter.",
+      "focus": [
+        "Describe how light travels",
+        "Predict a straight light path"
+      ],
+      "terms": [
+        [
+          "light ray",
+          "A representation of the path of light"
+        ],
+        [
+          "light source",
+          "An object that produces light"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-13-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"How Sunlight Travels\"?",
+          "answer": "Light travels in straight lines.",
+          "difficulty": "easy",
+          "choices": [
+            "Light travels in straight lines.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-13-q2",
+          "type": "true_false",
+          "text": "The Sun is a natural light source.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-13-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: A representation of the path of light = ______.",
+          "answer": "light ray",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-13-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"How Sunlight Travels\".",
+          "answer": "Light travels in straight lines. The Sun is a natural light source.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "unit": "Chapter 4: Properties of Light",
+      "title": "Gathering Light",
+      "kind": "lesson",
+      "summary": "Reflective and curved surfaces can redirect or gather light, changing where light is concentrated.",
+      "focus": [
+        "Explain reflection simply",
+        "Describe how surfaces affect light"
+      ],
+      "terms": [
+        [
+          "reflection",
+          "Bouncing of light from a surface"
+        ],
+        [
+          "mirror",
+          "A smooth surface that reflects light well"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-14-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Gathering Light\"?",
+          "answer": "Mirrors reflect light.",
+          "difficulty": "easy",
+          "choices": [
+            "Mirrors reflect light.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-14-q2",
+          "type": "true_false",
+          "text": "Changing a surface can change the direction of reflected light.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-14-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Bouncing of light from a surface = ______.",
+          "answer": "reflection",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-14-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Gathering Light\".",
+          "answer": "Mirrors reflect light. Changing a surface can change the direction of reflected light.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "unit": "Chapter 4: Properties of Light",
+      "title": "Shadows and the Sun (1)",
+      "kind": "lesson",
+      "summary": "A shadow forms when an opaque object blocks light. Shadow direction depends on the position of the light source.",
+      "focus": [
+        "Explain shadow formation",
+        "Relate shadow direction to light direction"
+      ],
+      "terms": [
+        [
+          "shadow",
+          "A dark area formed where light is blocked"
+        ],
+        [
+          "opaque",
+          "Not allowing light to pass through"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-15-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Shadows and the Sun (1)\"?",
+          "answer": "Opaque objects can form shadows.",
+          "difficulty": "easy",
+          "choices": [
+            "Opaque objects can form shadows.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-15-q2",
+          "type": "true_false",
+          "text": "A shadow appears on the side away from the light source.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-15-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: A dark area formed where light is blocked = ______.",
+          "answer": "shadow",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-15-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Shadows and the Sun (1)\".",
+          "answer": "Opaque objects can form shadows. A shadow appears on the side away from the light source.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "unit": "Chapter 4: Properties of Light",
+      "title": "Shadows and the Sun (2)",
+      "kind": "lesson",
+      "summary": "The Sun's apparent position changes during the day, so the length and direction of shadows also change.",
+      "focus": [
+        "Compare morning, noon and afternoon shadows",
+        "Use shadow change as evidence of Sun position"
+      ],
+      "terms": [
+        [
+          "shadow length",
+          "The measured size of a shadow"
+        ],
+        [
+          "Sun position",
+          "The Sun's apparent location in the sky"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-16-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Shadows and the Sun (2)\"?",
+          "answer": "Shadows change during the day.",
+          "difficulty": "easy",
+          "choices": [
+            "Shadows change during the day.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-16-q2",
+          "type": "true_false",
+          "text": "A higher Sun generally produces a shorter shadow.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-16-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: The measured size of a shadow = ______.",
+          "answer": "shadow length",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-16-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Shadows and the Sun (2)\".",
+          "answer": "Shadows change during the day. A higher Sun generally produces a shorter shadow.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "unit": "Chapter 4: Properties of Light",
+      "title": "Sun and Shade",
+      "kind": "lesson",
+      "summary": "Shade reduces direct sunlight and can affect ground temperature and moisture.",
+      "focus": [
+        "Compare sunny and shaded places",
+        "Relate sunlight to temperature"
+      ],
+      "terms": [
+        [
+          "shade",
+          "An area protected from direct sunlight"
+        ],
+        [
+          "temperature",
+          "A measure of how hot or cold something is"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-17-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Sun and Shade\"?",
+          "answer": "Direct sunlight can warm the ground.",
+          "difficulty": "easy",
+          "choices": [
+            "Direct sunlight can warm the ground.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-17-q2",
+          "type": "true_false",
+          "text": "Shade reduces direct sunlight.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-17-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: An area protected from direct sunlight = ______.",
+          "answer": "shade",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-17-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Sun and Shade\".",
+          "answer": "Direct sunlight can warm the ground. Shade reduces direct sunlight.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "unit": "Chapter 5: Properties of Sound",
+      "title": "How Sound Is Produced",
+      "kind": "lesson",
+      "summary": "Sound is produced when objects vibrate.",
+      "focus": [
+        "Connect vibration with sound production",
+        "Identify vibrating sound sources"
+      ],
+      "terms": [
+        [
+          "vibration",
+          "A rapid back-and-forth movement"
+        ],
+        [
+          "sound source",
+          "An object that vibrates to produce sound"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-18-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"How Sound Is Produced\"?",
+          "answer": "Vibrating objects can produce sound.",
+          "difficulty": "easy",
+          "choices": [
+            "Vibrating objects can produce sound.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-18-q2",
+          "type": "true_false",
+          "text": "Stopping a vibration can stop the sound.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-18-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: A rapid back-and-forth movement = ______.",
+          "answer": "vibration",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-18-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"How Sound Is Produced\".",
+          "answer": "Vibrating objects can produce sound. Stopping a vibration can stop the sound.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "unit": "Chapter 5: Properties of Sound",
+      "title": "Volume of Sound and Vibration",
+      "kind": "lesson",
+      "summary": "Stronger vibrations usually produce louder sounds; weaker vibrations produce softer sounds.",
+      "focus": [
+        "Relate vibration strength to volume",
+        "Compare loud and soft sounds"
+      ],
+      "terms": [
+        [
+          "volume",
+          "How loud or soft a sound is"
+        ],
+        [
+          "strong vibration",
+          "A vibration with greater movement"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-19-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Volume of Sound and Vibration\"?",
+          "answer": "Stronger vibrations can make louder sounds.",
+          "difficulty": "easy",
+          "choices": [
+            "Stronger vibrations can make louder sounds.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-19-q2",
+          "type": "true_false",
+          "text": "Volume describes loudness.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-19-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: How loud or soft a sound is = ______.",
+          "answer": "volume",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-19-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Volume of Sound and Vibration\".",
+          "answer": "Stronger vibrations can make louder sounds. Volume describes loudness.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "unit": "Chapter 5: Properties of Sound",
+      "title": "How Sound Travels",
+      "kind": "lesson",
+      "summary": "Sound needs a material medium and can travel through solids, liquids and gases.",
+      "focus": [
+        "Recognize media that carry sound",
+        "Explain why sound does not travel through empty space"
+      ],
+      "terms": [
+        [
+          "medium",
+          "Matter through which sound travels"
+        ],
+        [
+          "sound wave",
+          "A disturbance that transfers sound energy"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-20-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"How Sound Travels\"?",
+          "answer": "Sound can travel through air.",
+          "difficulty": "easy",
+          "choices": [
+            "Sound can travel through air.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-20-q2",
+          "type": "true_false",
+          "text": "Sound can also travel through solids and liquids.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-20-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Matter through which sound travels = ______.",
+          "answer": "medium",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-20-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"How Sound Travels\".",
+          "answer": "Sound can travel through air. Sound can also travel through solids and liquids.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "unit": "Chapter 6: The Force of Wind",
+      "title": "Wind-Powered Cars",
+      "kind": "lesson",
+      "summary": "Moving air can exert a force and cause objects such as model cars to move.",
+      "focus": [
+        "Recognize wind as a force",
+        "Relate wind strength to motion"
+      ],
+      "terms": [
+        [
+          "wind",
+          "Moving air"
+        ],
+        [
+          "force",
+          "A push or pull that can change motion"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-21-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Wind-Powered Cars\"?",
+          "answer": "Wind can push an object.",
+          "difficulty": "easy",
+          "choices": [
+            "Wind can push an object.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-21-q2",
+          "type": "true_false",
+          "text": "Greater wind force can change motion more.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-21-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Moving air = ______.",
+          "answer": "wind",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-21-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Wind-Powered Cars\".",
+          "answer": "Wind can push an object. Greater wind force can change motion more.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "unit": "Chapter 6: The Force of Wind",
+      "title": "Sail Size",
+      "kind": "lesson",
+      "summary": "The area of a sail affects how much wind force can act on it and therefore can affect motion.",
+      "focus": [
+        "Compare different sail sizes",
+        "Relate surface area to wind effect"
+      ],
+      "terms": [
+        [
+          "sail",
+          "A surface that catches moving air"
+        ],
+        [
+          "surface area",
+          "The amount of exposed surface"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-22-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Sail Size\"?",
+          "answer": "A sail catches moving air.",
+          "difficulty": "easy",
+          "choices": [
+            "A sail catches moving air.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-22-q2",
+          "type": "true_false",
+          "text": "Changing sail size can change the effect of wind.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-22-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: A surface that catches moving air = ______.",
+          "answer": "sail",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-22-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Sail Size\".",
+          "answer": "A sail catches moving air. Changing sail size can change the effect of wind.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "unit": "Chapter 7: The Force of Rubber",
+      "title": "Rubber Band-Powered Cars",
+      "kind": "lesson",
+      "summary": "A stretched rubber band stores energy and can exert a force that moves a model car when released.",
+      "focus": [
+        "Explain how stretched rubber can cause motion",
+        "Identify stored energy in stretched rubber"
+      ],
+      "terms": [
+        [
+          "rubber band",
+          "An elastic material that can be stretched"
+        ],
+        [
+          "elastic",
+          "Able to return toward original shape after stretching"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-23-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Rubber Band-Powered Cars\"?",
+          "answer": "Stretching a rubber band stores energy.",
+          "difficulty": "easy",
+          "choices": [
+            "Stretching a rubber band stores energy.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-23-q2",
+          "type": "true_false",
+          "text": "Releasing it can produce motion.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-23-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: An elastic material that can be stretched = ______.",
+          "answer": "rubber band",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-23-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Rubber Band-Powered Cars\".",
+          "answer": "Stretching a rubber band stores energy. Releasing it can produce motion.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "unit": "Chapter 7: The Force of Rubber",
+      "title": "Power of Rubber Bands",
+      "kind": "lesson",
+      "summary": "The amount a rubber band is stretched and its characteristics affect the motion it can produce.",
+      "focus": [
+        "Compare different amounts of stretching",
+        "Relate stretch to motion"
+      ],
+      "terms": [
+        [
+          "stretch",
+          "Increase in length due to pulling"
+        ],
+        [
+          "motion",
+          "A change in position over time"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-24-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Power of Rubber Bands\"?",
+          "answer": "More stretch can change the force produced.",
+          "difficulty": "easy",
+          "choices": [
+            "More stretch can change the force produced.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-24-q2",
+          "type": "true_false",
+          "text": "Rubber band properties affect motion.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-24-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Increase in length due to pulling = ______.",
+          "answer": "stretch",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-24-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Power of Rubber Bands\".",
+          "answer": "More stretch can change the force produced. Rubber band properties affect motion.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "unit": "Chapter 8: Soil, Water, and Life in Egypt",
+      "title": "The Relationship Between the Ground and Water",
+      "kind": "lesson",
+      "summary": "Water moves through and is stored differently in soils depending on particle size and spaces between particles.",
+      "focus": [
+        "Compare water movement in different soils",
+        "Relate soil particle size to water behavior"
+      ],
+      "terms": [
+        [
+          "soil",
+          "Mixture of mineral particles and organic matter"
+        ],
+        [
+          "infiltration",
+          "Movement of water into soil"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-25-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"The Relationship Between the Ground and Water\"?",
+          "answer": "Water can move through spaces in soil.",
+          "difficulty": "easy",
+          "choices": [
+            "Water can move through spaces in soil.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-25-q2",
+          "type": "true_false",
+          "text": "Different soils allow water to move at different rates.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-25-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: Mixture of mineral particles and organic matter = ______.",
+          "answer": "soil",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-25-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"The Relationship Between the Ground and Water\".",
+          "answer": "Water can move through spaces in soil. Different soils allow water to move at different rates.",
+          "difficulty": "medium",
+          "choices": "hard"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "unit": "Chapter 8: Soil, Water, and Life in Egypt",
+      "title": "Transporting Giant Stone Statues",
+      "kind": "lesson",
+      "summary": "Ancient Egyptians could use knowledge of soil, water, friction and force to help move very heavy objects.",
+      "focus": [
+        "Connect science ideas to ancient engineering",
+        "Explain how changing ground conditions can affect movement"
+      ],
+      "terms": [
+        [
+          "friction",
+          "A force that resists motion between surfaces"
+        ],
+        [
+          "transport",
+          "Moving an object from one place to another"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-sci-26-q1",
+          "type": "mcq",
+          "text": "Which statement is correct about \"Transporting Giant Stone Statues\"?",
+          "answer": "Friction resists motion.",
+          "difficulty": "easy",
+          "choices": [
+            "Friction resists motion.",
+            "It belongs to a different science topic.",
+            "It happens only in space.",
+            "It has no relation to living things or physical forces."
+          ]
+        },
+        {
+          "id": "p4-sci-26-q2",
+          "type": "true_false",
+          "text": "Changing the ground surface can affect how easily a heavy object moves.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-sci-26-q3",
+          "type": "complete",
+          "text": "Complete using a key term from this lesson: A force that resists motion between surfaces = ______.",
+          "answer": "friction",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-sci-26-q4",
+          "type": "reason",
+          "text": "Explain one important idea from \"Transporting Giant Stone Statues\".",
+          "answer": "Friction resists motion. Changing the ground surface can affect how easily a heavy object moves.",
+          "difficulty": "medium",
+          "choices": "hard"
         }
       ]
     }

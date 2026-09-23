@@ -5,513 +5,1250 @@
   "term": 1,
   "track": "shared",
   "source": "El-Moasser English Primary 4 First Term 2027",
+  "sourceNote": "Rebuilt from the uploaded book units, vocabulary, reading, grammar, story and exam-spec pages. No fake listening task is generated without audio.",
   "modules": [
     {
       "id": 1,
-      "unit": "Unit 1",
-      "title": "The Five Senses",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"The Five Senses\", based on the uploaded book.",
+      "unit": "Unit 1: The Five Senses",
+      "title": "The Five Senses — Vocabulary & Reading",
+      "kind": "vocabulary",
+      "summary": "Learn the five senses and the organs used to see, hear, smell, taste and touch.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Name the five senses",
+        "Match senses to body parts",
+        "Read short texts about senses"
       ],
       "terms": [
         [
-          "Core idea",
-          "The Five Senses"
+          "sight",
+          "the sense used with the eyes"
         ],
         [
-          "Grade",
-          "Primary 4"
+          "hearing",
+          "the sense used with the ears"
         ],
         [
-          "Term",
-          "First Term"
+          "smell",
+          "the sense used with the nose"
+        ],
+        [
+          "taste",
+          "the sense used with the tongue"
+        ],
+        [
+          "touch",
+          "the sense used with the skin"
         ]
       ],
       "questions": [
         {
+          "id": "p4-eng-1-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"The Five Senses\".",
+          "text": "Which body part is used for the sense of taste?",
+          "answer": "tongue",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-english-1-q1",
-          "difficulty": "easy"
+            "tongue",
+            "ear",
+            "eye",
+            "hand"
+          ]
         },
         {
+          "id": "p4-eng-1-q2",
           "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Five Senses\".",
-          "answer": "the core concept",
-          "id": "p4-english-1-q2",
+          "text": "We use our eyes to ______.",
+          "answer": "see",
           "difficulty": "easy"
         },
         {
-          "type": "true_false",
-          "text": "True or False: \"The Five Senses\" is part of Primary 4 Term 1.",
+          "id": "p4-eng-1-q3",
+          "type": "mcq",
+          "text": "Which word is a sense?",
+          "answer": "hearing",
+          "difficulty": "easy",
           "choices": [
-            "True",
-            "False"
-          ],
-          "answer": "True",
-          "id": "p4-english-1-q3",
-          "difficulty": "medium"
+            "hearing",
+            "garden",
+            "bread",
+            "school"
+          ]
         },
         {
+          "id": "p4-eng-1-q4",
           "type": "reason",
-          "text": "Briefly explain the main idea in \"The Five Senses\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-english-1-q4",
-          "difficulty": "medium"
-        },
-        {
-          "type": "complete",
-          "text": "State one key term or idea from \"The Five Senses\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-english-1-q5",
-          "difficulty": "medium"
-        },
-        {
-          "type": "mcq",
-          "text": "Which option best helps you review \"The Five Senses\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-english-1-q6",
+          "text": "Why are the five senses useful?",
+          "answer": "They help us collect information about the world around us.",
           "difficulty": "hard"
         }
       ]
     },
     {
       "id": 2,
-      "unit": "Unit 2",
-      "title": "My Community",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"My Community\", based on the uploaded book.",
+      "unit": "Unit 1: The Five Senses",
+      "title": "Healthy Habits",
+      "kind": "vocabulary",
+      "summary": "Learn healthy daily habits such as brushing teeth, washing the face, drinking water, exercising and sleeping well.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Use healthy-habit vocabulary",
+        "Read about a healthy day",
+        "Identify healthy choices"
       ],
       "terms": [
         [
-          "Core idea",
-          "My Community"
+          "brush teeth",
+          "clean your teeth with a toothbrush"
         ],
         [
-          "Grade",
-          "Primary 4"
+          "do exercise",
+          "move your body to stay fit"
         ],
         [
-          "Term",
-          "First Term"
+          "drink plenty of water",
+          "drink enough water during the day"
+        ],
+        [
+          "healthy habit",
+          "a routine that helps you stay healthy"
         ]
       ],
       "questions": [
         {
+          "id": "p4-eng-2-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"My Community\".",
+          "text": "Which is a healthy habit?",
+          "answer": "brush your teeth",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-english-2-q1",
-          "difficulty": "easy"
+            "brush your teeth",
+            "sleep very late every night",
+            "never drink water",
+            "skip every meal"
+          ]
         },
         {
+          "id": "p4-eng-2-q2",
           "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"My Community\".",
-          "answer": "the core concept",
-          "id": "p4-english-2-q2",
-          "difficulty": "easy"
+          "text": "Getting enough ______ helps your mind stay sharp.",
+          "answer": "sleep",
+          "difficulty": "medium"
         },
         {
+          "id": "p4-eng-2-q3",
           "type": "true_false",
-          "text": "True or False: \"My Community\" is part of Primary 4 Term 1.",
+          "text": "Doing exercise is a healthy habit.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-english-2-q3",
-          "difficulty": "medium"
+          ]
         },
         {
+          "id": "p4-eng-2-q4",
           "type": "reason",
-          "text": "Briefly explain the main idea in \"My Community\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-english-2-q4",
-          "difficulty": "medium"
-        },
-        {
-          "type": "complete",
-          "text": "State one key term or idea from \"My Community\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-english-2-q5",
-          "difficulty": "medium"
-        },
-        {
-          "type": "mcq",
-          "text": "Which option best helps you review \"My Community\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-english-2-q6",
+          "text": "Why is drinking enough water important?",
+          "answer": "It helps the body stay healthy and work properly.",
           "difficulty": "hard"
         }
       ]
     },
     {
       "id": 3,
-      "unit": "Unit 3",
-      "title": "Animals in Our World",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"Animals in Our World\", based on the uploaded book.",
+      "unit": "Unit 1: The Five Senses",
+      "title": "Present Simple for Habits",
+      "kind": "grammar",
+      "summary": "Use the present simple to talk about daily routines and habits.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Form affirmative sentences",
+        "Use -s/-es with he, she and it",
+        "Use do/does in questions and negatives"
       ],
       "terms": [
         [
-          "Core idea",
-          "Animals in Our World"
+          "present simple",
+          "a tense used for habits, routines and facts"
         ],
         [
-          "Grade",
-          "Primary 4"
-        ],
-        [
-          "Term",
-          "First Term"
+          "does",
+          "helper used with he, she and it in questions and negatives"
         ]
       ],
       "questions": [
         {
+          "id": "p4-eng-3-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"Animals in Our World\".",
+          "text": "Sara ______ healthy food every day.",
+          "answer": "eats",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-english-3-q1",
-          "difficulty": "easy"
+            "eat",
+            "eats",
+            "eating",
+            "ate"
+          ]
         },
         {
+          "id": "p4-eng-3-q2",
+          "type": "mcq",
+          "text": "He ______ play football every day.",
+          "answer": "doesn't",
+          "difficulty": "medium",
+          "choices": [
+            "don't",
+            "doesn't",
+            "isn't",
+            "aren't"
+          ]
+        },
+        {
+          "id": "p4-eng-3-q3",
           "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Animals in Our World\".",
-          "answer": "the core concept",
-          "id": "p4-english-3-q2",
-          "difficulty": "easy"
+          "text": "______ she drink water every morning?",
+          "answer": "Does",
+          "difficulty": "medium"
         },
         {
+          "id": "p4-eng-3-q4",
           "type": "true_false",
-          "text": "True or False: \"Animals in Our World\" is part of Primary 4 Term 1.",
+          "text": "We use the present simple for daily routines.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-english-3-q3",
-          "difficulty": "medium"
-        },
-        {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"Animals in Our World\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-english-3-q4",
-          "difficulty": "medium"
-        },
-        {
-          "type": "complete",
-          "text": "State one key term or idea from \"Animals in Our World\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-english-3-q5",
-          "difficulty": "medium"
-        },
-        {
-          "type": "mcq",
-          "text": "Which option best helps you review \"Animals in Our World\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-english-3-q6",
-          "difficulty": "hard"
+          ]
         }
       ]
     },
     {
       "id": 4,
-      "unit": "Unit 4",
-      "title": "Egypt My Homeland",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"Egypt My Homeland\", based on the uploaded book.",
+      "unit": "Unit 2: My Community",
+      "title": "Helping Our Community",
+      "kind": "reading",
+      "summary": "Learn vocabulary and reading skills about helping, volunteering, cleaning and planting in the community.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Use community vocabulary",
+        "Read for main idea and details",
+        "Describe helpful actions"
       ],
       "terms": [
         [
-          "Core idea",
-          "Egypt My Homeland"
+          "volunteer",
+          "a person who helps willingly"
         ],
         [
-          "Grade",
-          "Primary 4"
+          "plant",
+          "put a plant in the ground to grow"
         ],
         [
-          "Term",
-          "First Term"
+          "collect",
+          "bring things together"
+        ],
+        [
+          "community",
+          "people living in the same area"
         ]
       ],
       "questions": [
         {
+          "id": "p4-eng-4-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"Egypt My Homeland\".",
+          "text": "A person who helps willingly can be a ______.",
+          "answer": "volunteer",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-english-4-q1",
-          "difficulty": "easy"
+            "volunteer",
+            "traffic",
+            "bin",
+            "ground"
+          ]
         },
         {
+          "id": "p4-eng-4-q2",
           "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"Egypt My Homeland\".",
-          "answer": "the core concept",
-          "id": "p4-english-4-q2",
+          "text": "We can ______ trees to make our community greener.",
+          "answer": "plant",
           "difficulty": "easy"
         },
         {
+          "id": "p4-eng-4-q3",
           "type": "true_false",
-          "text": "True or False: \"Egypt My Homeland\" is part of Primary 4 Term 1.",
+          "text": "Cleaning a park is a way to help the community.",
+          "answer": "True",
+          "difficulty": "easy",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-english-4-q3",
-          "difficulty": "medium"
+          ]
         },
         {
+          "id": "p4-eng-4-q4",
           "type": "reason",
-          "text": "Briefly explain the main idea in \"Egypt My Homeland\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-english-4-q4",
-          "difficulty": "medium"
-        },
-        {
-          "type": "complete",
-          "text": "State one key term or idea from \"Egypt My Homeland\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-english-4-q5",
-          "difficulty": "medium"
-        },
-        {
-          "type": "mcq",
-          "text": "Which option best helps you review \"Egypt My Homeland\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-english-4-q6",
+          "text": "Give one way children can help their community.",
+          "answer": "They can clean shared places, plant trees, collect litter, or volunteer.",
           "difficulty": "hard"
         }
       ]
     },
     {
       "id": 5,
-      "unit": "Unit 5",
-      "title": "A Day at Work",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"A Day at Work\", based on the uploaded book.",
+      "unit": "Unit 2: My Community",
+      "title": "Community Problems and Solutions",
+      "kind": "reading",
+      "summary": "Read and discuss problems such as traffic and trash and suggest practical solutions.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Identify a problem and a solution",
+        "Use problem-solution language",
+        "Suggest community improvements"
       ],
       "terms": [
         [
-          "Core idea",
-          "A Day at Work"
+          "traffic",
+          "many vehicles moving or waiting on roads"
         ],
         [
-          "Grade",
-          "Primary 4"
+          "solution",
+          "a way to solve a problem"
         ],
         [
-          "Term",
-          "First Term"
+          "trash",
+          "waste that should be put in bins"
+        ],
+        [
+          "reduce",
+          "make something less"
         ]
       ],
       "questions": [
         {
+          "id": "p4-eng-5-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"A Day at Work\".",
+          "text": "What can help reduce traffic near schools?",
+          "answer": "use the school bus",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-english-5-q1",
-          "difficulty": "easy"
+            "use the school bus",
+            "add more trash",
+            "block the road",
+            "leave cars everywhere"
+          ]
         },
         {
+          "id": "p4-eng-5-q2",
+          "type": "mcq",
+          "text": "Where should people put trash?",
+          "answer": "in bins",
+          "difficulty": "easy",
+          "choices": [
+            "in bins",
+            "on the ground",
+            "in the street",
+            "under cars"
+          ]
+        },
+        {
+          "id": "p4-eng-5-q3",
           "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"A Day at Work\".",
-          "answer": "the core concept",
-          "id": "p4-english-5-q2",
-          "difficulty": "easy"
-        },
-        {
-          "type": "true_false",
-          "text": "True or False: \"A Day at Work\" is part of Primary 4 Term 1.",
-          "choices": [
-            "True",
-            "False"
-          ],
-          "answer": "True",
-          "id": "p4-english-5-q3",
+          "text": "A way to fix a problem is called a ______.",
+          "answer": "solution",
           "difficulty": "medium"
         },
         {
+          "id": "p4-eng-5-q4",
           "type": "reason",
-          "text": "Briefly explain the main idea in \"A Day at Work\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-english-5-q4",
-          "difficulty": "medium"
-        },
-        {
-          "type": "complete",
-          "text": "State one key term or idea from \"A Day at Work\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-english-5-q5",
-          "difficulty": "medium"
-        },
-        {
-          "type": "mcq",
-          "text": "Which option best helps you review \"A Day at Work\"?",
-          "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-english-5-q6",
+          "text": "Why should a community discuss solutions together?",
+          "answer": "Working together can solve shared problems more effectively.",
           "difficulty": "hard"
         }
       ]
     },
     {
       "id": 6,
-      "unit": "Unit 6",
-      "title": "The Hundred Dresses",
-      "summary": "Primary 4 Term 1 curriculum section focused on \"The Hundred Dresses\", based on the uploaded book.",
+      "unit": "Unit 2: My Community",
+      "title": "Present Simple — Negative & Questions",
+      "kind": "grammar",
+      "summary": "Use don't/doesn't and do/does correctly in present-simple questions and negatives.",
       "focus": [
-        "Understand the core concept",
-        "Apply it to curriculum examples",
-        "Distinguish related ideas"
+        "Form negatives",
+        "Ask yes/no questions",
+        "Choose do or does"
       ],
       "terms": [
         [
-          "Core idea",
-          "The Hundred Dresses"
+          "don't",
+          "do not"
         ],
         [
-          "Grade",
-          "Primary 4"
+          "doesn't",
+          "does not"
         ],
         [
-          "Term",
-          "First Term"
+          "Do/Does",
+          "question helpers in the present simple"
         ]
       ],
       "questions": [
         {
+          "id": "p4-eng-6-q1",
           "type": "mcq",
-          "text": "Choose the statement that best matches \"The Hundred Dresses\".",
+          "text": "She ______ need to use a car every day.",
+          "answer": "doesn't",
+          "difficulty": "easy",
           "choices": [
-            "The main lesson idea",
-            "An unrelated fact",
-            "A different subject",
-            "None of the above"
-          ],
-          "answer": "The main lesson idea",
-          "id": "p4-english-6-q1",
-          "difficulty": "easy"
+            "don't",
+            "doesn't",
+            "isn't",
+            "not"
+          ]
         },
         {
+          "id": "p4-eng-6-q2",
+          "type": "mcq",
+          "text": "______ they help in the park?",
+          "answer": "Do",
+          "difficulty": "easy",
+          "choices": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ]
+        },
+        {
+          "id": "p4-eng-6-q3",
           "type": "complete",
-          "text": "Complete: This part of the curriculum focuses on ______ connected with \"The Hundred Dresses\".",
-          "answer": "the core concept",
-          "id": "p4-english-6-q2",
-          "difficulty": "easy"
+          "text": "Does Ali ______ to school by bus?",
+          "answer": "go",
+          "difficulty": "medium"
         },
         {
+          "id": "p4-eng-6-q4",
           "type": "true_false",
-          "text": "True or False: \"The Hundred Dresses\" is part of Primary 4 Term 1.",
+          "text": "After does, the main verb stays in its base form.",
+          "answer": "True",
+          "difficulty": "medium",
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True",
-          "id": "p4-english-6-q3",
-          "difficulty": "medium"
-        },
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "unit": "Unit 3: Animals in Our World",
+      "title": "Wild Animals",
+      "kind": "reading",
+      "summary": "Read about wild animals and use words for body features, habitats and behavior.",
+      "focus": [
+        "Use animal vocabulary",
+        "Find details in a reading text",
+        "Describe animals"
+      ],
+      "terms": [
+        [
+          "wild animal",
+          "an animal living naturally rather than as a pet"
+        ],
+        [
+          "fur",
+          "hair covering the body of some animals"
+        ],
+        [
+          "trunk",
+          "the long nose of an elephant"
+        ],
+        [
+          "jungle",
+          "a dense tropical habitat"
+        ]
+      ],
+      "questions": [
         {
-          "type": "reason",
-          "text": "Briefly explain the main idea in \"The Hundred Dresses\".",
-          "answer": "A correct explanation/example based on the lesson",
-          "id": "p4-english-6-q4",
-          "difficulty": "medium"
-        },
-        {
-          "type": "complete",
-          "text": "State one key term or idea from \"The Hundred Dresses\".",
-          "answer": "A valid key step or idea from the lesson",
-          "id": "p4-english-6-q5",
-          "difficulty": "medium"
-        },
-        {
+          "id": "p4-eng-7-q1",
           "type": "mcq",
-          "text": "Which option best helps you review \"The Hundred Dresses\"?",
+          "text": "Which animal has a trunk?",
+          "answer": "elephant",
+          "difficulty": "easy",
           "choices": [
-            "Understand the rule, then practise",
-            "Memorize without understanding",
-            "Ignore examples",
-            "Study another subject"
-          ],
-          "answer": "Understand the rule, then practise",
-          "id": "p4-english-6-q6",
+            "elephant",
+            "zebra",
+            "bear",
+            "cat"
+          ]
+        },
+        {
+          "id": "p4-eng-7-q2",
+          "type": "complete",
+          "text": "A zebra has ______ stripes.",
+          "answer": "black and white",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p4-eng-7-q3",
+          "type": "true_false",
+          "text": "Wild animals live in natural habitats.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-7-q4",
+          "type": "reason",
+          "text": "Why do animals need suitable habitats?",
+          "answer": "Habitats provide food, water, space and shelter.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "unit": "Unit 3: Animals in Our World",
+      "title": "Taking Care of Animals",
+      "kind": "reading",
+      "summary": "Learn how vets, owners and other people protect animals and keep them healthy and safe.",
+      "focus": [
+        "Use care and health vocabulary",
+        "Identify ways to protect animals",
+        "Read for cause and effect"
+      ],
+      "terms": [
+        [
+          "vet",
+          "a doctor for animals"
+        ],
+        [
+          "owner",
+          "a person who has an animal"
+        ],
+        [
+          "protect",
+          "keep safe from harm"
+        ],
+        [
+          "care for",
+          "look after"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-8-q1",
+          "type": "mcq",
+          "text": "Who checks an animal's health?",
+          "answer": "a vet",
+          "difficulty": "easy",
+          "choices": [
+            "a vet",
+            "a pilot",
+            "a baker",
+            "a driver"
+          ]
+        },
+        {
+          "id": "p4-eng-8-q2",
+          "type": "complete",
+          "text": "Pet ______ must provide food, water and care.",
+          "answer": "owners",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-8-q3",
+          "type": "true_false",
+          "text": "Animals need clean water and safe places.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-8-q4",
+          "type": "reason",
+          "text": "Name two things people can do to care for animals.",
+          "answer": "Provide food/water and keep them safe and healthy.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "unit": "Unit 3: Animals in Our World",
+      "title": "Comparative Adjectives",
+      "kind": "grammar",
+      "summary": "Use comparative adjectives to compare two people, animals or things.",
+      "focus": [
+        "Form -er comparatives",
+        "Use than",
+        "Recognize spelling changes"
+      ],
+      "terms": [
+        [
+          "comparative adjective",
+          "an adjective used to compare two things"
+        ],
+        [
+          "than",
+          "word used after a comparative"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-9-q1",
+          "type": "mcq",
+          "text": "A giraffe is ______ than a cat.",
+          "answer": "taller",
+          "difficulty": "easy",
+          "choices": [
+            "tall",
+            "taller",
+            "tallest",
+            "more tall"
+          ]
+        },
+        {
+          "id": "p4-eng-9-q2",
+          "type": "complete",
+          "text": "A bear is ______ than a rabbit. (big)",
+          "answer": "bigger",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-9-q3",
+          "type": "mcq",
+          "text": "Cats are ______ than lions.",
+          "answer": "smaller",
+          "difficulty": "easy",
+          "choices": [
+            "small",
+            "smaller",
+            "smallest",
+            "more small"
+          ]
+        },
+        {
+          "id": "p4-eng-9-q4",
+          "type": "true_false",
+          "text": "We often use 'than' after a comparative adjective.",
+          "answer": "True",
+          "difficulty": "medium",
+          "choices": [
+            "True",
+            "False"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "unit": "Unit 4: Egypt My Homeland",
+      "title": "Places We Go in Our City",
+      "kind": "vocabulary",
+      "summary": "Learn names and functions of places such as library, school, hospital, post office, museum and shopping mall.",
+      "focus": [
+        "Name places in a city",
+        "Match places with their functions",
+        "Read about important city places"
+      ],
+      "terms": [
+        [
+          "library",
+          "a place to read or borrow books"
+        ],
+        [
+          "hospital",
+          "a place where doctors and nurses help sick people"
+        ],
+        [
+          "museum",
+          "a place where we see treasures and learn history"
+        ],
+        [
+          "post office",
+          "a place to send letters and packages"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-10-q1",
+          "type": "mcq",
+          "text": "Where can you borrow books?",
+          "answer": "library",
+          "difficulty": "easy",
+          "choices": [
+            "library",
+            "hospital",
+            "museum",
+            "shopping mall"
+          ]
+        },
+        {
+          "id": "p4-eng-10-q2",
+          "type": "mcq",
+          "text": "Where do doctors and nurses help sick people?",
+          "answer": "hospital",
+          "difficulty": "easy",
+          "choices": [
+            "hospital",
+            "post office",
+            "school",
+            "museum"
+          ]
+        },
+        {
+          "id": "p4-eng-10-q3",
+          "type": "complete",
+          "text": "We send letters at the ______.",
+          "answer": "post office",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p4-eng-10-q4",
+          "type": "reason",
+          "text": "Why are public places important in a city?",
+          "answer": "They provide services such as learning, health care, communication and shopping.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "unit": "Unit 4: Egypt My Homeland",
+      "title": "Prepositions of Place",
+      "kind": "grammar",
+      "summary": "Use in, on, in front of, behind, next to and between to describe location.",
+      "focus": [
+        "Choose the correct preposition",
+        "Describe object positions",
+        "Understand spatial relations"
+      ],
+      "terms": [
+        [
+          "in front of",
+          "before something in position"
+        ],
+        [
+          "behind",
+          "at the back of something"
+        ],
+        [
+          "between",
+          "in the middle of two things"
+        ],
+        [
+          "next to",
+          "beside"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-11-q1",
+          "type": "mcq",
+          "text": "The cat is ______ the two boxes.",
+          "answer": "between",
+          "difficulty": "easy",
+          "choices": [
+            "between",
+            "behind",
+            "in",
+            "on"
+          ]
+        },
+        {
+          "id": "p4-eng-11-q2",
+          "type": "complete",
+          "text": "The picture is ______ the wall.",
+          "answer": "on",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p4-eng-11-q3",
+          "type": "mcq",
+          "text": "If the library is beside the museum, it is ______ the museum.",
+          "answer": "next to",
+          "difficulty": "medium",
+          "choices": [
+            "next to",
+            "under",
+            "inside",
+            "far from"
+          ]
+        },
+        {
+          "id": "p4-eng-11-q4",
+          "type": "true_false",
+          "text": "'Behind' tells us about position.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "unit": "Unit 4: Egypt My Homeland",
+      "title": "Egyptian Places & Homeland Reading",
+      "kind": "reading",
+      "summary": "Read and talk about places in Egypt and why landmarks and services matter to people.",
+      "focus": [
+        "Read for details about places",
+        "Connect places with Egypt",
+        "Use homeland vocabulary"
+      ],
+      "terms": [
+        [
+          "homeland",
+          "the country a person belongs to"
+        ],
+        [
+          "landmark",
+          "an important or easily recognized place"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-12-q1",
+          "type": "mcq",
+          "text": "A famous place that helps identify a city or country is a ______.",
+          "answer": "landmark",
+          "difficulty": "easy",
+          "choices": [
+            "landmark",
+            "pronoun",
+            "habit",
+            "solution"
+          ]
+        },
+        {
+          "id": "p4-eng-12-q2",
+          "type": "complete",
+          "text": "Egypt is our ______.",
+          "answer": "homeland",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p4-eng-12-q3",
+          "type": "true_false",
+          "text": "Museums can help us learn about history.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-12-q4",
+          "type": "reason",
+          "text": "Why should we care for important places in our homeland?",
+          "answer": "They provide services, preserve history and represent our community and country.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "unit": "Unit 5: A Day at Work",
+      "title": "Jobs and Workplaces",
+      "kind": "vocabulary",
+      "summary": "Learn job words and describe what people do at work.",
+      "focus": [
+        "Name common jobs",
+        "Match jobs to workplaces and duties",
+        "Read about work routines"
+      ],
+      "terms": [
+        [
+          "nurse",
+          "a person who cares for patients"
+        ],
+        [
+          "mentor",
+          "a person who guides others"
+        ],
+        [
+          "photographer",
+          "a person who takes photos"
+        ],
+        [
+          "voice-over actor",
+          "a person who records voices for characters or media"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-13-q1",
+          "type": "mcq",
+          "text": "Who takes photos as a job?",
+          "answer": "photographer",
+          "difficulty": "easy",
+          "choices": [
+            "photographer",
+            "nurse",
+            "driver",
+            "farmer"
+          ]
+        },
+        {
+          "id": "p4-eng-13-q2",
+          "type": "complete",
+          "text": "A ______ cares for patients in a hospital.",
+          "answer": "nurse",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p4-eng-13-q3",
+          "type": "true_false",
+          "text": "A mentor can guide and support other people.",
+          "answer": "True",
+          "difficulty": "medium",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-13-q4",
+          "type": "reason",
+          "text": "Why do different jobs need different skills?",
+          "answer": "Each job has different tasks and responsibilities.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "unit": "Unit 5: A Day at Work",
+      "title": "Jobs I Love!",
+      "kind": "reading",
+      "summary": "Read about interesting jobs such as mentor, wildlife photographer, puppeteer and voice-over actor.",
+      "focus": [
+        "Read for job details",
+        "Identify tools and responsibilities",
+        "Talk about a job you like"
+      ],
+      "terms": [
+        [
+          "puppeteer",
+          "a person who performs with puppets"
+        ],
+        [
+          "wildlife photographer",
+          "a photographer who takes pictures of wild animals"
+        ],
+        [
+          "puppet",
+          "a figure moved to perform a story"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-14-q1",
+          "type": "mcq",
+          "text": "Who may take pictures of lions in nature?",
+          "answer": "wildlife photographer",
+          "difficulty": "easy",
+          "choices": [
+            "wildlife photographer",
+            "nurse",
+            "chef",
+            "teacher"
+          ]
+        },
+        {
+          "id": "p4-eng-14-q2",
+          "type": "mcq",
+          "text": "Who performs using puppets?",
+          "answer": "puppeteer",
+          "difficulty": "easy",
+          "choices": [
+            "puppeteer",
+            "doctor",
+            "pilot",
+            "mechanic"
+          ]
+        },
+        {
+          "id": "p4-eng-14-q3",
+          "type": "complete",
+          "text": "A voice-over actor records his or her ______.",
+          "answer": "voice",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-14-q4",
+          "type": "reason",
+          "text": "What makes a job interesting to a person?",
+          "answer": "It can match the person's interests, skills and the kind of work they enjoy.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "unit": "Unit 5: A Day at Work",
+      "title": "Superlative Adjectives",
+      "kind": "grammar",
+      "summary": "Use superlative adjectives to show the greatest degree among three or more people or things.",
+      "focus": [
+        "Form -est superlatives",
+        "Use the before superlatives",
+        "Recognize spelling changes"
+      ],
+      "terms": [
+        [
+          "superlative adjective",
+          "an adjective showing the greatest degree"
+        ],
+        [
+          "the",
+          "usually used before a superlative"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-15-q1",
+          "type": "mcq",
+          "text": "The elephant is the ______ animal in the zoo.",
+          "answer": "biggest",
+          "difficulty": "easy",
+          "choices": [
+            "big",
+            "bigger",
+            "biggest",
+            "more big"
+          ]
+        },
+        {
+          "id": "p4-eng-15-q2",
+          "type": "complete",
+          "text": "The turtle is the ______. (slow)",
+          "answer": "slowest",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-15-q3",
+          "type": "mcq",
+          "text": "My bag is the ______ of the three.",
+          "answer": "heaviest",
+          "difficulty": "medium",
+          "choices": [
+            "heavy",
+            "heavier",
+            "heaviest",
+            "more heavy"
+          ]
+        },
+        {
+          "id": "p4-eng-15-q4",
+          "type": "true_false",
+          "text": "We use a superlative to compare one thing with a group of three or more.",
+          "answer": "True",
+          "difficulty": "medium",
+          "choices": [
+            "True",
+            "False"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "unit": "Unit 6: The Hundred Dresses",
+      "title": "The Hundred Dresses — Beginning",
+      "kind": "story",
+      "summary": "Meet Wanda, Peggy and Maddie and understand the conflict around Wanda and her claim about having many dresses.",
+      "focus": [
+        "Identify main characters",
+        "Understand the beginning of the conflict",
+        "Read for feelings and motives"
+      ],
+      "terms": [
+        [
+          "Wanda",
+          "a girl in the story"
+        ],
+        [
+          "Peggy",
+          "one of Wanda's classmates"
+        ],
+        [
+          "Maddie",
+          "Peggy's friend and classmate"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-16-q1",
+          "type": "mcq",
+          "text": "Who are the main schoolgirls in the story?",
+          "answer": "Wanda, Peggy and Maddie",
+          "difficulty": "easy",
+          "choices": [
+            "Wanda, Peggy and Maddie",
+            "Sara, Mona and Ali",
+            "Tom and Ben",
+            "Noha and Salma"
+          ]
+        },
+        {
+          "id": "p4-eng-16-q2",
+          "type": "true_false",
+          "text": "The story explores how classmates treat one another.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-16-q3",
+          "type": "complete",
+          "text": "Peggy and Maddie are Wanda's ______.",
+          "answer": "classmates",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-16-q4",
+          "type": "reason",
+          "text": "Why is it important to notice how jokes make another person feel?",
+          "answer": "Because a joke can hurt someone even if others think it is harmless.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "unit": "Unit 6: The Hundred Dresses",
+      "title": "The Hundred Dresses — Drawing Competition",
+      "kind": "story",
+      "summary": "Follow the drawing competition and the discovery of Wanda's many dress designs.",
+      "focus": [
+        "Sequence story events",
+        "Recognize the meaning of Wanda's drawings",
+        "Infer characters' feelings"
+      ],
+      "terms": [
+        [
+          "competition",
+          "an event in which people try to win"
+        ],
+        [
+          "drawing",
+          "a picture made with pencil, pen or colors"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-17-q1",
+          "type": "mcq",
+          "text": "What kind of competition is important in the story?",
+          "answer": "a drawing competition",
+          "difficulty": "easy",
+          "choices": [
+            "a drawing competition",
+            "a football match",
+            "a cooking contest",
+            "a race"
+          ]
+        },
+        {
+          "id": "p4-eng-17-q2",
+          "type": "complete",
+          "text": "Wanda's many dress ______ become important in the story.",
+          "answer": "drawings",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-17-q3",
+          "type": "true_false",
+          "text": "The competition changes how some classmates think about Wanda.",
+          "answer": "True",
+          "difficulty": "medium",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-17-q4",
+          "type": "reason",
+          "text": "What can the drawings show about Wanda?",
+          "answer": "They show her talent, imagination and the truth behind her idea of many dresses.",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "unit": "Unit 6: The Hundred Dresses",
+      "title": "The Hundred Dresses — The End",
+      "kind": "story",
+      "summary": "Understand Wanda's move, Peggy and Maddie's apology, and the message of kindness at the end of the story.",
+      "focus": [
+        "Explain the ending",
+        "Identify the moral message",
+        "Discuss apology and kindness"
+      ],
+      "terms": [
+        [
+          "apologize",
+          "say sorry for doing something wrong"
+        ],
+        [
+          "kindness",
+          "friendly, caring behavior"
+        ],
+        [
+          "forgive",
+          "stop being angry with someone for a mistake"
+        ]
+      ],
+      "questions": [
+        {
+          "id": "p4-eng-18-q1",
+          "type": "mcq",
+          "text": "What do Peggy and Maddie decide to do?",
+          "answer": "write to Wanda to apologize",
+          "difficulty": "easy",
+          "choices": [
+            "write to Wanda to apologize",
+            "forget Wanda completely",
+            "enter a race",
+            "hide the drawings"
+          ]
+        },
+        {
+          "id": "p4-eng-18-q2",
+          "type": "true_false",
+          "text": "The experience teaches Peggy and Maddie about kindness.",
+          "answer": "True",
+          "difficulty": "easy",
+          "choices": [
+            "True",
+            "False"
+          ]
+        },
+        {
+          "id": "p4-eng-18-q3",
+          "type": "complete",
+          "text": "To say sorry for a wrong action is to ______.",
+          "answer": "apologize",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p4-eng-18-q4",
+          "type": "reason",
+          "text": "What is an important message of the story?",
+          "answer": "Treat others kindly and think about how your words and actions affect them.",
           "difficulty": "hard"
         }
       ]
