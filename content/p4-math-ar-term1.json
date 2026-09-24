@@ -29,7 +29,6 @@
           "id": "p4-math-ar-1-q1",
           "type": "mcq",
           "text": "ما قيمة الرقم 8 في العدد 583,460,905؟",
-          "answer": "80,000,000",
           "difficulty": "easy",
           "choices": [
             "8,000",
@@ -42,21 +41,18 @@
           "id": "p4-math-ar-1-q2",
           "type": "complete",
           "text": "أكمل: 1,000,000 يساوي ______ واحدًا.",
-          "answer": "مليون",
           "difficulty": "easy"
         },
         {
           "id": "p4-math-ar-1-q3",
           "type": "solve",
           "text": "حدد الرقم الموجود في منزلة عشرات الملايين في 3,418,079,265.",
-          "answer": "1",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-1-q4",
           "type": "problem",
           "text": "فسر لماذا يمكن للرقم نفسه أن تكون له قيم مختلفة باختلاف المنزلة.",
-          "answer": "قيمة الرقم تعتمد على منزلته في العدد.",
           "difficulty": "hard"
         }
       ]
@@ -83,21 +79,18 @@
           "id": "p4-math-ar-2-q1",
           "type": "solve",
           "text": "اكتب 1,000,000 + 200,000 + 30,000 + 400 + 5 بالصورة القياسية.",
-          "answer": "1,230,405",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-2-q2",
           "type": "complete",
           "text": "اكتب 45,006 بالصورة التحليلية.",
-          "answer": "40,000 + 5,000 + 6",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-2-q3",
           "type": "mcq",
           "text": "أي اختيار يمثل الصورة اللفظية للعدد 102,004؟",
-          "answer": "مائة واثنان ألفًا وأربعة",
           "difficulty": "medium",
           "choices": [
             "مائة واثنان ألفًا وأربعة",
@@ -110,7 +103,6 @@
           "id": "p4-math-ar-2-q4",
           "type": "problem",
           "text": "لماذا نحتاج أحيانًا إلى كتابة الصفر داخل العدد بالصورة القياسية؟",
-          "answer": "لأنه يحفظ منزلة ليس بها قيمة غير صفرية.",
           "difficulty": "medium"
         }
       ]
@@ -137,14 +129,12 @@
           "id": "p4-math-ar-3-q1",
           "type": "solve",
           "text": "حلل العدد 326,405 حسب القيمة المكانية.",
-          "answer": "300,000 + 20,000 + 6,000 + 400 + 5",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-3-q2",
           "type": "mcq",
           "text": "أي تركيب يساوي 70,305؟",
-          "answer": "70,000 + 300 + 5",
           "difficulty": "medium",
           "choices": [
             "70,000 + 300 + 5",
@@ -157,14 +147,12 @@
           "id": "p4-math-ar-3-q3",
           "type": "complete",
           "text": "أكمل: 500,000 + 9,000 + 80 = ______.",
-          "answer": "509,080",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-3-q4",
           "type": "problem",
           "text": "اكتب تحليلًا آخر صحيحًا للعدد 4,000 باستخدام الآلاف والمئات.",
-          "answer": "3,000 + 1,000 أو أي تحليل مكافئ صحيح",
           "difficulty": "medium"
         }
       ]
@@ -191,7 +179,6 @@
           "id": "p4-math-ar-4-q1",
           "type": "mcq",
           "text": "501,326 ____ 501,236",
-          "answer": ">",
           "difficulty": "medium",
           "choices": [
             ">",
@@ -204,21 +191,18 @@
           "id": "p4-math-ar-4-q2",
           "type": "solve",
           "text": "أيهما أكبر: 650,201 أم 605,210؟",
-          "answer": "650,201",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-4-q3",
           "type": "complete",
           "text": "9,999 ____ 10,000",
-          "answer": "<",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-4-q4",
           "type": "problem",
           "text": "اشرح أول منزلة نقارنها عندما يكون للعددين نفس عدد الأرقام.",
-          "answer": "نبدأ من أكبر منزلة جهة اليسار.",
           "difficulty": "medium"
         }
       ]
@@ -245,14 +229,12 @@
           "id": "p4-math-ar-5-q1",
           "type": "solve",
           "text": "رتب 56,210 و506,021 و43,692 تصاعديًا.",
-          "answer": "43,692; 56,210; 506,021",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-5-q2",
           "type": "mcq",
           "text": "أي ترتيب تنازلي صحيح؟",
-          "answer": "900, 700, 200",
           "difficulty": "medium",
           "choices": [
             "200, 700, 900",
@@ -265,14 +247,12 @@
           "id": "p4-math-ar-5-q3",
           "type": "complete",
           "text": "تصاعديًا يعني من ______ إلى الأكبر.",
-          "answer": "الأصغر",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-5-q4",
           "type": "problem",
           "text": "لماذا تساعد القيمة المكانية في ترتيب الأعداد الكبيرة؟",
-          "answer": "لأنها تسمح بمقارنة الأرقام بدءًا من أكبر منزلة.",
           "difficulty": "medium"
         }
       ]
@@ -299,14 +279,12 @@
           "id": "p4-math-ar-6-q1",
           "type": "solve",
           "text": "قرب 47,638 لأقرب ألف.",
-          "answer": "48,000",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-6-q2",
           "type": "mcq",
           "text": "قرب 6,449 لأقرب مائة.",
-          "answer": "6,400",
           "difficulty": "medium",
           "choices": [
             "6,400",
@@ -319,7 +297,6 @@
           "id": "p4-math-ar-6-q3",
           "type": "true_false",
           "text": "عند التقريب لأقرب عشرة فإن رقم الآحاد 5 يجعلنا نرفع العشرات.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -330,7 +307,6 @@
           "id": "p4-math-ar-6-q4",
           "type": "problem",
           "text": "اشرح أي رقم ننظر إليه عند التقريب لأقرب ألف.",
-          "answer": "رقم المئات.",
           "difficulty": "medium"
         }
       ]
@@ -357,7 +333,6 @@
           "id": "p4-math-ar-7-q1",
           "type": "mcq",
           "text": "35 + 12 = 12 + 35",
-          "answer": "خاصية الإبدال",
           "difficulty": "medium",
           "choices": [
             "خاصية الإبدال",
@@ -370,14 +345,12 @@
           "id": "p4-math-ar-7-q2",
           "type": "complete",
           "text": "48 + 0 = ______.",
-          "answer": "48",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-7-q3",
           "type": "true_false",
           "text": "(2 + 3) + 4 = 2 + (3 + 4) توضح خاصية التجميع.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -388,7 +361,6 @@
           "id": "p4-math-ar-7-q4",
           "type": "problem",
           "text": "لماذا قد يساعد تجميع الحدود على إجراء الجمع ذهنيًا؟",
-          "answer": "لأنه يصنع مجموعات أسهل دون تغيير الناتج.",
           "difficulty": "medium"
         }
       ]
@@ -415,21 +387,18 @@
           "id": "p4-math-ar-8-q1",
           "type": "solve",
           "text": "43,826 + 25,095 = ______.",
-          "answer": "68,921",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-8-q2",
           "type": "solve",
           "text": "61,072 + 9,838 = ______.",
-          "answer": "70,910",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-8-q3",
           "type": "mcq",
           "text": "30,000 + 829 = ______.",
-          "answer": "30,829",
           "difficulty": "medium",
           "choices": [
             "30,829",
@@ -442,7 +411,6 @@
           "id": "p4-math-ar-8-q4",
           "type": "problem",
           "text": "مكتبة بها 18,450 كتابًا واستلمت 3,275 كتابًا جديدًا. كم كتابًا أصبح بها؟",
-          "answer": "21,725",
           "difficulty": "medium"
         }
       ]
@@ -469,21 +437,18 @@
           "id": "p4-math-ar-9-q1",
           "type": "solve",
           "text": "54,275 - 32,938 = ______.",
-          "answer": "21,337",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-9-q2",
           "type": "solve",
           "text": "8,762 - 7,648 = ______.",
-          "answer": "1,114",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-9-q3",
           "type": "mcq",
           "text": "90,000 - 8,500 = ______.",
-          "answer": "81,500",
           "difficulty": "medium",
           "choices": [
             "81,500",
@@ -496,7 +461,6 @@
           "id": "p4-math-ar-9-q4",
           "type": "problem",
           "text": "كان لدى متجر 25,000 قطعة وباع 7,860. كم يتبقى؟",
-          "answer": "17,140",
           "difficulty": "medium"
         }
       ]
@@ -523,14 +487,12 @@
           "id": "p4-math-ar-10-q1",
           "type": "problem",
           "text": "لدى منى 35 ملصقًا ثم حصلت على س ملصقًا فأصبح لديها 52. أوجد س.",
-          "answer": "17",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-10-q2",
           "type": "mcq",
           "text": "35 + x = 52; x = ______.",
-          "answer": "17",
           "difficulty": "medium",
           "choices": [
             "17",
@@ -543,14 +505,12 @@
           "id": "p4-math-ar-10-q3",
           "type": "complete",
           "text": "يمكن أن يمثل الحرف س كمية ______.",
-          "answer": "مجهولة",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-10-q4",
           "type": "problem",
           "text": "اشرح كيف يساعد نموذج الشريط في حل المسألة الكلامية.",
-          "answer": "يوضح الأجزاء المعلومة والمجهولة والعلاقة بينها.",
           "difficulty": "medium"
         }
       ]
@@ -577,21 +537,18 @@
           "id": "p4-math-ar-11-q1",
           "type": "problem",
           "text": "باع متجر 1,250 قطعة يوم الاثنين و980 الثلاثاء ثم أُعيد 300. ما صافي المبيعات؟",
-          "answer": "1,930",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-11-q2",
           "type": "solve",
           "text": "(50 - 36) + (4 × 3) = ______.",
-          "answer": "26",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-11-q3",
           "type": "mcq",
           "text": "ما الخطوة الأولى المناسبة في 4,000 + 700 - 250؟",
-          "answer": "4,000 + 700",
           "difficulty": "medium",
           "choices": [
             "4,000 + 700",
@@ -604,7 +561,6 @@
           "id": "p4-math-ar-11-q4",
           "type": "problem",
           "text": "لماذا يجب فحص معقولية ناتج المسألة متعددة الخطوات؟",
-          "answer": "لاكتشاف أخطاء اختيار العملية أو الحساب.",
           "difficulty": "medium"
         }
       ]
@@ -631,7 +587,6 @@
           "id": "p4-math-ar-12-q1",
           "type": "mcq",
           "text": "ما الوحدة الأنسب لقياس طول قلم؟",
-          "answer": "السنتيمتر",
           "difficulty": "medium",
           "choices": [
             "السنتيمتر",
@@ -644,21 +599,18 @@
           "id": "p4-math-ar-12-q2",
           "type": "complete",
           "text": "1 meter = ______ centimeters.",
-          "answer": "100",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-12-q3",
           "type": "solve",
           "text": "3 m 25 cm = ______ cm.",
-          "answer": "325",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-12-q4",
           "type": "problem",
           "text": "شريط طوله 2 متر. كم سنتيمترًا؟",
-          "answer": "200 cm",
           "difficulty": "medium"
         }
       ]
@@ -685,7 +637,6 @@
           "id": "p4-math-ar-13-q1",
           "type": "mcq",
           "text": "ما الوحدة المناسبة لكتلة حقيبة مدرسية؟",
-          "answer": "الكيلوجرام",
           "difficulty": "medium",
           "choices": [
             "الكيلوجرام",
@@ -698,21 +649,18 @@
           "id": "p4-math-ar-13-q2",
           "type": "complete",
           "text": "1 kilogram = ______ grams.",
-          "answer": "1000",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-13-q3",
           "type": "solve",
           "text": "2 kg 300 g = ______ g.",
-          "answer": "2300",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-13-q4",
           "type": "problem",
           "text": "صندوق كتلته 4 كجم. كم جرامًا؟",
-          "answer": "4000 g",
           "difficulty": "medium"
         }
       ]
@@ -739,7 +687,6 @@
           "id": "p4-math-ar-14-q1",
           "type": "mcq",
           "text": "ما الوحدة المناسبة لسعة زجاجة ماء؟",
-          "answer": "اللتر",
           "difficulty": "medium",
           "choices": [
             "اللتر",
@@ -752,21 +699,18 @@
           "id": "p4-math-ar-14-q2",
           "type": "complete",
           "text": "1 liter = ______ milliliters.",
-          "answer": "1000",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-14-q3",
           "type": "solve",
           "text": "3 L 250 mL = ______ mL.",
-          "answer": "3250",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-14-q4",
           "type": "problem",
           "text": "زجاجتان سعة كل منهما 500 مل، ما السعة الكلية باللتر؟",
-          "answer": "1 L",
           "difficulty": "medium"
         }
       ]
@@ -793,28 +737,24 @@
           "id": "p4-math-ar-15-q1",
           "type": "complete",
           "text": "1 day = ______ hours.",
-          "answer": "24",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-15-q2",
           "type": "complete",
           "text": "1 week = ______ days.",
-          "answer": "7",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-15-q3",
           "type": "problem",
           "text": "بدأت رحلة دراجة 8:15 صباحًا واستمرت 3 ساعات و26 دقيقة. متى تنتهي؟",
-          "answer": "11:41 A.M.",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-15-q4",
           "type": "solve",
           "text": "5:37 + 50 minutes = ______.",
-          "answer": "6:27",
           "difficulty": "medium"
         }
       ]
@@ -841,28 +781,24 @@
           "id": "p4-math-ar-16-q1",
           "type": "problem",
           "text": "حبل طوله 3 م 40 سم وآخر 2 م 75 سم. ما الطول الكلي؟",
-          "answer": "6 m 15 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-16-q2",
           "type": "solve",
           "text": "4 kg 500 g - 750 g = ______.",
-          "answer": "3 kg 750 g",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-16-q3",
           "type": "problem",
           "text": "خزان به 5 لترات. استُخدم 1,250 مل. كم يتبقى؟",
-          "answer": "3 L 750 mL",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-16-q4",
           "type": "problem",
           "text": "لماذا يجب توحيد الوحدات قبل جمع بعض القياسات؟",
-          "answer": "لأن الكميات يجب أن تكون بوحدات متوافقة.",
           "difficulty": "medium"
         }
       ]
@@ -889,28 +825,24 @@
           "id": "p4-math-ar-17-q1",
           "type": "problem",
           "text": "حبل طوله 3 م 40 سم وآخر 2 م 75 سم. ما الطول الكلي؟",
-          "answer": "6 m 15 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-17-q2",
           "type": "solve",
           "text": "4 kg 500 g - 750 g = ______.",
-          "answer": "3 kg 750 g",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-17-q3",
           "type": "problem",
           "text": "خزان به 5 لترات. استُخدم 1,250 مل. كم يتبقى؟",
-          "answer": "3 L 750 mL",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-17-q4",
           "type": "problem",
           "text": "لماذا يجب توحيد الوحدات قبل جمع بعض القياسات؟",
-          "answer": "لأن الكميات يجب أن تكون بوحدات متوافقة.",
           "difficulty": "medium"
         }
       ]
@@ -937,21 +869,18 @@
           "id": "p4-math-ar-18-q1",
           "type": "solve",
           "text": "أوجد محيط مستطيل طوله 17 سم وعرضه 12 سم.",
-          "answer": "58 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-18-q2",
           "type": "solve",
           "text": "أوجد محيط مربع طول ضلعه 8 كم.",
-          "answer": "32 km",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-18-q3",
           "type": "mcq",
           "text": "أي قانون يحسب محيط المستطيل؟",
-          "answer": "2 × (length + width)",
           "difficulty": "medium",
           "choices": [
             "length × width",
@@ -964,7 +893,6 @@
           "id": "p4-math-ar-18-q4",
           "type": "problem",
           "text": "لماذا يقاس المحيط بوحدات طول؟",
-          "answer": "لأنه يقيس طول الحدود حول الشكل.",
           "difficulty": "medium"
         }
       ]
@@ -991,21 +919,18 @@
           "id": "p4-math-ar-19-q1",
           "type": "solve",
           "text": "أوجد مساحة مستطيل 10 سم × 7 سم.",
-          "answer": "70 cm²",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-19-q2",
           "type": "solve",
           "text": "أوجد مساحة مربع طول ضلعه 6 سم.",
-          "answer": "36 cm²",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-19-q3",
           "type": "mcq",
           "text": "أي قانون يحسب مساحة المستطيل؟",
-          "answer": "length × width",
           "difficulty": "medium",
           "choices": [
             "length × width",
@@ -1018,7 +943,6 @@
           "id": "p4-math-ar-19-q4",
           "type": "problem",
           "text": "لماذا تقاس المساحة بوحدات مربعة؟",
-          "answer": "لأنها تمثل عدد الوحدات المربعة التي تغطي السطح.",
           "difficulty": "medium"
         }
       ]
@@ -1045,28 +969,24 @@
           "id": "p4-math-ar-20-q1",
           "type": "problem",
           "text": "مستطيل مساحته 48 سم² وعرضه 6 سم. أوجد الطول.",
-          "answer": "8 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-20-q2",
           "type": "problem",
           "text": "مستطيل محيطه 30 سم وطوله 9 سم. أوجد العرض.",
-          "answer": "6 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-20-q3",
           "type": "complete",
           "text": "إذا كانت المساحة = الطول × العرض، فإن الطول = المساحة ÷ ______.",
-          "answer": "العرض",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-20-q4",
           "type": "mcq",
           "text": "Area 63 cm²; width 7 cm; length = ______.",
-          "answer": "9 cm",
           "difficulty": "medium",
           "choices": [
             "7 cm",
@@ -1099,14 +1019,12 @@
           "id": "p4-math-ar-21-q1",
           "type": "problem",
           "text": "شكل مركب قُسم إلى مستطيلين مساحتهما 24 و18 سم². ما المساحة الكلية؟",
-          "answer": "42 cm²",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-21-q2",
           "type": "true_false",
           "text": "يمكن غالبًا تقسيم الشكل المركب إلى مستطيلات أبسط.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1117,14 +1035,12 @@
           "id": "p4-math-ar-21-q3",
           "type": "problem",
           "text": "لماذا لا نحسب الأضلاع الداخلية المشتركة عند إيجاد المحيط الخارجي؟",
-          "answer": "لأنها ليست جزءًا من الحد الخارجي للشكل.",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-21-q4",
           "type": "solve",
           "text": "مستطيلان غير متداخلين مساحتهما 20 و35. المساحة الكلية؟",
-          "answer": "55",
           "difficulty": "medium"
         }
       ]
@@ -1151,7 +1067,6 @@
           "id": "p4-math-ar-22-q1",
           "type": "mcq",
           "text": "«24 أربعة أمثال 6» تمثلها المعادلة:",
-          "answer": "24 = 4 × 6",
           "difficulty": "medium",
           "choices": [
             "24 = 4 × 6",
@@ -1164,21 +1079,18 @@
           "id": "p4-math-ar-22-q2",
           "type": "solve",
           "text": "لدى سارة 5 ملصقات، ولدى عمر ثلاثة أمثالها. كم لدى عمر؟",
-          "answer": "15",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-22-q3",
           "type": "complete",
           "text": "7 × 8 = 56 means 56 is ______ times 8.",
-          "answer": "7",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-22-q4",
           "type": "problem",
           "text": "اشرح الفرق بين «أكبر بمقدار 3» و«ثلاثة أمثال».",
-          "answer": "الأولى تستخدم الجمع والثانية تستخدم الضرب.",
           "difficulty": "medium"
         }
       ]
@@ -1205,21 +1117,18 @@
           "id": "p4-math-ar-23-q1",
           "type": "problem",
           "text": "شجرة طولها أربعة أمثال نبات طوله 2 م. اكتب معادلة وأوجد الطول.",
-          "answer": "x = 4 × 2 = 8 m",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-23-q2",
           "type": "solve",
           "text": "x = 6 × 9; x = ______.",
-          "answer": "54",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-23-q3",
           "type": "mcq",
           "text": "أي معادلة توضح أن 35 خمسة أمثال 7؟",
-          "answer": "35 = 5 × 7",
           "difficulty": "medium",
           "choices": [
             "35 = 5 × 7",
@@ -1232,7 +1141,6 @@
           "id": "p4-math-ar-23-q4",
           "type": "problem",
           "text": "لماذا يفيد المتغير في معادلة المقارنة؟",
-          "answer": "لأنه يمثل الكمية المجهولة.",
           "difficulty": "medium"
         }
       ]
@@ -1259,7 +1167,6 @@
           "id": "p4-math-ar-24-q1",
           "type": "mcq",
           "text": "7 × 1 = 7",
-          "answer": "خاصية العنصر المحايد",
           "difficulty": "medium",
           "choices": [
             "خاصية العنصر المحايد",
@@ -1272,14 +1179,12 @@
           "id": "p4-math-ar-24-q2",
           "type": "complete",
           "text": "9 × 0 = ______.",
-          "answer": "0",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-24-q3",
           "type": "true_false",
           "text": "4 × 6 = 6 × 4 توضح خاصية الإبدال.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1290,7 +1195,6 @@
           "id": "p4-math-ar-24-q4",
           "type": "solve",
           "text": "8 × 1 × 0 = ______.",
-          "answer": "0",
           "difficulty": "medium"
         }
       ]
@@ -1317,7 +1221,6 @@
           "id": "p4-math-ar-25-q1",
           "type": "true_false",
           "text": "(2 × 3) × 4 = 2 × (3 × 4).",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1328,21 +1231,18 @@
           "id": "p4-math-ar-25-q2",
           "type": "solve",
           "text": "25 × 4 = ______.",
-          "answer": "100",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-25-q3",
           "type": "complete",
           "text": "خاصية التجميع تغير طريقة ______ العوامل ولا تغير ترتيبها.",
-          "answer": "التجميع",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-25-q4",
           "type": "problem",
           "text": "كيف تساعد الأنماط على جعل الضرب أسرع؟",
-          "answer": "يمكن توسيع نواتج معروفة باستخدام القيمة المكانية أو التجميع.",
           "difficulty": "medium"
         }
       ]
@@ -1369,14 +1269,12 @@
           "id": "p4-math-ar-26-q1",
           "type": "solve",
           "text": "اكتب جميع عوامل 12.",
-          "answer": "1، 2، 3، 4، 6، 12",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-26-q2",
           "type": "mcq",
           "text": "أي عدد عامل للعدد 18؟",
-          "answer": "6",
           "difficulty": "medium",
           "choices": [
             "5",
@@ -1389,7 +1287,6 @@
           "id": "p4-math-ar-26-q3",
           "type": "true_false",
           "text": "العدد 1 عامل لكل عدد كلي موجب.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1400,7 +1297,6 @@
           "id": "p4-math-ar-26-q4",
           "type": "problem",
           "text": "كيف تساعد أزواج العوامل في إيجاد جميع العوامل؟",
-          "answer": "كل زوج يعطي حاصل ضرب يساوي العدد ويحدد عاملين.",
           "difficulty": "medium"
         }
       ]
@@ -1427,7 +1323,6 @@
           "id": "p4-math-ar-27-q1",
           "type": "mcq",
           "text": "أي عدد أولي؟",
-          "answer": "13",
           "difficulty": "medium",
           "choices": [
             "12",
@@ -1440,7 +1335,6 @@
           "id": "p4-math-ar-27-q2",
           "type": "mcq",
           "text": "أي عدد مركب؟",
-          "answer": "18",
           "difficulty": "medium",
           "choices": [
             "11",
@@ -1453,7 +1347,6 @@
           "id": "p4-math-ar-27-q3",
           "type": "complete",
           "text": "العدد الأولي له بالضبط ______ من العوامل الموجبة.",
-          "answer": "عاملان",
           "difficulty": "medium"
         }
       ]
@@ -1480,14 +1373,12 @@
           "id": "p4-math-ar-28-q1",
           "type": "solve",
           "text": "G.C.F. of 12 and 18 = ______.",
-          "answer": "6",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-28-q2",
           "type": "mcq",
           "text": "G.C.F. of 8 and 20 = ______.",
-          "answer": "4",
           "difficulty": "medium",
           "choices": [
             "2",
@@ -1500,14 +1391,12 @@
           "id": "p4-math-ar-28-q3",
           "type": "complete",
           "text": "القاسم المشترك الأكبر هو ______ عامل مشترك.",
-          "answer": "أكبر",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-28-q4",
           "type": "problem",
           "text": "لماذا يساعد القاسم المشترك الأكبر في تكوين مجموعات متساوية دون بقايا؟",
-          "answer": "لأنه أكبر عدد يقسم الكميتين دون باقٍ.",
           "difficulty": "medium"
         }
       ]
@@ -1534,14 +1423,12 @@
           "id": "p4-math-ar-29-q1",
           "type": "solve",
           "text": "اكتب أول خمسة مضاعفات موجبة للعدد 6.",
-          "answer": "6، 12، 18، 24، 30",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-29-q2",
           "type": "mcq",
           "text": "أي عدد مضاعف مشترك لـ4 و6؟",
-          "answer": "12",
           "difficulty": "medium",
           "choices": [
             "8",
@@ -1554,7 +1441,6 @@
           "id": "p4-math-ar-29-q3",
           "type": "true_false",
           "text": "24 من مضاعفات 8.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1565,7 +1451,6 @@
           "id": "p4-math-ar-29-q4",
           "type": "problem",
           "text": "كيف نولد مضاعفات عدد؟",
-          "answer": "نضرب العدد في الأعداد الكلية.",
           "difficulty": "medium"
         }
       ]
@@ -1592,14 +1477,12 @@
           "id": "p4-math-ar-30-q1",
           "type": "complete",
           "text": "إذا كان 5 عاملًا للعدد 30 فإن 30 ______ للعدد 5.",
-          "answer": "مضاعف",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-30-q2",
           "type": "true_false",
           "text": "إذا كان أ يقسم ب دون باقٍ فإن ب مضاعف لأ.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1610,7 +1493,6 @@
           "id": "p4-math-ar-30-q3",
           "type": "mcq",
           "text": "أي زوج يوضح علاقة عامل ومضاعف صحيحة؟",
-          "answer": "7 and 42",
           "difficulty": "medium",
           "choices": [
             "7 and 42",
@@ -1643,21 +1525,18 @@
           "id": "p4-math-ar-31-q1",
           "type": "solve",
           "text": "استخدم التوزيع: 23 × 4 = (20 × 4) + (3 × 4) = ______.",
-          "answer": "92",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-31-q2",
           "type": "solve",
           "text": "36 × 5 = ______.",
-          "answer": "180",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-31-q3",
           "type": "true_false",
           "text": "يمكن لنموذج المساحة تقسيم العامل إلى عشرات وآحاد.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1668,7 +1547,6 @@
           "id": "p4-math-ar-31-q4",
           "type": "problem",
           "text": "لماذا تعمل خاصية التوزيع في نموذج المساحة؟",
-          "answer": "لأن المساحة الكلية تساوي مجموع المساحات الجزئية.",
           "difficulty": "medium"
         }
       ]
@@ -1695,28 +1573,24 @@
           "id": "p4-math-ar-32-q1",
           "type": "solve",
           "text": "247 × 3 = ______.",
-          "answer": "741",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-32-q2",
           "type": "solve",
           "text": "1,206 × 4 = ______.",
-          "answer": "4,824",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-32-q3",
           "type": "complete",
           "text": "النواتج الجزئية تنتج من ضرب كل جزء حسب ______ المكانية.",
-          "answer": "القيمة",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-32-q4",
           "type": "problem",
           "text": "اذكر فائدة لطريقة النواتج الجزئية.",
-          "answer": "توضح إسهام كل قيمة مكانية في الناتج.",
           "difficulty": "medium"
         }
       ]
@@ -1743,21 +1617,18 @@
           "id": "p4-math-ar-33-q1",
           "type": "solve",
           "text": "34 × 20 = ______.",
-          "answer": "680",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-33-q2",
           "type": "solve",
           "text": "57 × 30 = ______.",
-          "answer": "1,710",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-33-q3",
           "type": "mcq",
           "text": "25 × 40 = ______.",
-          "answer": "1,000",
           "difficulty": "medium",
           "choices": [
             "100",
@@ -1770,7 +1641,6 @@
           "id": "p4-math-ar-33-q4",
           "type": "problem",
           "text": "لماذا يمكن اعتبار 30 = 3 × 10 عند الضرب؟",
-          "answer": "لأن ذلك يعتمد على القيمة المكانية وخواص الضرب.",
           "difficulty": "medium"
         }
       ]
@@ -1797,21 +1667,18 @@
           "id": "p4-math-ar-34-q1",
           "type": "solve",
           "text": "29 ÷ 4 = ______.",
-          "answer": "7 R1",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-34-q2",
           "type": "problem",
           "text": "29 طالبًا يركبون سيارات تسع 4 طلاب. كم سيارة نحتاج؟",
-          "answer": "8 سيارات",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-34-q3",
           "type": "mcq",
           "text": "في 17 ÷ 5، الباقي هو:",
-          "answer": "2",
           "difficulty": "medium",
           "choices": [
             "1",
@@ -1844,21 +1711,18 @@
           "id": "p4-math-ar-35-q1",
           "type": "solve",
           "text": "4,800 ÷ 6 = ______.",
-          "answer": "800",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-35-q2",
           "type": "solve",
           "text": "360 ÷ 9 = ______.",
-          "answer": "40",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-35-q3",
           "type": "true_false",
           "text": "إذا كان 48 ÷ 6 = 8 فإن 480 ÷ 6 = 80.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1869,7 +1733,6 @@
           "id": "p4-math-ar-35-q4",
           "type": "problem",
           "text": "كيف تساعد القيمة المكانية في أنماط القسمة؟",
-          "answer": "تغيير المقسوم بعوامل 10 يغير خارج القسمة بنمط متوقع عند ثبات المقسوم عليه.",
           "difficulty": "medium"
         }
       ]
@@ -1896,21 +1759,18 @@
           "id": "p4-math-ar-36-q1",
           "type": "solve",
           "text": "96 ÷ 4 = ______.",
-          "answer": "24",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-36-q2",
           "type": "problem",
           "text": "قسم 84 إلى 80 + 4 ثم اقسم على 4. ما خارج القسمة؟",
-          "answer": "21",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-36-q3",
           "type": "true_false",
           "text": "يمكن لنموذج المساحة تمثيل القسمة كإيجاد طول ضلع مجهول.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -1941,28 +1801,24 @@
           "id": "p4-math-ar-37-q1",
           "type": "solve",
           "text": "728 ÷ 7 = ______.",
-          "answer": "104",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-37-q2",
           "type": "solve",
           "text": "936 ÷ 8 = ______.",
-          "answer": "117",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-37-q3",
           "type": "complete",
           "text": "الخوارزمية بالنواتج الجزئية تطرح ______ مناسبة من المقسوم عليه.",
-          "answer": "مضاعفات",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-37-q4",
           "type": "problem",
           "text": "كيف نستخدم الضرب للتحقق من 936 ÷ 8 = 117؟",
-          "answer": "117 × 8 = 936.",
           "difficulty": "medium"
         }
       ]
@@ -1989,14 +1845,12 @@
           "id": "p4-math-ar-38-q1",
           "type": "complete",
           "text": "72 ÷ 8 = 9, so 9 × 8 = ______.",
-          "answer": "72",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-38-q2",
           "type": "mcq",
           "text": "أي عملية ضرب تتحقق من 84 ÷ 7 = 12؟",
-          "answer": "12 × 7 = 84",
           "difficulty": "medium",
           "choices": [
             "12 × 7 = 84",
@@ -2009,7 +1863,6 @@
           "id": "p4-math-ar-38-q3",
           "type": "true_false",
           "text": "الضرب والقسمة عمليتان عكسيتان.",
-          "answer": "صح",
           "difficulty": "medium",
           "choices": [
             "صح",
@@ -2040,21 +1893,18 @@
           "id": "p4-math-ar-39-q1",
           "type": "solve",
           "text": "12 + 6 ÷ 3 = ______.",
-          "answer": "14",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-39-q2",
           "type": "solve",
           "text": "20 + (4 + 1) × 2 = ______.",
-          "answer": "30",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-ar-39-q3",
           "type": "mcq",
           "text": "ما أول عملية تُنفذ في 18 - 15 + 3 × 8 - 2؟",
-          "answer": "3 × 8",
           "difficulty": "medium",
           "choices": [
             "18 - 15",
@@ -2067,7 +1917,6 @@
           "id": "p4-math-ar-39-q4",
           "type": "problem",
           "text": "لماذا الأقواس مهمة في العبارات العددية؟",
-          "answer": "لأنها تحدد العملية التي يجب تنفيذها أولًا.",
           "difficulty": "medium"
         }
       ]
