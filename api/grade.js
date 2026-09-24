@@ -38,12 +38,13 @@ export default async function handler(req,res){
       .trim();
     const tokenList=s=>normalize(s).split(' ').filter(Boolean);
     let correct=false;
-    if(['mcq','true_false','complete'].includes(q.type)){
-      const a=normalize(studentAnswer), b=normalize(q.answer);
-      if(q.type==='complete'){
-        const at=tokenList(studentAnswer), bt=tokenList(q.answer);
-        correct=a===b || (at.length===bt.length && at.every((t,i)=>t===bt[i]));
-      }else correct=a===b;
+    const accepted=[q.answer,...(Array.isArray(q.accepted_answers)?q.accepted_answers:[])].filter(x=>x!==null&&x!==undefined&&String(x).trim()!=='');
+    const exactTypes=['mcq','reading_mcq','true_false','complete','dialogue_complete','correct_form','correction','punctuation','reorder','solve'];
+    const answerMatches=accepted.some(ans=>normalize(studentAnswer)===normalize(ans));
+    if(exactTypes.includes(q.type)){
+      correct=answerMatches;
+    }else if(answerMatches){
+      correct=true;
     }else{
       const key=process.env.OPENAI_API_KEY;
       if(!key){
