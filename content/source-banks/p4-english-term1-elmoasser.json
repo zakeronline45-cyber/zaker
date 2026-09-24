@@ -17,8 +17,9 @@
     "note": "This uploaded PDF ends with review on Units 1, 2 and 3; Units 4-6 are not present in this file."
   },
   "extraction_status": {
-    "unit_1_lesson_1": "verified",
-    "remaining": "pending_next_ingestion_pass"
+    "unit_1_lesson_1": "in_progress_verified_pages_24_28_59",
+    "remaining": "pending_next_ingestion_pass",
+    "note": "More Lesson 1 questions from Unit 1 sample tests/review pages remain to be ingested before marking the lesson complete."
   },
   "units": [
     {
