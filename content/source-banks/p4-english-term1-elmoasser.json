@@ -4669,7 +4669,7 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "Ancient Egyptian houses had beautiful ______.",
-              "answer": "courtyards",
+              "answer": "designs",
               "status": "active",
               "choices": [
                 "designs",
@@ -6823,7 +6823,7 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Elephants need big ______ to move around.",
-              "answer": "spaces",
+              "answer": "space",
               "status": "active",
               "choices": [
                 "food",
@@ -7431,8 +7431,8 @@
               "section": "Previous Exams",
               "printed_page": 129,
               "type": "mcq",
-              "prompt": "The ______ understands the lion's trick.",
-              "answer": "fox",
+              "prompt": "The ______ fox understands the lion's trick.",
+              "answer": "wise",
               "status": "active",
               "choices": [
                 "healthy",
