@@ -125,10 +125,19 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}.hero{display:flex;justify
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+async function requireAdminMFA(nextPath){
+ const {data,error}=await sb.auth.mfa.getAuthenticatorAssuranceLevel();
+ if(!error&&data?.nextLevel==='aal2'&&data?.currentLevel!=='aal2'){
+   location.href='/admin-security.html?next='+encodeURIComponent(nextPath||location.pathname+location.search);
+   return false;
+ }
+ return true;
+}
 let adminSession=null;
 async function requireAdmin(){
  const x=await sb.auth.getSession();adminSession=x.data.session;
  if(!adminSession){location.href='/login.html?next=/admin.html';return false}
+ if(!(await requireAdminMFA('/admin.html')))return false;
  const {data}=await sb.from('profiles').select('role').eq('id',adminSession.user.id).limit(1);
  if(data?.[0]?.role!=='admin'){location.href='/account.html';return false}
  localStorage.removeItem('zaker_active_child_id');localStorage.removeItem('zaker_student_track');document.body.style.visibility='visible';try{await sb.rpc('log_app_event',{p_event_type:'admin_page_view',p_page:'/admin.html',p_child_id:null,p_details:{}})}catch(e){}return true;
