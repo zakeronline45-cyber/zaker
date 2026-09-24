@@ -1,6 +1,10 @@
+import {requireAdmin} from './_security.js';
 import { generateText } from 'ai';
 
 export default async function handler(req, res) {
+  if(req.method!=='GET') return res.status(405).json({error:'Method not allowed'});
+  const authCtx=await requireAdmin(req,res,{bucket:'ai-check',limit:5,windowSeconds:60});
+  if(!authCtx)return;
   const hasKey = Boolean(process.env.AI_GATEWAY_API_KEY);
   try {
     const { text } = await generateText({
