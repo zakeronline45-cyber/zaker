@@ -452,7 +452,7 @@ async function submitAnswer(){
  document.querySelectorAll('button,textarea').forEach(x=>{if(x.closest('#testArea'))x.disabled=true});
  document.getElementById('submitMsg').innerHTML='<div class="submitted">تم تسجيل إجابتك... جاري الانتقال للسؤال التالي.</div>';
  let correct=false;
- try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lesson:q.lesson||lesson,id:q.id,studentAnswer,studyLanguage})});const j=await r.json();correct=!!j.correct}catch(e){}
+ try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+authSession.access_token},body:JSON.stringify({lesson:q.lesson||lesson,id:q.id,studentAnswer,studyLanguage})});const j=await r.json();correct=!!j.correct}catch(e){}
  answers.push({lesson:q.lesson||lesson,lessonTitle:titles[q.lesson||lesson],questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct});
  setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},450)
 }
@@ -462,7 +462,7 @@ async function finishTest(){
  document.getElementById('testArea').innerHTML='<div class="result"><p>انتهى الاختبار</p><b>'+pct+'%</b><p>جاري تحليل أخطائك وتحديد ما تحتاج لمراجعته...</p></div>';
  let feedback={summary:'',topics:[],plan:[]};
  try{
-   const r=await fetch('/api/test-feedback',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lessonTitle:testScopeLabel,wrongAnswers:wrong})});
+   const r=await fetch('/api/test-feedback',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+authSession.access_token},body:JSON.stringify({lessonTitle:testScopeLabel,wrongAnswers:wrong})});
    if(r.ok) feedback=await r.json();
  }catch(e){}
  feedback=completeFeedback(feedback,wrong,pct);
@@ -587,7 +587,7 @@ async function renderProfile(){
 }
 function label(t){const en=window.zakerLang?.()==='en';return (en?{mcq:'Multiple Choice',true_false:'True / False',complete:'Complete',reason:'Give Reason',compare:'Compare',problem:'Problem'}:{mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'})[t]||t}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent=window.zakerLang?.()==='en'?'Thinking about your question...':'بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'Science',grade:({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||(window.zakerLang?.()==='en'?'No response received':'لم يصل رد')}catch(e){a.textContent=(window.zakerLang?.()==='en'?'Something went wrong: ':'حصلت مشكلة: ')+e.message}}
+async function askAI(){const q=document.getElementById('aiQuestion').value.trim(),a=document.getElementById('aiAnswer');if(!q)return;a.style.display='block';a.textContent=window.zakerLang?.()==='en'?'Thinking about your question...':'بفكر في سؤالك...';try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+authSession.access_token},body:JSON.stringify({question:q,subject:'Science',grade:({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||(window.zakerLang?.()==='en'?'No response received':'لم يصل رد')}catch(e){a.textContent=(window.zakerLang?.()==='en'?'Something went wrong: ':'حصلت مشكلة: ')+e.message}}
 async function initAccount(){
   const {data}=await sb.auth.getSession();authSession=data.session;
   if(!authSession){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return}
@@ -642,7 +642,7 @@ function showSiteHelp(){
 async function askFloatingAI(){
  const q=document.getElementById('floatingAiQuestion').value.trim(),a=document.getElementById('floatingAiAnswer');if(!q)return;
  a.style.display='block';a.textContent='بفكر في سؤالك...';
- try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,grade:({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}
+ try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+authSession.access_token},body:JSON.stringify({question:q,grade:({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[activeChildGrade]||'أولى إعدادي'),lesson:titles[lesson],studyLanguage,sessionId:aiSessionId})});const j=await r.json();if(!r.ok)throw new Error(j.error||'تعذر تشغيل المدرس');a.textContent=j.answer||'لم يصل رد'}catch(e){a.textContent='حصلت مشكلة: '+e.message}
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 initAccount();
