@@ -67,6 +67,8 @@ function syncSubjectNav(){
 }
 function approvedQuestion(q){
  if(!q||!q.text)return false;
+ if(q.status&&q.status!=='active')return false;
+ if(q.answer===null||q.answer===undefined||q.answer==='')return false;
  if(cfg.math&&(q.type==='reason'||/^\s*(explain|why)\b/i.test(String(q.text))))return false;
  return true;
 }
@@ -86,7 +88,7 @@ async function init(){
  studentName.textContent=child.full_name;studentGrade.textContent=window.zakerT('رابعة ابتدائي','Primary 4');studentTrack.textContent=window.zakerLang?.()==='en'?(child.track==='arabic'?'Arabic Track':'Languages Track'):(child.track==='arabic'?'مسار عربي':'مسار Languages');subjectName.textContent=cfg.name;sideTitle.textContent=cfg.name+' — '+window.zakerT('رابعة ابتدائي','Primary 4')+' — '+window.zakerT('الترم الأول','Term 1');aiTitle.textContent=window.zakerLang?.()==='en'?'Zaker Tutor — '+cfg.name:'مدرس ذاكر — '+cfg.name;
  document.body.dataset.studyLang=cfg.lang;syncSubjectNav();
  document.querySelectorAll('.mathOnly').forEach(x=>x.style.display=cfg.math?'':'none');document.querySelectorAll('.nonMath').forEach(x=>x.style.display=cfg.math?'none':'');
- const r=await fetch(cfg.file,{cache:'no-store'});data=await r.json();moduleCount.textContent=data.modules.length;questionCount.textContent=data.modules.reduce((a,m)=>a+(m.questions||[]).filter(approvedQuestion).length,0);renderList();selectModule(Number(new URLSearchParams(location.search).get('module'))||1);const view=new URLSearchParams(location.search).get('view');if(['learn','ai','test','profile'].includes(view))setPane(view)
+ const r=await fetch(cfg.file,{cache:'no-store'});const root=await r.json();if(Array.isArray(root.moduleFiles)&&root.moduleFiles.length){const parts=await Promise.all(root.moduleFiles.map(async f=>{const rr=await fetch(f,{cache:'no-store'});if(!rr.ok)throw new Error('Question bank part unavailable: '+f);return rr.json()}));data={...root,modules:parts.flatMap(x=>x.modules||[])};}else data=root;moduleCount.textContent=data.modules.length;questionCount.textContent=data.modules.reduce((a,m)=>a+(m.questions||[]).filter(approvedQuestion).length,0);renderList();selectModule(Number(new URLSearchParams(location.search).get('module'))||1);const view=new URLSearchParams(location.search).get('view');if(['learn','ai','test','profile'].includes(view))setPane(view)
 }
 function renderList(){
  let last='';lessonList.innerHTML=data.modules.map(m=>{const u=m.unit||m.section||'';const h=u!==last?'<div class="unit-title">'+esc(u)+'</div>':'';last=u;return h+'<button class="lesson" data-id="'+m.id+'" onclick="selectModule('+m.id+')">'+esc(m.title)+(m.kind?' <small>— '+esc(m.kind)+'</small>':'')+'</button>'}).join('');
