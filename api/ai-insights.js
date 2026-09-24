@@ -1,6 +1,5 @@
 import {requireAdmin} from './_security.js';
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
-const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './_config.js';
 
 export default async function handler(req,res){
   if(req.method!=='GET') return res.status(405).json({error:'Method not allowed'});
@@ -10,7 +9,7 @@ export default async function handler(req,res){
     if(!token) return res.status(401).json({error:'Unauthorized'});
     const ar=await fetch(SUPABASE_URL+'/rest/v1/rpc/is_admin',{
       method:'POST',
-      headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
+      headers:{'apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
       body:'{}'
     });
     const isAdmin=await ar.json().catch(()=>false);
@@ -18,7 +17,7 @@ export default async function handler(req,res){
 
     const r=await fetch(SUPABASE_URL+'/rest/v1/rpc/get_cohort_question_insights',{
       method:'POST',
-      headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
+      headers:{'apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
       body:JSON.stringify({p_subject:'Science'})
     });
     const rows=await r.json();
