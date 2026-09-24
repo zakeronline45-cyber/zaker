@@ -9,7 +9,7 @@
     "Bit by Bit English Primary 4 First Term 2027",
     "El-Moasser English Primary 4 First Term 2027"
   ],
-  "merge_policy": "Exact normalized question dedupe; source answers preserved; conflicts excluded.",
+  "merge_policy": "Passage-aware normalized dedupe; source answers preserved; unresolved answer conflicts excluded.",
   "modules": [
     {
       "id": 5,
@@ -49,6 +49,9 @@
               "page": 69,
               "id": "elm-u2l1-008"
             }
+          ],
+          "accepted_answers": [
+            "volunteer"
           ]
         },
         {
@@ -311,6 +314,9 @@
               "page": 72,
               "id": "elm-u2l1-028"
             }
+          ],
+          "accepted_answers": [
+            "collect clothes"
           ]
         },
         {
@@ -339,7 +345,37 @@
               "id": "elm-u2l1-029"
             }
           ],
-          "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
+          "accepted_answers": [
+            "two"
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q015",
+          "type": "reading_open",
+          "text": "How does Farida help her community?",
+          "answer": "She cleans trash from the street, plants trees in the park, and feeds dogs and cats.",
+          "source_page": 51,
+          "status": "active",
+          "accepted_answers": [
+            "She cleans trash from the street and plants trees in the park.",
+            "She cleans trash, plants trees and feeds dogs and cats.",
+            "She cleans trash from the street, plants trees, and feeds dogs and cats.",
+            "She cleans trash and plants trees.",
+            "She cleans trash from the street, plants trees in the park, and feeds dogs and cats."
+          ],
+          "passage_ref": "bbb-u2l1-013",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 51,
+              "id": "bbb-u2l1-015"
+            },
+            {
+              "source": "El-Moasser",
+              "page": 72,
+              "id": "elm-u2l1-030"
+            }
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q016",
@@ -500,8 +536,7 @@
               "page": 73,
               "id": "bbb-u2r-015"
             }
-          ],
-          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q025",
@@ -622,8 +657,7 @@
               "page": 75,
               "id": "bbb-u2r-031"
             }
-          ],
-          "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q031",
@@ -1244,8 +1278,7 @@
               "page": 72,
               "id": "elm-u2l1-026"
             }
-          ],
-          "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q058",
@@ -1270,8 +1303,7 @@
               "page": 72,
               "id": "elm-u2l1-027"
             }
-          ],
-          "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q059",
@@ -1410,8 +1442,7 @@
               "page": 105,
               "id": "elm-u2r-012"
             }
-          ],
-          "passage": "Dear diary, Today, Grandpa told me amazing stories about our community's history. Fifty years ago, our neighborhood was very different! There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning. The tall buildings weren't here then. Instead, there were small houses with beautiful gardens. Everyone knew their neighbors, and children played safely in the streets. There was even a small train station where our park is now! Grandpa showed me old photos. It was a very nice day."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q065",
@@ -1436,8 +1467,7 @@
               "page": 105,
               "id": "elm-u2r-013"
             }
-          ],
-          "passage": "Dear diary, Today, Grandpa told me amazing stories about our community's history. Fifty years ago, our neighborhood was very different! There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning. The tall buildings weren't here then. Instead, there were small houses with beautiful gardens. Everyone knew their neighbors, and children played safely in the streets. There was even a small train station where our park is now! Grandpa showed me old photos. It was a very nice day."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q066",
@@ -1461,8 +1491,7 @@
               "page": 106,
               "id": "elm-u2r-014"
             }
-          ],
-          "passage": "Dear diary, Today, Grandpa told me amazing stories about our community's history. Fifty years ago, our neighborhood was very different! There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning. The tall buildings weren't here then. Instead, there were small houses with beautiful gardens. Everyone knew their neighbors, and children played safely in the streets. There was even a small train station where our park is now! Grandpa showed me old photos. It was a very nice day."
+          ]
         },
         {
           "id": "p4-eng-u2-l1-q067",
@@ -1516,24 +1545,6 @@
           "printed_page": 106,
           "pdf_page": 100,
           "type": "correct_form",
-          "prompt": "Our teacher ______ (don't) give us homework on holidays.",
-          "answer": "doesn't",
-          "status": "active",
-          "text": "Our teacher ______ (don't) give us homework on holidays.",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 106,
-              "id": "elm-u2r-018"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q070",
-          "section": "Sample Test 3",
-          "printed_page": 106,
-          "pdf_page": 100,
-          "type": "correct_form",
           "prompt": "______ (Do) Ehab go running in the morning?",
           "answer": "Does",
           "status": "active",
@@ -1547,7 +1558,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q071",
+          "id": "p4-eng-u2-l1-q070",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
@@ -1565,7 +1576,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q072",
+          "id": "p4-eng-u2-l1-q071",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
@@ -1583,7 +1594,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q073",
+          "id": "p4-eng-u2-l1-q072",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1607,7 +1618,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q074",
+          "id": "p4-eng-u2-l1-q073",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1631,7 +1642,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q075",
+          "id": "p4-eng-u2-l1-q074",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1655,7 +1666,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q076",
+          "id": "p4-eng-u2-l1-q075",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1679,7 +1690,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q077",
+          "id": "p4-eng-u2-l1-q076",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1700,11 +1711,10 @@
               "page": 107,
               "id": "elm-u2r-032"
             }
-          ],
-          "passage": "My name is Ahmed. I live in Cairo. I have a lot of problems in my community. One of these problems is traffic. There are many cars and buses on the roads. This makes traffic very slow. We wait for a long time in traffic. I am always late for work. The traffic is a very dangerous problem. My neighbors and I decided to use buses or bicycles instead of our private cars."
+          ]
         },
         {
-          "id": "p4-eng-u2-l1-q078",
+          "id": "p4-eng-u2-l1-q077",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1725,11 +1735,10 @@
               "page": 107,
               "id": "elm-u2r-033"
             }
-          ],
-          "passage": "My name is Ahmed. I live in Cairo. I have a lot of problems in my community. One of these problems is traffic. There are many cars and buses on the roads. This makes traffic very slow. We wait for a long time in traffic. I am always late for work. The traffic is a very dangerous problem. My neighbors and I decided to use buses or bicycles instead of our private cars."
+          ]
         },
         {
-          "id": "p4-eng-u2-l1-q079",
+          "id": "p4-eng-u2-l1-q078",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -1750,11 +1759,10 @@
               "page": 107,
               "id": "elm-u2r-034"
             }
-          ],
-          "passage": "My name is Ahmed. I live in Cairo. I have a lot of problems in my community. One of these problems is traffic. There are many cars and buses on the roads. This makes traffic very slow. We wait for a long time in traffic. I am always late for work. The traffic is a very dangerous problem. My neighbors and I decided to use buses or bicycles instead of our private cars."
+          ]
         },
         {
-          "id": "p4-eng-u2-l1-q080",
+          "id": "p4-eng-u2-l1-q079",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -1775,11 +1783,10 @@
               "page": 108,
               "id": "elm-u2r-035"
             }
-          ],
-          "passage": "My name is Ahmed. I live in Cairo. I have a lot of problems in my community. One of these problems is traffic. There are many cars and buses on the roads. This makes traffic very slow. We wait for a long time in traffic. I am always late for work. The traffic is a very dangerous problem. My neighbors and I decided to use buses or bicycles instead of our private cars."
+          ]
         },
         {
-          "id": "p4-eng-u2-l1-q081",
+          "id": "p4-eng-u2-l1-q080",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -1803,7 +1810,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q082",
+          "id": "p4-eng-u2-l1-q081",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -1825,7 +1832,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q083",
+          "id": "p4-eng-u2-l1-q082",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -2050,6 +2057,9 @@
               "page": 77,
               "id": "elm-u2l2-017"
             }
+          ],
+          "accepted_answers": [
+            "Do"
           ]
         },
         {
@@ -2157,6 +2167,9 @@
               "page": 79,
               "id": "elm-u2l2-047"
             }
+          ],
+          "accepted_answers": [
+            "Does"
           ]
         },
         {
@@ -2177,6 +2190,9 @@
               "page": 77,
               "id": "elm-u2l2-024"
             }
+          ],
+          "accepted_answers": [
+            "study"
           ]
         },
         {
@@ -2212,6 +2228,9 @@
               "page": 79,
               "id": "elm-u2l2-048"
             }
+          ],
+          "accepted_answers": [
+            "doesn't eat"
           ]
         },
         {
@@ -2307,6 +2326,9 @@
               "page": 108,
               "id": "elm-u2r-042"
             }
+          ],
+          "accepted_answers": [
+            "have"
           ]
         },
         {
@@ -2528,8 +2550,7 @@
               "page": 73,
               "id": "bbb-u2r-014"
             }
-          ],
-          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q036",
@@ -2551,8 +2572,7 @@
               "page": 73,
               "id": "bbb-u2r-016"
             }
-          ],
-          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q037",
@@ -2574,8 +2594,7 @@
               "page": 73,
               "id": "bbb-u2r-017"
             }
-          ],
-          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q038",
@@ -2725,8 +2744,7 @@
               "page": 75,
               "id": "bbb-u2r-032"
             }
-          ],
-          "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q045",
@@ -2791,6 +2809,9 @@
               "page": 108,
               "id": "elm-u2r-044"
             }
+          ],
+          "accepted_answers": [
+            "Does Ahmed like cats?"
           ]
         },
         {
@@ -3431,8 +3452,7 @@
               "page": 78,
               "id": "elm-u2l2-030"
             }
-          ],
-          "passage": "Trash is one of the biggest problems in my neighborhood. It is a very dangerous problem because it can make many people ill. This problem happens because people don't put trash in bins. They throw the trash on the ground so the streets look dirty. Solving this problem isn't easy. So my parents get together with our neighbors and find a solution to this problem. We put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q077",
@@ -3456,8 +3476,7 @@
               "page": 78,
               "id": "elm-u2l2-031"
             }
-          ],
-          "passage": "Trash is one of the biggest problems in my neighborhood. It is a very dangerous problem because it can make many people ill. This problem happens because people don't put trash in bins. They throw the trash on the ground so the streets look dirty. Solving this problem isn't easy. So my parents get together with our neighbors and find a solution to this problem. We put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q078",
@@ -3479,8 +3498,7 @@
               "page": 78,
               "id": "elm-u2l2-032"
             }
-          ],
-          "passage": "Trash is one of the biggest problems in my neighborhood. It is a very dangerous problem because it can make many people ill. This problem happens because people don't put trash in bins. They throw the trash on the ground so the streets look dirty. Solving this problem isn't easy. So my parents get together with our neighbors and find a solution to this problem. We put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q079",
@@ -3502,8 +3520,7 @@
               "page": 78,
               "id": "elm-u2l2-033"
             }
-          ],
-          "passage": "Trash is one of the biggest problems in my neighborhood. It is a very dangerous problem because it can make many people ill. This problem happens because people don't put trash in bins. They throw the trash on the ground so the streets look dirty. Solving this problem isn't easy. So my parents get together with our neighbors and find a solution to this problem. We put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q080",
@@ -3525,8 +3542,7 @@
               "page": 78,
               "id": "elm-u2l2-034"
             }
-          ],
-          "passage": "Trash is one of the biggest problems in my neighborhood. It is a very dangerous problem because it can make many people ill. This problem happens because people don't put trash in bins. They throw the trash on the ground so the streets look dirty. Solving this problem isn't easy. So my parents get together with our neighbors and find a solution to this problem. We put bins everywhere."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q081",
@@ -3882,11 +3898,28 @@
               "page": 105,
               "id": "elm-u2r-011"
             }
-          ],
-          "passage": "Dear diary, Today, Grandpa told me amazing stories about our community's history. Fifty years ago, our neighborhood was very different! There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning. The tall buildings weren't here then. Instead, there were small houses with beautiful gardens. Everyone knew their neighbors, and children played safely in the streets. There was even a small train station where our park is now! Grandpa showed me old photos. It was a very nice day."
+          ]
         },
         {
           "id": "p4-eng-u2-l2-q098",
+          "section": "Sample Test 3",
+          "printed_page": 106,
+          "pdf_page": 100,
+          "type": "correct_form",
+          "prompt": "Our teacher ______ (don't) give us homework on holidays.",
+          "answer": "doesn't",
+          "status": "active",
+          "text": "Our teacher ______ (don't) give us homework on holidays.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 106,
+              "id": "elm-u2r-018"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l2-q099",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
@@ -3904,7 +3937,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q099",
+          "id": "p4-eng-u2-l2-q100",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
@@ -3922,7 +3955,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q100",
+          "id": "p4-eng-u2-l2-q101",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -3946,7 +3979,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q101",
+          "id": "p4-eng-u2-l2-q102",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
@@ -3970,7 +4003,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q102",
+          "id": "p4-eng-u2-l2-q103",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -3992,7 +4025,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q103",
+          "id": "p4-eng-u2-l2-q104",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -4010,7 +4043,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q104",
+          "id": "p4-eng-u2-l2-q105",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -4028,7 +4061,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q105",
+          "id": "p4-eng-u2-l2-q106",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
@@ -4212,6 +4245,9 @@
               "page": 89,
               "id": "elm-u2l3-042"
             }
+          ],
+          "accepted_answers": [
+            "Upper"
           ]
         },
         {
@@ -4240,7 +4276,9 @@
               "id": "elm-u2l3-043"
             }
           ],
-          "passage": "Northern Egypt has the Delta with rice fields and factories. People wear modern clothes or traditional galabeyas. Southern Upper Egypt has sugar cane farms and hand-made carpets. Nubian villages have bright houses. Both regions share holidays and delicious food. Egyptians work hard, but always make time for family and celebrations. Their culture is old, but still strong today. Egyptians are always proud of their culture and traditions."
+          "accepted_answers": [
+            "galabeyas"
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q009",
@@ -4290,7 +4328,9 @@
               "id": "elm-u2l3-045"
             }
           ],
-          "passage": "Northern Egypt has the Delta with rice fields and factories. People wear modern clothes or traditional galabeyas. Southern Upper Egypt has sugar cane farms and hand-made carpets. Nubian villages have bright houses. Both regions share holidays and delicious food. Egyptians work hard, but always make time for family and celebrations. Their culture is old, but still strong today. Egyptians are always proud of their culture and traditions."
+          "accepted_answers": [
+            "sugar cane"
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q011",
@@ -4334,8 +4374,7 @@
               "page": 63,
               "id": "bbb-u2l3-012"
             }
-          ],
-          "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q013",
@@ -4355,8 +4394,7 @@
               "page": 63,
               "id": "bbb-u2l3-013"
             }
-          ],
-          "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q014",
@@ -4376,8 +4414,7 @@
               "page": 63,
               "id": "bbb-u2l3-014"
             }
-          ],
-          "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q015",
@@ -4520,8 +4557,7 @@
               "page": 75,
               "id": "bbb-u2r-030"
             }
-          ],
-          "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q024",
@@ -5445,8 +5481,7 @@
               "page": 89,
               "id": "elm-u2l3-044"
             }
-          ],
-          "passage": "Northern Egypt has the Delta with rice fields and factories. People wear modern clothes or traditional galabeyas. Southern Upper Egypt has sugar cane farms and hand-made carpets. Nubian villages have bright houses. Both regions share holidays and delicious food. Egyptians work hard, but always make time for family and celebrations. Their culture is old, but still strong today. Egyptians are always proud of their culture and traditions."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q067",
@@ -5470,8 +5505,7 @@
               "page": 89,
               "id": "elm-u2l3-046"
             }
-          ],
-          "passage": "Northern Egypt has the Delta with rice fields and factories. People wear modern clothes or traditional galabeyas. Southern Upper Egypt has sugar cane farms and hand-made carpets. Nubian villages have bright houses. Both regions share holidays and delicious food. Egyptians work hard, but always make time for family and celebrations. Their culture is old, but still strong today. Egyptians are always proud of their culture and traditions."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q068",
@@ -5495,8 +5529,7 @@
               "page": 89,
               "id": "elm-u2l3-047"
             }
-          ],
-          "passage": "Northern Egypt has the Delta with rice fields and factories. People wear modern clothes or traditional galabeyas. Southern Upper Egypt has sugar cane farms and hand-made carpets. Nubian villages have bright houses. Both regions share holidays and delicious food. Egyptians work hard, but always make time for family and celebrations. Their culture is old, but still strong today. Egyptians are always proud of their culture and traditions."
+          ]
         },
         {
           "id": "p4-eng-u2-l3-q069",
@@ -5676,6 +5709,9 @@
               "page": 91,
               "id": "elm-u2l4-009"
             }
+          ],
+          "accepted_answers": [
+            "stands"
           ]
         },
         {
@@ -5702,6 +5738,9 @@
               "page": 91,
               "id": "elm-u2l4-008"
             }
+          ],
+          "accepted_answers": [
+            "taxi"
           ]
         },
         {
@@ -5999,6 +6038,9 @@
               "page": 96,
               "id": "elm-u2l4-026"
             }
+          ],
+          "accepted_answers": [
+            "put"
           ]
         },
         {
@@ -6034,6 +6076,9 @@
               "page": 96,
               "id": "elm-u2l4-028"
             }
+          ],
+          "accepted_answers": [
+            "Does"
           ]
         },
         {
@@ -6529,8 +6574,7 @@
               "page": 95,
               "id": "elm-u2l4-019"
             }
-          ],
-          "passage": "Hana's grandpa told her about their neighborhood's history. Fifty years ago, it was very quiet. There were small houses with beautiful gardens. Instead of the big supermarkets, there was an old market with wooden stalls. People sold fresh vegetables and fruits every morning. Everyone knew their neighbors and children played safely in the streets."
+          ]
         },
         {
           "id": "p4-eng-u2-l4-q041",
@@ -6548,8 +6592,7 @@
               "page": 95,
               "id": "elm-u2l4-020"
             }
-          ],
-          "passage": "Hana's grandpa told her about their neighborhood's history. Fifty years ago, it was very quiet. There were small houses with beautiful gardens. Instead of the big supermarkets, there was an old market with wooden stalls. People sold fresh vegetables and fruits every morning. Everyone knew their neighbors and children played safely in the streets."
+          ]
         },
         {
           "id": "p4-eng-u2-l4-q042",
@@ -6567,8 +6610,7 @@
               "page": 95,
               "id": "elm-u2l4-021"
             }
-          ],
-          "passage": "Hana's grandpa told her about their neighborhood's history. Fifty years ago, it was very quiet. There were small houses with beautiful gardens. Instead of the big supermarkets, there was an old market with wooden stalls. People sold fresh vegetables and fruits every morning. Everyone knew their neighbors and children played safely in the streets."
+          ]
         },
         {
           "id": "p4-eng-u2-l4-q043",
