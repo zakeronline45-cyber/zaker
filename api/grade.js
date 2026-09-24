@@ -1,36 +1,30 @@
 import {requireUser} from './_security.js';
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
   const authCtx=await requireUser(req,res,{bucket:'grade',limit:180,windowSeconds:60});
   if(!authCtx)return;
-  const {subject='Science',lesson,module,id,studentAnswer,studyLanguage='English'}=req.body||{};
+  const {subject='Science',lesson,module,id,childId,studentAnswer,studyLanguage='English'}=req.body||{};
   const modularSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
-  if(!id || (subject==='Science'&&!lesson) || (modularSubjects.includes(subject)&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
+  if(!id || !childId || (subject==='Science'&&!lesson) || (modularSubjects.includes(subject)&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
   try{
-    const host=req.headers.host;
-    const proto=(req.headers['x-forwarded-proto']||'https');
-    let q=null;
-    if(modularSubjects.includes(subject)){
-      const fileMap={
-        'Arabic':'arabic-term1.json','Social Studies':'social-studies-term1.json','Math':'math-term1.json','Mathematics Arabic':'math-ar-term1.json','English':'english-term1.json',
-        'P4 Math':'p4-math-term1.json','P4 Mathematics Arabic':'p4-math-ar-term1.json','P4 Science':'p4-science-term1.json','P4 Science Arabic':'p4-science-ar-term1.json',
-        'P4 English':'p4-english-term1.json','P4 Arabic':'p4-arabic-term1.json','P4 Social Studies':'p4-social-studies-term1.json'
-      };
-      const file=fileMap[subject];
-      const r=await fetch(`${proto}://${host}/content/${file}`,{cache:'no-store'});
-      if(!r.ok) return res.status(404).json({error:subject+' question bank unavailable'});
-      const bank=await r.json();
-      let modules=bank.modules||[];
-      if(Array.isArray(bank.moduleFiles)&&bank.moduleFiles.length){
-        const parts=await Promise.all(bank.moduleFiles.map(async p=>{const pr=await fetch(`${proto}://${host}${p}`,{cache:'no-store'});if(!pr.ok)return {modules:[]};return pr.json()}));
-        modules=parts.flatMap(x=>x.modules||[]);
-      }
-      q=modules.find(x=>Number(x.id)===Number(module))?.questions?.find(x=>x.id===id);
-    }else{
-      const r=await fetch(`${proto}://${host}/content/questions/science-term1-u1-l${lesson}.json`,{cache:'no-store'});
-      if(!r.ok) return res.status(404).json({error:'بنك الأسئلة غير متاح'});
-      const bank=await r.json();
-      q=bank.questions?.find(x=>x.id===id);
+    const kr=await fetch(SUPABASE_URL+'/rest/v1/rpc/get_authorized_question_key',{
+      method:'POST',
+      headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+authCtx.token,'Content-Type':'application/json'},
+      body:JSON.stringify({
+        p_child_id:childId,
+        p_subject:subject,
+        p_module_key:modularSubjects.includes(subject)?String(module||''):'',
+        p_lesson_no:subject==='Science'?(Number(lesson)||0):0,
+        p_question_id:String(id)
+      })
+    });
+    const q=await kr.json().catch(()=>null);
+    if(!kr.ok){
+      const msg=String(q?.message||q?.error||'تعذر التحقق من السؤال');
+      const status=/subscription required|student access denied/i.test(msg)?403:400;
+      return res.status(status).json({error:msg});
     }
     if(!q) return res.status(404).json({error:'السؤال غير موجود'});
     const normalize=s=>String(s??'')
@@ -72,6 +66,6 @@ export default async function handler(req,res){
         correct=/CORRECT/i.test(out)&&!/INCORRECT/i.test(out);
       }
     }
-    return res.status(200).json({correct});
+    return res.status(200).json({correct,correctAnswer:correct?null:q.answer});
   }catch(e){return res.status(500).json({error:e?.message||'تعذر تصحيح الإجابة'})}
 }
