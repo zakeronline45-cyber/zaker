@@ -1,6 +1,5 @@
 import crypto from 'crypto';
-
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
+import {SUPABASE_URL} from './_config.js';
 
 function v(x){
  if(x===null||x===undefined) return '';
@@ -40,34 +39,62 @@ export default async function handler(req,res){
  try{
    const obj=req.body?.obj||req.body;
    if(!obj?.order?.id) return res.status(400).json({error:'Invalid callback'});
+
    const received=req.query?.hmac||req.headers['x-paymob-hmac'];
-   if(!verifyHmac(obj,received,process.env.PAYMOB_HMAC_SECRET)) return res.status(401).json({error:'Invalid HMAC'});
+   if(!verifyHmac(obj,received,process.env.PAYMOB_HMAC_SECRET)) {
+     return res.status(401).json({error:'Invalid HMAC'});
+   }
 
    const orderId=String(obj.order.id);
-   const rows=await sb('payments?provider_order_id=eq.'+encodeURIComponent(orderId)+'&select=id,subscription_id,status,amount_egp');
+   const rows=await sb('payments?provider_order_id=eq.'+encodeURIComponent(orderId)+'&select=id,subscription_id,status,amount_egp,currency');
    const p=rows?.[0];
    if(!p) return res.status(404).json({error:'Payment not found'});
 
+   const expectedAmount=Math.round(Number(p.amount_egp||0)*100);
+   const callbackAmount=Number(obj.amount_cents||0);
+   const expectedCurrency=String(p.currency||'EGP').toUpperCase();
+   const callbackCurrency=String(obj.currency||'').toUpperCase();
+   const expectedIntegration=Number(process.env.PAYMOB_INTEGRATION_ID||0);
+   const callbackIntegration=Number(obj.integration_id||0);
+
+   if(expectedAmount<=0 || callbackAmount!==expectedAmount || callbackCurrency!==expectedCurrency) {
+     return res.status(400).json({error:'Payment amount or currency mismatch'});
+   }
+   if(expectedIntegration && callbackIntegration!==expectedIntegration) {
+     return res.status(400).json({error:'Payment integration mismatch'});
+   }
+
    const paid=!!obj.success && !obj.pending && !obj.error_occured && !obj.is_refunded && !obj.is_voided;
+
+   // Never allow a later duplicate/failed callback to downgrade a completed payment.
+   if(p.status==='paid' && !paid) {
+     return res.status(200).json({received:true,ignored:true});
+   }
+
    const status=paid?'paid':'failed';
+   const now=new Date().toISOString();
 
    await sb('payments?id=eq.'+p.id,{method:'PATCH',body:{
      status,
      provider_transaction_id:String(obj.id||''),
      raw_callback:req.body,
-     paid_at:paid?new Date().toISOString():null
+     ...(paid?{paid_at:now}:{})
    }});
 
    if(p.subscription_id){
      if(paid){
-       const start=new Date(),end=new Date(start);end.setDate(end.getDate()+30);
+       const start=new Date(),end=new Date(start);
+       end.setDate(end.getDate()+30);
        await sb('subscriptions?id=eq.'+p.subscription_id,{method:'PATCH',body:{
-         status:'active',starts_at:start.toISOString(),ends_at:end.toISOString(),updated_at:new Date().toISOString()
+         status:'active',starts_at:start.toISOString(),ends_at:end.toISOString(),updated_at:now
        }});
      }else{
-       await sb('subscriptions?id=eq.'+p.subscription_id,{method:'PATCH',body:{
-         status:'failed',updated_at:new Date().toISOString()
-       }});
+       const subs=await sb('subscriptions?id=eq.'+p.subscription_id+'&select=status');
+       if(subs?.[0]?.status!=='active'){
+         await sb('subscriptions?id=eq.'+p.subscription_id,{method:'PATCH',body:{
+           status:'failed',updated_at:now
+         }});
+       }
      }
    }
    return res.status(200).json({received:true});
