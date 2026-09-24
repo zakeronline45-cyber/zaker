@@ -1,5 +1,8 @@
+import {requireUser} from './_security.js';
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
+  const authCtx=await requireUser(req,res,{bucket:'localize-test',limit:12,windowSeconds:60});
+  if(!authCtx)return;
   const apiKey=process.env.OPENAI_API_KEY;
   const {questions=[],targetLanguage='English'}=req.body||{};
   if(!Array.isArray(questions)) return res.status(400).json({error:'Invalid questions'});
