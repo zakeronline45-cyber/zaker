@@ -104,8 +104,7 @@
             "ebook",
             "social media",
             "tablet"
-          ],
-          "answer": "digital"
+          ]
         },
         {
           "id": "e1-m1-002",
@@ -117,8 +116,7 @@
             "screen time",
             "social media",
             "tablet"
-          ],
-          "answer": "tablet"
+          ]
         },
         {
           "id": "e1-m1-003",
@@ -130,8 +128,7 @@
             "screen time",
             "social media",
             "website"
-          ],
-          "answer": "ebook"
+          ]
         },
         {
           "id": "e1-m1-004",
@@ -143,8 +140,7 @@
             "screen time",
             "social media",
             "website"
-          ],
-          "answer": "social media"
+          ]
         },
         {
           "id": "e1-m1-005",
@@ -156,8 +152,7 @@
             "screen time",
             "search",
             "website"
-          ],
-          "answer": "screen time"
+          ]
         },
         {
           "id": "e1-m1-006",
@@ -169,22 +164,19 @@
             "night mode",
             "search",
             "website"
-          ],
-          "answer": "website"
+          ]
         },
         {
           "id": "e1-m1-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Using computer technology or electronic devices: ______.",
-          "answer": "digital"
+          "text": "Complete with the correct word: Using computer technology or electronic devices: ______."
         },
         {
           "id": "e1-m1-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a portable computer with a touch screen\" is ______.",
-          "answer": "tablet"
+          "text": "Complete: A word from this module that means \"a portable computer with a touch screen\" is ______."
         },
         {
           "id": "e1-m1-009",
@@ -196,8 +188,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Present Simple for facts, habits and daily routines."
+          ]
         },
         {
           "id": "e1-m1-010",
@@ -209,8 +200,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about a day in my digital life & how we use technology."
+          ]
         },
         {
           "id": "e1-m1-011",
@@ -222,22 +212,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "ebook"
+          ]
         },
         {
           "id": "e1-m1-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"social media\" in a correct sentence related to Life in a Digital World.",
-          "answer": "A correct meaningful sentence using \"social media\" in context."
+          "text": "Use the word \"social media\" in a correct sentence related to Life in a Digital World."
         },
         {
           "id": "e1-m1-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: A Day in My Digital Life & How We Use Technology. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: A Day in My Digital Life & How We Use Technology. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -301,8 +288,7 @@
             "printer",
             "tasks",
             "webcam"
-          ],
-          "answer": "tasks"
+          ]
         },
         {
           "id": "e1-m2-002",
@@ -314,8 +300,7 @@
             "microphone",
             "printer",
             "webcam"
-          ],
-          "answer": "webcam"
+          ]
         },
         {
           "id": "e1-m2-003",
@@ -327,8 +312,7 @@
             "keyboard",
             "microphone",
             "printer"
-          ],
-          "answer": "microphone"
+          ]
         },
         {
           "id": "e1-m2-004",
@@ -340,8 +324,7 @@
             "headphones",
             "keyboard",
             "printer"
-          ],
-          "answer": "printer"
+          ]
         },
         {
           "id": "e1-m2-005",
@@ -353,8 +336,7 @@
             "headphones",
             "keyboard",
             "smartboard"
-          ],
-          "answer": "keyboard"
+          ]
         },
         {
           "id": "e1-m2-006",
@@ -366,22 +348,19 @@
             "headphones",
             "smartboard",
             "tasks"
-          ],
-          "answer": "headphones"
+          ]
         },
         {
           "id": "e1-m2-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Jobs or pieces of work: ______.",
-          "answer": "tasks"
+          "text": "Complete with the correct word: Jobs or pieces of work: ______."
         },
         {
           "id": "e1-m2-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a small camera used for video calls\" is ______.",
-          "answer": "webcam"
+          "text": "Complete: A word from this module that means \"a small camera used for video calls\" is ______."
         },
         {
           "id": "e1-m2-009",
@@ -393,8 +372,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Be used to + infinitive explains the purpose of an object."
+          ]
         },
         {
           "id": "e1-m2-010",
@@ -406,8 +384,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about digital devices."
+          ]
         },
         {
           "id": "e1-m2-011",
@@ -419,22 +396,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "microphone"
+          ]
         },
         {
           "id": "e1-m2-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"printer\" in a correct sentence related to Life in a Digital World.",
-          "answer": "A correct meaningful sentence using \"printer\" in context."
+          "text": "Use the word \"printer\" in a correct sentence related to Life in a Digital World."
         },
         {
           "id": "e1-m2-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Digital Devices. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Digital Devices. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -498,8 +472,7 @@
             "performance",
             "safety",
             "trust"
-          ],
-          "answer": "trust"
+          ]
         },
         {
           "id": "e1-m3-002",
@@ -511,8 +484,7 @@
             "performance",
             "routine",
             "safety"
-          ],
-          "answer": "safety"
+          ]
         },
         {
           "id": "e1-m3-003",
@@ -524,8 +496,7 @@
             "news",
             "performance",
             "routine"
-          ],
-          "answer": "performance"
+          ]
         },
         {
           "id": "e1-m3-004",
@@ -537,8 +508,7 @@
             "latest",
             "news",
             "routine"
-          ],
-          "answer": "latest"
+          ]
         },
         {
           "id": "e1-m3-005",
@@ -550,8 +520,7 @@
             "news",
             "respectful",
             "routine"
-          ],
-          "answer": "routine"
+          ]
         },
         {
           "id": "e1-m3-006",
@@ -563,22 +532,19 @@
             "news",
             "respectful",
             "trust"
-          ],
-          "answer": "news"
+          ]
         },
         {
           "id": "e1-m3-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: To believe someone is honest: ______.",
-          "answer": "trust"
+          "text": "Complete with the correct word: To believe someone is honest: ______."
         },
         {
           "id": "e1-m3-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"the state of being protected\" is ______.",
-          "answer": "safety"
+          "text": "Complete: A word from this module that means \"the state of being protected\" is ______."
         },
         {
           "id": "e1-m3-009",
@@ -590,8 +556,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Capital letters are used at the beginning of sentences and for names, places, languages and nationalities."
+          ]
         },
         {
           "id": "e1-m3-010",
@@ -603,8 +568,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about an email to a friend & team-project roundtable."
+          ]
         },
         {
           "id": "e1-m3-011",
@@ -616,22 +580,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "performance"
+          ]
         },
         {
           "id": "e1-m3-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"latest\" in a correct sentence related to Life in a Digital World.",
-          "answer": "A correct meaningful sentence using \"latest\" in context."
+          "text": "Use the word \"latest\" in a correct sentence related to Life in a Digital World."
         },
         {
           "id": "e1-m3-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: An Email to a Friend & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: An Email to a Friend & Team-Project Roundtable. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -695,8 +656,7 @@
             "goal",
             "kinesthetic",
             "visual"
-          ],
-          "answer": "auditory"
+          ]
         },
         {
           "id": "e1-m4-002",
@@ -708,8 +668,7 @@
             "goal",
             "kinesthetic",
             "visual"
-          ],
-          "answer": "kinesthetic"
+          ]
         },
         {
           "id": "e1-m4-003",
@@ -721,8 +680,7 @@
             "goal",
             "research",
             "visual"
-          ],
-          "answer": "visual"
+          ]
         },
         {
           "id": "e1-m4-004",
@@ -734,8 +692,7 @@
             "goal",
             "habit",
             "research"
-          ],
-          "answer": "goal"
+          ]
         },
         {
           "id": "e1-m4-005",
@@ -747,8 +704,7 @@
             "habit",
             "research",
             "solution"
-          ],
-          "answer": "challenge"
+          ]
         },
         {
           "id": "e1-m4-006",
@@ -760,22 +716,19 @@
             "habit",
             "research",
             "solution"
-          ],
-          "answer": "research"
+          ]
         },
         {
           "id": "e1-m4-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Related to hearing: ______.",
-          "answer": "auditory"
+          "text": "Complete with the correct word: Related to hearing: ______."
         },
         {
           "id": "e1-m4-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"related to hands-on physical actions\" is ______.",
-          "answer": "kinesthetic"
+          "text": "Complete: A word from this module that means \"related to hands-on physical actions\" is ______."
         },
         {
           "id": "e1-m4-009",
@@ -787,8 +740,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Can / can't describe ability."
+          ]
         },
         {
           "id": "e1-m4-010",
@@ -800,8 +752,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about my learning journey & learning challenges and solutions."
+          ]
         },
         {
           "id": "e1-m4-011",
@@ -813,22 +764,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "visual"
+          ]
         },
         {
           "id": "e1-m4-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"goal\" in a correct sentence related to Learning to Learn.",
-          "answer": "A correct meaningful sentence using \"goal\" in context."
+          "text": "Use the word \"goal\" in a correct sentence related to Learning to Learn."
         },
         {
           "id": "e1-m4-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: My Learning Journey & Learning Challenges and Solutions. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: My Learning Journey & Learning Challenges and Solutions. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -892,8 +840,7 @@
             "confident",
             "cooperation",
             "leadership"
-          ],
-          "answer": "benefit"
+          ]
         },
         {
           "id": "e1-m5-002",
@@ -905,8 +852,7 @@
             "cooperation",
             "creative",
             "leadership"
-          ],
-          "answer": "cooperation"
+          ]
         },
         {
           "id": "e1-m5-003",
@@ -918,8 +864,7 @@
             "confident",
             "creative",
             "leadership"
-          ],
-          "answer": "leadership"
+          ]
         },
         {
           "id": "e1-m5-004",
@@ -931,8 +876,7 @@
             "confident",
             "creative",
             "develop"
-          ],
-          "answer": "confident"
+          ]
         },
         {
           "id": "e1-m5-005",
@@ -944,8 +888,7 @@
             "creative",
             "develop",
             "solutions"
-          ],
-          "answer": "creative"
+          ]
         },
         {
           "id": "e1-m5-006",
@@ -957,22 +900,19 @@
             "communicate",
             "develop",
             "solutions"
-          ],
-          "answer": "communicate"
+          ]
         },
         {
           "id": "e1-m5-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A helpful result or advantage: ______.",
-          "answer": "benefit"
+          "text": "Complete with the correct word: A helpful result or advantage: ______."
         },
         {
           "id": "e1-m5-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"working together\" is ______.",
-          "answer": "cooperation"
+          "text": "Complete: A word from this module that means \"working together\" is ______."
         },
         {
           "id": "e1-m5-009",
@@ -984,8 +924,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use can to talk about what teamwork can help people do."
+          ]
         },
         {
           "id": "e1-m5-010",
@@ -997,8 +936,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about benefits of learning together."
+          ]
         },
         {
           "id": "e1-m5-011",
@@ -1010,22 +948,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "leadership"
+          ]
         },
         {
           "id": "e1-m5-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"confident\" in a correct sentence related to Learning to Learn.",
-          "answer": "A correct meaningful sentence using \"confident\" in context."
+          "text": "Use the word \"confident\" in a correct sentence related to Learning to Learn."
         },
         {
           "id": "e1-m5-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Benefits of Learning Together. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Benefits of Learning Together. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -1089,8 +1024,7 @@
             "plan",
             "practice",
             "record"
-          ],
-          "answer": "plan"
+          ]
         },
         {
           "id": "e1-m6-002",
@@ -1102,8 +1036,7 @@
             "practice",
             "pronunciation",
             "record"
-          ],
-          "answer": "practice"
+          ]
         },
         {
           "id": "e1-m6-003",
@@ -1115,8 +1048,7 @@
             "habit",
             "pronunciation",
             "record"
-          ],
-          "answer": "communication"
+          ]
         },
         {
           "id": "e1-m6-004",
@@ -1128,8 +1060,7 @@
             "indicate",
             "pronunciation",
             "record"
-          ],
-          "answer": "record"
+          ]
         },
         {
           "id": "e1-m6-005",
@@ -1141,8 +1072,7 @@
             "indicate",
             "pronunciation",
             "reflect"
-          ],
-          "answer": "pronunciation"
+          ]
         },
         {
           "id": "e1-m6-006",
@@ -1154,22 +1084,19 @@
             "indicate",
             "plan",
             "reflect"
-          ],
-          "answer": "habit"
+          ]
         },
         {
           "id": "e1-m6-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A detailed way of doing something: ______.",
-          "answer": "plan"
+          "text": "Complete with the correct word: A detailed way of doing something: ______."
         },
         {
           "id": "e1-m6-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"regular training to improve\" is ______.",
-          "answer": "practice"
+          "text": "Complete: A word from this module that means \"regular training to improve\" is ______."
         },
         {
           "id": "e1-m6-009",
@@ -1181,8 +1108,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use future intentions and study-plan language clearly."
+          ]
         },
         {
           "id": "e1-m6-010",
@@ -1194,8 +1120,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about my learning plan & team-project roundtable."
+          ]
         },
         {
           "id": "e1-m6-011",
@@ -1207,22 +1132,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "communication"
+          ]
         },
         {
           "id": "e1-m6-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"record\" in a correct sentence related to Learning to Learn.",
-          "answer": "A correct meaningful sentence using \"record\" in context."
+          "text": "Use the word \"record\" in a correct sentence related to Learning to Learn."
         },
         {
           "id": "e1-m6-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: My Learning Plan & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: My Learning Plan & Team-Project Roundtable. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -1286,8 +1208,7 @@
             "hero",
             "respect",
             "role model"
-          ],
-          "answer": "hero"
+          ]
         },
         {
           "id": "e1-m7-002",
@@ -1299,8 +1220,7 @@
             "determined",
             "respect",
             "role model"
-          ],
-          "answer": "role model"
+          ]
         },
         {
           "id": "e1-m7-003",
@@ -1312,8 +1232,7 @@
             "determined",
             "qualities",
             "respect"
-          ],
-          "answer": "respect"
+          ]
         },
         {
           "id": "e1-m7-004",
@@ -1325,8 +1244,7 @@
             "brave",
             "determined",
             "qualities"
-          ],
-          "answer": "determined"
+          ]
         },
         {
           "id": "e1-m7-005",
@@ -1338,8 +1256,7 @@
             "brave",
             "inspire",
             "qualities"
-          ],
-          "answer": "achievement"
+          ]
         },
         {
           "id": "e1-m7-006",
@@ -1351,22 +1268,19 @@
             "hero",
             "inspire",
             "qualities"
-          ],
-          "answer": "qualities"
+          ]
         },
         {
           "id": "e1-m7-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A person admired for brave or great actions: ______.",
-          "answer": "hero"
+          "text": "Complete with the correct word: A person admired for brave or great actions: ______."
         },
         {
           "id": "e1-m7-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a person whose behavior others want to follow\" is ______.",
-          "answer": "role model"
+          "text": "Complete: A word from this module that means \"a person whose behavior others want to follow\" is ______."
         },
         {
           "id": "e1-m7-009",
@@ -1378,8 +1292,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Past Simple describes completed actions in the past."
+          ]
         },
         {
           "id": "e1-m7-010",
@@ -1391,8 +1304,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about an egyptian hero & heroes and role models."
+          ]
         },
         {
           "id": "e1-m7-011",
@@ -1404,22 +1316,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "respect"
+          ]
         },
         {
           "id": "e1-m7-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"determined\" in a correct sentence related to Role Models.",
-          "answer": "A correct meaningful sentence using \"determined\" in context."
+          "text": "Use the word \"determined\" in a correct sentence related to Role Models."
         },
         {
           "id": "e1-m7-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: An Egyptian Hero & Heroes and Role Models. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: An Egyptian Hero & Heroes and Role Models. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -1483,8 +1392,7 @@
             "award",
             "powerful",
             "university"
-          ],
-          "answer": "university"
+          ]
         },
         {
           "id": "e1-m8-002",
@@ -1496,8 +1404,7 @@
             "award",
             "personality",
             "powerful"
-          ],
-          "answer": "award"
+          ]
         },
         {
           "id": "e1-m8-003",
@@ -1509,8 +1416,7 @@
             "geographer",
             "personality",
             "powerful"
-          ],
-          "answer": "agreement"
+          ]
         },
         {
           "id": "e1-m8-004",
@@ -1522,8 +1428,7 @@
             "geographer",
             "personality",
             "powerful"
-          ],
-          "answer": "powerful"
+          ]
         },
         {
           "id": "e1-m8-005",
@@ -1535,8 +1440,7 @@
             "geographer",
             "location",
             "personality"
-          ],
-          "answer": "personality"
+          ]
         },
         {
           "id": "e1-m8-006",
@@ -1548,22 +1452,19 @@
             "geographer",
             "location",
             "university"
-          ],
-          "answer": "geographer"
+          ]
         },
         {
           "id": "e1-m8-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A place for higher education: ______.",
-          "answer": "university"
+          "text": "Complete with the correct word: A place for higher education: ______."
         },
         {
           "id": "e1-m8-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a prize for achievement\" is ______.",
-          "answer": "award"
+          "text": "Complete: A word from this module that means \"a prize for achievement\" is ______."
         },
         {
           "id": "e1-m8-009",
@@ -1575,8 +1476,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use Past Simple to describe a person's life and achievements."
+          ]
         },
         {
           "id": "e1-m8-010",
@@ -1588,8 +1488,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about a great egyptian thinker — dr. gomaa hamdan."
+          ]
         },
         {
           "id": "e1-m8-011",
@@ -1601,22 +1500,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "agreement"
+          ]
         },
         {
           "id": "e1-m8-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"powerful\" in a correct sentence related to Role Models.",
-          "answer": "A correct meaningful sentence using \"powerful\" in context."
+          "text": "Use the word \"powerful\" in a correct sentence related to Role Models."
         },
         {
           "id": "e1-m8-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: A Great Egyptian Thinker — Dr. Gomaa Hamdan. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: A Great Egyptian Thinker — Dr. Gomaa Hamdan. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -1680,8 +1576,7 @@
             "dedication",
             "disease",
             "patient"
-          ],
-          "answer": "patient"
+          ]
         },
         {
           "id": "e1-m9-002",
@@ -1693,8 +1588,7 @@
             "dedication",
             "disease",
             "overcome"
-          ],
-          "answer": "disease"
+          ]
         },
         {
           "id": "e1-m9-003",
@@ -1706,8 +1600,7 @@
             "dedication",
             "kidney",
             "overcome"
-          ],
-          "answer": "biography"
+          ]
         },
         {
           "id": "e1-m9-004",
@@ -1719,8 +1612,7 @@
             "kidney",
             "overcome",
             "transplant"
-          ],
-          "answer": "dedication"
+          ]
         },
         {
           "id": "e1-m9-005",
@@ -1732,8 +1624,7 @@
             "kidney",
             "overcome",
             "transplant"
-          ],
-          "answer": "overcome"
+          ]
         },
         {
           "id": "e1-m9-006",
@@ -1745,22 +1636,19 @@
             "kidney",
             "patient",
             "transplant"
-          ],
-          "answer": "kidney"
+          ]
         },
         {
           "id": "e1-m9-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A person receiving medical treatment: ______.",
-          "answer": "patient"
+          "text": "Complete with the correct word: A person receiving medical treatment: ______."
         },
         {
           "id": "e1-m9-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"an illness\" is ______.",
-          "answer": "disease"
+          "text": "Complete: A word from this module that means \"an illness\" is ______."
         },
         {
           "id": "e1-m9-009",
@@ -1772,8 +1660,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use Past Simple and present facts in a biography."
+          ]
         },
         {
           "id": "e1-m9-010",
@@ -1785,8 +1672,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about a hero who made a difference — dr. mohamed ghoneim & team-project roundtable."
+          ]
         },
         {
           "id": "e1-m9-011",
@@ -1798,22 +1684,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "biography"
+          ]
         },
         {
           "id": "e1-m9-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"dedication\" in a correct sentence related to Role Models.",
-          "answer": "A correct meaningful sentence using \"dedication\" in context."
+          "text": "Use the word \"dedication\" in a correct sentence related to Role Models."
         },
         {
           "id": "e1-m9-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: A Hero Who Made a Difference — Dr. Mohamed Ghoneim & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: A Hero Who Made a Difference — Dr. Mohamed Ghoneim & Team-Project Roundtable. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -1877,8 +1760,7 @@
             "consequence",
             "decision",
             "negative"
-          ],
-          "answer": "decision"
+          ]
         },
         {
           "id": "e1-m10-002",
@@ -1890,8 +1772,7 @@
             "consequence",
             "negative",
             "valuable"
-          ],
-          "answer": "affect"
+          ]
         },
         {
           "id": "e1-m10-003",
@@ -1903,8 +1784,7 @@
             "lesson",
             "negative",
             "valuable"
-          ],
-          "answer": "negative"
+          ]
         },
         {
           "id": "e1-m10-004",
@@ -1916,8 +1796,7 @@
             "consequence",
             "lesson",
             "valuable"
-          ],
-          "answer": "consequence"
+          ]
         },
         {
           "id": "e1-m10-005",
@@ -1929,8 +1808,7 @@
             "lesson",
             "responsible",
             "valuable"
-          ],
-          "answer": "valuable"
+          ]
         },
         {
           "id": "e1-m10-006",
@@ -1942,22 +1820,19 @@
             "decision",
             "lesson",
             "responsible"
-          ],
-          "answer": "lesson"
+          ]
         },
         {
           "id": "e1-m10-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A choice made after thinking: ______.",
-          "answer": "decision"
+          "text": "Complete with the correct word: A choice made after thinking: ______."
         },
         {
           "id": "e1-m10-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"to cause a change in something\" is ______.",
-          "answer": "affect"
+          "text": "Complete: A word from this module that means \"to cause a change in something\" is ______."
         },
         {
           "id": "e1-m10-009",
@@ -1969,8 +1844,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use should / shouldn't to give advice."
+          ]
         },
         {
           "id": "e1-m10-010",
@@ -1982,8 +1856,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about think before you choose & decisions and consequences."
+          ]
         },
         {
           "id": "e1-m10-011",
@@ -1995,22 +1868,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "negative"
+          ]
         },
         {
           "id": "e1-m10-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"consequence\" in a correct sentence related to Smart Choices.",
-          "answer": "A correct meaningful sentence using \"consequence\" in context."
+          "text": "Use the word \"consequence\" in a correct sentence related to Smart Choices."
         },
         {
           "id": "e1-m10-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Think Before You Choose & Decisions and Consequences. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Think Before You Choose & Decisions and Consequences. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -2074,8 +1944,7 @@
             "influence",
             "problem-solving",
             "tough"
-          ],
-          "answer": "athlete"
+          ]
         },
         {
           "id": "e1-m11-002",
@@ -2087,8 +1956,7 @@
             "problem-solving",
             "risk",
             "tough"
-          ],
-          "answer": "tough"
+          ]
         },
         {
           "id": "e1-m11-003",
@@ -2100,8 +1968,7 @@
             "influence",
             "problem-solving",
             "risk"
-          ],
-          "answer": "problem-solving"
+          ]
         },
         {
           "id": "e1-m11-004",
@@ -2113,8 +1980,7 @@
             "influence",
             "injury",
             "risk"
-          ],
-          "answer": "influence"
+          ]
         },
         {
           "id": "e1-m11-005",
@@ -2126,8 +1992,7 @@
             "injury",
             "recover",
             "risk"
-          ],
-          "answer": "risk"
+          ]
         },
         {
           "id": "e1-m11-006",
@@ -2139,22 +2004,19 @@
             "impact",
             "injury",
             "recover"
-          ],
-          "answer": "impact"
+          ]
         },
         {
           "id": "e1-m11-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A person who competes in sports: ______.",
-          "answer": "athlete"
+          "text": "Complete with the correct word: A person who competes in sports: ______."
         },
         {
           "id": "e1-m11-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"difficult or hard\" is ______.",
-          "answer": "tough"
+          "text": "Complete: A word from this module that means \"difficult or hard\" is ______."
         },
         {
           "id": "e1-m11-009",
@@ -2166,8 +2028,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Should / shouldn't give advice about risk and training."
+          ]
         },
         {
           "id": "e1-m11-010",
@@ -2179,8 +2040,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about an interview with an athlete."
+          ]
         },
         {
           "id": "e1-m11-011",
@@ -2192,22 +2052,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "problem-solving"
+          ]
         },
         {
           "id": "e1-m11-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"influence\" in a correct sentence related to Smart Choices.",
-          "answer": "A correct meaningful sentence using \"influence\" in context."
+          "text": "Use the word \"influence\" in a correct sentence related to Smart Choices."
         },
         {
           "id": "e1-m11-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: An Interview with an Athlete. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: An Interview with an Athlete. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -2271,8 +2128,7 @@
             "emotion",
             "nervous",
             "stressed"
-          ],
-          "answer": "nervous"
+          ]
         },
         {
           "id": "e1-m12-002",
@@ -2284,8 +2140,7 @@
             "emotion",
             "explore",
             "stressed"
-          ],
-          "answer": "emotion"
+          ]
         },
         {
           "id": "e1-m12-003",
@@ -2297,8 +2152,7 @@
             "explore",
             "option",
             "stressed"
-          ],
-          "answer": "effectively"
+          ]
         },
         {
           "id": "e1-m12-004",
@@ -2310,8 +2164,7 @@
             "explore",
             "option",
             "stressed"
-          ],
-          "answer": "stressed"
+          ]
         },
         {
           "id": "e1-m12-005",
@@ -2323,8 +2176,7 @@
             "evaluate",
             "explore",
             "option"
-          ],
-          "answer": "explore"
+          ]
         },
         {
           "id": "e1-m12-006",
@@ -2336,22 +2188,19 @@
             "evaluate",
             "nervous",
             "option"
-          ],
-          "answer": "option"
+          ]
         },
         {
           "id": "e1-m12-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Worried or anxious: ______.",
-          "answer": "nervous"
+          "text": "Complete with the correct word: Worried or anxious: ______."
         },
         {
           "id": "e1-m12-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a feeling such as happiness or anger\" is ______.",
-          "answer": "emotion"
+          "text": "Complete: A word from this module that means \"a feeling such as happiness or anger\" is ______."
         },
         {
           "id": "e1-m12-009",
@@ -2363,8 +2212,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use should / shouldn't for advice."
+          ]
         },
         {
           "id": "e1-m12-010",
@@ -2376,8 +2224,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about asking for and giving advice & team-project roundtable."
+          ]
         },
         {
           "id": "e1-m12-011",
@@ -2389,22 +2236,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "effectively"
+          ]
         },
         {
           "id": "e1-m12-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"stressed\" in a correct sentence related to Smart Choices.",
-          "answer": "A correct meaningful sentence using \"stressed\" in context."
+          "text": "Use the word \"stressed\" in a correct sentence related to Smart Choices."
         },
         {
           "id": "e1-m12-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Asking for and Giving Advice & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Asking for and Giving Advice & Team-Project Roundtable. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -2468,8 +2312,7 @@
             "ambition",
             "career",
             "confidence"
-          ],
-          "answer": "achievement"
+          ]
         },
         {
           "id": "e1-m13-002",
@@ -2481,8 +2324,7 @@
             "career",
             "confidence",
             "develop"
-          ],
-          "answer": "ambition"
+          ]
         },
         {
           "id": "e1-m13-003",
@@ -2494,8 +2336,7 @@
             "confidence",
             "develop",
             "experiment"
-          ],
-          "answer": "confidence"
+          ]
         },
         {
           "id": "e1-m13-004",
@@ -2507,8 +2348,7 @@
             "develop",
             "experiment",
             "scientist"
-          ],
-          "answer": "career"
+          ]
         },
         {
           "id": "e1-m13-005",
@@ -2520,8 +2360,7 @@
             "develop",
             "experiment",
             "scientist"
-          ],
-          "answer": "develop"
+          ]
         },
         {
           "id": "e1-m13-006",
@@ -2533,22 +2372,19 @@
             "chemistry",
             "experiment",
             "scientist"
-          ],
-          "answer": "experiment"
+          ]
         },
         {
           "id": "e1-m13-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Something important you have succeeded in doing: ______.",
-          "answer": "achievement"
+          "text": "Complete with the correct word: Something important you have succeeded in doing: ______."
         },
         {
           "id": "e1-m13-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a strong desire to achieve something\" is ______.",
-          "answer": "ambition"
+          "text": "Complete: A word from this module that means \"a strong desire to achieve something\" is ______."
         },
         {
           "id": "e1-m13-009",
@@ -2560,8 +2396,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use will and be going to to talk about the future."
+          ]
         },
         {
           "id": "e1-m13-010",
@@ -2573,8 +2408,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about discover your future! & an interview with a scientist."
+          ]
         },
         {
           "id": "e1-m13-011",
@@ -2586,22 +2420,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "confidence"
+          ]
         },
         {
           "id": "e1-m13-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"career\" in a correct sentence related to Future Dreams.",
-          "answer": "A correct meaningful sentence using \"career\" in context."
+          "text": "Use the word \"career\" in a correct sentence related to Future Dreams."
         },
         {
           "id": "e1-m13-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Discover Your Future! & An Interview with a Scientist. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Discover Your Future! & An Interview with a Scientist. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -2665,8 +2496,7 @@
             "success",
             "university",
             "wish"
-          ],
-          "answer": "success"
+          ]
         },
         {
           "id": "e1-m14-002",
@@ -2678,8 +2508,7 @@
             "talent",
             "university",
             "wish"
-          ],
-          "answer": "skill"
+          ]
         },
         {
           "id": "e1-m14-003",
@@ -2691,8 +2520,7 @@
             "talent",
             "university",
             "wish"
-          ],
-          "answer": "wish"
+          ]
         },
         {
           "id": "e1-m14-004",
@@ -2704,8 +2532,7 @@
             "talent",
             "training",
             "university"
-          ],
-          "answer": "university"
+          ]
         },
         {
           "id": "e1-m14-005",
@@ -2717,8 +2544,7 @@
             "education",
             "talent",
             "training"
-          ],
-          "answer": "talent"
+          ]
         },
         {
           "id": "e1-m14-006",
@@ -2730,22 +2556,19 @@
             "education",
             "success",
             "training"
-          ],
-          "answer": "education"
+          ]
         },
         {
           "id": "e1-m14-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: The achievement of a goal: ______.",
-          "answer": "success"
+          "text": "Complete with the correct word: The achievement of a goal: ______."
         },
         {
           "id": "e1-m14-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"an ability developed through practice\" is ______.",
-          "answer": "skill"
+          "text": "Complete: A word from this module that means \"an ability developed through practice\" is ______."
         },
         {
           "id": "e1-m14-009",
@@ -2757,8 +2580,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use future forms to describe plans and predictions."
+          ]
         },
         {
           "id": "e1-m14-010",
@@ -2770,8 +2592,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about my plan for a future career."
+          ]
         },
         {
           "id": "e1-m14-011",
@@ -2783,22 +2604,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "wish"
+          ]
         },
         {
           "id": "e1-m14-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"university\" in a correct sentence related to Future Dreams.",
-          "answer": "A correct meaningful sentence using \"university\" in context."
+          "text": "Use the word \"university\" in a correct sentence related to Future Dreams."
         },
         {
           "id": "e1-m14-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: My Plan for a Future Career. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: My Plan for a Future Career. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -2862,8 +2680,7 @@
             "owner",
             "prediction",
             "review"
-          ],
-          "answer": "owner"
+          ]
         },
         {
           "id": "e1-m15-002",
@@ -2875,8 +2692,7 @@
             "prediction",
             "review",
             "treat"
-          ],
-          "answer": "prediction"
+          ]
         },
         {
           "id": "e1-m15-003",
@@ -2888,8 +2704,7 @@
             "focused",
             "review",
             "treat"
-          ],
-          "answer": "focused"
+          ]
         },
         {
           "id": "e1-m15-004",
@@ -2901,8 +2716,7 @@
             "course",
             "review",
             "treat"
-          ],
-          "answer": "review"
+          ]
         },
         {
           "id": "e1-m15-005",
@@ -2914,8 +2728,7 @@
             "course",
             "inspire",
             "treat"
-          ],
-          "answer": "treat"
+          ]
         },
         {
           "id": "e1-m15-006",
@@ -2927,22 +2740,19 @@
             "course",
             "inspire",
             "owner"
-          ],
-          "answer": "caring"
+          ]
         },
         {
           "id": "e1-m15-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A person who owns something: ______.",
-          "answer": "owner"
+          "text": "Complete with the correct word: A person who owns something: ______."
         },
         {
           "id": "e1-m15-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a statement about what may happen\" is ______.",
-          "answer": "prediction"
+          "text": "Complete: A word from this module that means \"a statement about what may happen\" is ______."
         },
         {
           "id": "e1-m15-009",
@@ -2954,8 +2764,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use future language for dream jobs and predictions."
+          ]
         },
         {
           "id": "e1-m15-010",
@@ -2967,8 +2776,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about my dream job! & team-project roundtable."
+          ]
         },
         {
           "id": "e1-m15-011",
@@ -2980,22 +2788,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "focused"
+          ]
         },
         {
           "id": "e1-m15-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"review\" in a correct sentence related to Future Dreams.",
-          "answer": "A correct meaningful sentence using \"review\" in context."
+          "text": "Use the word \"review\" in a correct sentence related to Future Dreams."
         },
         {
           "id": "e1-m15-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: My Dream Job! & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: My Dream Job! & Team-Project Roundtable. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -3059,8 +2864,7 @@
             "culture",
             "globe",
             "volunteer"
-          ],
-          "answer": "citizen"
+          ]
         },
         {
           "id": "e1-m16-002",
@@ -3072,8 +2876,7 @@
             "globe",
             "peace",
             "volunteer"
-          ],
-          "answer": "globe"
+          ]
         },
         {
           "id": "e1-m16-003",
@@ -3085,8 +2888,7 @@
             "environment",
             "peace",
             "volunteer"
-          ],
-          "answer": "culture"
+          ]
         },
         {
           "id": "e1-m16-004",
@@ -3098,8 +2900,7 @@
             "peace",
             "rights",
             "volunteer"
-          ],
-          "answer": "volunteer"
+          ]
         },
         {
           "id": "e1-m16-005",
@@ -3111,8 +2912,7 @@
             "peace",
             "responsibility",
             "rights"
-          ],
-          "answer": "peace"
+          ]
         },
         {
           "id": "e1-m16-006",
@@ -3124,22 +2924,19 @@
             "environment",
             "responsibility",
             "rights"
-          ],
-          "answer": "environment"
+          ]
         },
         {
           "id": "e1-m16-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A member of a country or community: ______.",
-          "answer": "citizen"
+          "text": "Complete with the correct word: A member of a country or community: ______."
         },
         {
           "id": "e1-m16-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"the world\" is ______.",
-          "answer": "globe"
+          "text": "Complete: A word from this module that means \"the world\" is ______."
         },
         {
           "id": "e1-m16-009",
@@ -3151,8 +2948,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use obligation and responsibility language: must, should, have to."
+          ]
         },
         {
           "id": "e1-m16-010",
@@ -3164,8 +2960,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about being a global citizen & global citizen talk."
+          ]
         },
         {
           "id": "e1-m16-011",
@@ -3177,22 +2972,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "culture"
+          ]
         },
         {
           "id": "e1-m16-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"volunteer\" in a correct sentence related to Global Citizens.",
-          "answer": "A correct meaningful sentence using \"volunteer\" in context."
+          "text": "Use the word \"volunteer\" in a correct sentence related to Global Citizens."
         },
         {
           "id": "e1-m16-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Being a Global Citizen & Global Citizen Talk. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Being a Global Citizen & Global Citizen Talk. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -3256,8 +3048,7 @@
             "diversity",
             "global responsibility",
             "impact"
-          ],
-          "answer": "diversity"
+          ]
         },
         {
           "id": "e1-m17-002",
@@ -3269,8 +3060,7 @@
             "global responsibility",
             "impact",
             "participate"
-          ],
-          "answer": "impact"
+          ]
         },
         {
           "id": "e1-m17-003",
@@ -3282,8 +3072,7 @@
             "generation",
             "global responsibility",
             "participate"
-          ],
-          "answer": "danger"
+          ]
         },
         {
           "id": "e1-m17-004",
@@ -3295,8 +3084,7 @@
             "global responsibility",
             "participate",
             "reusable"
-          ],
-          "answer": "global responsibility"
+          ]
         },
         {
           "id": "e1-m17-005",
@@ -3308,8 +3096,7 @@
             "participate",
             "reduce",
             "reusable"
-          ],
-          "answer": "participate"
+          ]
         },
         {
           "id": "e1-m17-006",
@@ -3321,22 +3108,19 @@
             "generation",
             "reduce",
             "reusable"
-          ],
-          "answer": "generation"
+          ]
         },
         {
           "id": "e1-m17-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: The state of being different: ______.",
-          "answer": "diversity"
+          "text": "Complete with the correct word: The state of being different: ______."
         },
         {
           "id": "e1-m17-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"a strong effect\" is ______.",
-          "answer": "impact"
+          "text": "Complete: A word from this module that means \"a strong effect\" is ______."
         },
         {
           "id": "e1-m17-009",
@@ -3348,8 +3132,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use must / mustn't and should / shouldn't for environmental responsibility."
+          ]
         },
         {
           "id": "e1-m17-010",
@@ -3361,8 +3144,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about ocean circle."
+          ]
         },
         {
           "id": "e1-m17-011",
@@ -3374,22 +3156,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "danger"
+          ]
         },
         {
           "id": "e1-m17-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"global responsibility\" in a correct sentence related to Global Citizens.",
-          "answer": "A correct meaningful sentence using \"global responsibility\" in context."
+          "text": "Use the word \"global responsibility\" in a correct sentence related to Global Citizens."
         },
         {
           "id": "e1-m17-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Ocean Circle. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Ocean Circle. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -3453,8 +3232,7 @@
             "poster",
             "proud",
             "recycling"
-          ],
-          "answer": "proud"
+          ]
         },
         {
           "id": "e1-m18-002",
@@ -3466,8 +3244,7 @@
             "included",
             "poster",
             "recycling"
-          ],
-          "answer": "care"
+          ]
         },
         {
           "id": "e1-m18-003",
@@ -3479,8 +3256,7 @@
             "included",
             "poster",
             "recycling"
-          ],
-          "answer": "poster"
+          ]
         },
         {
           "id": "e1-m18-004",
@@ -3492,8 +3268,7 @@
             "included",
             "project",
             "recycling"
-          ],
-          "answer": "recycling"
+          ]
         },
         {
           "id": "e1-m18-005",
@@ -3505,8 +3280,7 @@
             "difference",
             "included",
             "project"
-          ],
-          "answer": "included"
+          ]
         },
         {
           "id": "e1-m18-006",
@@ -3518,22 +3292,19 @@
             "difference",
             "project",
             "proud"
-          ],
-          "answer": "difference"
+          ]
         },
         {
           "id": "e1-m18-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Pleased because of something good: ______.",
-          "answer": "proud"
+          "text": "Complete with the correct word: Pleased because of something good: ______."
         },
         {
           "id": "e1-m18-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"to feel concern and take action\" is ______.",
-          "answer": "care"
+          "text": "Complete: A word from this module that means \"to feel concern and take action\" is ______."
         },
         {
           "id": "e1-m18-009",
@@ -3545,8 +3316,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use clear action verbs in campaigns and social media posts."
+          ]
         },
         {
           "id": "e1-m18-010",
@@ -3558,8 +3328,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about let's make a difference & team-project roundtable."
+          ]
         },
         {
           "id": "e1-m18-011",
@@ -3571,22 +3340,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "poster"
+          ]
         },
         {
           "id": "e1-m18-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"recycling\" in a correct sentence related to Global Citizens.",
-          "answer": "A correct meaningful sentence using \"recycling\" in context."
+          "text": "Use the word \"recycling\" in a correct sentence related to Global Citizens."
         },
         {
           "id": "e1-m18-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: Let's Make a Difference & Team-Project Roundtable. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: Let's Make a Difference & Team-Project Roundtable. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -3650,8 +3416,7 @@
             "curious",
             "responsibility",
             "teamwork"
-          ],
-          "answer": "curious"
+          ]
         },
         {
           "id": "e1-m19-002",
@@ -3663,8 +3428,7 @@
             "confident",
             "responsibility",
             "teamwork"
-          ],
-          "answer": "announcement"
+          ]
         },
         {
           "id": "e1-m19-003",
@@ -3676,8 +3440,7 @@
             "responsibility",
             "shy",
             "teamwork"
-          ],
-          "answer": "responsibility"
+          ]
         },
         {
           "id": "e1-m19-004",
@@ -3689,8 +3452,7 @@
             "shy",
             "support",
             "teamwork"
-          ],
-          "answer": "teamwork"
+          ]
         },
         {
           "id": "e1-m19-005",
@@ -3702,8 +3464,7 @@
             "mystery",
             "shy",
             "support"
-          ],
-          "answer": "confident"
+          ]
         },
         {
           "id": "e1-m19-006",
@@ -3715,22 +3476,19 @@
             "mystery",
             "shy",
             "support"
-          ],
-          "answer": "shy"
+          ]
         },
         {
           "id": "e1-m19-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: Wanting to know more: ______.",
-          "answer": "curious"
+          "text": "Complete with the correct word: Wanting to know more: ______."
         },
         {
           "id": "e1-m19-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"important information shared with a group\" is ______.",
-          "answer": "announcement"
+          "text": "Complete: A word from this module that means \"important information shared with a group\" is ______."
         },
         {
           "id": "e1-m19-009",
@@ -3742,8 +3500,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use Past Simple to retell story events."
+          ]
         },
         {
           "id": "e1-m19-010",
@@ -3755,8 +3512,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about the magic classroom."
+          ]
         },
         {
           "id": "e1-m19-011",
@@ -3768,22 +3524,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "responsibility"
+          ]
         },
         {
           "id": "e1-m19-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"teamwork\" in a correct sentence related to Story 1.",
-          "answer": "A correct meaningful sentence using \"teamwork\" in context."
+          "text": "Use the word \"teamwork\" in a correct sentence related to Story 1."
         },
         {
           "id": "e1-m19-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: The Magic Classroom. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: The Magic Classroom. Use vocabulary from the module and correct grammar."
         }
       ]
     },
@@ -3847,8 +3600,7 @@
             "encourage",
             "goal",
             "team"
-          ],
-          "answer": "team"
+          ]
         },
         {
           "id": "e1-m20-002",
@@ -3860,8 +3612,7 @@
             "effort",
             "encourage",
             "goal"
-          ],
-          "answer": "goal"
+          ]
         },
         {
           "id": "e1-m20-003",
@@ -3873,8 +3624,7 @@
             "cooperate",
             "effort",
             "encourage"
-          ],
-          "answer": "challenge"
+          ]
         },
         {
           "id": "e1-m20-004",
@@ -3886,8 +3636,7 @@
             "effort",
             "encourage",
             "improve"
-          ],
-          "answer": "encourage"
+          ]
         },
         {
           "id": "e1-m20-005",
@@ -3899,8 +3648,7 @@
             "effort",
             "improve",
             "success"
-          ],
-          "answer": "effort"
+          ]
         },
         {
           "id": "e1-m20-006",
@@ -3912,22 +3660,19 @@
             "improve",
             "success",
             "team"
-          ],
-          "answer": "cooperate"
+          ]
         },
         {
           "id": "e1-m20-007",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete with the correct word: A group working together: ______.",
-          "answer": "team"
+          "text": "Complete with the correct word: A group working together: ______."
         },
         {
           "id": "e1-m20-008",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Complete: A word from this module that means \"something you want to achieve\" is ______.",
-          "answer": "goal"
+          "text": "Complete: A word from this module that means \"something you want to achieve\" is ______."
         },
         {
           "id": "e1-m20-009",
@@ -3939,8 +3684,7 @@
             "Use random words without a clear sentence structure.",
             "Ignore tense and punctuation completely.",
             "Every sentence must be written in the passive voice."
-          ],
-          "answer": "Use Past Simple to describe story events."
+          ]
         },
         {
           "id": "e1-m20-010",
@@ -3952,8 +3696,7 @@
             "The passage is mainly about a football match only.",
             "The passage is mainly about buying food.",
             "The passage is mainly about ancient monuments."
-          ],
-          "answer": "The passage is mainly about the dream team."
+          ]
         },
         {
           "id": "e1-m20-011",
@@ -3965,22 +3708,19 @@
             "volcano",
             "telescope",
             "currency"
-          ],
-          "answer": "challenge"
+          ]
         },
         {
           "id": "e1-m20-012",
           "type": "rewrite",
           "difficulty": "medium",
-          "text": "Use the word \"encourage\" in a correct sentence related to Story 2.",
-          "answer": "A correct meaningful sentence using \"encourage\" in context."
+          "text": "Use the word \"encourage\" in a correct sentence related to Story 2."
         },
         {
           "id": "e1-m20-013",
           "type": "writing",
           "difficulty": "hard",
-          "text": "Write 4–6 sentences about: The Dream Team. Use vocabulary from the module and correct grammar.",
-          "answer": "A coherent paragraph using relevant vocabulary, correct grammar and clear organization."
+          "text": "Write 4–6 sentences about: The Dream Team. Use vocabulary from the module and correct grammar."
         }
       ]
     }
