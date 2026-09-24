@@ -16,9 +16,18 @@ const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 
+async function requireAdminMFA(nextPath){
+ const {data,error}=await sb.auth.mfa.getAuthenticatorAssuranceLevel();
+ if(!error&&data?.nextLevel==='aal2'&&data?.currentLevel!=='aal2'){
+   location.href='/admin-security.html?next='+encodeURIComponent(nextPath||location.pathname+location.search);
+   return false;
+ }
+ return true;
+}
 async function load(){
  const {data:s}=await sb.auth.getSession();
  if(!s.session){location.href='/login.html?next=/admin-payments.html';return}
+ if(!(await requireAdminMFA('/admin-payments.html')))return;
  const {data,error}=await sb.rpc('get_pending_bank_transfers');
  const status=document.getElementById('status'),list=document.getElementById('list');
  if(error){status.textContent='الحساب الحالي ليس له صلاحية إدارة التحويلات.';return}
