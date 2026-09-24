@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ذاكر | تواصل معنا</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--p:#5b2b82;--o:#ff7418;--line:#eadff0;--bg:#f8f6fa;--m:#766b80;--ink:#241331}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#351044,#742499);color:#fff}.bar{max-width:1050px;margin:auto;min-height:78px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:27px;font-weight:900}.nav{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:11px;padding:10px 13px;font:inherit;font-weight:900;cursor:pointer}.soft{background:#ffffff18;color:#fff;border:1px solid #ffffff42}.wrap{max-width:920px;margin:28px auto;padding:0 16px}.hero,.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 28px #35104410}.hero{text-align:center}.hero h1{margin:0 0 8px}.muted{color:var(--m)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}.contact{display:flex;align-items:center;gap:14px;min-height:105px}.ico{width:54px;height:54px;border-radius:16px;background:#f4eafa;display:grid;place-items:center;font-size:27px}.contact b{display:block;margin-bottom:6px}.contact a{color:var(--p);font-weight:900;word-break:break-word}.empty{text-align:center;margin-top:18px}.home{display:inline-block;margin-top:16px;background:var(--o);color:#fff;padding:11px 16px;border-radius:12px;font-weight:900}@media(max-width:650px){.grid{grid-template-columns:1fr}.bar{align-items:flex-start;padding-top:14px;padding-bottom:14px;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top"><div class="bar"><a class="brand" href="/">🎓 ذاكر</a><div class="nav"><a href="/">الرئيسية</a><a href="/account.html">حسابي</a><select id="zakerLangSwitch" class="btn soft" onchange="setZakerLanguage(this.value)" aria-label="Language"><option value="en">EN</option><option value="ar">AR</option></select></div></div></header>
+<main class="wrap"><section class="hero"><h1>تواصل معنا</h1><p class="muted">اختار وسيلة التواصل المناسبة لك.</p></section><section id="contacts" class="grid"></section><div id="empty" class="card empty" style="display:none">لا توجد وسائل تواصل مفعلة حاليًا.<br><a class="home" href="/">العودة للرئيسية</a></div></main>
+<script src="/zaker-i18n.js"></script>
+<script>
+const sb=supabase.createClient('https://llhmkyighydokneqwrdj.supabase.co','sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77');
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function card(icon,label,value,href){return '<div class="card contact"><div class="ico">'+icon+'</div><div><b>'+label+'</b><a href="'+esc(href)+'" '+(href.startsWith('http')?'target="_blank" rel="noopener"':'')+'>'+esc(value)+'</a></div></div>'}
+async function init(){
+ const {data,error}=await sb.rpc('get_platform_settings');
+ if(error){empty.style.display='block';return}
+ const s=data||{},out=[];
+ if(s.show_phone&&s.contact_phone)out.push(card('📞',window.zakerT('الهاتف','Phone'),s.contact_phone,'tel:'+s.contact_phone.replace(/\s+/g,'')));
+ if(s.show_whatsapp&&s.contact_whatsapp){const n=s.contact_whatsapp.replace(/[^0-9]/g,'');out.push(card('💬','WhatsApp',s.contact_whatsapp,'https://wa.me/'+n))}
+ if(s.show_email&&s.contact_email)out.push(card('✉️',window.zakerT('البريد الإلكتروني','Email'),s.contact_email,'mailto:'+s.contact_email));
+ if(s.show_facebook&&s.contact_facebook)out.push(card('f','Facebook',s.contact_facebook,s.contact_facebook));
+ if(s.show_instagram&&s.contact_instagram)out.push(card('◎','Instagram',s.contact_instagram,s.contact_instagram));
+ contacts.innerHTML=out.join('');
+ empty.style.display=out.length?'none':'block';
+}
+init();
+</script>
+</body></html>
