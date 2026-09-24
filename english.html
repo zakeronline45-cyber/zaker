@@ -162,7 +162,7 @@ async function renderProfile(){
 }
 async function askAI(){
  const q=aiQuestion.value.trim();if(!q)return;aiAnswer.style.display='block';aiAnswer.textContent='Thinking...';
- try{const sid=localStorage.getItem(childKey('zaker_ai_session_id'))||(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now());localStorage.setItem(childKey('zaker_ai_session_id'),sid);const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({question:q,subject:'English',grade:'First Prep',lesson:current.title,studyLanguage:'English',sessionId:sid})});const j=await r.json();if(!r.ok)throw new Error(j.error||'Tutor unavailable');aiAnswer.textContent=j.answer||'No response received'}catch(e){aiAnswer.textContent='Something went wrong: '+e.message}
+ try{const sid=localStorage.getItem(childKey('zaker_ai_session_id'))||(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now());localStorage.setItem(childKey('zaker_ai_session_id'),sid);const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({question:q,subject:'English',grade:'First Prep',lesson:current.title,studyLanguage:'English',sessionId:sid,childId:child.id,lessonNo:current.id})});const j=await r.json();if(!r.ok)throw new Error(j.error||'Tutor unavailable');aiAnswer.textContent=j.answer||'No response received'}catch(e){aiAnswer.textContent='Something went wrong: '+e.message}
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
