@@ -570,27 +570,6 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q027",
-          "type": "mcq",
-          "text": "It is ______ to smoke here.",
-          "answer": "illegal",
-          "source_page": 74,
-          "status": "active",
-          "choices": [
-            "legal",
-            "illegal",
-            "dislike",
-            "like"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 74,
-              "id": "bbb-u2r-022"
-            }
-          ]
-        },
-        {
           "id": "p4-eng-u2-l1-q028",
           "type": "mcq",
           "text": "He ______ go to school on Friday.",
@@ -666,31 +645,6 @@
               "source": "Bit by Bit",
               "page": 75,
               "id": "bbb-u2r-038"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q032",
-          "type": "punctuation",
-          "text": "does Ahmed like cats",
-          "answer": "Does Ahmed like cats?",
-          "source_page": 75,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 75,
-              "id": "bbb-u2r-039"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 106,
-              "id": "elm-u2r-020"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 108,
-              "id": "elm-u2r-040"
             }
           ]
         },
@@ -2071,26 +2025,6 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q015",
-          "type": "correct_form",
-          "text": "We ______ (studies) English every day.",
-          "answer": "study",
-          "source_page": 57,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 57,
-              "id": "bbb-u2l2-015"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 77,
-              "id": "elm-u2l2-024"
-            }
-          ]
-        },
-        {
           "id": "p4-eng-u2-l2-q016",
           "type": "correct_form",
           "text": "______ (Do) Adam go to school on foot?",
@@ -2633,6 +2567,16 @@
               "source": "Bit by Bit",
               "page": 75,
               "id": "bbb-u2r-035"
+            },
+            {
+              "source": "Bit by Bit",
+              "page": 68,
+              "id": "bbb-u2l4-016"
+            },
+            {
+              "source": "El-Moasser",
+              "page": 96,
+              "id": "elm-u2l4-023"
             }
           ]
         },
@@ -3627,6 +3571,11 @@
               "source": "El-Moasser",
               "page": 79,
               "id": "elm-u2l2-049"
+            },
+            {
+              "source": "Bit by Bit",
+              "page": 68,
+              "id": "bbb-u2l4-017"
             }
           ]
         },
@@ -3848,6 +3797,36 @@
               "source": "El-Moasser",
               "page": 108,
               "id": "elm-u2r-037"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q032",
+          "type": "punctuation",
+          "text": "does Ahmed like cats",
+          "answer": "Does Ahmed like cats?",
+          "source_page": 75,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 75,
+              "id": "bbb-u2r-039"
+            },
+            {
+              "source": "El-Moasser",
+              "page": 106,
+              "id": "elm-u2r-020"
+            },
+            {
+              "source": "El-Moasser",
+              "page": 108,
+              "id": "elm-u2r-040"
+            },
+            {
+              "source": "Bit by Bit",
+              "page": 68,
+              "id": "bbb-u2l4-021"
             }
           ]
         }
@@ -4665,6 +4644,11 @@
               "source": "El-Moasser",
               "page": 86,
               "id": "elm-u2l3-016"
+            },
+            {
+              "source": "Bit by Bit",
+              "page": 74,
+              "id": "bbb-u2r-022"
             }
           ]
         },
@@ -5643,41 +5627,6 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l4-q016",
-          "type": "correct_form",
-          "text": "We don't ______ (puts) trash in bins.",
-          "answer": "put",
-          "source_page": 68,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 68,
-              "id": "bbb-u2l4-016"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 96,
-              "id": "elm-u2l4-023"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q017",
-          "type": "correct_form",
-          "text": "Do you ______ (studies) Arabic every day?",
-          "answer": "study",
-          "source_page": 68,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 68,
-              "id": "bbb-u2l4-017"
-            }
-          ]
-        },
-        {
           "id": "p4-eng-u2-l4-q018",
           "type": "correct_form",
           "text": "______ (Do) Ramy study English every day?",
@@ -5724,21 +5673,6 @@
               "source": "Bit by Bit",
               "page": 68,
               "id": "bbb-u2l4-020"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q021",
-          "type": "punctuation",
-          "text": "does Ahmed like cats",
-          "answer": "Does Ahmed like cats?",
-          "source_page": 68,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 68,
-              "id": "bbb-u2l4-021"
             }
           ]
         },
