@@ -17,7 +17,9 @@
     {
       "id": "elmoasser-p4-english-t1-2027",
       "files": [
-        "/content/source-banks/p4-english-term1-elmoasser.json"
+        "/content/source-banks/p4-english-term1-elmoasser.json",
+        "/content/source-banks/p4-english-term1-elmoasser-unit2.json",
+        "/content/source-banks/p4-english-term1-elmoasser-unit3.json"
       ],
       "coverage": "Extraction in progress; uploaded PDF covers Units 1-3."
     }
@@ -29,5 +31,27 @@
     "exclude_ambiguous_without_key": true,
     "dedupe_across_sources": true,
     "assign_every_question_to_unit_and_lesson": true
+  },
+  "live_bank": {
+    "active": true,
+    "version": "v2",
+    "verified_complete_units": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "verified_active_questions": 1091,
+    "files": [
+      "/content/live-banks/v2/p4-english-unit1.json",
+      "/content/live-banks/v2/p4-english-unit2.json",
+      "/content/live-banks/v2/p4-english-unit3.json",
+      "/content/live-banks/v2/p4-english-unit4.json"
+    ],
+    "incomplete_units": [
+      5,
+      6
+    ],
+    "reason": "Uploaded Bit by Bit PDF ends during Unit 5 Lesson 2; Unit 6 pages are not present."
   }
 }
