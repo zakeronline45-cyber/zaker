@@ -18,8 +18,9 @@
   },
   "extraction_status": {
     "unit_1_lesson_1": "in_progress_verified_pages_24_28_59",
-    "remaining": "pending_next_ingestion_pass",
-    "note": "More Lesson 1 questions from Unit 1 sample tests/review pages remain to be ingested before marking the lesson complete."
+    "remaining": "Units 2 and 3 pending",
+    "note": "Listening items without usable audio remain inactive; open writing without source model answers is inactive.",
+    "unit_1": "verified_core_exercises_and_sample_tests"
   },
   "units": [
     {
@@ -495,9 +496,2833 @@
               "answer": null,
               "status": "inactive_missing_audio"
             }
-          ]
+          ],
+          "question_count": 29
+        },
+        {
+          "lesson_id": 2,
+          "lesson_title": "Healthy Habits & Present Simple",
+          "questions": [
+            {
+              "id": "elm-u1l2-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 30,
+              "pdf_page": 24,
+              "type": "mcq",
+              "prompt": "He ______ his teeth twice a day.",
+              "answer": "brushes",
+              "status": "active",
+              "choices": [
+                "gives",
+                "cooks",
+                "brushes",
+                "exercises"
+              ]
+            },
+            {
+              "id": "elm-u1l2-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 30,
+              "pdf_page": 24,
+              "type": "mcq",
+              "prompt": "Healthy food gives us ______.",
+              "answer": "energy",
+              "status": "active",
+              "choices": [
+                "energy",
+                "sweets",
+                "time",
+                "habits"
+              ]
+            },
+            {
+              "id": "elm-u1l2-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "We play sports during ______ time at school.",
+              "answer": "break",
+              "status": "active",
+              "choices": [
+                "study",
+                "class",
+                "break",
+                "reading"
+              ]
+            },
+            {
+              "id": "elm-u1l2-004",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "They ______ fresh fruits and vegetables in the garden.",
+              "answer": "grow",
+              "status": "active",
+              "choices": [
+                "stay",
+                "grow",
+                "learn",
+                "wake"
+              ]
+            },
+            {
+              "id": "elm-u1l2-005",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "When you are healthy, you ______ well at school.",
+              "answer": "do",
+              "status": "active",
+              "choices": [
+                "brush",
+                "do",
+                "carry",
+                "drink"
+              ]
+            },
+            {
+              "id": "elm-u1l2-006",
+              "section": "Previous Exams",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "It's important to ______ good habits every day to stay strong.",
+              "answer": "follow",
+              "status": "active",
+              "choices": [
+                "eat",
+                "follow",
+                "help",
+                "drink"
+              ]
+            },
+            {
+              "id": "elm-u1l2-007",
+              "section": "Previous Exams",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "Getting enough sleep helps our mind stay ______.",
+              "answer": "sharp",
+              "status": "active",
+              "choices": [
+                "sharp",
+                "weak",
+                "lazy",
+                "busy"
+              ]
+            },
+            {
+              "id": "elm-u1l2-008",
+              "section": "Previous Exams",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "Sleeping early, exercising, and eating fresh vegetables are from my healthy ______.",
+              "answer": "habits",
+              "status": "active",
+              "choices": [
+                "habits",
+                "subjects",
+                "senses",
+                "stories"
+              ]
+            },
+            {
+              "id": "elm-u1l2-009",
+              "section": "Previous Exams",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "I do some ______ at the gym every day.",
+              "answer": "exercises",
+              "status": "active",
+              "choices": [
+                "studies",
+                "exercises",
+                "meals",
+                "foods"
+              ]
+            },
+            {
+              "id": "elm-u1l2-010",
+              "section": "Previous Exams",
+              "printed_page": 31,
+              "pdf_page": 25,
+              "type": "mcq",
+              "prompt": "She ______ vitamins every morning.",
+              "answer": "takes",
+              "status": "active",
+              "choices": [
+                "touches",
+                "takes",
+                "heats",
+                "helps"
+              ]
+            },
+            {
+              "id": "elm-u1l2-011",
+              "section": "Reading Practice",
+              "printed_page": 32,
+              "pdf_page": 26,
+              "type": "reading_mcq",
+              "prompt": "Sarah does exercises in the ______.",
+              "answer": "garden",
+              "status": "active",
+              "choices": [
+                "room",
+                "garden",
+                "school",
+                "library"
+              ]
+            },
+            {
+              "id": "elm-u1l2-012",
+              "section": "Reading Practice",
+              "printed_page": 32,
+              "pdf_page": 26,
+              "type": "reading_mcq",
+              "prompt": "For breakfast, Sarah drinks ______.",
+              "answer": "orange juice",
+              "status": "active",
+              "choices": [
+                "tea",
+                "orange juice",
+                "milk",
+                "coffee"
+              ]
+            },
+            {
+              "id": "elm-u1l2-013",
+              "section": "Think",
+              "printed_page": 32,
+              "pdf_page": 26,
+              "type": "reading_open",
+              "prompt": "Why is a good night's sleep important to us?",
+              "answer": "It helps our body stay healthy and our mind stay sharp.",
+              "status": "active",
+              "accepted_answers": [
+                "It helps our body stay healthy and our mind stay sharp.",
+                "It helps us stay healthy and keeps our mind sharp."
+              ]
+            },
+            {
+              "id": "elm-u1l2-014",
+              "section": "Pop Quiz on Language in Use",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "They ______ their cars every Friday.",
+              "answer": "wash",
+              "status": "active",
+              "choices": [
+                "washes",
+                "wash",
+                "washing",
+                "washed"
+              ]
+            },
+            {
+              "id": "elm-u1l2-015",
+              "section": "Pop Quiz on Language in Use",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "The girls ______ their mother every day.",
+              "answer": "help",
+              "status": "active",
+              "choices": [
+                "helps",
+                "helping",
+                "help",
+                "is helping"
+              ]
+            },
+            {
+              "id": "elm-u1l2-016",
+              "section": "Pop Quiz on Language in Use",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "Laila ______ plenty of water every morning.",
+              "answer": "drinks",
+              "status": "active",
+              "choices": [
+                "drink",
+                "drinks",
+                "to drink",
+                "drinking"
+              ]
+            },
+            {
+              "id": "elm-u1l2-017",
+              "section": "Pop Quiz on Language in Use",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "I ______ early every night.",
+              "answer": "sleep",
+              "status": "active",
+              "choices": [
+                "sleep",
+                "sleeping",
+                "sleeps",
+                "slept"
+              ]
+            },
+            {
+              "id": "elm-u1l2-018",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "My brother ______ football every day.",
+              "answer": "plays",
+              "status": "active",
+              "choices": [
+                "play",
+                "plays",
+                "played",
+                "playing"
+              ]
+            },
+            {
+              "id": "elm-u1l2-019",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "Children ______ to school early every day.",
+              "answer": "go",
+              "status": "active",
+              "choices": [
+                "goes",
+                "go",
+                "going",
+                "to go"
+              ]
+            },
+            {
+              "id": "elm-u1l2-020",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "mcq",
+              "prompt": "She ______ her backpack every day.",
+              "answer": "carries",
+              "status": "active",
+              "choices": [
+                "carries",
+                "carry",
+                "carried",
+                "carrying"
+              ]
+            },
+            {
+              "id": "elm-u1l2-021",
+              "section": "Correct Form",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "She ______ (do) her homework in the afternoon.",
+              "answer": "does",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-022",
+              "section": "Correct Form",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "He ______ (wake) up at 6:30 a.m.",
+              "answer": "wakes",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-023",
+              "section": "Correct Form",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "Mariam ______ (are) my best friend.",
+              "answer": "is",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-024",
+              "section": "Correct Form",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "They ______ (is) healthy and strong.",
+              "answer": "are",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-025",
+              "section": "Correct Form",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "Yara and Rana ______ (plays) volleyball in the kitchen.",
+              "answer": "play",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-026",
+              "section": "Correct Form",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "Healthy foods ______ (gives) me energy.",
+              "answer": "give",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-027",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "Some children ______ (plays) sports after school.",
+              "answer": "play",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-028",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "The nurse ______ (help) sick people.",
+              "answer": "helps",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-029",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "We ______ (washes) our hands before eating.",
+              "answer": "wash",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-030",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "He ______ (read) stories in English class.",
+              "answer": "reads",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-031",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "She ______ (sleep) for 9 hours every night.",
+              "answer": "sleeps",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-032",
+              "section": "Previous Exams",
+              "printed_page": 34,
+              "pdf_page": 28,
+              "type": "correct_form",
+              "prompt": "They ______ (eating) a healthy breakfast every day.",
+              "answer": "eat",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-033",
+              "section": "General Exercises",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "mcq",
+              "prompt": "A clever boy has a strong ______.",
+              "answer": "body",
+              "status": "active",
+              "choices": [
+                "body",
+                "mind",
+                "sleep",
+                "food"
+              ]
+            },
+            {
+              "id": "elm-u1l2-034",
+              "section": "General Exercises",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "mcq",
+              "prompt": "She ______ her grandparents every month.",
+              "answer": "visits",
+              "status": "active",
+              "choices": [
+                "visited",
+                "visiting",
+                "visits",
+                "visit"
+              ]
+            },
+            {
+              "id": "elm-u1l2-035",
+              "section": "General Exercises",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "mcq",
+              "prompt": "Her ______ habits help her feel good.",
+              "answer": "healthy",
+              "status": "active",
+              "choices": [
+                "unhealthy",
+                "slow",
+                "healthy",
+                "difficult"
+              ]
+            },
+            {
+              "id": "elm-u1l2-036",
+              "section": "General Exercises",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "mcq",
+              "prompt": "We ______ some exercises in the morning.",
+              "answer": "do",
+              "status": "active",
+              "choices": [
+                "does",
+                "do",
+                "doing",
+                "done"
+              ]
+            },
+            {
+              "id": "elm-u1l2-037",
+              "section": "General Exercises",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "mcq",
+              "prompt": "It's important to ______ plenty of water.",
+              "answer": "drink",
+              "status": "active",
+              "choices": [
+                "drink",
+                "brush",
+                "follow",
+                "wash"
+              ]
+            },
+            {
+              "id": "elm-u1l2-038",
+              "section": "General Exercises",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "mcq",
+              "prompt": "Amir ______ a shower every day.",
+              "answer": "takes",
+              "status": "active",
+              "choices": [
+                "took",
+                "takes",
+                "taking",
+                "take"
+              ]
+            },
+            {
+              "id": "elm-u1l2-039",
+              "section": "Reading",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "reading_mcq",
+              "prompt": "This text is about Sarah's ______.",
+              "answer": "healthy habits",
+              "status": "active",
+              "choices": [
+                "healthy habits",
+                "favorite clothes",
+                "favorite story",
+                "bedroom"
+              ]
+            },
+            {
+              "id": "elm-u1l2-040",
+              "section": "Reading",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "reading_mcq",
+              "prompt": "The opposite of the underlined word \"early\" is ______.",
+              "answer": "late",
+              "status": "active",
+              "choices": [
+                "strong",
+                "late",
+                "sharp",
+                "simple"
+              ]
+            },
+            {
+              "id": "elm-u1l2-041",
+              "section": "Reading",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "reading_open",
+              "prompt": "What time does Sarah wake up?",
+              "answer": "At 6:00 a.m.",
+              "status": "active",
+              "accepted_answers": [
+                "6:00 a.m.",
+                "At 6:00 a.m."
+              ]
+            },
+            {
+              "id": "elm-u1l2-042",
+              "section": "Reading",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "reading_open",
+              "prompt": "How old is Sarah?",
+              "answer": "10 years old.",
+              "status": "active",
+              "accepted_answers": [
+                "10 years old.",
+                "She is 10 years old."
+              ]
+            },
+            {
+              "id": "elm-u1l2-043",
+              "section": "Reading",
+              "printed_page": 35,
+              "pdf_page": 29,
+              "type": "reading_open",
+              "prompt": "What does Sarah eat for breakfast?",
+              "answer": "Eggs and brown bread.",
+              "status": "active",
+              "accepted_answers": [
+                "Eggs and brown bread.",
+                "She eats eggs and brown bread."
+              ]
+            },
+            {
+              "id": "elm-u1l2-044",
+              "section": "Read and Complete",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "complete",
+              "prompt": "Shady eats a good breakfast every morning to have energy. At school, he ______ with his friends during break time.",
+              "answer": "plays",
+              "status": "active",
+              "word_bank": [
+                "friends",
+                "sharp",
+                "breakfast",
+                "plays",
+                "sleeps"
+              ]
+            },
+            {
+              "id": "elm-u1l2-045",
+              "section": "Read and Complete",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "complete",
+              "prompt": "At school, he plays with his ______ during break time.",
+              "answer": "friends",
+              "status": "active",
+              "word_bank": [
+                "friends",
+                "sharp",
+                "breakfast",
+                "plays",
+                "sleeps"
+              ]
+            },
+            {
+              "id": "elm-u1l2-046",
+              "section": "Read and Complete",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "complete",
+              "prompt": "He ______ for nine hours every night to keep his mind sharp.",
+              "answer": "sleeps",
+              "status": "active",
+              "word_bank": [
+                "friends",
+                "sharp",
+                "breakfast",
+                "plays",
+                "sleeps"
+              ]
+            },
+            {
+              "id": "elm-u1l2-047",
+              "section": "Read and Complete",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "complete",
+              "prompt": "He sleeps for nine hours every night to keep his mind ______.",
+              "answer": "sharp",
+              "status": "active",
+              "word_bank": [
+                "friends",
+                "sharp",
+                "breakfast",
+                "plays",
+                "sleeps"
+              ]
+            },
+            {
+              "id": "elm-u1l2-048",
+              "section": "Punctuation",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "punctuation",
+              "prompt": "why does Sarah eat healthy food",
+              "answer": "Why does Sarah eat healthy food?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-049",
+              "section": "Punctuation",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "punctuation",
+              "prompt": "she drinks orange juice",
+              "answer": "She drinks orange juice.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-050",
+              "section": "Correct Form",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "correct_form",
+              "prompt": "My grandfather ______ (drink) coffee in the morning.",
+              "answer": "drinks",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-051",
+              "section": "Correct Form",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "correct_form",
+              "prompt": "Salma and I ______ (takes) the school bus every morning.",
+              "answer": "take",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-052",
+              "section": "Correct Form",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "correct_form",
+              "prompt": "She ______ (make) a cake every day.",
+              "answer": "makes",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-053",
+              "section": "Correct Form",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "correct_form",
+              "prompt": "Tourists often ______ (rides) camels near Giza.",
+              "answer": "ride",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l2-054",
+              "section": "Writing",
+              "printed_page": 36,
+              "pdf_page": 30,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"Your healthy habits\" using: follow – wake up – exercise.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            }
+          ],
+          "question_count": 53
+        },
+        {
+          "lesson_id": 3,
+          "lesson_title": "Story Time: Goha's Great Meal",
+          "questions": [
+            {
+              "id": "elm-u1l3-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "I want to have a sandwich. I'm really ______.",
+              "answer": "hungry",
+              "status": "active",
+              "choices": [
+                "free",
+                "hungry",
+                "strong",
+                "thirsty"
+              ]
+            },
+            {
+              "id": "elm-u1l3-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "There's a ______ of perfume in the air.",
+              "answer": "smell",
+              "status": "active",
+              "choices": [
+                "smell",
+                "taste",
+                "voice",
+                "sound"
+              ]
+            },
+            {
+              "id": "elm-u1l3-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "Don't be ______. Share your toys with your friends.",
+              "answer": "greedy",
+              "status": "active",
+              "choices": [
+                "greedy",
+                "fast",
+                "tall",
+                "friendly"
+              ]
+            },
+            {
+              "id": "elm-u1l3-004",
+              "section": "Previous Exams",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "A/An ______ means someone who has something.",
+              "answer": "owner",
+              "status": "active",
+              "choices": [
+                "character",
+                "owner",
+                "coach",
+                "teacher"
+              ]
+            },
+            {
+              "id": "elm-u1l3-005",
+              "section": "Previous Exams",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "______ means a light, ringing sound.",
+              "answer": "Jingling",
+              "status": "active",
+              "choices": [
+                "Dark",
+                "Taste",
+                "Jingling",
+                "Noise"
+              ]
+            },
+            {
+              "id": "elm-u1l3-006",
+              "section": "Previous Exams",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "The yummy smell came from a ______ nearby.",
+              "answer": "restaurant",
+              "status": "active",
+              "choices": [
+                "coin",
+                "TV",
+                "restaurant",
+                "soup"
+              ]
+            },
+            {
+              "id": "elm-u1l3-007",
+              "section": "Previous Exams",
+              "printed_page": 39,
+              "pdf_page": 33,
+              "type": "mcq",
+              "prompt": "We can't eat in the restaurant for free; we must ______ for our food.",
+              "answer": "pay",
+              "status": "active",
+              "choices": [
+                "taste",
+                "laugh",
+                "stop",
+                "pay"
+              ]
+            },
+            {
+              "id": "elm-u1l3-008",
+              "section": "General Exercises",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "mcq",
+              "prompt": "Omar ______ to eat. He is hungry.",
+              "answer": "wants",
+              "status": "active",
+              "choices": [
+                "don't want",
+                "to want",
+                "want",
+                "wants"
+              ]
+            },
+            {
+              "id": "elm-u1l3-009",
+              "section": "General Exercises",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "mcq",
+              "prompt": "My father ______ to work every day.",
+              "answer": "drives",
+              "status": "active",
+              "choices": [
+                "to drive",
+                "drive",
+                "drives",
+                "driving"
+              ]
+            },
+            {
+              "id": "elm-u1l3-010",
+              "section": "General Exercises",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "mcq",
+              "prompt": "We heard a ______ sound when he shook his coins.",
+              "answer": "jingling",
+              "status": "active",
+              "choices": [
+                "jingling",
+                "shouting",
+                "crying",
+                "crashing"
+              ]
+            },
+            {
+              "id": "elm-u1l3-011",
+              "section": "General Exercises",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "mcq",
+              "prompt": "Nora ______ her mom every Friday.",
+              "answer": "helps",
+              "status": "active",
+              "choices": [
+                "help",
+                "helps",
+                "helped",
+                "helping"
+              ]
+            },
+            {
+              "id": "elm-u1l3-012",
+              "section": "General Exercises",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "mcq",
+              "prompt": "______ people always want more than what is needed.",
+              "answer": "Greedy",
+              "status": "active",
+              "choices": [
+                "Helpful",
+                "Funny",
+                "Greedy",
+                "Clever"
+              ]
+            },
+            {
+              "id": "elm-u1l3-013",
+              "section": "General Exercises",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "mcq",
+              "prompt": "It's good to ______ food with friends.",
+              "answer": "share",
+              "status": "active",
+              "choices": [
+                "share",
+                "brush",
+                "play",
+                "wash"
+              ]
+            },
+            {
+              "id": "elm-u1l3-014",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "She ______ (wear) her uniform to school every day.",
+              "answer": "wears",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-015",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "He ______ (wash) his car on weekends.",
+              "answer": "washes",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-016",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "We ______ (helps) mom clean our apartment.",
+              "answer": "help",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-017",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "She ______ (live) in Alexandria.",
+              "answer": "lives",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-018",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "They ______ (visits) their grandparents every month.",
+              "answer": "visit",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-019",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "The baby ______ (cry) when he is hungry.",
+              "answer": "cries",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-020",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "You ______ (spends) your money on sweets.",
+              "answer": "spend",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-021",
+              "section": "Correct Form",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "correct_form",
+              "prompt": "The restaurant ______ (open) at 9 a.m.",
+              "answer": "opens",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-022",
+              "section": "Writing",
+              "printed_page": 44,
+              "pdf_page": 38,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"Sharing with others\" using: food – help – happy.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            },
+            {
+              "id": "elm-u1l3-023",
+              "section": "Read and Complete",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "complete",
+              "prompt": "Goha walked to the market. He ______ something delicious.",
+              "answer": "smelled",
+              "status": "active",
+              "word_bank": [
+                "coins",
+                "restaurant",
+                "owner",
+                "smelled",
+                "money"
+              ]
+            },
+            {
+              "id": "elm-u1l3-024",
+              "section": "Read and Complete",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "complete",
+              "prompt": "He stopped near the ______ window and closed his eyes.",
+              "answer": "restaurant",
+              "status": "active",
+              "word_bank": [
+                "coins",
+                "restaurant",
+                "owner",
+                "smelled",
+                "money"
+              ]
+            },
+            {
+              "id": "elm-u1l3-025",
+              "section": "Read and Complete",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "complete",
+              "prompt": "When the ______ came, Goha gave him the sound of coins instead of real money.",
+              "answer": "owner",
+              "status": "active",
+              "word_bank": [
+                "coins",
+                "restaurant",
+                "owner",
+                "smelled",
+                "money"
+              ]
+            },
+            {
+              "id": "elm-u1l3-026",
+              "section": "Read and Complete",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "complete",
+              "prompt": "Goha gave him the sound of ______ instead of real money.",
+              "answer": "coins",
+              "status": "active",
+              "word_bank": [
+                "coins",
+                "restaurant",
+                "owner",
+                "smelled",
+                "money"
+              ]
+            },
+            {
+              "id": "elm-u1l3-027",
+              "section": "Reading",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "reading_mcq",
+              "prompt": "Omar paid with the sound of ______.",
+              "answer": "coins",
+              "status": "active",
+              "choices": [
+                "laughter",
+                "coins",
+                "voice",
+                "shoes"
+              ]
+            },
+            {
+              "id": "elm-u1l3-028",
+              "section": "Reading",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "reading_mcq",
+              "prompt": "The owner told Omar he must ______.",
+              "answer": "pay",
+              "status": "active",
+              "choices": [
+                "work",
+                "eat",
+                "leave",
+                "pay"
+              ]
+            },
+            {
+              "id": "elm-u1l3-029",
+              "section": "Reading",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "reading_open",
+              "prompt": "How did the owner feel at the end?",
+              "answer": "He laughed.",
+              "status": "active",
+              "accepted_answers": [
+                "He laughed.",
+                "He was amused."
+              ]
+            },
+            {
+              "id": "elm-u1l3-030",
+              "section": "Punctuation",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "punctuation",
+              "prompt": "let's share this food",
+              "answer": "Let's share this food.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l3-031",
+              "section": "Punctuation",
+              "printed_page": 45,
+              "pdf_page": 39,
+              "type": "punctuation",
+              "prompt": "why did goha sit outside the restaurant",
+              "answer": "Why did Goha sit outside the restaurant?",
+              "status": "active"
+            }
+          ],
+          "question_count": 30
+        },
+        {
+          "lesson_id": 4,
+          "lesson_title": "Writing / Daily Routine",
+          "questions": [
+            {
+              "id": "elm-u1l4-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 47,
+              "pdf_page": 41,
+              "type": "mcq",
+              "prompt": "She got ______ at 7:00 to be ready for the party.",
+              "answer": "dressed",
+              "status": "active",
+              "choices": [
+                "dressed",
+                "sleep",
+                "exercise",
+                "lost"
+              ]
+            },
+            {
+              "id": "elm-u1l4-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 47,
+              "pdf_page": 41,
+              "type": "mcq",
+              "prompt": "You can have a ______ between breakfast and lunch.",
+              "answer": "snack",
+              "status": "active",
+              "choices": [
+                "dinner",
+                "color",
+                "snack",
+                "breath"
+              ]
+            },
+            {
+              "id": "elm-u1l4-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 47,
+              "pdf_page": 41,
+              "type": "mcq",
+              "prompt": "The two pictures aren't different; they are the ______.",
+              "answer": "same",
+              "status": "active",
+              "choices": [
+                "same",
+                "strong",
+                "late",
+                "clever"
+              ]
+            },
+            {
+              "id": "elm-u1l4-004",
+              "section": "Previous Exams",
+              "printed_page": 47,
+              "pdf_page": 41,
+              "type": "mcq",
+              "prompt": "I follow the same ______ every day.",
+              "answer": "routine",
+              "status": "active",
+              "choices": [
+                "routine",
+                "sense",
+                "home",
+                "sleep"
+              ]
+            },
+            {
+              "id": "elm-u1l4-005",
+              "section": "Previous Exams",
+              "printed_page": 47,
+              "pdf_page": 41,
+              "type": "mcq",
+              "prompt": "I ______ useful subjects at school.",
+              "answer": "study",
+              "status": "active",
+              "choices": [
+                "shake",
+                "sit",
+                "make",
+                "study"
+              ]
+            },
+            {
+              "id": "elm-u1l4-006",
+              "section": "Previous Exams",
+              "printed_page": 47,
+              "pdf_page": 41,
+              "type": "mcq",
+              "prompt": "Sleeping early keeps me ______.",
+              "answer": "healthy",
+              "status": "active",
+              "choices": [
+                "unhealthy",
+                "healthy",
+                "late",
+                "tired"
+              ]
+            },
+            {
+              "id": "elm-u1l4-007",
+              "section": "Vocabulary Meaning",
+              "printed_page": 48,
+              "pdf_page": 42,
+              "type": "mcq",
+              "prompt": "The opposite of the underlined word \"healthy\" is ______.",
+              "answer": "unhealthy",
+              "status": "active",
+              "choices": [
+                "unhealthy",
+                "heavy",
+                "colorful",
+                "beautiful"
+              ]
+            },
+            {
+              "id": "elm-u1l4-008",
+              "section": "Vocabulary Meaning",
+              "printed_page": 48,
+              "pdf_page": 42,
+              "type": "mcq",
+              "prompt": "The opposite of the underlined word \"strong\" is ______.",
+              "answer": "weak",
+              "status": "active",
+              "choices": [
+                "weak",
+                "delicious",
+                "boring",
+                "sharp"
+              ]
+            },
+            {
+              "id": "elm-u1l4-009",
+              "section": "General Exercises",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "reading_mcq",
+              "prompt": "The text is about ______.",
+              "answer": "a daily routine",
+              "status": "active",
+              "choices": [
+                "A daily routine",
+                "Jobs",
+                "Sports",
+                "Sleeping"
+              ]
+            },
+            {
+              "id": "elm-u1l4-010",
+              "section": "General Exercises",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "reading_mcq",
+              "prompt": "The underlined word \"early\" is the opposite of ______.",
+              "answer": "late",
+              "status": "active",
+              "choices": [
+                "near",
+                "late",
+                "healthy",
+                "early"
+              ]
+            },
+            {
+              "id": "elm-u1l4-011",
+              "section": "General Exercises",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "reading_open",
+              "prompt": "When does Lamees wake up?",
+              "answer": "At 7 a.m.",
+              "status": "active",
+              "accepted_answers": [
+                "At 7 a.m.",
+                "7 a.m."
+              ]
+            },
+            {
+              "id": "elm-u1l4-012",
+              "section": "General Exercises",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "reading_open",
+              "prompt": "What does Lamees do after school?",
+              "answer": "She has lunch and does her homework.",
+              "status": "active",
+              "accepted_answers": [
+                "She has lunch and does her homework.",
+                "She has lunch and does homework."
+              ]
+            },
+            {
+              "id": "elm-u1l4-013",
+              "section": "Correct Form",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "correct_form",
+              "prompt": "I always ______ (eats) breakfast at 7 o'clock.",
+              "answer": "eat",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l4-014",
+              "section": "Correct Form",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "correct_form",
+              "prompt": "Marwan ______ (play) sports at the club.",
+              "answer": "plays",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l4-015",
+              "section": "Correct Form",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "correct_form",
+              "prompt": "They ______ (likes) my school.",
+              "answer": "like",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l4-016",
+              "section": "Correct Form",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "correct_form",
+              "prompt": "They ______ (travels) to Aswan by plane.",
+              "answer": "travel",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l4-017",
+              "section": "Punctuation",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "punctuation",
+              "prompt": "after that she has a healthy lunch",
+              "answer": "After that, she has a healthy lunch.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l4-018",
+              "section": "Punctuation",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "punctuation",
+              "prompt": "do you eat healthy snacks",
+              "answer": "Do you eat healthy snacks?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l4-019",
+              "section": "Writing",
+              "printed_page": 50,
+              "pdf_page": 44,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"Your healthy routine\" using: important – habits – stay strong.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            },
+            {
+              "id": "elm-u1l4-020",
+              "section": "Previous Exams",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "mcq",
+              "prompt": "Having a daily routine is ______.",
+              "answer": "important",
+              "status": "active",
+              "choices": [
+                "bad",
+                "unhealthy",
+                "important",
+                "unhappy"
+              ]
+            },
+            {
+              "id": "elm-u1l4-021",
+              "section": "Previous Exams",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "mcq",
+              "prompt": "They ______ their bikes in the park.",
+              "answer": "ride",
+              "status": "active",
+              "choices": [
+                "ride",
+                "rides",
+                "riding",
+                "to ride"
+              ]
+            },
+            {
+              "id": "elm-u1l4-022",
+              "section": "Previous Exams",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "mcq",
+              "prompt": "Fruit is my favorite healthy ______.",
+              "answer": "snack",
+              "status": "active",
+              "choices": [
+                "soup",
+                "routine",
+                "subject",
+                "snack"
+              ]
+            },
+            {
+              "id": "elm-u1l4-023",
+              "section": "Previous Exams",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "mcq",
+              "prompt": "My sister and I ______ TV in the evening.",
+              "answer": "watch",
+              "status": "active",
+              "choices": [
+                "watch",
+                "watches",
+                "watching",
+                "watched"
+              ]
+            },
+            {
+              "id": "elm-u1l4-024",
+              "section": "Previous Exams",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "mcq",
+              "prompt": "They ______ the books in the morning.",
+              "answer": "read",
+              "status": "active",
+              "choices": [
+                "to read",
+                "read",
+                "reading",
+                "reads"
+              ]
+            },
+            {
+              "id": "elm-u1l4-025",
+              "section": "Previous Exams",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "mcq",
+              "prompt": "I have a healthy ______ including milk and fruit.",
+              "answer": "breakfast",
+              "status": "active",
+              "choices": [
+                "breakfast",
+                "exercise",
+                "book",
+                "sport"
+              ]
+            },
+            {
+              "id": "elm-u1l4-026",
+              "section": "Read and Complete",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "complete",
+              "prompt": "My brother and I play football every day. He wakes up early and ______ his teeth.",
+              "answer": "brushes",
+              "status": "active",
+              "word_bank": [
+                "routines",
+                "brushes",
+                "breakfast",
+                "helps",
+                "watches"
+              ]
+            },
+            {
+              "id": "elm-u1l4-027",
+              "section": "Read and Complete",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "complete",
+              "prompt": "Then, he eats ______.",
+              "answer": "breakfast",
+              "status": "active",
+              "word_bank": [
+                "routines",
+                "brushes",
+                "breakfast",
+                "helps",
+                "watches"
+              ]
+            },
+            {
+              "id": "elm-u1l4-028",
+              "section": "Read and Complete",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "complete",
+              "prompt": "After school, he ______ our father.",
+              "answer": "helps",
+              "status": "active",
+              "word_bank": [
+                "routines",
+                "brushes",
+                "breakfast",
+                "helps",
+                "watches"
+              ]
+            },
+            {
+              "id": "elm-u1l4-029",
+              "section": "Read and Complete",
+              "printed_page": 51,
+              "pdf_page": 45,
+              "type": "complete",
+              "prompt": "These are our daily habits and ______.",
+              "answer": "routines",
+              "status": "active",
+              "word_bank": [
+                "routines",
+                "brushes",
+                "breakfast",
+                "helps",
+                "watches"
+              ]
+            }
+          ],
+          "question_count": 28
+        },
+        {
+          "lesson_id": 5,
+          "lesson_title": "Unit 1 Review & Tests",
+          "questions": [
+            {
+              "id": "elm-u1r-001",
+              "section": "Review through the Exam",
+              "printed_page": 59,
+              "pdf_page": 53,
+              "type": "reorder",
+              "prompt": "five - We - senses - have",
+              "answer": "We have five senses.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-002",
+              "section": "Review through the Exam",
+              "printed_page": 59,
+              "pdf_page": 53,
+              "type": "reorder",
+              "prompt": "with - nose - We - our - smell",
+              "answer": "We smell with our nose.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-003",
+              "section": "Review through the Exam",
+              "printed_page": 59,
+              "pdf_page": 53,
+              "type": "reorder",
+              "prompt": "our - We - hands - with - touch",
+              "answer": "We touch with our hands.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-004",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "mcq",
+              "prompt": "I ______ my tongue to taste food.",
+              "answer": "use",
+              "status": "active",
+              "choices": [
+                "to use",
+                "using",
+                "use",
+                "uses"
+              ]
+            },
+            {
+              "id": "elm-u1r-005",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "mcq",
+              "prompt": "She doesn't have enough money to ______ for her dress.",
+              "answer": "pay",
+              "status": "active",
+              "choices": [
+                "play",
+                "grow",
+                "sit",
+                "pay"
+              ]
+            },
+            {
+              "id": "elm-u1r-006",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "mcq",
+              "prompt": "We can ______ flowers in the garden with our noses.",
+              "answer": "smell",
+              "status": "active",
+              "choices": [
+                "taste",
+                "touch",
+                "smell",
+                "hear"
+              ]
+            },
+            {
+              "id": "elm-u1r-007",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "mcq",
+              "prompt": "When someone is ______, they want more than they need.",
+              "answer": "greedy",
+              "status": "active",
+              "choices": [
+                "scared",
+                "greedy",
+                "worried",
+                "healthy"
+              ]
+            },
+            {
+              "id": "elm-u1r-008",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "mcq",
+              "prompt": "My mother always ______ the dishes after lunch.",
+              "answer": "washes",
+              "status": "active",
+              "choices": [
+                "washing",
+                "washes",
+                "wash",
+                "washed"
+              ]
+            },
+            {
+              "id": "elm-u1r-009",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "mcq",
+              "prompt": "Every morning, Eman and her friends ______ to school.",
+              "answer": "walk",
+              "status": "active",
+              "choices": [
+                "walk",
+                "walks",
+                "walked",
+                "walking"
+              ]
+            },
+            {
+              "id": "elm-u1r-010",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "complete",
+              "prompt": "Today is a beautiful day. We are at the ______ on a school trip.",
+              "answer": "park",
+              "status": "active",
+              "word_bank": [
+                "learn",
+                "senses",
+                "park",
+                "smell",
+                "taste"
+              ]
+            },
+            {
+              "id": "elm-u1r-011",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "complete",
+              "prompt": "We want to ______ more about things around us.",
+              "answer": "learn",
+              "status": "active",
+              "word_bank": [
+                "learn",
+                "senses",
+                "park",
+                "smell",
+                "taste"
+              ]
+            },
+            {
+              "id": "elm-u1r-012",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "complete",
+              "prompt": "We use our ______ to help us understand more.",
+              "answer": "senses",
+              "status": "active",
+              "word_bank": [
+                "learn",
+                "senses",
+                "park",
+                "smell",
+                "taste"
+              ]
+            },
+            {
+              "id": "elm-u1r-013",
+              "section": "Sample Test 1",
+              "printed_page": 60,
+              "pdf_page": 54,
+              "type": "complete",
+              "prompt": "We can ______ the flowers.",
+              "answer": "smell",
+              "status": "active",
+              "word_bank": [
+                "learn",
+                "senses",
+                "park",
+                "smell",
+                "taste"
+              ]
+            },
+            {
+              "id": "elm-u1r-014",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "reading_mcq",
+              "prompt": "The monkey saw a bird with a broken ______.",
+              "answer": "wing",
+              "status": "active",
+              "choices": [
+                "leg",
+                "wing",
+                "beak",
+                "feather"
+              ]
+            },
+            {
+              "id": "elm-u1r-015",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "reading_mcq",
+              "prompt": "The underlined word \"kind\" means ______.",
+              "answer": "friendly",
+              "status": "active",
+              "choices": [
+                "dangerous",
+                "strong",
+                "brave",
+                "friendly"
+              ]
+            },
+            {
+              "id": "elm-u1r-016",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "reading_open",
+              "prompt": "What is the general idea of the text?",
+              "answer": "A kind monkey helps an injured bird.",
+              "status": "active",
+              "accepted_answers": [
+                "A monkey helps an injured bird.",
+                "A kind monkey helps a bird."
+              ]
+            },
+            {
+              "id": "elm-u1r-017",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "reading_open",
+              "prompt": "What did the monkey give the bird?",
+              "answer": "Fruits.",
+              "status": "active",
+              "accepted_answers": [
+                "Fruits.",
+                "It gave the bird fruits."
+              ]
+            },
+            {
+              "id": "elm-u1r-018",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "reading_open",
+              "prompt": "How did the monkey make a soft bed?",
+              "answer": "With leaves.",
+              "status": "active",
+              "accepted_answers": [
+                "With leaves.",
+                "It used leaves."
+              ]
+            },
+            {
+              "id": "elm-u1r-019",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "correct_form",
+              "prompt": "Every morning, she ______ (eat) a healthy breakfast with her family.",
+              "answer": "eats",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-020",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "correct_form",
+              "prompt": "We ______ (visits) our cousins every summer.",
+              "answer": "visit",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-021",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "correct_form",
+              "prompt": "Some children run and ______ (jumps) every summer.",
+              "answer": "jump",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-022",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "correct_form",
+              "prompt": "This salad ______ (taste) really good. I like it.",
+              "answer": "tastes",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-023",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "punctuation",
+              "prompt": "why does sarah eat healthy food",
+              "answer": "Why does Sarah eat healthy food?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-024",
+              "section": "Sample Test 1",
+              "printed_page": 61,
+              "pdf_page": 55,
+              "type": "punctuation",
+              "prompt": "having a daily routine is important",
+              "answer": "Having a daily routine is important.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-025",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "mcq",
+              "prompt": "I can ______ soup with my tongue.",
+              "answer": "taste",
+              "status": "active",
+              "choices": [
+                "smell",
+                "hear",
+                "taste",
+                "watch"
+              ]
+            },
+            {
+              "id": "elm-u1r-026",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "mcq",
+              "prompt": "We ______ the teacher's voice in class.",
+              "answer": "hear",
+              "status": "active",
+              "choices": [
+                "hear",
+                "see",
+                "taste",
+                "smell"
+              ]
+            },
+            {
+              "id": "elm-u1r-027",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "mcq",
+              "prompt": "Noha washes her face and ______ dressed for school.",
+              "answer": "gets",
+              "status": "active",
+              "choices": [
+                "getting",
+                "gets",
+                "got",
+                "get"
+              ]
+            },
+            {
+              "id": "elm-u1r-028",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "mcq",
+              "prompt": "Sama went to the ______ to have chicken and pasta.",
+              "answer": "restaurant",
+              "status": "active",
+              "choices": [
+                "factory",
+                "hospital",
+                "restaurant",
+                "museum"
+              ]
+            },
+            {
+              "id": "elm-u1r-029",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "mcq",
+              "prompt": "A farmer ______ a lot of vegetables every year.",
+              "answer": "grows",
+              "status": "active",
+              "choices": [
+                "growing",
+                "grew",
+                "grow",
+                "grows"
+              ]
+            },
+            {
+              "id": "elm-u1r-030",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "mcq",
+              "prompt": "Heba ______ the park every day.",
+              "answer": "cleans",
+              "status": "active",
+              "choices": [
+                "clean",
+                "cleans",
+                "cleaned",
+                "to clean"
+              ]
+            },
+            {
+              "id": "elm-u1r-031",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "complete",
+              "prompt": "Sara eats many kinds of food to stay healthy. Every day, she eats ______ like apples and bananas.",
+              "answer": "fruits",
+              "status": "active",
+              "word_bank": [
+                "food",
+                "fruits",
+                "vegetables",
+                "energy",
+                "help"
+              ]
+            },
+            {
+              "id": "elm-u1r-032",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "complete",
+              "prompt": "She also enjoys ______ such as carrots and peas.",
+              "answer": "vegetables",
+              "status": "active",
+              "word_bank": [
+                "food",
+                "fruits",
+                "vegetables",
+                "energy",
+                "help"
+              ]
+            },
+            {
+              "id": "elm-u1r-033",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "complete",
+              "prompt": "Her mother says it is important to eat from all ______ groups.",
+              "answer": "food",
+              "status": "active",
+              "word_bank": [
+                "food",
+                "fruits",
+                "vegetables",
+                "energy",
+                "help"
+              ]
+            },
+            {
+              "id": "elm-u1r-034",
+              "section": "Sample Test 2",
+              "printed_page": 62,
+              "pdf_page": 56,
+              "type": "complete",
+              "prompt": "She feels strong and full of ______.",
+              "answer": "energy",
+              "status": "active",
+              "word_bank": [
+                "food",
+                "fruits",
+                "vegetables",
+                "energy",
+                "help"
+              ]
+            },
+            {
+              "id": "elm-u1r-035",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "reading_mcq",
+              "prompt": "A healthy lunch may have chicken, vegetables, fruits, and ______.",
+              "answer": "rice",
+              "status": "active",
+              "choices": [
+                "water",
+                "pizza",
+                "rice",
+                "candy"
+              ]
+            },
+            {
+              "id": "elm-u1r-036",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "reading_mcq",
+              "prompt": "A healthy lunch helps children feel ______.",
+              "answer": "strong",
+              "status": "active",
+              "choices": [
+                "strong",
+                "sad",
+                "tired",
+                "sleepy"
+              ]
+            },
+            {
+              "id": "elm-u1r-037",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "reading_open",
+              "prompt": "What shouldn't you eat too much of?",
+              "answer": "Sweets or fried food.",
+              "status": "active",
+              "accepted_answers": [
+                "Sweets or fried food.",
+                "Too many sweets or fried food."
+              ]
+            },
+            {
+              "id": "elm-u1r-038",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "reading_open",
+              "prompt": "How does healthy food help you at school?",
+              "answer": "It helps you run, play and study better.",
+              "status": "active",
+              "accepted_answers": [
+                "It helps you run, play and study better.",
+                "It gives you energy to run, play and study better."
+              ]
+            },
+            {
+              "id": "elm-u1r-039",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "reading_open",
+              "prompt": "Is drinking water important?",
+              "answer": "Yes, it is.",
+              "status": "active",
+              "accepted_answers": [
+                "Yes.",
+                "Yes, it is."
+              ]
+            },
+            {
+              "id": "elm-u1r-040",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "correct_form",
+              "prompt": "He ______ (eat) healthy food every day.",
+              "answer": "eats",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-041",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "correct_form",
+              "prompt": "We ______ (studies) English every day.",
+              "answer": "study",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-042",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "correct_form",
+              "prompt": "The nurse ______ (help) sick people.",
+              "answer": "helps",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-043",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "correct_form",
+              "prompt": "Every morning, I ______ (brushing) my teeth.",
+              "answer": "brush",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-044",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "punctuation",
+              "prompt": "it's important to go to bed early",
+              "answer": "It's important to go to bed early.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-045",
+              "section": "Sample Test 2",
+              "printed_page": 63,
+              "pdf_page": 57,
+              "type": "punctuation",
+              "prompt": "do you like healthy food",
+              "answer": "Do you like healthy food?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-046",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "Goha was a ______ man.",
+              "answer": "greedy",
+              "status": "active",
+              "choices": [
+                "funny",
+                "lazy",
+                "greedy",
+                "sad"
+              ]
+            },
+            {
+              "id": "elm-u1r-047",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "Goha was walking through the ______.",
+              "answer": "market",
+              "status": "active",
+              "choices": [
+                "garden",
+                "hospital",
+                "market",
+                "park"
+              ]
+            },
+            {
+              "id": "elm-u1r-048",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "Goha smelled something ______ from the restaurant.",
+              "answer": "delicious",
+              "status": "active",
+              "choices": [
+                "messy",
+                "dirty",
+                "delicious",
+                "bad"
+              ]
+            },
+            {
+              "id": "elm-u1r-049",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "dialogue_complete",
+              "prompt": "Sure. Healthy habits keep us ______.",
+              "answer": "healthy",
+              "status": "active",
+              "word_bank": [
+                "healthy",
+                "wake",
+                "practice",
+                "safe"
+              ]
+            },
+            {
+              "id": "elm-u1r-050",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "dialogue_complete",
+              "prompt": "What healthy habits do you ______?",
+              "answer": "practice",
+              "status": "active",
+              "word_bank": [
+                "healthy",
+                "wake",
+                "practice",
+                "safe"
+              ]
+            },
+            {
+              "id": "elm-u1r-051",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "dialogue_complete",
+              "prompt": "I ______ up early and I do some exercises in the garden.",
+              "answer": "wake",
+              "status": "active",
+              "word_bank": [
+                "healthy",
+                "wake",
+                "practice",
+                "safe"
+              ]
+            },
+            {
+              "id": "elm-u1r-052",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "I can ______ soft and hard things with my hands.",
+              "answer": "touch",
+              "status": "active",
+              "choices": [
+                "touch",
+                "hear",
+                "smell",
+                "see"
+              ]
+            },
+            {
+              "id": "elm-u1r-053",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "Waking up early is one of my ______ habits.",
+              "answer": "healthy",
+              "status": "active",
+              "choices": [
+                "hard",
+                "unhealthy",
+                "healthy",
+                "bad"
+              ]
+            },
+            {
+              "id": "elm-u1r-054",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "My sister ______ English every day.",
+              "answer": "speaks",
+              "status": "active",
+              "choices": [
+                "speaking",
+                "speak",
+                "spoke",
+                "speaks"
+              ]
+            },
+            {
+              "id": "elm-u1r-055",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "mcq",
+              "prompt": "Nada and Yara ______ to school on foot every day.",
+              "answer": "go",
+              "status": "active",
+              "choices": [
+                "going",
+                "go",
+                "goes",
+                "is going"
+              ]
+            },
+            {
+              "id": "elm-u1r-056",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "correction",
+              "prompt": "I takes a shower before sleeping.",
+              "answer": "I take a shower before sleeping.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-057",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "correction",
+              "prompt": "She wash the dishes after lunch.",
+              "answer": "She washes the dishes after lunch.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-058",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "true_false",
+              "prompt": "Our five senses help us understand the world around us.",
+              "answer": "True",
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "elm-u1r-059",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "true_false",
+              "prompt": "Our eyes let us taste sweet and salty flavors.",
+              "answer": "False",
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "elm-u1r-060",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "reading_mcq",
+              "prompt": "Our ______ help us hear sounds like music and voices.",
+              "answer": "ears",
+              "status": "active",
+              "choices": [
+                "eyes",
+                "hands",
+                "ears",
+                "legs"
+              ]
+            },
+            {
+              "id": "elm-u1r-061",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "reading_mcq",
+              "prompt": "With our nose, we ______ flowers and fresh air.",
+              "answer": "smell",
+              "status": "active",
+              "choices": [
+                "taste",
+                "smell",
+                "touch",
+                "hear"
+              ]
+            },
+            {
+              "id": "elm-u1r-062",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "reading_mcq",
+              "prompt": "Our skin helps us feel and ______.",
+              "answer": "touch",
+              "status": "active",
+              "choices": [
+                "think",
+                "eat",
+                "run",
+                "touch"
+              ]
+            },
+            {
+              "id": "elm-u1r-063",
+              "section": "Al-Azhar Sample Test 1",
+              "printed_page": 64,
+              "pdf_page": 58,
+              "type": "writing",
+              "prompt": "Write a short paragraph of FOUR sentences on \"Habits you do daily\" using: early.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            },
+            {
+              "id": "elm-u1r-064",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "Having ______ habits helps us live a better life.",
+              "answer": "healthy",
+              "status": "active",
+              "choices": [
+                "bad",
+                "unhealthy",
+                "healthy",
+                "weak"
+              ]
+            },
+            {
+              "id": "elm-u1r-065",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "When we eat healthy food, we stay ______ and fit.",
+              "answer": "strong",
+              "status": "active",
+              "choices": [
+                "scared",
+                "sad",
+                "worried",
+                "strong"
+              ]
+            },
+            {
+              "id": "elm-u1r-066",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "Getting enough ______ keeps our mind sharp.",
+              "answer": "sleep",
+              "status": "active",
+              "choices": [
+                "sleep",
+                "juice",
+                "sports",
+                "coins"
+              ]
+            },
+            {
+              "id": "elm-u1r-067",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "dialogue_complete",
+              "prompt": "I am reading a book about our ______.",
+              "answer": "senses",
+              "status": "active",
+              "word_bank": [
+                "safe",
+                "fire",
+                "senses",
+                "important"
+              ]
+            },
+            {
+              "id": "elm-u1r-068",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "dialogue_complete",
+              "prompt": "Why are our senses ______?",
+              "answer": "important",
+              "status": "active",
+              "word_bank": [
+                "safe",
+                "fire",
+                "senses",
+                "important"
+              ]
+            },
+            {
+              "id": "elm-u1r-069",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "dialogue_complete",
+              "prompt": "Because they help us stay ______.",
+              "answer": "safe",
+              "status": "active",
+              "word_bank": [
+                "safe",
+                "fire",
+                "senses",
+                "important"
+              ]
+            },
+            {
+              "id": "elm-u1r-070",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "dialogue_complete",
+              "prompt": "If we smell smoke, we know there's ______.",
+              "answer": "fire",
+              "status": "active",
+              "word_bank": [
+                "safe",
+                "fire",
+                "senses",
+                "important"
+              ]
+            },
+            {
+              "id": "elm-u1r-071",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "Sight, hearing, taste, and touch are our ______.",
+              "answer": "senses",
+              "status": "active",
+              "choices": [
+                "jobs",
+                "senses",
+                "toys",
+                "machines"
+              ]
+            },
+            {
+              "id": "elm-u1r-072",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "The ______ is someone who has something.",
+              "answer": "owner",
+              "status": "active",
+              "choices": [
+                "owner",
+                "jingling",
+                "soup",
+                "breath"
+              ]
+            },
+            {
+              "id": "elm-u1r-073",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "We ______ our homework every day.",
+              "answer": "do",
+              "status": "active",
+              "choices": [
+                "doing",
+                "does",
+                "do",
+                "to do"
+              ]
+            },
+            {
+              "id": "elm-u1r-074",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "mcq",
+              "prompt": "My father ______ the newspaper every day.",
+              "answer": "reads",
+              "status": "active",
+              "choices": [
+                "to read",
+                "reading",
+                "read",
+                "reads"
+              ]
+            },
+            {
+              "id": "elm-u1r-075",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "correction",
+              "prompt": "The baker make fresh bread every day.",
+              "answer": "The baker makes fresh bread every day.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-076",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "correction",
+              "prompt": "The gardener water the plants early in the morning.",
+              "answer": "The gardener waters the plants early in the morning.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-077",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "correction",
+              "prompt": "We visits our grandparents on Friday.",
+              "answer": "We visit our grandparents on Friday.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-078",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "correction",
+              "prompt": "The swimmer practice in the pool every afternoon.",
+              "answer": "The swimmer practices in the pool every afternoon.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1r-079",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "true_false",
+              "prompt": "Goha had enough money to buy food.",
+              "answer": "False",
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "elm-u1r-080",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "true_false",
+              "prompt": "The owner invited Goha to share the soup with him.",
+              "answer": "True",
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "elm-u1r-081",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "reading_mcq",
+              "prompt": "Goha smelled delicious soup from a ______.",
+              "answer": "restaurant",
+              "status": "active",
+              "choices": [
+                "house",
+                "shop",
+                "restaurant",
+                "market"
+              ]
+            },
+            {
+              "id": "elm-u1r-082",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "reading_mcq",
+              "prompt": "The ______ asked Goha to pay for the smell.",
+              "answer": "owner",
+              "status": "active",
+              "choices": [
+                "worker",
+                "cleaner",
+                "baker",
+                "owner"
+              ]
+            },
+            {
+              "id": "elm-u1r-083",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "reading_mcq",
+              "prompt": "Goha offered to pay with the sound of his ______.",
+              "answer": "coins",
+              "status": "active",
+              "choices": [
+                "bell",
+                "music",
+                "coins",
+                "birds"
+              ]
+            },
+            {
+              "id": "elm-u1r-084",
+              "section": "Al-Azhar Sample Test 2",
+              "printed_page": 65,
+              "pdf_page": 59,
+              "type": "writing",
+              "prompt": "Write a short paragraph of FOUR sentences on \"How to stay healthy\" using: water – sleep – important – drink.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            }
+          ],
+          "question_count": 82
         }
-      ]
+      ],
+      "total_active_questions": 222
     }
   ]
 }
