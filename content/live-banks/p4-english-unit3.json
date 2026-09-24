@@ -9,7 +9,7 @@
     "Bit by Bit English Primary 4 First Term 2027",
     "El-Moasser English Primary 4 First Term 2027"
   ],
-  "merge_policy": "Passage-aware normalized dedupe; source answers preserved; unresolved answer conflicts excluded.",
+  "merge_policy": "Type- and passage-aware normalized dedupe; source answers preserved; unresolved answer conflicts excluded.",
   "modules": [
     {
       "id": 9,
@@ -1106,6 +1106,27 @@
           ]
         },
         {
+          "id": "p4-eng-u3-l1-q050",
+          "section": "Reading Detail",
+          "printed_page": 115,
+          "type": "reading_open",
+          "prompt": "What do giraffes eat?",
+          "answer": "Leaves from tall trees.",
+          "status": "active",
+          "accepted_answers": [
+            "Leaves from tall trees.",
+            "They eat leaves from tall trees."
+          ],
+          "text": "What do giraffes eat?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 115,
+              "id": "elm-u3l1-010"
+            }
+          ]
+        },
+        {
           "id": "p4-eng-u3-l1-q051",
           "section": "Reading Detail",
           "printed_page": 115,
@@ -1944,6 +1965,23 @@
         },
         {
           "id": "p4-eng-u3-l1-q089",
+          "section": "Sample Test 6",
+          "printed_page": 151,
+          "type": "punctuation",
+          "prompt": "what do giraffes eat",
+          "answer": "What do giraffes eat?",
+          "status": "active",
+          "text": "what do giraffes eat",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 151,
+              "id": "elm-u3r-043"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u3-l1-q090",
           "section": "Sample Test 6",
           "printed_page": 151,
           "type": "punctuation",
