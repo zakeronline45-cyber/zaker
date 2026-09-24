@@ -131,14 +131,14 @@ async function submitAnswer(timedOut){
  if(timedOut&&!studentAnswer)studentAnswer='';
  document.querySelectorAll('#testArea button,#testArea textarea').forEach(x=>x.disabled=true);submitMsg.innerHTML='<div class="submitted">Answer saved. Checking...</div>';
  let correct=false;
- try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject:'English',module:q.module,id:q.id,studentAnswer,studyLanguage:'English'})});const j=await r.json();correct=!!j.correct}catch(e){}
+ try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subject:'English',module:q.module,id:q.id,studentAnswer,studyLanguage:'English'})});const j=await r.json();correct=!!j.correct}catch(e){}
  answers.push({module:q.module,lessonTitle:q.moduleTitle,questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct,timedOut:!!timedOut});
  setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},350);
 }
 async function finishTest(){
  clearInterval(timer);const score=answers.filter(x=>x.correct).length,total=answers.length,pct=total?Math.round(score/total*100):0,wrong=answers.filter(x=>!x.correct);lastScore.textContent=pct+'%';
  testArea.innerHTML='<div class="result"><p>Test completed</p><b>'+pct+'%</b><p>Analyzing your mistakes...</p></div>';
- let feedback={summary:'',topics:[],plan:[]};try{const r=await fetch('/api/test-feedback',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({subject:'English',lessonTitle:testLabel,wrongAnswers:wrong})});if(r.ok)feedback=await r.json()}catch(e){}
+ let feedback={summary:'',topics:[],plan:[]};try{const r=await fetch('/api/test-feedback',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subject:'English',lessonTitle:testLabel,wrongAnswers:wrong})});if(r.ok)feedback=await r.json()}catch(e){}
  if(!feedback.summary)feedback.summary=wrong.length?'Review the mistakes below, then try another test.':'Excellent — all answers are correct.';
  const record={subject:'English',unit:testModuleIds.length===1?current.unitTitle:'Multiple modules',lesson:null,lessonTitle:testLabel,modules:testModuleIds,score,total,pct,date:new Date().toISOString(),answers,feedback};
  const old=JSON.parse(localStorage.getItem(childKey('zaker_english_results'))||'[]');old.unshift(record);localStorage.setItem(childKey('zaker_english_results'),JSON.stringify(old.slice(0,60)));
@@ -162,7 +162,7 @@ async function renderProfile(){
 }
 async function askAI(){
  const q=aiQuestion.value.trim();if(!q)return;aiAnswer.style.display='block';aiAnswer.textContent='Thinking...';
- try{const sid=localStorage.getItem(childKey('zaker_ai_session_id'))||(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now());localStorage.setItem(childKey('zaker_ai_session_id'),sid);const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,subject:'English',grade:'First Prep',lesson:current.title,studyLanguage:'English',sessionId:sid})});const j=await r.json();if(!r.ok)throw new Error(j.error||'Tutor unavailable');aiAnswer.textContent=j.answer||'No response received'}catch(e){aiAnswer.textContent='Something went wrong: '+e.message}
+ try{const sid=localStorage.getItem(childKey('zaker_ai_session_id'))||(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now());localStorage.setItem(childKey('zaker_ai_session_id'),sid);const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({question:q,subject:'English',grade:'First Prep',lesson:current.title,studyLanguage:'English',sessionId:sid})});const j=await r.json();if(!r.ok)throw new Error(j.error||'Tutor unavailable');aiAnswer.textContent=j.answer||'No response received'}catch(e){aiAnswer.textContent='Something went wrong: '+e.message}
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 init();
