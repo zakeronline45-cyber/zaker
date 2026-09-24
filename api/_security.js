@@ -1,11 +1,10 @@
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
-const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './_config.js';
 
 async function supabaseFetch(path,{token,method='GET',body}={}){
   const r=await fetch(SUPABASE_URL+path,{
     method,
     headers:{
-      'apikey':SUPABASE_KEY,
+      'apikey':SUPABASE_PUBLISHABLE_KEY,
       ...(token?{'Authorization':'Bearer '+token}:{}),
       ...(body!==undefined?{'Content-Type':'application/json'}:{})
     },
