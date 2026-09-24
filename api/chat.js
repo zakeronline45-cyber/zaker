@@ -1,6 +1,5 @@
 import {requireUser,authorizeChildSubject} from './_security.js';
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
-const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './_config.js';
 const SCIENCE_SYLLABUS = [
   'Structure of the Atom',
   'The Periodic Table of Elements',
@@ -137,7 +136,7 @@ function localCurriculumFallback({question,studyLanguage,curriculumContext,cours
 async function rpc(name,body,token){
   const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`,{
     method:'POST',
-    headers:{'apikey':SUPABASE_KEY,'Authorization':`Bearer ${token}`,'Content-Type':'application/json'},
+    headers:{'apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':`Bearer ${token}`,'Content-Type':'application/json'},
     body:JSON.stringify(body)
   });
   if(!r.ok) throw new Error('Supabase RPC '+r.status);
