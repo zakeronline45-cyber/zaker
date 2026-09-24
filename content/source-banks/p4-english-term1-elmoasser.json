@@ -14,14 +14,15 @@
       2,
       3
     ],
-    "note": "This uploaded PDF ends with review on Units 1, 2 and 3; Units 4-6 are not present in this file."
+    "note": "Uploaded PDF continues through Unit 3 Sample Tests and begins Unit 4; earlier coverage note was incomplete."
   },
   "extraction_status": {
     "unit_1_lesson_1": "in_progress_verified_pages_24_28_59",
-    "remaining": "Unit 3 pending",
+    "remaining": "Unit 4+ source extraction pending",
     "note": "Listening items without usable audio remain inactive; open writing without source model answers is inactive.",
     "unit_1": "verified_core_exercises_and_sample_tests",
-    "unit_2": "verified_core_exercises_and_sample_tests"
+    "unit_2": "verified_core_exercises_and_sample_tests",
+    "unit_3": "verified_core_exercises_and_sample_tests"
   },
   "units": [
     {
@@ -6297,6 +6298,2500 @@
         }
       ],
       "total_active_questions": 200
+    },
+    {
+      "unit_id": 3,
+      "unit_title": "Animals in Our World",
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "lesson_title": "Let's Meet the Animals!",
+          "questions": [
+            {
+              "id": "elm-u3l1-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 113,
+              "type": "mcq",
+              "prompt": "The first ______ fish in the river.",
+              "answer": "catches",
+              "status": "active",
+              "choices": [
+                "climbs",
+                "runs",
+                "drinks",
+                "catches"
+              ]
+            },
+            {
+              "id": "elm-u3l1-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 113,
+              "type": "mcq",
+              "prompt": "The lion can ______ zebras.",
+              "answer": "hunt",
+              "status": "active",
+              "choices": [
+                "collect",
+                "feed",
+                "hunt",
+                "help"
+              ]
+            },
+            {
+              "id": "elm-u3l1-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 113,
+              "type": "mcq",
+              "prompt": "The ______ is big and gray.",
+              "answer": "elephant",
+              "status": "active",
+              "choices": [
+                "elephant",
+                "monkey",
+                "giraffe",
+                "lion"
+              ]
+            },
+            {
+              "id": "elm-u3l1-004",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 113,
+              "type": "mcq",
+              "prompt": "She is watching a TV ______ about animals.",
+              "answer": "program",
+              "status": "active",
+              "choices": [
+                "book",
+                "match",
+                "program",
+                "map"
+              ]
+            },
+            {
+              "id": "elm-u3l1-005",
+              "section": "Previous Exams",
+              "printed_page": 114,
+              "type": "mcq",
+              "prompt": "______ are very good at climbing trees.",
+              "answer": "Monkeys",
+              "status": "active",
+              "choices": [
+                "Elephants",
+                "Giraffes",
+                "Birds",
+                "Monkeys"
+              ]
+            },
+            {
+              "id": "elm-u3l1-006",
+              "section": "Previous Exams",
+              "printed_page": 114,
+              "type": "mcq",
+              "prompt": "My dad is a ______ guide. He shows visitors the animals.",
+              "answer": "forest",
+              "status": "active",
+              "choices": [
+                "forest",
+                "coat",
+                "hospital",
+                "sea"
+              ]
+            },
+            {
+              "id": "elm-u3l1-007",
+              "section": "Previous Exams",
+              "printed_page": 114,
+              "type": "mcq",
+              "prompt": "The zebra has a ______ coat.",
+              "answer": "striped",
+              "status": "active",
+              "choices": [
+                "striped",
+                "spotted",
+                "sharp",
+                "yellow"
+              ]
+            },
+            {
+              "id": "elm-u3l1-008",
+              "section": "Previous Exams",
+              "printed_page": 114,
+              "type": "mcq",
+              "prompt": "The monkey has a long ______.",
+              "answer": "tail",
+              "status": "active",
+              "choices": [
+                "neck",
+                "tail",
+                "trunk",
+                "claw"
+              ]
+            },
+            {
+              "id": "elm-u3l1-009",
+              "section": "Previous Exams",
+              "printed_page": 114,
+              "type": "mcq",
+              "prompt": "The bear has sharp ______.",
+              "answer": "claws",
+              "status": "active",
+              "choices": [
+                "feathers",
+                "claws",
+                "beaks",
+                "wings"
+              ]
+            },
+            {
+              "id": "elm-u3l1-010",
+              "section": "Reading Detail",
+              "printed_page": 115,
+              "type": "reading_open",
+              "prompt": "What do giraffes eat?",
+              "answer": "Leaves from tall trees.",
+              "status": "active",
+              "accepted_answers": [
+                "Leaves from tall trees.",
+                "They eat leaves from tall trees."
+              ]
+            },
+            {
+              "id": "elm-u3l1-011",
+              "section": "Reading Detail",
+              "printed_page": 115,
+              "type": "reading_open",
+              "prompt": "When do lions sleep?",
+              "answer": "During the day.",
+              "status": "active",
+              "accepted_answers": [
+                "During the day.",
+                "They sleep during the day."
+              ]
+            },
+            {
+              "id": "elm-u3l1-012",
+              "section": "General Exercises",
+              "printed_page": 117,
+              "type": "mcq",
+              "prompt": "The ______ is the king of the jungle land.",
+              "answer": "lion",
+              "status": "active",
+              "choices": [
+                "zebra",
+                "bear",
+                "elephant",
+                "lion"
+              ]
+            },
+            {
+              "id": "elm-u3l1-013",
+              "section": "General Exercises",
+              "printed_page": 117,
+              "type": "mcq",
+              "prompt": "The giraffe has a ______ coat.",
+              "answer": "spotted",
+              "status": "active",
+              "choices": [
+                "striped",
+                "black",
+                "spotted",
+                "gray"
+              ]
+            },
+            {
+              "id": "elm-u3l1-014",
+              "section": "General Exercises",
+              "printed_page": 117,
+              "type": "mcq",
+              "prompt": "The elephant ______ its trunk to drink water.",
+              "answer": "uses",
+              "status": "active",
+              "choices": [
+                "to use",
+                "using",
+                "use",
+                "uses"
+              ]
+            },
+            {
+              "id": "elm-u3l1-015",
+              "section": "General Exercises",
+              "printed_page": 117,
+              "type": "mcq",
+              "prompt": "Some animals ______ thick fur.",
+              "answer": "have",
+              "status": "active",
+              "choices": [
+                "does",
+                "has",
+                "doesn't have",
+                "have"
+              ]
+            },
+            {
+              "id": "elm-u3l1-016",
+              "section": "General Exercises",
+              "printed_page": 117,
+              "type": "mcq",
+              "prompt": "My father works ______ a forest guide at the forest park.",
+              "answer": "as",
+              "status": "active",
+              "choices": [
+                "in",
+                "as",
+                "at",
+                "on"
+              ]
+            },
+            {
+              "id": "elm-u3l1-017",
+              "section": "General Exercises",
+              "printed_page": 117,
+              "type": "mcq",
+              "prompt": "Lions have yellow ______.",
+              "answer": "fur",
+              "status": "active",
+              "choices": [
+                "trunk",
+                "jungle",
+                "nose",
+                "fur"
+              ]
+            },
+            {
+              "id": "elm-u3l1-018",
+              "section": "Reading",
+              "printed_page": 117,
+              "type": "reading_mcq",
+              "prompt": "The opposite of the underlined word \"large\" is ______.",
+              "answer": "small",
+              "status": "active",
+              "choices": [
+                "young",
+                "old",
+                "big",
+                "small"
+              ]
+            },
+            {
+              "id": "elm-u3l1-019",
+              "section": "Reading",
+              "printed_page": 117,
+              "type": "reading_mcq",
+              "prompt": "Elephants use their ______ to drink water.",
+              "answer": "trunk",
+              "status": "active",
+              "choices": [
+                "teeth",
+                "tails",
+                "trunk",
+                "toes"
+              ]
+            },
+            {
+              "id": "elm-u3l1-020",
+              "section": "Reading",
+              "printed_page": 117,
+              "type": "reading_open",
+              "prompt": "What do elephants eat?",
+              "answer": "Leaves and grass.",
+              "status": "active",
+              "accepted_answers": [
+                "Leaves and grass.",
+                "They eat leaves and grass."
+              ]
+            },
+            {
+              "id": "elm-u3l1-021",
+              "section": "Reading",
+              "printed_page": 117,
+              "type": "reading_open",
+              "prompt": "Where do elephants live?",
+              "answer": "In Africa and Asia.",
+              "status": "active",
+              "accepted_answers": [
+                "In Africa and Asia.",
+                "They live in Africa and Asia."
+              ]
+            },
+            {
+              "id": "elm-u3l1-022",
+              "section": "Read and Complete",
+              "printed_page": 118,
+              "type": "complete",
+              "prompt": "My father's job is very interesting. He is a forest ______.",
+              "answer": "guide",
+              "status": "active",
+              "word_bank": [
+                "climb",
+                "close",
+                "park",
+                "guide",
+                "visitors"
+              ]
+            },
+            {
+              "id": "elm-u3l1-023",
+              "section": "Read and Complete",
+              "printed_page": 118,
+              "type": "complete",
+              "prompt": "He works in a forest ______.",
+              "answer": "park",
+              "status": "active",
+              "word_bank": [
+                "climb",
+                "close",
+                "park",
+                "guide",
+                "visitors"
+              ]
+            },
+            {
+              "id": "elm-u3l1-024",
+              "section": "Read and Complete",
+              "printed_page": 118,
+              "type": "complete",
+              "prompt": "His job is to show ______ the animals.",
+              "answer": "visitors",
+              "status": "active",
+              "word_bank": [
+                "climb",
+                "close",
+                "park",
+                "guide",
+                "visitors"
+              ]
+            },
+            {
+              "id": "elm-u3l1-025",
+              "section": "Read and Complete",
+              "printed_page": 118,
+              "type": "complete",
+              "prompt": "Many people visit the forest park to enjoy watching the animals up ______.",
+              "answer": "close",
+              "status": "active",
+              "word_bank": [
+                "climb",
+                "close",
+                "park",
+                "guide",
+                "visitors"
+              ]
+            },
+            {
+              "id": "elm-u3l1-026",
+              "section": "Punctuation",
+              "printed_page": 118,
+              "type": "punctuation",
+              "prompt": "when do lions often hunt",
+              "answer": "When do lions often hunt?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l1-027",
+              "section": "Punctuation",
+              "printed_page": 118,
+              "type": "punctuation",
+              "prompt": "the bear has a thick fur",
+              "answer": "The bear has thick fur.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l1-028",
+              "section": "Writing",
+              "printed_page": 118,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"A day at the forest park\" using: animals – elephants – monkeys.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            }
+          ],
+          "question_count": 27
+        },
+        {
+          "lesson_id": 2,
+          "lesson_title": "Taking Care of Animals / Comparative Adjectives",
+          "questions": [
+            {
+              "id": "elm-u3l2-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Our teacher asked us a question to get our ______.",
+              "answer": "attention",
+              "status": "active",
+              "choices": [
+                "kindness",
+                "attention",
+                "book",
+                "case"
+              ]
+            },
+            {
+              "id": "elm-u3l2-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Noha faces many ______, so she has a difficult life.",
+              "answer": "challenges",
+              "status": "active",
+              "choices": [
+                "cities",
+                "cages",
+                "challenges",
+                "hotels"
+              ]
+            },
+            {
+              "id": "elm-u3l2-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Who is the ______ of this dog?",
+              "answer": "owner",
+              "status": "active",
+              "choices": [
+                "challenge",
+                "owner",
+                "habit",
+                "habitat"
+              ]
+            },
+            {
+              "id": "elm-u3l2-004",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Giraffes need tall trees to ______ their food.",
+              "answer": "reach",
+              "status": "active",
+              "choices": [
+                "reach",
+                "make",
+                "build",
+                "feed"
+              ]
+            },
+            {
+              "id": "elm-u3l2-005",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Lions live inside ______ in the zoo.",
+              "answer": "cages",
+              "status": "active",
+              "choices": [
+                "mountains",
+                "forests",
+                "cages",
+                "rivers"
+              ]
+            },
+            {
+              "id": "elm-u3l2-006",
+              "section": "Previous Exams",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "We can help protect animals by showing ______ and caring for them.",
+              "answer": "kindness",
+              "status": "active",
+              "choices": [
+                "fear",
+                "worry",
+                "advice",
+                "kindness"
+              ]
+            },
+            {
+              "id": "elm-u3l2-007",
+              "section": "Previous Exams",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Animals need our help to stay ______.",
+              "answer": "safe",
+              "status": "active",
+              "choices": [
+                "fast",
+                "angry",
+                "safe",
+                "tired"
+              ]
+            },
+            {
+              "id": "elm-u3l2-008",
+              "section": "Previous Exams",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Elephants need big ______ to move around.",
+              "answer": "spaces",
+              "status": "active",
+              "choices": [
+                "food",
+                "care",
+                "space",
+                "water"
+              ]
+            },
+            {
+              "id": "elm-u3l2-009",
+              "section": "Previous Exams",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Vets check animals' ______ to keep them healthy.",
+              "answer": "health",
+              "status": "active",
+              "choices": [
+                "kindness",
+                "health",
+                "voice",
+                "challenges"
+              ]
+            },
+            {
+              "id": "elm-u3l2-010",
+              "section": "Previous Exams",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Forest ______ work hard to protect animals' homes.",
+              "answer": "officers",
+              "status": "active",
+              "choices": [
+                "insects",
+                "animals",
+                "officers",
+                "birds"
+              ]
+            },
+            {
+              "id": "elm-u3l2-011",
+              "section": "Previous Exams",
+              "printed_page": 120,
+              "type": "mcq",
+              "prompt": "Pets need ______ care from their owners.",
+              "answer": "daily",
+              "status": "active",
+              "choices": [
+                "monthly",
+                "weekly",
+                "yearly",
+                "daily"
+              ]
+            },
+            {
+              "id": "elm-u3l2-012",
+              "section": "Reading Detail",
+              "printed_page": 121,
+              "type": "reading_open",
+              "prompt": "Why do lions eat a lot of food?",
+              "answer": "To stay stronger than other animals.",
+              "status": "active",
+              "accepted_answers": [
+                "To stay stronger than other animals.",
+                "They eat a lot to stay stronger than other animals."
+              ]
+            },
+            {
+              "id": "elm-u3l2-013",
+              "section": "Reading Detail",
+              "printed_page": 121,
+              "type": "reading_open",
+              "prompt": "Why are the homes of wild animals getting smaller?",
+              "answer": "Because of new cities.",
+              "status": "active",
+              "accepted_answers": [
+                "Because of new cities.",
+                "Their homes are getting smaller because of new cities."
+              ]
+            },
+            {
+              "id": "elm-u3l2-014",
+              "section": "Language in Use",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "Amira is ______ than her sister.",
+              "answer": "younger",
+              "status": "active",
+              "choices": [
+                "young",
+                "youngest",
+                "as young",
+                "younger"
+              ]
+            },
+            {
+              "id": "elm-u3l2-015",
+              "section": "Language in Use",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "Their life is ______ than before.",
+              "answer": "happier",
+              "status": "active",
+              "choices": [
+                "happy",
+                "happiest",
+                "happier",
+                "as happy"
+              ]
+            },
+            {
+              "id": "elm-u3l2-016",
+              "section": "Language in Use",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "Elephants are heavier ______ lions.",
+              "answer": "than",
+              "status": "active",
+              "choices": [
+                "there",
+                "than",
+                "that",
+                "these"
+              ]
+            },
+            {
+              "id": "elm-u3l2-017",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "The cat is ______ than the mouse.",
+              "answer": "bigger",
+              "status": "active",
+              "choices": [
+                "big",
+                "bigger",
+                "biggest",
+                "as big"
+              ]
+            },
+            {
+              "id": "elm-u3l2-018",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "Noha is ______ than Nashwa.",
+              "answer": "shorter",
+              "status": "active",
+              "choices": [
+                "short",
+                "a short",
+                "shorter",
+                "shortest"
+              ]
+            },
+            {
+              "id": "elm-u3l2-019",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "He is ______ than his brother.",
+              "answer": "taller",
+              "status": "active",
+              "choices": [
+                "tall",
+                "taller",
+                "tallest",
+                "the tall"
+              ]
+            },
+            {
+              "id": "elm-u3l2-020",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "mcq",
+              "prompt": "A zebra is shorter ______ a giraffe.",
+              "answer": "than",
+              "status": "active",
+              "choices": [
+                "the",
+                "then",
+                "that",
+                "than"
+              ]
+            },
+            {
+              "id": "elm-u3l2-021",
+              "section": "Correct Form",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "Salma is ______ (old) than Reem.",
+              "answer": "older",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-022",
+              "section": "Correct Form",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "Magdy is taller ______ (then) Injy.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-023",
+              "section": "Correct Form",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "Camels are ______ (strong) than goats.",
+              "answer": "stronger",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-024",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "Sally is ______ (lazy) than Rana.",
+              "answer": "lazier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-025",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "Fruit is ______ (healthy) than sweets.",
+              "answer": "healthier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-026",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "English is ______ (easy) than Arabic.",
+              "answer": "easier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-027",
+              "section": "Previous Exams",
+              "printed_page": 123,
+              "type": "correct_form",
+              "prompt": "The cat is ______ (small) than the dog.",
+              "answer": "smaller",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-028",
+              "section": "General Exercises",
+              "printed_page": 124,
+              "type": "mcq",
+              "prompt": "My cat is ______ than my neighbor's cat.",
+              "answer": "fatter",
+              "status": "active",
+              "choices": [
+                "fat",
+                "fatter",
+                "fattest",
+                "as fat"
+              ]
+            },
+            {
+              "id": "elm-u3l2-029",
+              "section": "General Exercises",
+              "printed_page": 124,
+              "type": "mcq",
+              "prompt": "Some animals like lions and tigers live in the ______.",
+              "answer": "wild",
+              "status": "active",
+              "choices": [
+                "sea",
+                "river",
+                "wild",
+                "ocean"
+              ]
+            },
+            {
+              "id": "elm-u3l2-030",
+              "section": "General Exercises",
+              "printed_page": 124,
+              "type": "mcq",
+              "prompt": "Asser is taller ______ his brother.",
+              "answer": "than",
+              "status": "active",
+              "choices": [
+                "the",
+                "that",
+                "than",
+                "then"
+              ]
+            },
+            {
+              "id": "elm-u3l2-031",
+              "section": "General Exercises",
+              "printed_page": 124,
+              "type": "mcq",
+              "prompt": "Showing ______ to animals can protect them.",
+              "answer": "kindness",
+              "status": "active",
+              "choices": [
+                "crops",
+                "kindness",
+                "rocks",
+                "cages"
+              ]
+            },
+            {
+              "id": "elm-u3l2-032",
+              "section": "General Exercises",
+              "printed_page": 124,
+              "type": "mcq",
+              "prompt": "Rabbits are ______ than turtles.",
+              "answer": "faster",
+              "status": "active",
+              "choices": [
+                "as fast",
+                "fastest",
+                "faster",
+                "fast"
+              ]
+            },
+            {
+              "id": "elm-u3l2-033",
+              "section": "General Exercises",
+              "printed_page": 124,
+              "type": "mcq",
+              "prompt": "Babies need special ______ to stay safe.",
+              "answer": "attention",
+              "status": "active",
+              "choices": [
+                "attention",
+                "work",
+                "animals",
+                "bus"
+              ]
+            },
+            {
+              "id": "elm-u3l2-034",
+              "section": "Read and Complete",
+              "printed_page": 124,
+              "type": "complete",
+              "prompt": "Wild animals face different challenges. Their ______ are getting smaller because of new cities.",
+              "answer": "homes",
+              "status": "active",
+              "word_bank": [
+                "protect",
+                "clean",
+                "happier",
+                "homes",
+                "officers"
+              ]
+            },
+            {
+              "id": "elm-u3l2-035",
+              "section": "Read and Complete",
+              "printed_page": 124,
+              "type": "complete",
+              "prompt": "They need ______ water and safe places to live in.",
+              "answer": "clean",
+              "status": "active",
+              "word_bank": [
+                "protect",
+                "clean",
+                "happier",
+                "homes",
+                "officers"
+              ]
+            },
+            {
+              "id": "elm-u3l2-036",
+              "section": "Read and Complete",
+              "printed_page": 124,
+              "type": "complete",
+              "prompt": "Forest ______ now work harder than before to protect these animals and their homes.",
+              "answer": "officers",
+              "status": "active",
+              "word_bank": [
+                "protect",
+                "clean",
+                "happier",
+                "homes",
+                "officers"
+              ]
+            },
+            {
+              "id": "elm-u3l2-037",
+              "section": "Read and Complete",
+              "printed_page": 124,
+              "type": "complete",
+              "prompt": "Everyone can help protect animals in simple ways.",
+              "answer": "protect",
+              "status": "active",
+              "word_bank": [
+                "protect",
+                "clean",
+                "happier",
+                "homes",
+                "officers"
+              ]
+            },
+            {
+              "id": "elm-u3l2-038",
+              "section": "Correct Form",
+              "printed_page": 124,
+              "type": "correct_form",
+              "prompt": "My grandfather is ______ (old) than my father.",
+              "answer": "older",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-039",
+              "section": "Correct Form",
+              "printed_page": 124,
+              "type": "correct_form",
+              "prompt": "She is shorter ______ (the) her sister.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-040",
+              "section": "Correct Form",
+              "printed_page": 124,
+              "type": "correct_form",
+              "prompt": "Elephants are ______ (big) than monkeys.",
+              "answer": "bigger",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-041",
+              "section": "Correct Form",
+              "printed_page": 124,
+              "type": "correct_form",
+              "prompt": "Cats are ______ (safe) than lions.",
+              "answer": "safer",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-042",
+              "section": "Punctuation",
+              "printed_page": 124,
+              "type": "punctuation",
+              "prompt": "he keeps a rabbit at home",
+              "answer": "He keeps a rabbit at home.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-043",
+              "section": "Punctuation",
+              "printed_page": 124,
+              "type": "punctuation",
+              "prompt": "how do vets help animals",
+              "answer": "How do vets help animals?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l2-044",
+              "section": "Reading",
+              "printed_page": 125,
+              "type": "reading_mcq",
+              "prompt": "Giraffes need taller ______.",
+              "answer": "trees",
+              "status": "active",
+              "choices": [
+                "seats",
+                "senses",
+                "trees",
+                "fans"
+              ]
+            },
+            {
+              "id": "elm-u3l2-045",
+              "section": "Reading",
+              "printed_page": 125,
+              "type": "reading_mcq",
+              "prompt": "Elephants need ______ spaces than monkeys.",
+              "answer": "bigger",
+              "status": "active",
+              "choices": [
+                "smaller",
+                "heavier",
+                "bigger",
+                "taller"
+              ]
+            },
+            {
+              "id": "elm-u3l2-046",
+              "section": "Reading",
+              "printed_page": 125,
+              "type": "reading_open",
+              "prompt": "What do zoo animals need?",
+              "answer": "Special attention.",
+              "status": "active",
+              "accepted_answers": [
+                "Special attention.",
+                "Zoo animals need special attention."
+              ]
+            },
+            {
+              "id": "elm-u3l2-047",
+              "section": "Reading",
+              "printed_page": 125,
+              "type": "reading_open",
+              "prompt": "How can lions stay stronger than others?",
+              "answer": "By eating a lot of food.",
+              "status": "active",
+              "accepted_answers": [
+                "By eating a lot of food.",
+                "They eat a lot of food."
+              ]
+            },
+            {
+              "id": "elm-u3l2-048",
+              "section": "Writing",
+              "printed_page": 125,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"Taking care of animals\" using: space – exercise – cages.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            }
+          ],
+          "question_count": 47
+        },
+        {
+          "lesson_id": 3,
+          "lesson_title": "Story Time: The Old Lion and the Fox",
+          "questions": [
+            {
+              "id": "elm-u3l3-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "The fox has a ______ tail with soft fur.",
+              "answer": "fluffy",
+              "status": "active",
+              "choices": [
+                "hard",
+                "fluffy",
+                "dry",
+                "fast"
+              ]
+            },
+            {
+              "id": "elm-u3l3-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "To ______ means to act like something is true when it isn't.",
+              "answer": "pretend",
+              "status": "active",
+              "choices": [
+                "pretend",
+                "hunt",
+                "save",
+                "help"
+              ]
+            },
+            {
+              "id": "elm-u3l3-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "The dog ______ down on the ground and slept.",
+              "answer": "lay",
+              "status": "active",
+              "choices": [
+                "saw",
+                "lay",
+                "replied",
+                "heard"
+              ]
+            },
+            {
+              "id": "elm-u3l3-004",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "To ______ means to look for and catch animals for food.",
+              "answer": "hunt",
+              "status": "active",
+              "choices": [
+                "protect",
+                "care",
+                "hunt",
+                "create"
+              ]
+            },
+            {
+              "id": "elm-u3l3-005",
+              "section": "Previous Exams",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "______ are marks left by feet.",
+              "answer": "Footprints",
+              "status": "active",
+              "choices": [
+                "Fingerprints",
+                "Photos",
+                "Footprints",
+                "Mistakes"
+              ]
+            },
+            {
+              "id": "elm-u3l3-006",
+              "section": "Previous Exams",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "The ______ understands the lion's trick.",
+              "answer": "fox",
+              "status": "active",
+              "choices": [
+                "healthy",
+                "true",
+                "clean",
+                "wise"
+              ]
+            },
+            {
+              "id": "elm-u3l3-007",
+              "section": "Previous Exams",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "A ______ is a large hole in a mountain.",
+              "answer": "cave",
+              "status": "active",
+              "choices": [
+                "surface",
+                "floor",
+                "cave",
+                "cage"
+              ]
+            },
+            {
+              "id": "elm-u3l3-008",
+              "section": "Previous Exams",
+              "printed_page": 129,
+              "type": "mcq",
+              "prompt": "We should learn from the ______ of others.",
+              "answer": "mistakes",
+              "status": "active",
+              "choices": [
+                "mistakes",
+                "habitats",
+                "animals",
+                "care"
+              ]
+            },
+            {
+              "id": "elm-u3l3-009",
+              "section": "General Exercises",
+              "printed_page": 132,
+              "type": "reading_mcq",
+              "prompt": "The text is about ______.",
+              "answer": "Old tiger",
+              "status": "active",
+              "choices": [
+                "Old elephant",
+                "Old zebra",
+                "Old man",
+                "Old tiger"
+              ]
+            },
+            {
+              "id": "elm-u3l3-010",
+              "section": "General Exercises",
+              "printed_page": 132,
+              "type": "reading_mcq",
+              "prompt": "The opposite of the underlined word \"weak\" is ______.",
+              "answer": "strong",
+              "status": "active",
+              "choices": [
+                "strong",
+                "noisy",
+                "bad",
+                "heavy"
+              ]
+            },
+            {
+              "id": "elm-u3l3-011",
+              "section": "General Exercises",
+              "printed_page": 132,
+              "type": "reading_open",
+              "prompt": "What did the monkey see?",
+              "answer": "Many footprints going into the cave, but no footprints coming out.",
+              "status": "active",
+              "accepted_answers": [
+                "Footprints going into the cave and none coming out.",
+                "Many footprints going into the cave, but no footprints coming out."
+              ]
+            },
+            {
+              "id": "elm-u3l3-012",
+              "section": "General Exercises",
+              "printed_page": 132,
+              "type": "reading_open",
+              "prompt": "Why did the monkey refuse to come inside the cave?",
+              "answer": "Because he saw footprints going in but none coming out.",
+              "status": "active",
+              "accepted_answers": [
+                "Because he saw footprints going in but none coming out.",
+                "He noticed that footprints went in but none came out."
+              ]
+            },
+            {
+              "id": "elm-u3l3-013",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "The fox is ______ (wise) than the lion.",
+              "answer": "wiser",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-014",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "Jackets are ______ (heavy) than shirts.",
+              "answer": "heavier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-015",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "Bears' fur is ______ (thick) than camels' fur.",
+              "answer": "thicker",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-016",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "The cave is larger ______ (that) the hole.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-017",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "Cities are ______ (noisy) than villages.",
+              "answer": "noisier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-018",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "My room is ______ (clean) than yours.",
+              "answer": "cleaner",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-019",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "The drum is ______ (loud) than the violin.",
+              "answer": "louder",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-020",
+              "section": "Correct Form",
+              "printed_page": 132,
+              "type": "correct_form",
+              "prompt": "He is kinder to animals ______ (then) his friends.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-021",
+              "section": "Punctuation",
+              "printed_page": 132,
+              "type": "punctuation",
+              "prompt": "why did the lion trick the animals",
+              "answer": "Why did the lion trick the animals?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-022",
+              "section": "Punctuation",
+              "printed_page": 132,
+              "type": "punctuation",
+              "prompt": "the lion pretended to be sick",
+              "answer": "The lion pretended to be sick.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l3-023",
+              "section": "Previous Exams",
+              "printed_page": 133,
+              "type": "mcq",
+              "prompt": "Many animals visited the sick lion in its ______.",
+              "answer": "cave",
+              "status": "active",
+              "choices": [
+                "design",
+                "station",
+                "outfit",
+                "cave"
+              ]
+            },
+            {
+              "id": "elm-u3l3-024",
+              "section": "Previous Exams",
+              "printed_page": 133,
+              "type": "mcq",
+              "prompt": "The lion is ______ than the rabbit.",
+              "answer": "stronger",
+              "status": "active",
+              "choices": [
+                "as strong",
+                "strong",
+                "the strongest",
+                "stronger"
+              ]
+            },
+            {
+              "id": "elm-u3l3-025",
+              "section": "Previous Exams",
+              "printed_page": 133,
+              "type": "mcq",
+              "prompt": "The cat is ______ than the fox.",
+              "answer": "nicer",
+              "status": "active",
+              "choices": [
+                "nicer",
+                "nice",
+                "as nice",
+                "nicest"
+              ]
+            },
+            {
+              "id": "elm-u3l3-026",
+              "section": "Previous Exams",
+              "printed_page": 133,
+              "type": "mcq",
+              "prompt": "The lion tricked the animals and ______ to be sick.",
+              "answer": "pretended",
+              "status": "active",
+              "choices": [
+                "remembered",
+                "pretended",
+                "hunted",
+                "walked"
+              ]
+            },
+            {
+              "id": "elm-u3l3-027",
+              "section": "Previous Exams",
+              "printed_page": 133,
+              "type": "mcq",
+              "prompt": "My father is ______ than me.",
+              "answer": "wiser",
+              "status": "active",
+              "choices": [
+                "as wise",
+                "wisest",
+                "wise",
+                "wiser"
+              ]
+            },
+            {
+              "id": "elm-u3l3-028",
+              "section": "Previous Exams",
+              "printed_page": 133,
+              "type": "mcq",
+              "prompt": "A ______ is a small, quick animal with red-brown fur.",
+              "answer": "fox",
+              "status": "active",
+              "choices": [
+                "zebra",
+                "bear",
+                "giraffe",
+                "fox"
+              ]
+            },
+            {
+              "id": "elm-u3l3-029",
+              "section": "Read and Complete",
+              "printed_page": 133,
+              "type": "complete",
+              "prompt": "The old lion ______ to be very sick.",
+              "answer": "pretended",
+              "status": "active",
+              "word_bank": [
+                "mistakes",
+                "cave",
+                "pretended",
+                "sick",
+                "come out"
+              ]
+            },
+            {
+              "id": "elm-u3l3-030",
+              "section": "Read and Complete",
+              "printed_page": 133,
+              "type": "complete",
+              "prompt": "Many animals came into the lion's ______ to visit him but they didn't ______.",
+              "answer": "cave",
+              "status": "active",
+              "word_bank": [
+                "mistakes",
+                "cave",
+                "pretended",
+                "sick",
+                "come out"
+              ]
+            },
+            {
+              "id": "elm-u3l3-031",
+              "section": "Read and Complete",
+              "printed_page": 133,
+              "type": "complete",
+              "prompt": "Many animals came into the lion's cave to visit him but they didn't ______.",
+              "answer": "come out",
+              "status": "active",
+              "word_bank": [
+                "mistakes",
+                "cave",
+                "pretended",
+                "sick",
+                "come out"
+              ]
+            },
+            {
+              "id": "elm-u3l3-032",
+              "section": "Read and Complete",
+              "printed_page": 133,
+              "type": "complete",
+              "prompt": "He learned from the ______ of others.",
+              "answer": "mistakes",
+              "status": "active",
+              "word_bank": [
+                "mistakes",
+                "cave",
+                "pretended",
+                "sick",
+                "come out"
+              ]
+            }
+          ],
+          "question_count": 32
+        },
+        {
+          "lesson_id": 4,
+          "lesson_title": "Endangered Animals / Writing",
+          "questions": [
+            {
+              "id": "elm-u3l4-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "There are many ______ of birds.",
+              "answer": "species",
+              "status": "active",
+              "choices": [
+                "species",
+                "areas",
+                "habitats",
+                "grades"
+              ]
+            },
+            {
+              "id": "elm-u3l4-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "A little water ______ in the bottle.",
+              "answer": "remains",
+              "status": "active",
+              "choices": [
+                "stops",
+                "remains",
+                "teaches",
+                "protects"
+              ]
+            },
+            {
+              "id": "elm-u3l4-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "The ______ is a big wild cat.",
+              "answer": "leopard",
+              "status": "active",
+              "choices": [
+                "bear",
+                "zebra",
+                "leopard",
+                "dugong"
+              ]
+            },
+            {
+              "id": "elm-u3l4-004",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "The Red Sea ______ is an endangered animal.",
+              "answer": "Dugong",
+              "status": "active",
+              "choices": [
+                "Coast",
+                "Beach",
+                "Dugong",
+                "Grass"
+              ]
+            },
+            {
+              "id": "elm-u3l4-005",
+              "section": "Previous Exams",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "Animals are in ______ because of pollution.",
+              "answer": "danger",
+              "status": "active",
+              "choices": [
+                "danger",
+                "safety",
+                "calm",
+                "health"
+              ]
+            },
+            {
+              "id": "elm-u3l4-006",
+              "section": "Previous Exams",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "Some animals are in danger of ______ forever.",
+              "answer": "disappearing",
+              "status": "active",
+              "choices": [
+                "growing",
+                "disappearing",
+                "swimming",
+                "flying"
+              ]
+            },
+            {
+              "id": "elm-u3l4-007",
+              "section": "Previous Exams",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "Fishermen catch dugongs in their fishing ______.",
+              "answer": "nets",
+              "status": "active",
+              "choices": [
+                "trains",
+                "tricks",
+                "holes",
+                "nets"
+              ]
+            },
+            {
+              "id": "elm-u3l4-008",
+              "section": "Previous Exams",
+              "printed_page": 135,
+              "type": "mcq",
+              "prompt": "We need to create safe ______ to help endangered animals.",
+              "answer": "areas",
+              "status": "active",
+              "choices": [
+                "grass",
+                "nets",
+                "areas",
+                "facts"
+              ]
+            },
+            {
+              "id": "elm-u3l4-009",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "true_false",
+              "prompt": "Many animals are in danger of disappearing forever.",
+              "answer": null,
+              "status": "inactive_missing_answer_key"
+            },
+            {
+              "id": "elm-u3l4-010",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "mcq",
+              "prompt": "People work hard to create safe places for ______ animals.",
+              "answer": "endangered",
+              "status": "active",
+              "choices": [
+                "deep",
+                "endangered",
+                "dead",
+                "danger"
+              ]
+            },
+            {
+              "id": "elm-u3l4-011",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "mcq",
+              "prompt": "The ______ is a gentle sea animal.",
+              "answer": "dugong",
+              "status": "active",
+              "choices": [
+                "bear",
+                "dugong",
+                "zebra",
+                "tiger"
+              ]
+            },
+            {
+              "id": "elm-u3l4-012",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "mcq",
+              "prompt": "After lunch, little food ______ in the dishes.",
+              "answer": "remains",
+              "status": "active",
+              "choices": [
+                "remains",
+                "disappears",
+                "builds",
+                "grows"
+              ]
+            },
+            {
+              "id": "elm-u3l4-013",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "mcq",
+              "prompt": "She is ______ than her brother.",
+              "answer": "faster",
+              "status": "active",
+              "choices": [
+                "fast",
+                "faster",
+                "fastest",
+                "fast as"
+              ]
+            },
+            {
+              "id": "elm-u3l4-014",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "mcq",
+              "prompt": "The red dress is longer ______ the blue one.",
+              "answer": "than",
+              "status": "active",
+              "choices": [
+                "than",
+                "then",
+                "that",
+                "the"
+              ]
+            },
+            {
+              "id": "elm-u3l4-015",
+              "section": "General Exercises",
+              "printed_page": 138,
+              "type": "mcq",
+              "prompt": "My cousin is ______ than my brother.",
+              "answer": "younger",
+              "status": "active",
+              "choices": [
+                "youngest",
+                "younger",
+                "young",
+                "the youngest"
+              ]
+            },
+            {
+              "id": "elm-u3l4-016",
+              "section": "Read and Complete",
+              "printed_page": 138,
+              "type": "complete",
+              "prompt": "The Red Sea Dugong is an endangered animal in Egypt. These gentle sea animals eat sea ______.",
+              "answer": "grass",
+              "status": "active",
+              "word_bank": [
+                "stop",
+                "animals",
+                "pollution",
+                "grass",
+                "protect"
+              ]
+            },
+            {
+              "id": "elm-u3l4-017",
+              "section": "Read and Complete",
+              "printed_page": 138,
+              "type": "complete",
+              "prompt": "They are in danger because of ______ and fishing nets.",
+              "answer": "pollution",
+              "status": "active",
+              "word_bank": [
+                "stop",
+                "animals",
+                "pollution",
+                "grass",
+                "protect"
+              ]
+            },
+            {
+              "id": "elm-u3l4-018",
+              "section": "Read and Complete",
+              "printed_page": 138,
+              "type": "complete",
+              "prompt": "To help these ______, we need to protect their homes and ______ pollution.",
+              "answer": "animals",
+              "status": "active",
+              "word_bank": [
+                "stop",
+                "animals",
+                "pollution",
+                "grass",
+                "protect"
+              ]
+            },
+            {
+              "id": "elm-u3l4-019",
+              "section": "Read and Complete",
+              "printed_page": 138,
+              "type": "complete",
+              "prompt": "To help these animals, we need to protect their homes and ______ pollution.",
+              "answer": "stop",
+              "status": "active",
+              "word_bank": [
+                "stop",
+                "animals",
+                "pollution",
+                "grass",
+                "protect"
+              ]
+            },
+            {
+              "id": "elm-u3l4-020",
+              "section": "Writing",
+              "printed_page": 138,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"The Red Sea Dugong\" using: sea grass – in danger – pollution.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            },
+            {
+              "id": "elm-u3l4-021",
+              "section": "Reading",
+              "printed_page": 139,
+              "type": "reading_mcq",
+              "prompt": "Some animals are in danger because of ______.",
+              "answer": "cutting down trees and hunting animals",
+              "status": "active",
+              "choices": [
+                "planting trees",
+                "cutting down trees",
+                "hunting animals",
+                "cutting down trees and hunting animals"
+              ]
+            },
+            {
+              "id": "elm-u3l4-022",
+              "section": "Reading",
+              "printed_page": 139,
+              "type": "reading_mcq",
+              "prompt": "______ is an example of endangered animals.",
+              "answer": "Giant panda",
+              "status": "active",
+              "choices": [
+                "Dog",
+                "Cat",
+                "Giant panda",
+                "Rabbit"
+              ]
+            },
+            {
+              "id": "elm-u3l4-023",
+              "section": "Reading",
+              "printed_page": 139,
+              "type": "reading_open",
+              "prompt": "Where are many animals endangered?",
+              "answer": "Around the world.",
+              "status": "active",
+              "accepted_answers": [
+                "Around the world.",
+                "Many animals around the world are endangered."
+              ]
+            },
+            {
+              "id": "elm-u3l4-024",
+              "section": "Reading",
+              "printed_page": 139,
+              "type": "reading_open",
+              "prompt": "How can we protect endangered animals?",
+              "answer": "By protecting their homes, planting trees, keeping the environment clean and not hunting them.",
+              "status": "active",
+              "accepted_answers": [
+                "By protecting their homes, planting trees, keeping the environment clean and not hunting them.",
+                "Protect their homes, plant trees, keep the environment clean and don't hunt them."
+              ]
+            },
+            {
+              "id": "elm-u3l4-025",
+              "section": "Correct Form",
+              "printed_page": 139,
+              "type": "correct_form",
+              "prompt": "Today is ______ (hot) than yesterday.",
+              "answer": "hotter",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l4-026",
+              "section": "Correct Form",
+              "printed_page": 139,
+              "type": "correct_form",
+              "prompt": "Bears are ______ (big) than lions today.",
+              "answer": "bigger",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l4-027",
+              "section": "Correct Form",
+              "printed_page": 139,
+              "type": "correct_form",
+              "prompt": "Amany is ______ (smart) than her sister.",
+              "answer": "smarter",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l4-028",
+              "section": "Correct Form",
+              "printed_page": 139,
+              "type": "correct_form",
+              "prompt": "Arabic is ______ (easy) than French.",
+              "answer": "easier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3l4-029",
+              "section": "Skills Reading",
+              "printed_page": 141,
+              "type": "reading_mcq",
+              "prompt": "The Red Sea Dugong lives in ______.",
+              "answer": "Egypt",
+              "status": "active",
+              "choices": [
+                "China",
+                "England",
+                "Egypt",
+                "Japan"
+              ]
+            },
+            {
+              "id": "elm-u3l4-030",
+              "section": "Skills Reading",
+              "printed_page": 141,
+              "type": "reading_mcq",
+              "prompt": "The Red Sea Dugong eats ______.",
+              "answer": "sea grass",
+              "status": "active",
+              "choices": [
+                "small insects",
+                "sea grass",
+                "large leaves",
+                "fresh fruit"
+              ]
+            },
+            {
+              "id": "elm-u3l4-031",
+              "section": "Skills Reading",
+              "printed_page": 141,
+              "type": "reading_mcq",
+              "prompt": "The Red Sea Dugong is in danger because of ______.",
+              "answer": "pollution",
+              "status": "active",
+              "choices": [
+                "clean water",
+                "pollution",
+                "sea grass",
+                "safe areas"
+              ]
+            }
+          ],
+          "question_count": 29
+        },
+        {
+          "lesson_id": 5,
+          "lesson_title": "Unit 3 Review & Tests",
+          "questions": [
+            {
+              "id": "elm-u3r-001",
+              "section": "Review through the Exam",
+              "printed_page": 147,
+              "type": "reorder",
+              "prompt": "striped - The zebra - coat - has",
+              "answer": "The zebra has a striped coat.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-002",
+              "section": "Review through the Exam",
+              "printed_page": 147,
+              "type": "reorder",
+              "prompt": "has - a long - The monkey - tail",
+              "answer": "The monkey has a long tail.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-003",
+              "section": "Review through the Exam",
+              "printed_page": 147,
+              "type": "reorder",
+              "prompt": "is - and - big - The elephant - gray",
+              "answer": "The elephant is big and gray.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-004",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "mcq",
+              "prompt": "Teachers give some ______ to students to study well.",
+              "answer": "advice",
+              "status": "active",
+              "choices": [
+                "habits",
+                "spaces",
+                "advice",
+                "visits"
+              ]
+            },
+            {
+              "id": "elm-u3r-005",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "mcq",
+              "prompt": "I take my cat to the ______ to check its health.",
+              "answer": "vet",
+              "status": "active",
+              "choices": [
+                "engineer",
+                "vet",
+                "teacher",
+                "farmer"
+              ]
+            },
+            {
+              "id": "elm-u3r-006",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "mcq",
+              "prompt": "Elephants are ______ than lions.",
+              "answer": "bigger",
+              "status": "active",
+              "choices": [
+                "big",
+                "the big",
+                "biggest",
+                "bigger"
+              ]
+            },
+            {
+              "id": "elm-u3r-007",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "mcq",
+              "prompt": "No one in the class is ______ than Hatem.",
+              "answer": "smarter",
+              "status": "active",
+              "choices": [
+                "smarter",
+                "smart",
+                "smartest",
+                "as smart"
+              ]
+            },
+            {
+              "id": "elm-u3r-008",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "mcq",
+              "prompt": "My bag is heavier ______ my sister's bag.",
+              "answer": "than",
+              "status": "active",
+              "choices": [
+                "that",
+                "then",
+                "than",
+                "the"
+              ]
+            },
+            {
+              "id": "elm-u3r-009",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "mcq",
+              "prompt": "The lion stays in a strong ______ at the zoo for safety.",
+              "answer": "cage",
+              "status": "active",
+              "choices": [
+                "river",
+                "cage",
+                "nest",
+                "chair"
+              ]
+            },
+            {
+              "id": "elm-u3r-010",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "complete",
+              "prompt": "Everyone can help protect animals in simple ways. Small acts of ______ make our world better.",
+              "answer": "kindness",
+              "status": "active",
+              "word_bank": [
+                "kindness",
+                "animals",
+                "care",
+                "happier",
+                "go"
+              ]
+            },
+            {
+              "id": "elm-u3r-011",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "complete",
+              "prompt": "When we ______ for animals, we create a safe place for them.",
+              "answer": "care",
+              "status": "active",
+              "word_bank": [
+                "kindness",
+                "animals",
+                "care",
+                "happier",
+                "go"
+              ]
+            },
+            {
+              "id": "elm-u3r-012",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "complete",
+              "prompt": "Being kind to ______ teaches us to be better people.",
+              "answer": "animals",
+              "status": "active",
+              "word_bank": [
+                "kindness",
+                "animals",
+                "care",
+                "happier",
+                "go"
+              ]
+            },
+            {
+              "id": "elm-u3r-013",
+              "section": "Sample Test 5",
+              "printed_page": 148,
+              "type": "complete",
+              "prompt": "Together, we can make their lives ______ and healthier.",
+              "answer": "happier",
+              "status": "active",
+              "word_bank": [
+                "kindness",
+                "animals",
+                "care",
+                "happier",
+                "go"
+              ]
+            },
+            {
+              "id": "elm-u3r-014",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "reading_mcq",
+              "prompt": "Animals need our help to stay ______ and safe.",
+              "answer": "healthy",
+              "status": "active",
+              "choices": [
+                "sad",
+                "hungry",
+                "healthy",
+                "angry"
+              ]
+            },
+            {
+              "id": "elm-u3r-015",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "reading_mcq",
+              "prompt": "The underlined pronoun \"They\" refers to ______.",
+              "answer": "pets",
+              "status": "active",
+              "choices": [
+                "zoo animals",
+                "wild animals",
+                "pets",
+                "homes"
+              ]
+            },
+            {
+              "id": "elm-u3r-016",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "reading_open",
+              "prompt": "What do pets need?",
+              "answer": "Daily care from their owners.",
+              "status": "active",
+              "accepted_answers": [
+                "Daily care from their owners.",
+                "Pets need daily care from their owners."
+              ]
+            },
+            {
+              "id": "elm-u3r-017",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "reading_open",
+              "prompt": "Where do animals live?",
+              "answer": "In the wild, zoos or homes.",
+              "status": "active",
+              "accepted_answers": [
+                "In the wild, zoos or homes.",
+                "They live in the wild, zoos or homes."
+              ]
+            },
+            {
+              "id": "elm-u3r-018",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "correct_form",
+              "prompt": "The factory is ______ (big) than the museum.",
+              "answer": "bigger",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-019",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "correct_form",
+              "prompt": "Adam is ______ (strong) than his little brother.",
+              "answer": "stronger",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-020",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "correct_form",
+              "prompt": "His house is bigger ______ (the) mine.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-021",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "correct_form",
+              "prompt": "Flowers are ______ (pretty) than grass.",
+              "answer": "prettier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-022",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "punctuation",
+              "prompt": "the weather today is colder than yesterday",
+              "answer": "The weather today is colder than yesterday.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-023",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "punctuation",
+              "prompt": "how did the fox know it was in danger",
+              "answer": "How did the fox know it was in danger?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-024",
+              "section": "Sample Test 5",
+              "printed_page": 149,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"Forest animals\" using: big – lion – strong.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            },
+            {
+              "id": "elm-u3r-025",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "mcq",
+              "prompt": "Rabbits eat fresh ______.",
+              "answer": "vegetables",
+              "status": "active",
+              "choices": [
+                "fruits",
+                "insects",
+                "birds",
+                "vegetables"
+              ]
+            },
+            {
+              "id": "elm-u3r-026",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "mcq",
+              "prompt": "I take my dog to the ______ to check its health.",
+              "answer": "vet",
+              "status": "active",
+              "choices": [
+                "vet",
+                "nurse",
+                "farmer",
+                "teacher"
+              ]
+            },
+            {
+              "id": "elm-u3r-027",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "mcq",
+              "prompt": "Giraffes eat green ______.",
+              "answer": "leaves",
+              "status": "active",
+              "choices": [
+                "fish",
+                "leaves",
+                "meat",
+                "paper"
+              ]
+            },
+            {
+              "id": "elm-u3r-028",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "mcq",
+              "prompt": "The dogs are ______ than the cats.",
+              "answer": "fitter",
+              "status": "active",
+              "choices": [
+                "fit",
+                "fitter",
+                "as fit",
+                "fittest"
+              ]
+            },
+            {
+              "id": "elm-u3r-029",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "mcq",
+              "prompt": "The bear is ______ than the fox.",
+              "answer": "bigger",
+              "status": "active",
+              "choices": [
+                "biggest",
+                "bigger",
+                "the big",
+                "big"
+              ]
+            },
+            {
+              "id": "elm-u3r-030",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "mcq",
+              "prompt": "My room is ______ than your room.",
+              "answer": "cleaner",
+              "status": "active",
+              "choices": [
+                "clean",
+                "as clean",
+                "cleanest",
+                "cleaner"
+              ]
+            },
+            {
+              "id": "elm-u3r-031",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "complete",
+              "prompt": "Yesterday, I went to the forest park with my family. We saw elephants drinking water. They use their ______ to spray water on their bodies.",
+              "answer": "trunks",
+              "status": "active",
+              "word_bank": [
+                "monkeys",
+                "climb",
+                "trunks",
+                "tails",
+                "hunt"
+              ]
+            },
+            {
+              "id": "elm-u3r-032",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "complete",
+              "prompt": "We also saw ______.",
+              "answer": "monkeys",
+              "status": "active",
+              "word_bank": [
+                "monkeys",
+                "climb",
+                "trunks",
+                "tails",
+                "hunt"
+              ]
+            },
+            {
+              "id": "elm-u3r-033",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "complete",
+              "prompt": "Monkeys are small and have long ______.",
+              "answer": "tails",
+              "status": "active",
+              "word_bank": [
+                "monkeys",
+                "climb",
+                "trunks",
+                "tails",
+                "hunt"
+              ]
+            },
+            {
+              "id": "elm-u3r-034",
+              "section": "Sample Test 6",
+              "printed_page": 150,
+              "type": "complete",
+              "prompt": "They ______ trees.",
+              "answer": "climb",
+              "status": "active",
+              "word_bank": [
+                "monkeys",
+                "climb",
+                "trunks",
+                "tails",
+                "hunt"
+              ]
+            },
+            {
+              "id": "elm-u3r-035",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "reading_mcq",
+              "prompt": "Soha didn't like the ______.",
+              "answer": "lions",
+              "status": "active",
+              "choices": [
+                "giraffes",
+                "lions",
+                "monkeys",
+                "elephants"
+              ]
+            },
+            {
+              "id": "elm-u3r-036",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "reading_mcq",
+              "prompt": "The elephant used its ______ to spray water on its body.",
+              "answer": "trunk",
+              "status": "active",
+              "choices": [
+                "trunk",
+                "tail",
+                "leg",
+                "claw"
+              ]
+            },
+            {
+              "id": "elm-u3r-037",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "reading_open",
+              "prompt": "When did Soha visit the zoo?",
+              "answer": "Yesterday.",
+              "status": "active",
+              "accepted_answers": [
+                "Yesterday.",
+                "She visited the zoo yesterday."
+              ]
+            },
+            {
+              "id": "elm-u3r-038",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "reading_open",
+              "prompt": "Who enjoyed watching the monkeys?",
+              "answer": "Khaled.",
+              "status": "active",
+              "accepted_answers": [
+                "Khaled.",
+                "Khaled enjoyed watching the monkeys."
+              ]
+            },
+            {
+              "id": "elm-u3r-039",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "correct_form",
+              "prompt": "Sama is ______ (lazy) than Hana.",
+              "answer": "lazier",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-040",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "correct_form",
+              "prompt": "Oceans are larger ______ (then) seas.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-041",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "correct_form",
+              "prompt": "The music is ______ (loud) than the conversation.",
+              "answer": "louder",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-042",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "correct_form",
+              "prompt": "Rami is taller ______ (then) Marwan.",
+              "answer": "than",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-043",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "punctuation",
+              "prompt": "what do giraffes eat",
+              "answer": "What do giraffes eat?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-044",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "punctuation",
+              "prompt": "i am a student in grade four",
+              "answer": "I am a student in grade four.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u3r-045",
+              "section": "Sample Test 6",
+              "printed_page": 151,
+              "type": "writing",
+              "prompt": "Write a paragraph of FOUR sentences about \"Your favorite animal\" using: monkey – climbs trees – animal.",
+              "answer": null,
+              "status": "inactive_no_model_answer"
+            }
+          ],
+          "question_count": 43
+        }
+      ],
+      "total_active_questions": 178
     }
   ]
 }
