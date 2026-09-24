@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "source_id": "bitbybit-p4-english-t1-2027",
+  "source_name": "Bit by Bit English Primary 4 First Term 2027",
+  "subject": "P4 English",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source_file": "بت باي بت - لغة انجليزية - 4 ابتدائي - ترم 1 - ذاكرولي.pdf",
+  "extraction_status": {
+    "unit_6": "verified"
+  },
+  "units": [
+    {
+      "unit_id": 6,
+      "unit_title": "The Hundred Dresses",
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "title": "The Hundred Dresses — Reader & Characters",
+          "questions": [
+            {
+              "id": "bbb-u6-001",
+              "type": "mcq",
+              "text": "Wanda always wore the same faded blue ______ every day.",
+              "answer": "dress",
+              "source_page": 181,
+              "status": "active",
+              "choices": [
+                "dress",
+                "closet",
+                "letter",
+                "drawing"
+              ]
+            },
+            {
+              "id": "bbb-u6-002",
+              "type": "mcq",
+              "text": "Miss Mason will choose one boy and one girl as ______ in the competition.",
+              "answer": "winners",
+              "source_page": 181,
+              "status": "active",
+              "choices": [
+                "walls",
+                "medals",
+                "winners",
+                "playgrounds"
+              ]
+            },
+            {
+              "id": "bbb-u6-003",
+              "type": "mcq",
+              "text": "Wanda drew and ______ all the drawings in the competition.",
+              "answer": "signed",
+              "source_page": 181,
+              "status": "active",
+              "choices": [
+                "moved",
+                "sang",
+                "spoke",
+                "signed"
+              ]
+            },
+            {
+              "id": "bbb-u6-004",
+              "type": "mcq",
+              "text": "Peggy and Maddie wrote a ______ to Wanda to apologize.",
+              "answer": "letter",
+              "source_page": 181,
+              "status": "active",
+              "choices": [
+                "behavior",
+                "letter",
+                "dream",
+                "closet"
+              ]
+            },
+            {
+              "id": "bbb-u6-005",
+              "type": "complete",
+              "text": "When it was time to announce the winner, the walls were covered with a hundred beautiful ______ of dresses of all colors and designs.",
+              "answer": "drawings",
+              "source_page": 182,
+              "status": "active",
+              "word_bank": [
+                "playground",
+                "competition",
+                "announce",
+                "drawings"
+              ]
+            },
+            {
+              "id": "bbb-u6-006",
+              "type": "complete",
+              "text": "Wanda won the ______, but she wasn't there to receive her medal.",
+              "answer": "competition",
+              "source_page": 182,
+              "status": "active",
+              "word_bank": [
+                "playground",
+                "competition",
+                "announce",
+                "drawings"
+              ]
+            },
+            {
+              "id": "bbb-u6-007",
+              "type": "reorder",
+              "text": "Put the events in order: Peggy and Maddie annoyed Wanda in the playground; Wanda won the drawing competition; Peggy and Maddie promised to always speak up if there was bullying; Wanda told everyone about her one hundred dresses; Miss Mason read a letter from Wanda's dad; Peggy and Maddie wrote a letter to Wanda.",
+              "answer": "Wanda told everyone about her one hundred dresses. Peggy and Maddie annoyed Wanda in the playground. Wanda won the drawing competition. Miss Mason read a letter from Wanda's dad. Peggy and Maddie wrote a letter to Wanda. Peggy and Maddie promised to always speak up if there was bullying.",
+              "source_page": 182,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u6-008",
+              "type": "true_false",
+              "text": "Wanda had one hundred real dresses.",
+              "answer": "False",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-009",
+              "type": "true_false",
+              "text": "Peggy and Maddie were always kind to Wanda.",
+              "answer": "False",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-010",
+              "type": "true_false",
+              "text": "Wanda won the annual drawing competition.",
+              "answer": "True",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-011",
+              "type": "true_false",
+              "text": "Wanda's family moved to the big city.",
+              "answer": "True",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-012",
+              "type": "true_false",
+              "text": "Miss Mason chose three girls as winners.",
+              "answer": "False",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-013",
+              "type": "true_false",
+              "text": "Wanda's mom sent a letter to Miss Mason.",
+              "answer": "False",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-014",
+              "type": "true_false",
+              "text": "Wanda wasn't there to receive her medal.",
+              "answer": "True",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-015",
+              "type": "true_false",
+              "text": "Peggy and Maddie wrote an email to Wanda to apologize.",
+              "answer": "False",
+              "source_page": 182,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "bbb-u6-016",
+              "type": "image_matching",
+              "text": "Match the story characters to their pictures: Peggy, Miss Mason, Wanda, Maddie.",
+              "answer": null,
+              "source_page": 181,
+              "status": "inactive_missing_image_support"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_active_questions": 15
+}
