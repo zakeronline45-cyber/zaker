@@ -14,10 +14,15 @@ main{max-width:1200px;margin:24px auto;padding:0 16px 70px}.card{background:#fff
 <div id="status" class="muted" style="margin-top:10px"></div><div id="students" class="students"></div></section></main>
 <script>
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+async function requireAdminMFA(nextPath){
+ const {data,error}=await sb.auth.mfa.getAuthenticatorAssuranceLevel();
+ if(!error&&data?.nextLevel==='aal2'&&data?.currentLevel!=='aal2'){location.href='/admin-security.html?next='+encodeURIComponent(nextPath||location.pathname+location.search);return false}
+ return true;
+}
 let session=null,rows=[];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const grade=x=>({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x||'');
-async function init(){const s=await sb.auth.getSession();session=s.data.session;if(!session){location.href='/login.html?next=/admin-students.html';return}const {data}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);if(data?.[0]?.role!=='admin'){location.href='/account.html';return}document.body.style.visibility='visible';await searchStudents()}
+async function init(){const s=await sb.auth.getSession();session=s.data.session;if(!session){location.href='/login.html?next=/admin-students.html';return}if(!(await requireAdminMFA('/admin-students.html')))return;const {data}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);if(data?.[0]?.role!=='admin'){location.href='/account.html';return}document.body.style.visibility='visible';await searchStudents()}
 async function searchStudents(){status.textContent='جاري البحث...';const {data,error}=await sb.rpc('admin_search_children_v2',{p_query:q.value.trim()});if(error){status.textContent=error.message;return}rows=data||[];status.textContent=rows.length+' طالب';students.innerHTML=rows.map((r,i)=>`
 <div class="student"><div><h3>${esc(r.child_name)}</h3><div><span class="pill">${grade(r.grade)}</span> <span class="pill">${r.track==='languages'?'لغات':'عربي'}</span></div><div class="muted" style="margin-top:6px">ولي الأمر: ${esc(r.guardian_name||'—')} — ${esc(r.guardian_phone||r.guardian_email||'—')}</div></div>
 <div class="actions"><button class="btn primary" onclick="openFile(${i})">فتح الملف</button><button class="btn ghost" onclick="createReport(${i})">إنشاء تقرير</button></div>
