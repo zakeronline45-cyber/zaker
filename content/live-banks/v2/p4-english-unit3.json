@@ -2731,6 +2731,11 @@
               "source": "Bit by Bit",
               "page": 88,
               "id": "bbb-u3l2-026"
+            },
+            {
+              "source": "El-Moasser",
+              "page": 139,
+              "id": "elm-u3l4-027"
             }
           ]
         },
@@ -6716,23 +6721,6 @@
               "source": "El-Moasser",
               "page": 139,
               "id": "elm-u3l4-026"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u3-l4-q044",
-          "section": "Correct Form",
-          "printed_page": 139,
-          "pdf_page": 133,
-          "type": "correct_form",
-          "text": "Arabic is ______ (easy) than French.",
-          "answer": "easier",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 139,
-              "id": "elm-u3l4-027"
             }
           ]
         },
