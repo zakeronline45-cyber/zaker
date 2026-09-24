@@ -451,9 +451,9 @@ async function submitAnswer(){
  if(!studentAnswer){document.getElementById('submitMsg').innerHTML='<div class="status danger">اكتب أو اختر إجابة أولًا.</div>';return}
  document.querySelectorAll('button,textarea').forEach(x=>{if(x.closest('#testArea'))x.disabled=true});
  document.getElementById('submitMsg').innerHTML='<div class="submitted">تم تسجيل إجابتك... جاري الانتقال للسؤال التالي.</div>';
- let correct=false;
- try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+authSession.access_token},body:JSON.stringify({lesson:q.lesson||lesson,id:q.id,studentAnswer,studyLanguage})});const j=await r.json();correct=!!j.correct}catch(e){}
- answers.push({lesson:q.lesson||lesson,lessonTitle:titles[q.lesson||lesson],questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct});
+ let correct=false,correctAnswer='';
+ try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+authSession.access_token},body:JSON.stringify({lesson:q.lesson||lesson,id:q.id,childId:activeChildId,studentAnswer,studyLanguage})});const j=await r.json();correct=!!j.correct;correctAnswer=j.correctAnswer||''}catch(e){}
+ answers.push({lesson:q.lesson||lesson,lessonTitle:titles[q.lesson||lesson],questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer,correct});
  setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},450)
 }
 async function finishTest(){
