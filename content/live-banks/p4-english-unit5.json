@@ -6,7 +6,8 @@
   "track": "languages",
   "unit": 5,
   "sources": [
-    "Bit by Bit English Primary 4 First Term 2027"
+    "Bit by Bit English Primary 4 First Term 2027",
+    "Bit by Bit Review 2 — Units 4 & 5"
   ],
   "coverage": "verified_complete",
   "modules": [
@@ -427,6 +428,31 @@
               "source": "Bit by Bit",
               "page": 146,
               "id": "bbb-u5l1-020"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l1-q021",
+          "type": "mcq",
+          "text": "The police officer wears a white ______ and a cap.",
+          "answer": "uniform",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 1
+          },
+          "choices": [
+            "uniform",
+            "hat",
+            "helmet",
+            "skirt"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-006"
             }
           ]
         }
@@ -1227,6 +1253,176 @@
               "source": "Bit by Bit",
               "page": 153,
               "id": "bbb-u5l2-043"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q044",
+          "type": "mcq",
+          "text": "Nora is the ______ girl in the class.",
+          "answer": "happiest",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "choices": [
+            "a happy",
+            "happier",
+            "happy",
+            "happiest"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-008"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q045",
+          "type": "mcq",
+          "text": "Is Ramy ______ boy?",
+          "answer": "the tallest",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "choices": [
+            "tall",
+            "taller than",
+            "the tallest",
+            "as tall"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-010"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q046",
+          "type": "reading_mcq",
+          "text": "Sara is a/an ______.",
+          "answer": "voice-over actor",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "choices": [
+            "engineer",
+            "vet",
+            "nurse",
+            "voice-over actor"
+          ],
+          "passage": "Sara is a voice-over actor. She likes her job very much. She makes voices for cartoons. She can make high and low voices. Also she can talk very fast or very slow. She can make little voices for small characters and loud voices for large ones. I want to be like Sara in the future.",
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-015"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q047",
+          "type": "reading_mcq",
+          "text": "Sara makes voices for ______.",
+          "answer": "cartoons",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "choices": [
+            "books",
+            "stories",
+            "cartoons",
+            "cars"
+          ],
+          "passage_ref": "bbb-r2-015",
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-016"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q048",
+          "type": "reading_open",
+          "text": "What is Sara's job?",
+          "answer": "She is a voice-over actor.",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "accepted_answers": [
+            "A voice-over actor.",
+            "She is a voice-over actor."
+          ],
+          "passage_ref": "bbb-r2-015",
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-018"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q049",
+          "type": "reading_open",
+          "text": "Does Sara like her job?",
+          "answer": "Yes, she does.",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "accepted_answers": [
+            "Yes.",
+            "Yes, she does.",
+            "Yes, she likes her job very much."
+          ],
+          "passage_ref": "bbb-r2-015",
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-019"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l2-q050",
+          "type": "correct_form",
+          "text": "Ahmed is the ______ (tall) boy in his class.",
+          "answer": "tallest",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 2
+          },
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-022"
             }
           ]
         }
@@ -2169,6 +2365,110 @@
               "id": "bbb-u5l4-021"
             }
           ]
+        },
+        {
+          "id": "p4-eng-u5-l4-q022",
+          "type": "complete",
+          "text": "My father is a firefighter. He works in a ______ station.",
+          "answer": "fire",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 4
+          },
+          "word_bank": [
+            "stripes",
+            "safe",
+            "fire",
+            "protective",
+            "helmet"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-011"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l4-q023",
+          "type": "complete",
+          "text": "He wears thick ______ uniform with bright yellow stripes.",
+          "answer": "protective",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 4
+          },
+          "word_bank": [
+            "stripes",
+            "safe",
+            "fire",
+            "protective",
+            "helmet"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-012"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l4-q024",
+          "type": "complete",
+          "text": "He wears thick protective uniform with bright yellow ______.",
+          "answer": "stripes",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 4
+          },
+          "word_bank": [
+            "stripes",
+            "safe",
+            "fire",
+            "protective",
+            "helmet"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-013"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l4-q025",
+          "type": "complete",
+          "text": "He wears a heavy helmet to keep him ______.",
+          "answer": "safe",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 4
+          },
+          "word_bank": [
+            "stripes",
+            "safe",
+            "fire",
+            "protective",
+            "helmet"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-014"
+            }
+          ]
         }
       ]
     },
@@ -3095,6 +3395,82 @@
               "source": "Bit by Bit",
               "page": 171,
               "id": "bbb-u5r-047"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l5-q048",
+          "type": "correct_form",
+          "text": "Hany is ______ (strong) than Samy.",
+          "answer": "stronger",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 5
+          },
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-020"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l5-q049",
+          "type": "correct_form",
+          "text": "______ (Does) they play football?",
+          "answer": "Do",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 5
+          },
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-021"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l5-q050",
+          "type": "punctuation",
+          "text": "habiba is a good girl",
+          "answer": "Habiba is a good girl.",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 5
+          },
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-024"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u5-l5-q051",
+          "type": "punctuation",
+          "text": "does she like her school",
+          "answer": "Does she like her school?",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 5,
+            "lesson": 5
+          },
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-025"
             }
           ]
         }
