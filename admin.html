@@ -212,13 +212,23 @@ async function generateExam(){
   let pool=bank.questions.filter(q=>selected.includes(q.type));
   if(!pool.length){document.getElementById('preview').innerHTML='<p>اختر نوع سؤال واحد على الأقل.</p>';return}
   const chosen=shuffled(pool).slice(0,Math.min(count,pool.length));
+  let answerMap={};
+  try{
+    const {data:keys,error:keyErr}=await sb.rpc('admin_get_question_keys',{
+      p_subject:'Science',
+      p_module_key:'',
+      p_lesson_no:Number(document.getElementById('lessonSelect')?.value||1),
+      p_question_ids:chosen.map(q=>String(q.id))
+    });
+    if(!keyErr) answerMap=Object.fromEntries((keys||[]).map(x=>[String(x.question_id),x.answer]));
+  }catch(e){}
   const labels={mcq:'اختيار من متعدد',true_false:'صح / خطأ',complete:'أكمل',reason:'علّل',compare:'قارن',problem:'مسألة'};
   document.getElementById('preview').innerHTML=
     '<h3>امتحان عشوائي — '+escapeHtml(bank.lessonTitle)+'</h3>'+
     '<p><span class="badge">'+chosen.length+' سؤال</span> <span class="badge">من بنك المعاصر</span></p>'+
     chosen.map((q,i)=>{
       const opts=q.choices?'<ol type="A">'+q.choices.map(x=>'<li>'+escapeHtml(x)+'</li>').join('')+'</ol>':'';
-      return '<div class="q"><div><span class="badge">'+(i+1)+'</span> <span class="badge">'+escapeHtml(labels[q.type]||q.type)+'</span> <span class="badge">'+escapeHtml(q.difficulty)+'</span></div><p><b>'+escapeHtml(q.text)+'</b></p>'+opts+'<details><summary>الإجابة</summary><p>'+escapeHtml(q.answer)+'</p><small>المصدر: صفحة '+q.sourcePage+'</small></details></div>';
+      return '<div class="q"><div><span class="badge">'+(i+1)+'</span> <span class="badge">'+escapeHtml(labels[q.type]||q.type)+'</span> <span class="badge">'+escapeHtml(q.difficulty)+'</span></div><p><b>'+escapeHtml(q.text)+'</b></p>'+opts+'<details><summary>الإجابة</summary><p>'+escapeHtml(answerMap[String(q.id)]||'الإجابة محفوظة في البنك الآمن')+'</p><small>المصدر: صفحة '+q.sourcePage+'</small></details></div>';
     }).join('')+
     '<p class="ok">✓ كل ضغطة على «ولّد امتحان» تعيد خلط بنك الأسئلة وتنتج نسخة مختلفة.</p>';
 }
