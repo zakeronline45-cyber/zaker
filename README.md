@@ -25,3 +25,5 @@ AI Gateway configured for production deployment.
 Redeploy check 1789900504450
 
 OpenAI direct API redeploy trigger.
+
+<!-- security-deploy-trigger: 2026-09-25 -->
