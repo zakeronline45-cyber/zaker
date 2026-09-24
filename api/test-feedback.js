@@ -1,5 +1,8 @@
+import {requireUser} from './_security.js';
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
+  const authCtx=await requireUser(req,res,{bucket:'test-feedback',limit:20,windowSeconds:60});
+  if(!authCtx)return;
   const {subject='Science',lessonTitle,wrongAnswers=[]}=req.body||{};
   if(!Array.isArray(wrongAnswers)||!wrongAnswers.length){
     return res.status(200).json({summary:'ممتاز، لا توجد أخطاء تحتاج مراجعة.',topics:[],plan:[]});
