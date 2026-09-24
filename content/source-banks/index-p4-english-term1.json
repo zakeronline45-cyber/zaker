@@ -1,0 +1,33 @@
+{
+  "subject": "P4 English",
+  "grade": "Primary 4",
+  "term": 1,
+  "sources": [
+    {
+      "id": "bitbybit-p4-english-t1-2027",
+      "files": [
+        "/content/source-banks/p4-english-term1-bitbybit-unit1.json",
+        "/content/source-banks/p4-english-term1-bitbybit-unit2.json",
+        "/content/source-banks/p4-english-term1-bitbybit-unit3.json",
+        "/content/source-banks/p4-english-term1-bitbybit-unit4.json",
+        "/content/source-banks/p4-english-term1-bitbybit-unit5-partial.json"
+      ],
+      "coverage": "Units 1-4 complete in uploaded PDF; Unit 5 partial to uploaded page 150; Unit 6 absent from uploaded PDF."
+    },
+    {
+      "id": "elmoasser-p4-english-t1-2027",
+      "files": [
+        "/content/source-banks/p4-english-term1-elmoasser.json"
+      ],
+      "coverage": "Extraction in progress; uploaded PDF covers Units 1-3."
+    }
+  ],
+  "policy": {
+    "only_source_questions": true,
+    "preserve_source_answer": true,
+    "no_fake_listening_without_audio": true,
+    "exclude_ambiguous_without_key": true,
+    "dedupe_across_sources": true,
+    "assign_every_question_to_unit_and_lesson": true
+  }
+}
