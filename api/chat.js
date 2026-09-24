@@ -1,3 +1,4 @@
+import {requireUser} from './_security.js';
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const SCIENCE_SYLLABUS = [
@@ -133,10 +134,10 @@ function localCurriculumFallback({question,studyLanguage,curriculumContext,cours
     :'Zaker AI Tutor is temporarily unavailable because the API credit balance is exhausted. Lessons and tests still work, and AI answers will resume after API credits are added.';
 }
 
-async function rpc(name,body){
+async function rpc(name,body,token){
   const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/${name}`,{
     method:'POST',
-    headers:{'apikey':SUPABASE_KEY,'Authorization':`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json'},
+    headers:{'apikey':SUPABASE_KEY,'Authorization':`Bearer ${token}`,'Content-Type':'application/json'},
     body:JSON.stringify(body)
   });
   if(!r.ok) throw new Error('Supabase RPC '+r.status);
@@ -146,6 +147,8 @@ async function rpc(name,body){
 
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
+  const authCtx=await requireUser(req,res,{bucket:'ai-chat',limit:20,windowSeconds:60});
+  if(!authCtx)return;
   const apiKey=process.env.OPENAI_API_KEY;
   if(!apiKey) return res.status(500).json({error:'OPENAI_API_KEY غير موجود داخل Vercel'});
   try{
@@ -165,7 +168,7 @@ export default async function handler(req,res){
 
     let history=null;
     if(sessionId){
-      try{history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30})}catch(e){}
+      try{history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30},authCtx.token)}catch(e){}
     }
 
     const inScope=safeSubject.startsWith('P4 ')?true:await isInCurriculum({
@@ -185,8 +188,8 @@ export default async function handler(req,res){
 
     if(sessionId){
       try{
-        await rpc('log_ai_question',{p_session_id:sessionId,p_subject:safeSubject,p_lesson:lesson,p_study_language:studyLanguage,p_question:question});
-        history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30});
+        await rpc('log_ai_question',{p_session_id:sessionId,p_subject:safeSubject,p_lesson:lesson,p_study_language:studyLanguage,p_question:question},authCtx.token);
+        history=await rpc('get_student_question_context',{p_session_id:sessionId,p_limit:30},authCtx.token);
       }catch(e){}
     }
 
