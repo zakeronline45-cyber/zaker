@@ -29,7 +29,6 @@
           "id": "p4-eng-u2-l1-q001",
           "type": "mcq",
           "text": "Many people like to ______ at the community park.",
-          "answer": "volunteer",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -49,16 +48,12 @@
               "page": 69,
               "id": "elm-u2l1-008"
             }
-          ],
-          "accepted_answers": [
-            "volunteer"
           ]
         },
         {
           "id": "p4-eng-u2-l1-q002",
           "type": "mcq",
           "text": "Saad is a kind girl. She likes to ______ animals.",
-          "answer": "feed",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -79,7 +74,6 @@
           "id": "p4-eng-u2-l1-q003",
           "type": "mcq",
           "text": "Mariam ______ flowers in the park.",
-          "answer": "plants",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -100,7 +94,6 @@
           "id": "p4-eng-u2-l1-q004",
           "type": "mcq",
           "text": "It is important to help our ______.",
-          "answer": "neighbors",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -121,7 +114,6 @@
           "id": "p4-eng-u2-l1-q005",
           "type": "mcq",
           "text": "I ______ clothes and give them to people who need them.",
-          "answer": "collect",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -142,7 +134,6 @@
           "id": "p4-eng-u2-l1-q006",
           "type": "mcq",
           "text": "A: I like English. B: ______ about you?",
-          "answer": "What",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -163,7 +154,6 @@
           "id": "p4-eng-u2-l1-q007",
           "type": "mcq",
           "text": "I like my cat and ______ it every day.",
-          "answer": "feed",
           "source_page": 50,
           "status": "active",
           "choices": [
@@ -184,7 +174,6 @@
           "id": "p4-eng-u2-l1-q008",
           "type": "mcq",
           "text": "We will go to the ______ to help the environment.",
-          "answer": "community park",
           "source_page": 51,
           "status": "active",
           "choices": [
@@ -205,7 +194,6 @@
           "id": "p4-eng-u2-l1-q009",
           "type": "complete",
           "text": "Amira and Faris like to help the community. Faris cleans ______ from the streets every Saturday.",
-          "answer": "trash",
           "source_page": 51,
           "status": "active",
           "word_bank": [
@@ -227,7 +215,6 @@
           "id": "p4-eng-u2-l1-q010",
           "type": "complete",
           "text": "He also plants ______ in the park.",
-          "answer": "trees",
           "source_page": 51,
           "status": "active",
           "word_bank": [
@@ -249,7 +236,6 @@
           "id": "p4-eng-u2-l1-q011",
           "type": "complete",
           "text": "Sometimes, he feeds ______ and cats.",
-          "answer": "dogs",
           "source_page": 51,
           "status": "active",
           "word_bank": [
@@ -271,7 +257,6 @@
           "id": "p4-eng-u2-l1-q012",
           "type": "complete",
           "text": "Amira collects ______ and gives them to people who need them.",
-          "answer": "clothes",
           "source_page": 51,
           "status": "active",
           "word_bank": [
@@ -293,7 +278,6 @@
           "id": "p4-eng-u2-l1-q013",
           "type": "reading_mcq",
           "text": "Ali likes to ______.",
-          "answer": "collect clothes",
           "source_page": 51,
           "status": "active",
           "choices": [
@@ -314,16 +298,12 @@
               "page": 72,
               "id": "elm-u2l1-028"
             }
-          ],
-          "accepted_answers": [
-            "collect clothes"
           ]
         },
         {
           "id": "p4-eng-u2-l1-q014",
           "type": "reading_mcq",
           "text": "Ali has ______ sister(s).",
-          "answer": "two",
           "source_page": 51,
           "status": "active",
           "choices": [
@@ -345,25 +325,14 @@
               "id": "elm-u2l1-029"
             }
           ],
-          "accepted_answers": [
-            "two"
-          ],
           "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
         },
         {
           "id": "p4-eng-u2-l1-q015",
           "type": "reading_open",
           "text": "How does Farida help her community?",
-          "answer": "She cleans trash from the street, plants trees in the park, and feeds dogs and cats.",
           "source_page": 51,
           "status": "active",
-          "accepted_answers": [
-            "She cleans trash from the street and plants trees in the park.",
-            "She cleans trash, plants trees and feeds dogs and cats.",
-            "She cleans trash from the street, plants trees, and feeds dogs and cats.",
-            "She cleans trash and plants trees.",
-            "She cleans trash from the street, plants trees in the park, and feeds dogs and cats."
-          ],
           "passage_ref": "bbb-u2l1-013",
           "source_refs": [
             {
@@ -383,7 +352,6 @@
           "id": "p4-eng-u2-l1-q016",
           "type": "punctuation",
           "text": "do you help your community",
-          "answer": "Do you help your community?",
           "source_page": 52,
           "status": "active",
           "source_refs": [
@@ -398,7 +366,6 @@
           "id": "p4-eng-u2-l1-q017",
           "type": "punctuation",
           "text": "mona is a kind girl",
-          "answer": "Mona is a kind girl.",
           "source_page": 52,
           "status": "active",
           "source_refs": [
@@ -413,7 +380,6 @@
           "id": "p4-eng-u2-l1-q018",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Helping our community\" using: community park – plant trees – collect trash.",
-          "answer": "We should help our community. We should plant trees and flowers in the community park. We should collect trash from the streets. We should collect clothes and give them to people who need them.",
           "source_page": 52,
           "status": "active",
           "model_answer_page": 71,
@@ -429,7 +395,6 @@
           "id": "p4-eng-u2-l1-q019",
           "type": "dialogue_complete",
           "text": "Yes, I do. I plant trees and ______ in the garden.",
-          "answer": "flowers",
           "source_page": 72,
           "status": "active",
           "word_bank": [
@@ -450,7 +415,6 @@
           "id": "p4-eng-u2-l1-q020",
           "type": "mcq",
           "text": "I buy food from the ______.",
-          "answer": "supermarket",
           "source_page": 72,
           "status": "active",
           "choices": [
@@ -471,7 +435,6 @@
           "id": "p4-eng-u2-l1-q021",
           "type": "mcq",
           "text": "She ______ use the car.",
-          "answer": "doesn't",
           "source_page": 72,
           "status": "active",
           "choices": [
@@ -492,7 +455,6 @@
           "id": "p4-eng-u2-l1-q022",
           "type": "correction",
           "text": "They aren't like pizza.",
-          "answer": "They don't like pizza.",
           "source_page": 72,
           "status": "active",
           "source_refs": [
@@ -507,7 +469,6 @@
           "id": "p4-eng-u2-l1-q023",
           "type": "correction",
           "text": "Do they watch movies? – Yes, I do.",
-          "answer": "Do you watch movies? – Yes, I do.",
           "source_page": 72,
           "status": "active",
           "source_refs": [
@@ -522,7 +483,6 @@
           "id": "p4-eng-u2-l1-q024",
           "type": "reading_mcq",
           "text": "Our community has many ______.",
-          "answer": "problems",
           "source_page": 73,
           "status": "active",
           "choices": [
@@ -545,7 +505,6 @@
           "id": "p4-eng-u2-l1-q025",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"My country\" using: Egypt – good weather – kind people.",
-          "answer": "I live in Egypt. It is my country. It has good weather. The people are very kind. I love them very much.",
           "source_page": 73,
           "status": "active",
           "model_answer_page": 71,
@@ -561,7 +520,6 @@
           "id": "p4-eng-u2-l1-q026",
           "type": "mcq",
           "text": "They ______ the street on Sundays.",
-          "answer": "clean",
           "source_page": 74,
           "status": "active",
           "choices": [
@@ -582,7 +540,6 @@
           "id": "p4-eng-u2-l1-q027",
           "type": "mcq",
           "text": "It is ______ to smoke here.",
-          "answer": "illegal",
           "source_page": 74,
           "status": "active",
           "choices": [
@@ -603,7 +560,6 @@
           "id": "p4-eng-u2-l1-q028",
           "type": "mcq",
           "text": "He ______ go to school on Friday.",
-          "answer": "doesn't",
           "source_page": 74,
           "status": "active",
           "choices": [
@@ -624,7 +580,6 @@
           "id": "p4-eng-u2-l1-q029",
           "type": "mcq",
           "text": "______ you study English every day?",
-          "answer": "Do",
           "source_page": 74,
           "status": "active",
           "choices": [
@@ -645,14 +600,8 @@
           "id": "p4-eng-u2-l1-q030",
           "type": "reading_open",
           "text": "What's the passage about?",
-          "answer": "Life and traditions in Upper Egypt.",
           "source_page": 75,
           "status": "active",
-          "accepted_answers": [
-            "Upper Egypt.",
-            "Life in Upper Egypt.",
-            "Life and traditions in Upper Egypt."
-          ],
           "passage_ref": "bbb-u2r-029",
           "source_refs": [
             {
@@ -667,7 +616,6 @@
           "id": "p4-eng-u2-l1-q031",
           "type": "correct_form",
           "text": "The sun ______ (appears) at night.",
-          "answer": "disappears",
           "source_page": 75,
           "status": "active",
           "source_refs": [
@@ -682,7 +630,6 @@
           "id": "p4-eng-u2-l1-q032",
           "type": "punctuation",
           "text": "this is my father",
-          "answer": "This is my father.",
           "source_page": 75,
           "status": "active",
           "source_refs": [
@@ -700,7 +647,6 @@
           "pdf_page": 62,
           "type": "mcq",
           "prompt": "You ______ a great job at the community.",
-          "answer": "do",
           "status": "active",
           "choices": [
             "do",
@@ -724,7 +670,6 @@
           "pdf_page": 62,
           "type": "mcq",
           "prompt": "Can you ______ me collect the bottles?",
-          "answer": "help",
           "status": "active",
           "choices": [
             "volunteer",
@@ -748,7 +693,6 @@
           "pdf_page": 62,
           "type": "mcq",
           "prompt": "We clean ______ from our street to help our community.",
-          "answer": "trash",
           "status": "active",
           "choices": [
             "trees",
@@ -772,7 +716,6 @@
           "pdf_page": 62,
           "type": "mcq",
           "prompt": "She ______ flowers in the garden.",
-          "answer": "plants",
           "status": "active",
           "choices": [
             "feeds",
@@ -796,7 +739,6 @@
           "pdf_page": 62,
           "type": "mcq",
           "prompt": "He ______ clothes and gives them to poor people.",
-          "answer": "collects",
           "status": "active",
           "choices": [
             "collects",
@@ -820,7 +762,6 @@
           "pdf_page": 62,
           "type": "mcq",
           "prompt": "It's important to help our ______.",
-          "answer": "neighbors",
           "status": "active",
           "choices": [
             "neighbors",
@@ -844,7 +785,6 @@
           "pdf_page": 63,
           "type": "mcq",
           "prompt": "Let's make our park ______! Let's collect the trash.",
-          "answer": "clean",
           "status": "active",
           "choices": [
             "clean",
@@ -868,7 +808,6 @@
           "pdf_page": 63,
           "type": "mcq",
           "prompt": "We ______ the ducks.",
-          "answer": "feed",
           "status": "active",
           "choices": [
             "stay",
@@ -892,12 +831,7 @@
           "pdf_page": 64,
           "type": "reading_open",
           "prompt": "What does Amira do with clothes?",
-          "answer": "She collects clothes and gives them to people who need them.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "She collects clothes and gives them to people who need them.",
-            "She collects clothes and gives them to poor people."
-          ],
           "text": "What does Amira do with clothes?",
           "source_refs": [
             {
@@ -914,12 +848,7 @@
           "pdf_page": 64,
           "type": "reading_open",
           "prompt": "Who feeds the dogs and cats?",
-          "answer": "Adam.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Adam.",
-            "Adam feeds the dogs and cats."
-          ],
           "text": "Who feeds the dogs and cats?",
           "source_refs": [
             {
@@ -936,7 +865,6 @@
           "pdf_page": 65,
           "type": "mcq",
           "prompt": "We ______ flowers and trees in our garden.",
-          "answer": "plant",
           "status": "active",
           "choices": [
             "volunteer",
@@ -960,7 +888,6 @@
           "pdf_page": 65,
           "type": "mcq",
           "prompt": "My neighbors and I volunteer to help our ______.",
-          "answer": "community",
           "status": "active",
           "choices": [
             "community",
@@ -984,7 +911,6 @@
           "pdf_page": 65,
           "type": "mcq",
           "prompt": "They ______ trash from the streets.",
-          "answer": "clean",
           "status": "active",
           "choices": [
             "grow",
@@ -1008,7 +934,6 @@
           "pdf_page": 65,
           "type": "mcq",
           "prompt": "He ______ toys and gives them to poor children.",
-          "answer": "collects",
           "status": "active",
           "choices": [
             "to collect",
@@ -1032,7 +957,6 @@
           "pdf_page": 65,
           "type": "mcq",
           "prompt": "Omar is a clever player. He always ______ a great job in the matches.",
-          "answer": "does",
           "status": "active",
           "choices": [
             "do",
@@ -1056,7 +980,6 @@
           "pdf_page": 65,
           "type": "mcq",
           "prompt": "It's fun to ______ and make the park nice for everyone.",
-          "answer": "volunteer",
           "status": "active",
           "choices": [
             "volunteers",
@@ -1080,7 +1003,6 @@
           "pdf_page": 65,
           "type": "complete",
           "prompt": "My family and I help our community. Everyone in our ______ helps.",
-          "answer": "community",
           "status": "active",
           "word_bank": [
             "clothes",
@@ -1105,7 +1027,6 @@
           "pdf_page": 65,
           "type": "complete",
           "prompt": "We clean ______ from the streets with our neighbors.",
-          "answer": "trash",
           "status": "active",
           "word_bank": [
             "clothes",
@@ -1130,7 +1051,6 @@
           "pdf_page": 65,
           "type": "complete",
           "prompt": "My father ______ trees in the park.",
-          "answer": "plants",
           "status": "active",
           "word_bank": [
             "clothes",
@@ -1155,7 +1075,6 @@
           "pdf_page": 65,
           "type": "complete",
           "prompt": "My mother and aunt Salwa collect ______ and give them to people who need them.",
-          "answer": "clothes",
           "status": "active",
           "word_bank": [
             "clothes",
@@ -1180,7 +1099,6 @@
           "pdf_page": 65,
           "type": "punctuation",
           "prompt": "they make the park nice",
-          "answer": "They make the park nice.",
           "status": "active",
           "text": "they make the park nice",
           "source_refs": [
@@ -1198,7 +1116,6 @@
           "pdf_page": 65,
           "type": "punctuation",
           "prompt": "why do you help your community",
-          "answer": "Why do you help your community?",
           "status": "active",
           "text": "why do you help your community",
           "source_refs": [
@@ -1216,7 +1133,6 @@
           "pdf_page": 66,
           "type": "complete",
           "prompt": "My name is Hassan. I'm in grade four. My brother and I ______ to help in the park.",
-          "answer": "volunteer",
           "status": "active",
           "word_bank": [
             "plant",
@@ -1241,7 +1157,6 @@
           "pdf_page": 66,
           "type": "complete",
           "prompt": "We ______ the park and ______ bottles.",
-          "answer": "clean",
           "status": "active",
           "word_bank": [
             "plant",
@@ -1266,7 +1181,6 @@
           "pdf_page": 66,
           "type": "complete",
           "prompt": "We clean the park and ______ bottles.",
-          "answer": "collect",
           "status": "active",
           "word_bank": [
             "plant",
@@ -1291,7 +1205,6 @@
           "pdf_page": 66,
           "type": "complete",
           "prompt": "We ______ trees and flowers.",
-          "answer": "plant",
           "status": "active",
           "word_bank": [
             "plant",
@@ -1316,7 +1229,6 @@
           "pdf_page": 98,
           "type": "reorder",
           "prompt": "the park - trees - plant - I - in",
-          "answer": "I plant trees in the park.",
           "status": "active",
           "text": "the park - trees - plant - I - in",
           "source_refs": [
@@ -1334,7 +1246,6 @@
           "pdf_page": 99,
           "type": "mcq",
           "prompt": "Every morning, Sara ______ her cats.",
-          "answer": "feeds",
           "status": "active",
           "choices": [
             "feeds",
@@ -1358,7 +1269,6 @@
           "pdf_page": 99,
           "type": "mcq",
           "prompt": "______ you walk to school every day?",
-          "answer": "Do",
           "status": "active",
           "choices": [
             "Do",
@@ -1382,7 +1292,6 @@
           "pdf_page": 99,
           "type": "mcq",
           "prompt": "Ali ______ like to swim in the pool.",
-          "answer": "doesn't",
           "status": "active",
           "choices": [
             "don't",
@@ -1406,7 +1315,6 @@
           "pdf_page": 99,
           "type": "mcq",
           "prompt": "She ______ to help in the community park.",
-          "answer": "volunteers",
           "status": "active",
           "choices": [
             "don't volunteer",
@@ -1430,7 +1338,6 @@
           "pdf_page": 99,
           "type": "complete",
           "prompt": "We should take public transportation, like the metro and ______.",
-          "answer": "buses",
           "status": "active",
           "word_bank": [
             "volunteer",
@@ -1455,7 +1362,6 @@
           "pdf_page": 99,
           "type": "complete",
           "prompt": "We can also ______ or walk to near places.",
-          "answer": "cycle",
           "status": "active",
           "word_bank": [
             "volunteer",
@@ -1480,7 +1386,6 @@
           "pdf_page": 100,
           "type": "reading_mcq",
           "prompt": "This text is about ______.",
-          "answer": "community's history",
           "status": "inactive_missing_passage",
           "choices": [
             "Egyptian food",
@@ -1504,7 +1409,6 @@
           "pdf_page": 100,
           "type": "reading_mcq",
           "prompt": "The opposite of the underlined word \"old\" is ______.",
-          "answer": "new",
           "status": "inactive_missing_passage",
           "choices": [
             "new",
@@ -1528,12 +1432,7 @@
           "pdf_page": 100,
           "type": "reading_open",
           "prompt": "Where did people sell fresh fruits and vegetables?",
-          "answer": "In the old market.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "In the old market.",
-            "They sold them in the old market."
-          ],
           "text": "Where did people sell fresh fruits and vegetables?",
           "source_refs": [
             {
@@ -1550,7 +1449,6 @@
           "pdf_page": 100,
           "type": "correct_form",
           "prompt": "______ (Do) Ehab go running in the morning?",
-          "answer": "Does",
           "status": "active",
           "text": "______ (Do) Ehab go running in the morning?",
           "source_refs": [
@@ -1568,7 +1466,6 @@
           "pdf_page": 100,
           "type": "punctuation",
           "prompt": "what stories do old buildings tell us",
-          "answer": "What stories do old buildings tell us?",
           "status": "active",
           "text": "what stories do old buildings tell us",
           "source_refs": [
@@ -1586,7 +1483,6 @@
           "pdf_page": 100,
           "type": "punctuation",
           "prompt": "when we all help we make our community great",
-          "answer": "When we all help, we make our community great.",
           "status": "active",
           "text": "when we all help we make our community great",
           "source_refs": [
@@ -1604,7 +1500,6 @@
           "pdf_page": 101,
           "type": "mcq",
           "prompt": "She ______ cats in the street.",
-          "answer": "feeds",
           "status": "active",
           "choices": [
             "walks",
@@ -1628,7 +1523,6 @@
           "pdf_page": 101,
           "type": "mcq",
           "prompt": "I want to ______ at a local hospital during the summer holiday.",
-          "answer": "volunteer",
           "status": "active",
           "choices": [
             "catch",
@@ -1652,7 +1546,6 @@
           "pdf_page": 101,
           "type": "mcq",
           "prompt": "We ______ go to school on Fridays.",
-          "answer": "don't",
           "status": "active",
           "choices": [
             "doesn't",
@@ -1676,7 +1569,6 @@
           "pdf_page": 101,
           "type": "mcq",
           "prompt": "______ Amira drink milk with her breakfast?",
-          "answer": "Does",
           "status": "active",
           "choices": [
             "Are",
@@ -1700,7 +1592,6 @@
           "pdf_page": 101,
           "type": "complete",
           "prompt": "We should ______ trees in our community.",
-          "answer": "plant",
           "status": "active",
           "word_bank": [
             "stop",
@@ -1724,7 +1615,6 @@
           "pdf_page": 101,
           "type": "complete",
           "prompt": "We should keep our streets ______.",
-          "answer": "clean",
           "status": "active",
           "word_bank": [
             "stop",
@@ -1748,7 +1638,6 @@
           "pdf_page": 101,
           "type": "complete",
           "prompt": "We should use less ______ and walk to school.",
-          "answer": "plastic",
           "status": "active",
           "word_bank": [
             "stop",
@@ -1772,7 +1661,6 @@
           "pdf_page": 102,
           "type": "reading_mcq",
           "prompt": "Ahmed lives in ______.",
-          "answer": "Cairo",
           "status": "inactive_missing_passage",
           "choices": [
             "Giza",
@@ -1796,7 +1684,6 @@
           "pdf_page": 102,
           "type": "reading_mcq",
           "prompt": "Ahmed is always ______ for work.",
-          "answer": "late",
           "status": "inactive_missing_passage",
           "choices": [
             "busy",
@@ -1820,12 +1707,7 @@
           "pdf_page": 102,
           "type": "reading_open",
           "prompt": "What did Ahmed and his neighbors decide?",
-          "answer": "To use buses or bicycles instead of private cars.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "To use buses or bicycles instead of private cars.",
-            "They decided to use buses or bicycles instead of private cars."
-          ],
           "text": "What did Ahmed and his neighbors decide?",
           "source_refs": [
             {
@@ -1842,7 +1724,6 @@
           "pdf_page": 102,
           "type": "punctuation",
           "prompt": "i feed the dogs and cats",
-          "answer": "I feed the dogs and cats.",
           "status": "active",
           "text": "i feed the dogs and cats",
           "source_refs": [
@@ -1873,7 +1754,6 @@
           "id": "p4-eng-u2-l2-q001",
           "type": "mcq",
           "text": "We can put ______ everywhere, so people can use them to throw rubbish.",
-          "answer": "bins",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -1894,7 +1774,6 @@
           "id": "p4-eng-u2-l2-q002",
           "type": "mcq",
           "text": "The bus helps us reduce ______.",
-          "answer": "traffic",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -1915,7 +1794,6 @@
           "id": "p4-eng-u2-l2-q003",
           "type": "mcq",
           "text": "You shouldn't throw trash on the ______.",
-          "answer": "ground",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -1936,7 +1814,6 @@
           "id": "p4-eng-u2-l2-q004",
           "type": "mcq",
           "text": "Does he ______ the bus to school?",
-          "answer": "take",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -1957,7 +1834,6 @@
           "id": "p4-eng-u2-l2-q005",
           "type": "mcq",
           "text": "She ______ go to school on foot.",
-          "answer": "doesn't",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -1978,7 +1854,6 @@
           "id": "p4-eng-u2-l2-q006",
           "type": "mcq",
           "text": "Ali doesn't ______ the bus to school every day.",
-          "answer": "take",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -1999,7 +1874,6 @@
           "id": "p4-eng-u2-l2-q007",
           "type": "mcq",
           "text": "______ Amira like ice cream?",
-          "answer": "Does",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -2020,7 +1894,6 @@
           "id": "p4-eng-u2-l2-q008",
           "type": "mcq",
           "text": "Do you ______ to school on Friday? No, I don't.",
-          "answer": "go",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -2041,7 +1914,6 @@
           "id": "p4-eng-u2-l2-q009",
           "type": "mcq",
           "text": "______ you like sweets?",
-          "answer": "Do",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -2061,16 +1933,12 @@
               "page": 77,
               "id": "elm-u2l2-017"
             }
-          ],
-          "accepted_answers": [
-            "Do"
           ]
         },
         {
           "id": "p4-eng-u2-l2-q010",
           "type": "mcq",
           "text": "We should ______ or cycle for short distances.",
-          "answer": "walk",
           "source_page": 56,
           "status": "active",
           "choices": [
@@ -2091,7 +1959,6 @@
           "id": "p4-eng-u2-l2-q011",
           "type": "complete",
           "text": "Ali and Mona are neighbors. They have many problems in their community. The first ______ is cars.",
-          "answer": "problem",
           "source_page": 56,
           "status": "active",
           "word_bank": [
@@ -2113,7 +1980,6 @@
           "id": "p4-eng-u2-l2-q012",
           "type": "complete",
           "text": "They think that we don't need to use ______ every day.",
-          "answer": "cars",
           "source_page": 56,
           "status": "active",
           "word_bank": [
@@ -2135,7 +2001,6 @@
           "id": "p4-eng-u2-l2-q013",
           "type": "complete",
           "text": "There will be ______ cars on the road.",
-          "answer": "fewer",
           "source_page": 56,
           "status": "active",
           "word_bank": [
@@ -2157,7 +2022,6 @@
           "id": "p4-eng-u2-l2-q014",
           "type": "correct_form",
           "text": "______ (Do) Sally like ice-cream?",
-          "answer": "Does",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2171,16 +2035,12 @@
               "page": 79,
               "id": "elm-u2l2-047"
             }
-          ],
-          "accepted_answers": [
-            "Does"
           ]
         },
         {
           "id": "p4-eng-u2-l2-q015",
           "type": "correct_form",
           "text": "We ______ (studies) English every day.",
-          "answer": "study",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2194,16 +2054,12 @@
               "page": 77,
               "id": "elm-u2l2-024"
             }
-          ],
-          "accepted_answers": [
-            "study"
           ]
         },
         {
           "id": "p4-eng-u2-l2-q016",
           "type": "correct_form",
           "text": "______ (Do) Adam go to school on foot?",
-          "answer": "Does",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2218,7 +2074,6 @@
           "id": "p4-eng-u2-l2-q017",
           "type": "correct_form",
           "text": "Ali ______ (not / eat) unhealthy food.",
-          "answer": "doesn't eat",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2232,16 +2087,12 @@
               "page": 79,
               "id": "elm-u2l2-048"
             }
-          ],
-          "accepted_answers": [
-            "doesn't eat"
           ]
         },
         {
           "id": "p4-eng-u2-l2-q018",
           "type": "correct_form",
           "text": "The farmers ______ (not / feed) the animals.",
-          "answer": "don't feed",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2256,7 +2107,6 @@
           "id": "p4-eng-u2-l2-q019",
           "type": "correct_form",
           "text": "I ______ (doesn't) like pizza.",
-          "answer": "don't",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2271,7 +2121,6 @@
           "id": "p4-eng-u2-l2-q020",
           "type": "correct_form",
           "text": "______ (Does) you travel every summer?",
-          "answer": "Do",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2286,7 +2135,6 @@
           "id": "p4-eng-u2-l2-q021",
           "type": "correct_form",
           "text": "Does your mum ______ (goes) to work by bus?",
-          "answer": "go",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2301,7 +2149,6 @@
           "id": "p4-eng-u2-l2-q022",
           "type": "correct_form",
           "text": "They don't ______ (likes) loud noise.",
-          "answer": "like",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2316,7 +2163,6 @@
           "id": "p4-eng-u2-l2-q023",
           "type": "correct_form",
           "text": "No, she doesn't ______ (has) any books.",
-          "answer": "have",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2330,16 +2176,12 @@
               "page": 108,
               "id": "elm-u2r-042"
             }
-          ],
-          "accepted_answers": [
-            "have"
           ]
         },
         {
           "id": "p4-eng-u2-l2-q024",
           "type": "punctuation",
           "text": "does Rana help her community",
-          "answer": "Does Rana help her community?",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2354,7 +2196,6 @@
           "id": "p4-eng-u2-l2-q025",
           "type": "punctuation",
           "text": "aswan is a nice place",
-          "answer": "Aswan is a nice place.",
           "source_page": 57,
           "status": "active",
           "source_refs": [
@@ -2369,7 +2210,6 @@
           "id": "p4-eng-u2-l2-q026",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Traffic problem\" using: schools – walk – buses.",
-          "answer": "Our community has many problems. Traffic is one of these problems. Cars don't move quickly in the morning, especially near schools. We can walk or take the school buses instead.",
           "source_page": 57,
           "status": "active",
           "model_answer_page": 71,
@@ -2385,7 +2225,6 @@
           "id": "p4-eng-u2-l2-q027",
           "type": "dialogue_complete",
           "text": "How do you help your ______?",
-          "answer": "community",
           "source_page": 72,
           "status": "active",
           "word_bank": [
@@ -2406,7 +2245,6 @@
           "id": "p4-eng-u2-l2-q028",
           "type": "dialogue_complete",
           "text": "I ______ trash from the streets.",
-          "answer": "clean",
           "source_page": 72,
           "status": "active",
           "word_bank": [
@@ -2427,7 +2265,6 @@
           "id": "p4-eng-u2-l2-q029",
           "type": "dialogue_complete",
           "text": "Do you ______ trees?",
-          "answer": "plant",
           "source_page": 72,
           "status": "active",
           "word_bank": [
@@ -2448,7 +2285,6 @@
           "id": "p4-eng-u2-l2-q030",
           "type": "mcq",
           "text": "We put trash in the ______.",
-          "answer": "bins",
           "source_page": 72,
           "status": "active",
           "choices": [
@@ -2469,7 +2305,6 @@
           "id": "p4-eng-u2-l2-q031",
           "type": "mcq",
           "text": "They ______ bins to put trash in them.",
-          "answer": "use",
           "source_page": 72,
           "status": "active",
           "choices": [
@@ -2490,7 +2325,6 @@
           "id": "p4-eng-u2-l2-q032",
           "type": "correction",
           "text": "Does he look the bus to school?",
-          "answer": "Does he take the bus to school?",
           "source_page": 72,
           "status": "active",
           "source_refs": [
@@ -2505,7 +2339,6 @@
           "id": "p4-eng-u2-l2-q033",
           "type": "correction",
           "text": "She doesn't washes the car.",
-          "answer": "She doesn't wash the car.",
           "source_page": 72,
           "status": "active",
           "source_refs": [
@@ -2520,7 +2353,6 @@
           "id": "p4-eng-u2-l2-q034",
           "type": "true_false",
           "text": "Cars move slowly in the morning especially near schools.",
-          "answer": "True",
           "source_page": 73,
           "status": "active",
           "choices": [
@@ -2540,7 +2372,6 @@
           "id": "p4-eng-u2-l2-q035",
           "type": "true_false",
           "text": "Some people throw trash on the road.",
-          "answer": "True",
           "source_page": 73,
           "status": "active",
           "choices": [
@@ -2560,7 +2391,6 @@
           "id": "p4-eng-u2-l2-q036",
           "type": "reading_mcq",
           "text": "The first problem is ______.",
-          "answer": "traffic",
           "source_page": 73,
           "status": "active",
           "choices": [
@@ -2583,7 +2413,6 @@
           "id": "p4-eng-u2-l2-q037",
           "type": "reading_mcq",
           "text": "We can take the school bus instead of ______.",
-          "answer": "cars",
           "source_page": 73,
           "status": "active",
           "choices": [
@@ -2606,7 +2435,6 @@
           "id": "p4-eng-u2-l2-q038",
           "type": "mcq",
           "text": "You should throw trash in the ______.",
-          "answer": "bin",
           "source_page": 74,
           "status": "active",
           "choices": [
@@ -2627,7 +2455,6 @@
           "id": "p4-eng-u2-l2-q039",
           "type": "mcq",
           "text": "The bus helps ______ traffic.",
-          "answer": "reduce",
           "source_page": 74,
           "status": "active",
           "choices": [
@@ -2648,7 +2475,6 @@
           "id": "p4-eng-u2-l2-q040",
           "type": "complete",
           "text": "My community has many ______. Traffic is one of these problems.",
-          "answer": "problems",
           "source_page": 74,
           "status": "active",
           "word_bank": [
@@ -2670,7 +2496,6 @@
           "id": "p4-eng-u2-l2-q041",
           "type": "complete",
           "text": "Cars ______ slowly in the morning.",
-          "answer": "move",
           "source_page": 74,
           "status": "active",
           "word_bank": [
@@ -2692,7 +2517,6 @@
           "id": "p4-eng-u2-l2-q042",
           "type": "complete",
           "text": "Cars move slowly in the morning ______ schools.",
-          "answer": "near",
           "source_page": 74,
           "status": "active",
           "word_bank": [
@@ -2714,7 +2538,6 @@
           "id": "p4-eng-u2-l2-q043",
           "type": "complete",
           "text": "We should use ______ instead of cars.",
-          "answer": "buses",
           "source_page": 74,
           "status": "active",
           "word_bank": [
@@ -2736,13 +2559,8 @@
           "id": "p4-eng-u2-l2-q044",
           "type": "reading_open",
           "text": "What does Sandy's grandpa wear?",
-          "answer": "A galabeya and a turban.",
           "source_page": 75,
           "status": "active",
-          "accepted_answers": [
-            "A galabeya and a turban.",
-            "He wears a galabeya and a turban."
-          ],
           "passage_ref": "bbb-u2r-029",
           "source_refs": [
             {
@@ -2757,7 +2575,6 @@
           "id": "p4-eng-u2-l2-q045",
           "type": "correct_form",
           "text": "Cars ______ (not move) quickly in the morning.",
-          "answer": "don't move",
           "source_page": 75,
           "status": "active",
           "source_refs": [
@@ -2772,7 +2589,6 @@
           "id": "p4-eng-u2-l2-q046",
           "type": "correct_form",
           "text": "We don't ______ (puts) trash in bins.",
-          "answer": "put",
           "source_page": 75,
           "status": "active",
           "source_refs": [
@@ -2787,7 +2603,6 @@
           "id": "p4-eng-u2-l2-q047",
           "type": "correct_form",
           "text": "Omar doesn't ______ (has) dinner with his family.",
-          "answer": "have",
           "source_page": 75,
           "status": "active",
           "source_refs": [
@@ -2802,7 +2617,6 @@
           "id": "p4-eng-u2-l2-q048",
           "type": "punctuation",
           "text": "does Ahmed like cats",
-          "answer": "Does Ahmed like cats?",
           "source_page": 75,
           "status": "active",
           "source_refs": [
@@ -2816,9 +2630,6 @@
               "page": 108,
               "id": "elm-u2r-044"
             }
-          ],
-          "accepted_answers": [
-            "Does Ahmed like cats?"
           ]
         },
         {
@@ -2828,7 +2639,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "Trash is a big ______ in my city.",
-          "answer": "problem",
           "status": "active",
           "choices": [
             "park",
@@ -2852,7 +2662,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "The mechanic can ______ cars.",
-          "answer": "fix",
           "status": "active",
           "choices": [
             "play",
@@ -2876,7 +2685,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "Think of a ______ to the traffic problem.",
-          "answer": "solution",
           "status": "active",
           "choices": [
             "bin",
@@ -2900,7 +2708,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "Good people don't throw trash on the ______.",
-          "answer": "ground",
           "status": "active",
           "choices": [
             "bin",
@@ -2924,7 +2731,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "My idea can ______ the problem of traffic.",
-          "answer": "solve",
           "status": "active",
           "choices": [
             "solve",
@@ -2948,7 +2754,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "We can take the bus ______ of the car.",
-          "answer": "instead",
           "status": "active",
           "choices": [
             "instead",
@@ -2972,7 +2777,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "There are many cars on the ______.",
-          "answer": "road",
           "status": "active",
           "choices": [
             "bin",
@@ -2996,7 +2800,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "Please, put trash in the ______.",
-          "answer": "bins",
           "status": "active",
           "choices": [
             "streets",
@@ -3020,7 +2823,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "The problem of ______ happens because there are many cars on the road.",
-          "answer": "traffic",
           "status": "active",
           "choices": [
             "traffic",
@@ -3044,7 +2846,6 @@
           "pdf_page": 68,
           "type": "mcq",
           "prompt": "Cars ______ quickly in the evening because there is less traffic.",
-          "answer": "move",
           "status": "active",
           "choices": [
             "grow",
@@ -3068,7 +2869,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "She ______ like fast food.",
-          "answer": "doesn't",
           "status": "active",
           "choices": [
             "don't",
@@ -3092,7 +2892,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "Do you ______ your room every day?",
-          "answer": "clean",
           "status": "active",
           "choices": [
             "cleans",
@@ -3116,7 +2915,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "I ______ get up early on the weekend.",
-          "answer": "don't",
           "status": "active",
           "choices": [
             "doesn't",
@@ -3140,7 +2938,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "He doesn't ______ the guitar.",
-          "answer": "play",
           "status": "active",
           "choices": [
             "plays",
@@ -3164,7 +2961,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "Do you ______ how to solve this problem?",
-          "answer": "know",
           "status": "active",
           "choices": [
             "knew",
@@ -3188,7 +2984,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "I ______ drink tea in the morning.",
-          "answer": "don't",
           "status": "active",
           "choices": [
             "don't",
@@ -3212,7 +3007,6 @@
           "pdf_page": 71,
           "type": "mcq",
           "prompt": "She ______ eat pizza for breakfast.",
-          "answer": "doesn't",
           "status": "active",
           "choices": [
             "don't",
@@ -3236,7 +3030,6 @@
           "pdf_page": 71,
           "type": "correct_form",
           "prompt": "She doesn't ______ (eats) unhealthy food.",
-          "answer": "eat",
           "status": "active",
           "text": "She doesn't ______ (eats) unhealthy food.",
           "source_refs": [
@@ -3254,7 +3047,6 @@
           "pdf_page": 71,
           "type": "correct_form",
           "prompt": "Does Reda ______ (helps) in the park?",
-          "answer": "help",
           "status": "active",
           "text": "Does Reda ______ (helps) in the park?",
           "source_refs": [
@@ -3272,7 +3064,6 @@
           "pdf_page": 71,
           "type": "correct_form",
           "prompt": "We ______ (doesn't) like apples, but we love bananas.",
-          "answer": "don't",
           "status": "active",
           "text": "We ______ (doesn't) like apples, but we love bananas.",
           "source_refs": [
@@ -3290,7 +3081,6 @@
           "pdf_page": 71,
           "type": "correct_form",
           "prompt": "______ (Does) you take long showers?",
-          "answer": "Do",
           "status": "active",
           "text": "______ (Does) you take long showers?",
           "source_refs": [
@@ -3308,7 +3098,6 @@
           "pdf_page": 71,
           "type": "correct_form",
           "prompt": "______ (Do) Ali go running in the morning?",
-          "answer": "Does",
           "status": "active",
           "text": "______ (Do) Ali go running in the morning?",
           "source_refs": [
@@ -3326,7 +3115,6 @@
           "pdf_page": 71,
           "type": "correct_form",
           "prompt": "She ______ (don't like) pollution.",
-          "answer": "doesn't like",
           "status": "active",
           "text": "She ______ (don't like) pollution.",
           "source_refs": [
@@ -3344,7 +3132,6 @@
           "pdf_page": 72,
           "type": "complete",
           "prompt": "Our community is an amazing place to live in. However, there are many ______.",
-          "answer": "problems",
           "status": "active",
           "word_bank": [
             "instead",
@@ -3369,7 +3156,6 @@
           "pdf_page": 72,
           "type": "complete",
           "prompt": "One of these problems is the ______.",
-          "answer": "traffic",
           "status": "active",
           "word_bank": [
             "instead",
@@ -3394,7 +3180,6 @@
           "pdf_page": 72,
           "type": "complete",
           "prompt": "We think we don't need to use ______ every day.",
-          "answer": "cars",
           "status": "active",
           "word_bank": [
             "instead",
@@ -3419,7 +3204,6 @@
           "pdf_page": 72,
           "type": "complete",
           "prompt": "We can take the school bus ______.",
-          "answer": "instead",
           "status": "active",
           "word_bank": [
             "instead",
@@ -3444,7 +3228,6 @@
           "pdf_page": 72,
           "type": "reading_mcq",
           "prompt": "The opposite of the underlined word \"dirty\" is ______.",
-          "answer": "clean",
           "status": "inactive_missing_passage",
           "choices": [
             "harmful",
@@ -3468,7 +3251,6 @@
           "pdf_page": 72,
           "type": "reading_mcq",
           "prompt": "This text is about ______.",
-          "answer": "Trash",
           "status": "inactive_missing_passage",
           "choices": [
             "Neighbors",
@@ -3492,12 +3274,7 @@
           "pdf_page": 72,
           "type": "reading_open",
           "prompt": "Why is trash a dangerous problem?",
-          "answer": "Because it can make many people ill.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Because it can make many people ill.",
-            "It can make many people ill."
-          ],
           "text": "Why is trash a dangerous problem?",
           "source_refs": [
             {
@@ -3514,12 +3291,7 @@
           "pdf_page": 72,
           "type": "reading_open",
           "prompt": "How can they solve this problem?",
-          "answer": "By putting bins everywhere.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "By putting bins everywhere.",
-            "They can put bins everywhere."
-          ],
           "text": "How can they solve this problem?",
           "source_refs": [
             {
@@ -3536,12 +3308,7 @@
           "pdf_page": 72,
           "type": "reading_open",
           "prompt": "Why does the problem of trash happen?",
-          "answer": "Because some people throw trash on the ground.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Because some people throw trash on the ground.",
-            "People throw trash on the ground."
-          ],
           "text": "Why does the problem of trash happen?",
           "source_refs": [
             {
@@ -3558,7 +3325,6 @@
           "pdf_page": 72,
           "type": "correct_form",
           "prompt": "Do you ______ (got) up early?",
-          "answer": "get",
           "status": "active",
           "text": "Do you ______ (got) up early?",
           "source_refs": [
@@ -3576,7 +3342,6 @@
           "pdf_page": 72,
           "type": "correct_form",
           "prompt": "We ______ (doesn't) need new clothes.",
-          "answer": "don't",
           "status": "active",
           "text": "We ______ (doesn't) need new clothes.",
           "source_refs": [
@@ -3594,7 +3359,6 @@
           "pdf_page": 72,
           "type": "correct_form",
           "prompt": "______ (Do) she walk to school every day?",
-          "answer": "Does",
           "status": "active",
           "text": "______ (Do) she walk to school every day?",
           "source_refs": [
@@ -3612,7 +3376,6 @@
           "pdf_page": 72,
           "type": "punctuation",
           "prompt": "yes I use the trash bins",
-          "answer": "Yes, I use the trash bins.",
           "status": "active",
           "text": "yes I use the trash bins",
           "source_refs": [
@@ -3630,7 +3393,6 @@
           "pdf_page": 72,
           "type": "punctuation",
           "prompt": "do cars move quickly in the morning",
-          "answer": "Do cars move quickly in the morning?",
           "status": "active",
           "text": "do cars move quickly in the morning",
           "source_refs": [
@@ -3648,7 +3410,6 @@
           "pdf_page": 73,
           "type": "mcq",
           "prompt": "How can we ______ traffic?",
-          "answer": "reduce",
           "status": "active",
           "choices": [
             "throw",
@@ -3672,7 +3433,6 @@
           "pdf_page": 73,
           "type": "mcq",
           "prompt": "______ your neighbor help in a community park?",
-          "answer": "Does",
           "status": "active",
           "choices": [
             "Was",
@@ -3696,7 +3456,6 @@
           "pdf_page": 73,
           "type": "mcq",
           "prompt": "Some people ______ put trash in bins.",
-          "answer": "don't",
           "status": "active",
           "choices": [
             "hasn't",
@@ -3720,7 +3479,6 @@
           "pdf_page": 73,
           "type": "mcq",
           "prompt": "We have good solutions to ______ the problems.",
-          "answer": "solve",
           "status": "active",
           "choices": [
             "waste",
@@ -3744,7 +3502,6 @@
           "pdf_page": 73,
           "type": "mcq",
           "prompt": "Many streets look ______ because of the trash.",
-          "answer": "dirty",
           "status": "active",
           "choices": [
             "wonderful",
@@ -3768,7 +3525,6 @@
           "pdf_page": 73,
           "type": "mcq",
           "prompt": "The traffic ______ move fast because there are too many cars.",
-          "answer": "doesn't",
           "status": "active",
           "choices": [
             "haven't",
@@ -3792,7 +3548,6 @@
           "pdf_page": 73,
           "type": "correct_form",
           "prompt": "Do you ______ (studies) Arabic every day?",
-          "answer": "study",
           "status": "active",
           "text": "Do you ______ (studies) Arabic every day?",
           "source_refs": [
@@ -3810,7 +3565,6 @@
           "pdf_page": 73,
           "type": "correct_form",
           "prompt": "Hala ______ (don't like) dirty places.",
-          "answer": "doesn't like",
           "status": "active",
           "text": "Hala ______ (don't like) dirty places.",
           "source_refs": [
@@ -3828,7 +3582,6 @@
           "pdf_page": 98,
           "type": "reorder",
           "prompt": "does - cats - and - Laila - feed",
-          "answer": "Laila feeds cats and dogs.",
           "status": "active",
           "text": "does - cats - and - Laila - feed",
           "source_refs": [
@@ -3846,7 +3599,6 @@
           "pdf_page": 98,
           "type": "reorder",
           "prompt": "clean - I - from - trash - the streets",
-          "answer": "I clean trash from the streets.",
           "status": "active",
           "text": "clean - I - from - trash - the streets",
           "source_refs": [
@@ -3864,7 +3616,6 @@
           "pdf_page": 99,
           "type": "complete",
           "prompt": "Our community has many problems. One of these problems is the ______.",
-          "answer": "traffic",
           "status": "active",
           "word_bank": [
             "volunteer",
@@ -3889,7 +3640,6 @@
           "pdf_page": 99,
           "type": "complete",
           "prompt": "Cars don't ______ quickly in the morning, especially near schools.",
-          "answer": "move",
           "status": "active",
           "word_bank": [
             "volunteer",
@@ -3914,7 +3664,6 @@
           "pdf_page": 100,
           "type": "correct_form",
           "prompt": "Our teacher ______ (don't) give us homework on holidays.",
-          "answer": "doesn't",
           "status": "active",
           "text": "Our teacher ______ (don't) give us homework on holidays.",
           "source_refs": [
@@ -3932,7 +3681,6 @@
           "pdf_page": 100,
           "type": "correct_form",
           "prompt": "Do you ______ (feeds) the fish every day?",
-          "answer": "feed",
           "status": "active",
           "text": "Do you ______ (feeds) the fish every day?",
           "source_refs": [
@@ -3950,7 +3698,6 @@
           "pdf_page": 100,
           "type": "correct_form",
           "prompt": "Shaza doesn't ______ (uses) plastic bottles.",
-          "answer": "use",
           "status": "active",
           "text": "Shaza doesn't ______ (uses) plastic bottles.",
           "source_refs": [
@@ -3968,7 +3715,6 @@
           "pdf_page": 101,
           "type": "mcq",
           "prompt": "She ______ like to see trash on the streets.",
-          "answer": "doesn't",
           "status": "active",
           "choices": [
             "doesn't",
@@ -3992,7 +3738,6 @@
           "pdf_page": 101,
           "type": "complete",
           "prompt": "Air pollution is a very dangerous problem. There are many ways to ______ air pollution.",
-          "answer": "stop",
           "status": "active",
           "word_bank": [
             "stop",
@@ -4016,12 +3761,7 @@
           "pdf_page": 102,
           "type": "reading_open",
           "prompt": "How did Ahmed and his neighbors solve the traffic problem?",
-          "answer": "They decided to use buses or bicycles instead of private cars.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "They decided to use buses or bicycles instead of private cars.",
-            "By using buses or bicycles instead of private cars."
-          ],
           "text": "How did Ahmed and his neighbors solve the traffic problem?",
           "source_refs": [
             {
@@ -4038,7 +3778,6 @@
           "pdf_page": 102,
           "type": "correct_form",
           "prompt": "Dalia doesn't ______ (buys) plastic bottles.",
-          "answer": "buy",
           "status": "active",
           "text": "Dalia doesn't ______ (buys) plastic bottles.",
           "source_refs": [
@@ -4056,7 +3795,6 @@
           "pdf_page": 102,
           "type": "correct_form",
           "prompt": "______ (Does) they have a dog?",
-          "answer": "Do",
           "status": "active",
           "text": "______ (Does) they have a dog?",
           "source_refs": [
@@ -4074,7 +3812,6 @@
           "pdf_page": 102,
           "type": "correct_form",
           "prompt": "Nourhan doesn't ______ (goes) to the club after school.",
-          "answer": "go",
           "status": "active",
           "text": "Nourhan doesn't ______ (goes) to the club after school.",
           "source_refs": [
@@ -4105,7 +3842,6 @@
           "id": "p4-eng-u2-l3-q001",
           "type": "mcq",
           "text": "The opposite of \"honest\" is ______.",
-          "answer": "dishonest",
           "source_page": 62,
           "status": "active",
           "choices": [
@@ -4126,7 +3862,6 @@
           "id": "p4-eng-u2-l3-q002",
           "type": "mcq",
           "text": "Egyptians are proud of their ______ and love to celebrate together.",
-          "answer": "culture",
           "source_page": 62,
           "status": "active",
           "choices": [
@@ -4147,7 +3882,6 @@
           "id": "p4-eng-u2-l3-q003",
           "type": "mcq",
           "text": "Men in Upper Egypt wear galabeyas and sometimes ______.",
-          "answer": "turbans",
           "source_page": 62,
           "status": "active",
           "choices": [
@@ -4168,7 +3902,6 @@
           "id": "p4-eng-u2-l3-q004",
           "type": "mcq",
           "text": "People in Upper Egypt ______ the sugar cane harvest with big festivals.",
-          "answer": "celebrate",
           "source_page": 62,
           "status": "active",
           "choices": [
@@ -4189,7 +3922,6 @@
           "id": "p4-eng-u2-l3-q005",
           "type": "mcq",
           "text": "The cat ______ after it ate all the food.",
-          "answer": "disappeared",
           "source_page": 62,
           "status": "active",
           "choices": [
@@ -4210,7 +3942,6 @@
           "id": "p4-eng-u2-l3-q006",
           "type": "mcq",
           "text": "There are two special ______ in Egypt, Upper Egypt and the Delta.",
-          "answer": "regions",
           "source_page": 62,
           "status": "active",
           "choices": [
@@ -4231,7 +3962,6 @@
           "id": "p4-eng-u2-l3-q007",
           "type": "complete",
           "text": "Every summer, I travel to my grandfather. He lives in Luxor. It is a governorate in ______ Egypt.",
-          "answer": "Upper",
           "source_page": 62,
           "status": "active",
           "word_bank": [
@@ -4252,16 +3982,12 @@
               "page": 89,
               "id": "elm-u2l3-042"
             }
-          ],
-          "accepted_answers": [
-            "Upper"
           ]
         },
         {
           "id": "p4-eng-u2-l3-q008",
           "type": "complete",
           "text": "Men there wear ______.",
-          "answer": "galabeyas",
           "source_page": 62,
           "status": "active",
           "word_bank": [
@@ -4282,16 +4008,12 @@
               "page": 89,
               "id": "elm-u2l3-043"
             }
-          ],
-          "accepted_answers": [
-            "galabeyas"
           ]
         },
         {
           "id": "p4-eng-u2-l3-q009",
           "type": "complete",
           "text": "Women wear ______ dresses.",
-          "answer": "colorful",
           "source_page": 62,
           "status": "active",
           "word_bank": [
@@ -4313,7 +4035,6 @@
           "id": "p4-eng-u2-l3-q010",
           "type": "complete",
           "text": "Farmers grow ______.",
-          "answer": "sugar cane",
           "source_page": 62,
           "status": "active",
           "word_bank": [
@@ -4334,16 +4055,12 @@
               "page": 89,
               "id": "elm-u2l3-045"
             }
-          ],
-          "accepted_answers": [
-            "sugar cane"
           ]
         },
         {
           "id": "p4-eng-u2-l3-q011",
           "type": "reading_mcq",
           "text": "Streets are filled with colorful ______ and flowers.",
-          "answer": "decorations",
           "source_page": 63,
           "status": "active",
           "choices": [
@@ -4365,7 +4082,6 @@
           "id": "p4-eng-u2-l3-q012",
           "type": "reading_mcq",
           "text": "The opposite of the underlined word \"new\" is ______.",
-          "answer": "old",
           "source_page": 63,
           "status": "active",
           "choices": [
@@ -4388,13 +4104,8 @@
           "id": "p4-eng-u2-l3-q013",
           "type": "reading_open",
           "text": "What is the passage about?",
-          "answer": "The Spring Festival in the Delta.",
           "source_page": 63,
           "status": "active",
-          "accepted_answers": [
-            "The Spring Festival.",
-            "The Spring Festival in the Delta."
-          ],
           "passage_ref": "bbb-u2l3-011",
           "source_refs": [
             {
@@ -4409,13 +4120,8 @@
           "id": "p4-eng-u2-l3-q014",
           "type": "reading_open",
           "text": "What do families do in the Spring Festival?",
-          "answer": "They spend time together, have special food, and listen to music.",
           "source_page": 63,
           "status": "active",
-          "accepted_answers": [
-            "They spend time together, have special food and listen to music.",
-            "Families spend time together and listen to music."
-          ],
           "passage_ref": "bbb-u2l3-011",
           "source_refs": [
             {
@@ -4430,7 +4136,6 @@
           "id": "p4-eng-u2-l3-q015",
           "type": "correct_form",
           "text": "It is ______ (legal) to drive here.",
-          "answer": "illegal",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4445,7 +4150,6 @@
           "id": "p4-eng-u2-l3-q016",
           "type": "correct_form",
           "text": "Ahmed ______ (appears) after eating all sweets.",
-          "answer": "disappears",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4460,7 +4164,6 @@
           "id": "p4-eng-u2-l3-q017",
           "type": "correct_form",
           "text": "The verb \"see\" has an ______ (regular) past form.",
-          "answer": "irregular",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4475,7 +4178,6 @@
           "id": "p4-eng-u2-l3-q018",
           "type": "correct_form",
           "text": "He is ______ (responsible); he forgot his keys.",
-          "answer": "irresponsible",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4490,7 +4192,6 @@
           "id": "p4-eng-u2-l3-q019",
           "type": "correct_form",
           "text": "Hala ______ (like) dirty places.",
-          "answer": "dislikes",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4505,7 +4206,6 @@
           "id": "p4-eng-u2-l3-q020",
           "type": "punctuation",
           "text": "egyptians are proud of their culture",
-          "answer": "Egyptians are proud of their culture.",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4520,7 +4220,6 @@
           "id": "p4-eng-u2-l3-q021",
           "type": "punctuation",
           "text": "do all men wear turbans",
-          "answer": "Do all men wear turbans?",
           "source_page": 63,
           "status": "active",
           "source_refs": [
@@ -4535,7 +4234,6 @@
           "id": "p4-eng-u2-l3-q022",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Your community traditions\" using: Delta – rice and cotton – spring festivals.",
-          "answer": "People in the Delta have a lot of traditions. In the Delta region, people celebrate the Spring Festival with colorful decorations. Farmers there grow rice and cotton.",
           "source_page": 63,
           "status": "active",
           "model_answer_page": 71,
@@ -4551,7 +4249,6 @@
           "id": "p4-eng-u2-l3-q023",
           "type": "reading_mcq",
           "text": "The underlined word \"traditional\" means ______.",
-          "answer": "not modern",
           "source_page": 75,
           "status": "active",
           "choices": [
@@ -4574,7 +4271,6 @@
           "id": "p4-eng-u2-l3-q024",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Upper Egypt\" using: sugar cane – pottery – galabeyas.",
-          "answer": "In Upper Egypt, men wear galabeyas. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets by hand.",
           "source_page": 75,
           "status": "active",
           "model_answer_page": 71,
@@ -4593,7 +4289,6 @@
           "pdf_page": 76,
           "type": "mcq",
           "prompt": "We ______ Eid Al-Fitr with our families.",
-          "answer": "celebrate",
           "status": "active",
           "choices": [
             "build",
@@ -4617,7 +4312,6 @@
           "pdf_page": 76,
           "type": "mcq",
           "prompt": "Our house looks beautiful with these ______.",
-          "answer": "decorations",
           "status": "active",
           "choices": [
             "decorations",
@@ -4641,7 +4335,6 @@
           "pdf_page": 76,
           "type": "mcq",
           "prompt": "Some people ______ colorful carpets by hand.",
-          "answer": "weave",
           "status": "active",
           "choices": [
             "wear",
@@ -4665,7 +4358,6 @@
           "pdf_page": 76,
           "type": "mcq",
           "prompt": "Mobiles are ______ inventions.",
-          "answer": "modern",
           "status": "active",
           "choices": [
             "proud",
@@ -4689,7 +4381,6 @@
           "pdf_page": 76,
           "type": "mcq",
           "prompt": "Girls like to wear ______ dresses.",
-          "answer": "stylish",
           "status": "active",
           "choices": [
             "craft",
@@ -4713,7 +4404,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "Houses are ______ in bright colors.",
-          "answer": "painted",
           "status": "active",
           "choices": [
             "celebrated",
@@ -4737,7 +4427,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "Egyptians eat colorful eggs in the Spring ______.",
-          "answer": "Festival",
           "status": "active",
           "choices": [
             "Culture",
@@ -4761,7 +4450,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "They make juice from sugar ______.",
-          "answer": "cane",
           "status": "active",
           "choices": [
             "corn",
@@ -4785,7 +4473,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "Ancient Egyptian houses had beautiful ______.",
-          "answer": "designs",
           "status": "active",
           "choices": [
             "designs",
@@ -4809,7 +4496,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "We wear special ______ in festivals.",
-          "answer": "outfits",
           "status": "active",
           "choices": [
             "harvest",
@@ -4833,7 +4519,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "Egyptians are proud of their ______, and they love to celebrate together.",
-          "answer": "culture",
           "status": "active",
           "choices": [
             "culture",
@@ -4857,7 +4542,6 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "My mother told me ______ about her family.",
-          "answer": "stories",
           "status": "active",
           "choices": [
             "foods",
@@ -4881,12 +4565,7 @@
           "pdf_page": 78,
           "type": "reading_open",
           "prompt": "Where is the Delta?",
-          "answer": "It's in the north of Egypt.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "In the north of Egypt.",
-            "It's in the north of Egypt."
-          ],
           "text": "Where is the Delta?",
           "source_refs": [
             {
@@ -4903,11 +4582,7 @@
           "pdf_page": 78,
           "type": "reading_open",
           "prompt": "Where do people grow sugar cane?",
-          "answer": "In Upper Egypt.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "In Upper Egypt."
-          ],
           "text": "Where do people grow sugar cane?",
           "source_refs": [
             {
@@ -4924,7 +4599,6 @@
           "pdf_page": 80,
           "type": "mcq",
           "prompt": "______ sleep is bad for your health.",
-          "answer": "Irregular",
           "status": "active",
           "choices": [
             "Irregular",
@@ -4948,7 +4622,6 @@
           "pdf_page": 80,
           "type": "mcq",
           "prompt": "Stars ______ in the morning.",
-          "answer": "disappear",
           "status": "active",
           "choices": [
             "appear",
@@ -4972,7 +4645,6 @@
           "pdf_page": 80,
           "type": "mcq",
           "prompt": "It is ______ to take money that is not ours.",
-          "answer": "illegal",
           "status": "active",
           "choices": [
             "legal",
@@ -4996,7 +4668,6 @@
           "pdf_page": 80,
           "type": "mcq",
           "prompt": "It is ______ to smoke here.",
-          "answer": "illegal",
           "status": "active",
           "choices": [
             "legal",
@@ -5020,7 +4691,6 @@
           "pdf_page": 80,
           "type": "mcq",
           "prompt": "What Omar says is ______. It doesn't make sense.",
-          "answer": "illogical",
           "status": "active",
           "choices": [
             "illogical",
@@ -5044,7 +4714,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "The plane ______ (appeared) behind the clouds.",
-          "answer": "disappeared",
           "status": "active",
           "text": "The plane ______ (appeared) behind the clouds.",
           "source_refs": [
@@ -5062,7 +4731,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "It's ______ (legal) to use the mobile when you drive.",
-          "answer": "illegal",
           "status": "active",
           "text": "It's ______ (legal) to use the mobile when you drive.",
           "source_refs": [
@@ -5080,7 +4748,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "My grandpa ______ (likes) noise and pollution.",
-          "answer": "dislikes",
           "status": "active",
           "text": "My grandpa ______ (likes) noise and pollution.",
           "source_refs": [
@@ -5098,7 +4765,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "Rain is ______ (regular) in the dry desert.",
-          "answer": "irregular",
           "status": "active",
           "text": "Rain is ______ (regular) in the dry desert.",
           "source_refs": [
@@ -5116,7 +4782,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "Your question is ______ (relevant). We are not talking about that.",
-          "answer": "irrelevant",
           "status": "active",
           "text": "Your question is ______ (relevant). We are not talking about that.",
           "source_refs": [
@@ -5134,7 +4799,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "The children are ______ (responsible). They waste their time.",
-          "answer": "irresponsible",
           "status": "active",
           "text": "The children are ______ (responsible). They waste their time.",
           "source_refs": [
@@ -5152,7 +4816,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "The verb \"make\" has an ______ (regular) past form.",
-          "answer": "irregular",
           "status": "active",
           "text": "The verb \"make\" has an ______ (regular) past form.",
           "source_refs": [
@@ -5170,7 +4833,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "He is ______ (responsible). He forgets his keys.",
-          "answer": "irresponsible",
           "status": "active",
           "text": "He is ______ (responsible). He forgets his keys.",
           "source_refs": [
@@ -5188,7 +4850,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "It is ______ (legal) to drive here. It isn't safe.",
-          "answer": "illegal",
           "status": "active",
           "text": "It is ______ (legal) to drive here. It isn't safe.",
           "source_refs": [
@@ -5206,7 +4867,6 @@
           "pdf_page": 81,
           "type": "correct_form",
           "prompt": "The students are ______ (responsible). Their classroom is very dirty.",
-          "answer": "irresponsible",
           "status": "active",
           "text": "The students are ______ (responsible). Their classroom is very dirty.",
           "source_refs": [
@@ -5224,7 +4884,6 @@
           "pdf_page": 82,
           "type": "mcq",
           "prompt": "We like football, but we ______ tennis.",
-          "answer": "dislike",
           "status": "active",
           "choices": [
             "like",
@@ -5248,7 +4907,6 @@
           "pdf_page": 82,
           "type": "mcq",
           "prompt": "______ and shirts are modern clothes.",
-          "answer": "Pants",
           "status": "active",
           "choices": [
             "Galabeyas",
@@ -5272,7 +4930,6 @@
           "pdf_page": 82,
           "type": "mcq",
           "prompt": "Egypt has two special ______: the Delta and Upper Egypt.",
-          "answer": "regions",
           "status": "active",
           "choices": [
             "regions",
@@ -5296,7 +4953,6 @@
           "pdf_page": 82,
           "type": "mcq",
           "prompt": "He is ______ of his famous father.",
-          "answer": "proud",
           "status": "active",
           "choices": [
             "greedy",
@@ -5320,7 +4976,6 @@
           "pdf_page": 82,
           "type": "mcq",
           "prompt": "We ______ the floor with beautiful carpets.",
-          "answer": "cover",
           "status": "active",
           "choices": [
             "covers",
@@ -5344,7 +4999,6 @@
           "pdf_page": 82,
           "type": "mcq",
           "prompt": "Farmers ______ the cotton from fields by hand.",
-          "answer": "harvest",
           "status": "active",
           "choices": [
             "harvest",
@@ -5368,7 +5022,6 @@
           "pdf_page": 82,
           "type": "correct_form",
           "prompt": "He is ______ (honest). He doesn't tell the truth.",
-          "answer": "dishonest",
           "status": "active",
           "text": "He is ______ (honest). He doesn't tell the truth.",
           "source_refs": [
@@ -5386,7 +5039,6 @@
           "pdf_page": 82,
           "type": "correct_form",
           "prompt": "Sara ______ (isn't) study at night.",
-          "answer": "doesn't",
           "status": "active",
           "text": "Sara ______ (isn't) study at night.",
           "source_refs": [
@@ -5404,7 +5056,6 @@
           "pdf_page": 82,
           "type": "correct_form",
           "prompt": "It is ______ (responsible) to throw trash on the ground.",
-          "answer": "irresponsible",
           "status": "active",
           "text": "It is ______ (responsible) to throw trash on the ground.",
           "source_refs": [
@@ -5422,7 +5073,6 @@
           "pdf_page": 82,
           "type": "correct_form",
           "prompt": "No one likes his idea. It's ______ (logical).",
-          "answer": "illogical",
           "status": "active",
           "text": "No one likes his idea. It's ______ (logical).",
           "source_refs": [
@@ -5440,7 +5090,6 @@
           "pdf_page": 82,
           "type": "punctuation",
           "prompt": "my father works in a cotton factory",
-          "answer": "My father works in a cotton factory.",
           "status": "active",
           "text": "my father works in a cotton factory",
           "source_refs": [
@@ -5458,7 +5107,6 @@
           "pdf_page": 82,
           "type": "punctuation",
           "prompt": "which part of Egypt are you from",
-          "answer": "Which part of Egypt are you from?",
           "status": "active",
           "text": "which part of Egypt are you from",
           "source_refs": [
@@ -5476,7 +5124,6 @@
           "pdf_page": 83,
           "type": "complete",
           "prompt": "Grandma wears ______ dresses.",
-          "answer": "colorful",
           "status": "active",
           "word_bank": [
             "galabeyas",
@@ -5501,7 +5148,6 @@
           "pdf_page": 83,
           "type": "reading_mcq",
           "prompt": "Upper Egypt is in the ______ part of Egypt.",
-          "answer": "southern",
           "status": "inactive_missing_passage",
           "choices": [
             "northern",
@@ -5525,7 +5171,6 @@
           "pdf_page": 83,
           "type": "reading_mcq",
           "prompt": "Egypt's culture is ______.",
-          "answer": "old",
           "status": "inactive_missing_passage",
           "choices": [
             "new",
@@ -5549,12 +5194,7 @@
           "pdf_page": 83,
           "type": "reading_open",
           "prompt": "What do the Nubian villages have?",
-          "answer": "Houses painted in bright colors and special designs.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Houses painted in bright colors and special designs.",
-            "Brightly painted houses and special designs."
-          ],
           "text": "What do the Nubian villages have?",
           "source_refs": [
             {
@@ -5571,12 +5211,7 @@
           "pdf_page": 83,
           "type": "reading_open",
           "prompt": "What do both regions share?",
-          "answer": "Many of the same traditions.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Many of the same traditions.",
-            "They share many of the same traditions."
-          ],
           "text": "What do both regions share?",
           "source_refs": [
             {
@@ -5593,12 +5228,7 @@
           "pdf_page": 83,
           "type": "reading_open",
           "prompt": "What do people wear in Northern Egypt?",
-          "answer": "Modern clothes like pants and shirts.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Modern clothes like pants and shirts.",
-            "Pants and shirts."
-          ],
           "text": "What do people wear in Northern Egypt?",
           "source_refs": [
             {
@@ -5615,7 +5245,6 @@
           "pdf_page": 99,
           "type": "mcq",
           "prompt": "The galabeya is one of the ______ outfits in Egypt.",
-          "answer": "traditional",
           "status": "active",
           "choices": [
             "new",
@@ -5639,7 +5268,6 @@
           "pdf_page": 99,
           "type": "mcq",
           "prompt": "In Egypt, people ______ colorful carpets by hand.",
-          "answer": "weave",
           "status": "active",
           "choices": [
             "feed",
@@ -5663,7 +5291,6 @@
           "pdf_page": 101,
           "type": "mcq",
           "prompt": "Weaving carpets is one of the most important ______.",
-          "answer": "crafts",
           "status": "active",
           "choices": [
             "rules",
@@ -5700,7 +5327,6 @@
           "id": "p4-eng-u2-l4-q001",
           "type": "mcq",
           "text": "My old school still ______ today.",
-          "answer": "stands",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5720,16 +5346,12 @@
               "page": 91,
               "id": "elm-u2l4-009"
             }
-          ],
-          "accepted_answers": [
-            "stands"
           ]
         },
         {
           "id": "p4-eng-u2-l4-q002",
           "type": "mcq",
           "text": "We can take the ______ from the train station.",
-          "answer": "taxi",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5749,16 +5371,12 @@
               "page": 91,
               "id": "elm-u2l4-008"
             }
-          ],
-          "accepted_answers": [
-            "taxi"
           ]
         },
         {
           "id": "p4-eng-u2-l4-q003",
           "type": "mcq",
           "text": "We go to the market to buy ______.",
-          "answer": "fruits",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5779,7 +5397,6 @@
           "id": "p4-eng-u2-l4-q004",
           "type": "mcq",
           "text": "______ to school to stop air pollution.",
-          "answer": "Walk",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5800,7 +5417,6 @@
           "id": "p4-eng-u2-l4-q005",
           "type": "mcq",
           "text": "My mother told me ______ about my family.",
-          "answer": "stories",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5821,7 +5437,6 @@
           "id": "p4-eng-u2-l4-q006",
           "type": "mcq",
           "text": "______ tells us about things from the past.",
-          "answer": "History",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5842,7 +5457,6 @@
           "id": "p4-eng-u2-l4-q007",
           "type": "mcq",
           "text": "This chair is made of wood. It is ______.",
-          "answer": "wooden",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5863,7 +5477,6 @@
           "id": "p4-eng-u2-l4-q008",
           "type": "mcq",
           "text": "I buy fruit and vegetables from the ______.",
-          "answer": "supermarket",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5884,7 +5497,6 @@
           "id": "p4-eng-u2-l4-q009",
           "type": "mcq",
           "text": "I like to read about our ______ because it's rich.",
-          "answer": "history",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5905,7 +5517,6 @@
           "id": "p4-eng-u2-l4-q010",
           "type": "mcq",
           "text": "Our ______ is the place where we live.",
-          "answer": "neighborhood",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5926,7 +5537,6 @@
           "id": "p4-eng-u2-l4-q011",
           "type": "mcq",
           "text": "My house has a beautiful ______.",
-          "answer": "garden",
           "source_page": 67,
           "status": "active",
           "choices": [
@@ -5947,7 +5557,6 @@
           "id": "p4-eng-u2-l4-q012",
           "type": "complete",
           "text": "I'm Adel. I love my grandpa very much. In the past, my grandpa told me amazing ______ about our community's history.",
-          "answer": "stories",
           "source_page": 68,
           "status": "active",
           "word_bank": [
@@ -5969,7 +5578,6 @@
           "id": "p4-eng-u2-l4-q013",
           "type": "complete",
           "text": "Fifty years ______, our neighborhood was very different.",
-          "answer": "ago",
           "source_page": 68,
           "status": "active",
           "word_bank": [
@@ -5991,7 +5599,6 @@
           "id": "p4-eng-u2-l4-q014",
           "type": "complete",
           "text": "There was a beautiful old supermarket with wooden ______.",
-          "answer": "stalls",
           "source_page": 68,
           "status": "active",
           "word_bank": [
@@ -6013,7 +5620,6 @@
           "id": "p4-eng-u2-l4-q015",
           "type": "complete",
           "text": "People ______ fresh fruits and vegetables every morning.",
-          "answer": "sold",
           "source_page": 68,
           "status": "active",
           "word_bank": [
@@ -6035,7 +5641,6 @@
           "id": "p4-eng-u2-l4-q016",
           "type": "correct_form",
           "text": "We don't ______ (puts) trash in bins.",
-          "answer": "put",
           "source_page": 68,
           "status": "active",
           "source_refs": [
@@ -6049,16 +5654,12 @@
               "page": 96,
               "id": "elm-u2l4-026"
             }
-          ],
-          "accepted_answers": [
-            "put"
           ]
         },
         {
           "id": "p4-eng-u2-l4-q017",
           "type": "correct_form",
           "text": "Do you ______ (studies) Arabic every day?",
-          "answer": "study",
           "source_page": 68,
           "status": "active",
           "source_refs": [
@@ -6073,7 +5674,6 @@
           "id": "p4-eng-u2-l4-q018",
           "type": "correct_form",
           "text": "______ (Do) Ramy study English every day?",
-          "answer": "Does",
           "source_page": 68,
           "status": "active",
           "source_refs": [
@@ -6087,16 +5687,12 @@
               "page": 96,
               "id": "elm-u2l4-028"
             }
-          ],
-          "accepted_answers": [
-            "Does"
           ]
         },
         {
           "id": "p4-eng-u2-l4-q019",
           "type": "correct_form",
           "text": "Ali ______ (write) his homework in the evening.",
-          "answer": "writes",
           "source_page": 68,
           "status": "active",
           "source_refs": [
@@ -6111,7 +5707,6 @@
           "id": "p4-eng-u2-l4-q020",
           "type": "punctuation",
           "text": "hana walks to school every day",
-          "answer": "Hana walks to school every day.",
           "source_page": 68,
           "status": "active",
           "source_refs": [
@@ -6126,7 +5721,6 @@
           "id": "p4-eng-u2-l4-q021",
           "type": "punctuation",
           "text": "does Ahmed like cats",
-          "answer": "Does Ahmed like cats?",
           "source_page": 68,
           "status": "active",
           "source_refs": [
@@ -6141,7 +5735,6 @@
           "id": "p4-eng-u2-l4-q022",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Your community history\" using: neighborhood – old market – fresh vegetables.",
-          "answer": "Fifty years ago, our neighborhood was very different. There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning.",
           "source_page": 68,
           "status": "active",
           "model_answer_page": 71,
@@ -6157,7 +5750,6 @@
           "id": "p4-eng-u2-l4-q023",
           "type": "reading_mcq",
           "text": "Sandy's grandpa is a ______.",
-          "answer": "farmer",
           "source_page": 75,
           "status": "active",
           "choices": [
@@ -6182,7 +5774,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "Healthy food is ______ in vitamins.",
-          "answer": "rich",
           "status": "active",
           "choices": [
             "honest",
@@ -6206,7 +5797,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "______ tells us about things in the past.",
-          "answer": "History",
           "status": "active",
           "choices": [
             "English",
@@ -6230,7 +5820,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "Plant trees to stop air ______.",
-          "answer": "pollution",
           "status": "active",
           "choices": [
             "traffic",
@@ -6254,7 +5843,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "The post office is a big ______.",
-          "answer": "building",
           "status": "active",
           "choices": [
             "building",
@@ -6278,7 +5866,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "You should walk or ______ to school to stop air pollution.",
-          "answer": "cycle",
           "status": "active",
           "choices": [
             "cycle",
@@ -6302,7 +5889,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "They buy fresh vegetables from the ______.",
-          "answer": "market",
           "status": "active",
           "choices": [
             "park",
@@ -6326,7 +5912,6 @@
           "pdf_page": 85,
           "type": "mcq",
           "prompt": "This box is made of wood. It is ______.",
-          "answer": "wooden",
           "status": "active",
           "choices": [
             "plastic",
@@ -6350,7 +5935,6 @@
           "pdf_page": 89,
           "type": "mcq",
           "prompt": "There are many tall buildings in my ______.",
-          "answer": "neighborhood",
           "status": "active",
           "choices": [
             "habits",
@@ -6374,7 +5958,6 @@
           "pdf_page": 89,
           "type": "mcq",
           "prompt": "______ Yara clean her room every day?",
-          "answer": "Does",
           "status": "active",
           "choices": [
             "Are",
@@ -6398,7 +5981,6 @@
           "pdf_page": 89,
           "type": "mcq",
           "prompt": "Grandpa told me ______ about our family's history.",
-          "answer": "stories",
           "status": "active",
           "choices": [
             "stalls",
@@ -6422,7 +6004,6 @@
           "pdf_page": 89,
           "type": "mcq",
           "prompt": "We bought juice from a small ______ in the market.",
-          "answer": "stall",
           "status": "active",
           "choices": [
             "toy",
@@ -6446,7 +6027,6 @@
           "pdf_page": 89,
           "type": "mcq",
           "prompt": "We ______ a poster with colorful photos.",
-          "answer": "design",
           "status": "active",
           "choices": [
             "to design",
@@ -6470,7 +6050,6 @@
           "pdf_page": 89,
           "type": "mcq",
           "prompt": "Does the cat ______ on the chairs?",
-          "answer": "sleep",
           "status": "active",
           "choices": [
             "sleeps",
@@ -6494,7 +6073,6 @@
           "pdf_page": 89,
           "type": "complete",
           "prompt": "I love my grandma. When we visit her, she ______ us interesting stories.",
-          "answer": "tells",
           "status": "active",
           "word_bank": [
             "community",
@@ -6519,7 +6097,6 @@
           "pdf_page": 89,
           "type": "complete",
           "prompt": "She knows a lot about our community's ______.",
-          "answer": "history",
           "status": "active",
           "word_bank": [
             "community",
@@ -6544,7 +6121,6 @@
           "pdf_page": 89,
           "type": "complete",
           "prompt": "She sometimes asks us questions after the story, or she sings a ______.",
-          "answer": "song",
           "status": "active",
           "word_bank": [
             "community",
@@ -6569,7 +6145,6 @@
           "pdf_page": 89,
           "type": "complete",
           "prompt": "We learn a lot about our ______ from our grandma's stories.",
-          "answer": "community",
           "status": "active",
           "word_bank": [
             "community",
@@ -6594,7 +6169,6 @@
           "pdf_page": 89,
           "type": "punctuation",
           "prompt": "grandma showed me her old photo",
-          "answer": "Grandma showed me her old photo.",
           "status": "active",
           "text": "grandma showed me her old photo",
           "source_refs": [
@@ -6612,7 +6186,6 @@
           "pdf_page": 89,
           "type": "punctuation",
           "prompt": "what makes you proud of your community's history",
-          "answer": "What makes you proud of your community's history?",
           "status": "active",
           "text": "what makes you proud of your community's history",
           "source_refs": [
@@ -6630,7 +6203,6 @@
           "pdf_page": 90,
           "type": "reading_mcq",
           "prompt": "Fifty years ago, the neighborhood was very ______.",
-          "answer": "quiet",
           "status": "inactive_missing_passage",
           "choices": [
             "busy",
@@ -6654,7 +6226,6 @@
           "pdf_page": 90,
           "type": "reading_mcq",
           "prompt": "There were small houses with beautiful ______.",
-          "answer": "gardens",
           "status": "inactive_missing_passage",
           "choices": [
             "gardens",
@@ -6678,12 +6249,7 @@
           "pdf_page": 90,
           "type": "reading_open",
           "prompt": "Where did children play safely?",
-          "answer": "In the streets.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "In the streets.",
-            "Children played safely in the streets."
-          ],
           "text": "Where did children play safely?",
           "source_refs": [
             {
@@ -6700,7 +6266,6 @@
           "pdf_page": 90,
           "type": "correct_form",
           "prompt": "______ (Does) they collect plastic bottles from the street?",
-          "answer": "Do",
           "status": "active",
           "text": "______ (Does) they collect plastic bottles from the street?",
           "source_refs": [
@@ -6718,7 +6283,6 @@
           "pdf_page": 90,
           "type": "correct_form",
           "prompt": "The dog took the toy and ______ (appeared). We couldn't find it.",
-          "answer": "disappeared",
           "status": "active",
           "text": "The dog took the toy and ______ (appeared). We couldn't find it.",
           "source_refs": [
@@ -6736,12 +6300,7 @@
           "pdf_page": 100,
           "type": "reading_open",
           "prompt": "What did Grandpa show Hana?",
-          "answer": "Old photos.",
           "status": "inactive_missing_passage",
-          "accepted_answers": [
-            "Old photos.",
-            "He showed her old photos."
-          ],
           "text": "What did Grandpa show Hana?",
           "source_refs": [
             {
