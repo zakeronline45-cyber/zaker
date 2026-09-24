@@ -84,7 +84,7 @@ async function init(){
  const {data:profiles}=await sb.from('profiles').select('role').eq('id',session.user.id).limit(1);const adminPreview=profiles?.[0]?.role==='admin'&&localStorage.getItem('zaker_admin_student_preview')==='1';if(profiles?.[0]?.role==='admin'&&!adminPreview){location.href='/admin.html';return}
  const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(!children?.length){location.href='/account.html';return}
- const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);if(child.grade!=='prep1'){location.href='/';return}if(child.track!=='languages'){location.href='/';return}
+ const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);if(child.grade!=='prep1'){location.href='/';return}if(localStorage.getItem('zaker_ui_lang')!=='en'){localStorage.setItem('zaker_ui_lang','en');location.reload();return}
  const {data:hasEnglish,error:accessErr}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:"English",p_lesson_no:1});if(accessErr||!hasEnglish){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
  document.getElementById('studentName').textContent=child.full_name;
  document.getElementById('studentGrade').textContent=({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[child.grade]||child.grade);
