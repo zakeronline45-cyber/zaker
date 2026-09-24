@@ -1,5 +1,4 @@
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
-const SUPABASE_ANON='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,requireProductionWrite} from './_config.js';
 
 function amountFor(subjectCount,childIndex,track='languages'){
   const n=Math.max(1,Math.min(Number(subjectCount)||1,10));
@@ -13,7 +12,7 @@ function refCode(){
 async function rest(path,{method='GET',token,body,prefer}={}){
  const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{
   method,
-  headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+token,'Content-Type':'application/json',...(prefer?{'Prefer':prefer}:{})},
+  headers:{'apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json',...(prefer?{'Prefer':prefer}:{})},
   body:body?JSON.stringify(body):undefined
  });
  const txt=await r.text(),data=txt?JSON.parse(txt):null;
@@ -22,10 +21,11 @@ async function rest(path,{method='GET',token,body,prefer}={}){
 }
 export default async function handler(req,res){
  if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
+ if(!requireProductionWrite(req,res)) return;
  try{
    const auth=req.headers.authorization||'',token=auth.startsWith('Bearer ')?auth.slice(7):'';
    if(!token) return res.status(401).json({error:'سجّل الدخول أولًا'});
-   const ur=await fetch(SUPABASE_URL+'/auth/v1/user',{headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+token}});
+   const ur=await fetch(SUPABASE_URL+'/auth/v1/user',{headers:{'apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+token}});
    const user=await ur.json();
    if(!ur.ok||!user?.id) return res.status(401).json({error:'الجلسة غير صالحة'});
 
