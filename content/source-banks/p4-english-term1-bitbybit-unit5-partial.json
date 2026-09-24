@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "source_id": "bitbybit-p4-english-t1-2027",
+  "source_name": "Bit by Bit English Primary 4 First Term 2027",
+  "subject": "P4 English",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source_file": "بت باي بت - لغة انجليزية - 4 ابتدائي - ترم 1 - ذاكرولي.pdf",
+  "extraction_status": {
+    "unit_5": "partial_uploaded_file_ends_at_page_150",
+    "unit_6": "not_present_in_uploaded_file"
+  },
+  "units": [
+    {
+      "unit_id": 5,
+      "unit_title": "A Day at Work",
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "title": "Different Jobs",
+          "questions": [
+            {
+              "id": "bbb-u5l1-001",
+              "type": "mcq",
+              "text": "A/An ______ designs buildings.",
+              "answer": "engineer",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "doctor",
+                "farmer",
+                "engineer",
+                "vet"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-002",
+              "type": "mcq",
+              "text": "A ______ helps sick people.",
+              "answer": "nurse",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "teacher",
+                "guide",
+                "vet",
+                "nurse"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-003",
+              "type": "mcq",
+              "text": "A firefighter wears a ______ to stay safe.",
+              "answer": "helmet",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "helmet",
+                "cap",
+                "coat",
+                "hat"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-004",
+              "type": "mcq",
+              "text": "A/An ______ wears a white coat.",
+              "answer": "doctor",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "doctor",
+                "police officer",
+                "teacher",
+                "engineer"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-005",
+              "type": "mcq",
+              "text": "Sara is a/an ______. She helps sick people.",
+              "answer": "doctor",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "firefighter",
+                "engineer",
+                "doctor",
+                "teacher"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-006",
+              "type": "mcq",
+              "text": "The firefighter's job is important because he ______ people.",
+              "answer": "saves",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "saves",
+                "sends",
+                "sells",
+                "sees"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-007",
+              "type": "mcq",
+              "text": "A/An ______ can stop fires and save people.",
+              "answer": "firefighter",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "engineer",
+                "nurse",
+                "firefighter",
+                "doctor"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-008",
+              "type": "mcq",
+              "text": "A nurse ______ the patients at the hospital.",
+              "answer": "cares for",
+              "source_page": 145,
+              "status": "active",
+              "choices": [
+                "cares for",
+                "builds",
+                "paints",
+                "drives"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-009",
+              "type": "complete",
+              "text": "Amr works in a hospital. He is a ______.",
+              "answer": "doctor",
+              "source_page": 146,
+              "status": "active",
+              "word_bank": [
+                "firefighter",
+                "doctor",
+                "patients",
+                "white",
+                "care"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-010",
+              "type": "complete",
+              "text": "He wears a ______ coat.",
+              "answer": "white",
+              "source_page": 146,
+              "status": "active",
+              "word_bank": [
+                "firefighter",
+                "doctor",
+                "patients",
+                "white",
+                "care"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-011",
+              "type": "complete",
+              "text": "Every day he gives ______ to many sick children.",
+              "answer": "care",
+              "source_page": 146,
+              "status": "active",
+              "word_bank": [
+                "firefighter",
+                "doctor",
+                "patients",
+                "white",
+                "care"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-012",
+              "type": "complete",
+              "text": "He checks on the ______ to make sure they feel better.",
+              "answer": "patients",
+              "source_page": 146,
+              "status": "active",
+              "word_bank": [
+                "firefighter",
+                "doctor",
+                "patients",
+                "white",
+                "care"
+              ]
+            },
+            {
+              "id": "bbb-u5l1-013",
+              "type": "reading_mcq",
+              "text": "A/An ______ stops fires and saves people.",
+              "answer": "firefighter",
+              "source_page": 146,
+              "status": "active",
+              "choices": [
+                "engineer",
+                "doctor",
+                "firefighter",
+                "nurse"
+              ],
+              "passage": "People do many jobs in the community. Doctors help sick people and check their health. Nurses care for patients. Firefighters stop fires and save people. Teachers help students learn new things. Each job is important. People work together to make life better. When you grow up, you can choose a job that helps others and makes you proud."
+            },
+            {
+              "id": "bbb-u5l1-014",
+              "type": "reading_mcq",
+              "text": "Doctors help sick people and ______ their health.",
+              "answer": "check",
+              "source_page": 146,
+              "status": "active",
+              "choices": [
+                "clean",
+                "check",
+                "call",
+                "draw"
+              ],
+              "passage_ref": "bbb-u5l1-013"
+            },
+            {
+              "id": "bbb-u5l1-015",
+              "type": "reading_open",
+              "text": "Who helps students learn?",
+              "answer": "Teachers.",
+              "source_page": 146,
+              "status": "active",
+              "accepted_answers": [
+                "Teachers.",
+                "Teachers help students learn."
+              ],
+              "passage_ref": "bbb-u5l1-013"
+            },
+            {
+              "id": "bbb-u5l1-016",
+              "type": "reading_open",
+              "text": "Why do people work together?",
+              "answer": "To make life better.",
+              "source_page": 146,
+              "status": "active",
+              "accepted_answers": [
+                "To make life better.",
+                "People work together to make life better."
+              ],
+              "passage_ref": "bbb-u5l1-013"
+            },
+            {
+              "id": "bbb-u5l1-017",
+              "type": "reading_open",
+              "text": "What is the main idea of the text?",
+              "answer": "Different jobs in the community and why they are important.",
+              "source_page": 146,
+              "status": "active",
+              "accepted_answers": [
+                "Different jobs in the community.",
+                "Jobs in the community and their importance.",
+                "Different jobs in the community and why they are important."
+              ],
+              "passage_ref": "bbb-u5l1-013"
+            },
+            {
+              "id": "bbb-u5l1-018",
+              "type": "punctuation",
+              "text": "a doctor helps sick people",
+              "answer": "A doctor helps sick people.",
+              "source_page": 146,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l1-019",
+              "type": "punctuation",
+              "text": "what do you do",
+              "answer": "What do you do?",
+              "source_page": 146,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l1-020",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"What you want to be when you grow up\" using: doctor – help – check health.",
+              "answer": null,
+              "source_page": 146,
+              "status": "inactive_no_model_answer"
+            }
+          ],
+          "question_count": 19
+        },
+        {
+          "lesson_id": 2,
+          "title": "Jobs I Love! / Superlative Adjectives",
+          "questions": [
+            {
+              "id": "bbb-u5l2-001",
+              "type": "correct_form",
+              "text": "She is the ______ (kind) mentor.",
+              "answer": "kindest",
+              "source_page": 150,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l2-002",
+              "type": "correct_form",
+              "text": "Omar takes the ______ (great) photos.",
+              "answer": "greatest",
+              "source_page": 150,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l2-003",
+              "type": "correct_form",
+              "text": "My bag is the ______ (heavy) bag.",
+              "answer": "heaviest",
+              "source_page": 150,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l2-004",
+              "type": "correct_form",
+              "text": "My grandpa is the ______ (wise) person I know.",
+              "answer": "wisest",
+              "source_page": 150,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l2-005",
+              "type": "correct_form",
+              "text": "Ahmed told us the ______ (funny) story at the party.",
+              "answer": "funniest",
+              "source_page": 150,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u5l2-006",
+              "type": "correct_form",
+              "text": "August is the ______ (hot) month of the year.",
+              "answer": "hottest",
+              "source_page": 150,
+              "status": "active"
+            }
+          ],
+          "question_count": 6
+        }
+      ]
+    }
+  ],
+  "total_active_questions": 25
+}
