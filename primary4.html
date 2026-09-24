@@ -95,6 +95,7 @@ async function init(){
  const {data:children}=await sb.from('children').select('id,full_name,grade,track').eq('guardian_user_id',session.user.id).eq('is_active',true).order('created_at');
  if(!children?.length){location.href='/account.html';return}
  const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];if(child.grade!=='p4'){location.href='/';return}
+ const forceEnglish=child.track==='languages'||key==='english';if(forceEnglish&&localStorage.getItem('zaker_ui_lang')!=='en'){localStorage.setItem('zaker_ui_lang','en');location.reload();return}
  if(cfg.track!=='shared'&&child.track!==cfg.track){location.href='/';return}
  if(!(await hasAccess())){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
  studentName.textContent=child.full_name;studentGrade.textContent=window.zakerT('رابعة ابتدائي','Primary 4');studentTrack.textContent=window.zakerLang?.()==='en'?(child.track==='arabic'?'Arabic Track':'Languages Track'):(child.track==='arabic'?'مسار عربي':'مسار Languages');subjectName.textContent=cfg.name;sideTitle.textContent=cfg.name+' — '+window.zakerT('رابعة ابتدائي','Primary 4')+' — '+window.zakerT('الترم الأول','Term 1');aiTitle.textContent=window.zakerLang?.()==='en'?'Zaker Tutor — '+cfg.name:'مدرس ذاكر — '+cfg.name;
