@@ -46,7 +46,6 @@
                 "color",
                 "shape"
               ],
-              "answer": "noise",
               "status": "active"
             },
             {
@@ -62,7 +61,6 @@
                 "far",
                 "slow"
               ],
-              "answer": "safe",
               "status": "active"
             },
             {
@@ -78,7 +76,6 @@
                 "colorful",
                 "scary"
               ],
-              "answer": "colorful",
               "status": "active"
             },
             {
@@ -94,7 +91,6 @@
                 "taste",
                 "talk"
               ],
-              "answer": "smell",
               "status": "active"
             },
             {
@@ -110,7 +106,6 @@
                 "taste",
                 "touch"
               ],
-              "answer": "taste",
               "status": "active"
             },
             {
@@ -126,7 +121,6 @@
                 "see",
                 "touch"
               ],
-              "answer": "touch",
               "status": "active"
             },
             {
@@ -142,7 +136,6 @@
                 "senses",
                 "toys"
               ],
-              "answer": "senses",
               "status": "active"
             },
             {
@@ -158,7 +151,6 @@
                 "smell",
                 "see"
               ],
-              "answer": "see",
               "status": "active"
             },
             {
@@ -174,7 +166,6 @@
                 "fire",
                 "bird"
               ],
-              "answer": "fire",
               "status": "active"
             },
             {
@@ -190,7 +181,6 @@
                 "ears",
                 "tongue"
               ],
-              "answer": "eyes",
               "context_ref": "The five senses reading text",
               "status": "active"
             },
@@ -207,7 +197,6 @@
                 "food",
                 "senses"
               ],
-              "answer": "senses",
               "context_ref": "The five senses reading text",
               "status": "active"
             },
@@ -218,11 +207,6 @@
               "pdf_page": 22,
               "type": "reading_open",
               "prompt": "What do the five senses help us do?",
-              "answer": "They help us understand the world around us.",
-              "accepted_answers": [
-                "They help us understand the world around us.",
-                "They help us understand the world around us and stay safe."
-              ],
               "context_ref": "The five senses reading text",
               "status": "active"
             },
@@ -233,11 +217,6 @@
               "pdf_page": 22,
               "type": "reading_open",
               "prompt": "Which sense helps us smell flowers?",
-              "answer": "The sense of smell.",
-              "accepted_answers": [
-                "smell",
-                "The sense of smell."
-              ],
               "context_ref": "The five senses reading text",
               "status": "active"
             },
@@ -248,12 +227,6 @@
               "pdf_page": 22,
               "type": "reading_open",
               "prompt": "Which body part do we use to taste food?",
-              "answer": "The tongue.",
-              "accepted_answers": [
-                "tongue",
-                "our tongue",
-                "The tongue."
-              ],
               "context_ref": "The five senses reading text",
               "status": "active"
             },
@@ -264,7 +237,6 @@
               "pdf_page": 22,
               "type": "punctuation",
               "prompt": "the senses help us learn about the world",
-              "answer": "The senses help us learn about the world.",
               "status": "active"
             },
             {
@@ -274,7 +246,6 @@
               "pdf_page": 22,
               "type": "punctuation",
               "prompt": "what will we learn today",
-              "answer": "What will we learn today?",
               "status": "active"
             },
             {
@@ -290,7 +261,6 @@
                 "hearing",
                 "touch"
               ],
-              "answer": "hearing",
               "status": "active"
             },
             {
@@ -306,7 +276,6 @@
                 "match",
                 "rain"
               ],
-              "answer": "fire",
               "status": "active"
             },
             {
@@ -322,7 +291,6 @@
                 "neck",
                 "feet"
               ],
-              "answer": "tongue",
               "status": "active"
             },
             {
@@ -338,7 +306,6 @@
                 "Which",
                 "Who"
               ],
-              "answer": "What",
               "status": "active"
             },
             {
@@ -354,7 +321,6 @@
                 "to",
                 "about"
               ],
-              "answer": "about",
               "status": "active"
             },
             {
@@ -370,7 +336,6 @@
                 "of",
                 "off"
               ],
-              "answer": "with",
               "status": "active"
             },
             {
@@ -380,7 +345,6 @@
               "pdf_page": 23,
               "type": "complete",
               "prompt": "Samir can hear the birds in the garden. He sees ______ flying near the flowers.",
-              "answer": "butterflies",
               "status": "active"
             },
             {
@@ -390,7 +354,6 @@
               "pdf_page": 23,
               "type": "complete",
               "prompt": "He can ______ their beautiful wings.",
-              "answer": "see",
               "status": "active"
             },
             {
@@ -400,7 +363,6 @@
               "pdf_page": 23,
               "type": "complete",
               "prompt": "His sister smells the sweet ______ in the air.",
-              "answer": "flowers",
               "status": "active"
             },
             {
@@ -410,7 +372,6 @@
               "pdf_page": 23,
               "type": "complete",
               "prompt": "Birds sing loudly, so she can ______ them in the tree.",
-              "answer": "hear",
               "status": "active"
             },
             {
@@ -420,7 +381,6 @@
               "pdf_page": 54,
               "type": "reorder",
               "prompt": "five - We - senses - have",
-              "answer": "We have five senses.",
               "status": "active"
             },
             {
@@ -430,7 +390,6 @@
               "pdf_page": 54,
               "type": "reorder",
               "prompt": "with - nose - We - our - smell",
-              "answer": "We smell with our nose.",
               "status": "active"
             },
             {
@@ -440,7 +399,6 @@
               "pdf_page": 54,
               "type": "reorder",
               "prompt": "our - We - hands - with - touch",
-              "answer": "We touch with our hands.",
               "status": "active"
             },
             {
@@ -450,7 +408,6 @@
               "pdf_page": 54,
               "type": "writing",
               "prompt": "Write about: Our senses.",
-              "answer": null,
               "status": "active_manual_or_ai_grading",
               "rubric": [
                 "Use lesson vocabulary correctly",
@@ -465,7 +422,6 @@
               "pdf_page": 22,
               "type": "listening_true_false",
               "prompt": "Listening item 1 from Lesson 1 General Exercises",
-              "answer": null,
               "status": "inactive_missing_audio"
             },
             {
@@ -475,7 +431,6 @@
               "pdf_page": 22,
               "type": "listening_true_false",
               "prompt": "Listening item 2 from Lesson 1 General Exercises",
-              "answer": null,
               "status": "inactive_missing_audio"
             },
             {
@@ -485,7 +440,6 @@
               "pdf_page": 22,
               "type": "listening_true_false",
               "prompt": "Listening item 3 from Lesson 1 General Exercises",
-              "answer": null,
               "status": "inactive_missing_audio"
             },
             {
@@ -495,7 +449,6 @@
               "pdf_page": 22,
               "type": "listening_true_false",
               "prompt": "Listening item 4 from Lesson 1 General Exercises",
-              "answer": null,
               "status": "inactive_missing_audio"
             }
           ],
@@ -512,7 +465,6 @@
               "pdf_page": 24,
               "type": "mcq",
               "prompt": "He ______ his teeth twice a day.",
-              "answer": "brushes",
               "status": "active",
               "choices": [
                 "gives",
@@ -528,7 +480,6 @@
               "pdf_page": 24,
               "type": "mcq",
               "prompt": "Healthy food gives us ______.",
-              "answer": "energy",
               "status": "active",
               "choices": [
                 "energy",
@@ -544,7 +495,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "We play sports during ______ time at school.",
-              "answer": "break",
               "status": "active",
               "choices": [
                 "study",
@@ -560,7 +510,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "They ______ fresh fruits and vegetables in the garden.",
-              "answer": "grow",
               "status": "active",
               "choices": [
                 "stay",
@@ -576,7 +525,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "When you are healthy, you ______ well at school.",
-              "answer": "do",
               "status": "active",
               "choices": [
                 "brush",
@@ -592,7 +540,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "It's important to ______ good habits every day to stay strong.",
-              "answer": "follow",
               "status": "active",
               "choices": [
                 "eat",
@@ -608,7 +555,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "Getting enough sleep helps our mind stay ______.",
-              "answer": "sharp",
               "status": "active",
               "choices": [
                 "sharp",
@@ -624,7 +570,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "Sleeping early, exercising, and eating fresh vegetables are from my healthy ______.",
-              "answer": "habits",
               "status": "active",
               "choices": [
                 "habits",
@@ -640,7 +585,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "I do some ______ at the gym every day.",
-              "answer": "exercises",
               "status": "active",
               "choices": [
                 "studies",
@@ -656,7 +600,6 @@
               "pdf_page": 25,
               "type": "mcq",
               "prompt": "She ______ vitamins every morning.",
-              "answer": "takes",
               "status": "active",
               "choices": [
                 "touches",
@@ -672,7 +615,6 @@
               "pdf_page": 26,
               "type": "reading_mcq",
               "prompt": "Sarah does exercises in the ______.",
-              "answer": "garden",
               "status": "active",
               "choices": [
                 "room",
@@ -688,7 +630,6 @@
               "pdf_page": 26,
               "type": "reading_mcq",
               "prompt": "For breakfast, Sarah drinks ______.",
-              "answer": "orange juice",
               "status": "active",
               "choices": [
                 "tea",
@@ -704,12 +645,7 @@
               "pdf_page": 26,
               "type": "reading_open",
               "prompt": "Why is a good night's sleep important to us?",
-              "answer": "It helps our body stay healthy and our mind stay sharp.",
-              "status": "active",
-              "accepted_answers": [
-                "It helps our body stay healthy and our mind stay sharp.",
-                "It helps us stay healthy and keeps our mind sharp."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l2-014",
@@ -718,7 +654,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "They ______ their cars every Friday.",
-              "answer": "wash",
               "status": "active",
               "choices": [
                 "washes",
@@ -734,7 +669,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "The girls ______ their mother every day.",
-              "answer": "help",
               "status": "active",
               "choices": [
                 "helps",
@@ -750,7 +684,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "Laila ______ plenty of water every morning.",
-              "answer": "drinks",
               "status": "active",
               "choices": [
                 "drink",
@@ -766,7 +699,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "I ______ early every night.",
-              "answer": "sleep",
               "status": "active",
               "choices": [
                 "sleep",
@@ -782,7 +714,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "My brother ______ football every day.",
-              "answer": "plays",
               "status": "active",
               "choices": [
                 "play",
@@ -798,7 +729,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "Children ______ to school early every day.",
-              "answer": "go",
               "status": "active",
               "choices": [
                 "goes",
@@ -814,7 +744,6 @@
               "pdf_page": 28,
               "type": "mcq",
               "prompt": "She ______ her backpack every day.",
-              "answer": "carries",
               "status": "active",
               "choices": [
                 "carries",
@@ -830,7 +759,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "She ______ (do) her homework in the afternoon.",
-              "answer": "does",
               "status": "active"
             },
             {
@@ -840,7 +768,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "He ______ (wake) up at 6:30 a.m.",
-              "answer": "wakes",
               "status": "active"
             },
             {
@@ -850,7 +777,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "Mariam ______ (are) my best friend.",
-              "answer": "is",
               "status": "active"
             },
             {
@@ -860,7 +786,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "They ______ (is) healthy and strong.",
-              "answer": "are",
               "status": "active"
             },
             {
@@ -870,7 +795,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "Yara and Rana ______ (plays) volleyball in the kitchen.",
-              "answer": "play",
               "status": "active"
             },
             {
@@ -880,7 +804,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "Healthy foods ______ (gives) me energy.",
-              "answer": "give",
               "status": "active"
             },
             {
@@ -890,7 +813,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "Some children ______ (plays) sports after school.",
-              "answer": "play",
               "status": "active"
             },
             {
@@ -900,7 +822,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "The nurse ______ (help) sick people.",
-              "answer": "helps",
               "status": "active"
             },
             {
@@ -910,7 +831,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "We ______ (washes) our hands before eating.",
-              "answer": "wash",
               "status": "active"
             },
             {
@@ -920,7 +840,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "He ______ (read) stories in English class.",
-              "answer": "reads",
               "status": "active"
             },
             {
@@ -930,7 +849,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "She ______ (sleep) for 9 hours every night.",
-              "answer": "sleeps",
               "status": "active"
             },
             {
@@ -940,7 +858,6 @@
               "pdf_page": 28,
               "type": "correct_form",
               "prompt": "They ______ (eating) a healthy breakfast every day.",
-              "answer": "eat",
               "status": "active"
             },
             {
@@ -950,7 +867,6 @@
               "pdf_page": 29,
               "type": "mcq",
               "prompt": "A clever boy has a strong ______.",
-              "answer": "body",
               "status": "active",
               "choices": [
                 "body",
@@ -966,7 +882,6 @@
               "pdf_page": 29,
               "type": "mcq",
               "prompt": "She ______ her grandparents every month.",
-              "answer": "visits",
               "status": "active",
               "choices": [
                 "visited",
@@ -982,7 +897,6 @@
               "pdf_page": 29,
               "type": "mcq",
               "prompt": "Her ______ habits help her feel good.",
-              "answer": "healthy",
               "status": "active",
               "choices": [
                 "unhealthy",
@@ -998,7 +912,6 @@
               "pdf_page": 29,
               "type": "mcq",
               "prompt": "We ______ some exercises in the morning.",
-              "answer": "do",
               "status": "active",
               "choices": [
                 "does",
@@ -1014,7 +927,6 @@
               "pdf_page": 29,
               "type": "mcq",
               "prompt": "It's important to ______ plenty of water.",
-              "answer": "drink",
               "status": "active",
               "choices": [
                 "drink",
@@ -1030,7 +942,6 @@
               "pdf_page": 29,
               "type": "mcq",
               "prompt": "Amir ______ a shower every day.",
-              "answer": "takes",
               "status": "active",
               "choices": [
                 "took",
@@ -1046,7 +957,6 @@
               "pdf_page": 29,
               "type": "reading_mcq",
               "prompt": "This text is about Sarah's ______.",
-              "answer": "healthy habits",
               "status": "active",
               "choices": [
                 "healthy habits",
@@ -1062,7 +972,6 @@
               "pdf_page": 29,
               "type": "reading_mcq",
               "prompt": "The opposite of the underlined word \"early\" is ______.",
-              "answer": "late",
               "status": "active",
               "choices": [
                 "strong",
@@ -1078,12 +987,7 @@
               "pdf_page": 29,
               "type": "reading_open",
               "prompt": "What time does Sarah wake up?",
-              "answer": "At 6:00 a.m.",
-              "status": "active",
-              "accepted_answers": [
-                "6:00 a.m.",
-                "At 6:00 a.m."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l2-042",
@@ -1092,12 +996,7 @@
               "pdf_page": 29,
               "type": "reading_open",
               "prompt": "How old is Sarah?",
-              "answer": "10 years old.",
-              "status": "active",
-              "accepted_answers": [
-                "10 years old.",
-                "She is 10 years old."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l2-043",
@@ -1106,12 +1005,7 @@
               "pdf_page": 29,
               "type": "reading_open",
               "prompt": "What does Sarah eat for breakfast?",
-              "answer": "Eggs and brown bread.",
-              "status": "active",
-              "accepted_answers": [
-                "Eggs and brown bread.",
-                "She eats eggs and brown bread."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l2-044",
@@ -1120,7 +1014,6 @@
               "pdf_page": 30,
               "type": "complete",
               "prompt": "Shady eats a good breakfast every morning to have energy. At school, he ______ with his friends during break time.",
-              "answer": "plays",
               "status": "active",
               "word_bank": [
                 "friends",
@@ -1137,7 +1030,6 @@
               "pdf_page": 30,
               "type": "complete",
               "prompt": "At school, he plays with his ______ during break time.",
-              "answer": "friends",
               "status": "active",
               "word_bank": [
                 "friends",
@@ -1154,7 +1046,6 @@
               "pdf_page": 30,
               "type": "complete",
               "prompt": "He ______ for nine hours every night to keep his mind sharp.",
-              "answer": "sleeps",
               "status": "active",
               "word_bank": [
                 "friends",
@@ -1171,7 +1062,6 @@
               "pdf_page": 30,
               "type": "complete",
               "prompt": "He sleeps for nine hours every night to keep his mind ______.",
-              "answer": "sharp",
               "status": "active",
               "word_bank": [
                 "friends",
@@ -1188,7 +1078,6 @@
               "pdf_page": 30,
               "type": "punctuation",
               "prompt": "why does Sarah eat healthy food",
-              "answer": "Why does Sarah eat healthy food?",
               "status": "active"
             },
             {
@@ -1198,7 +1087,6 @@
               "pdf_page": 30,
               "type": "punctuation",
               "prompt": "she drinks orange juice",
-              "answer": "She drinks orange juice.",
               "status": "active"
             },
             {
@@ -1208,7 +1096,6 @@
               "pdf_page": 30,
               "type": "correct_form",
               "prompt": "My grandfather ______ (drink) coffee in the morning.",
-              "answer": "drinks",
               "status": "active"
             },
             {
@@ -1218,7 +1105,6 @@
               "pdf_page": 30,
               "type": "correct_form",
               "prompt": "Salma and I ______ (takes) the school bus every morning.",
-              "answer": "take",
               "status": "active"
             },
             {
@@ -1228,7 +1114,6 @@
               "pdf_page": 30,
               "type": "correct_form",
               "prompt": "She ______ (make) a cake every day.",
-              "answer": "makes",
               "status": "active"
             },
             {
@@ -1238,7 +1123,6 @@
               "pdf_page": 30,
               "type": "correct_form",
               "prompt": "Tourists often ______ (rides) camels near Giza.",
-              "answer": "ride",
               "status": "active"
             },
             {
@@ -1248,7 +1132,6 @@
               "pdf_page": 30,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Your healthy habits\" using: follow – wake up – exercise.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -1265,7 +1148,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "I want to have a sandwich. I'm really ______.",
-              "answer": "hungry",
               "status": "active",
               "choices": [
                 "free",
@@ -1281,7 +1163,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "There's a ______ of perfume in the air.",
-              "answer": "smell",
               "status": "active",
               "choices": [
                 "smell",
@@ -1297,7 +1178,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "Don't be ______. Share your toys with your friends.",
-              "answer": "greedy",
               "status": "active",
               "choices": [
                 "greedy",
@@ -1313,7 +1193,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "A/An ______ means someone who has something.",
-              "answer": "owner",
               "status": "active",
               "choices": [
                 "character",
@@ -1329,7 +1208,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "______ means a light, ringing sound.",
-              "answer": "Jingling",
               "status": "active",
               "choices": [
                 "Dark",
@@ -1345,7 +1223,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "The yummy smell came from a ______ nearby.",
-              "answer": "restaurant",
               "status": "active",
               "choices": [
                 "coin",
@@ -1361,7 +1238,6 @@
               "pdf_page": 33,
               "type": "mcq",
               "prompt": "We can't eat in the restaurant for free; we must ______ for our food.",
-              "answer": "pay",
               "status": "active",
               "choices": [
                 "taste",
@@ -1377,7 +1253,6 @@
               "pdf_page": 38,
               "type": "mcq",
               "prompt": "Omar ______ to eat. He is hungry.",
-              "answer": "wants",
               "status": "active",
               "choices": [
                 "don't want",
@@ -1393,7 +1268,6 @@
               "pdf_page": 38,
               "type": "mcq",
               "prompt": "My father ______ to work every day.",
-              "answer": "drives",
               "status": "active",
               "choices": [
                 "to drive",
@@ -1409,7 +1283,6 @@
               "pdf_page": 38,
               "type": "mcq",
               "prompt": "We heard a ______ sound when he shook his coins.",
-              "answer": "jingling",
               "status": "active",
               "choices": [
                 "jingling",
@@ -1425,7 +1298,6 @@
               "pdf_page": 38,
               "type": "mcq",
               "prompt": "Nora ______ her mom every Friday.",
-              "answer": "helps",
               "status": "active",
               "choices": [
                 "help",
@@ -1441,7 +1313,6 @@
               "pdf_page": 38,
               "type": "mcq",
               "prompt": "______ people always want more than what is needed.",
-              "answer": "Greedy",
               "status": "active",
               "choices": [
                 "Helpful",
@@ -1457,7 +1328,6 @@
               "pdf_page": 38,
               "type": "mcq",
               "prompt": "It's good to ______ food with friends.",
-              "answer": "share",
               "status": "active",
               "choices": [
                 "share",
@@ -1473,7 +1343,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "She ______ (wear) her uniform to school every day.",
-              "answer": "wears",
               "status": "active"
             },
             {
@@ -1483,7 +1352,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "He ______ (wash) his car on weekends.",
-              "answer": "washes",
               "status": "active"
             },
             {
@@ -1493,7 +1361,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "We ______ (helps) mom clean our apartment.",
-              "answer": "help",
               "status": "active"
             },
             {
@@ -1503,7 +1370,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "She ______ (live) in Alexandria.",
-              "answer": "lives",
               "status": "active"
             },
             {
@@ -1513,7 +1379,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "They ______ (visits) their grandparents every month.",
-              "answer": "visit",
               "status": "active"
             },
             {
@@ -1523,7 +1388,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "The baby ______ (cry) when he is hungry.",
-              "answer": "cries",
               "status": "active"
             },
             {
@@ -1533,7 +1397,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "You ______ (spends) your money on sweets.",
-              "answer": "spend",
               "status": "active"
             },
             {
@@ -1543,7 +1406,6 @@
               "pdf_page": 38,
               "type": "correct_form",
               "prompt": "The restaurant ______ (open) at 9 a.m.",
-              "answer": "opens",
               "status": "active"
             },
             {
@@ -1553,7 +1415,6 @@
               "pdf_page": 38,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Sharing with others\" using: food – help – happy.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             },
             {
@@ -1563,7 +1424,6 @@
               "pdf_page": 39,
               "type": "complete",
               "prompt": "Goha walked to the market. He ______ something delicious.",
-              "answer": "smelled",
               "status": "active",
               "word_bank": [
                 "coins",
@@ -1580,7 +1440,6 @@
               "pdf_page": 39,
               "type": "complete",
               "prompt": "He stopped near the ______ window and closed his eyes.",
-              "answer": "restaurant",
               "status": "active",
               "word_bank": [
                 "coins",
@@ -1597,7 +1456,6 @@
               "pdf_page": 39,
               "type": "complete",
               "prompt": "When the ______ came, Goha gave him the sound of coins instead of real money.",
-              "answer": "owner",
               "status": "active",
               "word_bank": [
                 "coins",
@@ -1614,7 +1472,6 @@
               "pdf_page": 39,
               "type": "complete",
               "prompt": "Goha gave him the sound of ______ instead of real money.",
-              "answer": "coins",
               "status": "active",
               "word_bank": [
                 "coins",
@@ -1631,7 +1488,6 @@
               "pdf_page": 39,
               "type": "reading_mcq",
               "prompt": "Omar paid with the sound of ______.",
-              "answer": "coins",
               "status": "active",
               "choices": [
                 "laughter",
@@ -1647,7 +1503,6 @@
               "pdf_page": 39,
               "type": "reading_mcq",
               "prompt": "The owner told Omar he must ______.",
-              "answer": "pay",
               "status": "active",
               "choices": [
                 "work",
@@ -1663,12 +1518,7 @@
               "pdf_page": 39,
               "type": "reading_open",
               "prompt": "How did the owner feel at the end?",
-              "answer": "He laughed.",
-              "status": "active",
-              "accepted_answers": [
-                "He laughed.",
-                "He was amused."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l3-030",
@@ -1677,7 +1527,6 @@
               "pdf_page": 39,
               "type": "punctuation",
               "prompt": "let's share this food",
-              "answer": "Let's share this food.",
               "status": "active"
             },
             {
@@ -1687,7 +1536,6 @@
               "pdf_page": 39,
               "type": "punctuation",
               "prompt": "why did goha sit outside the restaurant",
-              "answer": "Why did Goha sit outside the restaurant?",
               "status": "active"
             }
           ],
@@ -1704,7 +1552,6 @@
               "pdf_page": 41,
               "type": "mcq",
               "prompt": "She got ______ at 7:00 to be ready for the party.",
-              "answer": "dressed",
               "status": "active",
               "choices": [
                 "dressed",
@@ -1720,7 +1567,6 @@
               "pdf_page": 41,
               "type": "mcq",
               "prompt": "You can have a ______ between breakfast and lunch.",
-              "answer": "snack",
               "status": "active",
               "choices": [
                 "dinner",
@@ -1736,7 +1582,6 @@
               "pdf_page": 41,
               "type": "mcq",
               "prompt": "The two pictures aren't different; they are the ______.",
-              "answer": "same",
               "status": "active",
               "choices": [
                 "same",
@@ -1752,7 +1597,6 @@
               "pdf_page": 41,
               "type": "mcq",
               "prompt": "I follow the same ______ every day.",
-              "answer": "routine",
               "status": "active",
               "choices": [
                 "routine",
@@ -1768,7 +1612,6 @@
               "pdf_page": 41,
               "type": "mcq",
               "prompt": "I ______ useful subjects at school.",
-              "answer": "study",
               "status": "active",
               "choices": [
                 "shake",
@@ -1784,7 +1627,6 @@
               "pdf_page": 41,
               "type": "mcq",
               "prompt": "Sleeping early keeps me ______.",
-              "answer": "healthy",
               "status": "active",
               "choices": [
                 "unhealthy",
@@ -1800,7 +1642,6 @@
               "pdf_page": 42,
               "type": "mcq",
               "prompt": "The opposite of the underlined word \"healthy\" is ______.",
-              "answer": "unhealthy",
               "status": "active",
               "choices": [
                 "unhealthy",
@@ -1816,7 +1657,6 @@
               "pdf_page": 42,
               "type": "mcq",
               "prompt": "The opposite of the underlined word \"strong\" is ______.",
-              "answer": "weak",
               "status": "active",
               "choices": [
                 "weak",
@@ -1832,7 +1672,6 @@
               "pdf_page": 44,
               "type": "reading_mcq",
               "prompt": "The text is about ______.",
-              "answer": "a daily routine",
               "status": "active",
               "choices": [
                 "A daily routine",
@@ -1848,7 +1687,6 @@
               "pdf_page": 44,
               "type": "reading_mcq",
               "prompt": "The underlined word \"early\" is the opposite of ______.",
-              "answer": "late",
               "status": "active",
               "choices": [
                 "near",
@@ -1864,12 +1702,7 @@
               "pdf_page": 44,
               "type": "reading_open",
               "prompt": "When does Lamees wake up?",
-              "answer": "At 7 a.m.",
-              "status": "active",
-              "accepted_answers": [
-                "At 7 a.m.",
-                "7 a.m."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l4-012",
@@ -1878,12 +1711,7 @@
               "pdf_page": 44,
               "type": "reading_open",
               "prompt": "What does Lamees do after school?",
-              "answer": "She has lunch and does her homework.",
-              "status": "active",
-              "accepted_answers": [
-                "She has lunch and does her homework.",
-                "She has lunch and does homework."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1l4-013",
@@ -1892,7 +1720,6 @@
               "pdf_page": 44,
               "type": "correct_form",
               "prompt": "I always ______ (eats) breakfast at 7 o'clock.",
-              "answer": "eat",
               "status": "active"
             },
             {
@@ -1902,7 +1729,6 @@
               "pdf_page": 44,
               "type": "correct_form",
               "prompt": "Marwan ______ (play) sports at the club.",
-              "answer": "plays",
               "status": "active"
             },
             {
@@ -1912,7 +1738,6 @@
               "pdf_page": 44,
               "type": "correct_form",
               "prompt": "They ______ (likes) my school.",
-              "answer": "like",
               "status": "active"
             },
             {
@@ -1922,7 +1747,6 @@
               "pdf_page": 44,
               "type": "correct_form",
               "prompt": "They ______ (travels) to Aswan by plane.",
-              "answer": "travel",
               "status": "active"
             },
             {
@@ -1932,7 +1756,6 @@
               "pdf_page": 44,
               "type": "punctuation",
               "prompt": "after that she has a healthy lunch",
-              "answer": "After that, she has a healthy lunch.",
               "status": "active"
             },
             {
@@ -1942,7 +1765,6 @@
               "pdf_page": 44,
               "type": "punctuation",
               "prompt": "do you eat healthy snacks",
-              "answer": "Do you eat healthy snacks?",
               "status": "active"
             },
             {
@@ -1952,7 +1774,6 @@
               "pdf_page": 44,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Your healthy routine\" using: important – habits – stay strong.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             },
             {
@@ -1962,7 +1783,6 @@
               "pdf_page": 45,
               "type": "mcq",
               "prompt": "Having a daily routine is ______.",
-              "answer": "important",
               "status": "active",
               "choices": [
                 "bad",
@@ -1978,7 +1798,6 @@
               "pdf_page": 45,
               "type": "mcq",
               "prompt": "They ______ their bikes in the park.",
-              "answer": "ride",
               "status": "active",
               "choices": [
                 "ride",
@@ -1994,7 +1813,6 @@
               "pdf_page": 45,
               "type": "mcq",
               "prompt": "Fruit is my favorite healthy ______.",
-              "answer": "snack",
               "status": "active",
               "choices": [
                 "soup",
@@ -2010,7 +1828,6 @@
               "pdf_page": 45,
               "type": "mcq",
               "prompt": "My sister and I ______ TV in the evening.",
-              "answer": "watch",
               "status": "active",
               "choices": [
                 "watch",
@@ -2026,7 +1843,6 @@
               "pdf_page": 45,
               "type": "mcq",
               "prompt": "They ______ the books in the morning.",
-              "answer": "read",
               "status": "active",
               "choices": [
                 "to read",
@@ -2042,7 +1858,6 @@
               "pdf_page": 45,
               "type": "mcq",
               "prompt": "I have a healthy ______ including milk and fruit.",
-              "answer": "breakfast",
               "status": "active",
               "choices": [
                 "breakfast",
@@ -2058,7 +1873,6 @@
               "pdf_page": 45,
               "type": "complete",
               "prompt": "My brother and I play football every day. He wakes up early and ______ his teeth.",
-              "answer": "brushes",
               "status": "active",
               "word_bank": [
                 "routines",
@@ -2075,7 +1889,6 @@
               "pdf_page": 45,
               "type": "complete",
               "prompt": "Then, he eats ______.",
-              "answer": "breakfast",
               "status": "active",
               "word_bank": [
                 "routines",
@@ -2092,7 +1905,6 @@
               "pdf_page": 45,
               "type": "complete",
               "prompt": "After school, he ______ our father.",
-              "answer": "helps",
               "status": "active",
               "word_bank": [
                 "routines",
@@ -2109,7 +1921,6 @@
               "pdf_page": 45,
               "type": "complete",
               "prompt": "These are our daily habits and ______.",
-              "answer": "routines",
               "status": "active",
               "word_bank": [
                 "routines",
@@ -2133,7 +1944,6 @@
               "pdf_page": 53,
               "type": "reorder",
               "prompt": "five - We - senses - have",
-              "answer": "We have five senses.",
               "status": "active"
             },
             {
@@ -2143,7 +1953,6 @@
               "pdf_page": 53,
               "type": "reorder",
               "prompt": "with - nose - We - our - smell",
-              "answer": "We smell with our nose.",
               "status": "active"
             },
             {
@@ -2153,7 +1962,6 @@
               "pdf_page": 53,
               "type": "reorder",
               "prompt": "our - We - hands - with - touch",
-              "answer": "We touch with our hands.",
               "status": "active"
             },
             {
@@ -2163,7 +1971,6 @@
               "pdf_page": 54,
               "type": "mcq",
               "prompt": "I ______ my tongue to taste food.",
-              "answer": "use",
               "status": "active",
               "choices": [
                 "to use",
@@ -2179,7 +1986,6 @@
               "pdf_page": 54,
               "type": "mcq",
               "prompt": "She doesn't have enough money to ______ for her dress.",
-              "answer": "pay",
               "status": "active",
               "choices": [
                 "play",
@@ -2195,7 +2001,6 @@
               "pdf_page": 54,
               "type": "mcq",
               "prompt": "We can ______ flowers in the garden with our noses.",
-              "answer": "smell",
               "status": "active",
               "choices": [
                 "taste",
@@ -2211,7 +2016,6 @@
               "pdf_page": 54,
               "type": "mcq",
               "prompt": "When someone is ______, they want more than they need.",
-              "answer": "greedy",
               "status": "active",
               "choices": [
                 "scared",
@@ -2227,7 +2031,6 @@
               "pdf_page": 54,
               "type": "mcq",
               "prompt": "My mother always ______ the dishes after lunch.",
-              "answer": "washes",
               "status": "active",
               "choices": [
                 "washing",
@@ -2243,7 +2046,6 @@
               "pdf_page": 54,
               "type": "mcq",
               "prompt": "Every morning, Eman and her friends ______ to school.",
-              "answer": "walk",
               "status": "active",
               "choices": [
                 "walk",
@@ -2259,7 +2061,6 @@
               "pdf_page": 54,
               "type": "complete",
               "prompt": "Today is a beautiful day. We are at the ______ on a school trip.",
-              "answer": "park",
               "status": "active",
               "word_bank": [
                 "learn",
@@ -2276,7 +2077,6 @@
               "pdf_page": 54,
               "type": "complete",
               "prompt": "We want to ______ more about things around us.",
-              "answer": "learn",
               "status": "active",
               "word_bank": [
                 "learn",
@@ -2293,7 +2093,6 @@
               "pdf_page": 54,
               "type": "complete",
               "prompt": "We use our ______ to help us understand more.",
-              "answer": "senses",
               "status": "active",
               "word_bank": [
                 "learn",
@@ -2310,7 +2109,6 @@
               "pdf_page": 54,
               "type": "complete",
               "prompt": "We can ______ the flowers.",
-              "answer": "smell",
               "status": "active",
               "word_bank": [
                 "learn",
@@ -2327,7 +2125,6 @@
               "pdf_page": 55,
               "type": "reading_mcq",
               "prompt": "The monkey saw a bird with a broken ______.",
-              "answer": "wing",
               "status": "active",
               "choices": [
                 "leg",
@@ -2343,7 +2140,6 @@
               "pdf_page": 55,
               "type": "reading_mcq",
               "prompt": "The underlined word \"kind\" means ______.",
-              "answer": "friendly",
               "status": "active",
               "choices": [
                 "dangerous",
@@ -2359,12 +2155,7 @@
               "pdf_page": 55,
               "type": "reading_open",
               "prompt": "What is the general idea of the text?",
-              "answer": "A kind monkey helps an injured bird.",
-              "status": "active",
-              "accepted_answers": [
-                "A monkey helps an injured bird.",
-                "A kind monkey helps a bird."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1r-017",
@@ -2373,12 +2164,7 @@
               "pdf_page": 55,
               "type": "reading_open",
               "prompt": "What did the monkey give the bird?",
-              "answer": "Fruits.",
-              "status": "active",
-              "accepted_answers": [
-                "Fruits.",
-                "It gave the bird fruits."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1r-018",
@@ -2387,12 +2173,7 @@
               "pdf_page": 55,
               "type": "reading_open",
               "prompt": "How did the monkey make a soft bed?",
-              "answer": "With leaves.",
-              "status": "active",
-              "accepted_answers": [
-                "With leaves.",
-                "It used leaves."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1r-019",
@@ -2401,7 +2182,6 @@
               "pdf_page": 55,
               "type": "correct_form",
               "prompt": "Every morning, she ______ (eat) a healthy breakfast with her family.",
-              "answer": "eats",
               "status": "active"
             },
             {
@@ -2411,7 +2191,6 @@
               "pdf_page": 55,
               "type": "correct_form",
               "prompt": "We ______ (visits) our cousins every summer.",
-              "answer": "visit",
               "status": "active"
             },
             {
@@ -2421,7 +2200,6 @@
               "pdf_page": 55,
               "type": "correct_form",
               "prompt": "Some children run and ______ (jumps) every summer.",
-              "answer": "jump",
               "status": "active"
             },
             {
@@ -2431,7 +2209,6 @@
               "pdf_page": 55,
               "type": "correct_form",
               "prompt": "This salad ______ (taste) really good. I like it.",
-              "answer": "tastes",
               "status": "active"
             },
             {
@@ -2441,7 +2218,6 @@
               "pdf_page": 55,
               "type": "punctuation",
               "prompt": "why does sarah eat healthy food",
-              "answer": "Why does Sarah eat healthy food?",
               "status": "active"
             },
             {
@@ -2451,7 +2227,6 @@
               "pdf_page": 55,
               "type": "punctuation",
               "prompt": "having a daily routine is important",
-              "answer": "Having a daily routine is important.",
               "status": "active"
             },
             {
@@ -2461,7 +2236,6 @@
               "pdf_page": 56,
               "type": "mcq",
               "prompt": "I can ______ soup with my tongue.",
-              "answer": "taste",
               "status": "active",
               "choices": [
                 "smell",
@@ -2477,7 +2251,6 @@
               "pdf_page": 56,
               "type": "mcq",
               "prompt": "We ______ the teacher's voice in class.",
-              "answer": "hear",
               "status": "active",
               "choices": [
                 "hear",
@@ -2493,7 +2266,6 @@
               "pdf_page": 56,
               "type": "mcq",
               "prompt": "Noha washes her face and ______ dressed for school.",
-              "answer": "gets",
               "status": "active",
               "choices": [
                 "getting",
@@ -2509,7 +2281,6 @@
               "pdf_page": 56,
               "type": "mcq",
               "prompt": "Sama went to the ______ to have chicken and pasta.",
-              "answer": "restaurant",
               "status": "active",
               "choices": [
                 "factory",
@@ -2525,7 +2296,6 @@
               "pdf_page": 56,
               "type": "mcq",
               "prompt": "A farmer ______ a lot of vegetables every year.",
-              "answer": "grows",
               "status": "active",
               "choices": [
                 "growing",
@@ -2541,7 +2311,6 @@
               "pdf_page": 56,
               "type": "mcq",
               "prompt": "Heba ______ the park every day.",
-              "answer": "cleans",
               "status": "active",
               "choices": [
                 "clean",
@@ -2557,7 +2326,6 @@
               "pdf_page": 56,
               "type": "complete",
               "prompt": "Sara eats many kinds of food to stay healthy. Every day, she eats ______ like apples and bananas.",
-              "answer": "fruits",
               "status": "active",
               "word_bank": [
                 "food",
@@ -2574,7 +2342,6 @@
               "pdf_page": 56,
               "type": "complete",
               "prompt": "She also enjoys ______ such as carrots and peas.",
-              "answer": "vegetables",
               "status": "active",
               "word_bank": [
                 "food",
@@ -2591,7 +2358,6 @@
               "pdf_page": 56,
               "type": "complete",
               "prompt": "Her mother says it is important to eat from all ______ groups.",
-              "answer": "food",
               "status": "active",
               "word_bank": [
                 "food",
@@ -2608,7 +2374,6 @@
               "pdf_page": 56,
               "type": "complete",
               "prompt": "She feels strong and full of ______.",
-              "answer": "energy",
               "status": "active",
               "word_bank": [
                 "food",
@@ -2625,7 +2390,6 @@
               "pdf_page": 57,
               "type": "reading_mcq",
               "prompt": "A healthy lunch may have chicken, vegetables, fruits, and ______.",
-              "answer": "rice",
               "status": "active",
               "choices": [
                 "water",
@@ -2641,7 +2405,6 @@
               "pdf_page": 57,
               "type": "reading_mcq",
               "prompt": "A healthy lunch helps children feel ______.",
-              "answer": "strong",
               "status": "active",
               "choices": [
                 "strong",
@@ -2657,12 +2420,7 @@
               "pdf_page": 57,
               "type": "reading_open",
               "prompt": "What shouldn't you eat too much of?",
-              "answer": "Sweets or fried food.",
-              "status": "active",
-              "accepted_answers": [
-                "Sweets or fried food.",
-                "Too many sweets or fried food."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1r-038",
@@ -2671,12 +2429,7 @@
               "pdf_page": 57,
               "type": "reading_open",
               "prompt": "How does healthy food help you at school?",
-              "answer": "It helps you run, play and study better.",
-              "status": "active",
-              "accepted_answers": [
-                "It helps you run, play and study better.",
-                "It gives you energy to run, play and study better."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1r-039",
@@ -2685,12 +2438,7 @@
               "pdf_page": 57,
               "type": "reading_open",
               "prompt": "Is drinking water important?",
-              "answer": "Yes, it is.",
-              "status": "active",
-              "accepted_answers": [
-                "Yes.",
-                "Yes, it is."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u1r-040",
@@ -2699,7 +2447,6 @@
               "pdf_page": 57,
               "type": "correct_form",
               "prompt": "He ______ (eat) healthy food every day.",
-              "answer": "eats",
               "status": "active"
             },
             {
@@ -2709,7 +2456,6 @@
               "pdf_page": 57,
               "type": "correct_form",
               "prompt": "We ______ (studies) English every day.",
-              "answer": "study",
               "status": "active"
             },
             {
@@ -2719,7 +2465,6 @@
               "pdf_page": 57,
               "type": "correct_form",
               "prompt": "The nurse ______ (help) sick people.",
-              "answer": "helps",
               "status": "active"
             },
             {
@@ -2729,7 +2474,6 @@
               "pdf_page": 57,
               "type": "correct_form",
               "prompt": "Every morning, I ______ (brushing) my teeth.",
-              "answer": "brush",
               "status": "active"
             },
             {
@@ -2739,7 +2483,6 @@
               "pdf_page": 57,
               "type": "punctuation",
               "prompt": "it's important to go to bed early",
-              "answer": "It's important to go to bed early.",
               "status": "active"
             },
             {
@@ -2749,7 +2492,6 @@
               "pdf_page": 57,
               "type": "punctuation",
               "prompt": "do you like healthy food",
-              "answer": "Do you like healthy food?",
               "status": "active"
             },
             {
@@ -2759,7 +2501,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "Goha was a ______ man.",
-              "answer": "greedy",
               "status": "active",
               "choices": [
                 "funny",
@@ -2775,7 +2516,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "Goha was walking through the ______.",
-              "answer": "market",
               "status": "active",
               "choices": [
                 "garden",
@@ -2791,7 +2531,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "Goha smelled something ______ from the restaurant.",
-              "answer": "delicious",
               "status": "active",
               "choices": [
                 "messy",
@@ -2807,7 +2546,6 @@
               "pdf_page": 58,
               "type": "dialogue_complete",
               "prompt": "Sure. Healthy habits keep us ______.",
-              "answer": "healthy",
               "status": "active",
               "word_bank": [
                 "healthy",
@@ -2823,7 +2561,6 @@
               "pdf_page": 58,
               "type": "dialogue_complete",
               "prompt": "What healthy habits do you ______?",
-              "answer": "practice",
               "status": "active",
               "word_bank": [
                 "healthy",
@@ -2839,7 +2576,6 @@
               "pdf_page": 58,
               "type": "dialogue_complete",
               "prompt": "I ______ up early and I do some exercises in the garden.",
-              "answer": "wake",
               "status": "active",
               "word_bank": [
                 "healthy",
@@ -2855,7 +2591,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "I can ______ soft and hard things with my hands.",
-              "answer": "touch",
               "status": "active",
               "choices": [
                 "touch",
@@ -2871,7 +2606,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "Waking up early is one of my ______ habits.",
-              "answer": "healthy",
               "status": "active",
               "choices": [
                 "hard",
@@ -2887,7 +2621,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "My sister ______ English every day.",
-              "answer": "speaks",
               "status": "active",
               "choices": [
                 "speaking",
@@ -2903,7 +2636,6 @@
               "pdf_page": 58,
               "type": "mcq",
               "prompt": "Nada and Yara ______ to school on foot every day.",
-              "answer": "go",
               "status": "active",
               "choices": [
                 "going",
@@ -2919,7 +2651,6 @@
               "pdf_page": 58,
               "type": "correction",
               "prompt": "I takes a shower before sleeping.",
-              "answer": "I take a shower before sleeping.",
               "status": "active"
             },
             {
@@ -2929,7 +2660,6 @@
               "pdf_page": 58,
               "type": "correction",
               "prompt": "She wash the dishes after lunch.",
-              "answer": "She washes the dishes after lunch.",
               "status": "active"
             },
             {
@@ -2939,7 +2669,6 @@
               "pdf_page": 58,
               "type": "true_false",
               "prompt": "Our five senses help us understand the world around us.",
-              "answer": "True",
               "status": "active",
               "choices": [
                 "True",
@@ -2953,7 +2682,6 @@
               "pdf_page": 58,
               "type": "true_false",
               "prompt": "Our eyes let us taste sweet and salty flavors.",
-              "answer": "False",
               "status": "active",
               "choices": [
                 "True",
@@ -2967,7 +2695,6 @@
               "pdf_page": 58,
               "type": "reading_mcq",
               "prompt": "Our ______ help us hear sounds like music and voices.",
-              "answer": "ears",
               "status": "active",
               "choices": [
                 "eyes",
@@ -2983,7 +2710,6 @@
               "pdf_page": 58,
               "type": "reading_mcq",
               "prompt": "With our nose, we ______ flowers and fresh air.",
-              "answer": "smell",
               "status": "active",
               "choices": [
                 "taste",
@@ -2999,7 +2725,6 @@
               "pdf_page": 58,
               "type": "reading_mcq",
               "prompt": "Our skin helps us feel and ______.",
-              "answer": "touch",
               "status": "active",
               "choices": [
                 "think",
@@ -3015,7 +2740,6 @@
               "pdf_page": 58,
               "type": "writing",
               "prompt": "Write a short paragraph of FOUR sentences on \"Habits you do daily\" using: early.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             },
             {
@@ -3025,7 +2749,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "Having ______ habits helps us live a better life.",
-              "answer": "healthy",
               "status": "active",
               "choices": [
                 "bad",
@@ -3041,7 +2764,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "When we eat healthy food, we stay ______ and fit.",
-              "answer": "strong",
               "status": "active",
               "choices": [
                 "scared",
@@ -3057,7 +2779,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "Getting enough ______ keeps our mind sharp.",
-              "answer": "sleep",
               "status": "active",
               "choices": [
                 "sleep",
@@ -3073,7 +2794,6 @@
               "pdf_page": 59,
               "type": "dialogue_complete",
               "prompt": "I am reading a book about our ______.",
-              "answer": "senses",
               "status": "active",
               "word_bank": [
                 "safe",
@@ -3089,7 +2809,6 @@
               "pdf_page": 59,
               "type": "dialogue_complete",
               "prompt": "Why are our senses ______?",
-              "answer": "important",
               "status": "active",
               "word_bank": [
                 "safe",
@@ -3105,7 +2824,6 @@
               "pdf_page": 59,
               "type": "dialogue_complete",
               "prompt": "Because they help us stay ______.",
-              "answer": "safe",
               "status": "active",
               "word_bank": [
                 "safe",
@@ -3121,7 +2839,6 @@
               "pdf_page": 59,
               "type": "dialogue_complete",
               "prompt": "If we smell smoke, we know there's ______.",
-              "answer": "fire",
               "status": "active",
               "word_bank": [
                 "safe",
@@ -3137,7 +2854,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "Sight, hearing, taste, and touch are our ______.",
-              "answer": "senses",
               "status": "active",
               "choices": [
                 "jobs",
@@ -3153,7 +2869,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "The ______ is someone who has something.",
-              "answer": "owner",
               "status": "active",
               "choices": [
                 "owner",
@@ -3169,7 +2884,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "We ______ our homework every day.",
-              "answer": "do",
               "status": "active",
               "choices": [
                 "doing",
@@ -3185,7 +2899,6 @@
               "pdf_page": 59,
               "type": "mcq",
               "prompt": "My father ______ the newspaper every day.",
-              "answer": "reads",
               "status": "active",
               "choices": [
                 "to read",
@@ -3201,7 +2914,6 @@
               "pdf_page": 59,
               "type": "correction",
               "prompt": "The baker make fresh bread every day.",
-              "answer": "The baker makes fresh bread every day.",
               "status": "active"
             },
             {
@@ -3211,7 +2923,6 @@
               "pdf_page": 59,
               "type": "correction",
               "prompt": "The gardener water the plants early in the morning.",
-              "answer": "The gardener waters the plants early in the morning.",
               "status": "active"
             },
             {
@@ -3221,7 +2932,6 @@
               "pdf_page": 59,
               "type": "correction",
               "prompt": "We visits our grandparents on Friday.",
-              "answer": "We visit our grandparents on Friday.",
               "status": "active"
             },
             {
@@ -3231,7 +2941,6 @@
               "pdf_page": 59,
               "type": "correction",
               "prompt": "The swimmer practice in the pool every afternoon.",
-              "answer": "The swimmer practices in the pool every afternoon.",
               "status": "active"
             },
             {
@@ -3241,7 +2950,6 @@
               "pdf_page": 59,
               "type": "true_false",
               "prompt": "Goha had enough money to buy food.",
-              "answer": "False",
               "status": "active",
               "choices": [
                 "True",
@@ -3255,7 +2963,6 @@
               "pdf_page": 59,
               "type": "true_false",
               "prompt": "The owner invited Goha to share the soup with him.",
-              "answer": "True",
               "status": "active",
               "choices": [
                 "True",
@@ -3269,7 +2976,6 @@
               "pdf_page": 59,
               "type": "reading_mcq",
               "prompt": "Goha smelled delicious soup from a ______.",
-              "answer": "restaurant",
               "status": "active",
               "choices": [
                 "house",
@@ -3285,7 +2991,6 @@
               "pdf_page": 59,
               "type": "reading_mcq",
               "prompt": "The ______ asked Goha to pay for the smell.",
-              "answer": "owner",
               "status": "active",
               "choices": [
                 "worker",
@@ -3301,7 +3006,6 @@
               "pdf_page": 59,
               "type": "reading_mcq",
               "prompt": "Goha offered to pay with the sound of his ______.",
-              "answer": "coins",
               "status": "active",
               "choices": [
                 "bell",
@@ -3317,7 +3021,6 @@
               "pdf_page": 59,
               "type": "writing",
               "prompt": "Write a short paragraph of FOUR sentences on \"How to stay healthy\" using: water – sleep – important – drink.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -3341,7 +3044,6 @@
               "pdf_page": 62,
               "type": "mcq",
               "prompt": "You ______ a great job at the community.",
-              "answer": "do",
               "status": "active",
               "choices": [
                 "do",
@@ -3357,7 +3059,6 @@
               "pdf_page": 62,
               "type": "mcq",
               "prompt": "Can you ______ me collect the bottles?",
-              "answer": "help",
               "status": "active",
               "choices": [
                 "volunteer",
@@ -3373,7 +3074,6 @@
               "pdf_page": 62,
               "type": "mcq",
               "prompt": "We clean ______ from our street to help our community.",
-              "answer": "trash",
               "status": "active",
               "choices": [
                 "trees",
@@ -3389,7 +3089,6 @@
               "pdf_page": 62,
               "type": "mcq",
               "prompt": "She ______ flowers in the garden.",
-              "answer": "plants",
               "status": "active",
               "choices": [
                 "feeds",
@@ -3405,7 +3104,6 @@
               "pdf_page": 62,
               "type": "mcq",
               "prompt": "He ______ clothes and gives them to poor people.",
-              "answer": "collects",
               "status": "active",
               "choices": [
                 "collects",
@@ -3421,7 +3119,6 @@
               "pdf_page": 62,
               "type": "mcq",
               "prompt": "It's important to help our ______.",
-              "answer": "neighbors",
               "status": "active",
               "choices": [
                 "neighbors",
@@ -3437,7 +3134,6 @@
               "pdf_page": 63,
               "type": "mcq",
               "prompt": "Let's make our park ______! Let's collect the trash.",
-              "answer": "clean",
               "status": "active",
               "choices": [
                 "clean",
@@ -3453,7 +3149,6 @@
               "pdf_page": 63,
               "type": "mcq",
               "prompt": "Many people like to ______ at the community park.",
-              "answer": "volunteer",
               "status": "active",
               "choices": [
                 "do",
@@ -3469,7 +3164,6 @@
               "pdf_page": 63,
               "type": "mcq",
               "prompt": "We ______ the ducks.",
-              "answer": "feed",
               "status": "active",
               "choices": [
                 "stay",
@@ -3485,12 +3179,7 @@
               "pdf_page": 64,
               "type": "reading_open",
               "prompt": "What does Amira do with clothes?",
-              "answer": "She collects clothes and gives them to people who need them.",
-              "status": "active",
-              "accepted_answers": [
-                "She collects clothes and gives them to people who need them.",
-                "She collects clothes and gives them to poor people."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l1-011",
@@ -3499,12 +3188,7 @@
               "pdf_page": 64,
               "type": "reading_open",
               "prompt": "Who feeds the dogs and cats?",
-              "answer": "Adam.",
-              "status": "active",
-              "accepted_answers": [
-                "Adam.",
-                "Adam feeds the dogs and cats."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l1-012",
@@ -3513,7 +3197,6 @@
               "pdf_page": 65,
               "type": "mcq",
               "prompt": "We ______ flowers and trees in our garden.",
-              "answer": "plant",
               "status": "active",
               "choices": [
                 "volunteer",
@@ -3529,7 +3212,6 @@
               "pdf_page": 65,
               "type": "mcq",
               "prompt": "My neighbors and I volunteer to help our ______.",
-              "answer": "community",
               "status": "active",
               "choices": [
                 "community",
@@ -3545,7 +3227,6 @@
               "pdf_page": 65,
               "type": "mcq",
               "prompt": "They ______ trash from the streets.",
-              "answer": "clean",
               "status": "active",
               "choices": [
                 "grow",
@@ -3561,7 +3242,6 @@
               "pdf_page": 65,
               "type": "mcq",
               "prompt": "He ______ toys and gives them to poor children.",
-              "answer": "collects",
               "status": "active",
               "choices": [
                 "to collect",
@@ -3577,7 +3257,6 @@
               "pdf_page": 65,
               "type": "mcq",
               "prompt": "Omar is a clever player. He always ______ a great job in the matches.",
-              "answer": "does",
               "status": "active",
               "choices": [
                 "do",
@@ -3593,7 +3272,6 @@
               "pdf_page": 65,
               "type": "mcq",
               "prompt": "It's fun to ______ and make the park nice for everyone.",
-              "answer": "volunteer",
               "status": "active",
               "choices": [
                 "volunteers",
@@ -3609,7 +3287,6 @@
               "pdf_page": 65,
               "type": "complete",
               "prompt": "My family and I help our community. Everyone in our ______ helps.",
-              "answer": "community",
               "status": "active",
               "word_bank": [
                 "clothes",
@@ -3626,7 +3303,6 @@
               "pdf_page": 65,
               "type": "complete",
               "prompt": "We clean ______ from the streets with our neighbors.",
-              "answer": "trash",
               "status": "active",
               "word_bank": [
                 "clothes",
@@ -3643,7 +3319,6 @@
               "pdf_page": 65,
               "type": "complete",
               "prompt": "My father ______ trees in the park.",
-              "answer": "plants",
               "status": "active",
               "word_bank": [
                 "clothes",
@@ -3660,7 +3335,6 @@
               "pdf_page": 65,
               "type": "complete",
               "prompt": "My mother and aunt Salwa collect ______ and give them to people who need them.",
-              "answer": "clothes",
               "status": "active",
               "word_bank": [
                 "clothes",
@@ -3677,7 +3351,6 @@
               "pdf_page": 65,
               "type": "punctuation",
               "prompt": "they make the park nice",
-              "answer": "They make the park nice.",
               "status": "active"
             },
             {
@@ -3687,7 +3360,6 @@
               "pdf_page": 65,
               "type": "punctuation",
               "prompt": "why do you help your community",
-              "answer": "Why do you help your community?",
               "status": "active"
             },
             {
@@ -3697,7 +3369,6 @@
               "pdf_page": 66,
               "type": "complete",
               "prompt": "My name is Hassan. I'm in grade four. My brother and I ______ to help in the park.",
-              "answer": "volunteer",
               "status": "active",
               "word_bank": [
                 "plant",
@@ -3714,7 +3385,6 @@
               "pdf_page": 66,
               "type": "complete",
               "prompt": "We ______ the park and ______ bottles.",
-              "answer": "clean",
               "status": "active",
               "word_bank": [
                 "plant",
@@ -3731,7 +3401,6 @@
               "pdf_page": 66,
               "type": "complete",
               "prompt": "We clean the park and ______ bottles.",
-              "answer": "collect",
               "status": "active",
               "word_bank": [
                 "plant",
@@ -3748,7 +3417,6 @@
               "pdf_page": 66,
               "type": "complete",
               "prompt": "We ______ trees and flowers.",
-              "answer": "plant",
               "status": "active",
               "word_bank": [
                 "plant",
@@ -3765,7 +3433,6 @@
               "pdf_page": 66,
               "type": "reading_mcq",
               "prompt": "Ali likes to ______.",
-              "answer": "collect clothes",
               "status": "active",
               "choices": [
                 "feed cats",
@@ -3781,7 +3448,6 @@
               "pdf_page": 66,
               "type": "reading_mcq",
               "prompt": "Ali has ______ sister(s).",
-              "answer": "two",
               "status": "active",
               "choices": [
                 "one",
@@ -3797,12 +3463,7 @@
               "pdf_page": 66,
               "type": "reading_open",
               "prompt": "How does Farida help her community?",
-              "answer": "She cleans trash from the street, plants trees, and feeds dogs and cats.",
-              "status": "active",
-              "accepted_answers": [
-                "She cleans trash from the street, plants trees, and feeds dogs and cats.",
-                "She cleans trash and plants trees."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l1-031",
@@ -3811,7 +3472,6 @@
               "pdf_page": 66,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"How you help your community\" using: clean – plant – help.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -3828,7 +3488,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "Trash is a big ______ in my city.",
-              "answer": "problem",
               "status": "active",
               "choices": [
                 "park",
@@ -3844,7 +3503,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "The mechanic can ______ cars.",
-              "answer": "fix",
               "status": "active",
               "choices": [
                 "play",
@@ -3860,7 +3518,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "Think of a ______ to the traffic problem.",
-              "answer": "solution",
               "status": "active",
               "choices": [
                 "bin",
@@ -3876,7 +3533,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "Good people don't throw trash on the ______.",
-              "answer": "ground",
               "status": "active",
               "choices": [
                 "bin",
@@ -3892,7 +3548,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "My idea can ______ the problem of traffic.",
-              "answer": "solve",
               "status": "active",
               "choices": [
                 "solve",
@@ -3908,7 +3563,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "We can take the bus ______ of the car.",
-              "answer": "instead",
               "status": "active",
               "choices": [
                 "instead",
@@ -3924,7 +3578,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "There are many cars on the ______.",
-              "answer": "road",
               "status": "active",
               "choices": [
                 "bin",
@@ -3940,7 +3593,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "Please, put trash in the ______.",
-              "answer": "bins",
               "status": "active",
               "choices": [
                 "streets",
@@ -3956,7 +3608,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "The problem of ______ happens because there are many cars on the road.",
-              "answer": "traffic",
               "status": "active",
               "choices": [
                 "traffic",
@@ -3972,7 +3623,6 @@
               "pdf_page": 68,
               "type": "mcq",
               "prompt": "Cars ______ quickly in the evening because there is less traffic.",
-              "answer": "move",
               "status": "active",
               "choices": [
                 "grow",
@@ -3988,7 +3638,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "She ______ like fast food.",
-              "answer": "doesn't",
               "status": "active",
               "choices": [
                 "don't",
@@ -4004,7 +3653,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "Do you ______ your room every day?",
-              "answer": "clean",
               "status": "active",
               "choices": [
                 "cleans",
@@ -4020,7 +3668,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "I ______ get up early on the weekend.",
-              "answer": "don't",
               "status": "active",
               "choices": [
                 "doesn't",
@@ -4036,7 +3683,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "He doesn't ______ the guitar.",
-              "answer": "play",
               "status": "active",
               "choices": [
                 "plays",
@@ -4052,7 +3698,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "Do you ______ how to solve this problem?",
-              "answer": "know",
               "status": "active",
               "choices": [
                 "knew",
@@ -4068,7 +3713,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "I ______ drink tea in the morning.",
-              "answer": "don't",
               "status": "active",
               "choices": [
                 "don't",
@@ -4084,7 +3728,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "______ you like sweets?",
-              "answer": "Do",
               "status": "active",
               "choices": [
                 "Do",
@@ -4100,7 +3743,6 @@
               "pdf_page": 71,
               "type": "mcq",
               "prompt": "She ______ eat pizza for breakfast.",
-              "answer": "doesn't",
               "status": "active",
               "choices": [
                 "don't",
@@ -4116,7 +3758,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "She doesn't ______ (eats) unhealthy food.",
-              "answer": "eat",
               "status": "active"
             },
             {
@@ -4126,7 +3767,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "Does Reda ______ (helps) in the park?",
-              "answer": "help",
               "status": "active"
             },
             {
@@ -4136,7 +3776,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "We ______ (doesn't) like apples, but we love bananas.",
-              "answer": "don't",
               "status": "active"
             },
             {
@@ -4146,7 +3785,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "______ (Does) you take long showers?",
-              "answer": "Do",
               "status": "active"
             },
             {
@@ -4156,7 +3794,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "______ (Do) Ali go running in the morning?",
-              "answer": "Does",
               "status": "active"
             },
             {
@@ -4166,7 +3803,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "We ______ (studies) English every day.",
-              "answer": "study",
               "status": "active"
             },
             {
@@ -4176,7 +3812,6 @@
               "pdf_page": 71,
               "type": "correct_form",
               "prompt": "She ______ (don't like) pollution.",
-              "answer": "doesn't like",
               "status": "active"
             },
             {
@@ -4186,7 +3821,6 @@
               "pdf_page": 72,
               "type": "complete",
               "prompt": "Our community is an amazing place to live in. However, there are many ______.",
-              "answer": "problems",
               "status": "active",
               "word_bank": [
                 "instead",
@@ -4203,7 +3837,6 @@
               "pdf_page": 72,
               "type": "complete",
               "prompt": "One of these problems is the ______.",
-              "answer": "traffic",
               "status": "active",
               "word_bank": [
                 "instead",
@@ -4220,7 +3853,6 @@
               "pdf_page": 72,
               "type": "complete",
               "prompt": "We think we don't need to use ______ every day.",
-              "answer": "cars",
               "status": "active",
               "word_bank": [
                 "instead",
@@ -4237,7 +3869,6 @@
               "pdf_page": 72,
               "type": "complete",
               "prompt": "We can take the school bus ______.",
-              "answer": "instead",
               "status": "active",
               "word_bank": [
                 "instead",
@@ -4254,7 +3885,6 @@
               "pdf_page": 72,
               "type": "reading_mcq",
               "prompt": "The opposite of the underlined word \"dirty\" is ______.",
-              "answer": "clean",
               "status": "active",
               "choices": [
                 "harmful",
@@ -4270,7 +3900,6 @@
               "pdf_page": 72,
               "type": "reading_mcq",
               "prompt": "This text is about ______.",
-              "answer": "Trash",
               "status": "active",
               "choices": [
                 "Neighbors",
@@ -4286,12 +3915,7 @@
               "pdf_page": 72,
               "type": "reading_open",
               "prompt": "Why is trash a dangerous problem?",
-              "answer": "Because it can make many people ill.",
-              "status": "active",
-              "accepted_answers": [
-                "Because it can make many people ill.",
-                "It can make many people ill."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l2-033",
@@ -4300,12 +3924,7 @@
               "pdf_page": 72,
               "type": "reading_open",
               "prompt": "How can they solve this problem?",
-              "answer": "By putting bins everywhere.",
-              "status": "active",
-              "accepted_answers": [
-                "By putting bins everywhere.",
-                "They can put bins everywhere."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l2-034",
@@ -4314,12 +3933,7 @@
               "pdf_page": 72,
               "type": "reading_open",
               "prompt": "Why does the problem of trash happen?",
-              "answer": "Because some people throw trash on the ground.",
-              "status": "active",
-              "accepted_answers": [
-                "Because some people throw trash on the ground.",
-                "People throw trash on the ground."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l2-035",
@@ -4328,7 +3942,6 @@
               "pdf_page": 72,
               "type": "correct_form",
               "prompt": "Do you ______ (got) up early?",
-              "answer": "get",
               "status": "active"
             },
             {
@@ -4338,7 +3951,6 @@
               "pdf_page": 72,
               "type": "correct_form",
               "prompt": "Our teacher ______ (don't) get angry or drink in the classroom.",
-              "answer": null,
               "status": "inactive_ambiguous_source"
             },
             {
@@ -4348,7 +3960,6 @@
               "pdf_page": 72,
               "type": "correct_form",
               "prompt": "We ______ (doesn't) need new clothes.",
-              "answer": "don't",
               "status": "active"
             },
             {
@@ -4358,7 +3969,6 @@
               "pdf_page": 72,
               "type": "correct_form",
               "prompt": "______ (Do) she walk to school every day?",
-              "answer": "Does",
               "status": "active"
             },
             {
@@ -4368,7 +3978,6 @@
               "pdf_page": 72,
               "type": "punctuation",
               "prompt": "yes I use the trash bins",
-              "answer": "Yes, I use the trash bins.",
               "status": "active"
             },
             {
@@ -4378,7 +3987,6 @@
               "pdf_page": 72,
               "type": "punctuation",
               "prompt": "do cars move quickly in the morning",
-              "answer": "Do cars move quickly in the morning?",
               "status": "active"
             },
             {
@@ -4388,7 +3996,6 @@
               "pdf_page": 73,
               "type": "mcq",
               "prompt": "How can we ______ traffic?",
-              "answer": "reduce",
               "status": "active",
               "choices": [
                 "throw",
@@ -4404,7 +4011,6 @@
               "pdf_page": 73,
               "type": "mcq",
               "prompt": "______ your neighbor help in a community park?",
-              "answer": "Does",
               "status": "active",
               "choices": [
                 "Was",
@@ -4420,7 +4026,6 @@
               "pdf_page": 73,
               "type": "mcq",
               "prompt": "Some people ______ put trash in bins.",
-              "answer": "don't",
               "status": "active",
               "choices": [
                 "hasn't",
@@ -4436,7 +4041,6 @@
               "pdf_page": 73,
               "type": "mcq",
               "prompt": "We have good solutions to ______ the problems.",
-              "answer": "solve",
               "status": "active",
               "choices": [
                 "waste",
@@ -4452,7 +4056,6 @@
               "pdf_page": 73,
               "type": "mcq",
               "prompt": "Many streets look ______ because of the trash.",
-              "answer": "dirty",
               "status": "active",
               "choices": [
                 "wonderful",
@@ -4468,7 +4071,6 @@
               "pdf_page": 73,
               "type": "mcq",
               "prompt": "The traffic ______ move fast because there are too many cars.",
-              "answer": "doesn't",
               "status": "active",
               "choices": [
                 "haven't",
@@ -4484,7 +4086,6 @@
               "pdf_page": 73,
               "type": "correct_form",
               "prompt": "______ (Do) Sally like ice-cream?",
-              "answer": "Does",
               "status": "active"
             },
             {
@@ -4494,7 +4095,6 @@
               "pdf_page": 73,
               "type": "correct_form",
               "prompt": "Ali ______ (not eat) unhealthy food.",
-              "answer": "doesn't eat",
               "status": "active"
             },
             {
@@ -4504,7 +4104,6 @@
               "pdf_page": 73,
               "type": "correct_form",
               "prompt": "Do you ______ (studies) Arabic every day?",
-              "answer": "study",
               "status": "active"
             },
             {
@@ -4514,7 +4113,6 @@
               "pdf_page": 73,
               "type": "correct_form",
               "prompt": "Hala ______ (don't like) dirty places.",
-              "answer": "doesn't like",
               "status": "active"
             },
             {
@@ -4524,7 +4122,6 @@
               "pdf_page": 73,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Traffic problem\" using: school – walk – buses.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -4541,7 +4138,6 @@
               "pdf_page": 76,
               "type": "mcq",
               "prompt": "We ______ Eid Al-Fitr with our families.",
-              "answer": "celebrate",
               "status": "active",
               "choices": [
                 "build",
@@ -4557,7 +4153,6 @@
               "pdf_page": 76,
               "type": "mcq",
               "prompt": "Our house looks beautiful with these ______.",
-              "answer": "decorations",
               "status": "active",
               "choices": [
                 "decorations",
@@ -4573,7 +4168,6 @@
               "pdf_page": 76,
               "type": "mcq",
               "prompt": "Some people ______ colorful carpets by hand.",
-              "answer": "weave",
               "status": "active",
               "choices": [
                 "wear",
@@ -4589,7 +4183,6 @@
               "pdf_page": 76,
               "type": "mcq",
               "prompt": "Mobiles are ______ inventions.",
-              "answer": "modern",
               "status": "active",
               "choices": [
                 "proud",
@@ -4605,7 +4198,6 @@
               "pdf_page": 76,
               "type": "mcq",
               "prompt": "Girls like to wear ______ dresses.",
-              "answer": "stylish",
               "status": "active",
               "choices": [
                 "craft",
@@ -4621,7 +4213,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "Houses are ______ in bright colors.",
-              "answer": "painted",
               "status": "active",
               "choices": [
                 "celebrated",
@@ -4637,7 +4228,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "Egyptians eat colorful eggs in the Spring ______.",
-              "answer": "Festival",
               "status": "active",
               "choices": [
                 "Culture",
@@ -4653,7 +4243,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "They make juice from sugar ______.",
-              "answer": "cane",
               "status": "active",
               "choices": [
                 "corn",
@@ -4669,7 +4258,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "Ancient Egyptian houses had beautiful ______.",
-              "answer": "designs",
               "status": "active",
               "choices": [
                 "designs",
@@ -4685,7 +4273,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "We wear special ______ in festivals.",
-              "answer": "outfits",
               "status": "active",
               "choices": [
                 "harvest",
@@ -4701,7 +4288,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "Egyptians are proud of their ______, and they love to celebrate together.",
-              "answer": "culture",
               "status": "active",
               "choices": [
                 "culture",
@@ -4717,7 +4303,6 @@
               "pdf_page": 77,
               "type": "mcq",
               "prompt": "My mother told me ______ about her family.",
-              "answer": "stories",
               "status": "active",
               "choices": [
                 "foods",
@@ -4733,12 +4318,7 @@
               "pdf_page": 78,
               "type": "reading_open",
               "prompt": "Where is the Delta?",
-              "answer": "It's in the north of Egypt.",
-              "status": "active",
-              "accepted_answers": [
-                "In the north of Egypt.",
-                "It's in the north of Egypt."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l3-014",
@@ -4747,11 +4327,7 @@
               "pdf_page": 78,
               "type": "reading_open",
               "prompt": "Where do people grow sugar cane?",
-              "answer": "In Upper Egypt.",
-              "status": "active",
-              "accepted_answers": [
-                "In Upper Egypt."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l3-015",
@@ -4760,7 +4336,6 @@
               "pdf_page": 80,
               "type": "mcq",
               "prompt": "______ sleep is bad for your health.",
-              "answer": "Irregular",
               "status": "active",
               "choices": [
                 "Irregular",
@@ -4776,7 +4351,6 @@
               "pdf_page": 80,
               "type": "mcq",
               "prompt": "Stars ______ in the morning.",
-              "answer": "disappear",
               "status": "active",
               "choices": [
                 "appear",
@@ -4792,7 +4366,6 @@
               "pdf_page": 80,
               "type": "mcq",
               "prompt": "It is ______ to take money that is not ours.",
-              "answer": "illegal",
               "status": "active",
               "choices": [
                 "legal",
@@ -4808,7 +4381,6 @@
               "pdf_page": 80,
               "type": "mcq",
               "prompt": "It is ______ to smoke here.",
-              "answer": "illegal",
               "status": "active",
               "choices": [
                 "legal",
@@ -4824,7 +4396,6 @@
               "pdf_page": 80,
               "type": "mcq",
               "prompt": "What Omar says is ______. It doesn't make sense.",
-              "answer": "illogical",
               "status": "active",
               "choices": [
                 "illogical",
@@ -4840,7 +4411,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "The plane ______ (appeared) behind the clouds.",
-              "answer": "disappeared",
               "status": "active"
             },
             {
@@ -4850,7 +4420,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "It's ______ (legal) to use the mobile when you drive.",
-              "answer": "illegal",
               "status": "active"
             },
             {
@@ -4860,7 +4429,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "My grandpa ______ (likes) noise and pollution.",
-              "answer": "dislikes",
               "status": "active"
             },
             {
@@ -4870,7 +4438,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "Rain is ______ (regular) in the dry desert.",
-              "answer": "irregular",
               "status": "active"
             },
             {
@@ -4880,7 +4447,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "Your question is ______ (relevant). We are not talking about that.",
-              "answer": "irrelevant",
               "status": "active"
             },
             {
@@ -4890,7 +4456,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "The children are ______ (responsible). They waste their time.",
-              "answer": "irresponsible",
               "status": "active"
             },
             {
@@ -4900,7 +4465,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "The verb \"make\" has an ______ (regular) past form.",
-              "answer": "irregular",
               "status": "active"
             },
             {
@@ -4910,7 +4474,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "He is ______ (responsible). He forgets his keys.",
-              "answer": "irresponsible",
               "status": "active"
             },
             {
@@ -4920,7 +4483,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "It is ______ (legal) to drive here. It isn't safe.",
-              "answer": "illegal",
               "status": "active"
             },
             {
@@ -4930,7 +4492,6 @@
               "pdf_page": 81,
               "type": "correct_form",
               "prompt": "The students are ______ (responsible). Their classroom is very dirty.",
-              "answer": "irresponsible",
               "status": "active"
             },
             {
@@ -4940,7 +4501,6 @@
               "pdf_page": 82,
               "type": "mcq",
               "prompt": "We like football, but we ______ tennis.",
-              "answer": "dislike",
               "status": "active",
               "choices": [
                 "like",
@@ -4956,7 +4516,6 @@
               "pdf_page": 82,
               "type": "mcq",
               "prompt": "______ and shirts are modern clothes.",
-              "answer": "Pants",
               "status": "active",
               "choices": [
                 "Galabeyas",
@@ -4972,7 +4531,6 @@
               "pdf_page": 82,
               "type": "mcq",
               "prompt": "Egypt has two special ______: the Delta and Upper Egypt.",
-              "answer": "regions",
               "status": "active",
               "choices": [
                 "regions",
@@ -4988,7 +4546,6 @@
               "pdf_page": 82,
               "type": "mcq",
               "prompt": "He is ______ of his famous father.",
-              "answer": "proud",
               "status": "active",
               "choices": [
                 "greedy",
@@ -5004,7 +4561,6 @@
               "pdf_page": 82,
               "type": "mcq",
               "prompt": "We ______ the floor with beautiful carpets.",
-              "answer": "cover",
               "status": "active",
               "choices": [
                 "covers",
@@ -5020,7 +4576,6 @@
               "pdf_page": 82,
               "type": "mcq",
               "prompt": "Farmers ______ the cotton from fields by hand.",
-              "answer": "harvest",
               "status": "active",
               "choices": [
                 "harvest",
@@ -5036,7 +4591,6 @@
               "pdf_page": 82,
               "type": "correct_form",
               "prompt": "He is ______ (honest). He doesn't tell the truth.",
-              "answer": "dishonest",
               "status": "active"
             },
             {
@@ -5046,7 +4600,6 @@
               "pdf_page": 82,
               "type": "correct_form",
               "prompt": "Sara ______ (isn't) study at night.",
-              "answer": "doesn't",
               "status": "active"
             },
             {
@@ -5056,7 +4609,6 @@
               "pdf_page": 82,
               "type": "correct_form",
               "prompt": "It is ______ (responsible) to throw trash on the ground.",
-              "answer": "irresponsible",
               "status": "active"
             },
             {
@@ -5066,7 +4618,6 @@
               "pdf_page": 82,
               "type": "correct_form",
               "prompt": "No one likes his idea. It's ______ (logical).",
-              "answer": "illogical",
               "status": "active"
             },
             {
@@ -5076,7 +4627,6 @@
               "pdf_page": 82,
               "type": "punctuation",
               "prompt": "my father works in a cotton factory",
-              "answer": "My father works in a cotton factory.",
               "status": "active"
             },
             {
@@ -5086,7 +4636,6 @@
               "pdf_page": 82,
               "type": "punctuation",
               "prompt": "which part of Egypt are you from",
-              "answer": "Which part of Egypt are you from?",
               "status": "active"
             },
             {
@@ -5096,7 +4645,6 @@
               "pdf_page": 83,
               "type": "complete",
               "prompt": "Every summer, I travel to my grandfather. He lives in Luxor. It is a governorate in ______ Egypt.",
-              "answer": "Upper",
               "status": "active",
               "word_bank": [
                 "galabeyas",
@@ -5113,7 +4661,6 @@
               "pdf_page": 83,
               "type": "complete",
               "prompt": "Men there wear ______.",
-              "answer": "galabeyas",
               "status": "active",
               "word_bank": [
                 "galabeyas",
@@ -5130,7 +4677,6 @@
               "pdf_page": 83,
               "type": "complete",
               "prompt": "Grandma wears ______ dresses.",
-              "answer": "colorful",
               "status": "active",
               "word_bank": [
                 "galabeyas",
@@ -5147,7 +4693,6 @@
               "pdf_page": 83,
               "type": "complete",
               "prompt": "Farmers grow ______.",
-              "answer": "sugar cane",
               "status": "active",
               "word_bank": [
                 "galabeyas",
@@ -5164,7 +4709,6 @@
               "pdf_page": 83,
               "type": "reading_mcq",
               "prompt": "Upper Egypt is in the ______ part of Egypt.",
-              "answer": "southern",
               "status": "active",
               "choices": [
                 "northern",
@@ -5180,7 +4724,6 @@
               "pdf_page": 83,
               "type": "reading_mcq",
               "prompt": "Egypt's culture is ______.",
-              "answer": "old",
               "status": "active",
               "choices": [
                 "new",
@@ -5196,12 +4739,7 @@
               "pdf_page": 83,
               "type": "reading_open",
               "prompt": "What do the Nubian villages have?",
-              "answer": "Houses painted in bright colors and special designs.",
-              "status": "active",
-              "accepted_answers": [
-                "Houses painted in bright colors and special designs.",
-                "Brightly painted houses and special designs."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l3-049",
@@ -5210,12 +4748,7 @@
               "pdf_page": 83,
               "type": "reading_open",
               "prompt": "What do both regions share?",
-              "answer": "Many of the same traditions.",
-              "status": "active",
-              "accepted_answers": [
-                "Many of the same traditions.",
-                "They share many of the same traditions."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l3-050",
@@ -5224,12 +4757,7 @@
               "pdf_page": 83,
               "type": "reading_open",
               "prompt": "What do people wear in Northern Egypt?",
-              "answer": "Modern clothes like pants and shirts.",
-              "status": "active",
-              "accepted_answers": [
-                "Modern clothes like pants and shirts.",
-                "Pants and shirts."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l3-051",
@@ -5238,7 +4766,6 @@
               "pdf_page": 82,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Your community traditions\" using: Delta – rice and cotton – Spring Festival.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -5255,7 +4782,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "Healthy food is ______ in vitamins.",
-              "answer": "rich",
               "status": "active",
               "choices": [
                 "honest",
@@ -5271,7 +4797,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "______ tells us about things in the past.",
-              "answer": "History",
               "status": "active",
               "choices": [
                 "English",
@@ -5287,7 +4812,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "Plant trees to stop air ______.",
-              "answer": "pollution",
               "status": "active",
               "choices": [
                 "traffic",
@@ -5303,7 +4827,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "The post office is a big ______.",
-              "answer": "building",
               "status": "active",
               "choices": [
                 "building",
@@ -5319,7 +4842,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "You should walk or ______ to school to stop air pollution.",
-              "answer": "cycle",
               "status": "active",
               "choices": [
                 "cycle",
@@ -5335,7 +4857,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "They buy fresh vegetables from the ______.",
-              "answer": "market",
               "status": "active",
               "choices": [
                 "park",
@@ -5351,7 +4872,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "This box is made of wood. It is ______.",
-              "answer": "wooden",
               "status": "active",
               "choices": [
                 "plastic",
@@ -5367,7 +4887,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "We can take the ______ from the train station.",
-              "answer": "taxi",
               "status": "active",
               "choices": [
                 "car",
@@ -5383,7 +4902,6 @@
               "pdf_page": 85,
               "type": "mcq",
               "prompt": "My old school still ______ today.",
-              "answer": "stands",
               "status": "active",
               "choices": [
                 "plays",
@@ -5399,7 +4917,6 @@
               "pdf_page": 89,
               "type": "mcq",
               "prompt": "There are many tall buildings in my ______.",
-              "answer": "neighborhood",
               "status": "active",
               "choices": [
                 "habits",
@@ -5415,7 +4932,6 @@
               "pdf_page": 89,
               "type": "mcq",
               "prompt": "______ Yara clean her room every day?",
-              "answer": "Does",
               "status": "active",
               "choices": [
                 "Are",
@@ -5431,7 +4947,6 @@
               "pdf_page": 89,
               "type": "mcq",
               "prompt": "Grandpa told me ______ about our family's history.",
-              "answer": "stories",
               "status": "active",
               "choices": [
                 "stalls",
@@ -5447,7 +4962,6 @@
               "pdf_page": 89,
               "type": "mcq",
               "prompt": "We bought juice from a small ______ in the market.",
-              "answer": "stall",
               "status": "active",
               "choices": [
                 "toy",
@@ -5463,7 +4977,6 @@
               "pdf_page": 89,
               "type": "mcq",
               "prompt": "We ______ a poster with colorful photos.",
-              "answer": "design",
               "status": "active",
               "choices": [
                 "to design",
@@ -5479,7 +4992,6 @@
               "pdf_page": 89,
               "type": "mcq",
               "prompt": "Does the cat ______ on the chairs?",
-              "answer": "sleep",
               "status": "active",
               "choices": [
                 "sleeps",
@@ -5495,7 +5007,6 @@
               "pdf_page": 89,
               "type": "complete",
               "prompt": "I love my grandma. When we visit her, she ______ us interesting stories.",
-              "answer": "tells",
               "status": "active",
               "word_bank": [
                 "community",
@@ -5512,7 +5023,6 @@
               "pdf_page": 89,
               "type": "complete",
               "prompt": "She knows a lot about our community's ______.",
-              "answer": "history",
               "status": "active",
               "word_bank": [
                 "community",
@@ -5529,7 +5039,6 @@
               "pdf_page": 89,
               "type": "complete",
               "prompt": "She sometimes asks us questions after the story, or she sings a ______.",
-              "answer": "song",
               "status": "active",
               "word_bank": [
                 "community",
@@ -5546,7 +5055,6 @@
               "pdf_page": 89,
               "type": "complete",
               "prompt": "We learn a lot about our ______ from our grandma's stories.",
-              "answer": "community",
               "status": "active",
               "word_bank": [
                 "community",
@@ -5563,7 +5071,6 @@
               "pdf_page": 89,
               "type": "punctuation",
               "prompt": "grandma showed me her old photo",
-              "answer": "Grandma showed me her old photo.",
               "status": "active"
             },
             {
@@ -5573,7 +5080,6 @@
               "pdf_page": 89,
               "type": "punctuation",
               "prompt": "what makes you proud of your community's history",
-              "answer": "What makes you proud of your community's history?",
               "status": "active"
             },
             {
@@ -5583,7 +5089,6 @@
               "pdf_page": 90,
               "type": "reading_mcq",
               "prompt": "Fifty years ago, the neighborhood was very ______.",
-              "answer": "quiet",
               "status": "active",
               "choices": [
                 "busy",
@@ -5599,7 +5104,6 @@
               "pdf_page": 90,
               "type": "reading_mcq",
               "prompt": "There were small houses with beautiful ______.",
-              "answer": "gardens",
               "status": "active",
               "choices": [
                 "gardens",
@@ -5615,12 +5119,7 @@
               "pdf_page": 90,
               "type": "reading_open",
               "prompt": "Where did children play safely?",
-              "answer": "In the streets.",
-              "status": "active",
-              "accepted_answers": [
-                "In the streets.",
-                "Children played safely in the streets."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2l4-025",
@@ -5629,7 +5128,6 @@
               "pdf_page": 90,
               "type": "correct_form",
               "prompt": "______ (Does) they collect plastic bottles from the street?",
-              "answer": "Do",
               "status": "active"
             },
             {
@@ -5639,7 +5137,6 @@
               "pdf_page": 90,
               "type": "correct_form",
               "prompt": "We don't ______ (puts) trash in bins.",
-              "answer": "put",
               "status": "active"
             },
             {
@@ -5649,7 +5146,6 @@
               "pdf_page": 90,
               "type": "correct_form",
               "prompt": "The dog took the toy and ______ (appeared). We couldn't find it.",
-              "answer": "disappeared",
               "status": "active"
             },
             {
@@ -5659,7 +5155,6 @@
               "pdf_page": 90,
               "type": "correct_form",
               "prompt": "______ (Do) Ramy study English every day?",
-              "answer": "Does",
               "status": "active"
             },
             {
@@ -5669,7 +5164,6 @@
               "pdf_page": 89,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Your community's history\" using: neighborhood – old market – fresh vegetables.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -5686,7 +5180,6 @@
               "pdf_page": 98,
               "type": "reorder",
               "prompt": "does - cats - and - Laila - feed",
-              "answer": "Laila feeds cats and dogs.",
               "status": "active"
             },
             {
@@ -5696,7 +5189,6 @@
               "pdf_page": 98,
               "type": "reorder",
               "prompt": "the park - trees - plant - I - in",
-              "answer": "I plant trees in the park.",
               "status": "active"
             },
             {
@@ -5706,7 +5198,6 @@
               "pdf_page": 98,
               "type": "reorder",
               "prompt": "clean - I - from - trash - the streets",
-              "answer": "I clean trash from the streets.",
               "status": "active"
             },
             {
@@ -5716,7 +5207,6 @@
               "pdf_page": 99,
               "type": "mcq",
               "prompt": "The galabeya is one of the ______ outfits in Egypt.",
-              "answer": "traditional",
               "status": "active",
               "choices": [
                 "new",
@@ -5732,7 +5222,6 @@
               "pdf_page": 99,
               "type": "mcq",
               "prompt": "Every morning, Sara ______ her cats.",
-              "answer": "feeds",
               "status": "active",
               "choices": [
                 "feeds",
@@ -5748,7 +5237,6 @@
               "pdf_page": 99,
               "type": "mcq",
               "prompt": "______ you walk to school every day?",
-              "answer": "Do",
               "status": "active",
               "choices": [
                 "Do",
@@ -5764,7 +5252,6 @@
               "pdf_page": 99,
               "type": "mcq",
               "prompt": "Ali ______ like to swim in the pool.",
-              "answer": "doesn't",
               "status": "active",
               "choices": [
                 "don't",
@@ -5780,7 +5267,6 @@
               "pdf_page": 99,
               "type": "mcq",
               "prompt": "She ______ to help in the community park.",
-              "answer": "volunteers",
               "status": "active",
               "choices": [
                 "don't volunteer",
@@ -5796,7 +5282,6 @@
               "pdf_page": 99,
               "type": "mcq",
               "prompt": "In Egypt, people ______ colorful carpets by hand.",
-              "answer": "weave",
               "status": "active",
               "choices": [
                 "feed",
@@ -5812,7 +5297,6 @@
               "pdf_page": 99,
               "type": "complete",
               "prompt": "Our community has many problems. One of these problems is the ______.",
-              "answer": "traffic",
               "status": "active",
               "word_bank": [
                 "volunteer",
@@ -5829,7 +5313,6 @@
               "pdf_page": 99,
               "type": "complete",
               "prompt": "Cars don't ______ quickly in the morning, especially near schools.",
-              "answer": "move",
               "status": "active",
               "word_bank": [
                 "volunteer",
@@ -5846,7 +5329,6 @@
               "pdf_page": 99,
               "type": "complete",
               "prompt": "We should take public transportation, like the metro and ______.",
-              "answer": "buses",
               "status": "active",
               "word_bank": [
                 "volunteer",
@@ -5863,7 +5345,6 @@
               "pdf_page": 99,
               "type": "complete",
               "prompt": "We can also ______ or walk to near places.",
-              "answer": "cycle",
               "status": "active",
               "word_bank": [
                 "volunteer",
@@ -5880,7 +5361,6 @@
               "pdf_page": 100,
               "type": "reading_mcq",
               "prompt": "This text is about ______.",
-              "answer": "community's history",
               "status": "active",
               "choices": [
                 "Egyptian food",
@@ -5896,7 +5376,6 @@
               "pdf_page": 100,
               "type": "reading_mcq",
               "prompt": "The opposite of the underlined word \"old\" is ______.",
-              "answer": "new",
               "status": "active",
               "choices": [
                 "new",
@@ -5912,12 +5391,7 @@
               "pdf_page": 100,
               "type": "reading_open",
               "prompt": "Where did people sell fresh fruits and vegetables?",
-              "answer": "In the old market.",
-              "status": "active",
-              "accepted_answers": [
-                "In the old market.",
-                "They sold them in the old market."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2r-017",
@@ -5926,12 +5400,7 @@
               "pdf_page": 100,
               "type": "reading_open",
               "prompt": "What did Grandpa show Hana?",
-              "answer": "Old photos.",
-              "status": "active",
-              "accepted_answers": [
-                "Old photos.",
-                "He showed her old photos."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2r-018",
@@ -5940,7 +5409,6 @@
               "pdf_page": 100,
               "type": "correct_form",
               "prompt": "Our teacher ______ (don't) give us homework on holidays.",
-              "answer": "doesn't",
               "status": "active"
             },
             {
@@ -5950,7 +5418,6 @@
               "pdf_page": 100,
               "type": "correct_form",
               "prompt": "______ (Do) Ehab go running in the morning?",
-              "answer": "Does",
               "status": "active"
             },
             {
@@ -5960,7 +5427,6 @@
               "pdf_page": 100,
               "type": "correct_form",
               "prompt": "Do you ______ (feeds) the fish every day?",
-              "answer": "feed",
               "status": "active"
             },
             {
@@ -5970,7 +5436,6 @@
               "pdf_page": 100,
               "type": "correct_form",
               "prompt": "Shaza doesn't ______ (uses) plastic bottles.",
-              "answer": "use",
               "status": "active"
             },
             {
@@ -5980,7 +5445,6 @@
               "pdf_page": 100,
               "type": "punctuation",
               "prompt": "what stories do old buildings tell us",
-              "answer": "What stories do old buildings tell us?",
               "status": "active"
             },
             {
@@ -5990,7 +5454,6 @@
               "pdf_page": 100,
               "type": "punctuation",
               "prompt": "when we all help we make our community great",
-              "answer": "When we all help, we make our community great.",
               "status": "active"
             },
             {
@@ -6000,7 +5463,6 @@
               "pdf_page": 100,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"How to stop air pollution\" using: plastic – cycle – trees.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             },
             {
@@ -6010,7 +5472,6 @@
               "pdf_page": 101,
               "type": "mcq",
               "prompt": "She ______ cats in the street.",
-              "answer": "feeds",
               "status": "active",
               "choices": [
                 "walks",
@@ -6026,7 +5487,6 @@
               "pdf_page": 101,
               "type": "mcq",
               "prompt": "Weaving carpets is one of the most important ______.",
-              "answer": "crafts",
               "status": "active",
               "choices": [
                 "rules",
@@ -6042,7 +5502,6 @@
               "pdf_page": 101,
               "type": "mcq",
               "prompt": "I want to ______ at a local hospital during the summer holiday.",
-              "answer": "volunteer",
               "status": "active",
               "choices": [
                 "catch",
@@ -6058,7 +5517,6 @@
               "pdf_page": 101,
               "type": "mcq",
               "prompt": "We ______ go to school on Fridays.",
-              "answer": "don't",
               "status": "active",
               "choices": [
                 "doesn't",
@@ -6074,7 +5532,6 @@
               "pdf_page": 101,
               "type": "mcq",
               "prompt": "______ Amira drink milk with her breakfast?",
-              "answer": "Does",
               "status": "active",
               "choices": [
                 "Are",
@@ -6090,7 +5547,6 @@
               "pdf_page": 101,
               "type": "mcq",
               "prompt": "She ______ like to see trash on the streets.",
-              "answer": "doesn't",
               "status": "active",
               "choices": [
                 "doesn't",
@@ -6106,7 +5562,6 @@
               "pdf_page": 101,
               "type": "complete",
               "prompt": "Air pollution is a very dangerous problem. There are many ways to ______ air pollution.",
-              "answer": "stop",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -6122,7 +5577,6 @@
               "pdf_page": 101,
               "type": "complete",
               "prompt": "We should ______ trees in our community.",
-              "answer": "plant",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -6138,7 +5592,6 @@
               "pdf_page": 101,
               "type": "complete",
               "prompt": "We should keep our streets ______.",
-              "answer": "clean",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -6154,7 +5607,6 @@
               "pdf_page": 101,
               "type": "complete",
               "prompt": "We should use less ______ and walk to school.",
-              "answer": "plastic",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -6170,7 +5622,6 @@
               "pdf_page": 102,
               "type": "reading_mcq",
               "prompt": "Ahmed lives in ______.",
-              "answer": "Cairo",
               "status": "active",
               "choices": [
                 "Giza",
@@ -6186,7 +5637,6 @@
               "pdf_page": 102,
               "type": "reading_mcq",
               "prompt": "Ahmed is always ______ for work.",
-              "answer": "late",
               "status": "active",
               "choices": [
                 "busy",
@@ -6202,12 +5652,7 @@
               "pdf_page": 102,
               "type": "reading_open",
               "prompt": "How did Ahmed and his neighbors solve the traffic problem?",
-              "answer": "They decided to use buses or bicycles instead of private cars.",
-              "status": "active",
-              "accepted_answers": [
-                "They decided to use buses or bicycles instead of private cars.",
-                "By using buses or bicycles instead of private cars."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2r-038",
@@ -6216,12 +5661,7 @@
               "pdf_page": 102,
               "type": "reading_open",
               "prompt": "What did Ahmed and his neighbors decide?",
-              "answer": "To use buses or bicycles instead of private cars.",
-              "status": "active",
-              "accepted_answers": [
-                "To use buses or bicycles instead of private cars.",
-                "They decided to use buses or bicycles instead of private cars."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u2r-039",
@@ -6230,7 +5670,6 @@
               "pdf_page": 102,
               "type": "correct_form",
               "prompt": "Dalia doesn't ______ (buys) plastic bottles.",
-              "answer": "buy",
               "status": "active"
             },
             {
@@ -6240,7 +5679,6 @@
               "pdf_page": 102,
               "type": "correct_form",
               "prompt": "______ (Does) they have a dog?",
-              "answer": "Do",
               "status": "active"
             },
             {
@@ -6250,7 +5688,6 @@
               "pdf_page": 102,
               "type": "correct_form",
               "prompt": "Nourhan doesn't ______ (goes) to the club after school.",
-              "answer": "go",
               "status": "active"
             },
             {
@@ -6260,7 +5697,6 @@
               "pdf_page": 102,
               "type": "correct_form",
               "prompt": "No, she doesn't ______ (has) any books.",
-              "answer": "have",
               "status": "active"
             },
             {
@@ -6270,7 +5706,6 @@
               "pdf_page": 102,
               "type": "punctuation",
               "prompt": "i feed the dogs and cats",
-              "answer": "I feed the dogs and cats.",
               "status": "active"
             },
             {
@@ -6280,7 +5715,6 @@
               "pdf_page": 102,
               "type": "punctuation",
               "prompt": "does Ahmed like cats",
-              "answer": "Does Ahmed like cats?",
               "status": "active"
             },
             {
@@ -6290,7 +5724,6 @@
               "pdf_page": 102,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Culture in Egypt\" using: traditions – regions – weave.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -6313,7 +5746,6 @@
               "printed_page": 113,
               "type": "mcq",
               "prompt": "The first ______ fish in the river.",
-              "answer": "catches",
               "status": "active",
               "choices": [
                 "climbs",
@@ -6328,7 +5760,6 @@
               "printed_page": 113,
               "type": "mcq",
               "prompt": "The lion can ______ zebras.",
-              "answer": "hunt",
               "status": "active",
               "choices": [
                 "collect",
@@ -6343,7 +5774,6 @@
               "printed_page": 113,
               "type": "mcq",
               "prompt": "The ______ is big and gray.",
-              "answer": "elephant",
               "status": "active",
               "choices": [
                 "elephant",
@@ -6358,7 +5788,6 @@
               "printed_page": 113,
               "type": "mcq",
               "prompt": "She is watching a TV ______ about animals.",
-              "answer": "program",
               "status": "active",
               "choices": [
                 "book",
@@ -6373,7 +5802,6 @@
               "printed_page": 114,
               "type": "mcq",
               "prompt": "______ are very good at climbing trees.",
-              "answer": "Monkeys",
               "status": "active",
               "choices": [
                 "Elephants",
@@ -6388,7 +5816,6 @@
               "printed_page": 114,
               "type": "mcq",
               "prompt": "My dad is a ______ guide. He shows visitors the animals.",
-              "answer": "forest",
               "status": "active",
               "choices": [
                 "forest",
@@ -6403,7 +5830,6 @@
               "printed_page": 114,
               "type": "mcq",
               "prompt": "The zebra has a ______ coat.",
-              "answer": "striped",
               "status": "active",
               "choices": [
                 "striped",
@@ -6418,7 +5844,6 @@
               "printed_page": 114,
               "type": "mcq",
               "prompt": "The monkey has a long ______.",
-              "answer": "tail",
               "status": "active",
               "choices": [
                 "neck",
@@ -6433,7 +5858,6 @@
               "printed_page": 114,
               "type": "mcq",
               "prompt": "The bear has sharp ______.",
-              "answer": "claws",
               "status": "active",
               "choices": [
                 "feathers",
@@ -6448,12 +5872,7 @@
               "printed_page": 115,
               "type": "reading_open",
               "prompt": "What do giraffes eat?",
-              "answer": "Leaves from tall trees.",
-              "status": "active",
-              "accepted_answers": [
-                "Leaves from tall trees.",
-                "They eat leaves from tall trees."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l1-011",
@@ -6461,12 +5880,7 @@
               "printed_page": 115,
               "type": "reading_open",
               "prompt": "When do lions sleep?",
-              "answer": "During the day.",
-              "status": "active",
-              "accepted_answers": [
-                "During the day.",
-                "They sleep during the day."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l1-012",
@@ -6474,7 +5888,6 @@
               "printed_page": 117,
               "type": "mcq",
               "prompt": "The ______ is the king of the jungle land.",
-              "answer": "lion",
               "status": "active",
               "choices": [
                 "zebra",
@@ -6489,7 +5902,6 @@
               "printed_page": 117,
               "type": "mcq",
               "prompt": "The giraffe has a ______ coat.",
-              "answer": "spotted",
               "status": "active",
               "choices": [
                 "striped",
@@ -6504,7 +5916,6 @@
               "printed_page": 117,
               "type": "mcq",
               "prompt": "The elephant ______ its trunk to drink water.",
-              "answer": "uses",
               "status": "active",
               "choices": [
                 "to use",
@@ -6519,7 +5930,6 @@
               "printed_page": 117,
               "type": "mcq",
               "prompt": "Some animals ______ thick fur.",
-              "answer": "have",
               "status": "active",
               "choices": [
                 "does",
@@ -6534,7 +5944,6 @@
               "printed_page": 117,
               "type": "mcq",
               "prompt": "My father works ______ a forest guide at the forest park.",
-              "answer": "as",
               "status": "active",
               "choices": [
                 "in",
@@ -6549,7 +5958,6 @@
               "printed_page": 117,
               "type": "mcq",
               "prompt": "Lions have yellow ______.",
-              "answer": "fur",
               "status": "active",
               "choices": [
                 "trunk",
@@ -6564,7 +5972,6 @@
               "printed_page": 117,
               "type": "reading_mcq",
               "prompt": "The opposite of the underlined word \"large\" is ______.",
-              "answer": "small",
               "status": "active",
               "choices": [
                 "young",
@@ -6579,7 +5986,6 @@
               "printed_page": 117,
               "type": "reading_mcq",
               "prompt": "Elephants use their ______ to drink water.",
-              "answer": "trunk",
               "status": "active",
               "choices": [
                 "teeth",
@@ -6594,12 +6000,7 @@
               "printed_page": 117,
               "type": "reading_open",
               "prompt": "What do elephants eat?",
-              "answer": "Leaves and grass.",
-              "status": "active",
-              "accepted_answers": [
-                "Leaves and grass.",
-                "They eat leaves and grass."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l1-021",
@@ -6607,12 +6008,7 @@
               "printed_page": 117,
               "type": "reading_open",
               "prompt": "Where do elephants live?",
-              "answer": "In Africa and Asia.",
-              "status": "active",
-              "accepted_answers": [
-                "In Africa and Asia.",
-                "They live in Africa and Asia."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l1-022",
@@ -6620,7 +6016,6 @@
               "printed_page": 118,
               "type": "complete",
               "prompt": "My father's job is very interesting. He is a forest ______.",
-              "answer": "guide",
               "status": "active",
               "word_bank": [
                 "climb",
@@ -6636,7 +6031,6 @@
               "printed_page": 118,
               "type": "complete",
               "prompt": "He works in a forest ______.",
-              "answer": "park",
               "status": "active",
               "word_bank": [
                 "climb",
@@ -6652,7 +6046,6 @@
               "printed_page": 118,
               "type": "complete",
               "prompt": "His job is to show ______ the animals.",
-              "answer": "visitors",
               "status": "active",
               "word_bank": [
                 "climb",
@@ -6668,7 +6061,6 @@
               "printed_page": 118,
               "type": "complete",
               "prompt": "Many people visit the forest park to enjoy watching the animals up ______.",
-              "answer": "close",
               "status": "active",
               "word_bank": [
                 "climb",
@@ -6684,7 +6076,6 @@
               "printed_page": 118,
               "type": "punctuation",
               "prompt": "when do lions often hunt",
-              "answer": "When do lions often hunt?",
               "status": "active"
             },
             {
@@ -6693,7 +6084,6 @@
               "printed_page": 118,
               "type": "punctuation",
               "prompt": "the bear has a thick fur",
-              "answer": "The bear has thick fur.",
               "status": "active"
             },
             {
@@ -6702,7 +6092,6 @@
               "printed_page": 118,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"A day at the forest park\" using: animals – elephants – monkeys.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -6718,7 +6107,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Our teacher asked us a question to get our ______.",
-              "answer": "attention",
               "status": "active",
               "choices": [
                 "kindness",
@@ -6733,7 +6121,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Noha faces many ______, so she has a difficult life.",
-              "answer": "challenges",
               "status": "active",
               "choices": [
                 "cities",
@@ -6748,7 +6135,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Who is the ______ of this dog?",
-              "answer": "owner",
               "status": "active",
               "choices": [
                 "challenge",
@@ -6763,7 +6149,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Giraffes need tall trees to ______ their food.",
-              "answer": "reach",
               "status": "active",
               "choices": [
                 "reach",
@@ -6778,7 +6163,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Lions live inside ______ in the zoo.",
-              "answer": "cages",
               "status": "active",
               "choices": [
                 "mountains",
@@ -6793,7 +6177,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "We can help protect animals by showing ______ and caring for them.",
-              "answer": "kindness",
               "status": "active",
               "choices": [
                 "fear",
@@ -6808,7 +6191,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Animals need our help to stay ______.",
-              "answer": "safe",
               "status": "active",
               "choices": [
                 "fast",
@@ -6823,7 +6205,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Elephants need big ______ to move around.",
-              "answer": "space",
               "status": "active",
               "choices": [
                 "food",
@@ -6838,7 +6219,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Vets check animals' ______ to keep them healthy.",
-              "answer": "health",
               "status": "active",
               "choices": [
                 "kindness",
@@ -6853,7 +6233,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Forest ______ work hard to protect animals' homes.",
-              "answer": "officers",
               "status": "active",
               "choices": [
                 "insects",
@@ -6868,7 +6247,6 @@
               "printed_page": 120,
               "type": "mcq",
               "prompt": "Pets need ______ care from their owners.",
-              "answer": "daily",
               "status": "active",
               "choices": [
                 "monthly",
@@ -6883,12 +6261,7 @@
               "printed_page": 121,
               "type": "reading_open",
               "prompt": "Why do lions eat a lot of food?",
-              "answer": "To stay stronger than other animals.",
-              "status": "active",
-              "accepted_answers": [
-                "To stay stronger than other animals.",
-                "They eat a lot to stay stronger than other animals."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l2-013",
@@ -6896,12 +6269,7 @@
               "printed_page": 121,
               "type": "reading_open",
               "prompt": "Why are the homes of wild animals getting smaller?",
-              "answer": "Because of new cities.",
-              "status": "active",
-              "accepted_answers": [
-                "Because of new cities.",
-                "Their homes are getting smaller because of new cities."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l2-014",
@@ -6909,7 +6277,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "Amira is ______ than her sister.",
-              "answer": "younger",
               "status": "active",
               "choices": [
                 "young",
@@ -6924,7 +6291,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "Their life is ______ than before.",
-              "answer": "happier",
               "status": "active",
               "choices": [
                 "happy",
@@ -6939,7 +6305,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "Elephants are heavier ______ lions.",
-              "answer": "than",
               "status": "active",
               "choices": [
                 "there",
@@ -6954,7 +6319,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "The cat is ______ than the mouse.",
-              "answer": "bigger",
               "status": "active",
               "choices": [
                 "big",
@@ -6969,7 +6333,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "Noha is ______ than Nashwa.",
-              "answer": "shorter",
               "status": "active",
               "choices": [
                 "short",
@@ -6984,7 +6347,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "He is ______ than his brother.",
-              "answer": "taller",
               "status": "active",
               "choices": [
                 "tall",
@@ -6999,7 +6361,6 @@
               "printed_page": 123,
               "type": "mcq",
               "prompt": "A zebra is shorter ______ a giraffe.",
-              "answer": "than",
               "status": "active",
               "choices": [
                 "the",
@@ -7014,7 +6375,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "Salma is ______ (old) than Reem.",
-              "answer": "older",
               "status": "active"
             },
             {
@@ -7023,7 +6383,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "Magdy is taller ______ (then) Injy.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -7032,7 +6391,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "Camels are ______ (strong) than goats.",
-              "answer": "stronger",
               "status": "active"
             },
             {
@@ -7041,7 +6399,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "Sally is ______ (lazy) than Rana.",
-              "answer": "lazier",
               "status": "active"
             },
             {
@@ -7050,7 +6407,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "Fruit is ______ (healthy) than sweets.",
-              "answer": "healthier",
               "status": "active"
             },
             {
@@ -7059,7 +6415,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "English is ______ (easy) than Arabic.",
-              "answer": "easier",
               "status": "active"
             },
             {
@@ -7068,7 +6423,6 @@
               "printed_page": 123,
               "type": "correct_form",
               "prompt": "The cat is ______ (small) than the dog.",
-              "answer": "smaller",
               "status": "active"
             },
             {
@@ -7077,7 +6431,6 @@
               "printed_page": 124,
               "type": "mcq",
               "prompt": "My cat is ______ than my neighbor's cat.",
-              "answer": "fatter",
               "status": "active",
               "choices": [
                 "fat",
@@ -7092,7 +6445,6 @@
               "printed_page": 124,
               "type": "mcq",
               "prompt": "Some animals like lions and tigers live in the ______.",
-              "answer": "wild",
               "status": "active",
               "choices": [
                 "sea",
@@ -7107,7 +6459,6 @@
               "printed_page": 124,
               "type": "mcq",
               "prompt": "Asser is taller ______ his brother.",
-              "answer": "than",
               "status": "active",
               "choices": [
                 "the",
@@ -7122,7 +6473,6 @@
               "printed_page": 124,
               "type": "mcq",
               "prompt": "Showing ______ to animals can protect them.",
-              "answer": "kindness",
               "status": "active",
               "choices": [
                 "crops",
@@ -7137,7 +6487,6 @@
               "printed_page": 124,
               "type": "mcq",
               "prompt": "Rabbits are ______ than turtles.",
-              "answer": "faster",
               "status": "active",
               "choices": [
                 "as fast",
@@ -7152,7 +6501,6 @@
               "printed_page": 124,
               "type": "mcq",
               "prompt": "Babies need special ______ to stay safe.",
-              "answer": "attention",
               "status": "active",
               "choices": [
                 "attention",
@@ -7167,7 +6515,6 @@
               "printed_page": 124,
               "type": "complete",
               "prompt": "Wild animals face different challenges. Their ______ are getting smaller because of new cities.",
-              "answer": "homes",
               "status": "active",
               "word_bank": [
                 "protect",
@@ -7183,7 +6530,6 @@
               "printed_page": 124,
               "type": "complete",
               "prompt": "They need ______ water and safe places to live in.",
-              "answer": "clean",
               "status": "active",
               "word_bank": [
                 "protect",
@@ -7199,7 +6545,6 @@
               "printed_page": 124,
               "type": "complete",
               "prompt": "Forest ______ now work harder than before to protect these animals and their homes.",
-              "answer": "officers",
               "status": "active",
               "word_bank": [
                 "protect",
@@ -7215,7 +6560,6 @@
               "printed_page": 124,
               "type": "complete",
               "prompt": "Everyone can help protect animals in simple ways.",
-              "answer": "protect",
               "status": "active",
               "word_bank": [
                 "protect",
@@ -7231,7 +6575,6 @@
               "printed_page": 124,
               "type": "correct_form",
               "prompt": "My grandfather is ______ (old) than my father.",
-              "answer": "older",
               "status": "active"
             },
             {
@@ -7240,7 +6583,6 @@
               "printed_page": 124,
               "type": "correct_form",
               "prompt": "She is shorter ______ (the) her sister.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -7249,7 +6591,6 @@
               "printed_page": 124,
               "type": "correct_form",
               "prompt": "Elephants are ______ (big) than monkeys.",
-              "answer": "bigger",
               "status": "active"
             },
             {
@@ -7258,7 +6599,6 @@
               "printed_page": 124,
               "type": "correct_form",
               "prompt": "Cats are ______ (safe) than lions.",
-              "answer": "safer",
               "status": "active"
             },
             {
@@ -7267,7 +6607,6 @@
               "printed_page": 124,
               "type": "punctuation",
               "prompt": "he keeps a rabbit at home",
-              "answer": "He keeps a rabbit at home.",
               "status": "active"
             },
             {
@@ -7276,7 +6615,6 @@
               "printed_page": 124,
               "type": "punctuation",
               "prompt": "how do vets help animals",
-              "answer": "How do vets help animals?",
               "status": "active"
             },
             {
@@ -7285,7 +6623,6 @@
               "printed_page": 125,
               "type": "reading_mcq",
               "prompt": "Giraffes need taller ______.",
-              "answer": "trees",
               "status": "active",
               "choices": [
                 "seats",
@@ -7300,7 +6637,6 @@
               "printed_page": 125,
               "type": "reading_mcq",
               "prompt": "Elephants need ______ spaces than monkeys.",
-              "answer": "bigger",
               "status": "active",
               "choices": [
                 "smaller",
@@ -7315,12 +6651,7 @@
               "printed_page": 125,
               "type": "reading_open",
               "prompt": "What do zoo animals need?",
-              "answer": "Special attention.",
-              "status": "active",
-              "accepted_answers": [
-                "Special attention.",
-                "Zoo animals need special attention."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l2-047",
@@ -7328,12 +6659,7 @@
               "printed_page": 125,
               "type": "reading_open",
               "prompt": "How can lions stay stronger than others?",
-              "answer": "By eating a lot of food.",
-              "status": "active",
-              "accepted_answers": [
-                "By eating a lot of food.",
-                "They eat a lot of food."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l2-048",
@@ -7341,7 +6667,6 @@
               "printed_page": 125,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Taking care of animals\" using: space – exercise – cages.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
@@ -7357,7 +6682,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "The fox has a ______ tail with soft fur.",
-              "answer": "fluffy",
               "status": "active",
               "choices": [
                 "hard",
@@ -7372,7 +6696,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "To ______ means to act like something is true when it isn't.",
-              "answer": "pretend",
               "status": "active",
               "choices": [
                 "pretend",
@@ -7387,7 +6710,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "The dog ______ down on the ground and slept.",
-              "answer": "lay",
               "status": "active",
               "choices": [
                 "saw",
@@ -7402,7 +6724,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "To ______ means to look for and catch animals for food.",
-              "answer": "hunt",
               "status": "active",
               "choices": [
                 "protect",
@@ -7417,7 +6738,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "______ are marks left by feet.",
-              "answer": "Footprints",
               "status": "active",
               "choices": [
                 "Fingerprints",
@@ -7432,7 +6752,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "The ______ fox understands the lion's trick.",
-              "answer": "wise",
               "status": "active",
               "choices": [
                 "healthy",
@@ -7447,7 +6766,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "A ______ is a large hole in a mountain.",
-              "answer": "cave",
               "status": "active",
               "choices": [
                 "surface",
@@ -7462,7 +6780,6 @@
               "printed_page": 129,
               "type": "mcq",
               "prompt": "We should learn from the ______ of others.",
-              "answer": "mistakes",
               "status": "active",
               "choices": [
                 "mistakes",
@@ -7477,7 +6794,6 @@
               "printed_page": 132,
               "type": "reading_mcq",
               "prompt": "The text is about ______.",
-              "answer": "Old tiger",
               "status": "active",
               "choices": [
                 "Old elephant",
@@ -7492,7 +6808,6 @@
               "printed_page": 132,
               "type": "reading_mcq",
               "prompt": "The opposite of the underlined word \"weak\" is ______.",
-              "answer": "strong",
               "status": "active",
               "choices": [
                 "strong",
@@ -7507,12 +6822,7 @@
               "printed_page": 132,
               "type": "reading_open",
               "prompt": "What did the monkey see?",
-              "answer": "Many footprints going into the cave, but no footprints coming out.",
-              "status": "active",
-              "accepted_answers": [
-                "Footprints going into the cave and none coming out.",
-                "Many footprints going into the cave, but no footprints coming out."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l3-012",
@@ -7520,12 +6830,7 @@
               "printed_page": 132,
               "type": "reading_open",
               "prompt": "Why did the monkey refuse to come inside the cave?",
-              "answer": "Because he saw footprints going in but none coming out.",
-              "status": "active",
-              "accepted_answers": [
-                "Because he saw footprints going in but none coming out.",
-                "He noticed that footprints went in but none came out."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l3-013",
@@ -7533,7 +6838,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "The fox is ______ (wise) than the lion.",
-              "answer": "wiser",
               "status": "active"
             },
             {
@@ -7542,7 +6846,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "Jackets are ______ (heavy) than shirts.",
-              "answer": "heavier",
               "status": "active"
             },
             {
@@ -7551,7 +6854,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "Bears' fur is ______ (thick) than camels' fur.",
-              "answer": "thicker",
               "status": "active"
             },
             {
@@ -7560,7 +6862,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "The cave is larger ______ (that) the hole.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -7569,7 +6870,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "Cities are ______ (noisy) than villages.",
-              "answer": "noisier",
               "status": "active"
             },
             {
@@ -7578,7 +6878,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "My room is ______ (clean) than yours.",
-              "answer": "cleaner",
               "status": "active"
             },
             {
@@ -7587,7 +6886,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "The drum is ______ (loud) than the violin.",
-              "answer": "louder",
               "status": "active"
             },
             {
@@ -7596,7 +6894,6 @@
               "printed_page": 132,
               "type": "correct_form",
               "prompt": "He is kinder to animals ______ (then) his friends.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -7605,7 +6902,6 @@
               "printed_page": 132,
               "type": "punctuation",
               "prompt": "why did the lion trick the animals",
-              "answer": "Why did the lion trick the animals?",
               "status": "active"
             },
             {
@@ -7614,7 +6910,6 @@
               "printed_page": 132,
               "type": "punctuation",
               "prompt": "the lion pretended to be sick",
-              "answer": "The lion pretended to be sick.",
               "status": "active"
             },
             {
@@ -7623,7 +6918,6 @@
               "printed_page": 133,
               "type": "mcq",
               "prompt": "Many animals visited the sick lion in its ______.",
-              "answer": "cave",
               "status": "active",
               "choices": [
                 "design",
@@ -7638,7 +6932,6 @@
               "printed_page": 133,
               "type": "mcq",
               "prompt": "The lion is ______ than the rabbit.",
-              "answer": "stronger",
               "status": "active",
               "choices": [
                 "as strong",
@@ -7653,7 +6946,6 @@
               "printed_page": 133,
               "type": "mcq",
               "prompt": "The cat is ______ than the fox.",
-              "answer": "nicer",
               "status": "active",
               "choices": [
                 "nicer",
@@ -7668,7 +6960,6 @@
               "printed_page": 133,
               "type": "mcq",
               "prompt": "The lion tricked the animals and ______ to be sick.",
-              "answer": "pretended",
               "status": "active",
               "choices": [
                 "remembered",
@@ -7683,7 +6974,6 @@
               "printed_page": 133,
               "type": "mcq",
               "prompt": "My father is ______ than me.",
-              "answer": "wiser",
               "status": "active",
               "choices": [
                 "as wise",
@@ -7698,7 +6988,6 @@
               "printed_page": 133,
               "type": "mcq",
               "prompt": "A ______ is a small, quick animal with red-brown fur.",
-              "answer": "fox",
               "status": "active",
               "choices": [
                 "zebra",
@@ -7713,7 +7002,6 @@
               "printed_page": 133,
               "type": "complete",
               "prompt": "The old lion ______ to be very sick.",
-              "answer": "pretended",
               "status": "active",
               "word_bank": [
                 "mistakes",
@@ -7729,7 +7017,6 @@
               "printed_page": 133,
               "type": "complete",
               "prompt": "Many animals came into the lion's ______ to visit him but they didn't ______.",
-              "answer": "cave",
               "status": "active",
               "word_bank": [
                 "mistakes",
@@ -7745,7 +7032,6 @@
               "printed_page": 133,
               "type": "complete",
               "prompt": "Many animals came into the lion's cave to visit him but they didn't ______.",
-              "answer": "come out",
               "status": "active",
               "word_bank": [
                 "mistakes",
@@ -7761,7 +7047,6 @@
               "printed_page": 133,
               "type": "complete",
               "prompt": "He learned from the ______ of others.",
-              "answer": "mistakes",
               "status": "active",
               "word_bank": [
                 "mistakes",
@@ -7784,7 +7069,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "There are many ______ of birds.",
-              "answer": "species",
               "status": "active",
               "choices": [
                 "species",
@@ -7799,7 +7083,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "A little water ______ in the bottle.",
-              "answer": "remains",
               "status": "active",
               "choices": [
                 "stops",
@@ -7814,7 +7097,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "The ______ is a big wild cat.",
-              "answer": "leopard",
               "status": "active",
               "choices": [
                 "bear",
@@ -7829,7 +7111,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "The Red Sea ______ is an endangered animal.",
-              "answer": "Dugong",
               "status": "active",
               "choices": [
                 "Coast",
@@ -7844,7 +7125,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "Animals are in ______ because of pollution.",
-              "answer": "danger",
               "status": "active",
               "choices": [
                 "danger",
@@ -7859,7 +7139,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "Some animals are in danger of ______ forever.",
-              "answer": "disappearing",
               "status": "active",
               "choices": [
                 "growing",
@@ -7874,7 +7153,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "Fishermen catch dugongs in their fishing ______.",
-              "answer": "nets",
               "status": "active",
               "choices": [
                 "trains",
@@ -7889,7 +7167,6 @@
               "printed_page": 135,
               "type": "mcq",
               "prompt": "We need to create safe ______ to help endangered animals.",
-              "answer": "areas",
               "status": "active",
               "choices": [
                 "grass",
@@ -7904,7 +7181,6 @@
               "printed_page": 138,
               "type": "true_false",
               "prompt": "Many animals are in danger of disappearing forever.",
-              "answer": null,
               "status": "inactive_missing_answer_key"
             },
             {
@@ -7913,7 +7189,6 @@
               "printed_page": 138,
               "type": "mcq",
               "prompt": "People work hard to create safe places for ______ animals.",
-              "answer": "endangered",
               "status": "active",
               "choices": [
                 "deep",
@@ -7928,7 +7203,6 @@
               "printed_page": 138,
               "type": "mcq",
               "prompt": "The ______ is a gentle sea animal.",
-              "answer": "dugong",
               "status": "active",
               "choices": [
                 "bear",
@@ -7943,7 +7217,6 @@
               "printed_page": 138,
               "type": "mcq",
               "prompt": "After lunch, little food ______ in the dishes.",
-              "answer": "remains",
               "status": "active",
               "choices": [
                 "remains",
@@ -7958,7 +7231,6 @@
               "printed_page": 138,
               "type": "mcq",
               "prompt": "She is ______ than her brother.",
-              "answer": "faster",
               "status": "active",
               "choices": [
                 "fast",
@@ -7973,7 +7245,6 @@
               "printed_page": 138,
               "type": "mcq",
               "prompt": "The red dress is longer ______ the blue one.",
-              "answer": "than",
               "status": "active",
               "choices": [
                 "than",
@@ -7988,7 +7259,6 @@
               "printed_page": 138,
               "type": "mcq",
               "prompt": "My cousin is ______ than my brother.",
-              "answer": "younger",
               "status": "active",
               "choices": [
                 "youngest",
@@ -8003,7 +7273,6 @@
               "printed_page": 138,
               "type": "complete",
               "prompt": "The Red Sea Dugong is an endangered animal in Egypt. These gentle sea animals eat sea ______.",
-              "answer": "grass",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -8019,7 +7288,6 @@
               "printed_page": 138,
               "type": "complete",
               "prompt": "They are in danger because of ______ and fishing nets.",
-              "answer": "pollution",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -8035,7 +7303,6 @@
               "printed_page": 138,
               "type": "complete",
               "prompt": "To help these ______, we need to protect their homes and ______ pollution.",
-              "answer": "animals",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -8051,7 +7318,6 @@
               "printed_page": 138,
               "type": "complete",
               "prompt": "To help these animals, we need to protect their homes and ______ pollution.",
-              "answer": "stop",
               "status": "active",
               "word_bank": [
                 "stop",
@@ -8067,7 +7333,6 @@
               "printed_page": 138,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"The Red Sea Dugong\" using: sea grass – in danger – pollution.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             },
             {
@@ -8076,7 +7341,6 @@
               "printed_page": 139,
               "type": "reading_mcq",
               "prompt": "Some animals are in danger because of ______.",
-              "answer": "cutting down trees and hunting animals",
               "status": "active",
               "choices": [
                 "planting trees",
@@ -8091,7 +7355,6 @@
               "printed_page": 139,
               "type": "reading_mcq",
               "prompt": "______ is an example of endangered animals.",
-              "answer": "Giant panda",
               "status": "active",
               "choices": [
                 "Dog",
@@ -8106,12 +7369,7 @@
               "printed_page": 139,
               "type": "reading_open",
               "prompt": "Where are many animals endangered?",
-              "answer": "Around the world.",
-              "status": "active",
-              "accepted_answers": [
-                "Around the world.",
-                "Many animals around the world are endangered."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l4-024",
@@ -8119,12 +7377,7 @@
               "printed_page": 139,
               "type": "reading_open",
               "prompt": "How can we protect endangered animals?",
-              "answer": "By protecting their homes, planting trees, keeping the environment clean and not hunting them.",
-              "status": "active",
-              "accepted_answers": [
-                "By protecting their homes, planting trees, keeping the environment clean and not hunting them.",
-                "Protect their homes, plant trees, keep the environment clean and don't hunt them."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3l4-025",
@@ -8132,7 +7385,6 @@
               "printed_page": 139,
               "type": "correct_form",
               "prompt": "Today is ______ (hot) than yesterday.",
-              "answer": "hotter",
               "status": "active"
             },
             {
@@ -8141,7 +7393,6 @@
               "printed_page": 139,
               "type": "correct_form",
               "prompt": "Bears are ______ (big) than lions today.",
-              "answer": "bigger",
               "status": "active"
             },
             {
@@ -8150,7 +7401,6 @@
               "printed_page": 139,
               "type": "correct_form",
               "prompt": "Amany is ______ (smart) than her sister.",
-              "answer": "smarter",
               "status": "active"
             },
             {
@@ -8159,7 +7409,6 @@
               "printed_page": 139,
               "type": "correct_form",
               "prompt": "Arabic is ______ (easy) than French.",
-              "answer": "easier",
               "status": "active"
             },
             {
@@ -8168,7 +7417,6 @@
               "printed_page": 141,
               "type": "reading_mcq",
               "prompt": "The Red Sea Dugong lives in ______.",
-              "answer": "Egypt",
               "status": "active",
               "choices": [
                 "China",
@@ -8183,7 +7431,6 @@
               "printed_page": 141,
               "type": "reading_mcq",
               "prompt": "The Red Sea Dugong eats ______.",
-              "answer": "sea grass",
               "status": "active",
               "choices": [
                 "small insects",
@@ -8198,7 +7445,6 @@
               "printed_page": 141,
               "type": "reading_mcq",
               "prompt": "The Red Sea Dugong is in danger because of ______.",
-              "answer": "pollution",
               "status": "active",
               "choices": [
                 "clean water",
@@ -8220,7 +7466,6 @@
               "printed_page": 147,
               "type": "reorder",
               "prompt": "striped - The zebra - coat - has",
-              "answer": "The zebra has a striped coat.",
               "status": "active"
             },
             {
@@ -8229,7 +7474,6 @@
               "printed_page": 147,
               "type": "reorder",
               "prompt": "has - a long - The monkey - tail",
-              "answer": "The monkey has a long tail.",
               "status": "active"
             },
             {
@@ -8238,7 +7482,6 @@
               "printed_page": 147,
               "type": "reorder",
               "prompt": "is - and - big - The elephant - gray",
-              "answer": "The elephant is big and gray.",
               "status": "active"
             },
             {
@@ -8247,7 +7490,6 @@
               "printed_page": 148,
               "type": "mcq",
               "prompt": "Teachers give some ______ to students to study well.",
-              "answer": "advice",
               "status": "active",
               "choices": [
                 "habits",
@@ -8262,7 +7504,6 @@
               "printed_page": 148,
               "type": "mcq",
               "prompt": "I take my cat to the ______ to check its health.",
-              "answer": "vet",
               "status": "active",
               "choices": [
                 "engineer",
@@ -8277,7 +7518,6 @@
               "printed_page": 148,
               "type": "mcq",
               "prompt": "Elephants are ______ than lions.",
-              "answer": "bigger",
               "status": "active",
               "choices": [
                 "big",
@@ -8292,7 +7532,6 @@
               "printed_page": 148,
               "type": "mcq",
               "prompt": "No one in the class is ______ than Hatem.",
-              "answer": "smarter",
               "status": "active",
               "choices": [
                 "smarter",
@@ -8307,7 +7546,6 @@
               "printed_page": 148,
               "type": "mcq",
               "prompt": "My bag is heavier ______ my sister's bag.",
-              "answer": "than",
               "status": "active",
               "choices": [
                 "that",
@@ -8322,7 +7560,6 @@
               "printed_page": 148,
               "type": "mcq",
               "prompt": "The lion stays in a strong ______ at the zoo for safety.",
-              "answer": "cage",
               "status": "active",
               "choices": [
                 "river",
@@ -8337,7 +7574,6 @@
               "printed_page": 148,
               "type": "complete",
               "prompt": "Everyone can help protect animals in simple ways. Small acts of ______ make our world better.",
-              "answer": "kindness",
               "status": "active",
               "word_bank": [
                 "kindness",
@@ -8353,7 +7589,6 @@
               "printed_page": 148,
               "type": "complete",
               "prompt": "When we ______ for animals, we create a safe place for them.",
-              "answer": "care",
               "status": "active",
               "word_bank": [
                 "kindness",
@@ -8369,7 +7604,6 @@
               "printed_page": 148,
               "type": "complete",
               "prompt": "Being kind to ______ teaches us to be better people.",
-              "answer": "animals",
               "status": "active",
               "word_bank": [
                 "kindness",
@@ -8385,7 +7619,6 @@
               "printed_page": 148,
               "type": "complete",
               "prompt": "Together, we can make their lives ______ and healthier.",
-              "answer": "happier",
               "status": "active",
               "word_bank": [
                 "kindness",
@@ -8401,7 +7634,6 @@
               "printed_page": 149,
               "type": "reading_mcq",
               "prompt": "Animals need our help to stay ______ and safe.",
-              "answer": "healthy",
               "status": "active",
               "choices": [
                 "sad",
@@ -8416,7 +7648,6 @@
               "printed_page": 149,
               "type": "reading_mcq",
               "prompt": "The underlined pronoun \"They\" refers to ______.",
-              "answer": "pets",
               "status": "active",
               "choices": [
                 "zoo animals",
@@ -8431,12 +7662,7 @@
               "printed_page": 149,
               "type": "reading_open",
               "prompt": "What do pets need?",
-              "answer": "Daily care from their owners.",
-              "status": "active",
-              "accepted_answers": [
-                "Daily care from their owners.",
-                "Pets need daily care from their owners."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3r-017",
@@ -8444,12 +7670,7 @@
               "printed_page": 149,
               "type": "reading_open",
               "prompt": "Where do animals live?",
-              "answer": "In the wild, zoos or homes.",
-              "status": "active",
-              "accepted_answers": [
-                "In the wild, zoos or homes.",
-                "They live in the wild, zoos or homes."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3r-018",
@@ -8457,7 +7678,6 @@
               "printed_page": 149,
               "type": "correct_form",
               "prompt": "The factory is ______ (big) than the museum.",
-              "answer": "bigger",
               "status": "active"
             },
             {
@@ -8466,7 +7686,6 @@
               "printed_page": 149,
               "type": "correct_form",
               "prompt": "Adam is ______ (strong) than his little brother.",
-              "answer": "stronger",
               "status": "active"
             },
             {
@@ -8475,7 +7694,6 @@
               "printed_page": 149,
               "type": "correct_form",
               "prompt": "His house is bigger ______ (the) mine.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -8484,7 +7702,6 @@
               "printed_page": 149,
               "type": "correct_form",
               "prompt": "Flowers are ______ (pretty) than grass.",
-              "answer": "prettier",
               "status": "active"
             },
             {
@@ -8493,7 +7710,6 @@
               "printed_page": 149,
               "type": "punctuation",
               "prompt": "the weather today is colder than yesterday",
-              "answer": "The weather today is colder than yesterday.",
               "status": "active"
             },
             {
@@ -8502,7 +7718,6 @@
               "printed_page": 149,
               "type": "punctuation",
               "prompt": "how did the fox know it was in danger",
-              "answer": "How did the fox know it was in danger?",
               "status": "active"
             },
             {
@@ -8511,7 +7726,6 @@
               "printed_page": 149,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Forest animals\" using: big – lion – strong.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             },
             {
@@ -8520,7 +7734,6 @@
               "printed_page": 150,
               "type": "mcq",
               "prompt": "Rabbits eat fresh ______.",
-              "answer": "vegetables",
               "status": "active",
               "choices": [
                 "fruits",
@@ -8535,7 +7748,6 @@
               "printed_page": 150,
               "type": "mcq",
               "prompt": "I take my dog to the ______ to check its health.",
-              "answer": "vet",
               "status": "active",
               "choices": [
                 "vet",
@@ -8550,7 +7762,6 @@
               "printed_page": 150,
               "type": "mcq",
               "prompt": "Giraffes eat green ______.",
-              "answer": "leaves",
               "status": "active",
               "choices": [
                 "fish",
@@ -8565,7 +7776,6 @@
               "printed_page": 150,
               "type": "mcq",
               "prompt": "The dogs are ______ than the cats.",
-              "answer": "fitter",
               "status": "active",
               "choices": [
                 "fit",
@@ -8580,7 +7790,6 @@
               "printed_page": 150,
               "type": "mcq",
               "prompt": "The bear is ______ than the fox.",
-              "answer": "bigger",
               "status": "active",
               "choices": [
                 "biggest",
@@ -8595,7 +7804,6 @@
               "printed_page": 150,
               "type": "mcq",
               "prompt": "My room is ______ than your room.",
-              "answer": "cleaner",
               "status": "active",
               "choices": [
                 "clean",
@@ -8610,7 +7818,6 @@
               "printed_page": 150,
               "type": "complete",
               "prompt": "Yesterday, I went to the forest park with my family. We saw elephants drinking water. They use their ______ to spray water on their bodies.",
-              "answer": "trunks",
               "status": "active",
               "word_bank": [
                 "monkeys",
@@ -8626,7 +7833,6 @@
               "printed_page": 150,
               "type": "complete",
               "prompt": "We also saw ______.",
-              "answer": "monkeys",
               "status": "active",
               "word_bank": [
                 "monkeys",
@@ -8642,7 +7848,6 @@
               "printed_page": 150,
               "type": "complete",
               "prompt": "Monkeys are small and have long ______.",
-              "answer": "tails",
               "status": "active",
               "word_bank": [
                 "monkeys",
@@ -8658,7 +7863,6 @@
               "printed_page": 150,
               "type": "complete",
               "prompt": "They ______ trees.",
-              "answer": "climb",
               "status": "active",
               "word_bank": [
                 "monkeys",
@@ -8674,7 +7878,6 @@
               "printed_page": 151,
               "type": "reading_mcq",
               "prompt": "Soha didn't like the ______.",
-              "answer": "lions",
               "status": "active",
               "choices": [
                 "giraffes",
@@ -8689,7 +7892,6 @@
               "printed_page": 151,
               "type": "reading_mcq",
               "prompt": "The elephant used its ______ to spray water on its body.",
-              "answer": "trunk",
               "status": "active",
               "choices": [
                 "trunk",
@@ -8704,12 +7906,7 @@
               "printed_page": 151,
               "type": "reading_open",
               "prompt": "When did Soha visit the zoo?",
-              "answer": "Yesterday.",
-              "status": "active",
-              "accepted_answers": [
-                "Yesterday.",
-                "She visited the zoo yesterday."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3r-038",
@@ -8717,12 +7914,7 @@
               "printed_page": 151,
               "type": "reading_open",
               "prompt": "Who enjoyed watching the monkeys?",
-              "answer": "Khaled.",
-              "status": "active",
-              "accepted_answers": [
-                "Khaled.",
-                "Khaled enjoyed watching the monkeys."
-              ]
+              "status": "active"
             },
             {
               "id": "elm-u3r-039",
@@ -8730,7 +7922,6 @@
               "printed_page": 151,
               "type": "correct_form",
               "prompt": "Sama is ______ (lazy) than Hana.",
-              "answer": "lazier",
               "status": "active"
             },
             {
@@ -8739,7 +7930,6 @@
               "printed_page": 151,
               "type": "correct_form",
               "prompt": "Oceans are larger ______ (then) seas.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -8748,7 +7938,6 @@
               "printed_page": 151,
               "type": "correct_form",
               "prompt": "The music is ______ (loud) than the conversation.",
-              "answer": "louder",
               "status": "active"
             },
             {
@@ -8757,7 +7946,6 @@
               "printed_page": 151,
               "type": "correct_form",
               "prompt": "Rami is taller ______ (then) Marwan.",
-              "answer": "than",
               "status": "active"
             },
             {
@@ -8766,7 +7954,6 @@
               "printed_page": 151,
               "type": "punctuation",
               "prompt": "what do giraffes eat",
-              "answer": "What do giraffes eat?",
               "status": "active"
             },
             {
@@ -8775,7 +7962,6 @@
               "printed_page": 151,
               "type": "punctuation",
               "prompt": "i am a student in grade four",
-              "answer": "I am a student in grade four.",
               "status": "active"
             },
             {
@@ -8784,7 +7970,6 @@
               "printed_page": 151,
               "type": "writing",
               "prompt": "Write a paragraph of FOUR sentences about \"Your favorite animal\" using: monkey – climbs trees – animal.",
-              "answer": null,
               "status": "inactive_no_model_answer"
             }
           ],
