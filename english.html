@@ -131,8 +131,8 @@ async function submitAnswer(timedOut){
  if(timedOut&&!studentAnswer)studentAnswer='';
  document.querySelectorAll('#testArea button,#testArea textarea').forEach(x=>x.disabled=true);submitMsg.innerHTML='<div class="submitted">Answer saved. Checking...</div>';
  let correct=false;
- try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subject:'English',module:q.module,id:q.id,studentAnswer,studyLanguage:'English'})});const j=await r.json();correct=!!j.correct}catch(e){}
- answers.push({module:q.module,lessonTitle:q.moduleTitle,questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer:q.answer,correct,timedOut:!!timedOut});
+ try{const r=await fetch('/api/grade',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+session.access_token},body:JSON.stringify({subject:'English',module:q.module,id:q.id,childId:child.id,studentAnswer,studyLanguage:'English'})});const j=await r.json();correct=!!j.correct;correctAnswer=j.correctAnswer||''}catch(e){}
+ answers.push({module:q.module,lessonTitle:q.moduleTitle,questionId:q.id,type:q.type,question:q.text,studentAnswer,correctAnswer,correct,timedOut:!!timedOut});
  setTimeout(()=>{idx++;if(idx<test.length)renderQuestion();else finishTest()},350);
 }
 async function finishTest(){
