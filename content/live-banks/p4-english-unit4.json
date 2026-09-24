@@ -6,7 +6,8 @@
   "track": "languages",
   "unit": 4,
   "sources": [
-    "Bit by Bit English Primary 4 First Term 2027"
+    "Bit by Bit English Primary 4 First Term 2027",
+    "Bit by Bit Review 2 — Units 4 & 5"
   ],
   "coverage": "verified_uploaded_source",
   "modules": [
@@ -428,6 +429,102 @@
               "source": "Bit by Bit",
               "page": 119,
               "id": "bbb-u4l1-020"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l1-q021",
+          "type": "listening_true_false",
+          "text": "Many people ride camels near the Pyramids.",
+          "answer": "True",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 4,
+            "lesson": 1
+          },
+          "choices": [
+            "True",
+            "False"
+          ],
+          "listening_script_page": 191,
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-001"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l1-q022",
+          "type": "listening_true_false",
+          "text": "Many people can visit the Egyptian Museum.",
+          "answer": "True",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 4,
+            "lesson": 1
+          },
+          "choices": [
+            "True",
+            "False"
+          ],
+          "listening_script_page": 191,
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-002"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l1-q023",
+          "type": "listening_true_false",
+          "text": "The Egyptian Museum has many gifts to see.",
+          "answer": "False",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 4,
+            "lesson": 1
+          },
+          "choices": [
+            "True",
+            "False"
+          ],
+          "listening_script_page": 191,
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-003"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l1-q024",
+          "type": "listening_true_false",
+          "text": "The Egyptian Museum has a lot of history.",
+          "answer": "True",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 4,
+            "lesson": 1
+          },
+          "choices": [
+            "True",
+            "False"
+          ],
+          "listening_script_page": 191,
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-004"
             }
           ]
         }
@@ -970,6 +1067,50 @@
               "source": "Bit by Bit",
               "page": 127,
               "id": "bbb-u4l2-030"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l2-q029",
+          "type": "mcq",
+          "text": "The house is ______ the tree and the school.",
+          "answer": "between",
+          "source_page": 187,
+          "status": "active",
+          "assign": {
+            "unit": 4,
+            "lesson": 2
+          },
+          "choices": [
+            "on",
+            "between",
+            "in front",
+            "next"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 187,
+              "id": "bbb-r2-009"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l2-q030",
+          "type": "correct_form",
+          "text": "The ball is ______ (next) the table.",
+          "answer": "next to",
+          "source_page": 188,
+          "status": "active",
+          "assign": {
+            "unit": 4,
+            "lesson": 2
+          },
+          "source_refs": [
+            {
+              "source": "Bit by Bit Review 2",
+              "page": 188,
+              "id": "bbb-r2-023"
             }
           ]
         }
