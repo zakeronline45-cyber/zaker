@@ -29,7 +29,6 @@
           "id": "p4-math-1-q1",
           "type": "mcq",
           "text": "What is the value of the digit 8 in 583,460,905?",
-          "answer": "80,000,000",
           "difficulty": "easy",
           "choices": [
             "8,000",
@@ -42,14 +41,12 @@
           "id": "p4-math-1-q2",
           "type": "complete",
           "text": "Complete: 1,000,000 is one ______.",
-          "answer": "million",
           "difficulty": "easy"
         },
         {
           "id": "p4-math-1-q3",
           "type": "solve",
           "text": "State the digit in the ten-millions place of 3,418,079,265.",
-          "answer": "1",
           "difficulty": "medium"
         }
       ]
@@ -76,21 +73,18 @@
           "id": "p4-math-2-q1",
           "type": "solve",
           "text": "Write 1,000,000 + 200,000 + 30,000 + 400 + 5 in standard form.",
-          "answer": "1,230,405",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-2-q2",
           "type": "complete",
           "text": "Write 45,006 in expanded form.",
-          "answer": "40,000 + 5,000 + 6",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-2-q3",
           "type": "mcq",
           "text": "Which is the word form of 102,004?",
-          "answer": "one hundred two thousand four",
           "difficulty": "medium",
           "choices": [
             "one hundred two thousand four",
@@ -123,14 +117,12 @@
           "id": "p4-math-3-q1",
           "type": "solve",
           "text": "Decompose 326,405 by place value.",
-          "answer": "300,000 + 20,000 + 6,000 + 400 + 5",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-3-q2",
           "type": "mcq",
           "text": "Which composition equals 70,305?",
-          "answer": "70,000 + 300 + 5",
           "difficulty": "medium",
           "choices": [
             "70,000 + 300 + 5",
@@ -143,14 +135,12 @@
           "id": "p4-math-3-q3",
           "type": "complete",
           "text": "Complete: 500,000 + 9,000 + 80 = ______.",
-          "answer": "509,080",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-3-q4",
           "type": "problem",
           "text": "Give a second valid decomposition of 4,000 using thousands and hundreds.",
-          "answer": "3,000 + 1,000 (or another equivalent decomposition)",
           "difficulty": "medium"
         }
       ]
@@ -177,7 +167,6 @@
           "id": "p4-math-4-q1",
           "type": "mcq",
           "text": "501,326 ____ 501,236",
-          "answer": ">",
           "difficulty": "medium",
           "choices": [
             ">",
@@ -190,14 +179,12 @@
           "id": "p4-math-4-q2",
           "type": "solve",
           "text": "Which is greater: 650,201 or 605,210?",
-          "answer": "650,201",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-4-q3",
           "type": "complete",
           "text": "9,999 ____ 10,000",
-          "answer": "<",
           "difficulty": "medium"
         }
       ]
@@ -224,14 +211,12 @@
           "id": "p4-math-5-q1",
           "type": "solve",
           "text": "Arrange 56,210; 506,021; 43,692 from least to greatest.",
-          "answer": "43,692; 56,210; 506,021",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-5-q2",
           "type": "mcq",
           "text": "Which list is descending?",
-          "answer": "900, 700, 200",
           "difficulty": "medium",
           "choices": [
             "200, 700, 900",
@@ -244,7 +229,6 @@
           "id": "p4-math-5-q3",
           "type": "complete",
           "text": "Ascending means from ______ to greatest.",
-          "answer": "least",
           "difficulty": "medium"
         }
       ]
@@ -271,14 +255,12 @@
           "id": "p4-math-6-q1",
           "type": "solve",
           "text": "Round 47,638 to the nearest thousand.",
-          "answer": "48,000",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-6-q2",
           "type": "mcq",
           "text": "Round 6,449 to the nearest hundred.",
-          "answer": "6,400",
           "difficulty": "medium",
           "choices": [
             "6,400",
@@ -291,7 +273,6 @@
           "id": "p4-math-6-q3",
           "type": "true_false",
           "text": "When rounding to the nearest ten, a ones digit of 5 rounds up.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -322,7 +303,6 @@
           "id": "p4-math-7-q1",
           "type": "mcq",
           "text": "35 + 12 = 12 + 35",
-          "answer": "Commutative property",
           "difficulty": "medium",
           "choices": [
             "Commutative property",
@@ -335,14 +315,12 @@
           "id": "p4-math-7-q2",
           "type": "complete",
           "text": "48 + 0 = ______.",
-          "answer": "48",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-7-q3",
           "type": "true_false",
           "text": "(2 + 3) + 4 = 2 + (3 + 4) shows the associative property.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -373,21 +351,18 @@
           "id": "p4-math-8-q1",
           "type": "solve",
           "text": "43,826 + 25,095 = ______.",
-          "answer": "68,921",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-8-q2",
           "type": "solve",
           "text": "61,072 + 9,838 = ______.",
-          "answer": "70,910",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-8-q3",
           "type": "mcq",
           "text": "30,000 + 829 = ______.",
-          "answer": "30,829",
           "difficulty": "medium",
           "choices": [
             "30,829",
@@ -400,7 +375,6 @@
           "id": "p4-math-8-q4",
           "type": "problem",
           "text": "A library has 18,450 books and receives 3,275 more. How many books now?",
-          "answer": "21,725",
           "difficulty": "medium"
         }
       ]
@@ -427,21 +401,18 @@
           "id": "p4-math-9-q1",
           "type": "solve",
           "text": "54,275 - 32,938 = ______.",
-          "answer": "21,337",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-9-q2",
           "type": "solve",
           "text": "8,762 - 7,648 = ______.",
-          "answer": "1,114",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-9-q3",
           "type": "mcq",
           "text": "90,000 - 8,500 = ______.",
-          "answer": "81,500",
           "difficulty": "medium",
           "choices": [
             "81,500",
@@ -454,7 +425,6 @@
           "id": "p4-math-9-q4",
           "type": "problem",
           "text": "A store had 25,000 items and sold 7,860. How many remain?",
-          "answer": "17,140",
           "difficulty": "medium"
         }
       ]
@@ -481,14 +451,12 @@
           "id": "p4-math-10-q1",
           "type": "problem",
           "text": "Mona has 35 stickers. She gets x more and now has 52. Find x.",
-          "answer": "17",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-10-q2",
           "type": "mcq",
           "text": "35 + x = 52; x = ______.",
-          "answer": "17",
           "difficulty": "medium",
           "choices": [
             "17",
@@ -501,7 +469,6 @@
           "id": "p4-math-10-q3",
           "type": "complete",
           "text": "A letter such as x can represent an ______ quantity.",
-          "answer": "unknown",
           "difficulty": "medium"
         }
       ]
@@ -528,21 +495,18 @@
           "id": "p4-math-11-q1",
           "type": "problem",
           "text": "A shop sold 1,250 items Monday and 980 Tuesday, then 300 were returned. Net sold?",
-          "answer": "1,930",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-11-q2",
           "type": "solve",
           "text": "(50 - 36) + (4 × 3) = ______.",
-          "answer": "26",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-11-q3",
           "type": "mcq",
           "text": "Which should be done first in 4,000 + 700 - 250?",
-          "answer": "4,000 + 700",
           "difficulty": "medium",
           "choices": [
             "4,000 + 700",
@@ -575,7 +539,6 @@
           "id": "p4-math-12-q1",
           "type": "mcq",
           "text": "Which unit is most suitable for the length of a pencil?",
-          "answer": "centimeter",
           "difficulty": "medium",
           "choices": [
             "centimeter",
@@ -588,21 +551,18 @@
           "id": "p4-math-12-q2",
           "type": "complete",
           "text": "1 meter = ______ centimeters.",
-          "answer": "100",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-12-q3",
           "type": "solve",
           "text": "3 m 25 cm = ______ cm.",
-          "answer": "325",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-12-q4",
           "type": "problem",
           "text": "A ribbon is 2 m long. How many centimeters?",
-          "answer": "200 cm",
           "difficulty": "medium"
         }
       ]
@@ -629,7 +589,6 @@
           "id": "p4-math-13-q1",
           "type": "mcq",
           "text": "Which unit is suitable for the mass of a school bag?",
-          "answer": "kilogram",
           "difficulty": "medium",
           "choices": [
             "kilogram",
@@ -642,21 +601,18 @@
           "id": "p4-math-13-q2",
           "type": "complete",
           "text": "1 kilogram = ______ grams.",
-          "answer": "1000",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-13-q3",
           "type": "solve",
           "text": "2 kg 300 g = ______ g.",
-          "answer": "2300",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-13-q4",
           "type": "problem",
           "text": "A box has a mass of 4 kg. What is it in grams?",
-          "answer": "4000 g",
           "difficulty": "medium"
         }
       ]
@@ -683,7 +639,6 @@
           "id": "p4-math-14-q1",
           "type": "mcq",
           "text": "Which unit is suitable for a bottle of water?",
-          "answer": "liter",
           "difficulty": "medium",
           "choices": [
             "liter",
@@ -696,21 +651,18 @@
           "id": "p4-math-14-q2",
           "type": "complete",
           "text": "1 liter = ______ milliliters.",
-          "answer": "1000",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-14-q3",
           "type": "solve",
           "text": "3 L 250 mL = ______ mL.",
-          "answer": "3250",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-14-q4",
           "type": "problem",
           "text": "Two 500 mL bottles contain how many liters altogether?",
-          "answer": "1 L",
           "difficulty": "medium"
         }
       ]
@@ -737,28 +689,24 @@
           "id": "p4-math-15-q1",
           "type": "complete",
           "text": "1 day = ______ hours.",
-          "answer": "24",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-15-q2",
           "type": "complete",
           "text": "1 week = ______ days.",
-          "answer": "7",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-15-q3",
           "type": "problem",
           "text": "A bike ride starts at 8:15 A.M. and lasts 3 h 26 min. When does it finish?",
-          "answer": "11:41 A.M.",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-15-q4",
           "type": "solve",
           "text": "5:37 + 50 minutes = ______.",
-          "answer": "6:27",
           "difficulty": "medium"
         }
       ]
@@ -785,21 +733,18 @@
           "id": "p4-math-16-q1",
           "type": "problem",
           "text": "A rope is 3 m 40 cm and another is 2 m 75 cm. Total length?",
-          "answer": "6 m 15 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-16-q2",
           "type": "solve",
           "text": "4 kg 500 g - 750 g = ______.",
-          "answer": "3 kg 750 g",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-16-q3",
           "type": "problem",
           "text": "A tank has 5 L. 1,250 mL is used. How much remains?",
-          "answer": "3 L 750 mL",
           "difficulty": "medium"
         }
       ]
@@ -826,21 +771,18 @@
           "id": "p4-math-17-q1",
           "type": "problem",
           "text": "A rope is 3 m 40 cm and another is 2 m 75 cm. Total length?",
-          "answer": "6 m 15 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-17-q2",
           "type": "solve",
           "text": "4 kg 500 g - 750 g = ______.",
-          "answer": "3 kg 750 g",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-17-q3",
           "type": "problem",
           "text": "A tank has 5 L. 1,250 mL is used. How much remains?",
-          "answer": "3 L 750 mL",
           "difficulty": "medium"
         }
       ]
@@ -867,21 +809,18 @@
           "id": "p4-math-18-q1",
           "type": "solve",
           "text": "Find the perimeter of a rectangle 12 cm by 17 cm.",
-          "answer": "58 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-18-q2",
           "type": "solve",
           "text": "Find the perimeter of a square with side 8 km.",
-          "answer": "32 km",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-18-q3",
           "type": "mcq",
           "text": "Which formula finds rectangle perimeter?",
-          "answer": "2 × (length + width)",
           "difficulty": "medium",
           "choices": [
             "length × width",
@@ -914,21 +853,18 @@
           "id": "p4-math-19-q1",
           "type": "solve",
           "text": "Find the area of a rectangle 10 cm by 7 cm.",
-          "answer": "70 cm²",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-19-q2",
           "type": "solve",
           "text": "Find the area of a square with side 6 cm.",
-          "answer": "36 cm²",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-19-q3",
           "type": "mcq",
           "text": "Which formula finds rectangle area?",
-          "answer": "length × width",
           "difficulty": "medium",
           "choices": [
             "length × width",
@@ -961,28 +897,24 @@
           "id": "p4-math-20-q1",
           "type": "problem",
           "text": "A rectangle has area 48 cm² and width 6 cm. Find length.",
-          "answer": "8 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-20-q2",
           "type": "problem",
           "text": "A rectangle has perimeter 30 cm and length 9 cm. Find width.",
-          "answer": "6 cm",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-20-q3",
           "type": "complete",
           "text": "If area = length × width, then length = area ÷ ______.",
-          "answer": "width",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-20-q4",
           "type": "mcq",
           "text": "Area 63 cm²; width 7 cm; length = ______.",
-          "answer": "9 cm",
           "difficulty": "medium",
           "choices": [
             "7 cm",
@@ -1015,14 +947,12 @@
           "id": "p4-math-21-q1",
           "type": "problem",
           "text": "A composite shape is split into rectangles of areas 24 cm² and 18 cm². Total area?",
-          "answer": "42 cm²",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-21-q2",
           "type": "true_false",
           "text": "A complex shape can often be split into simpler rectangles.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1033,7 +963,6 @@
           "id": "p4-math-21-q4",
           "type": "solve",
           "text": "Two non-overlapping rectangles have areas 20 and 35. Combined area?",
-          "answer": "55",
           "difficulty": "medium"
         }
       ]
@@ -1060,7 +989,6 @@
           "id": "p4-math-22-q1",
           "type": "mcq",
           "text": "'24 is 4 times as many as 6' is represented by:",
-          "answer": "24 = 4 × 6",
           "difficulty": "medium",
           "choices": [
             "24 = 4 × 6",
@@ -1073,14 +1001,12 @@
           "id": "p4-math-22-q2",
           "type": "solve",
           "text": "Sara has 5 stickers. Omar has 3 times as many. How many?",
-          "answer": "15",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-22-q3",
           "type": "complete",
           "text": "7 × 8 = 56 means 56 is ______ times 8.",
-          "answer": "7",
           "difficulty": "medium"
         }
       ]
@@ -1107,21 +1033,18 @@
           "id": "p4-math-23-q1",
           "type": "problem",
           "text": "A tree is 4 times as tall as a 2 m plant. Write and solve an equation.",
-          "answer": "x = 4 × 2 = 8 m",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-23-q2",
           "type": "solve",
           "text": "x = 6 × 9; x = ______.",
-          "answer": "54",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-23-q3",
           "type": "mcq",
           "text": "Which equation shows 35 is 5 times 7?",
-          "answer": "35 = 5 × 7",
           "difficulty": "medium",
           "choices": [
             "35 = 5 × 7",
@@ -1154,7 +1077,6 @@
           "id": "p4-math-24-q1",
           "type": "mcq",
           "text": "7 × 1 = 7",
-          "answer": "Identity property",
           "difficulty": "medium",
           "choices": [
             "Identity property",
@@ -1167,14 +1089,12 @@
           "id": "p4-math-24-q2",
           "type": "complete",
           "text": "9 × 0 = ______.",
-          "answer": "0",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-24-q3",
           "type": "true_false",
           "text": "4 × 6 = 6 × 4 shows the commutative property.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1185,7 +1105,6 @@
           "id": "p4-math-24-q4",
           "type": "solve",
           "text": "8 × 1 × 0 = ______.",
-          "answer": "0",
           "difficulty": "medium"
         }
       ]
@@ -1212,7 +1131,6 @@
           "id": "p4-math-25-q1",
           "type": "true_false",
           "text": "(2 × 3) × 4 = 2 × (3 × 4).",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1223,21 +1141,18 @@
           "id": "p4-math-25-q2",
           "type": "solve",
           "text": "25 × 4 = ______.",
-          "answer": "100",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-25-q3",
           "type": "complete",
           "text": "The associative property changes the ______, not the order, of factors.",
-          "answer": "grouping",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-25-q4",
           "type": "problem",
           "text": "How can patterns make multiplication faster?",
-          "answer": "Known products can be extended using place value or grouping.",
           "difficulty": "medium"
         }
       ]
@@ -1264,14 +1179,12 @@
           "id": "p4-math-26-q1",
           "type": "solve",
           "text": "List all factors of 12.",
-          "answer": "1, 2, 3, 4, 6, 12",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-26-q2",
           "type": "mcq",
           "text": "Which is a factor of 18?",
-          "answer": "6",
           "difficulty": "medium",
           "choices": [
             "5",
@@ -1284,7 +1197,6 @@
           "id": "p4-math-26-q3",
           "type": "true_false",
           "text": "1 is a factor of every whole number.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1295,7 +1207,6 @@
           "id": "p4-math-26-q4",
           "type": "problem",
           "text": "How do factor pairs help find all factors?",
-          "answer": "Each pair multiplies to the number and lists two factors.",
           "difficulty": "medium"
         }
       ]
@@ -1322,7 +1233,6 @@
           "id": "p4-math-27-q1",
           "type": "mcq",
           "text": "Which number is prime?",
-          "answer": "13",
           "difficulty": "medium",
           "choices": [
             "12",
@@ -1335,7 +1245,6 @@
           "id": "p4-math-27-q2",
           "type": "mcq",
           "text": "Which number is composite?",
-          "answer": "18",
           "difficulty": "medium",
           "choices": [
             "11",
@@ -1348,7 +1257,6 @@
           "id": "p4-math-27-q3",
           "type": "complete",
           "text": "A prime number has exactly ______ positive factors.",
-          "answer": "2",
           "difficulty": "medium"
         }
       ]
@@ -1375,14 +1283,12 @@
           "id": "p4-math-28-q1",
           "type": "solve",
           "text": "G.C.F. of 12 and 18 = ______.",
-          "answer": "6",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-28-q2",
           "type": "mcq",
           "text": "G.C.F. of 8 and 20 = ______.",
-          "answer": "4",
           "difficulty": "medium",
           "choices": [
             "2",
@@ -1395,7 +1301,6 @@
           "id": "p4-math-28-q3",
           "type": "complete",
           "text": "The G.C.F. is the ______ common factor.",
-          "answer": "greatest",
           "difficulty": "medium"
         }
       ]
@@ -1422,14 +1327,12 @@
           "id": "p4-math-29-q1",
           "type": "solve",
           "text": "Write the first five positive multiples of 6.",
-          "answer": "6, 12, 18, 24, 30",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-29-q2",
           "type": "mcq",
           "text": "Which is a common multiple of 4 and 6?",
-          "answer": "12",
           "difficulty": "medium",
           "choices": [
             "8",
@@ -1442,7 +1345,6 @@
           "id": "p4-math-29-q3",
           "type": "true_false",
           "text": "24 is a multiple of 8.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1453,7 +1355,6 @@
           "id": "p4-math-29-q4",
           "type": "problem",
           "text": "How are multiples generated?",
-          "answer": "Multiply the number by whole numbers.",
           "difficulty": "medium"
         }
       ]
@@ -1480,14 +1381,12 @@
           "id": "p4-math-30-q1",
           "type": "complete",
           "text": "If 5 is a factor of 30, then 30 is a ______ of 5.",
-          "answer": "multiple",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-30-q2",
           "type": "true_false",
           "text": "If a divides b exactly, then b is a multiple of a.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1498,7 +1397,6 @@
           "id": "p4-math-30-q3",
           "type": "mcq",
           "text": "Which pair shows a correct factor-multiple relationship?",
-          "answer": "7 and 42",
           "difficulty": "medium",
           "choices": [
             "7 and 42",
@@ -1531,21 +1429,18 @@
           "id": "p4-math-31-q1",
           "type": "solve",
           "text": "Use distributive thinking: 23 × 4 = (20 × 4) + (3 × 4) = ______.",
-          "answer": "92",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-31-q2",
           "type": "solve",
           "text": "36 × 5 = ______.",
-          "answer": "180",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-31-q3",
           "type": "true_false",
           "text": "An area model can split a factor into tens and ones.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1576,21 +1471,18 @@
           "id": "p4-math-32-q1",
           "type": "solve",
           "text": "247 × 3 = ______.",
-          "answer": "741",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-32-q2",
           "type": "solve",
           "text": "1,206 × 4 = ______.",
-          "answer": "4,824",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-32-q3",
           "type": "complete",
           "text": "Partial products come from multiplying each place-value ______.",
-          "answer": "part",
           "difficulty": "medium"
         }
       ]
@@ -1617,21 +1509,18 @@
           "id": "p4-math-33-q1",
           "type": "solve",
           "text": "34 × 20 = ______.",
-          "answer": "680",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-33-q2",
           "type": "solve",
           "text": "57 × 30 = ______.",
-          "answer": "1,710",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-33-q3",
           "type": "mcq",
           "text": "25 × 40 = ______.",
-          "answer": "1,000",
           "difficulty": "medium",
           "choices": [
             "100",
@@ -1664,21 +1553,18 @@
           "id": "p4-math-34-q1",
           "type": "solve",
           "text": "29 ÷ 4 = ______.",
-          "answer": "7 R1",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-34-q2",
           "type": "problem",
           "text": "29 students ride in cars holding 4 each. How many cars are needed?",
-          "answer": "8 cars",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-34-q3",
           "type": "mcq",
           "text": "In 17 ÷ 5, the remainder is:",
-          "answer": "2",
           "difficulty": "medium",
           "choices": [
             "1",
@@ -1711,21 +1597,18 @@
           "id": "p4-math-35-q1",
           "type": "solve",
           "text": "4,800 ÷ 6 = ______.",
-          "answer": "800",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-35-q2",
           "type": "solve",
           "text": "360 ÷ 9 = ______.",
-          "answer": "40",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-35-q3",
           "type": "true_false",
           "text": "If 48 ÷ 6 = 8, then 480 ÷ 6 = 80.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1736,7 +1619,6 @@
           "id": "p4-math-35-q4",
           "type": "problem",
           "text": "How does place value help with division patterns?",
-          "answer": "Scaling a dividend by powers of ten scales the quotient predictably when the divisor stays fixed.",
           "difficulty": "medium"
         }
       ]
@@ -1763,21 +1645,18 @@
           "id": "p4-math-36-q1",
           "type": "solve",
           "text": "96 ÷ 4 = ______.",
-          "answer": "24",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-36-q2",
           "type": "problem",
           "text": "Split 84 into 80 + 4 to divide by 4. What is the quotient?",
-          "answer": "21",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-36-q3",
           "type": "true_false",
           "text": "An area model can show division as finding an unknown side length.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1808,28 +1687,24 @@
           "id": "p4-math-37-q1",
           "type": "solve",
           "text": "728 ÷ 7 = ______.",
-          "answer": "104",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-37-q2",
           "type": "solve",
           "text": "936 ÷ 8 = ______.",
-          "answer": "117",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-37-q3",
           "type": "complete",
           "text": "Partial quotients subtract convenient ______ of the divisor.",
-          "answer": "multiples",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-37-q4",
           "type": "problem",
           "text": "How can multiplication check 936 ÷ 8 = 117?",
-          "answer": "117 × 8 = 936.",
           "difficulty": "medium"
         }
       ]
@@ -1856,14 +1731,12 @@
           "id": "p4-math-38-q1",
           "type": "complete",
           "text": "72 ÷ 8 = 9, so 9 × 8 = ______.",
-          "answer": "72",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-38-q2",
           "type": "mcq",
           "text": "Which multiplication checks 84 ÷ 7 = 12?",
-          "answer": "12 × 7 = 84",
           "difficulty": "medium",
           "choices": [
             "12 × 7 = 84",
@@ -1876,7 +1749,6 @@
           "id": "p4-math-38-q3",
           "type": "true_false",
           "text": "Multiplication and division are inverse operations.",
-          "answer": "True",
           "difficulty": "medium",
           "choices": [
             "True",
@@ -1907,21 +1779,18 @@
           "id": "p4-math-39-q1",
           "type": "solve",
           "text": "12 + 6 ÷ 3 = ______.",
-          "answer": "14",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-39-q2",
           "type": "solve",
           "text": "20 + (4 + 1) × 2 = ______.",
-          "answer": "30",
           "difficulty": "medium"
         },
         {
           "id": "p4-math-39-q3",
           "type": "mcq",
           "text": "What is the first operation in 18 - 15 + 3 × 8 - 2?",
-          "answer": "3 × 8",
           "difficulty": "medium",
           "choices": [
             "18 - 15",
