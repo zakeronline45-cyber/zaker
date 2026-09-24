@@ -29,7 +29,6 @@
           "id": "p4-eng-u4-l1-q001",
           "type": "mcq",
           "text": "You can look down from the ______ Tower.",
-          "answer": "Cairo",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -50,7 +49,6 @@
           "id": "p4-eng-u4-l1-q002",
           "type": "mcq",
           "text": "I want to ______ the Egyptian Museum.",
-          "answer": "visit",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -71,7 +69,6 @@
           "id": "p4-eng-u4-l1-q003",
           "type": "mcq",
           "text": "People buy ______ from the bazaar.",
-          "answer": "gifts",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -92,7 +89,6 @@
           "id": "p4-eng-u4-l1-q004",
           "type": "mcq",
           "text": "A/An ______ is a place with water and trees in the desert.",
-          "answer": "oasis",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -113,7 +109,6 @@
           "id": "p4-eng-u4-l1-q005",
           "type": "mcq",
           "text": "The Egyptian Museum has many ______ to see.",
-          "answer": "treasures",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -134,7 +129,6 @@
           "id": "p4-eng-u4-l1-q006",
           "type": "mcq",
           "text": "My country has rich ______.",
-          "answer": "history",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -155,7 +149,6 @@
           "id": "p4-eng-u4-l1-q007",
           "type": "mcq",
           "text": "Can we ______ a camel near the Pyramids?",
-          "answer": "ride",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -176,7 +169,6 @@
           "id": "p4-eng-u4-l1-q008",
           "type": "mcq",
           "text": "Tourists can buy ______ as souvenirs in Cairo.",
-          "answer": "gifts",
           "source_page": 118,
           "status": "active",
           "choices": [
@@ -197,7 +189,6 @@
           "id": "p4-eng-u4-l1-q009",
           "type": "complete",
           "text": "Ali is a tour guide in Egypt. He takes tourists to see the ______.",
-          "answer": "Pyramids",
           "source_page": 119,
           "status": "active",
           "word_bank": [
@@ -219,7 +210,6 @@
           "id": "p4-eng-u4-l1-q010",
           "type": "complete",
           "text": "They stop to take ______ with their cameras.",
-          "answer": "pictures",
           "source_page": 119,
           "status": "active",
           "word_bank": [
@@ -241,7 +231,6 @@
           "id": "p4-eng-u4-l1-q011",
           "type": "complete",
           "text": "Many ______ want to ride a camel near the Pyramids.",
-          "answer": "visitors",
           "source_page": 119,
           "status": "active",
           "word_bank": [
@@ -263,7 +252,6 @@
           "id": "p4-eng-u4-l1-q012",
           "type": "complete",
           "text": "Many visitors want to ride a ______ near the Pyramids.",
-          "answer": "camel",
           "source_page": 119,
           "status": "active",
           "word_bank": [
@@ -285,7 +273,6 @@
           "id": "p4-eng-u4-l1-q013",
           "type": "reading_mcq",
           "text": "Khan Al-Khalili is a famous ______.",
-          "answer": "market",
           "source_page": 119,
           "status": "active",
           "choices": [
@@ -307,7 +294,6 @@
           "id": "p4-eng-u4-l1-q014",
           "type": "reading_mcq",
           "text": "The underlined word \"It\" refers to ______.",
-          "answer": "Khan Al-Khalili",
           "source_page": 119,
           "status": "active",
           "choices": [
@@ -330,13 +316,8 @@
           "id": "p4-eng-u4-l1-q015",
           "type": "reading_open",
           "text": "Who likes walking in the narrow streets in Khan Al-Khalili?",
-          "answer": "Tourists.",
           "source_page": 119,
           "status": "active",
-          "accepted_answers": [
-            "Tourists.",
-            "Tourists like walking in the narrow streets."
-          ],
           "passage_ref": "bbb-u4l1-013",
           "source_refs": [
             {
@@ -351,14 +332,8 @@
           "id": "p4-eng-u4-l1-q016",
           "type": "reading_open",
           "text": "What's Khan Al-Khalili famous for?",
-          "answer": "Its old cafés.",
           "source_page": 119,
           "status": "active",
-          "accepted_answers": [
-            "Its old cafés.",
-            "It is famous for its old cafés.",
-            "Souvenirs, jewelry, gold and old cafés."
-          ],
           "passage_ref": "bbb-u4l1-013",
           "source_refs": [
             {
@@ -373,13 +348,8 @@
           "id": "p4-eng-u4-l1-q017",
           "type": "reading_open",
           "text": "Where's Khan Al-Khalili market?",
-          "answer": "In Cairo.",
           "source_page": 119,
           "status": "active",
-          "accepted_answers": [
-            "In Cairo.",
-            "It is in Cairo."
-          ],
           "passage_ref": "bbb-u4l1-013",
           "source_refs": [
             {
@@ -394,7 +364,6 @@
           "id": "p4-eng-u4-l1-q018",
           "type": "punctuation",
           "text": "the egyptian Museum is in Cairo",
-          "answer": "The Egyptian Museum is in Cairo.",
           "source_page": 119,
           "status": "active",
           "source_refs": [
@@ -409,7 +378,6 @@
           "id": "p4-eng-u4-l1-q019",
           "type": "punctuation",
           "text": "do you like to visit the Cairo Tower",
-          "answer": "Do you like to visit the Cairo Tower?",
           "source_page": 119,
           "status": "active",
           "source_refs": [
@@ -424,7 +392,6 @@
           "id": "p4-eng-u4-l1-q020",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"The Nile River\" using: Egypt – longest – boats.",
-          "answer": "The Nile River is important for Egypt. It is the longest river in the world. People enjoy riding boats on its water. They can see beautiful views.",
           "source_page": 119,
           "status": "active",
           "model_answer_page": 136,
@@ -440,7 +407,6 @@
           "id": "p4-eng-u4-l1-q021",
           "type": "listening_true_false",
           "text": "Many people ride camels near the Pyramids.",
-          "answer": "True",
           "source_page": 187,
           "status": "inactive_missing_audio",
           "assign": {
@@ -464,7 +430,6 @@
           "id": "p4-eng-u4-l1-q022",
           "type": "listening_true_false",
           "text": "Many people can visit the Egyptian Museum.",
-          "answer": "True",
           "source_page": 187,
           "status": "inactive_missing_audio",
           "assign": {
@@ -488,7 +453,6 @@
           "id": "p4-eng-u4-l1-q023",
           "type": "listening_true_false",
           "text": "The Egyptian Museum has many gifts to see.",
-          "answer": "False",
           "source_page": 187,
           "status": "inactive_missing_audio",
           "assign": {
@@ -512,7 +476,6 @@
           "id": "p4-eng-u4-l1-q024",
           "type": "listening_true_false",
           "text": "The Egyptian Museum has a lot of history.",
-          "answer": "True",
           "source_page": 187,
           "status": "inactive_missing_audio",
           "assign": {
@@ -552,7 +515,6 @@
           "id": "p4-eng-u4-l2-q001",
           "type": "mcq",
           "text": "Students go to the ______ to learn and meet friends.",
-          "answer": "schools",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -573,7 +535,6 @@
           "id": "p4-eng-u4-l2-q002",
           "type": "mcq",
           "text": "My school is ______ the library and the park.",
-          "answer": "between",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -594,7 +555,6 @@
           "id": "p4-eng-u4-l2-q003",
           "type": "mcq",
           "text": "The teacher stands ______ of the board.",
-          "answer": "in front",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -615,7 +575,6 @@
           "id": "p4-eng-u4-l2-q004",
           "type": "mcq",
           "text": "There is a picture of my family ______ the wall.",
-          "answer": "on",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -636,7 +595,6 @@
           "id": "p4-eng-u4-l2-q005",
           "type": "mcq",
           "text": "I borrowed a story from the ______.",
-          "answer": "library",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -657,7 +615,6 @@
           "id": "p4-eng-u4-l2-q006",
           "type": "mcq",
           "text": "Doctors help people who are ______.",
-          "answer": "sick",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -678,7 +635,6 @@
           "id": "p4-eng-u4-l2-q007",
           "type": "mcq",
           "text": "We bought new clothes from the ______.",
-          "answer": "shopping mall",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -699,7 +655,6 @@
           "id": "p4-eng-u4-l2-q008",
           "type": "mcq",
           "text": "I always go to the ______ to send letters and packages to my cousins.",
-          "answer": "post office",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -720,7 +675,6 @@
           "id": "p4-eng-u4-l2-q009",
           "type": "mcq",
           "text": "Museums teach us about ______.",
-          "answer": "history",
           "source_page": 126,
           "status": "active",
           "choices": [
@@ -741,7 +695,6 @@
           "id": "p4-eng-u4-l2-q010",
           "type": "complete",
           "text": "In the morning, children carry their bags and go to ______ to study and learn new things.",
-          "answer": "school",
           "source_page": 126,
           "status": "active",
           "word_bank": [
@@ -763,7 +716,6 @@
           "id": "p4-eng-u4-l2-q011",
           "type": "complete",
           "text": "After school, some go to the library to ______ books.",
-          "answer": "borrow",
           "source_page": 126,
           "status": "active",
           "word_bank": [
@@ -785,7 +737,6 @@
           "id": "p4-eng-u4-l2-q012",
           "type": "complete",
           "text": "If someone feels sick, they can go to the ______.",
-          "answer": "hospital",
           "source_page": 126,
           "status": "active",
           "word_bank": [
@@ -807,7 +758,6 @@
           "id": "p4-eng-u4-l2-q013",
           "type": "complete",
           "text": "Near the hospital is the post office, where people send important ______.",
-          "answer": "letters",
           "source_page": 126,
           "status": "active",
           "word_bank": [
@@ -829,7 +779,6 @@
           "id": "p4-eng-u4-l2-q014",
           "type": "reading_mcq",
           "text": "Children go to school to study and ______.",
-          "answer": "meet friends",
           "source_page": 127,
           "status": "active",
           "choices": [
@@ -851,7 +800,6 @@
           "id": "p4-eng-u4-l2-q015",
           "type": "reading_mcq",
           "text": "Sick people go to ______ to see doctors.",
-          "answer": "hospital",
           "source_page": 127,
           "status": "active",
           "choices": [
@@ -874,13 +822,8 @@
           "id": "p4-eng-u4-l2-q016",
           "type": "reading_open",
           "text": "Why do people enjoy going to the supermarket?",
-          "answer": "Because they can buy different food.",
           "source_page": 127,
           "status": "active",
-          "accepted_answers": [
-            "Because they can buy different food.",
-            "They can buy different food there."
-          ],
           "passage_ref": "bbb-u4l2-014",
           "source_refs": [
             {
@@ -895,13 +838,8 @@
           "id": "p4-eng-u4-l2-q017",
           "type": "reading_open",
           "text": "Where do families go to swim on hot days?",
-          "answer": "To the sports club.",
           "source_page": 127,
           "status": "active",
-          "accepted_answers": [
-            "The sports club.",
-            "To the sports club."
-          ],
           "passage_ref": "bbb-u4l2-014",
           "source_refs": [
             {
@@ -916,7 +854,6 @@
           "id": "p4-eng-u4-l2-q018",
           "type": "correct_form",
           "text": "The flower is growing ______ (on) the pot.",
-          "answer": "in",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -931,7 +868,6 @@
           "id": "p4-eng-u4-l2-q019",
           "type": "correct_form",
           "text": "The sandwich is ______ (next) the juice and the salad.",
-          "answer": "next to",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -946,7 +882,6 @@
           "id": "p4-eng-u4-l2-q020",
           "type": "correct_form",
           "text": "She stands ______ (behind) of the board.",
-          "answer": "in front",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -961,7 +896,6 @@
           "id": "p4-eng-u4-l2-q021",
           "type": "correct_form",
           "text": "The picture is ______ (under) the wall.",
-          "answer": "on",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -976,7 +910,6 @@
           "id": "p4-eng-u4-l2-q022",
           "type": "correct_form",
           "text": "My shoes are ______ (in) the bed.",
-          "answer": "under",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -991,7 +924,6 @@
           "id": "p4-eng-u4-l2-q023",
           "type": "correct_form",
           "text": "The bicycle is in front ______ (on) my house.",
-          "answer": "of",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -1006,7 +938,6 @@
           "id": "p4-eng-u4-l2-q024",
           "type": "correct_form",
           "text": "The cat is ______ (on the door). I can't see it.",
-          "answer": "behind the door",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -1021,7 +952,6 @@
           "id": "p4-eng-u4-l2-q025",
           "type": "correct_form",
           "text": "The school is next ______ (on) the post office.",
-          "answer": "to",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -1036,7 +966,6 @@
           "id": "p4-eng-u4-l2-q026",
           "type": "correct_form",
           "text": "We can see many trees ______ (next) of my school.",
-          "answer": "in front",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -1051,7 +980,6 @@
           "id": "p4-eng-u4-l2-q027",
           "type": "punctuation",
           "text": "why do you like shopping",
-          "answer": "Why do you like shopping?",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -1066,7 +994,6 @@
           "id": "p4-eng-u4-l2-q028",
           "type": "punctuation",
           "text": "salma learns new things",
-          "answer": "Salma learns new things.",
           "source_page": 127,
           "status": "active",
           "source_refs": [
@@ -1081,7 +1008,6 @@
           "id": "p4-eng-u4-l2-q029",
           "type": "mcq",
           "text": "The house is ______ the tree and the school.",
-          "answer": "between",
           "source_page": 187,
           "status": "active",
           "assign": {
@@ -1106,7 +1032,6 @@
           "id": "p4-eng-u4-l2-q030",
           "type": "correct_form",
           "text": "The ball is ______ (next) the table.",
-          "answer": "next to",
           "source_page": 188,
           "status": "active",
           "assign": {
@@ -1141,7 +1066,6 @@
           "id": "p4-eng-u4-l3-q001",
           "type": "mcq",
           "text": "Tourists can swim and take photos at the Salt ______.",
-          "answer": "Lake",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1162,7 +1086,6 @@
           "id": "p4-eng-u4-l3-q002",
           "type": "mcq",
           "text": "Sweet ______ are fresh from palm trees.",
-          "answer": "dates",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1183,7 +1106,6 @@
           "id": "p4-eng-u4-l3-q003",
           "type": "mcq",
           "text": "It's a good idea to bring a ______ at night in Siwa Oasis.",
-          "answer": "jacket",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1204,7 +1126,6 @@
           "id": "p4-eng-u4-l3-q004",
           "type": "mcq",
           "text": "People wear light ______ during the day in Siwa.",
-          "answer": "clothes",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1225,7 +1146,6 @@
           "id": "p4-eng-u4-l3-q005",
           "type": "mcq",
           "text": "You can see palm ______ around the lake and desert.",
-          "answer": "trees",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1246,7 +1166,6 @@
           "id": "p4-eng-u4-l3-q006",
           "type": "mcq",
           "text": "Many tourists come to Egypt for ______.",
-          "answer": "adventure",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1267,7 +1186,6 @@
           "id": "p4-eng-u4-l3-q007",
           "type": "mcq",
           "text": "In the daytime, it's hot in the ______.",
-          "answer": "desert",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1288,7 +1206,6 @@
           "id": "p4-eng-u4-l3-q008",
           "type": "mcq",
           "text": "I bought some ______ fruit from the market.",
-          "answer": "fresh",
           "source_page": 132,
           "status": "active",
           "choices": [
@@ -1309,7 +1226,6 @@
           "id": "p4-eng-u4-l3-q009",
           "type": "complete",
           "text": "St. Catherine Mountain is in South Sinai. It is a famous place. People come to ______ the mountain.",
-          "answer": "climb",
           "source_page": 132,
           "status": "active",
           "word_bank": [
@@ -1331,7 +1247,6 @@
           "id": "p4-eng-u4-l3-q010",
           "type": "complete",
           "text": "They see ______ rocks, green plants, and sometimes animals.",
-          "answer": "colorful",
           "source_page": 132,
           "status": "active",
           "word_bank": [
@@ -1353,7 +1268,6 @@
           "id": "p4-eng-u4-l3-q011",
           "type": "complete",
           "text": "When they reach the ______, they visit the old monastery.",
-          "answer": "top",
           "source_page": 132,
           "status": "active",
           "word_bank": [
@@ -1375,7 +1289,6 @@
           "id": "p4-eng-u4-l3-q012",
           "type": "complete",
           "text": "When they reach the top, they visit the old ______.",
-          "answer": "monastery",
           "source_page": 132,
           "status": "active",
           "word_bank": [
@@ -1397,7 +1310,6 @@
           "id": "p4-eng-u4-l3-q013",
           "type": "reading_mcq",
           "text": "Ahmed goes to St. Catherine ______ every year.",
-          "answer": "Mountain",
           "source_page": 133,
           "status": "active",
           "choices": [
@@ -1419,7 +1331,6 @@
           "id": "p4-eng-u4-l3-q014",
           "type": "reading_mcq",
           "text": "The old ______ is at the top.",
-          "answer": "monastery",
           "source_page": 133,
           "status": "active",
           "choices": [
@@ -1442,13 +1353,8 @@
           "id": "p4-eng-u4-l3-q015",
           "type": "reading_open",
           "text": "Who does Ahmed go with?",
-          "answer": "His family.",
           "source_page": 133,
           "status": "active",
-          "accepted_answers": [
-            "His family.",
-            "He goes with his family."
-          ],
           "passage_ref": "bbb-u4l3-013",
           "source_refs": [
             {
@@ -1463,13 +1369,8 @@
           "id": "p4-eng-u4-l3-q016",
           "type": "reading_open",
           "text": "What is the main idea of the text?",
-          "answer": "A visit to St. Catherine Mountain.",
           "source_page": 133,
           "status": "active",
-          "accepted_answers": [
-            "A visit to St. Catherine Mountain.",
-            "St. Catherine Mountain."
-          ],
           "passage_ref": "bbb-u4l3-013",
           "source_refs": [
             {
@@ -1484,13 +1385,8 @@
           "id": "p4-eng-u4-l3-q017",
           "type": "reading_open",
           "text": "Why do they wear warm clothes?",
-          "answer": "Because it's cold.",
           "source_page": 133,
           "status": "active",
-          "accepted_answers": [
-            "Because it's cold.",
-            "It is cold."
-          ],
           "passage_ref": "bbb-u4l3-013",
           "source_refs": [
             {
@@ -1505,7 +1401,6 @@
           "id": "p4-eng-u4-l3-q018",
           "type": "punctuation",
           "text": "siwa Oasis is a nice place",
-          "answer": "Siwa Oasis is a nice place.",
           "source_page": 133,
           "status": "active",
           "source_refs": [
@@ -1520,7 +1415,6 @@
           "id": "p4-eng-u4-l3-q019",
           "type": "punctuation",
           "text": "do you learn about it",
-          "answer": "Do you learn about it?",
           "source_page": 133,
           "status": "active",
           "source_refs": [
@@ -1535,7 +1429,6 @@
           "id": "p4-eng-u4-l3-q020",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"A Natural Trip\" using: amazing place – tourists – take pictures.",
-          "answer": "I went on a trip to St. Catherine Mountain. It is in South Sinai, Egypt. I climbed St. Catherine Mountain and took a lot of photos. I saw colorful rocks and small plants.",
           "source_page": 133,
           "status": "active",
           "model_answer_page": 136,
@@ -1567,7 +1460,6 @@
           "id": "p4-eng-u4-l4-q001",
           "type": "dialogue_complete",
           "text": "Welcome to Egypt! I work as a ______ guide.",
-          "answer": "tour",
           "source_page": 137,
           "status": "active",
           "word_bank": [
@@ -1588,7 +1480,6 @@
           "id": "p4-eng-u4-l4-q002",
           "type": "dialogue_complete",
           "text": "Nice to ______ you!",
-          "answer": "meet",
           "source_page": 137,
           "status": "active",
           "word_bank": [
@@ -1609,7 +1500,6 @@
           "id": "p4-eng-u4-l4-q003",
           "type": "dialogue_complete",
           "text": "You can ______ a camel.",
-          "answer": "ride",
           "source_page": 137,
           "status": "active",
           "word_bank": [
@@ -1630,7 +1520,6 @@
           "id": "p4-eng-u4-l4-q004",
           "type": "dialogue_complete",
           "text": "Great! I can take ______, too.",
-          "answer": "pictures",
           "source_page": 137,
           "status": "active",
           "word_bank": [
@@ -1651,7 +1540,6 @@
           "id": "p4-eng-u4-l4-q005",
           "type": "mcq",
           "text": "A ______ helps tourists learn about places.",
-          "answer": "tour guide",
           "source_page": 137,
           "status": "active",
           "choices": [
@@ -1672,7 +1560,6 @@
           "id": "p4-eng-u4-l4-q006",
           "type": "mcq",
           "text": "My school is ______ to the post office.",
-          "answer": "next",
           "source_page": 137,
           "status": "active",
           "choices": [
@@ -1693,7 +1580,6 @@
           "id": "p4-eng-u4-l4-q007",
           "type": "mcq",
           "text": "We can read and borrow books at the ______.",
-          "answer": "library",
           "source_page": 137,
           "status": "active",
           "choices": [
@@ -1714,7 +1600,6 @@
           "id": "p4-eng-u4-l4-q008",
           "type": "mcq",
           "text": "My family picture is ______ the wall of the living room.",
-          "answer": "on",
           "source_page": 137,
           "status": "active",
           "choices": [
@@ -1735,7 +1620,6 @@
           "id": "p4-eng-u4-l4-q009",
           "type": "correction",
           "text": "The cat is in front off the box.",
-          "answer": "The cat is in front of the box.",
           "source_page": 137,
           "status": "active",
           "source_refs": [
@@ -1750,7 +1634,6 @@
           "id": "p4-eng-u4-l4-q010",
           "type": "correction",
           "text": "The dog is standing under the door.",
-          "answer": "The dog is standing in front of the door.",
           "source_page": 137,
           "status": "active",
           "source_refs": [
@@ -1765,7 +1648,6 @@
           "id": "p4-eng-u4-l4-q011",
           "type": "correction",
           "text": "We throw our trash between the bin.",
-          "answer": "We throw our trash in the bin.",
           "source_page": 137,
           "status": "active",
           "source_refs": [
@@ -1780,7 +1662,6 @@
           "id": "p4-eng-u4-l4-q012",
           "type": "correction",
           "text": "My car is on the bike and the bus.",
-          "answer": "My car is between the bike and the bus.",
           "source_page": 137,
           "status": "active",
           "source_refs": [
@@ -1795,7 +1676,6 @@
           "id": "p4-eng-u4-l4-q013",
           "type": "true_false",
           "text": "The library is a very noisy place.",
-          "answer": "False",
           "source_page": 138,
           "status": "active",
           "choices": [
@@ -1815,7 +1695,6 @@
           "id": "p4-eng-u4-l4-q014",
           "type": "true_false",
           "text": "You can do your homework at the library.",
-          "answer": "True",
           "source_page": 138,
           "status": "active",
           "choices": [
@@ -1835,7 +1714,6 @@
           "id": "p4-eng-u4-l4-q015",
           "type": "reading_mcq",
           "text": "We go to the library to read or ______ books.",
-          "answer": "borrow",
           "source_page": 138,
           "status": "active",
           "choices": [
@@ -1858,7 +1736,6 @@
           "id": "p4-eng-u4-l4-q016",
           "type": "reading_mcq",
           "text": "The library has books about animals, history, and ______.",
-          "answer": "science",
           "source_page": 138,
           "status": "active",
           "choices": [
@@ -1881,7 +1758,6 @@
           "id": "p4-eng-u4-l4-q017",
           "type": "reading_mcq",
           "text": "You must keep the library ______.",
-          "answer": "clean",
           "source_page": 138,
           "status": "active",
           "choices": [
@@ -1904,7 +1780,6 @@
           "id": "p4-eng-u4-l4-q018",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Siwa Oasis\" using: see sunset – good olive oil – cold – light clothes.",
-          "answer": "Siwa Oasis is a nice place in Egypt. You can see the sunset there. You should wear light clothes during the day and a jacket at night because it is cold. You can buy good olive oil.",
           "source_page": 138,
           "status": "active",
           "model_answer_page": 136,
@@ -1920,7 +1795,6 @@
           "id": "p4-eng-u4-l4-q019",
           "type": "mcq",
           "text": "Tourists can ______ a camel near the pyramids.",
-          "answer": "ride",
           "source_page": 139,
           "status": "active",
           "choices": [
@@ -1941,7 +1815,6 @@
           "id": "p4-eng-u4-l4-q020",
           "type": "mcq",
           "text": "A/An ______ is very tall. We can see Cairo from the top.",
-          "answer": "Tower",
           "source_page": 139,
           "status": "active",
           "choices": [
@@ -1962,7 +1835,6 @@
           "id": "p4-eng-u4-l4-q021",
           "type": "mcq",
           "text": "People buy ______ from the bazaar.",
-          "answer": "gifts",
           "source_page": 139,
           "status": "active",
           "choices": [
@@ -1983,7 +1855,6 @@
           "id": "p4-eng-u4-l4-q022",
           "type": "mcq",
           "text": "The cat is in front ______ the box.",
-          "answer": "of",
           "source_page": 139,
           "status": "active",
           "choices": [
@@ -2004,7 +1875,6 @@
           "id": "p4-eng-u4-l4-q023",
           "type": "mcq",
           "text": "The library is next ______ the supermarket.",
-          "answer": "to",
           "source_page": 139,
           "status": "active",
           "choices": [
@@ -2025,7 +1895,6 @@
           "id": "p4-eng-u4-l4-q024",
           "type": "mcq",
           "text": "The dog is standing ______ the door.",
-          "answer": "in front of",
           "source_page": 139,
           "status": "active",
           "choices": [
@@ -2046,7 +1915,6 @@
           "id": "p4-eng-u4-l4-q025",
           "type": "complete",
           "text": "The shopping mall has many ______.",
-          "answer": "stores",
           "source_page": 139,
           "status": "active",
           "word_bank": [
@@ -2068,7 +1936,6 @@
           "id": "p4-eng-u4-l4-q026",
           "type": "complete",
           "text": "People buy ______, shoes, and toys from them.",
-          "answer": "clothes",
           "source_page": 139,
           "status": "active",
           "word_bank": [
@@ -2090,7 +1957,6 @@
           "id": "p4-eng-u4-l4-q027",
           "type": "complete",
           "text": "They eat in ______ and spend happy time together.",
-          "answer": "restaurants",
           "source_page": 139,
           "status": "active",
           "word_bank": [
@@ -2112,7 +1978,6 @@
           "id": "p4-eng-u4-l4-q028",
           "type": "complete",
           "text": "The museum has wonderful ______ that teach us about our history.",
-          "answer": "treasures",
           "source_page": 139,
           "status": "active",
           "word_bank": [
@@ -2134,7 +1999,6 @@
           "id": "p4-eng-u4-l4-q029",
           "type": "reading_mcq",
           "text": "We went to Khan Al-Khalili ______.",
-          "answer": "bazaar",
           "source_page": 140,
           "status": "active",
           "choices": [
@@ -2156,7 +2020,6 @@
           "id": "p4-eng-u4-l4-q030",
           "type": "reading_mcq",
           "text": "There were many shops selling ______ and clothes.",
-          "answer": "gifts",
           "source_page": 140,
           "status": "active",
           "choices": [
@@ -2179,13 +2042,8 @@
           "id": "p4-eng-u4-l4-q031",
           "type": "reading_open",
           "text": "What did you buy?",
-          "answer": "A nice ring for my sister.",
           "source_page": 140,
           "status": "active",
-          "accepted_answers": [
-            "A nice ring.",
-            "A nice ring for my sister."
-          ],
           "passage_ref": "bbb-u4r-029",
           "source_refs": [
             {
@@ -2200,13 +2058,8 @@
           "id": "p4-eng-u4-l4-q032",
           "type": "reading_open",
           "text": "How was the day?",
-          "answer": "It was a very nice day.",
           "source_page": 140,
           "status": "active",
-          "accepted_answers": [
-            "Very nice.",
-            "It was a very nice day."
-          ],
           "passage_ref": "bbb-u4r-029",
           "source_refs": [
             {
@@ -2221,7 +2074,6 @@
           "id": "p4-eng-u4-l4-q033",
           "type": "correct_form",
           "text": "I took a photo ______ (in) the Cairo Tower.",
-          "answer": "of",
           "source_page": 140,
           "status": "active",
           "source_refs": [
@@ -2236,7 +2088,6 @@
           "id": "p4-eng-u4-l4-q034",
           "type": "correct_form",
           "text": "The chair is ______ (next) the two beds.",
-          "answer": "between",
           "source_page": 140,
           "status": "active",
           "source_refs": [
@@ -2251,7 +2102,6 @@
           "id": "p4-eng-u4-l4-q035",
           "type": "correct_form",
           "text": "The boy hides ______ (on) the bed.",
-          "answer": "under",
           "source_page": 140,
           "status": "active",
           "source_refs": [
@@ -2266,7 +2116,6 @@
           "id": "p4-eng-u4-l4-q036",
           "type": "punctuation",
           "text": "the nile is a very long river",
-          "answer": "The Nile is a very long river.",
           "source_page": 140,
           "status": "active",
           "source_refs": [
@@ -2281,7 +2130,6 @@
           "id": "p4-eng-u4-l4-q037",
           "type": "punctuation",
           "text": "where is the cat",
-          "answer": "Where is the cat?",
           "source_page": 140,
           "status": "active",
           "source_refs": [
@@ -2296,7 +2144,6 @@
           "id": "p4-eng-u4-l4-q038",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"A place you like to visit with your friends\".",
-          "answer": "I want to visit the Egyptian Museum with my friends. It is in Cairo, Egypt. It has many treasures and history to see. We can also go to Khan Al-Khalili to buy some gifts.",
           "source_page": 140,
           "status": "active",
           "model_answer_page": 136,
