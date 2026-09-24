@@ -70,7 +70,7 @@
   <p><b>المبلغ المطلوب:</b> <span id="amountDue"></span> جنيه</p>
   <label>اسم المحوّل<input id="senderName" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin:6px 0 12px"></label>
   <label>رقم مرجع التحويل<input id="transferReference" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;margin:6px 0 12px"></label>
-  <label>صورة الإيصال / PDF<input id="proofFile" type="file" accept="image/*,.pdf" style="width:100%;margin:8px 0 16px"></label>
+  <label>صورة الإيصال / PDF<input id="proofFile" type="file" accept="image/jpeg,image/png,image/webp,application/pdf" style="width:100%;margin:8px 0 16px"></label>
   <button class="btn primary" style="width:100%" onclick="submitProof()">رفعت التحويل — إرسال للمراجعة</button>
   <div id="proofMsg" class="status" style="display:none"></div>
 </div>
@@ -204,6 +204,10 @@ async function startBankTransfer(){
 async function submitProof(){
  if(!pendingPayment){alert(window.zakerT('ابدأ طلب تحويل أولًا','Start a bank transfer request first'));return}
  const file=document.getElementById('proofFile').files[0];
+ const allowedTypes=new Set(['image/jpeg','image/png','image/webp','application/pdf']);
+ const maxBytes=8*1024*1024;
+ if(file&&!allowedTypes.has(file.type)){alert(window.zakerT('يسمح فقط بصور JPG/PNG/WebP أو PDF','Only JPG/PNG/WebP images or PDF files are allowed'));return}
+ if(file&&file.size>maxBytes){alert(window.zakerT('حجم الملف يجب ألا يتجاوز 8 ميجابايت','File size must not exceed 8 MB'));return}
  const senderName=document.getElementById('senderName').value.trim();
  const bankTransferReference=document.getElementById('transferReference').value.trim();
  if(!file||!senderName||!bankTransferReference){alert(window.zakerT('أكمل اسم المحوّل ومرجع التحويل وارفع الإيصال','Enter sender name, transfer reference, and upload the receipt'));return}
