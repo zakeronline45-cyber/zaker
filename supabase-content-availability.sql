@@ -20,8 +20,9 @@ create table if not exists public.content_availability (
 );
 
 alter table public.content_availability enable row level security;
-grant select on public.content_availability to anon, authenticated;
-revoke insert, update, delete on public.content_availability from anon, authenticated;
+revoke select, insert, update, delete on public.content_availability from anon, authenticated;
+grant select(scope,grade,track,subject_code,status,message,updated_at)
+on public.content_availability to anon, authenticated;
 
 drop policy if exists "content availability public read" on public.content_availability;
 create policy "content availability public read"
