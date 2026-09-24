@@ -40,8 +40,12 @@ export default async function handler(req,res){
     let correct=false;
     const accepted=[q.answer,...(Array.isArray(q.accepted_answers)?q.accepted_answers:[])].filter(x=>x!==null&&x!==undefined&&String(x).trim()!=='');
     const exactTypes=['mcq','reading_mcq','true_false','listening_mcq','listening_true_false','complete','dialogue_complete','correct_form','correction','punctuation','reorder','solve'];
+    const strictText=s=>String(s??'').trim().toLowerCase().replace(/\s+/g,' ');
     const answerMatches=accepted.some(ans=>normalize(studentAnswer)===normalize(ans));
-    if(exactTypes.includes(q.type)){
+    const punctuationMatches=accepted.some(ans=>strictText(studentAnswer)===strictText(ans));
+    if(q.type==='punctuation'){
+      correct=punctuationMatches;
+    }else if(exactTypes.includes(q.type)){
       correct=answerMatches;
     }else if(answerMatches){
       correct=true;
