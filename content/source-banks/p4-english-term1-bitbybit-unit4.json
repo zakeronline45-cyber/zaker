@@ -1,0 +1,1420 @@
+{
+  "schema_version": 1,
+  "source_id": "bitbybit-p4-english-t1-2027",
+  "source_name": "Bit by Bit English Primary 4 First Term 2027",
+  "subject": "P4 English",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source_file": "بت باي بت - لغة انجليزية - 4 ابتدائي - ترم 1 - ذاكرولي.pdf",
+  "extraction_status": {
+    "unit_4": "verified"
+  },
+  "units": [
+    {
+      "unit_id": 4,
+      "unit_title": "Egypt My Homeland",
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "title": "Places in Egypt",
+          "questions": [
+            {
+              "id": "bbb-u4l1-001",
+              "type": "mcq",
+              "text": "You can look down from the ______ Tower.",
+              "answer": "Cairo",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "Egyptian",
+                "Cairo",
+                "Siwa",
+                "Giza"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-002",
+              "type": "mcq",
+              "text": "I want to ______ the Egyptian Museum.",
+              "answer": "visit",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "ride",
+                "visit",
+                "walk",
+                "build"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-003",
+              "type": "mcq",
+              "text": "People buy ______ from the bazaar.",
+              "answer": "gifts",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "gifts",
+                "history",
+                "camels",
+                "pyramids"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-004",
+              "type": "mcq",
+              "text": "A/An ______ is a place with water and trees in the desert.",
+              "answer": "oasis",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "tower",
+                "hotel",
+                "museum",
+                "oasis"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-005",
+              "type": "mcq",
+              "text": "The Egyptian Museum has many ______ to see.",
+              "answer": "treasures",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "gifts",
+                "treasures",
+                "pyramids",
+                "camels"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-006",
+              "type": "mcq",
+              "text": "My country has rich ______.",
+              "answer": "history",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "traffic",
+                "stations",
+                "photos",
+                "history"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-007",
+              "type": "mcq",
+              "text": "Can we ______ a camel near the Pyramids?",
+              "answer": "ride",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "read",
+                "ride",
+                "drive",
+                "play"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-008",
+              "type": "mcq",
+              "text": "Tourists can buy ______ as souvenirs in Cairo.",
+              "answer": "gifts",
+              "source_page": 118,
+              "status": "active",
+              "choices": [
+                "cars",
+                "fruit",
+                "gifts",
+                "plants"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-009",
+              "type": "complete",
+              "text": "Ali is a tour guide in Egypt. He takes tourists to see the ______.",
+              "answer": "Pyramids",
+              "source_page": 119,
+              "status": "active",
+              "word_bank": [
+                "pictures",
+                "visitors",
+                "Pyramids",
+                "explore",
+                "camel"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-010",
+              "type": "complete",
+              "text": "They stop to take ______ with their cameras.",
+              "answer": "pictures",
+              "source_page": 119,
+              "status": "active",
+              "word_bank": [
+                "pictures",
+                "visitors",
+                "Pyramids",
+                "explore",
+                "camel"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-011",
+              "type": "complete",
+              "text": "Many ______ want to ride a camel near the Pyramids.",
+              "answer": "visitors",
+              "source_page": 119,
+              "status": "active",
+              "word_bank": [
+                "pictures",
+                "visitors",
+                "Pyramids",
+                "explore",
+                "camel"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-012",
+              "type": "complete",
+              "text": "Many visitors want to ride a ______ near the Pyramids.",
+              "answer": "camel",
+              "source_page": 119,
+              "status": "active",
+              "word_bank": [
+                "pictures",
+                "visitors",
+                "Pyramids",
+                "explore",
+                "camel"
+              ]
+            },
+            {
+              "id": "bbb-u4l1-013",
+              "type": "reading_mcq",
+              "text": "Khan Al-Khalili is a famous ______.",
+              "answer": "market",
+              "source_page": 119,
+              "status": "active",
+              "choices": [
+                "school",
+                "hospital",
+                "market",
+                "library"
+              ],
+              "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
+            },
+            {
+              "id": "bbb-u4l1-014",
+              "type": "reading_mcq",
+              "text": "The underlined word \"It\" refers to ______.",
+              "answer": "Khan Al-Khalili",
+              "source_page": 119,
+              "status": "active",
+              "choices": [
+                "school",
+                "Khan Al-Khalili",
+                "hospital",
+                "home"
+              ],
+              "passage_ref": "bbb-u4l1-013"
+            },
+            {
+              "id": "bbb-u4l1-015",
+              "type": "reading_open",
+              "text": "Who likes walking in the narrow streets in Khan Al-Khalili?",
+              "answer": "Tourists.",
+              "source_page": 119,
+              "status": "active",
+              "accepted_answers": [
+                "Tourists.",
+                "Tourists like walking in the narrow streets."
+              ],
+              "passage_ref": "bbb-u4l1-013"
+            },
+            {
+              "id": "bbb-u4l1-016",
+              "type": "reading_open",
+              "text": "What's Khan Al-Khalili famous for?",
+              "answer": "Its old cafés.",
+              "source_page": 119,
+              "status": "active",
+              "accepted_answers": [
+                "Its old cafés.",
+                "It is famous for its old cafés.",
+                "Souvenirs, jewelry, gold and old cafés."
+              ],
+              "passage_ref": "bbb-u4l1-013"
+            },
+            {
+              "id": "bbb-u4l1-017",
+              "type": "reading_open",
+              "text": "Where's Khan Al-Khalili market?",
+              "answer": "In Cairo.",
+              "source_page": 119,
+              "status": "active",
+              "accepted_answers": [
+                "In Cairo.",
+                "It is in Cairo."
+              ],
+              "passage_ref": "bbb-u4l1-013"
+            },
+            {
+              "id": "bbb-u4l1-018",
+              "type": "punctuation",
+              "text": "the egyptian Museum is in Cairo",
+              "answer": "The Egyptian Museum is in Cairo.",
+              "source_page": 119,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l1-019",
+              "type": "punctuation",
+              "text": "do you like to visit the Cairo Tower",
+              "answer": "Do you like to visit the Cairo Tower?",
+              "source_page": 119,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l1-020",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"The Nile River\" using: Egypt – longest – boats.",
+              "answer": "The Nile River is important for Egypt. It is the longest river in the world. People enjoy riding boats on its water. They can see beautiful views.",
+              "source_page": 119,
+              "status": "active",
+              "model_answer_page": 136
+            }
+          ],
+          "question_count": 20
+        },
+        {
+          "lesson_id": 2,
+          "title": "My City / The World of Big Numbers / Prepositions of Place",
+          "questions": [
+            {
+              "id": "bbb-u4l2-001",
+              "type": "mcq",
+              "text": "Students go to the ______ to learn and meet friends.",
+              "answer": "schools",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "hospitals",
+                "schools",
+                "banks",
+                "hotels"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-002",
+              "type": "mcq",
+              "text": "My school is ______ the library and the park.",
+              "answer": "between",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "in front",
+                "next",
+                "under",
+                "between"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-003",
+              "type": "mcq",
+              "text": "The teacher stands ______ of the board.",
+              "answer": "in front",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "next",
+                "in front",
+                "behind",
+                "on"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-004",
+              "type": "mcq",
+              "text": "There is a picture of my family ______ the wall.",
+              "answer": "on",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "next",
+                "on",
+                "between",
+                "in front"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-005",
+              "type": "mcq",
+              "text": "I borrowed a story from the ______.",
+              "answer": "library",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "post office",
+                "hospital",
+                "shopping mall",
+                "library"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-006",
+              "type": "mcq",
+              "text": "Doctors help people who are ______.",
+              "answer": "sick",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "good",
+                "sick",
+                "fine",
+                "well"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-007",
+              "type": "mcq",
+              "text": "We bought new clothes from the ______.",
+              "answer": "shopping mall",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "shopping mall",
+                "school",
+                "library",
+                "station"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-008",
+              "type": "mcq",
+              "text": "I always go to the ______ to send letters and packages to my cousins.",
+              "answer": "post office",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "shopping mall",
+                "stores",
+                "post office",
+                "library"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-009",
+              "type": "mcq",
+              "text": "Museums teach us about ______.",
+              "answer": "history",
+              "source_page": 126,
+              "status": "active",
+              "choices": [
+                "history",
+                "math",
+                "English",
+                "Arabic"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-010",
+              "type": "complete",
+              "text": "In the morning, children carry their bags and go to ______ to study and learn new things.",
+              "answer": "school",
+              "source_page": 126,
+              "status": "active",
+              "word_bank": [
+                "hospital",
+                "borrow",
+                "letters",
+                "school",
+                "litter"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-011",
+              "type": "complete",
+              "text": "After school, some go to the library to ______ books.",
+              "answer": "borrow",
+              "source_page": 126,
+              "status": "active",
+              "word_bank": [
+                "hospital",
+                "borrow",
+                "letters",
+                "school",
+                "litter"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-012",
+              "type": "complete",
+              "text": "If someone feels sick, they can go to the ______.",
+              "answer": "hospital",
+              "source_page": 126,
+              "status": "active",
+              "word_bank": [
+                "hospital",
+                "borrow",
+                "letters",
+                "school",
+                "litter"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-013",
+              "type": "complete",
+              "text": "Near the hospital is the post office, where people send important ______.",
+              "answer": "letters",
+              "source_page": 126,
+              "status": "active",
+              "word_bank": [
+                "hospital",
+                "borrow",
+                "letters",
+                "school",
+                "litter"
+              ]
+            },
+            {
+              "id": "bbb-u4l2-014",
+              "type": "reading_mcq",
+              "text": "Children go to school to ______.",
+              "answer": "study and meet friends",
+              "source_page": 127,
+              "status": "active",
+              "choices": [
+                "sleep",
+                "meet friends",
+                "buy food",
+                "cry"
+              ],
+              "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
+            },
+            {
+              "id": "bbb-u4l2-015",
+              "type": "reading_mcq",
+              "text": "Sick people go to ______ to see doctors.",
+              "answer": "hospital",
+              "source_page": 127,
+              "status": "active",
+              "choices": [
+                "school",
+                "supermarket",
+                "sports club",
+                "hospital"
+              ],
+              "passage_ref": "bbb-u4l2-014"
+            },
+            {
+              "id": "bbb-u4l2-016",
+              "type": "reading_summary",
+              "text": "Summarize the text in one sentence.",
+              "answer": null,
+              "source_page": 127,
+              "status": "inactive_no_model_answer",
+              "passage_ref": "bbb-u4l2-014"
+            },
+            {
+              "id": "bbb-u4l2-017",
+              "type": "reading_open",
+              "text": "Why do people enjoy going to the supermarket?",
+              "answer": "Because they can buy different food.",
+              "source_page": 127,
+              "status": "active",
+              "accepted_answers": [
+                "Because they can buy different food.",
+                "They can buy different food there."
+              ],
+              "passage_ref": "bbb-u4l2-014"
+            },
+            {
+              "id": "bbb-u4l2-018",
+              "type": "reading_open",
+              "text": "Where do families go to swim on hot days?",
+              "answer": "To the sports club.",
+              "source_page": 127,
+              "status": "active",
+              "accepted_answers": [
+                "The sports club.",
+                "To the sports club."
+              ],
+              "passage_ref": "bbb-u4l2-014"
+            },
+            {
+              "id": "bbb-u4l2-019",
+              "type": "correct_form",
+              "text": "The flower is growing ______ (on) the pot.",
+              "answer": "in",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-020",
+              "type": "correct_form",
+              "text": "The sandwich is ______ (next) the juice and the salad.",
+              "answer": "next to",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-021",
+              "type": "correct_form",
+              "text": "She stands ______ (behind) of the board.",
+              "answer": "in front",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-022",
+              "type": "correct_form",
+              "text": "The picture is ______ (under) the wall.",
+              "answer": "on",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-023",
+              "type": "correct_form",
+              "text": "My shoes are ______ (in) the bed.",
+              "answer": "under",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-024",
+              "type": "correct_form",
+              "text": "The bicycle is in front ______ (on) my house.",
+              "answer": "of",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-025",
+              "type": "correct_form",
+              "text": "The chair is ______ (on) the bed.",
+              "answer": null,
+              "source_page": 127,
+              "status": "inactive_ambiguous_source"
+            },
+            {
+              "id": "bbb-u4l2-026",
+              "type": "correct_form",
+              "text": "The cat is ______ (on the door). I can't see it.",
+              "answer": "behind the door",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-027",
+              "type": "correct_form",
+              "text": "The school is next ______ (on) the post office.",
+              "answer": "to",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-028",
+              "type": "correct_form",
+              "text": "We can see many trees ______ (next) of my school.",
+              "answer": "in front",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-029",
+              "type": "punctuation",
+              "text": "why do you like shopping",
+              "answer": "Why do you like shopping?",
+              "source_page": 127,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l2-030",
+              "type": "punctuation",
+              "text": "salma learns new things",
+              "answer": "Salma learns new things.",
+              "source_page": 127,
+              "status": "active"
+            }
+          ],
+          "question_count": 28
+        },
+        {
+          "lesson_id": 3,
+          "title": "Writing a Blog / A Natural Trip",
+          "questions": [
+            {
+              "id": "bbb-u4l3-001",
+              "type": "mcq",
+              "text": "Tourists can swim and take photos at the Salt ______.",
+              "answer": "Lake",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "Sea",
+                "Lake",
+                "Water",
+                "River"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-002",
+              "type": "mcq",
+              "text": "Sweet ______ are fresh from palm trees.",
+              "answer": "dates",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "apples",
+                "bananas",
+                "dates",
+                "lemons"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-003",
+              "type": "mcq",
+              "text": "It's a good idea to bring a ______ at night in Siwa Oasis.",
+              "answer": "jacket",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "hat",
+                "jacket",
+                "swimming suit",
+                "T-shirt"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-004",
+              "type": "mcq",
+              "text": "People wear light ______ during the day in Siwa.",
+              "answer": "clothes",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "clothes",
+                "shoes",
+                "bags",
+                "hats"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-005",
+              "type": "mcq",
+              "text": "You can see palm ______ around the lake and desert.",
+              "answer": "trees",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "daytime",
+                "leaves",
+                "trees",
+                "plants"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-006",
+              "type": "mcq",
+              "text": "Many tourists come to Egypt for ______.",
+              "answer": "adventure",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "adventure",
+                "sunset",
+                "dates",
+                "night time"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-007",
+              "type": "mcq",
+              "text": "In the daytime, it's hot in the ______.",
+              "answer": "desert",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "monastery",
+                "sea",
+                "beach",
+                "desert"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-008",
+              "type": "mcq",
+              "text": "I bought some ______ fruit from the market.",
+              "answer": "fresh",
+              "source_page": 132,
+              "status": "active",
+              "choices": [
+                "bad",
+                "fresh",
+                "cold",
+                "old"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-009",
+              "type": "complete",
+              "text": "St. Catherine Mountain is in South Sinai. It is a famous place. People come to ______ the mountain.",
+              "answer": "climb",
+              "source_page": 132,
+              "status": "active",
+              "word_bank": [
+                "colorful",
+                "book",
+                "monastery",
+                "top",
+                "climb"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-010",
+              "type": "complete",
+              "text": "They see ______ rocks, green plants, and sometimes animals.",
+              "answer": "colorful",
+              "source_page": 132,
+              "status": "active",
+              "word_bank": [
+                "colorful",
+                "book",
+                "monastery",
+                "top",
+                "climb"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-011",
+              "type": "complete",
+              "text": "When they reach the ______, they visit the old monastery.",
+              "answer": "top",
+              "source_page": 132,
+              "status": "active",
+              "word_bank": [
+                "colorful",
+                "book",
+                "monastery",
+                "top",
+                "climb"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-012",
+              "type": "complete",
+              "text": "When they reach the top, they visit the old ______.",
+              "answer": "monastery",
+              "source_page": 132,
+              "status": "active",
+              "word_bank": [
+                "colorful",
+                "book",
+                "monastery",
+                "top",
+                "climb"
+              ]
+            },
+            {
+              "id": "bbb-u4l3-013",
+              "type": "reading_mcq",
+              "text": "Ahmed goes to St. Catherine ______.",
+              "answer": "every year",
+              "source_page": 133,
+              "status": "active",
+              "choices": [
+                "Toer",
+                "Museum",
+                "River",
+                "Mountain"
+              ],
+              "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
+            },
+            {
+              "id": "bbb-u4l3-014",
+              "type": "reading_mcq",
+              "text": "The old ______ is at the top.",
+              "answer": "monastery",
+              "source_page": 133,
+              "status": "active",
+              "choices": [
+                "monastery",
+                "bazaar",
+                "city",
+                "building"
+              ],
+              "passage_ref": "bbb-u4l3-013"
+            },
+            {
+              "id": "bbb-u4l3-015",
+              "type": "reading_open",
+              "text": "Who does Ahmed go with?",
+              "answer": "His family.",
+              "source_page": 133,
+              "status": "active",
+              "accepted_answers": [
+                "His family.",
+                "He goes with his family."
+              ],
+              "passage_ref": "bbb-u4l3-013"
+            },
+            {
+              "id": "bbb-u4l3-016",
+              "type": "reading_open",
+              "text": "What is the main idea of the text?",
+              "answer": "A visit to St. Catherine Mountain.",
+              "source_page": 133,
+              "status": "active",
+              "accepted_answers": [
+                "A visit to St. Catherine Mountain.",
+                "St. Catherine Mountain."
+              ],
+              "passage_ref": "bbb-u4l3-013"
+            },
+            {
+              "id": "bbb-u4l3-017",
+              "type": "reading_open",
+              "text": "Why do they wear warm clothes?",
+              "answer": "Because it's cold.",
+              "source_page": 133,
+              "status": "active",
+              "accepted_answers": [
+                "Because it's cold.",
+                "It is cold."
+              ],
+              "passage_ref": "bbb-u4l3-013"
+            },
+            {
+              "id": "bbb-u4l3-018",
+              "type": "punctuation",
+              "text": "siwa Oasis is a nice place",
+              "answer": "Siwa Oasis is a nice place.",
+              "source_page": 133,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l3-019",
+              "type": "punctuation",
+              "text": "do you learn about it",
+              "answer": "Do you learn about it?",
+              "source_page": 133,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4l3-020",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"A Natural Trip\" using: amazing place – tourists – take pictures.",
+              "answer": "I went on a trip to St. Catherine Mountain. It is in South Sinai, Egypt. I climbed St. Catherine Mountain and took a lot of photos. I saw colorful rocks and small plants.",
+              "source_page": 133,
+              "status": "active",
+              "model_answer_page": 136
+            }
+          ],
+          "question_count": 20
+        },
+        {
+          "lesson_id": 4,
+          "title": "Unit 4 Review and Tests",
+          "questions": [
+            {
+              "id": "bbb-u4r-001",
+              "type": "dialogue_complete",
+              "text": "Welcome to Egypt! I work as a ______ guide.",
+              "answer": "tour",
+              "source_page": 137,
+              "status": "active",
+              "word_bank": [
+                "ride",
+                "meet",
+                "pictures",
+                "tour"
+              ]
+            },
+            {
+              "id": "bbb-u4r-002",
+              "type": "dialogue_complete",
+              "text": "Nice to ______ you!",
+              "answer": "meet",
+              "source_page": 137,
+              "status": "active",
+              "word_bank": [
+                "ride",
+                "meet",
+                "pictures",
+                "tour"
+              ]
+            },
+            {
+              "id": "bbb-u4r-003",
+              "type": "dialogue_complete",
+              "text": "You can ______ a camel.",
+              "answer": "ride",
+              "source_page": 137,
+              "status": "active",
+              "word_bank": [
+                "ride",
+                "meet",
+                "pictures",
+                "tour"
+              ]
+            },
+            {
+              "id": "bbb-u4r-004",
+              "type": "dialogue_complete",
+              "text": "Great! I can take ______, too.",
+              "answer": "pictures",
+              "source_page": 137,
+              "status": "active",
+              "word_bank": [
+                "ride",
+                "meet",
+                "pictures",
+                "tour"
+              ]
+            },
+            {
+              "id": "bbb-u4r-005",
+              "type": "mcq",
+              "text": "A ______ helps tourists learn about places.",
+              "answer": "tour guide",
+              "source_page": 137,
+              "status": "active",
+              "choices": [
+                "tour guide",
+                "doctor",
+                "nurse",
+                "police officer"
+              ]
+            },
+            {
+              "id": "bbb-u4r-006",
+              "type": "mcq",
+              "text": "My school is ______ to the post office.",
+              "answer": "next",
+              "source_page": 137,
+              "status": "active",
+              "choices": [
+                "behind",
+                "between",
+                "in front",
+                "next"
+              ]
+            },
+            {
+              "id": "bbb-u4r-007",
+              "type": "mcq",
+              "text": "We can read and borrow books at the ______.",
+              "answer": "library",
+              "source_page": 137,
+              "status": "active",
+              "choices": [
+                "restaurant",
+                "museum",
+                "library",
+                "hospital"
+              ]
+            },
+            {
+              "id": "bbb-u4r-008",
+              "type": "mcq",
+              "text": "My family picture is ______ the wall of the living room.",
+              "answer": "on",
+              "source_page": 137,
+              "status": "active",
+              "choices": [
+                "behind",
+                "on",
+                "next",
+                "in"
+              ]
+            },
+            {
+              "id": "bbb-u4r-009",
+              "type": "correction",
+              "text": "The cat is in front off the box.",
+              "answer": "The cat is in front of the box.",
+              "source_page": 137,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-010",
+              "type": "correction",
+              "text": "The dog is standing under the door.",
+              "answer": "The dog is standing in front of the door.",
+              "source_page": 137,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-011",
+              "type": "correction",
+              "text": "We throw our trash between the bin.",
+              "answer": "We throw our trash in the bin.",
+              "source_page": 137,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-012",
+              "type": "correction",
+              "text": "My car is on the bike and the bus.",
+              "answer": "My car is between the bike and the bus.",
+              "source_page": 137,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-013",
+              "type": "true_false",
+              "text": "The library is a very noisy place.",
+              "answer": "False",
+              "source_page": 138,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
+            },
+            {
+              "id": "bbb-u4r-014",
+              "type": "true_false",
+              "text": "You can do your homework at the library.",
+              "answer": "True",
+              "source_page": 138,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "passage_ref": "bbb-u4r-013"
+            },
+            {
+              "id": "bbb-u4r-015",
+              "type": "reading_mcq",
+              "text": "We go to the library to read or ______ books.",
+              "answer": "borrow",
+              "source_page": 138,
+              "status": "active",
+              "choices": [
+                "eat",
+                "throw",
+                "borrow",
+                "make"
+              ],
+              "passage_ref": "bbb-u4r-013"
+            },
+            {
+              "id": "bbb-u4r-016",
+              "type": "reading_mcq",
+              "text": "The library has books about animals, history, and ______.",
+              "answer": "science",
+              "source_page": 138,
+              "status": "active",
+              "choices": [
+                "science",
+                "toys",
+                "clothes",
+                "food"
+              ],
+              "passage_ref": "bbb-u4r-013"
+            },
+            {
+              "id": "bbb-u4r-017",
+              "type": "reading_mcq",
+              "text": "You must keep the library ______.",
+              "answer": "clean",
+              "source_page": 138,
+              "status": "active",
+              "choices": [
+                "dirty",
+                "clean",
+                "dark",
+                "hot"
+              ],
+              "passage_ref": "bbb-u4r-013"
+            },
+            {
+              "id": "bbb-u4r-018",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"Siwa Oasis\" using: see sunset – good olive oil – cold – light clothes.",
+              "answer": "Siwa Oasis is a nice place in Egypt. You can see the sunset there. You should wear light clothes during the day and a jacket at night because it is cold. You can buy good olive oil.",
+              "source_page": 138,
+              "status": "active",
+              "model_answer_page": 136
+            },
+            {
+              "id": "bbb-u4r-019",
+              "type": "mcq",
+              "text": "Tourists can ______ a camel near the pyramids.",
+              "answer": "ride",
+              "source_page": 139,
+              "status": "active",
+              "choices": [
+                "drink",
+                "guide",
+                "see",
+                "ride"
+              ]
+            },
+            {
+              "id": "bbb-u4r-020",
+              "type": "mcq",
+              "text": "A/An ______ is very tall. We can see Cairo from the top.",
+              "answer": "Tower",
+              "source_page": 139,
+              "status": "active",
+              "choices": [
+                "Pyramids",
+                "Tower",
+                "bazaar",
+                "oasis"
+              ]
+            },
+            {
+              "id": "bbb-u4r-021",
+              "type": "mcq",
+              "text": "People buy ______ from the bazaar.",
+              "answer": "gifts",
+              "source_page": 139,
+              "status": "active",
+              "choices": [
+                "gifts",
+                "books",
+                "camels",
+                "Pyramids"
+              ]
+            },
+            {
+              "id": "bbb-u4r-022",
+              "type": "mcq",
+              "text": "The cat is in front ______ the box.",
+              "answer": "of",
+              "source_page": 139,
+              "status": "active",
+              "choices": [
+                "of",
+                "on",
+                "off",
+                "to"
+              ]
+            },
+            {
+              "id": "bbb-u4r-023",
+              "type": "mcq",
+              "text": "The library is next ______ the supermarket.",
+              "answer": "to",
+              "source_page": 139,
+              "status": "active",
+              "choices": [
+                "next",
+                "in",
+                "between",
+                "to"
+              ]
+            },
+            {
+              "id": "bbb-u4r-024",
+              "type": "mcq",
+              "text": "The dog is standing ______ the door.",
+              "answer": "in front of",
+              "source_page": 139,
+              "status": "active",
+              "choices": [
+                "on",
+                "behind",
+                "under",
+                "in front of"
+              ]
+            },
+            {
+              "id": "bbb-u4r-025",
+              "type": "complete",
+              "text": "The shopping mall has many ______.",
+              "answer": "stores",
+              "source_page": 139,
+              "status": "active",
+              "word_bank": [
+                "stores",
+                "restaurants",
+                "clothes",
+                "teachers",
+                "treasures"
+              ]
+            },
+            {
+              "id": "bbb-u4r-026",
+              "type": "complete",
+              "text": "People buy ______, shoes, and toys from them.",
+              "answer": "clothes",
+              "source_page": 139,
+              "status": "active",
+              "word_bank": [
+                "stores",
+                "restaurants",
+                "clothes",
+                "teachers",
+                "treasures"
+              ]
+            },
+            {
+              "id": "bbb-u4r-027",
+              "type": "complete",
+              "text": "They eat in ______ and spend happy time together.",
+              "answer": "restaurants",
+              "source_page": 139,
+              "status": "active",
+              "word_bank": [
+                "stores",
+                "restaurants",
+                "clothes",
+                "teachers",
+                "treasures"
+              ]
+            },
+            {
+              "id": "bbb-u4r-028",
+              "type": "complete",
+              "text": "The museum has wonderful ______ that teach us about our history.",
+              "answer": "treasures",
+              "source_page": 139,
+              "status": "active",
+              "word_bank": [
+                "stores",
+                "restaurants",
+                "clothes",
+                "teachers",
+                "treasures"
+              ]
+            },
+            {
+              "id": "bbb-u4r-029",
+              "type": "reading_mcq",
+              "text": "We went to Khan Al-Khalili ______.",
+              "answer": "bazaar",
+              "source_page": 140,
+              "status": "active",
+              "choices": [
+                "river",
+                "school",
+                "bazaar",
+                "museum"
+              ],
+              "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
+            },
+            {
+              "id": "bbb-u4r-030",
+              "type": "reading_mcq",
+              "text": "There were many shops selling ______ and clothes.",
+              "answer": "gifts",
+              "source_page": 140,
+              "status": "active",
+              "choices": [
+                "gifts",
+                "boats",
+                "trees",
+                "tickets"
+              ],
+              "passage_ref": "bbb-u4r-029"
+            },
+            {
+              "id": "bbb-u4r-031",
+              "type": "reading_summary",
+              "text": "Summarize the text in one sentence.",
+              "answer": null,
+              "source_page": 140,
+              "status": "inactive_no_model_answer",
+              "passage_ref": "bbb-u4r-029"
+            },
+            {
+              "id": "bbb-u4r-032",
+              "type": "reading_open",
+              "text": "What did you buy?",
+              "answer": "A nice ring for my sister.",
+              "source_page": 140,
+              "status": "active",
+              "accepted_answers": [
+                "A nice ring.",
+                "A nice ring for my sister."
+              ],
+              "passage_ref": "bbb-u4r-029"
+            },
+            {
+              "id": "bbb-u4r-033",
+              "type": "reading_open",
+              "text": "How was the day?",
+              "answer": "It was a very nice day.",
+              "source_page": 140,
+              "status": "active",
+              "accepted_answers": [
+                "Very nice.",
+                "It was a very nice day."
+              ],
+              "passage_ref": "bbb-u4r-029"
+            },
+            {
+              "id": "bbb-u4r-034",
+              "type": "correct_form",
+              "text": "I took a photo ______ (in) the Cairo Tower.",
+              "answer": "of",
+              "source_page": 140,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-035",
+              "type": "correct_form",
+              "text": "The chair is ______ (next) the two beds.",
+              "answer": "between",
+              "source_page": 140,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-036",
+              "type": "correct_form",
+              "text": "The bag is ______ (behind) the door.",
+              "answer": null,
+              "source_page": 140,
+              "status": "inactive_ambiguous_source"
+            },
+            {
+              "id": "bbb-u4r-037",
+              "type": "correct_form",
+              "text": "The boy hides ______ (on) the bed.",
+              "answer": "under",
+              "source_page": 140,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-038",
+              "type": "punctuation",
+              "text": "the nile is a very long river",
+              "answer": "The Nile is a very long river.",
+              "source_page": 140,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-039",
+              "type": "punctuation",
+              "text": "where is the cat",
+              "answer": "Where is the cat?",
+              "source_page": 140,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u4r-040",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"A place you like to visit with your friends\".",
+              "answer": "I want to visit the Egyptian Museum with my friends. It is in Cairo, Egypt. It has many treasures and history to see. We can also go to Khan Al-Khalili to buy some gifts.",
+              "source_page": 140,
+              "status": "active",
+              "model_answer_page": 136
+            }
+          ],
+          "question_count": 38
+        }
+      ]
+    }
+  ],
+  "total_active_questions": 106
+}
