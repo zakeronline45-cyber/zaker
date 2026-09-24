@@ -1,4 +1,51 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ذاكر | تأكيد الحساب</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>body{margin:0;font-family:Tahoma,Arial;background:#f8f6fa;color:#241331;display:grid;place-items:center;min-height:100vh}.card{width:min(520px,92%);background:#fff;border:1px solid #eadff0;border-radius:22px;padding:28px;box-shadow:0 16px 45px #35104422;text-align:center}a{color:#6f2392;font-weight:900}</style></head><body><div class="card"><h1>🎓 ذاكر</h1><h2 id="title">جاري تأكيد الحساب...</h2><p id="msg">لحظات قليلة.</p><a id="go" href="/login.html" style="display:none">تسجيل الدخول</a></div><script>
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ذاكر | تأكيد الحساب</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>body{margin:0;font-family:Tahoma,Arial;background:#f8f6fa;color:#241331;display:grid;place-items:center;min-height:100vh}.card{width:min(520px,92%);background:#fff;border:1px solid #eadff0;border-radius:22px;padding:28px;box-shadow:0 16px 45px #35104422;text-align:center}a{display:inline-block;color:#fff;background:#6f2392;padding:11px 16px;border-radius:11px;font-weight:900;text-decoration:none}.muted{color:#766b80;line-height:1.8}</style></head><body><div class="card"><h1>🎓 ذاكر</h1><h2 id="title">جاري تأكيد الحساب...</h2><p id="msg" class="muted">لحظات قليلة.</p><a id="go" href="/login.html" style="display:none">تسجيل الدخول</a></div><script>
 const sb=supabase.createClient('https://llhmkyighydokneqwrdj.supabase.co','sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77');
-(async()=>{try{const code=new URLSearchParams(location.search).get('code');if(code){await sb.auth.exchangeCodeForSession(code)}const {data}=await sb.auth.getSession();if(!data.session)throw new Error('لم يتم تأكيد الجلسة. افتح رابط التأكيد مرة أخرى.');title.textContent='تم تأكيد بريدك بنجاح ✓';msg.textContent='سيتم إعادتك إلى ذاكر الآن.';const {data:p}=await sb.from('profiles').select('role').eq('id',data.session.user.id).maybeSingle();setTimeout(()=>location.href=p?.role==='admin'?'/admin.html':'/account.html',900)}catch(e){title.textContent='تعذر إكمال التأكيد';msg.textContent=e.message;go.style.display='inline-block'}})();
+(async()=>{
+ try{
+   const qs=new URLSearchParams(location.search);
+   const hs=new URLSearchParams(location.hash.replace(/^#/,''));
+   const err=qs.get('error_description')||hs.get('error_description')||qs.get('error')||hs.get('error');
+   if(err)throw new Error(decodeURIComponent(err));
+
+   const code=qs.get('code');
+   if(code){
+     const {error}=await sb.auth.exchangeCodeForSession(code);
+     if(error)throw error;
+   }
+
+   const accessToken=hs.get('access_token'),refreshToken=hs.get('refresh_token');
+   if(accessToken&&refreshToken){
+     const {error}=await sb.auth.setSession({access_token:accessToken,refresh_token:refreshToken});
+     if(error)throw error;
+   }
+
+   const {data,error}=await sb.auth.getSession();
+   if(error)throw error;
+
+   if(data.session){
+     title.textContent='تم تأكيد بريدك بنجاح ✓';
+     msg.textContent='تم تفعيل الحساب. جاري فتح ذاكر الآن...';
+     history.replaceState(null,'',location.pathname);
+     const {data:p}=await sb.from('profiles').select('role').eq('id',data.session.user.id).maybeSingle();
+     setTimeout(()=>location.replace(p?.role==='admin'?'/admin.html':'/'),800);
+     return;
+   }
+
+   const signupType=qs.get('type')||hs.get('type');
+   if(signupType==='signup'){
+     title.textContent='تم تأكيد بريدك ✓';
+     msg.textContent='تم تأكيد البريد. اضغط تسجيل الدخول للمتابعة.';
+     go.href='/login.html?confirmed=1';
+     go.style.display='inline-block';
+     return;
+   }
+
+   throw new Error('لم تكتمل عملية التأكيد. افتح رابط التأكيد من البريد مرة أخرى.');
+ }catch(e){
+   title.textContent='تعذر إكمال التأكيد';
+   msg.textContent=e?.message||'حدث خطأ أثناء تأكيد البريد.';
+   go.href='/login.html';
+   go.style.display='inline-block';
+ }
+})();
 </script></body></html>
