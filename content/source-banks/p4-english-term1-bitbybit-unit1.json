@@ -28,7 +28,6 @@
               "id": "bbb-u1l1-001",
               "type": "mcq",
               "text": "We ______ the teacher's voice in class.",
-              "answer": "hear",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -42,7 +41,6 @@
               "id": "bbb-u1l1-002",
               "type": "mcq",
               "text": "You use your ______ to read a book.",
-              "answer": "eyes",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -56,7 +54,6 @@
               "id": "bbb-u1l1-003",
               "type": "mcq",
               "text": "We touch with our ______.",
-              "answer": "hands",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -70,7 +67,6 @@
               "id": "bbb-u1l1-004",
               "type": "mcq",
               "text": "We can ______ the flowers in the garden with our nose.",
-              "answer": "smell",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -84,7 +80,6 @@
               "id": "bbb-u1l1-005",
               "type": "mcq",
               "text": "Our ______ help us stay safe and learn.",
-              "answer": "senses",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -98,7 +93,6 @@
               "id": "bbb-u1l1-006",
               "type": "mcq",
               "text": "If we smell smoke, we know there's a ______.",
-              "answer": "fire",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -112,7 +106,6 @@
               "id": "bbb-u1l1-007",
               "type": "mcq",
               "text": "I can ______ soft things with my fingers.",
-              "answer": "touch",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -126,7 +119,6 @@
               "id": "bbb-u1l1-008",
               "type": "mcq",
               "text": "We use our ______ to smell.",
-              "answer": "nose",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -140,7 +132,6 @@
               "id": "bbb-u1l1-009",
               "type": "mcq",
               "text": "We taste delicious food with our ______.",
-              "answer": "tongue",
               "source_page": 18,
               "status": "active",
               "choices": [
@@ -154,7 +145,6 @@
               "id": "bbb-u1l1-010",
               "type": "mcq",
               "text": "We use our ______ to see the beautiful colors of the flowers.",
-              "answer": "eyes",
               "source_page": 19,
               "status": "active",
               "choices": [
@@ -168,7 +158,6 @@
               "id": "bbb-u1l1-011",
               "type": "mcq",
               "text": "Senses help us ______ the world around us.",
-              "answer": "understand",
               "source_page": 19,
               "status": "active",
               "choices": [
@@ -182,7 +171,6 @@
               "id": "bbb-u1l1-012",
               "type": "mcq",
               "text": "Senses help us stay ______.",
-              "answer": "safe",
               "source_page": 19,
               "status": "active",
               "choices": [
@@ -196,7 +184,6 @@
               "id": "bbb-u1l1-013",
               "type": "complete",
               "text": "Samir can hear the birds in the garden. He sees butterflies flying near the flowers. He can ______ their beautiful wings.",
-              "answer": "see",
               "source_page": 19,
               "status": "active"
             },
@@ -204,7 +191,6 @@
               "id": "bbb-u1l1-014",
               "type": "complete",
               "text": "His sister ______ the sweet flowers in the air.",
-              "answer": "smells",
               "source_page": 19,
               "status": "active"
             },
@@ -212,7 +198,6 @@
               "id": "bbb-u1l1-015",
               "type": "complete",
               "text": "His sister smells the sweet ______ in the air.",
-              "answer": "flowers",
               "source_page": 19,
               "status": "active"
             },
@@ -220,7 +205,6 @@
               "id": "bbb-u1l1-016",
               "type": "complete",
               "text": "Birds sing loudly, so she can ______ them in the tree.",
-              "answer": "hear",
               "source_page": 19,
               "status": "active"
             },
@@ -228,7 +212,6 @@
               "id": "bbb-u1l1-017",
               "type": "reading_mcq",
               "text": "Our ______ help us touch things.",
-              "answer": "hands",
               "source_page": 19,
               "status": "active",
               "choices": [
@@ -243,7 +226,6 @@
               "id": "bbb-u1l1-018",
               "type": "reading_mcq",
               "text": "The word \"important\" means ______.",
-              "answer": "useful",
               "source_page": 19,
               "status": "active",
               "choices": [
@@ -258,49 +240,30 @@
               "id": "bbb-u1l1-019",
               "type": "reading_open",
               "text": "What is the main idea of the passage?",
-              "answer": "The five senses and how they help us.",
               "source_page": 19,
               "status": "active",
-              "accepted_answers": [
-                "The five senses.",
-                "The five senses and how they help us.",
-                "How our senses help us learn and stay safe."
-              ],
               "passage_ref": "bbb-u1l1-017"
             },
             {
               "id": "bbb-u1l1-020",
               "type": "reading_open",
               "text": "How many senses do we have?",
-              "answer": "Five senses.",
               "source_page": 19,
               "status": "active",
-              "accepted_answers": [
-                "Five.",
-                "Five senses.",
-                "We have five senses."
-              ],
               "passage_ref": "bbb-u1l1-017"
             },
             {
               "id": "bbb-u1l1-021",
               "type": "reading_open",
               "text": "What do our ears help us do?",
-              "answer": "They help us hear different sounds.",
               "source_page": 19,
               "status": "active",
-              "accepted_answers": [
-                "Hear.",
-                "They help us hear.",
-                "They help us hear different sounds."
-              ],
               "passage_ref": "bbb-u1l1-017"
             },
             {
               "id": "bbb-u1l1-022",
               "type": "punctuation",
               "text": "i can hear birds singing",
-              "answer": "I can hear birds singing.",
               "source_page": 20,
               "status": "active"
             },
@@ -308,7 +271,6 @@
               "id": "bbb-u1l1-023",
               "type": "punctuation",
               "text": "what are our senses",
-              "answer": "What are our senses?",
               "source_page": 20,
               "status": "active"
             },
@@ -316,7 +278,6 @@
               "id": "bbb-u1l1-024",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"My senses\" using: eyes – taste – safe.",
-              "answer": "We have five senses. We see with our eyes. We taste with our tongue. Senses help us stay safe.",
               "source_page": 20,
               "status": "active",
               "model_answer_page": 41
@@ -325,7 +286,6 @@
               "id": "bbb-u1l1-025",
               "type": "dialogue_complete",
               "text": "How many ______ do we have?",
-              "answer": "senses",
               "source_page": 42,
               "status": "active",
               "word_bank": [
@@ -339,7 +299,6 @@
               "id": "bbb-u1l1-026",
               "type": "dialogue_complete",
               "text": "We have ______ senses.",
-              "answer": "five",
               "source_page": 42,
               "status": "active",
               "word_bank": [
@@ -353,7 +312,6 @@
               "id": "bbb-u1l1-027",
               "type": "dialogue_complete",
               "text": "How can we ______ food?",
-              "answer": "taste",
               "source_page": 42,
               "status": "active",
               "word_bank": [
@@ -367,7 +325,6 @@
               "id": "bbb-u1l1-028",
               "type": "dialogue_complete",
               "text": "With our ______.",
-              "answer": "tongues",
               "source_page": 42,
               "status": "active",
               "word_bank": [
@@ -381,7 +338,6 @@
               "id": "bbb-u1l1-029",
               "type": "mcq",
               "text": "I ______ soft and hard things with my hands.",
-              "answer": "touch",
               "source_page": 42,
               "status": "active",
               "choices": [
@@ -395,7 +351,6 @@
               "id": "bbb-u1l1-030",
               "type": "mcq",
               "text": "We ______ with our ears.",
-              "answer": "hear",
               "source_page": 44,
               "status": "active",
               "choices": [
@@ -416,7 +371,6 @@
               "id": "bbb-u1l2-001",
               "type": "mcq",
               "text": "Sleeping early keeps us ______.",
-              "answer": "healthy",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -430,7 +384,6 @@
               "id": "bbb-u1l2-002",
               "type": "mcq",
               "text": "I follow good ______ every day.",
-              "answer": "habits",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -444,7 +397,6 @@
               "id": "bbb-u1l2-003",
               "type": "mcq",
               "text": "Sarah ______ her homework first.",
-              "answer": "does",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -458,7 +410,6 @@
               "id": "bbb-u1l2-004",
               "type": "mcq",
               "text": "Eating lots of vegetables and fruits gives us ______.",
-              "answer": "energy",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -472,7 +423,6 @@
               "id": "bbb-u1l2-005",
               "type": "mcq",
               "text": "The boys ______ sports in the park every Friday.",
-              "answer": "play",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -486,7 +436,6 @@
               "id": "bbb-u1l2-006",
               "type": "mcq",
               "text": "Getting enough sleep helps our mind stay ______.",
-              "answer": "sharp",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -500,7 +449,6 @@
               "id": "bbb-u1l2-007",
               "type": "mcq",
               "text": "They ______ the books in the morning.",
-              "answer": "read",
               "source_page": 25,
               "status": "active",
               "choices": [
@@ -514,7 +462,6 @@
               "id": "bbb-u1l2-008",
               "type": "mcq",
               "text": "Ali ______ the bus to the park every Friday.",
-              "answer": "takes",
               "source_page": 26,
               "status": "active",
               "choices": [
@@ -528,7 +475,6 @@
               "id": "bbb-u1l2-009",
               "type": "mcq",
               "text": "Every day, I ______ my teeth before I go to bed.",
-              "answer": "brush",
               "source_page": 26,
               "status": "active",
               "choices": [
@@ -542,7 +488,6 @@
               "id": "bbb-u1l2-010",
               "type": "mcq",
               "text": "My dad ______ at the hospital.",
-              "answer": "works",
               "source_page": 26,
               "status": "active",
               "choices": [
@@ -556,7 +501,6 @@
               "id": "bbb-u1l2-011",
               "type": "complete",
               "text": "Amir is healthy. She follows good ______.",
-              "answer": "habits",
               "source_page": 26,
               "status": "active",
               "word_bank": [
@@ -571,7 +515,6 @@
               "id": "bbb-u1l2-012",
               "type": "complete",
               "text": "She does ______ in the morning.",
-              "answer": "exercises",
               "source_page": 26,
               "status": "active",
               "word_bank": [
@@ -586,7 +529,6 @@
               "id": "bbb-u1l2-013",
               "type": "complete",
               "text": "She eats fresh fruit and ______.",
-              "answer": "vegetables",
               "source_page": 26,
               "status": "active",
               "word_bank": [
@@ -601,7 +543,6 @@
               "id": "bbb-u1l2-014",
               "type": "complete",
               "text": "She gets enough ______ every night.",
-              "answer": "sleep",
               "source_page": 26,
               "status": "active",
               "word_bank": [
@@ -616,7 +557,6 @@
               "id": "bbb-u1l2-015",
               "type": "reading_mcq",
               "text": "The main idea of the text is about Hani's ______.",
-              "answer": "healthy habits",
               "source_page": 26,
               "status": "active",
               "choices": [
@@ -631,7 +571,6 @@
               "id": "bbb-u1l2-016",
               "type": "reading_mcq",
               "text": "The underlined word \"strong\" is the opposite of ______.",
-              "answer": "weak",
               "source_page": 26,
               "status": "active",
               "choices": [
@@ -646,35 +585,22 @@
               "id": "bbb-u1l2-017",
               "type": "reading_open",
               "text": "What time does Hani wake up?",
-              "answer": "At 6 a.m.",
               "source_page": 26,
               "status": "active",
-              "accepted_answers": [
-                "6 a.m.",
-                "At 6 a.m.",
-                "He wakes up at 6 a.m."
-              ],
               "passage_ref": "bbb-u1l2-015"
             },
             {
               "id": "bbb-u1l2-018",
               "type": "reading_open",
               "text": "What gives Hani energy for school?",
-              "answer": "A healthy breakfast of eggs and milk.",
               "source_page": 26,
               "status": "active",
-              "accepted_answers": [
-                "His healthy breakfast.",
-                "Eggs and milk.",
-                "A healthy breakfast of eggs and milk."
-              ],
               "passage_ref": "bbb-u1l2-015"
             },
             {
               "id": "bbb-u1l2-019",
               "type": "reading_summary",
               "text": "Summarize the text in one sentence.",
-              "answer": "Hani follows healthy habits such as waking up early, cleaning his teeth and face, and eating a healthy breakfast.",
               "source_page": 26,
               "status": "active_ai_grading",
               "passage_ref": "bbb-u1l2-015"
@@ -683,7 +609,6 @@
               "id": "bbb-u1l2-020",
               "type": "correct_form",
               "text": "They ______ (going) to school every day.",
-              "answer": "go",
               "source_page": 27,
               "status": "active"
             },
@@ -691,7 +616,6 @@
               "id": "bbb-u1l2-021",
               "type": "correct_form",
               "text": "He ______ (go) to school on foot every day.",
-              "answer": "goes",
               "source_page": 27,
               "status": "active"
             },
@@ -699,7 +623,6 @@
               "id": "bbb-u1l2-022",
               "type": "correct_form",
               "text": "She ______ (take) vitamins every morning.",
-              "answer": "takes",
               "source_page": 27,
               "status": "active"
             },
@@ -707,7 +630,6 @@
               "id": "bbb-u1l2-023",
               "type": "correct_form",
               "text": "Salma ______ (read) a book every night.",
-              "answer": "reads",
               "source_page": 27,
               "status": "active"
             },
@@ -715,7 +637,6 @@
               "id": "bbb-u1l2-024",
               "type": "correct_form",
               "text": "My grandfather ______ (drink) coffee in the morning.",
-              "answer": "drinks",
               "source_page": 27,
               "status": "active"
             },
@@ -723,7 +644,6 @@
               "id": "bbb-u1l2-025",
               "type": "correct_form",
               "text": "We ______ (washes) our hands before eating.",
-              "answer": "wash",
               "source_page": 27,
               "status": "active"
             },
@@ -731,7 +651,6 @@
               "id": "bbb-u1l2-026",
               "type": "correct_form",
               "text": "Salma and I ______ (takes) the school bus every morning.",
-              "answer": "take",
               "source_page": 27,
               "status": "active"
             },
@@ -739,7 +658,6 @@
               "id": "bbb-u1l2-027",
               "type": "correct_form",
               "text": "He ______ (read) stories in English class.",
-              "answer": "reads",
               "source_page": 27,
               "status": "active"
             },
@@ -747,7 +665,6 @@
               "id": "bbb-u1l2-028",
               "type": "correct_form",
               "text": "She ______ (clean) her room every Friday.",
-              "answer": "cleans",
               "source_page": 27,
               "status": "active"
             },
@@ -755,7 +672,6 @@
               "id": "bbb-u1l2-029",
               "type": "correct_form",
               "text": "My brother and I ______ (watches) TV in the evening.",
-              "answer": "watch",
               "source_page": 27,
               "status": "active"
             },
@@ -763,7 +679,6 @@
               "id": "bbb-u1l2-030",
               "type": "punctuation",
               "text": "does she like fish",
-              "answer": "Does she like fish?",
               "source_page": 27,
               "status": "active"
             },
@@ -771,7 +686,6 @@
               "id": "bbb-u1l2-031",
               "type": "punctuation",
               "text": "she goes to school on foot",
-              "answer": "She goes to school on foot.",
               "source_page": 27,
               "status": "active"
             },
@@ -779,7 +693,6 @@
               "id": "bbb-u1l2-032",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"Your healthy habits\" using: eat – exercise – sleep.",
-              "answer": "I follow some healthy habits. I eat fresh fruit and vegetables. I do exercises. I sleep for 8 hours every day.",
               "source_page": 27,
               "status": "active",
               "model_answer_page": 41
@@ -788,7 +701,6 @@
               "id": "bbb-u1l2-033",
               "type": "mcq",
               "text": "It's a healthy habit to ______ exercises.",
-              "answer": "do",
               "source_page": 42,
               "status": "active",
               "choices": [
@@ -802,7 +714,6 @@
               "id": "bbb-u1l2-034",
               "type": "mcq",
               "text": "I ______ up early every day.",
-              "answer": "wake",
               "source_page": 42,
               "status": "active",
               "choices": [
@@ -816,7 +727,6 @@
               "id": "bbb-u1l2-035",
               "type": "mcq",
               "text": "She ______ her homework at 9:00 every day.",
-              "answer": "does",
               "source_page": 42,
               "status": "active",
               "choices": [
@@ -830,7 +740,6 @@
               "id": "bbb-u1l2-036",
               "type": "correction",
               "text": "My sister study English every day.",
-              "answer": "My sister studies English every day.",
               "source_page": 42,
               "status": "active"
             },
@@ -838,7 +747,6 @@
               "id": "bbb-u1l2-037",
               "type": "correction",
               "text": "They goes to school on foot.",
-              "answer": "They go to school on foot.",
               "source_page": 42,
               "status": "active"
             },
@@ -846,7 +754,6 @@
               "id": "bbb-u1l2-038",
               "type": "correction",
               "text": "Ahmed wake up early every day.",
-              "answer": "Ahmed wakes up early every day.",
               "source_page": 42,
               "status": "active"
             },
@@ -854,7 +761,6 @@
               "id": "bbb-u1l2-039",
               "type": "correction",
               "text": "Every night, I watching a movie.",
-              "answer": "Every night, I watch a movie.",
               "source_page": 42,
               "status": "active"
             },
@@ -862,7 +768,6 @@
               "id": "bbb-u1l2-040",
               "type": "true_false",
               "text": "It's very important to stay healthy.",
-              "answer": "True",
               "source_page": 43,
               "status": "active",
               "choices": [
@@ -875,7 +780,6 @@
               "id": "bbb-u1l2-041",
               "type": "true_false",
               "text": "It is not good to drink lots of water every day.",
-              "answer": "False",
               "source_page": 43,
               "status": "active",
               "choices": [
@@ -888,7 +792,6 @@
               "id": "bbb-u1l2-042",
               "type": "reading_mcq",
               "text": "Sleeping for ______ hours helps your body rest and grow.",
-              "answer": "8",
               "source_page": 43,
               "status": "active",
               "choices": [
@@ -903,7 +806,6 @@
               "id": "bbb-u1l2-043",
               "type": "reading_mcq",
               "text": "To stay ______, it's very important to do three things.",
-              "answer": "healthy",
               "source_page": 43,
               "status": "active",
               "choices": [
@@ -918,7 +820,6 @@
               "id": "bbb-u1l2-044",
               "type": "reading_mcq",
               "text": "Don't forget to wash your hands and ______ your teeth.",
-              "answer": "brush",
               "source_page": 43,
               "status": "active",
               "choices": [
@@ -933,7 +834,6 @@
               "id": "bbb-u1l2-045",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"Food that helps my body\" using: healthy – fruit and vegetables – body – strong.",
-              "answer": "I like to be healthy. I like eating fruit and vegetables. That helps my body stay healthy and strong.",
               "source_page": 43,
               "status": "active",
               "model_answer_page": 41
@@ -942,7 +842,6 @@
               "id": "bbb-u1l2-046",
               "type": "mcq",
               "text": "I always ______ my teeth before I go to bed.",
-              "answer": "brush",
               "source_page": 44,
               "status": "active",
               "choices": [
@@ -956,7 +855,6 @@
               "id": "bbb-u1l2-047",
               "type": "mcq",
               "text": "She ______ her backpack every day.",
-              "answer": "carries",
               "source_page": 44,
               "status": "active",
               "choices": [
@@ -970,7 +868,6 @@
               "id": "bbb-u1l2-048",
               "type": "mcq",
               "text": "My sister and I ______ TV in the evening.",
-              "answer": "watch",
               "source_page": 44,
               "status": "active",
               "choices": [
@@ -984,7 +881,6 @@
               "id": "bbb-u1l2-049",
               "type": "complete",
               "text": "Every day, Sara eats ______ like apples and bananas.",
-              "answer": "fruit",
               "source_page": 44,
               "status": "active",
               "word_bank": [
@@ -999,7 +895,6 @@
               "id": "bbb-u1l2-050",
               "type": "complete",
               "text": "She also enjoys ______ such as carrots and peas.",
-              "answer": "vegetables",
               "source_page": 44,
               "status": "active",
               "word_bank": [
@@ -1014,7 +909,6 @@
               "id": "bbb-u1l2-051",
               "type": "complete",
               "text": "Her mother says it is important to eat from all ______ groups.",
-              "answer": "food",
               "source_page": 44,
               "status": "active",
               "word_bank": [
@@ -1029,7 +923,6 @@
               "id": "bbb-u1l2-052",
               "type": "complete",
               "text": "She feels strong and full of ______.",
-              "answer": "energy",
               "source_page": 44,
               "status": "active",
               "word_bank": [
@@ -1044,7 +937,6 @@
               "id": "bbb-u1l2-053",
               "type": "reading_mcq",
               "text": "The underlined pronoun \"It\" refers to ______.",
-              "answer": "Talia",
               "source_page": 45,
               "status": "active",
               "choices": [
@@ -1059,7 +951,6 @@
               "id": "bbb-u1l2-054",
               "type": "reading_mcq",
               "text": "Talia drinks ______ for breakfast.",
-              "answer": "hot chocolate",
               "source_page": 45,
               "status": "active",
               "choices": [
@@ -1074,47 +965,30 @@
               "id": "bbb-u1l2-055",
               "type": "reading_open",
               "text": "What does Talia eat for breakfast?",
-              "answer": "Eggs and brown bread.",
               "source_page": 45,
               "status": "active",
-              "accepted_answers": [
-                "Eggs and brown bread.",
-                "She eats eggs and brown bread."
-              ],
               "passage_ref": "bbb-u1l2-053"
             },
             {
               "id": "bbb-u1l2-056",
               "type": "reading_open",
               "text": "How old is Talia?",
-              "answer": "10 years old.",
               "source_page": 45,
               "status": "active",
-              "accepted_answers": [
-                "10.",
-                "10 years old.",
-                "She is 10 years old."
-              ],
               "passage_ref": "bbb-u1l2-053"
             },
             {
               "id": "bbb-u1l2-057",
               "type": "reading_open",
               "text": "What does Talia do after dinner?",
-              "answer": "She goes for a walk with her dad.",
               "source_page": 45,
               "status": "active",
-              "accepted_answers": [
-                "She goes for a walk with her dad.",
-                "Goes for a walk with her dad."
-              ],
               "passage_ref": "bbb-u1l2-053"
             },
             {
               "id": "bbb-u1l2-058",
               "type": "correct_form",
               "text": "The nurse ______ (help) sick people.",
-              "answer": "helps",
               "source_page": 45,
               "status": "active"
             },
@@ -1122,7 +996,6 @@
               "id": "bbb-u1l2-059",
               "type": "correct_form",
               "text": "They ______ (going) to school every morning.",
-              "answer": "go",
               "source_page": 45,
               "status": "active"
             },
@@ -1130,7 +1003,6 @@
               "id": "bbb-u1l2-060",
               "type": "correct_form",
               "text": "He ______ (wake) up at 6 o'clock.",
-              "answer": "wakes",
               "source_page": 45,
               "status": "active"
             },
@@ -1138,7 +1010,6 @@
               "id": "bbb-u1l2-061",
               "type": "correct_form",
               "text": "She ______ (practice) volleyball three times a week.",
-              "answer": "practices",
               "source_page": 45,
               "status": "active"
             },
@@ -1146,7 +1017,6 @@
               "id": "bbb-u1l2-062",
               "type": "punctuation",
               "text": "my sister eats vegetables every day",
-              "answer": "My sister eats vegetables every day.",
               "source_page": 45,
               "status": "active"
             },
@@ -1154,7 +1024,6 @@
               "id": "bbb-u1l2-063",
               "type": "punctuation",
               "text": "do you have a pen",
-              "answer": "Do you have a pen?",
               "source_page": 45,
               "status": "active"
             },
@@ -1162,7 +1031,6 @@
               "id": "bbb-u1l2-064",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"My favorite healthy snacks\" using: favorite – apples and nuts – between meals.",
-              "answer": "I love to eat healthy food every day. My favorite snacks are apples and nuts. They give me energy. I always eat them between meals to stay strong.",
               "source_page": 45,
               "status": "active",
               "model_answer_page": 41
@@ -1178,7 +1046,6 @@
               "id": "bbb-u1l3-001",
               "type": "mcq",
               "text": "Mom buys fruit and vegetables at the ______.",
-              "answer": "market",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1192,7 +1059,6 @@
               "id": "bbb-u1l3-002",
               "type": "mcq",
               "text": "The yummy smell came from a ______ nearby.",
-              "answer": "restaurant",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1206,7 +1072,6 @@
               "id": "bbb-u1l3-003",
               "type": "mcq",
               "text": "Someone who has something is the ______.",
-              "answer": "owner",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1220,7 +1085,6 @@
               "id": "bbb-u1l3-004",
               "type": "mcq",
               "text": "I want something to eat. I'm ______.",
-              "answer": "hungry",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1234,7 +1098,6 @@
               "id": "bbb-u1l3-005",
               "type": "mcq",
               "text": "He always wants more than what is needed. He is ______.",
-              "answer": "greedy",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1248,7 +1111,6 @@
               "id": "bbb-u1l3-006",
               "type": "mcq",
               "text": "Grandpa gave me some ______ and I bought ice cream.",
-              "answer": "coins",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1262,7 +1124,6 @@
               "id": "bbb-u1l3-007",
               "type": "mcq",
               "text": "I like the ______ sound of the coins.",
-              "answer": "jingling",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1276,7 +1137,6 @@
               "id": "bbb-u1l3-008",
               "type": "mcq",
               "text": "The ______ of a story are the people and animals in it.",
-              "answer": "characters",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1290,7 +1150,6 @@
               "id": "bbb-u1l3-009",
               "type": "mcq",
               "text": "My friend is kind. He always ______ his food with me.",
-              "answer": "shares",
               "source_page": 33,
               "status": "active",
               "choices": [
@@ -1304,7 +1163,6 @@
               "id": "bbb-u1l3-010",
               "type": "complete",
               "text": "Goha walked to the market. He ______ something delicious.",
-              "answer": "smelled",
               "source_page": 34,
               "status": "active",
               "word_bank": [
@@ -1319,7 +1177,6 @@
               "id": "bbb-u1l3-011",
               "type": "complete",
               "text": "He stopped near the ______ and closed his eyes.",
-              "answer": "restaurant",
               "source_page": 34,
               "status": "active",
               "word_bank": [
@@ -1334,7 +1191,6 @@
               "id": "bbb-u1l3-012",
               "type": "complete",
               "text": "When the ______ came, Goha gave him the sound of coins instead of real money.",
-              "answer": "owner",
               "source_page": 34,
               "status": "active",
               "word_bank": [
@@ -1349,7 +1205,6 @@
               "id": "bbb-u1l3-013",
               "type": "complete",
               "text": "Goha gave him the sound of ______ instead of real money.",
-              "answer": "coins",
               "source_page": 34,
               "status": "active",
               "word_bank": [
@@ -1364,7 +1219,6 @@
               "id": "bbb-u1l3-014",
               "type": "reading_mcq",
               "text": "Omar paid with the sound of ______.",
-              "answer": "coins",
               "source_page": 34,
               "status": "active",
               "choices": [
@@ -1379,7 +1233,6 @@
               "id": "bbb-u1l3-015",
               "type": "reading_mcq",
               "text": "The owner told Omar he must ______.",
-              "answer": "pay",
               "source_page": 34,
               "status": "active",
               "choices": [
@@ -1394,7 +1247,6 @@
               "id": "bbb-u1l3-016",
               "type": "reading_open",
               "text": "Do you think Omar is clever? Why / Why not?",
-              "answer": "Yes. He answered the owner's demand by paying with the sound of coins.",
               "source_page": 34,
               "status": "active_ai_grading",
               "passage_ref": "bbb-u1l3-014"
@@ -1403,21 +1255,14 @@
               "id": "bbb-u1l3-017",
               "type": "reading_open",
               "text": "How did the owner feel at the end?",
-              "answer": "He laughed.",
               "source_page": 34,
               "status": "active",
-              "accepted_answers": [
-                "He laughed.",
-                "He was amused.",
-                "He felt amused."
-              ],
               "passage_ref": "bbb-u1l3-014"
             },
             {
               "id": "bbb-u1l3-018",
               "type": "reading_summary",
               "text": "Summarize the text in one sentence.",
-              "answer": "Omar cleverly answered the owner's demand for payment by giving him the sound of his coins.",
               "source_page": 34,
               "status": "active_ai_grading",
               "passage_ref": "bbb-u1l3-014"
@@ -1426,7 +1271,6 @@
               "id": "bbb-u1l3-019",
               "type": "punctuation",
               "text": "let's share this food",
-              "answer": "Let's share this food.",
               "source_page": 34,
               "status": "active"
             },
@@ -1434,7 +1278,6 @@
               "id": "bbb-u1l3-020",
               "type": "punctuation",
               "text": "do you have money",
-              "answer": "Do you have money?",
               "source_page": 34,
               "status": "active"
             },
@@ -1442,7 +1285,6 @@
               "id": "bbb-u1l3-021",
               "type": "mcq",
               "text": "He gave the man the ______ of his coins.",
-              "answer": "sound",
               "source_page": 44,
               "status": "active",
               "choices": [
@@ -1456,7 +1298,6 @@
               "id": "bbb-u1l3-022",
               "type": "mcq",
               "text": "It's good to ______ food with friends.",
-              "answer": "share",
               "source_page": 44,
               "status": "active",
               "choices": [
@@ -1477,7 +1318,6 @@
               "id": "bbb-u1l4-001",
               "type": "mcq",
               "text": "Sleeping early keeps me ______.",
-              "answer": "healthy",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1491,7 +1331,6 @@
               "id": "bbb-u1l4-002",
               "type": "mcq",
               "text": "If we don't sleep, we feel ______.",
-              "answer": "tired",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1505,7 +1344,6 @@
               "id": "bbb-u1l4-003",
               "type": "mcq",
               "text": "I brush my ______ before bed.",
-              "answer": "teeth",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1519,7 +1357,6 @@
               "id": "bbb-u1l4-004",
               "type": "mcq",
               "text": "I ______ a shower in the evening.",
-              "answer": "take",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1533,7 +1370,6 @@
               "id": "bbb-u1l4-005",
               "type": "mcq",
               "text": "I ______ up early at 6:00 every day.",
-              "answer": "wake",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1547,7 +1383,6 @@
               "id": "bbb-u1l4-006",
               "type": "mcq",
               "text": "First I eat lunch. Next, I brush my teeth. ______, I go to bed.",
-              "answer": "Finally",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1561,7 +1396,6 @@
               "id": "bbb-u1l4-007",
               "type": "mcq",
               "text": "I watch TV at 10:00. ______, I go to bed.",
-              "answer": "Then",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1575,7 +1409,6 @@
               "id": "bbb-u1l4-008",
               "type": "mcq",
               "text": "I sleep for 8 hours because this ______ me healthy.",
-              "answer": "keeps",
               "source_page": 37,
               "status": "active",
               "choices": [
@@ -1589,7 +1422,6 @@
               "id": "bbb-u1l4-009",
               "type": "complete",
               "text": "My brother and I play football every day. He wakes up early and ______ his teeth.",
-              "answer": "brushes",
               "source_page": 38,
               "status": "active",
               "word_bank": [
@@ -1604,7 +1436,6 @@
               "id": "bbb-u1l4-010",
               "type": "complete",
               "text": "Then he eats ______.",
-              "answer": "breakfast",
               "source_page": 38,
               "status": "active",
               "word_bank": [
@@ -1619,7 +1450,6 @@
               "id": "bbb-u1l4-011",
               "type": "complete",
               "text": "After school, he ______ our father.",
-              "answer": "helps",
               "source_page": 38,
               "status": "active",
               "word_bank": [
@@ -1634,7 +1464,6 @@
               "id": "bbb-u1l4-012",
               "type": "complete",
               "text": "These are our daily habits and ______.",
-              "answer": "routines",
               "source_page": 38,
               "status": "active",
               "word_bank": [
@@ -1649,7 +1478,6 @@
               "id": "bbb-u1l4-013",
               "type": "reading_mcq",
               "text": "A healthy lunch may have chicken, vegetables, fruit, and ______.",
-              "answer": "rice",
               "source_page": 38,
               "status": "active",
               "choices": [
@@ -1664,7 +1492,6 @@
               "id": "bbb-u1l4-014",
               "type": "reading_mcq",
               "text": "A healthy lunch helps children feel ______.",
-              "answer": "strong",
               "source_page": 38,
               "status": "active",
               "choices": [
@@ -1679,46 +1506,30 @@
               "id": "bbb-u1l4-015",
               "type": "reading_open",
               "text": "What shouldn't you eat too much of?",
-              "answer": "Sweets or fried food.",
               "source_page": 38,
               "status": "active",
-              "accepted_answers": [
-                "Sweets or fried food.",
-                "Too many sweets or fried food."
-              ],
               "passage_ref": "bbb-u1l4-013"
             },
             {
               "id": "bbb-u1l4-016",
               "type": "reading_open",
               "text": "How does healthy food help you at school?",
-              "answer": "It helps you run, play and study better.",
               "source_page": 38,
               "status": "active",
-              "accepted_answers": [
-                "It helps me run, play and study better.",
-                "It helps you run, play and study better."
-              ],
               "passage_ref": "bbb-u1l4-013"
             },
             {
               "id": "bbb-u1l4-017",
               "type": "reading_open",
               "text": "Is drinking water important?",
-              "answer": "Yes, it is.",
               "source_page": 38,
               "status": "active",
-              "accepted_answers": [
-                "Yes.",
-                "Yes, it is."
-              ],
               "passage_ref": "bbb-u1l4-013"
             },
             {
               "id": "bbb-u1l4-018",
               "type": "punctuation",
               "text": "is your lunch healthy",
-              "answer": "Is your lunch healthy?",
               "source_page": 38,
               "status": "active"
             },
@@ -1726,7 +1537,6 @@
               "id": "bbb-u1l4-019",
               "type": "punctuation",
               "text": "having a daily routine is important",
-              "answer": "Having a daily routine is important.",
               "source_page": 38,
               "status": "active"
             },
@@ -1734,7 +1544,6 @@
               "id": "bbb-u1l4-020",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"My daily routine\" using: brush – school – homework.",
-              "answer": "I have a daily routine. I brush my teeth every day in the morning. I go to school at 7 a.m. I do my homework at 5 p.m.",
               "source_page": 38,
               "status": "active",
               "model_answer_page": 41
