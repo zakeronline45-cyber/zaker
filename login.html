@@ -33,6 +33,7 @@ main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-tem
     <div class="field"><label>اسم الابن / الابنة</label><input id="childName" required></div>
     <div class="field"><label>المسار الدراسي</label><select id="track" required><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
     <div class="field"><label>الصف الدراسي</label><select id="grade" required><option value="p4">رابعة ابتدائي</option><option value="p5">خامسة ابتدائي</option><option value="p6">سادسة ابتدائي</option><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
+    <div class="form-intro" style="background:#fff7e8;border:1px solid #ffd6aa;border-radius:12px;padding:10px 12px">بعد إنشاء الحساب سنرسل رسالة تأكيد إلى بريدك. اضغط رابط التأكيد، وسيتم إعادتك إلى ذاكر تلقائيًا.</div>
     <button class="btn primary" type="submit">إنشاء الحساب</button>
   </form>
 
@@ -53,7 +54,9 @@ main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-tem
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-const next=new URLSearchParams(location.search).get('next')||'/';
+const PUBLIC_ORIGIN='https://zaker-ruddy.vercel.app';
+const params=new URLSearchParams(location.search);
+const next=params.get('next')||'/';
 
 function showMode(mode){
  document.getElementById('loginForm').style.display=mode==='login'?'grid':'none';
@@ -80,18 +83,18 @@ async function login(e){
  if(error){message(error.message);return}
  await routeAfterLogin(data.session);
 }
-async function forgotPassword(){hideMsg();const email=(loginEmail.value||signupEmail.value||'').trim();if(!email){message('اكتب بريدك الإلكتروني أولًا');return}const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+'/reset-password.html'});if(error){message(error.message);return}message('تم إرسال رابط تعيين كلمة مرور جديدة إلى بريدك.',true)}
+async function forgotPassword(){hideMsg();const email=(loginEmail.value||signupEmail.value||'').trim();if(!email){message('اكتب بريدك الإلكتروني أولًا');return}const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:PUBLIC_ORIGIN+'/reset-password.html'});if(error){message(error.message);return}message('تم إرسال رابط تعيين كلمة مرور جديدة إلى بريدك.',true)}
 async function signup(e){
  e.preventDefault();hideMsg();
  const {data,error}=await sb.auth.signUp({
    email:signupEmail.value.trim(),
    password:signupPassword.value,
-   options:{emailRedirectTo:location.origin+'/auth-callback.html',data:{guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),role:'parent',child_name:childName.value.trim(),track:track.value,grade:grade.value}}
+   options:{emailRedirectTo:PUBLIC_ORIGIN+'/auth-callback.html',data:{guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),role:'parent',child_name:childName.value.trim(),track:track.value,grade:grade.value}}
  });
  if(error){message(error.message);return}
  localStorage.setItem('zaker_student_track',track.value);
- if(data.session){location.href='/account.html'} else message(window.zakerT('تم إنشاء الحساب. راجع بريدك لتأكيد الحساب ثم سجّل الدخول.','Account created. Check your email to confirm the account, then sign in.'),true);
+ if(data.session){location.href='/account.html'} else message(window.zakerT('تم إنشاء الحساب ✓ افتح رسالة التأكيد في بريدك واضغط تأكيد البريد. بعد التأكيد سيعيدك ذاكر تلقائيًا للموقع.','Account created ✓ Open the confirmation email and confirm your address. Zaker will bring you back automatically after confirmation.'),true);
 }
-(async()=>{const {data}=await sb.auth.getSession();if(data.session) await routeAfterLogin(data.session)})();
+(async()=>{if(params.get('confirmed')==='1')message(window.zakerT('تم تأكيد بريدك بنجاح ✓ يمكنك تسجيل الدخول الآن.','Email confirmed successfully ✓ You can sign in now.'),true);const {data}=await sb.auth.getSession();if(data.session) await routeAfterLogin(data.session)})();
 </script>
 </body></html>
