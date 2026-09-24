@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Vercel local metadata
+.vercel/
+
+# Logs and caches
+*.log
+npm-debug.log*
+.DS_Store
+coverage/
