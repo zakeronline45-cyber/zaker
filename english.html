@@ -89,7 +89,7 @@ async function init(){
  document.getElementById('studentName').textContent=child.full_name;
  document.getElementById('studentGrade').textContent=({prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[child.grade]||child.grade);
  document.getElementById('studentTrack').textContent=child.track==='arabic'?'Arabic Track':'Languages Track';
- const r=await fetch('/content/english-term1.json',{cache:'no-store'});curriculum=await r.json();document.getElementById('moduleCount').textContent=curriculum.modules.length;document.getElementById('questionCount').textContent=curriculum.modules.reduce((a,m)=>a+(m.questions?.length||0),0);
+ const {data:secured,error:contentErr}=await sb.rpc('get_protected_content',{p_child_id:child.id,p_path:'content/english-term1.json'});if(contentErr||!secured)throw new Error(contentErr?.message||'Content unavailable');curriculum=secured;document.getElementById('moduleCount').textContent=curriculum.modules.length;document.getElementById('questionCount').textContent=curriculum.modules.reduce((a,m)=>a+(m.questions?.length||0),0);
  renderList();selectModule(Number(new URLSearchParams(location.search).get('module'))||1);
  const view=new URLSearchParams(location.search).get('view');if(['learn','ai','test','profile'].includes(view))setPane(view);
 }
