@@ -17,7 +17,12 @@ export default async function handler(req,res){
       const r=await fetch(`${proto}://${host}/content/${file}`,{cache:'no-store'});
       if(!r.ok) return res.status(404).json({error:subject+' question bank unavailable'});
       const bank=await r.json();
-      q=bank.modules?.find(x=>Number(x.id)===Number(module))?.questions?.find(x=>x.id===id);
+      let modules=bank.modules||[];
+      if(Array.isArray(bank.moduleFiles)&&bank.moduleFiles.length){
+        const parts=await Promise.all(bank.moduleFiles.map(async p=>{const pr=await fetch(`${proto}://${host}${p}`,{cache:'no-store'});if(!pr.ok)return {modules:[]};return pr.json()}));
+        modules=parts.flatMap(x=>x.modules||[]);
+      }
+      q=modules.find(x=>Number(x.id)===Number(module))?.questions?.find(x=>x.id===id);
     }else{
       const r=await fetch(`${proto}://${host}/content/questions/science-term1-u1-l${lesson}.json`,{cache:'no-store'});
       if(!r.ok) return res.status(404).json({error:'بنك الأسئلة غير متاح'});
