@@ -601,7 +601,8 @@ async function initAccount(){
   localStorage.setItem('zaker_active_child_id',child.id);
   localStorage.setItem('zaker_student_track',child.track);
   studentTrack=child.track;
-  if(!localStorage.getItem('zaker_ui_lang')) setZakerLanguage(child.track==='languages'?'en':'ar');
+  if(child.track==='languages'&&localStorage.getItem('zaker_ui_lang')!=='en'){localStorage.setItem('zaker_ui_lang','en');location.reload();return}
+  if(child.track==='arabic'&&!localStorage.getItem('zaker_ui_lang')){localStorage.setItem('zaker_ui_lang','ar');location.reload();return}
   aiSessionId=localStorage.getItem(childKey('zaker_ai_session_id'))||'';
   if(!aiSessionId){
     aiSessionId=(crypto.randomUUID?crypto.randomUUID():'zaker-'+Date.now()+'-'+Math.random().toString(36).slice(2));
