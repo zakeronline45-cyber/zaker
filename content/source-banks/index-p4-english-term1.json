@@ -67,5 +67,9 @@
   ],
   "total_live_questions": 1215,
   "coverage_complete": true,
-  "missing": null
+  "missing": null,
+  "total_live_questions_stored": 1215,
+  "total_live_questions_active": 1112,
+  "quarantined_questions": 103,
+  "quarantine_note": "80 reading questions remain stored but are excluded until their source passages are embedded; 23 listening questions remain stored but are excluded until audio assets are attached."
 }
