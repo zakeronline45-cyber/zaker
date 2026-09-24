@@ -9,7 +9,7 @@
     "Bit by Bit English Primary 4 First Term 2027",
     "El-Moasser English Primary 4 First Term 2027"
   ],
-  "merge_policy": "Passage-aware normalized dedupe; source answers preserved; unresolved answer conflicts excluded.",
+  "merge_policy": "Type- and passage-aware normalized dedupe; source answers preserved; unresolved answer conflicts excluded.",
   "modules": [
     {
       "id": 5,
