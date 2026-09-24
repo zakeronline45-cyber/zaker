@@ -24,7 +24,6 @@
               "id": "bbb-u5l1-001",
               "type": "mcq",
               "text": "A/An ______ designs buildings.",
-              "answer": "engineer",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -38,7 +37,6 @@
               "id": "bbb-u5l1-002",
               "type": "mcq",
               "text": "A ______ helps sick people.",
-              "answer": "nurse",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -52,7 +50,6 @@
               "id": "bbb-u5l1-003",
               "type": "mcq",
               "text": "A firefighter wears a ______ to stay safe.",
-              "answer": "helmet",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -66,7 +63,6 @@
               "id": "bbb-u5l1-004",
               "type": "mcq",
               "text": "A/An ______ wears a white coat.",
-              "answer": "doctor",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -80,7 +76,6 @@
               "id": "bbb-u5l1-005",
               "type": "mcq",
               "text": "Sara is a/an ______. She helps sick people.",
-              "answer": "doctor",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -94,7 +89,6 @@
               "id": "bbb-u5l1-006",
               "type": "mcq",
               "text": "The firefighter's job is important because he ______ people.",
-              "answer": "saves",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -108,7 +102,6 @@
               "id": "bbb-u5l1-007",
               "type": "mcq",
               "text": "A/An ______ can stop fires and save people.",
-              "answer": "firefighter",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -122,7 +115,6 @@
               "id": "bbb-u5l1-008",
               "type": "mcq",
               "text": "A nurse ______ the patients at the hospital.",
-              "answer": "cares for",
               "source_page": 145,
               "status": "active",
               "choices": [
@@ -136,7 +128,6 @@
               "id": "bbb-u5l1-009",
               "type": "complete",
               "text": "Amr works in a hospital. He is a ______.",
-              "answer": "doctor",
               "source_page": 146,
               "status": "active",
               "word_bank": [
@@ -151,7 +142,6 @@
               "id": "bbb-u5l1-010",
               "type": "complete",
               "text": "He wears a ______ coat.",
-              "answer": "white",
               "source_page": 146,
               "status": "active",
               "word_bank": [
@@ -166,7 +156,6 @@
               "id": "bbb-u5l1-011",
               "type": "complete",
               "text": "Every day he gives ______ to many sick children.",
-              "answer": "care",
               "source_page": 146,
               "status": "active",
               "word_bank": [
@@ -181,7 +170,6 @@
               "id": "bbb-u5l1-012",
               "type": "complete",
               "text": "He checks on the ______ to make sure they feel better.",
-              "answer": "patients",
               "source_page": 146,
               "status": "active",
               "word_bank": [
@@ -196,7 +184,6 @@
               "id": "bbb-u5l1-013",
               "type": "reading_mcq",
               "text": "A/An ______ stops fires and saves people.",
-              "answer": "firefighter",
               "source_page": 146,
               "status": "active",
               "choices": [
@@ -211,7 +198,6 @@
               "id": "bbb-u5l1-014",
               "type": "reading_mcq",
               "text": "Doctors help sick people and ______ their health.",
-              "answer": "check",
               "source_page": 146,
               "status": "active",
               "choices": [
@@ -226,47 +212,30 @@
               "id": "bbb-u5l1-015",
               "type": "reading_open",
               "text": "Who helps students learn?",
-              "answer": "Teachers.",
               "source_page": 146,
               "status": "active",
-              "accepted_answers": [
-                "Teachers.",
-                "Teachers help students learn."
-              ],
               "passage_ref": "bbb-u5l1-013"
             },
             {
               "id": "bbb-u5l1-016",
               "type": "reading_open",
               "text": "Why do people work together?",
-              "answer": "To make life better.",
               "source_page": 146,
               "status": "active",
-              "accepted_answers": [
-                "To make life better.",
-                "People work together to make life better."
-              ],
               "passage_ref": "bbb-u5l1-013"
             },
             {
               "id": "bbb-u5l1-017",
               "type": "reading_open",
               "text": "What is the main idea of the text?",
-              "answer": "Different jobs in the community and why they are important.",
               "source_page": 146,
               "status": "active",
-              "accepted_answers": [
-                "Different jobs in the community.",
-                "Jobs in the community and their importance.",
-                "Different jobs in the community and why they are important."
-              ],
               "passage_ref": "bbb-u5l1-013"
             },
             {
               "id": "bbb-u5l1-018",
               "type": "punctuation",
               "text": "a doctor helps sick people",
-              "answer": "A doctor helps sick people.",
               "source_page": 146,
               "status": "active"
             },
@@ -274,7 +243,6 @@
               "id": "bbb-u5l1-019",
               "type": "punctuation",
               "text": "what do you do",
-              "answer": "What do you do?",
               "source_page": 146,
               "status": "active"
             },
@@ -282,7 +250,6 @@
               "id": "bbb-u5l1-020",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"What you want to be when you grow up\" using: doctor – help – check health.",
-              "answer": "When I grow up, I want to be a doctor. Doctors help sick people. They check their health. They work in hospitals.",
               "source_page": 146,
               "status": "active_ai_grading",
               "model_answer_page": 167
@@ -298,7 +265,6 @@
               "id": "bbb-u5l2-001",
               "type": "correct_form",
               "text": "She is the ______ (kind) mentor.",
-              "answer": "kindest",
               "source_page": 150,
               "status": "active"
             },
@@ -306,7 +272,6 @@
               "id": "bbb-u5l2-002",
               "type": "correct_form",
               "text": "Omar takes the ______ (great) photos.",
-              "answer": "greatest",
               "source_page": 150,
               "status": "active"
             },
@@ -314,7 +279,6 @@
               "id": "bbb-u5l2-003",
               "type": "correct_form",
               "text": "My bag is the ______ (heavy) bag.",
-              "answer": "heaviest",
               "source_page": 150,
               "status": "active"
             },
@@ -322,7 +286,6 @@
               "id": "bbb-u5l2-004",
               "type": "correct_form",
               "text": "My grandpa is the ______ (wise) person I know.",
-              "answer": "wisest",
               "source_page": 150,
               "status": "active"
             },
@@ -330,7 +293,6 @@
               "id": "bbb-u5l2-005",
               "type": "correct_form",
               "text": "Ahmed told us the ______ (funny) story at the party.",
-              "answer": "funniest",
               "source_page": 150,
               "status": "active"
             },
@@ -338,7 +300,6 @@
               "id": "bbb-u5l2-006",
               "type": "correct_form",
               "text": "August is the ______ (hot) month of the year.",
-              "answer": "hottest",
               "source_page": 150,
               "status": "active"
             },
@@ -346,7 +307,6 @@
               "id": "bbb-u5l2-007",
               "type": "listening_true_false",
               "text": "Hala helps students to be brave.",
-              "answer": "False",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -359,7 +319,6 @@
               "id": "bbb-u5l2-008",
               "type": "listening_true_false",
               "text": "Omar is a nature photographer.",
-              "answer": "True",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -372,7 +331,6 @@
               "id": "bbb-u5l2-009",
               "type": "listening_true_false",
               "text": "Omar is a puppet artist.",
-              "answer": "False",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -385,7 +343,6 @@
               "id": "bbb-u5l2-010",
               "type": "listening_true_false",
               "text": "Rana does fun shows for sick people.",
-              "answer": "False",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -398,7 +355,6 @@
               "id": "bbb-u5l2-011",
               "type": "mcq",
               "text": "Sama loves ______ stories using her puppets.",
-              "answer": "telling",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -412,7 +368,6 @@
               "id": "bbb-u5l2-012",
               "type": "mcq",
               "text": "Hana feels ______ when her students get good marks.",
-              "answer": "happy",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -426,7 +381,6 @@
               "id": "bbb-u5l2-013",
               "type": "mcq",
               "text": "Voice-over actors often make cartoons sound more ______.",
-              "answer": "real",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -440,7 +394,6 @@
               "id": "bbb-u5l2-014",
               "type": "mcq",
               "text": "Safi does many puppet ______ for children.",
-              "answer": "shows",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -454,7 +407,6 @@
               "id": "bbb-u5l2-015",
               "type": "mcq",
               "text": "Amr is a wildlife ______ who loves taking pictures.",
-              "answer": "photographer",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -468,7 +420,6 @@
               "id": "bbb-u5l2-016",
               "type": "mcq",
               "text": "A ______ helps students learn and grow.",
-              "answer": "mentor",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -482,7 +433,6 @@
               "id": "bbb-u5l2-017",
               "type": "mcq",
               "text": "Which animal is the ______?",
-              "answer": "tallest",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -496,7 +446,6 @@
               "id": "bbb-u5l2-018",
               "type": "mcq",
               "text": "Mona is ______ friend I have.",
-              "answer": "the nicest",
               "source_page": 151,
               "status": "active",
               "choices": [
@@ -510,7 +459,6 @@
               "id": "bbb-u5l2-019",
               "type": "mcq",
               "text": "She has the ______ hair in the group.",
-              "answer": "shortest",
               "source_page": 152,
               "status": "active",
               "choices": [
@@ -524,7 +472,6 @@
               "id": "bbb-u5l2-020",
               "type": "mcq",
               "text": "My sister is the ______ one in my family.",
-              "answer": "happiest",
               "source_page": 152,
               "status": "active",
               "choices": [
@@ -538,7 +485,6 @@
               "id": "bbb-u5l2-021",
               "type": "mcq",
               "text": "Khan Al-Khalili is the ______ market.",
-              "answer": "busiest",
               "source_page": 152,
               "status": "active",
               "choices": [
@@ -552,7 +498,6 @@
               "id": "bbb-u5l2-022",
               "type": "complete",
               "text": "My name is Ramy. I am a wildlife ______.",
-              "answer": "photographer",
               "source_page": 152,
               "status": "active",
               "word_bank": [
@@ -567,7 +512,6 @@
               "id": "bbb-u5l2-023",
               "type": "complete",
               "text": "I take ______ of birds and animals in nature.",
-              "answer": "photos",
               "source_page": 152,
               "status": "active",
               "word_bank": [
@@ -582,7 +526,6 @@
               "id": "bbb-u5l2-024",
               "type": "complete",
               "text": "I take photos of birds and ______ in nature.",
-              "answer": "animals",
               "source_page": 152,
               "status": "active",
               "word_bank": [
@@ -597,7 +540,6 @@
               "id": "bbb-u5l2-025",
               "type": "complete",
               "text": "My favorite animals are ______. They climb trees and they are funny.",
-              "answer": "monkeys",
               "source_page": 152,
               "status": "active",
               "word_bank": [
@@ -612,7 +554,6 @@
               "id": "bbb-u5l2-026",
               "type": "reading_mcq",
               "text": "This text is about Remas and Maher's ______.",
-              "answer": "jobs",
               "source_page": 152,
               "status": "active",
               "choices": [
@@ -627,7 +568,6 @@
               "id": "bbb-u5l2-027",
               "type": "reading_mcq",
               "text": "The underlined word \"large\" means ______.",
-              "answer": "big",
               "source_page": 152,
               "status": "active",
               "choices": [
@@ -642,33 +582,22 @@
               "id": "bbb-u5l2-028",
               "type": "reading_open",
               "text": "What is Maher's job?",
-              "answer": "He is a voice-over actor.",
               "source_page": 152,
               "status": "active",
-              "accepted_answers": [
-                "A voice-over actor.",
-                "He is a voice-over actor."
-              ],
               "passage_ref": "bbb-u5l2-026"
             },
             {
               "id": "bbb-u5l2-029",
               "type": "reading_open",
               "text": "What does Remas use to tell stories?",
-              "answer": "Puppets.",
               "source_page": 152,
               "status": "active",
-              "accepted_answers": [
-                "Puppets.",
-                "She uses puppets."
-              ],
               "passage_ref": "bbb-u5l2-026"
             },
             {
               "id": "bbb-u5l2-030",
               "type": "reading_summary",
               "text": "Summarize the text in one sentence.",
-              "answer": "Remas and Maher have unusual jobs as a puppet artist and a voice-over actor.",
               "source_page": 152,
               "status": "active_ai_grading",
               "passage_ref": "bbb-u5l2-026"
@@ -677,7 +606,6 @@
               "id": "bbb-u5l2-031",
               "type": "correct_form",
               "text": "This is the ______ (tall) tree in the garden.",
-              "answer": "tallest",
               "source_page": 153,
               "status": "active"
             },
@@ -685,7 +613,6 @@
               "id": "bbb-u5l2-032",
               "type": "correct_form",
               "text": "The elephant is the ______ (big) animal.",
-              "answer": "biggest",
               "source_page": 153,
               "status": "active"
             },
@@ -693,7 +620,6 @@
               "id": "bbb-u5l2-033",
               "type": "correct_form",
               "text": "It was the ______ (funny) day of the week.",
-              "answer": "funniest",
               "source_page": 153,
               "status": "active"
             },
@@ -701,7 +627,6 @@
               "id": "bbb-u5l2-034",
               "type": "correct_form",
               "text": "My room is the ______ (clean) in the house.",
-              "answer": "cleanest",
               "source_page": 153,
               "status": "active"
             },
@@ -709,7 +634,6 @@
               "id": "bbb-u5l2-035",
               "type": "correct_form",
               "text": "The Nile River is the ______ (longer) one.",
-              "answer": "longest",
               "source_page": 153,
               "status": "active"
             },
@@ -717,7 +641,6 @@
               "id": "bbb-u5l2-036",
               "type": "correct_form",
               "text": "This is the ______ (nice) puppet show.",
-              "answer": "nicest",
               "source_page": 153,
               "status": "active"
             },
@@ -725,7 +648,6 @@
               "id": "bbb-u5l2-037",
               "type": "correct_form",
               "text": "She is the ______ (fast) girl in the class.",
-              "answer": "fastest",
               "source_page": 153,
               "status": "active"
             },
@@ -733,7 +655,6 @@
               "id": "bbb-u5l2-038",
               "type": "correct_form",
               "text": "The giraffe is the ______ (taller) animal.",
-              "answer": "tallest",
               "source_page": 153,
               "status": "active"
             },
@@ -741,7 +662,6 @@
               "id": "bbb-u5l2-039",
               "type": "correct_form",
               "text": "It was the ______ (hot) day in the year.",
-              "answer": "hottest",
               "source_page": 153,
               "status": "active"
             },
@@ -749,7 +669,6 @@
               "id": "bbb-u5l2-040",
               "type": "correct_form",
               "text": "Khan Al-Khalili is the ______ (busy) market.",
-              "answer": "busiest",
               "source_page": 153,
               "status": "active"
             },
@@ -757,7 +676,6 @@
               "id": "bbb-u5l2-041",
               "type": "punctuation",
               "text": "nahla is a nurse",
-              "answer": "Nahla is a nurse.",
               "source_page": 153,
               "status": "active"
             },
@@ -765,7 +683,6 @@
               "id": "bbb-u5l2-042",
               "type": "punctuation",
               "text": "where does your mother work",
-              "answer": "Where does your mother work?",
               "source_page": 153,
               "status": "active"
             },
@@ -773,7 +690,6 @@
               "id": "bbb-u5l2-043",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"Your favorite job\" using: wildlife photographer – interesting job – pictures.",
-              "answer": "My favorite job is a wildlife photographer. It is an interesting job! A wildlife photographer takes pictures of wild animals. He takes great photos in faraway places.",
               "source_page": 153,
               "status": "active_ai_grading",
               "model_answer_page": 167
@@ -789,7 +705,6 @@
               "id": "bbb-u5l3-001",
               "type": "listening_true_false",
               "text": "Lena was asked to color a wall at a hospital.",
-              "answer": "False",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -802,7 +717,6 @@
               "id": "bbb-u5l3-002",
               "type": "listening_true_false",
               "text": "She painted it quickly and carelessly.",
-              "answer": "True",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -815,7 +729,6 @@
               "id": "bbb-u5l3-003",
               "type": "listening_true_false",
               "text": "Everyone saw the messy work.",
-              "answer": "True",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -828,7 +741,6 @@
               "id": "bbb-u5l3-004",
               "type": "listening_true_false",
               "text": "She felt sad and learned to always do her best.",
-              "answer": "True",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -841,7 +753,6 @@
               "id": "bbb-u5l3-005",
               "type": "mcq",
               "text": "Beds, chairs and tables are ______.",
-              "answer": "furniture",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -855,7 +766,6 @@
               "id": "bbb-u5l3-006",
               "type": "mcq",
               "text": "Carpenters work with ______.",
-              "answer": "wood",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -869,7 +779,6 @@
               "id": "bbb-u5l3-007",
               "type": "mcq",
               "text": "This chair is made of wood. It is ______.",
-              "answer": "wooden",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -883,7 +792,6 @@
               "id": "bbb-u5l3-008",
               "type": "mcq",
               "text": "If you ______ to do something, it means that you will definitely do it.",
-              "answer": "promise",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -897,7 +805,6 @@
               "id": "bbb-u5l3-009",
               "type": "mcq",
               "text": "The shirt is ______. It is the right size.",
-              "answer": "fit",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -911,7 +818,6 @@
               "id": "bbb-u5l3-010",
               "type": "mcq",
               "text": "Sami was a ______ carpenter. He is good at making chairs and tables.",
-              "answer": "skilled",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -925,7 +831,6 @@
               "id": "bbb-u5l3-011",
               "type": "mcq",
               "text": "Sami used weak ______ to build the house.",
-              "answer": "wood",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -939,7 +844,6 @@
               "id": "bbb-u5l3-012",
               "type": "mcq",
               "text": "My friend gave me a ______ on my birthday.",
-              "answer": "gift",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -953,7 +857,6 @@
               "id": "bbb-u5l3-013",
               "type": "mcq",
               "text": "The story teaches us to do our ______ when tired.",
-              "answer": "best",
               "source_page": 158,
               "status": "active",
               "choices": [
@@ -967,7 +870,6 @@
               "id": "bbb-u5l3-014",
               "type": "complete",
               "text": "Mostafa lives in a small village. He is a young ______.",
-              "answer": "carpenter",
               "source_page": 159,
               "status": "active",
               "word_bank": [
@@ -982,7 +884,6 @@
               "id": "bbb-u5l3-015",
               "type": "complete",
               "text": "He ______ a small house in the village.",
-              "answer": "builds",
               "source_page": 159,
               "status": "active",
               "word_bank": [
@@ -997,7 +898,6 @@
               "id": "bbb-u5l3-016",
               "type": "complete",
               "text": "He uses good ______.",
-              "answer": "wood",
               "source_page": 159,
               "status": "active",
               "word_bank": [
@@ -1012,7 +912,6 @@
               "id": "bbb-u5l3-017",
               "type": "complete",
               "text": "The house looks nice and ______.",
-              "answer": "strong",
               "source_page": 159,
               "status": "active",
               "word_bank": [
@@ -1027,7 +926,6 @@
               "id": "bbb-u5l3-018",
               "type": "reading_mcq",
               "text": "Seleem was famous for building ______ houses.",
-              "answer": "strong",
               "source_page": 159,
               "status": "active",
               "choices": [
@@ -1042,7 +940,6 @@
               "id": "bbb-u5l3-019",
               "type": "reading_mcq",
               "text": "The king gave the house as a ______.",
-              "answer": "gift",
               "source_page": 159,
               "status": "active",
               "choices": [
@@ -1057,33 +954,22 @@
               "id": "bbb-u5l3-020",
               "type": "reading_open",
               "text": "Why did Seleem build the house without care?",
-              "answer": "Because he wanted to rest and did not do his best.",
               "source_page": 159,
               "status": "active",
-              "accepted_answers": [
-                "Because he wanted to rest.",
-                "Because he wanted to rest and did not do his best."
-              ],
               "passage_ref": "bbb-u5l3-018"
             },
             {
               "id": "bbb-u5l3-021",
               "type": "reading_open",
               "text": "What did the king give Seleem?",
-              "answer": "The house as a gift.",
               "source_page": 159,
               "status": "active",
-              "accepted_answers": [
-                "The house.",
-                "The house as a gift."
-              ],
               "passage_ref": "bbb-u5l3-018"
             },
             {
               "id": "bbb-u5l3-022",
               "type": "reading_open",
               "text": "What is the text about?",
-              "answer": "Seleem, a skilled carpenter, built a house carelessly and then received it as a gift.",
               "source_page": 159,
               "status": "active_ai_grading",
               "passage_ref": "bbb-u5l3-018"
@@ -1092,7 +978,6 @@
               "id": "bbb-u5l3-023",
               "type": "punctuation",
               "text": "sami was a skilled carpenter",
-              "answer": "Sami was a skilled carpenter.",
               "source_page": 159,
               "status": "active"
             },
@@ -1100,7 +985,6 @@
               "id": "bbb-u5l3-024",
               "type": "punctuation",
               "text": "what can the carpenter make",
-              "answer": "What can the carpenter make?",
               "source_page": 159,
               "status": "active"
             }
@@ -1115,7 +999,6 @@
               "id": "bbb-u5l4-001",
               "type": "listening_true_false",
               "text": "Hany is a brave firefighter.",
-              "answer": "True",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1128,7 +1011,6 @@
               "id": "bbb-u5l4-002",
               "type": "listening_true_false",
               "text": "He works at a train station.",
-              "answer": "False",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1141,7 +1023,6 @@
               "id": "bbb-u5l4-003",
               "type": "listening_true_false",
               "text": "He wears a thick uniform and a big helmet.",
-              "answer": "True",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1154,7 +1035,6 @@
               "id": "bbb-u5l4-004",
               "type": "listening_true_false",
               "text": "He loves his job and saving lives.",
-              "answer": "True",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1167,7 +1047,6 @@
               "id": "bbb-u5l4-005",
               "type": "mcq",
               "text": "Firefighters use ladders and ______ to fight fires.",
-              "answer": "hoses",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1181,7 +1060,6 @@
               "id": "bbb-u5l4-006",
               "type": "mcq",
               "text": "A firefighter wears a red ______ to stay safe.",
-              "answer": "helmet",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1195,7 +1073,6 @@
               "id": "bbb-u5l4-007",
               "type": "mcq",
               "text": "A firefighter wears a ______ uniform to stay safe.",
-              "answer": "protective",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1209,7 +1086,6 @@
               "id": "bbb-u5l4-008",
               "type": "mcq",
               "text": "When the ______ rings, a firefighter quickly puts on his equipment.",
-              "answer": "alarm",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1223,7 +1099,6 @@
               "id": "bbb-u5l4-009",
               "type": "mcq",
               "text": "The firefighter's job is important because he ______ lives.",
-              "answer": "saves",
               "source_page": 163,
               "status": "active",
               "choices": [
@@ -1237,7 +1112,6 @@
               "id": "bbb-u5l4-010",
               "type": "complete",
               "text": "Omar works at a fire station. Every morning, he checks the fire ______ and his equipment.",
-              "answer": "truck",
               "source_page": 163,
               "status": "active",
               "word_bank": [
@@ -1252,7 +1126,6 @@
               "id": "bbb-u5l4-011",
               "type": "complete",
               "text": "He wears a ______ and a thick protective uniform.",
-              "answer": "helmet",
               "source_page": 163,
               "status": "active",
               "word_bank": [
@@ -1267,7 +1140,6 @@
               "id": "bbb-u5l4-012",
               "type": "complete",
               "text": "He wears a helmet and a thick ______ uniform.",
-              "answer": "protective",
               "source_page": 163,
               "status": "active",
               "word_bank": [
@@ -1282,7 +1154,6 @@
               "id": "bbb-u5l4-013",
               "type": "complete",
               "text": "When the ______ rings, he moves quickly to help people in danger.",
-              "answer": "alarm",
               "source_page": 163,
               "status": "active",
               "word_bank": [
@@ -1297,7 +1168,6 @@
               "id": "bbb-u5l4-014",
               "type": "reading_mcq",
               "text": "Sara saw the fire truck ______.",
-              "answer": "near her school",
               "source_page": 164,
               "status": "active",
               "choices": [
@@ -1312,7 +1182,6 @@
               "id": "bbb-u5l4-015",
               "type": "reading_mcq",
               "text": "The firefighters were ______.",
-              "answer": "teaching safety",
               "source_page": 164,
               "status": "active",
               "choices": [
@@ -1327,46 +1196,30 @@
               "id": "bbb-u5l4-016",
               "type": "reading_open",
               "text": "What were the firefighters wearing?",
-              "answer": "Uniforms and helmets.",
               "source_page": 164,
               "status": "active",
-              "accepted_answers": [
-                "Uniforms and helmets.",
-                "They were wearing uniforms and helmets."
-              ],
               "passage_ref": "bbb-u5l4-014"
             },
             {
               "id": "bbb-u5l4-017",
               "type": "reading_open",
               "text": "What did Sara learn to do if her clothes catch fire?",
-              "answer": "Stop, drop, and roll.",
               "source_page": 164,
               "status": "active",
-              "accepted_answers": [
-                "Stop, drop, and roll.",
-                "She learned to stop, drop, and roll."
-              ],
               "passage_ref": "bbb-u5l4-014"
             },
             {
               "id": "bbb-u5l4-018",
               "type": "reading_open",
               "text": "What is the main idea of the text?",
-              "answer": "Firefighters taught children how to stay safe from fire.",
               "source_page": 164,
               "status": "active",
-              "accepted_answers": [
-                "Firefighters taught children how to stay safe from fire.",
-                "Fire safety."
-              ],
               "passage_ref": "bbb-u5l4-014"
             },
             {
               "id": "bbb-u5l4-019",
               "type": "punctuation",
               "text": "why does she like her job",
-              "answer": "Why does she like her job?",
               "source_page": 164,
               "status": "active"
             },
@@ -1374,7 +1227,6 @@
               "id": "bbb-u5l4-020",
               "type": "punctuation",
               "text": "the work is dangerous",
-              "answer": "The work is dangerous.",
               "source_page": 164,
               "status": "active"
             },
@@ -1382,7 +1234,6 @@
               "id": "bbb-u5l4-021",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"Heroes who help people\" using: danger – save lives – help others.",
-              "answer": "There are many heroes in our life. A firefighter is a hero. He stops fires and saves lives. He can help others and make a difference.",
               "source_page": 164,
               "status": "active_ai_grading",
               "model_answer_page": 167
@@ -1398,7 +1249,6 @@
               "id": "bbb-u5r-001",
               "type": "listening_mcq",
               "text": "Omar is a ______.",
-              "answer": "firefighter",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1412,7 +1262,6 @@
               "id": "bbb-u5r-002",
               "type": "listening_mcq",
               "text": "He drives a ______.",
-              "answer": "fire truck",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1426,7 +1275,6 @@
               "id": "bbb-u5r-003",
               "type": "listening_mcq",
               "text": "He wears a ______.",
-              "answer": "helmet",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1440,7 +1288,6 @@
               "id": "bbb-u5r-004",
               "type": "dialogue_complete",
               "text": "I want to be a ______.",
-              "answer": "carpenter",
               "source_page": 168,
               "status": "active",
               "word_bank": [
@@ -1454,7 +1301,6 @@
               "id": "bbb-u5r-005",
               "type": "dialogue_complete",
               "text": "Because I want to build houses and beautiful ______.",
-              "answer": "furniture",
               "source_page": 168,
               "status": "active",
               "word_bank": [
@@ -1468,7 +1314,6 @@
               "id": "bbb-u5r-006",
               "type": "dialogue_complete",
               "text": "My brother is a ______.",
-              "answer": "firefighter",
               "source_page": 168,
               "status": "active",
               "word_bank": [
@@ -1482,7 +1327,6 @@
               "id": "bbb-u5r-007",
               "type": "dialogue_complete",
               "text": "He wears a protective uniform and a ______.",
-              "answer": "helmet",
               "source_page": 168,
               "status": "active",
               "word_bank": [
@@ -1496,7 +1340,6 @@
               "id": "bbb-u5r-008",
               "type": "mcq",
               "text": "A ______ uses wood to build chairs.",
-              "answer": "carpenter",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1510,7 +1353,6 @@
               "id": "bbb-u5r-009",
               "type": "mcq",
               "text": "Today is the ______ day of the year.",
-              "answer": "hottest",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1524,7 +1366,6 @@
               "id": "bbb-u5r-010",
               "type": "mcq",
               "text": "Sami is a ______ carpenter. He is very good.",
-              "answer": "skilled",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1538,7 +1379,6 @@
               "id": "bbb-u5r-011",
               "type": "mcq",
               "text": "This is the ______ chair in the shop.",
-              "answer": "biggest",
               "source_page": 168,
               "status": "active",
               "choices": [
@@ -1552,7 +1392,6 @@
               "id": "bbb-u5r-012",
               "type": "correction",
               "text": "My grandfather is the older one in my family.",
-              "answer": "My grandfather is the oldest one in my family.",
               "source_page": 168,
               "status": "active"
             },
@@ -1560,7 +1399,6 @@
               "id": "bbb-u5r-013",
               "type": "correction",
               "text": "The photographer took the great photos at the party.",
-              "answer": "The photographer took the greatest photos at the party.",
               "source_page": 168,
               "status": "active"
             },
@@ -1568,7 +1406,6 @@
               "id": "bbb-u5r-014",
               "type": "correction",
               "text": "The Cairo Tower is the tall building.",
-              "answer": "The Cairo Tower is the tallest building.",
               "source_page": 168,
               "status": "active"
             },
@@ -1576,7 +1413,6 @@
               "id": "bbb-u5r-015",
               "type": "correction",
               "text": "Cheetah is the fast animal.",
-              "answer": "Cheetah is the fastest animal.",
               "source_page": 168,
               "status": "active"
             },
@@ -1584,7 +1420,6 @@
               "id": "bbb-u5r-016",
               "type": "true_false",
               "text": "Laila is a nurse.",
-              "answer": "True",
               "source_page": 169,
               "status": "active",
               "choices": [
@@ -1597,7 +1432,6 @@
               "id": "bbb-u5r-017",
               "type": "true_false",
               "text": "She doesn't like to help people.",
-              "answer": "False",
               "source_page": 169,
               "status": "active",
               "choices": [
@@ -1610,7 +1444,6 @@
               "id": "bbb-u5r-018",
               "type": "reading_mcq",
               "text": "Laila works in a ______.",
-              "answer": "hospital",
               "source_page": 169,
               "status": "active",
               "choices": [
@@ -1625,7 +1458,6 @@
               "id": "bbb-u5r-019",
               "type": "reading_mcq",
               "text": "She helps sick people ______.",
-              "answer": "every day",
               "source_page": 169,
               "status": "active",
               "choices": [
@@ -1640,7 +1472,6 @@
               "id": "bbb-u5r-020",
               "type": "reading_mcq",
               "text": "She gives patients ______ and cares for them.",
-              "answer": "medicine",
               "source_page": 169,
               "status": "active",
               "choices": [
@@ -1655,7 +1486,6 @@
               "id": "bbb-u5r-021",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"Firefighter's tools\" using: water hoses – ladders – red fire truck – dangerous.",
-              "answer": "A firefighter's work is dangerous. Every day, he checks his equipment and keeps the red fire truck ready. He uses special tools like water hoses, ladders, and oxygen tanks. The firefighter's work is dangerous.",
               "source_page": 169,
               "status": "active_ai_grading",
               "model_answer_page": 167
@@ -1664,7 +1494,6 @@
               "id": "bbb-u5r-022",
               "type": "listening_true_false",
               "text": "Ahmed is a police officer.",
-              "answer": "False",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1677,7 +1506,6 @@
               "id": "bbb-u5r-023",
               "type": "listening_true_false",
               "text": "He rides the fire truck when there is a fire.",
-              "answer": "True",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1690,7 +1518,6 @@
               "id": "bbb-u5r-024",
               "type": "listening_true_false",
               "text": "He wears a helmet and a protective uniform.",
-              "answer": "True",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1703,7 +1530,6 @@
               "id": "bbb-u5r-025",
               "type": "listening_true_false",
               "text": "Firefighters aren't brave.",
-              "answer": "False",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1716,7 +1542,6 @@
               "id": "bbb-u5r-026",
               "type": "mcq",
               "text": "Sara is a doctor. She helps ______ people and checks their health.",
-              "answer": "sick",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1730,7 +1555,6 @@
               "id": "bbb-u5r-027",
               "type": "mcq",
               "text": "Ali is an engineer. He ______ new buildings.",
-              "answer": "designs",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1744,7 +1568,6 @@
               "id": "bbb-u5r-028",
               "type": "mcq",
               "text": "A/An ______ stops fires and saves people.",
-              "answer": "firefighter",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1758,7 +1581,6 @@
               "id": "bbb-u5r-029",
               "type": "mcq",
               "text": "I think the teacher's job is the ______ job.",
-              "answer": "nicest",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1772,7 +1594,6 @@
               "id": "bbb-u5r-030",
               "type": "mcq",
               "text": "This is the ______ box in the room.",
-              "answer": "biggest",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1786,7 +1607,6 @@
               "id": "bbb-u5r-031",
               "type": "mcq",
               "text": "A firefighter carries ______ tools.",
-              "answer": "the heaviest",
               "source_page": 170,
               "status": "active",
               "choices": [
@@ -1800,7 +1620,6 @@
               "id": "bbb-u5r-032",
               "type": "complete",
               "text": "Sami decided to repair the house. He worked slowly, board by ______.",
-              "answer": "board",
               "source_page": 170,
               "status": "active",
               "word_bank": [
@@ -1815,7 +1634,6 @@
               "id": "bbb-u5r-033",
               "type": "complete",
               "text": "He made the house strong and ______.",
-              "answer": "beautiful",
               "source_page": 170,
               "status": "active",
               "word_bank": [
@@ -1830,7 +1648,6 @@
               "id": "bbb-u5r-034",
               "type": "complete",
               "text": "Sami promised to always give his ______.",
-              "answer": "best",
               "source_page": 170,
               "status": "active",
               "word_bank": [
@@ -1845,7 +1662,6 @@
               "id": "bbb-u5r-035",
               "type": "complete",
               "text": "With each nail he ______, he felt proud.",
-              "answer": "hammered",
               "source_page": 170,
               "status": "active",
               "word_bank": [
@@ -1860,7 +1676,6 @@
               "id": "bbb-u5r-036",
               "type": "reading_mcq",
               "text": "Dalia's job is to help students as a ______.",
-              "answer": "mentor",
               "source_page": 171,
               "status": "active",
               "choices": [
@@ -1875,7 +1690,6 @@
               "id": "bbb-u5r-037",
               "type": "reading_mcq",
               "text": "Children trust Dalia because she is ______.",
-              "answer": "kind",
               "source_page": 171,
               "status": "active",
               "choices": [
@@ -1890,7 +1704,6 @@
               "id": "bbb-u5r-038",
               "type": "reading_open",
               "text": "What is the text about?",
-              "answer": "Dalia's work as a mentor who helps children learn.",
               "source_page": 171,
               "status": "active_ai_grading",
               "passage_ref": "bbb-u5r-036"
@@ -1899,33 +1712,22 @@
               "id": "bbb-u5r-039",
               "type": "reading_open",
               "text": "What does Dalia help children with?",
-              "answer": "Reading and writing.",
               "source_page": 171,
               "status": "active",
-              "accepted_answers": [
-                "Reading and writing.",
-                "She helps them with reading and writing."
-              ],
               "passage_ref": "bbb-u5r-036"
             },
             {
               "id": "bbb-u5r-040",
               "type": "reading_open",
               "text": "Why does Dalia feel proud?",
-              "answer": "Because her students do well.",
               "source_page": 171,
               "status": "active",
-              "accepted_answers": [
-                "Because her students do well.",
-                "She feels proud when her students do well."
-              ],
               "passage_ref": "bbb-u5r-036"
             },
             {
               "id": "bbb-u5r-041",
               "type": "correct_form",
               "text": "The firefighter is the ______ (brave) hero in our town.",
-              "answer": "bravest",
               "source_page": 171,
               "status": "active"
             },
@@ -1933,7 +1735,6 @@
               "id": "bbb-u5r-042",
               "type": "correct_form",
               "text": "The engineer designed the ______ (strong) bridge in the city.",
-              "answer": "strongest",
               "source_page": 171,
               "status": "active"
             },
@@ -1941,7 +1742,6 @@
               "id": "bbb-u5r-043",
               "type": "correct_form",
               "text": "The police officer is the ______ (fast) at catching thieves.",
-              "answer": "fastest",
               "source_page": 171,
               "status": "active"
             },
@@ -1949,7 +1749,6 @@
               "id": "bbb-u5r-044",
               "type": "correct_form",
               "text": "This tree is the ______ (tall) one in the park.",
-              "answer": "tallest",
               "source_page": 171,
               "status": "active"
             },
@@ -1957,7 +1756,6 @@
               "id": "bbb-u5r-045",
               "type": "punctuation",
               "text": "august is the hottest month of the year",
-              "answer": "August is the hottest month of the year.",
               "source_page": 171,
               "status": "active"
             },
@@ -1965,7 +1763,6 @@
               "id": "bbb-u5r-046",
               "type": "punctuation",
               "text": "where is the fire station",
-              "answer": "Where is the fire station?",
               "source_page": 171,
               "status": "active"
             },
@@ -1973,7 +1770,6 @@
               "id": "bbb-u5r-047",
               "type": "writing",
               "text": "Write a paragraph of FOUR sentences about \"Wildlife Photographer\" using: camera – desert – lion.",
-              "answer": "A wildlife photographer takes pictures of animals with his camera. He goes to the forest to take some photos. He takes photos of lions. He loves his job because he likes nature.",
               "source_page": 171,
               "status": "active_ai_grading",
               "model_answer_page": 167
