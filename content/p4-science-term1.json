@@ -32,7 +32,6 @@
           "id": "p4-sci-1-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Let's Find Living Organisms\"?",
-          "answer": "Plants are living organisms because they grow and need resources.",
           "difficulty": "easy",
           "choices": [
             "Plants are living organisms because they grow and need resources.",
@@ -45,7 +44,6 @@
           "id": "p4-sci-1-q2",
           "type": "true_false",
           "text": "Rocks and water are non-living things.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -56,14 +54,12 @@
           "id": "p4-sci-1-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A living thing such as a human, animal or plant = ______.",
-          "answer": "living organism",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-1-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Let's Find Living Organisms\".",
-          "answer": "Plants are living organisms because they grow and need resources. Rocks and water are non-living things.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -94,7 +90,6 @@
           "id": "p4-sci-2-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"How to Observe\"?",
-          "answer": "Observation means collecting details carefully.",
           "difficulty": "easy",
           "choices": [
             "Observation means collecting details carefully.",
@@ -107,7 +102,6 @@
           "id": "p4-sci-2-q2",
           "type": "true_false",
           "text": "A magnifying glass helps us see small features.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -118,14 +112,12 @@
           "id": "p4-sci-2-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: To look carefully and collect information = ______.",
-          "answer": "observe",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-2-q4",
           "type": "reason",
           "text": "Explain one important idea from \"How to Observe\".",
-          "answer": "Observation means collecting details carefully. A magnifying glass helps us see small features.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -156,7 +148,6 @@
           "id": "p4-sci-3-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Colors and Shapes of Living Organisms\"?",
-          "answer": "Color and shape are observable properties.",
           "difficulty": "easy",
           "choices": [
             "Color and shape are observable properties.",
@@ -169,7 +160,6 @@
           "id": "p4-sci-3-q2",
           "type": "true_false",
           "text": "Different organisms may have different external features.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -180,14 +170,12 @@
           "id": "p4-sci-3-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A visible or measurable characteristic = ______.",
-          "answer": "feature",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-3-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Colors and Shapes of Living Organisms\".",
-          "answer": "Color and shape are observable properties. Different organisms may have different external features.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -218,7 +206,6 @@
           "id": "p4-sci-4-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Different Places, Different Living Organisms\"?",
-          "answer": "Living organisms live where their needs can be met.",
           "difficulty": "easy",
           "choices": [
             "Living organisms live where their needs can be met.",
@@ -231,7 +218,6 @@
           "id": "p4-sci-4-q2",
           "type": "true_false",
           "text": "Different habitats have different conditions.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -242,14 +228,12 @@
           "id": "p4-sci-4-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A place that provides an organism's needs = ______.",
-          "answer": "habitat",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-4-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Different Places, Different Living Organisms\".",
-          "answer": "Living organisms live where their needs can be met. Different habitats have different conditions.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -280,7 +264,6 @@
           "id": "p4-sci-5-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Desert Living Organisms\"?",
-          "answer": "Desert organisms must cope with little water.",
           "difficulty": "easy",
           "choices": [
             "Desert organisms must cope with little water.",
@@ -293,7 +276,6 @@
           "id": "p4-sci-5-q2",
           "type": "true_false",
           "text": "Some desert animals avoid the hottest times of day.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -304,14 +286,12 @@
           "id": "p4-sci-5-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A very dry habitat = ______.",
-          "answer": "desert",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-5-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Desert Living Organisms\".",
-          "answer": "Desert organisms must cope with little water. Some desert animals avoid the hottest times of day.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -342,7 +322,6 @@
           "id": "p4-sci-6-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Eggs and Larvae\"?",
-          "answer": "Eggs hatch into larvae.",
           "difficulty": "easy",
           "choices": [
             "Eggs hatch into larvae.",
@@ -355,7 +334,6 @@
           "id": "p4-sci-6-q2",
           "type": "true_false",
           "text": "Larvae usually feed and grow rapidly.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -366,14 +344,12 @@
           "id": "p4-sci-6-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: The first stage in many insect life cycles = ______.",
-          "answer": "egg",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-6-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Eggs and Larvae\".",
-          "answer": "Eggs hatch into larvae. Larvae usually feed and grow rapidly.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -404,7 +380,6 @@
           "id": "p4-sci-7-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Pupae and Adults\"?",
-          "answer": "The pupa comes after the larva.",
           "difficulty": "easy",
           "choices": [
             "The pupa comes after the larva.",
@@ -417,7 +392,6 @@
           "id": "p4-sci-7-q2",
           "type": "true_false",
           "text": "An adult emerges after the pupal stage.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -428,14 +402,12 @@
           "id": "p4-sci-7-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A stage in which major body change occurs = ______.",
-          "answer": "pupa",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-7-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Pupae and Adults\".",
-          "answer": "The pupa comes after the larva. An adult emerges after the pupal stage.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -470,7 +442,6 @@
           "id": "p4-sci-8-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Body Structure of Adults\"?",
-          "answer": "Adult insects have six legs.",
           "difficulty": "easy",
           "choices": [
             "Adult insects have six legs.",
@@ -483,7 +454,6 @@
           "id": "p4-sci-8-q2",
           "type": "true_false",
           "text": "The insect body has head, thorax and abdomen.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -494,14 +464,12 @@
           "id": "p4-sci-8-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Front body region of an insect = ______.",
-          "answer": "head",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-8-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Body Structure of Adults\".",
-          "answer": "Adult insects have six legs. The insect body has head, thorax and abdomen.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -532,7 +500,6 @@
           "id": "p4-sci-9-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Sowing Seeds\"?",
-          "answer": "Water is needed for germination.",
           "difficulty": "easy",
           "choices": [
             "Water is needed for germination.",
@@ -545,7 +512,6 @@
           "id": "p4-sci-9-q2",
           "type": "true_false",
           "text": "A seed begins to grow under suitable conditions.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -556,14 +522,12 @@
           "id": "p4-sci-9-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A plant structure that can grow into a new plant = ______.",
-          "answer": "seed",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-9-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Sowing Seeds\".",
-          "answer": "Water is needed for germination. A seed begins to grow under suitable conditions.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -594,7 +558,6 @@
           "id": "p4-sci-10-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"After Sprouting\"?",
-          "answer": "Roots grow into the soil.",
           "difficulty": "easy",
           "choices": [
             "Roots grow into the soil.",
@@ -607,7 +570,6 @@
           "id": "p4-sci-10-q2",
           "type": "true_false",
           "text": "Shoots grow upward toward light.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -618,14 +580,12 @@
           "id": "p4-sci-10-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Plant part that absorbs water and anchors the plant = ______.",
-          "answer": "root",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-10-q4",
           "type": "reason",
           "text": "Explain one important idea from \"After Sprouting\".",
-          "answer": "Roots grow into the soil. Shoots grow upward toward light.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -656,7 +616,6 @@
           "id": "p4-sci-11-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Flowers and Fruits\"?",
-          "answer": "Fruits can develop from flowers.",
           "difficulty": "easy",
           "choices": [
             "Fruits can develop from flowers.",
@@ -669,7 +628,6 @@
           "id": "p4-sci-11-q2",
           "type": "true_false",
           "text": "Many fruits contain seeds.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -680,14 +638,12 @@
           "id": "p4-sci-11-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Plant reproductive structure = ______.",
-          "answer": "flower",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-11-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Flowers and Fruits\".",
-          "answer": "Fruits can develop from flowers. Many fruits contain seeds.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -718,7 +674,6 @@
           "id": "p4-sci-12-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"The Plant Body\"?",
-          "answer": "Roots absorb water from soil.",
           "difficulty": "easy",
           "choices": [
             "Roots absorb water from soil.",
@@ -731,7 +686,6 @@
           "id": "p4-sci-12-q2",
           "type": "true_false",
           "text": "Leaves use light to help make food.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -742,14 +696,12 @@
           "id": "p4-sci-12-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Supports the plant and transports materials = ______.",
-          "answer": "stem",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-12-q4",
           "type": "reason",
           "text": "Explain one important idea from \"The Plant Body\".",
-          "answer": "Roots absorb water from soil. Leaves use light to help make food.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -780,7 +732,6 @@
           "id": "p4-sci-13-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"How Sunlight Travels\"?",
-          "answer": "Light travels in straight lines.",
           "difficulty": "easy",
           "choices": [
             "Light travels in straight lines.",
@@ -793,7 +744,6 @@
           "id": "p4-sci-13-q2",
           "type": "true_false",
           "text": "The Sun is a natural light source.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -804,14 +754,12 @@
           "id": "p4-sci-13-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A representation of the path of light = ______.",
-          "answer": "light ray",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-13-q4",
           "type": "reason",
           "text": "Explain one important idea from \"How Sunlight Travels\".",
-          "answer": "Light travels in straight lines. The Sun is a natural light source.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -842,7 +790,6 @@
           "id": "p4-sci-14-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Gathering Light\"?",
-          "answer": "Mirrors reflect light.",
           "difficulty": "easy",
           "choices": [
             "Mirrors reflect light.",
@@ -855,7 +802,6 @@
           "id": "p4-sci-14-q2",
           "type": "true_false",
           "text": "Changing a surface can change the direction of reflected light.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -866,14 +812,12 @@
           "id": "p4-sci-14-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Bouncing of light from a surface = ______.",
-          "answer": "reflection",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-14-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Gathering Light\".",
-          "answer": "Mirrors reflect light. Changing a surface can change the direction of reflected light.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -904,7 +848,6 @@
           "id": "p4-sci-15-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Shadows and the Sun (1)\"?",
-          "answer": "Opaque objects can form shadows.",
           "difficulty": "easy",
           "choices": [
             "Opaque objects can form shadows.",
@@ -917,7 +860,6 @@
           "id": "p4-sci-15-q2",
           "type": "true_false",
           "text": "A shadow appears on the side away from the light source.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -928,14 +870,12 @@
           "id": "p4-sci-15-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A dark area formed where light is blocked = ______.",
-          "answer": "shadow",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-15-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Shadows and the Sun (1)\".",
-          "answer": "Opaque objects can form shadows. A shadow appears on the side away from the light source.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -966,7 +906,6 @@
           "id": "p4-sci-16-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Shadows and the Sun (2)\"?",
-          "answer": "Shadows change during the day.",
           "difficulty": "easy",
           "choices": [
             "Shadows change during the day.",
@@ -979,7 +918,6 @@
           "id": "p4-sci-16-q2",
           "type": "true_false",
           "text": "A higher Sun generally produces a shorter shadow.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -990,14 +928,12 @@
           "id": "p4-sci-16-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: The measured size of a shadow = ______.",
-          "answer": "shadow length",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-16-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Shadows and the Sun (2)\".",
-          "answer": "Shadows change during the day. A higher Sun generally produces a shorter shadow.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1028,7 +964,6 @@
           "id": "p4-sci-17-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Sun and Shade\"?",
-          "answer": "Direct sunlight can warm the ground.",
           "difficulty": "easy",
           "choices": [
             "Direct sunlight can warm the ground.",
@@ -1041,7 +976,6 @@
           "id": "p4-sci-17-q2",
           "type": "true_false",
           "text": "Shade reduces direct sunlight.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1052,14 +986,12 @@
           "id": "p4-sci-17-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: An area protected from direct sunlight = ______.",
-          "answer": "shade",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-17-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Sun and Shade\".",
-          "answer": "Direct sunlight can warm the ground. Shade reduces direct sunlight.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1090,7 +1022,6 @@
           "id": "p4-sci-18-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"How Sound Is Produced\"?",
-          "answer": "Vibrating objects can produce sound.",
           "difficulty": "easy",
           "choices": [
             "Vibrating objects can produce sound.",
@@ -1103,7 +1034,6 @@
           "id": "p4-sci-18-q2",
           "type": "true_false",
           "text": "Stopping a vibration can stop the sound.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1114,14 +1044,12 @@
           "id": "p4-sci-18-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A rapid back-and-forth movement = ______.",
-          "answer": "vibration",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-18-q4",
           "type": "reason",
           "text": "Explain one important idea from \"How Sound Is Produced\".",
-          "answer": "Vibrating objects can produce sound. Stopping a vibration can stop the sound.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1152,7 +1080,6 @@
           "id": "p4-sci-19-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Volume of Sound and Vibration\"?",
-          "answer": "Stronger vibrations can make louder sounds.",
           "difficulty": "easy",
           "choices": [
             "Stronger vibrations can make louder sounds.",
@@ -1165,7 +1092,6 @@
           "id": "p4-sci-19-q2",
           "type": "true_false",
           "text": "Volume describes loudness.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1176,14 +1102,12 @@
           "id": "p4-sci-19-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: How loud or soft a sound is = ______.",
-          "answer": "volume",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-19-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Volume of Sound and Vibration\".",
-          "answer": "Stronger vibrations can make louder sounds. Volume describes loudness.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1214,7 +1138,6 @@
           "id": "p4-sci-20-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"How Sound Travels\"?",
-          "answer": "Sound can travel through air.",
           "difficulty": "easy",
           "choices": [
             "Sound can travel through air.",
@@ -1227,7 +1150,6 @@
           "id": "p4-sci-20-q2",
           "type": "true_false",
           "text": "Sound can also travel through solids and liquids.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1238,14 +1160,12 @@
           "id": "p4-sci-20-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Matter through which sound travels = ______.",
-          "answer": "medium",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-20-q4",
           "type": "reason",
           "text": "Explain one important idea from \"How Sound Travels\".",
-          "answer": "Sound can travel through air. Sound can also travel through solids and liquids.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1276,7 +1196,6 @@
           "id": "p4-sci-21-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Wind-Powered Cars\"?",
-          "answer": "Wind can push an object.",
           "difficulty": "easy",
           "choices": [
             "Wind can push an object.",
@@ -1289,7 +1208,6 @@
           "id": "p4-sci-21-q2",
           "type": "true_false",
           "text": "Greater wind force can change motion more.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1300,14 +1218,12 @@
           "id": "p4-sci-21-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Moving air = ______.",
-          "answer": "wind",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-21-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Wind-Powered Cars\".",
-          "answer": "Wind can push an object. Greater wind force can change motion more.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1338,7 +1254,6 @@
           "id": "p4-sci-22-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Sail Size\"?",
-          "answer": "A sail catches moving air.",
           "difficulty": "easy",
           "choices": [
             "A sail catches moving air.",
@@ -1351,7 +1266,6 @@
           "id": "p4-sci-22-q2",
           "type": "true_false",
           "text": "Changing sail size can change the effect of wind.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1362,14 +1276,12 @@
           "id": "p4-sci-22-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A surface that catches moving air = ______.",
-          "answer": "sail",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-22-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Sail Size\".",
-          "answer": "A sail catches moving air. Changing sail size can change the effect of wind.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1400,7 +1312,6 @@
           "id": "p4-sci-23-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Rubber Band-Powered Cars\"?",
-          "answer": "Stretching a rubber band stores energy.",
           "difficulty": "easy",
           "choices": [
             "Stretching a rubber band stores energy.",
@@ -1413,7 +1324,6 @@
           "id": "p4-sci-23-q2",
           "type": "true_false",
           "text": "Releasing it can produce motion.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1424,14 +1334,12 @@
           "id": "p4-sci-23-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: An elastic material that can be stretched = ______.",
-          "answer": "rubber band",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-23-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Rubber Band-Powered Cars\".",
-          "answer": "Stretching a rubber band stores energy. Releasing it can produce motion.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1462,7 +1370,6 @@
           "id": "p4-sci-24-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Power of Rubber Bands\"?",
-          "answer": "More stretch can change the force produced.",
           "difficulty": "easy",
           "choices": [
             "More stretch can change the force produced.",
@@ -1475,7 +1382,6 @@
           "id": "p4-sci-24-q2",
           "type": "true_false",
           "text": "Rubber band properties affect motion.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1486,14 +1392,12 @@
           "id": "p4-sci-24-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Increase in length due to pulling = ______.",
-          "answer": "stretch",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-24-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Power of Rubber Bands\".",
-          "answer": "More stretch can change the force produced. Rubber band properties affect motion.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1524,7 +1428,6 @@
           "id": "p4-sci-25-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"The Relationship Between the Ground and Water\"?",
-          "answer": "Water can move through spaces in soil.",
           "difficulty": "easy",
           "choices": [
             "Water can move through spaces in soil.",
@@ -1537,7 +1440,6 @@
           "id": "p4-sci-25-q2",
           "type": "true_false",
           "text": "Different soils allow water to move at different rates.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1548,14 +1450,12 @@
           "id": "p4-sci-25-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: Mixture of mineral particles and organic matter = ______.",
-          "answer": "soil",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-25-q4",
           "type": "reason",
           "text": "Explain one important idea from \"The Relationship Between the Ground and Water\".",
-          "answer": "Water can move through spaces in soil. Different soils allow water to move at different rates.",
           "difficulty": "medium",
           "choices": "hard"
         }
@@ -1586,7 +1486,6 @@
           "id": "p4-sci-26-q1",
           "type": "mcq",
           "text": "Which statement is correct about \"Transporting Giant Stone Statues\"?",
-          "answer": "Friction resists motion.",
           "difficulty": "easy",
           "choices": [
             "Friction resists motion.",
@@ -1599,7 +1498,6 @@
           "id": "p4-sci-26-q2",
           "type": "true_false",
           "text": "Changing the ground surface can affect how easily a heavy object moves.",
-          "answer": "True",
           "difficulty": "easy",
           "choices": [
             "True",
@@ -1610,14 +1508,12 @@
           "id": "p4-sci-26-q3",
           "type": "complete",
           "text": "Complete using a key term from this lesson: A force that resists motion between surfaces = ______.",
-          "answer": "friction",
           "difficulty": "medium"
         },
         {
           "id": "p4-sci-26-q4",
           "type": "reason",
           "text": "Explain one important idea from \"Transporting Giant Stone Statues\".",
-          "answer": "Friction resists motion. Changing the ground surface can affect how easily a heavy object moves.",
           "difficulty": "medium",
           "choices": "hard"
         }
