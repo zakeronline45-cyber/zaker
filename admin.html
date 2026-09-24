@@ -178,9 +178,10 @@ async function loadQuestionBank(){
   const p=document.getElementById('preview');
   p.innerHTML='<p>جارٍ تحميل بنك الأسئلة...</p>';
   try{
-    const r=await fetch('/content/questions/science-term1-u1-l'+lesson+'.json',{cache:'no-store'});
-    if(!r.ok) throw new Error('تعذر تحميل بنك الأسئلة');
-    questionBank=await r.json(); loadedLesson=lesson;
+    const path='content/questions/science-term1-u1-l'+lesson+'.json';
+    const {data,error}=await sb.rpc('get_protected_content',{p_child_id:null,p_path:path});
+    if(error||!data) throw new Error(error?.message||'تعذر تحميل بنك الأسئلة');
+    questionBank=data; loadedLesson=lesson;
     p.innerHTML='<p class="ok">✓ تم تحميل '+questionBank.questions.length+' سؤال حقيقي من '+escapeHtml(questionBank.lessonTitle)+'.</p>';
     return questionBank;
   }catch(e){
