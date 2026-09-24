@@ -15,7 +15,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "A natural rock that attracts certain metallic objects is called a natural ______.",
-      "answer": "magnet",
       "sourcePage": 209,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -25,7 +24,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The region surrounding a magnet where magnetic force appears is the magnetic ______.",
-      "answer": "field",
       "sourcePage": 210,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -35,7 +33,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "Imaginary lines representing magnetic force are called magnetic field ______.",
-      "answer": "lines",
       "sourcePage": 211,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -45,7 +42,6 @@
       "type": "true_false",
       "difficulty": "easy",
       "text": "Like magnetic poles repel each other and unlike poles attract each other.",
-      "answer": "True",
       "sourcePage": 212,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -61,7 +57,6 @@
         "Aluminum",
         "Glass"
       ],
-      "answer": "Iron",
       "sourcePage": 213,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -77,7 +72,6 @@
         "Nickel",
         "Cobalt"
       ],
-      "answer": "Copper",
       "sourcePage": 214,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -87,7 +81,6 @@
       "type": "reason",
       "difficulty": "easy",
       "text": "Give a reason: Iron and cobalt are magnetic materials.",
-      "answer": "Because they are attracted to a magnet.",
       "sourcePage": 215,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -97,7 +90,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Not all metals are magnetic materials.",
-      "answer": "Some metals such as copper, gold and silver are not attracted to a magnet.",
       "sourcePage": 216,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -107,7 +99,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Iron filings are denser near the poles of a magnet.",
-      "answer": "Because the magnetic field is strongest at the poles.",
       "sourcePage": 217,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -117,7 +108,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: A freely suspended magnet settles in a certain direction.",
-      "answer": "Earth acts like a giant magnet, so the magnet aligns with Earth's magnetic field.",
       "sourcePage": 218,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -127,7 +117,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: A compass box is not made of iron.",
-      "answer": "Iron would interact with the compass magnetic needle and affect its movement.",
       "sourcePage": 219,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -137,7 +126,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare magnetic and non-magnetic materials.",
-      "answer": "Magnetic materials are attracted to a magnet, such as iron, cobalt and nickel; non-magnetic materials are not, such as copper, silver and aluminum.",
       "sourcePage": 220,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -147,7 +135,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare electric field and magnetic field.",
-      "answer": "Electric field surrounds an electric charge; magnetic field surrounds a magnet. Both are represented by imaginary field lines.",
       "sourcePage": 221,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -157,7 +144,6 @@
       "type": "compare",
       "difficulty": "hard",
       "text": "Compare electric field lines and magnetic field lines.",
-      "answer": "Both are imaginary and do not intersect; electric lines start at positive and end at negative charges, while magnetic lines start from the north pole and end at the south pole outside a magnet.",
       "sourcePage": 222,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -173,7 +159,6 @@
         "Ring magnet",
         "Triangular magnet"
       ],
-      "answer": "Triangular magnet",
       "sourcePage": 223,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -183,7 +168,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "A single magnet is divided into several parts. What happens to each part?",
-      "answer": "Each part becomes a smaller magnet with both north and south poles.",
       "sourcePage": 224,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -193,7 +177,6 @@
       "type": "problem",
       "difficulty": "easy",
       "text": "A magnet is brought near a mixture of copper filings, iron filings and sand. Which part is attracted?",
-      "answer": "Only the iron filings.",
       "sourcePage": 225,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -203,7 +186,6 @@
       "type": "reason",
       "difficulty": "hard",
       "text": "Give a reason: A magnetic brush can reveal unclear fingerprints.",
-      "answer": "Iron filings stick to the traces left by fingerprints, making them visible.",
       "sourcePage": 226,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -213,7 +195,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "Two adjacent poles repel. What can you infer about the poles?",
-      "answer": "They are like poles (both north or both south).",
       "sourcePage": 227,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -223,7 +204,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "Two adjacent poles attract. What can you infer?",
-      "answer": "They are unlike poles.",
       "sourcePage": 228,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -233,7 +213,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Magnetic field lines are most dense near the magnet poles.",
-      "answer": "True",
       "sourcePage": 229,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -243,7 +222,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "A magnet can have an isolated north pole after being cut.",
-      "answer": "False",
       "sourcePage": 229,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -259,7 +237,6 @@
         "electric charge",
         "mass"
       ],
-      "answer": "geographical directions",
       "sourcePage": 229,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.114-117 / PDF 530-533"
@@ -269,7 +246,6 @@
       "type": "problem",
       "difficulty": "hard",
       "text": "Consultant-generated application: A compass needle does not deflect near a metal sample. Can you conclude the sample is definitely non-magnetic?",
-      "answer": "Not from one observation alone; repeat under proper conditions, but absence of attraction/deflection suggests it may be non-magnetic.",
       "sourcePage": 229,
       "sourceSection": "consultant-generated-from-source",
       "sourceReference": "Generated from verified lesson concepts"
