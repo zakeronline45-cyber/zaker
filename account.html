@@ -35,6 +35,12 @@
     <div id="childrenList">جاري التحميل...</div>
   </section>
 </div>
+<div class="card" style="margin-top:18px">
+  <h2>الخصوصية والبيانات</h2>
+  <p class="muted">يمكنك مراجعة سياسة الخصوصية أو طلب حذف الحساب والبيانات المرتبطة به. طلب الحذف لا ينفذ فورًا حتى لا تُفقد اشتراكات أو سجلات مالية بالخطأ.</p>
+  <div class="actions"><a class="btn soft" href="/privacy.html">سياسة الخصوصية</a><button class="btn danger" onclick="requestAccountDeletion()">طلب حذف الحساب والبيانات</button></div>
+  <div id="deletionMsg" class="muted" style="margin-top:10px"></div>
+</div>
 </main>
 <nav class="account-bottom"><a href="/"><span>🏠</span>الرئيسية</a><a href="/student.html?view=explain"><span>📚</span>الدراسة</a><a href="/student.html?view=test"><span>📝</span>اختباراتي</a><a href="/student.html?view=profile"><span>📊</span>تقاريري</a><a class="active" href="/account.html"><span>👤</span>حسابي</a></nav>
 <script src="/zaker-i18n.js"></script><script>
@@ -126,6 +132,13 @@ function openChild(id){
  localStorage.setItem('zaker_active_child_id',ch.id);
  localStorage.setItem('zaker_student_track',ch.track);
  location.href='/';
+}
+async function requestAccountDeletion(){
+ const ok=confirm('سيتم إرسال طلب حذف الحساب والبيانات للإدارة للمراجعة. لن يتم الحذف فورًا. هل تريد المتابعة؟');
+ if(!ok)return;
+ const reason=prompt('يمكنك كتابة سبب الطلب (اختياري):','')||'';
+ const {data,error}=await sb.rpc('request_account_deletion',{p_reason:reason.trim()});
+ deletionMsg.textContent=error?('تعذر إرسال الطلب: '+error.message):'تم تسجيل طلب الحذف بنجاح. رقم الطلب: '+data;
 }
 async function logout(){await sb.auth.signOut();location.href='/login.html'}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
