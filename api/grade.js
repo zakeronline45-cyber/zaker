@@ -39,7 +39,7 @@ export default async function handler(req,res){
     const tokenList=s=>normalize(s).split(' ').filter(Boolean);
     let correct=false;
     const accepted=[q.answer,...(Array.isArray(q.accepted_answers)?q.accepted_answers:[])].filter(x=>x!==null&&x!==undefined&&String(x).trim()!=='');
-    const exactTypes=['mcq','reading_mcq','true_false','complete','dialogue_complete','correct_form','correction','punctuation','reorder','solve'];
+    const exactTypes=['mcq','reading_mcq','true_false','listening_mcq','listening_true_false','complete','dialogue_complete','correct_form','correction','punctuation','reorder','solve'];
     const answerMatches=accepted.some(ans=>normalize(studentAnswer)===normalize(ans));
     if(exactTypes.includes(q.type)){
       correct=answerMatches;
