@@ -347,7 +347,8 @@
           ],
           "accepted_answers": [
             "two"
-          ]
+          ],
+          "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
         },
         {
           "id": "p4-eng-u2-l1-q015",
@@ -375,7 +376,8 @@
               "page": 72,
               "id": "elm-u2l1-030"
             }
-          ]
+          ],
+          "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
         },
         {
           "id": "p4-eng-u2-l1-q016",
@@ -536,7 +538,8 @@
               "page": 73,
               "id": "bbb-u2r-015"
             }
-          ]
+          ],
+          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
         },
         {
           "id": "p4-eng-u2-l1-q025",
@@ -657,7 +660,8 @@
               "page": 75,
               "id": "bbb-u2r-031"
             }
-          ]
+          ],
+          "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
         },
         {
           "id": "p4-eng-u2-l1-q031",
@@ -889,7 +893,7 @@
           "type": "reading_open",
           "prompt": "What does Amira do with clothes?",
           "answer": "She collects clothes and gives them to people who need them.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "She collects clothes and gives them to people who need them.",
             "She collects clothes and gives them to poor people."
@@ -911,7 +915,7 @@
           "type": "reading_open",
           "prompt": "Who feeds the dogs and cats?",
           "answer": "Adam.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Adam.",
             "Adam feeds the dogs and cats."
@@ -1477,7 +1481,7 @@
           "type": "reading_mcq",
           "prompt": "This text is about ______.",
           "answer": "community's history",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "Egyptian food",
             "community's history",
@@ -1501,7 +1505,7 @@
           "type": "reading_mcq",
           "prompt": "The opposite of the underlined word \"old\" is ______.",
           "answer": "new",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "new",
             "different",
@@ -1525,7 +1529,7 @@
           "type": "reading_open",
           "prompt": "Where did people sell fresh fruits and vegetables?",
           "answer": "In the old market.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "In the old market.",
             "They sold them in the old market."
@@ -1769,7 +1773,7 @@
           "type": "reading_mcq",
           "prompt": "Ahmed lives in ______.",
           "answer": "Cairo",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "Giza",
             "Luxor",
@@ -1793,7 +1797,7 @@
           "type": "reading_mcq",
           "prompt": "Ahmed is always ______ for work.",
           "answer": "late",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "busy",
             "late",
@@ -1817,7 +1821,7 @@
           "type": "reading_open",
           "prompt": "What did Ahmed and his neighbors decide?",
           "answer": "To use buses or bicycles instead of private cars.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "To use buses or bicycles instead of private cars.",
             "They decided to use buses or bicycles instead of private cars."
@@ -2572,7 +2576,8 @@
               "page": 73,
               "id": "bbb-u2r-016"
             }
-          ]
+          ],
+          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
         },
         {
           "id": "p4-eng-u2-l2-q037",
@@ -2594,7 +2599,8 @@
               "page": 73,
               "id": "bbb-u2r-017"
             }
-          ]
+          ],
+          "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
         },
         {
           "id": "p4-eng-u2-l2-q038",
@@ -2744,7 +2750,8 @@
               "page": 75,
               "id": "bbb-u2r-032"
             }
-          ]
+          ],
+          "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
         },
         {
           "id": "p4-eng-u2-l2-q045",
@@ -3438,7 +3445,7 @@
           "type": "reading_mcq",
           "prompt": "The opposite of the underlined word \"dirty\" is ______.",
           "answer": "clean",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "harmful",
             "bad",
@@ -3462,7 +3469,7 @@
           "type": "reading_mcq",
           "prompt": "This text is about ______.",
           "answer": "Trash",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "Neighbors",
             "Trash",
@@ -3486,7 +3493,7 @@
           "type": "reading_open",
           "prompt": "Why is trash a dangerous problem?",
           "answer": "Because it can make many people ill.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Because it can make many people ill.",
             "It can make many people ill."
@@ -3508,7 +3515,7 @@
           "type": "reading_open",
           "prompt": "How can they solve this problem?",
           "answer": "By putting bins everywhere.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "By putting bins everywhere.",
             "They can put bins everywhere."
@@ -3530,7 +3537,7 @@
           "type": "reading_open",
           "prompt": "Why does the problem of trash happen?",
           "answer": "Because some people throw trash on the ground.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Because some people throw trash on the ground.",
             "People throw trash on the ground."
@@ -4010,7 +4017,7 @@
           "type": "reading_open",
           "prompt": "How did Ahmed and his neighbors solve the traffic problem?",
           "answer": "They decided to use buses or bicycles instead of private cars.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "They decided to use buses or bicycles instead of private cars.",
             "By using buses or bicycles instead of private cars."
@@ -4374,7 +4381,8 @@
               "page": 63,
               "id": "bbb-u2l3-012"
             }
-          ]
+          ],
+          "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
         },
         {
           "id": "p4-eng-u2-l3-q013",
@@ -4394,7 +4402,8 @@
               "page": 63,
               "id": "bbb-u2l3-013"
             }
-          ]
+          ],
+          "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
         },
         {
           "id": "p4-eng-u2-l3-q014",
@@ -4414,7 +4423,8 @@
               "page": 63,
               "id": "bbb-u2l3-014"
             }
-          ]
+          ],
+          "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
         },
         {
           "id": "p4-eng-u2-l3-q015",
@@ -4557,7 +4567,8 @@
               "page": 75,
               "id": "bbb-u2r-030"
             }
-          ]
+          ],
+          "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
         },
         {
           "id": "p4-eng-u2-l3-q024",
@@ -4774,7 +4785,7 @@
           "pdf_page": 77,
           "type": "mcq",
           "prompt": "Ancient Egyptian houses had beautiful ______.",
-          "answer": "courtyards",
+          "answer": "designs",
           "status": "active",
           "choices": [
             "designs",
@@ -4871,7 +4882,7 @@
           "type": "reading_open",
           "prompt": "Where is the Delta?",
           "answer": "It's in the north of Egypt.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "In the north of Egypt.",
             "It's in the north of Egypt."
@@ -4893,7 +4904,7 @@
           "type": "reading_open",
           "prompt": "Where do people grow sugar cane?",
           "answer": "In Upper Egypt.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "In Upper Egypt."
           ],
@@ -5491,7 +5502,7 @@
           "type": "reading_mcq",
           "prompt": "Upper Egypt is in the ______ part of Egypt.",
           "answer": "southern",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "northern",
             "southern",
@@ -5515,7 +5526,7 @@
           "type": "reading_mcq",
           "prompt": "Egypt's culture is ______.",
           "answer": "old",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "new",
             "modern",
@@ -5539,7 +5550,7 @@
           "type": "reading_open",
           "prompt": "What do the Nubian villages have?",
           "answer": "Houses painted in bright colors and special designs.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Houses painted in bright colors and special designs.",
             "Brightly painted houses and special designs."
@@ -5561,7 +5572,7 @@
           "type": "reading_open",
           "prompt": "What do both regions share?",
           "answer": "Many of the same traditions.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Many of the same traditions.",
             "They share many of the same traditions."
@@ -5583,7 +5594,7 @@
           "type": "reading_open",
           "prompt": "What do people wear in Northern Egypt?",
           "answer": "Modern clothes like pants and shirts.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Modern clothes like pants and shirts.",
             "Pants and shirts."
@@ -6620,7 +6631,7 @@
           "type": "reading_mcq",
           "prompt": "Fifty years ago, the neighborhood was very ______.",
           "answer": "quiet",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "busy",
             "quiet",
@@ -6644,7 +6655,7 @@
           "type": "reading_mcq",
           "prompt": "There were small houses with beautiful ______.",
           "answer": "gardens",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "gardens",
             "pools",
@@ -6668,7 +6679,7 @@
           "type": "reading_open",
           "prompt": "Where did children play safely?",
           "answer": "In the streets.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "In the streets.",
             "Children played safely in the streets."
@@ -6726,7 +6737,7 @@
           "type": "reading_open",
           "prompt": "What did Grandpa show Hana?",
           "answer": "Old photos.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Old photos.",
             "He showed her old photos."
