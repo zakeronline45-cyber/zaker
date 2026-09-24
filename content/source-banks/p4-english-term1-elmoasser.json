@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "source_id": "elmoasser-p4-english-t1-2027",
+  "source_name": "El-Moasser English Primary 4 First Term 2027",
+  "subject": "P4 English",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source_file": "المعاصر_لغة_انجليزية_4_ابتدائي_ترم_1_ذاكرولي(1).pdf",
+  "coverage": {
+    "pdf_pages": 150,
+    "included_units_in_file": [
+      1,
+      2,
+      3
+    ],
+    "note": "This uploaded PDF ends with review on Units 1, 2 and 3; Units 4-6 are not present in this file."
+  },
+  "extraction_status": {
+    "unit_1_lesson_1": "verified",
+    "remaining": "pending_next_ingestion_pass"
+  },
+  "units": [
+    {
+      "unit_id": 1,
+      "unit_title": "The Five Senses",
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "lesson_title": "What are the Five Senses?",
+          "questions": [
+            {
+              "id": "elm-u1l1-001",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 24,
+              "pdf_page": 19,
+              "type": "mcq",
+              "prompt": "I can hear a loud ______ in the street.",
+              "choices": [
+                "noise",
+                "smoke",
+                "color",
+                "shape"
+              ],
+              "answer": "noise",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-002",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 24,
+              "pdf_page": 19,
+              "type": "mcq",
+              "prompt": "Our amazing senses help us stay ______.",
+              "choices": [
+                "busy",
+                "safe",
+                "far",
+                "slow"
+              ],
+              "answer": "safe",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-003",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 24,
+              "pdf_page": 19,
+              "type": "mcq",
+              "prompt": "Butterflies are ______. They have many bright colors.",
+              "choices": [
+                "delicious",
+                "hard",
+                "colorful",
+                "scary"
+              ],
+              "answer": "colorful",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-004",
+              "section": "Pop Quiz on Vocabulary",
+              "printed_page": 24,
+              "pdf_page": 19,
+              "type": "mcq",
+              "prompt": "Can I ______ this red flower?",
+              "choices": [
+                "smell",
+                "hear",
+                "taste",
+                "talk"
+              ],
+              "answer": "smell",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-005",
+              "section": "Previous Exams",
+              "printed_page": 25,
+              "pdf_page": 20,
+              "type": "mcq",
+              "prompt": "I ______ food with my tongue.",
+              "choices": [
+                "see",
+                "hear",
+                "taste",
+                "touch"
+              ],
+              "answer": "taste",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-006",
+              "section": "Previous Exams",
+              "printed_page": 25,
+              "pdf_page": 20,
+              "type": "mcq",
+              "prompt": "I can ______ soft things with my fingers.",
+              "choices": [
+                "smell",
+                "hear",
+                "see",
+                "touch"
+              ],
+              "answer": "touch",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-007",
+              "section": "Previous Exams",
+              "printed_page": 25,
+              "pdf_page": 20,
+              "type": "mcq",
+              "prompt": "Our ______ help us stay safe and learn.",
+              "choices": [
+                "books",
+                "neighbors",
+                "senses",
+                "toys"
+              ],
+              "answer": "senses",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-008",
+              "section": "Previous Exams",
+              "printed_page": 25,
+              "pdf_page": 20,
+              "type": "mcq",
+              "prompt": "I ______ with my eyes.",
+              "choices": [
+                "hear",
+                "taste",
+                "smell",
+                "see"
+              ],
+              "answer": "see",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-009",
+              "section": "Previous Exams",
+              "printed_page": 25,
+              "pdf_page": 20,
+              "type": "mcq",
+              "prompt": "If we smell smoke, we know there's a ______.",
+              "choices": [
+                "tree",
+                "flower",
+                "fire",
+                "bird"
+              ],
+              "answer": "fire",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-010",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "reading_mcq",
+              "prompt": "We use our ______ to see shapes and colors.",
+              "choices": [
+                "eyes",
+                "nose",
+                "ears",
+                "tongue"
+              ],
+              "answer": "eyes",
+              "context_ref": "The five senses reading text",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-011",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "reading_mcq",
+              "prompt": "The text is about our ______.",
+              "choices": [
+                "school",
+                "trash",
+                "food",
+                "senses"
+              ],
+              "answer": "senses",
+              "context_ref": "The five senses reading text",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-012",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "reading_open",
+              "prompt": "What do the five senses help us do?",
+              "answer": "They help us understand the world around us.",
+              "accepted_answers": [
+                "They help us understand the world around us.",
+                "They help us understand the world around us and stay safe."
+              ],
+              "context_ref": "The five senses reading text",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-013",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "reading_open",
+              "prompt": "Which sense helps us smell flowers?",
+              "answer": "The sense of smell.",
+              "accepted_answers": [
+                "smell",
+                "The sense of smell."
+              ],
+              "context_ref": "The five senses reading text",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-014",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "reading_open",
+              "prompt": "Which body part do we use to taste food?",
+              "answer": "The tongue.",
+              "accepted_answers": [
+                "tongue",
+                "our tongue",
+                "The tongue."
+              ],
+              "context_ref": "The five senses reading text",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-015",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "punctuation",
+              "prompt": "the senses help us learn about the world",
+              "answer": "The senses help us learn about the world.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-016",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "punctuation",
+              "prompt": "what will we learn today",
+              "answer": "What will we learn today?",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-017",
+              "section": "General Exercises / Previous Exams",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "mcq",
+              "prompt": "You use your sense of ______ to listen to music.",
+              "choices": [
+                "smell",
+                "sight",
+                "hearing",
+                "touch"
+              ],
+              "answer": "hearing",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-018",
+              "section": "General Exercises / Previous Exams",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "mcq",
+              "prompt": "There is a ______. Look at the dark smoke.",
+              "choices": [
+                "fire",
+                "noise",
+                "match",
+                "rain"
+              ],
+              "answer": "fire",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-019",
+              "section": "General Exercises / Previous Exams",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "mcq",
+              "prompt": "This soup is hot; it hurts my ______.",
+              "choices": [
+                "tongue",
+                "nose",
+                "neck",
+                "feet"
+              ],
+              "answer": "tongue",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-020",
+              "section": "General Exercises / Previous Exams",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "mcq",
+              "prompt": "______ a beautiful day in the school garden!",
+              "choices": [
+                "Where",
+                "What",
+                "Which",
+                "Who"
+              ],
+              "answer": "What",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-021",
+              "section": "General Exercises / Previous Exams",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "mcq",
+              "prompt": "It's important to learn ______ the five senses.",
+              "choices": [
+                "off",
+                "in",
+                "to",
+                "about"
+              ],
+              "answer": "about",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-022",
+              "section": "General Exercises / Previous Exams",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "mcq",
+              "prompt": "I hear ______ my ears.",
+              "choices": [
+                "on",
+                "with",
+                "of",
+                "off"
+              ],
+              "answer": "with",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-023",
+              "section": "Read and complete",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "complete",
+              "prompt": "Samir can hear the birds in the garden. He sees ______ flying near the flowers.",
+              "answer": "butterflies",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-024",
+              "section": "Read and complete",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "complete",
+              "prompt": "He can ______ their beautiful wings.",
+              "answer": "see",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-025",
+              "section": "Read and complete",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "complete",
+              "prompt": "His sister smells the sweet ______ in the air.",
+              "answer": "flowers",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-026",
+              "section": "Read and complete",
+              "printed_page": 28,
+              "pdf_page": 23,
+              "type": "complete",
+              "prompt": "Birds sing loudly, so she can ______ them in the tree.",
+              "answer": "hear",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-027",
+              "section": "Review through the Exam",
+              "printed_page": 59,
+              "pdf_page": 54,
+              "type": "reorder",
+              "prompt": "five - We - senses - have",
+              "answer": "We have five senses.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-028",
+              "section": "Review through the Exam",
+              "printed_page": 59,
+              "pdf_page": 54,
+              "type": "reorder",
+              "prompt": "with - nose - We - our - smell",
+              "answer": "We smell with our nose.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-029",
+              "section": "Review through the Exam",
+              "printed_page": 59,
+              "pdf_page": 54,
+              "type": "reorder",
+              "prompt": "our - We - hands - with - touch",
+              "answer": "We touch with our hands.",
+              "status": "active"
+            },
+            {
+              "id": "elm-u1l1-030",
+              "section": "Writing through the Exam",
+              "printed_page": 59,
+              "pdf_page": 54,
+              "type": "writing",
+              "prompt": "Write about: Our senses.",
+              "answer": null,
+              "status": "active_manual_or_ai_grading",
+              "rubric": [
+                "Use lesson vocabulary correctly",
+                "Write meaningful sentences about the five senses",
+                "Use correct basic grammar and punctuation"
+              ]
+            },
+            {
+              "id": "elm-u1l1-L01",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "listening_true_false",
+              "prompt": "Listening item 1 from Lesson 1 General Exercises",
+              "answer": null,
+              "status": "inactive_missing_audio"
+            },
+            {
+              "id": "elm-u1l1-L02",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "listening_true_false",
+              "prompt": "Listening item 2 from Lesson 1 General Exercises",
+              "answer": null,
+              "status": "inactive_missing_audio"
+            },
+            {
+              "id": "elm-u1l1-L03",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "listening_true_false",
+              "prompt": "Listening item 3 from Lesson 1 General Exercises",
+              "answer": null,
+              "status": "inactive_missing_audio"
+            },
+            {
+              "id": "elm-u1l1-L04",
+              "section": "General Exercises on Lesson 1",
+              "printed_page": 27,
+              "pdf_page": 22,
+              "type": "listening_true_false",
+              "prompt": "Listening item 4 from Lesson 1 General Exercises",
+              "answer": null,
+              "status": "inactive_missing_audio"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
