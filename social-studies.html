@@ -85,7 +85,7 @@ async function init(){
  const saved=localStorage.getItem('zaker_active_child_id');child=children.find(x=>x.id===saved)||children[0];localStorage.setItem('zaker_active_child_id',child.id);localStorage.setItem('zaker_student_track',child.track);if(child.grade!=='prep1'){location.href='/';return}
  const {data:hasStudies,error:accessErr}=await sb.rpc('has_subject_access',{p_child_id:child.id,p_subject_code:"الدراسات الاجتماعية",p_lesson_no:1});if(accessErr||!hasStudies){location.href='/subscribe.html?child='+encodeURIComponent(child.id);return}
  studentName.textContent=child.full_name;studentGrade.textContent=({prep1:'أولى إعدادي',prep2:'ثانية إعدادي',prep3:'ثالثة إعدادي'}[child.grade]||child.grade);studentTrack.textContent=child.track==='arabic'?'مسار عربي':'مسار لغات';
- const r=await fetch('/content/social-studies-term1.json',{cache:'no-store'});curriculum=await r.json();moduleCount.textContent=curriculum.modules.length;questionCount.textContent=curriculum.modules.reduce((a,m)=>a+(m.questions?.length||0),0);
+ const {data:secured,error:contentErr}=await sb.rpc('get_protected_content',{p_child_id:child.id,p_path:'content/social-studies-term1.json'});if(contentErr||!secured)throw new Error(contentErr?.message||'المحتوى غير متاح');curriculum=secured;moduleCount.textContent=curriculum.modules.length;questionCount.textContent=curriculum.modules.reduce((a,m)=>a+(m.questions?.length||0),0);
  renderList();selectModule(Number(new URLSearchParams(location.search).get('module'))||1);
  const view=new URLSearchParams(location.search).get('view');if(['learn','ai','test','profile'].includes(view))setPane(view);
 }
