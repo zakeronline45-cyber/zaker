@@ -45,3 +45,25 @@ export async function requireAdmin(req,res,opts={}){
   if(!ar.ok||ar.data!==true){res.status(403).json({error:'Admin access required'});return null}
   return ctx;
 }
+
+export async function authorizeChildSubject(ctx,res,{childId,subjectCode,lessonNo=1}={}){
+  if(!ctx?.token||!ctx?.user?.id||!childId||!subjectCode){
+    res.status(400).json({error:'Student access data missing'});return false;
+  }
+
+  const own=await supabaseFetch('/rest/v1/children?id=eq.'+encodeURIComponent(childId)+'&guardian_user_id=eq.'+encodeURIComponent(ctx.user.id)+'&is_active=eq.true&select=id&limit=1',{token:ctx.token});
+  let allowedOwner=own.ok&&Array.isArray(own.data)&&own.data.length>0;
+
+  if(!allowedOwner){
+    const ar=await supabaseFetch('/rest/v1/rpc/is_admin',{token:ctx.token,method:'POST',body:{}});
+    allowedOwner=ar.ok&&ar.data===true;
+  }
+  if(!allowedOwner){res.status(403).json({error:'Student access denied'});return false}
+
+  const access=await supabaseFetch('/rest/v1/rpc/has_subject_access',{
+    token:ctx.token,method:'POST',
+    body:{p_child_id:childId,p_subject_code:subjectCode,p_lesson_no:Number(lessonNo)||1}
+  });
+  if(!access.ok||access.data!==true){res.status(403).json({error:'Subscription required'});return false}
+  return true;
+}
