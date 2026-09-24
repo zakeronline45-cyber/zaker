@@ -15,7 +15,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The basic unit of structure and function in living organisms is the ______.",
-      "answer": "cell",
       "sourcePage": 265,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -25,7 +24,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "A group of different organs working together forms a body ______.",
-      "answer": "system",
       "sourcePage": 266,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -35,7 +33,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "A group of similar cells performing a common function forms a ______.",
-      "answer": "tissue",
       "sourcePage": 267,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -51,7 +48,6 @@
         "plants",
         "animals"
       ],
-      "answer": "prokaryotes",
       "sourcePage": 268,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -67,7 +63,6 @@
         "multicellular plants",
         "bacteria"
       ],
-      "answer": "unicellular eukaryotes",
       "sourcePage": 269,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -77,7 +72,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "All prokaryotic organisms are unicellular.",
-      "answer": "True",
       "sourcePage": 270,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -87,7 +81,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare prokaryotes and eukaryotes.",
-      "answer": "Prokaryotes have genetic material in the cytoplasm without a nuclear membrane and lack many organelles; eukaryotes have a true nucleus and many organelles.",
       "sourcePage": 271,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -97,7 +90,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare unicellular and multicellular organisms.",
-      "answer": "Unicellular organisms consist of one unspecialized cell; multicellular organisms consist of many specialized cells.",
       "sourcePage": 272,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -113,7 +105,6 @@
         "Cytoplasm",
         "Mitochondria"
       ],
-      "answer": "Cell wall",
       "sourcePage": 273,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -129,7 +120,6 @@
         "Ribosome",
         "Nucleus"
       ],
-      "answer": "Chloroplast",
       "sourcePage": 274,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -139,7 +129,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Bacteria are classified as prokaryotes.",
-      "answer": "Their genetic material is not surrounded by a nuclear membrane.",
       "sourcePage": 275,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -149,7 +138,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Mushroom fungus is eukaryotic.",
-      "answer": "Its genetic material is surrounded by a nuclear membrane separating it from the cytoplasm.",
       "sourcePage": 276,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -159,7 +147,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Stem cells can produce more stem cells.",
-      "answer": "They can renew themselves through division.",
       "sourcePage": 277,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -169,7 +156,6 @@
       "type": "reason",
       "difficulty": "hard",
       "text": "Give a reason: Stem cells can be used to test new drugs before human use.",
-      "answer": "Their response can help evaluate drug safety and effectiveness.",
       "sourcePage": 278,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -179,7 +165,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The instrument used to see microscopic organisms is the light ______.",
-      "answer": "microscope",
       "sourcePage": 279,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -189,7 +174,6 @@
       "type": "problem",
       "difficulty": "easy",
       "text": "Arrange from simplest to most complex: organ, cell, system, tissue.",
-      "answer": "Cell → tissue → organ → system.",
       "sourcePage": 280,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -199,7 +183,6 @@
       "type": "problem",
       "difficulty": "easy",
       "text": "A cell has cell wall, chloroplasts and a large vacuole. Identify it.",
-      "answer": "A plant cell.",
       "sourcePage": 281,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -209,7 +192,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "A microorganism has no nuclear membrane around its genetic material. Classify it.",
-      "answer": "A prokaryote.",
       "sourcePage": 282,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -219,7 +201,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare plant and animal cells in structures that distinguish them.",
-      "answer": "Plant cells have a cell wall and chloroplasts and typically larger vacuoles; animal cells do not have a cell wall or chloroplasts.",
       "sourcePage": 283,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -229,7 +210,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Mushroom fungus and bread mold fungus are multicellular eukaryotic organisms.",
-      "answer": "True",
       "sourcePage": 284,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -239,7 +219,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Yeast fungus is always multicellular.",
-      "answer": "False",
       "sourcePage": 285,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -255,7 +234,6 @@
         "Rock crystal",
         "Salt molecule"
       ],
-      "answer": "Nerve cell",
       "sourcePage": 285,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -265,7 +243,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "A diagram shows mitochondria in an animal cell. State whether mitochondria are found in prokaryotic or eukaryotic cells according to the lesson.",
-      "answer": "Eukaryotic cells.",
       "sourcePage": 285,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.130-136 / PDF 546-552"
@@ -275,7 +252,6 @@
       "type": "problem",
       "difficulty": "hard",
       "text": "Consultant-generated application: Why is classification useful when studying many living organisms?",
-      "answer": "It organizes organisms according to similarities and differences, making study and identification easier.",
       "sourcePage": 285,
       "sourceSection": "consultant-generated-from-source",
       "sourceReference": "Generated from verified lesson concepts"
