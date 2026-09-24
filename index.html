@@ -160,7 +160,7 @@ function renderHomeSubscription(){
    return;
  }
  const available=homeSubjectCatalog().filter(x=>homeContentState(x.code).status==='active'&&!isHomeSubjectActive(x.code)&&!isHomeSubjectPending(x.code));
- box.innerHTML=available.length?available.map(x=>'<label class="subchoice"><input class="homeSubPick" type="checkbox" value="'+x.code+'" onchange="calcHomeSubscription()"> '+x.label+'</label>').join(''):'<div class="subnote">كل المواد المتاحة لهذا الطالب إما مفعلة أو قيد المراجعة.</div>';
+ box.innerHTML=available.length?available.map(x=>'<label class="subchoice"><input class="homeSubPick" type="checkbox" value="'+x.code+'" onchange="calcHomeSubscription()"> '+x.label+'</label>').join(''):'<div class="subnote">لا توجد مواد متاحة للاشتراك حاليًا. قد تكون مفعلة بالفعل أو تحت المراجعة/الإنشاء.</div>';
  calcHomeSubscription();
 }
 function calcHomeSubscription(){
