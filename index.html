@@ -31,7 +31,7 @@ main{padding:24px 0 100px}.welcome{display:grid;grid-template-columns:1.25fr .75
 </section></main>
 <nav class="bottom"><a class="active" href="/"><span>🏠</span>الرئيسية</a><a href="/student.html?view=explain"><span>📚</span>الدراسة</a><a href="/student.html?view=test"><span>📝</span>اختباراتي</a><a href="/student.html?view=profile"><span>📊</span>تقاريري</a><a href="/account.html"><span>👤</span>حسابي</a></nav><button class="notice" onclick="location.href='/student.html?view=ai'" aria-label="مدرس ذاكر">🤖</button>
 <script src="/zaker-i18n.js"></script><script>
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);let homeSession=null,homeChild=null,homeChildren=[],homeEntitlements={active:new Set(),pending:new Set(),promoAll:false,activeUntil:new Map()};const gradeLabel=x=>window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x||'Grade'):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x||'الصف الدراسي');function childKey(base){return homeChild?.id?base+'_'+homeChild.id:base}
+const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co',SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77',sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);let homeSession=null,homeChild=null,homeChildren=[],homeEntitlements={active:new Set(),pending:new Set(),promoAll:false,activeUntil:new Map()},homeAvailability=[];const gradeLabel=x=>window.zakerLang?.()==='en'?({p4:'Primary 4',p5:'Primary 5',p6:'Primary 6',prep1:'First Prep',prep2:'Second Prep',prep3:'Third Prep'}[x]||x||'Grade'):({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'تانية إعدادي',prep3:'تالتة إعدادي'}[x]||x||'الصف الدراسي');function childKey(base){return homeChild?.id?base+'_'+homeChild.id:base}
 function applyHomeTrackSubjects(){
  const ar=homeChild?.track==='arabic',grade=homeChild?.grade;
  const ids={science:'homeScience',mathEn:'homeMathEn',mathAr:'homeMathAr',english:'homeEnglish',arabic:'homeArabic',studies:'homeStudies',scienceAction:'homeScienceAction',englishAction:'homeEnglishAction',arabicAction:'homeArabicAction',studiesAction:'homeStudiesAction'};
@@ -92,14 +92,31 @@ function normSubject(s){
  if(s==='english')return 'english';
  return s;
 }
+function homeContentState(code){
+ const gradeRow=(homeAvailability||[]).find(x=>x.scope==='grade'&&x.grade===homeChild?.grade);
+ if(!gradeRow||gradeRow.status!=='active')return gradeRow||{status:'building',message:'جاري تجهيز محتوى هذا الصف.'};
+ const k=normSubject(code);
+ return (homeAvailability||[]).find(x=>x.scope==='subject'&&x.grade===homeChild?.grade&&x.track===homeChild?.track&&normSubject(x.subject_code)===k)||{status:'building',message:'جاري تجهيز هذه المادة.'};
+}
+function homeContentStatusText(s){return s==='review'?'🔍 تحت المراجعة':s==='disabled'?'⛔ غير متاحة':'🚧 تحت الإنشاء'}
+function homeContentDefaultMessage(x){if(x?.message)return x.message;if(x?.status==='review')return 'المادة تحت المراجعة حاليًا.';if(x?.status==='disabled')return 'هذه المادة غير متاحة حاليًا.';return 'جاري تجهيز وتحديث هذه المادة.'}
+
 function isHomeSubjectActive(code){return homeEntitlements.promoAll||homeEntitlements.active.has(normSubject(code))}
 function isHomeSubjectPending(code){return homeEntitlements.pending.has(normSubject(code))}
 function setHomeCardState(item){
  const el=document.getElementById(item.card);if(!el)return;
  const small=el.querySelector('small');
- el.classList.remove('locked','pending','active-sub');
+ el.classList.remove('locked','pending','active-sub','off');
  el.href=item.href;
  el.onclick=null;
+ const contentState=homeContentState(item.code);
+ if(contentState.status!=='active'){
+   el.classList.add('off');
+   el.href='#';
+   if(small)small.textContent=homeContentStatusText(contentState.status);
+   el.onclick=ev=>{ev.preventDefault();alert(homeContentStatusText(contentState.status)+'\n'+homeContentDefaultMessage(contentState))};
+   return;
+ }
  if(isHomeSubjectActive(item.code)){
    el.classList.add('active-sub');
    if(small){const until=homeEntitlements.activeUntil.get(normSubject(item.code));small.textContent='✅ مشترك'+(until?' حتى '+new Date(until).toLocaleDateString('ar-EG'):'')+' — ابدأ الآن'};
@@ -114,6 +131,8 @@ function setHomeCardState(item){
 async function loadHomeSubscriptionState(){
  homeEntitlements={active:new Set(),pending:new Set(),promoAll:false,activeUntil:new Map()};
  const {data:platform}=await sb.rpc('get_platform_settings');window.homePlatformSettings=platform||{};
+ const {data:availability,error:availabilityError}=await sb.rpc('get_content_availability',{p_grade:homeChild.grade,p_track:homeChild.track});
+ homeAvailability=availabilityError?[]:(Array.isArray(availability)?availability:[]);
  const {data:subs}=await sb.from('subscriptions').select('id,status,ends_at,access_source,academic_year,term').eq('child_id',homeChild.id).eq('academic_year',platform?.active_academic_year||'2026/2027').eq('term',Number(platform?.active_term||1)).order('created_at',{ascending:false}).limit(20);
  const now=new Date();
  const active=(subs||[]).filter(x=>x.status==='active'&&(!x.ends_at||new Date(x.ends_at)>now));
@@ -140,7 +159,7 @@ function renderHomeSubscription(){
    document.getElementById('homeSubButton').disabled=true;
    return;
  }
- const available=homeSubjectCatalog().filter(x=>!isHomeSubjectActive(x.code)&&!isHomeSubjectPending(x.code));
+ const available=homeSubjectCatalog().filter(x=>homeContentState(x.code).status==='active'&&!isHomeSubjectActive(x.code)&&!isHomeSubjectPending(x.code));
  box.innerHTML=available.length?available.map(x=>'<label class="subchoice"><input class="homeSubPick" type="checkbox" value="'+x.code+'" onchange="calcHomeSubscription()"> '+x.label+'</label>').join(''):'<div class="subnote">كل المواد المتاحة لهذا الطالب إما مفعلة أو قيد المراجعة.</div>';
  calcHomeSubscription();
 }
