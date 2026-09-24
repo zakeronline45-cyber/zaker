@@ -37,15 +37,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "ratio"
+          ]
         },
         {
           "id": "m1-1-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: a/b = c/d",
-          "answer": "a/b = c/d"
+          "text": "Complete a key rule: a/b = c/d"
         },
         {
           "id": "m1-1-003",
@@ -55,43 +53,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-1-004",
           "type": "solve",
           "difficulty": "medium",
-          "text": "Solve the proportion 5/8 = x/24.",
-          "answer": "15"
+          "text": "Solve the proportion 5/8 = x/24."
         },
         {
           "id": "m1-1-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "ratio / proportion / cross multiplication"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-1-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Solve 4/5 = x/20.",
-          "answer": "16"
+          "text": "Solve 4/5 = x/20."
         },
         {
           "id": "m1-1-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Are 6/8 and 9/12 proportional?",
-          "answer": "Yes"
+          "text": "Are 6/8 and 9/12 proportional?"
         },
         {
           "id": "m1-1-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Find x if 3:x = 6:14.",
-          "answer": "7"
+          "text": "Find x if 3:x = 6:14."
         }
       ]
     },
@@ -123,15 +115,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "scale drawing"
+          ]
         },
         {
           "id": "m1-2-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: scale = drawing length / real length",
-          "answer": "scale = drawing length / real length"
+          "text": "Complete a key rule: scale = drawing length / real length"
         },
         {
           "id": "m1-2-003",
@@ -141,43 +131,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-2-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "A drawing uses a scale of 1:200. Find the real length represented by 4 cm on the drawing.",
-          "answer": "800 cm"
+          "text": "A drawing uses a scale of 1:200. Find the real length represented by 4 cm on the drawing."
         },
         {
           "id": "m1-2-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "scale drawing / drawing length / real length"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-2-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "A map scale is 1:100000. What real distance does 3 cm represent in km?",
-          "answer": "3"
+          "text": "A map scale is 1:100000. What real distance does 3 cm represent in km?"
         },
         {
           "id": "m1-2-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Drawing length is 5 cm and real length is 250 cm. Write the scale in simplest form.",
-          "answer": "1:50"
+          "text": "Drawing length is 5 cm and real length is 250 cm. Write the scale in simplest form."
         },
         {
           "id": "m1-2-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "At scale 1:200, what drawing length represents 600 cm?",
-          "answer": "3 cm"
+          "text": "At scale 1:200, what drawing length represents 600 cm?"
         }
       ]
     },
@@ -210,15 +194,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "proportional division"
+          ]
         },
         {
           "id": "m1-3-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: one part = total / sum of ratio parts",
-          "answer": "one part = total / sum of ratio parts"
+          "text": "Complete a key rule: one part = total / sum of ratio parts"
         },
         {
           "id": "m1-3-003",
@@ -228,43 +210,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-3-004",
           "type": "solve",
           "difficulty": "medium",
-          "text": "Divide 1500 in the ratio 2:3. Find both shares.",
-          "answer": "600, 900"
+          "text": "Divide 1500 in the ratio 2:3. Find both shares."
         },
         {
           "id": "m1-3-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "proportional division / ratio parts / share"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-3-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Divide 900 in ratio 2:1.",
-          "answer": "600, 300"
+          "text": "Divide 900 in ratio 2:1."
         },
         {
           "id": "m1-3-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Divide 720 in ratio 3:2:1. Find the largest share.",
-          "answer": "360"
+          "text": "Divide 720 in ratio 3:2:1. Find the largest share."
         },
         {
           "id": "m1-3-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Two shares are in ratio 5:3 and total 640. Find the smaller share.",
-          "answer": "240"
+          "text": "Two shares are in ratio 5:3 and total 640. Find the smaller share."
         }
       ]
     },
@@ -297,15 +273,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "percentage"
+          ]
         },
         {
           "id": "m1-4-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: percentage = part / whole × 100",
-          "answer": "percentage = part / whole × 100"
+          "text": "Complete a key rule: percentage = part / whole × 100"
         },
         {
           "id": "m1-4-003",
@@ -315,43 +289,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-4-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Find 15% of 360.",
-          "answer": "54"
+          "text": "Find 15% of 360."
         },
         {
           "id": "m1-4-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "percentage / increase / decrease"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-4-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Find 25% of 200.",
-          "answer": "50"
+          "text": "Find 25% of 200."
         },
         {
           "id": "m1-4-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "A price 300 is reduced by 10%. Find the new price.",
-          "answer": "270"
+          "text": "A price 300 is reduced by 10%. Find the new price."
         },
         {
           "id": "m1-4-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "30 is what percent of 120?",
-          "answer": "25%"
+          "text": "30 is what percent of 120?"
         }
       ]
     },
@@ -386,15 +354,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "set"
+          ]
         },
         {
           "id": "m1-5-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: A ∪ B",
-          "answer": "A ∪ B"
+          "text": "Complete a key rule: A ∪ B"
         },
         {
           "id": "m1-5-003",
@@ -404,43 +370,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-5-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "If A={1,2,3,4} and B={3,4,5}, find A∩B.",
-          "answer": "{3,4}"
+          "text": "If A={1,2,3,4} and B={3,4,5}, find A∩B."
         },
         {
           "id": "m1-5-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "set / union / intersection / difference"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-5-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "If A={1,2,3}, B={3,4}, find A∩B.",
-          "answer": "{3}"
+          "text": "If A={1,2,3}, B={3,4}, find A∩B."
         },
         {
           "id": "m1-5-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "For A={1,2}, B={2,3}, find A∪B.",
-          "answer": "{1,2,3}"
+          "text": "For A={1,2}, B={2,3}, find A∪B."
         },
         {
           "id": "m1-5-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "If A={1,2,3}, B={2}, find A−B.",
-          "answer": "{1,3}"
+          "text": "If A={1,2,3}, B={2}, find A−B."
         }
       ]
     },
@@ -474,15 +434,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "integers"
+          ]
         },
         {
           "id": "m1-6-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: (+)(+) = +",
-          "answer": "(+)(+) = +"
+          "text": "Complete a key rule: (+)(+) = +"
         },
         {
           "id": "m1-6-003",
@@ -492,43 +450,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-6-004",
           "type": "solve",
           "difficulty": "medium",
-          "text": "Calculate: −18 + 7 + 5.",
-          "answer": "−6"
+          "text": "Calculate: −18 + 7 + 5."
         },
         {
           "id": "m1-6-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "integers / opposite numbers / absolute value"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-6-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Calculate −7+12.",
-          "answer": "5"
+          "text": "Calculate −7+12."
         },
         {
           "id": "m1-6-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Calculate −6×−4.",
-          "answer": "24"
+          "text": "Calculate −6×−4."
         },
         {
           "id": "m1-6-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Calculate 15−23.",
-          "answer": "−8"
+          "text": "Calculate 15−23."
         }
       ]
     },
@@ -561,15 +513,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "rational number"
+          ]
         },
         {
           "id": "m1-7-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: a/b + c/d = (ad+bc)/bd",
-          "answer": "a/b + c/d = (ad+bc)/bd"
+          "text": "Complete a key rule: a/b + c/d = (ad+bc)/bd"
         },
         {
           "id": "m1-7-003",
@@ -579,43 +529,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-7-004",
           "type": "solve",
           "difficulty": "medium",
-          "text": "Calculate: 3/4 − 1/6.",
-          "answer": "7/12"
+          "text": "Calculate: 3/4 − 1/6."
         },
         {
           "id": "m1-7-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "rational number / fraction / common denominator"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-7-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Calculate 1/2+1/4.",
-          "answer": "3/4"
+          "text": "Calculate 1/2+1/4."
         },
         {
           "id": "m1-7-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Calculate 2/3×3/5.",
-          "answer": "2/5"
+          "text": "Calculate 2/3×3/5."
         },
         {
           "id": "m1-7-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Calculate 5/6−1/3.",
-          "answer": "1/2"
+          "text": "Calculate 5/6−1/3."
         }
       ]
     },
@@ -649,15 +593,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "variable"
+          ]
         },
         {
           "id": "m1-8-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: term = coefficient × variable",
-          "answer": "term = coefficient × variable"
+          "text": "Complete a key rule: term = coefficient × variable"
         },
         {
           "id": "m1-8-003",
@@ -667,43 +609,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-8-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "For 6x − 4, find the coefficient of x and the constant term.",
-          "answer": "coefficient 6, constant −4"
+          "text": "For 6x − 4, find the coefficient of x and the constant term."
         },
         {
           "id": "m1-8-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "variable / coefficient / constant / formula"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-8-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "In 7x+4, what is the coefficient of x?",
-          "answer": "7"
+          "text": "In 7x+4, what is the coefficient of x?"
         },
         {
           "id": "m1-8-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Evaluate 3x+2 when x=4.",
-          "answer": "14"
+          "text": "Evaluate 3x+2 when x=4."
         },
         {
           "id": "m1-8-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "How many terms are in 5x−2y+7?",
-          "answer": "3"
+          "text": "How many terms are in 5x−2y+7?"
         }
       ]
     },
@@ -735,15 +671,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "like terms"
+          ]
         },
         {
           "id": "m1-9-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: ax + bx = (a+b)x",
-          "answer": "ax + bx = (a+b)x"
+          "text": "Complete a key rule: ax + bx = (a+b)x"
         },
         {
           "id": "m1-9-003",
@@ -753,43 +687,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-9-004",
           "type": "solve",
           "difficulty": "medium",
-          "text": "Simplify: 7x + 3 − 2x + 5.",
-          "answer": "5x + 8"
+          "text": "Simplify: 7x + 3 − 2x + 5."
         },
         {
           "id": "m1-9-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "like terms / simplify / algebraic expression"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-9-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Simplify 3x+5x.",
-          "answer": "8x"
+          "text": "Simplify 3x+5x."
         },
         {
           "id": "m1-9-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Simplify 7a−2a+4.",
-          "answer": "5a+4"
+          "text": "Simplify 7a−2a+4."
         },
         {
           "id": "m1-9-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Simplify 4x+3−x+2.",
-          "answer": "3x+5"
+          "text": "Simplify 4x+3−x+2."
         }
       ]
     },
@@ -822,15 +750,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "linear equation"
+          ]
         },
         {
           "id": "m1-10-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: ax+b=c",
-          "answer": "ax+b=c"
+          "text": "Complete a key rule: ax+b=c"
         },
         {
           "id": "m1-10-003",
@@ -840,43 +766,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-10-004",
           "type": "solve",
           "difficulty": "medium",
-          "text": "Solve: 4x − 7 = 21.",
-          "answer": "7"
+          "text": "Solve: 4x − 7 = 21."
         },
         {
           "id": "m1-10-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "linear equation / solution / inverse operation"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-10-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Solve 3x+2=11.",
-          "answer": "3"
+          "text": "Solve 3x+2=11."
         },
         {
           "id": "m1-10-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Solve 5x=35.",
-          "answer": "7"
+          "text": "Solve 5x=35."
         },
         {
           "id": "m1-10-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Solve 2x−6=10.",
-          "answer": "8"
+          "text": "Solve 2x−6=10."
         }
       ]
     },
@@ -910,15 +830,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "acute angle"
+          ]
         },
         {
           "id": "m1-11-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: complementary sum = 90°",
-          "answer": "complementary sum = 90°"
+          "text": "Complete a key rule: complementary sum = 90°"
         },
         {
           "id": "m1-11-003",
@@ -928,43 +846,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-11-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Find the complement of 37°.",
-          "answer": "53°"
+          "text": "Find the complement of 37°."
         },
         {
           "id": "m1-11-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "acute angle / right angle / obtuse angle / complementary angles"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-11-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Classify 35°.",
-          "answer": "acute"
+          "text": "Classify 35°."
         },
         {
           "id": "m1-11-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Find the complement of 28°.",
-          "answer": "62°"
+          "text": "Find the complement of 28°."
         },
         {
           "id": "m1-11-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Find the supplement of 115°.",
-          "answer": "65°"
+          "text": "Find the supplement of 115°."
         }
       ]
     },
@@ -997,15 +909,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "straight angle"
+          ]
         },
         {
           "id": "m1-12-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: angles on a straight line = 180°",
-          "answer": "angles on a straight line = 180°"
+          "text": "Complete a key rule: angles on a straight line = 180°"
         },
         {
           "id": "m1-12-003",
@@ -1015,43 +925,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-12-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Two angles lie on a straight line. One angle is 126°. Find the other.",
-          "answer": "54°"
+          "text": "Two angles lie on a straight line. One angle is 126°. Find the other."
         },
         {
           "id": "m1-12-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "straight angle / angles around a point / vertical angles"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-12-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Angles on a straight line: one is 72°. Find the other.",
-          "answer": "108°"
+          "text": "Angles on a straight line: one is 72°. Find the other."
         },
         {
           "id": "m1-12-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Angles around a point sum to?",
-          "answer": "360°"
+          "text": "Angles around a point sum to?"
         },
         {
           "id": "m1-12-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "A vertical opposite angle to 48° measures?",
-          "answer": "48°"
+          "text": "A vertical opposite angle to 48° measures?"
         }
       ]
     },
@@ -1085,15 +989,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "parallel lines"
+          ]
         },
         {
           "id": "m1-13-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: corresponding angles are equal",
-          "answer": "corresponding angles are equal"
+          "text": "Complete a key rule: corresponding angles are equal"
         },
         {
           "id": "m1-13-003",
@@ -1103,43 +1005,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-13-004",
           "type": "proof",
           "difficulty": "medium",
-          "text": "Two parallel lines are cut by a transversal. Explain why a pair of corresponding angles are equal.",
-          "answer": "Because corresponding angles formed by a transversal with two parallel lines are equal."
+          "text": "Two parallel lines are cut by a transversal. Explain why a pair of corresponding angles are equal."
         },
         {
           "id": "m1-13-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "parallel lines / transversal / corresponding angles / alternate angles"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-13-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "A transversal cuts parallel lines. A corresponding angle is 64°. Find its corresponding angle.",
-          "answer": "64°"
+          "text": "A transversal cuts parallel lines. A corresponding angle is 64°. Find its corresponding angle."
         },
         {
           "id": "m1-13-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Same-side interior angle is 110°. Find the other.",
-          "answer": "70°"
+          "text": "Same-side interior angle is 110°. Find the other."
         },
         {
           "id": "m1-13-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "An alternate angle to 52° between parallel lines is?",
-          "answer": "52°"
+          "text": "An alternate angle to 52° between parallel lines is?"
         }
       ]
     },
@@ -1172,15 +1068,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "triangle"
+          ]
         },
         {
           "id": "m1-14-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: A+B+C=180°",
-          "answer": "A+B+C=180°"
+          "text": "Complete a key rule: A+B+C=180°"
         },
         {
           "id": "m1-14-003",
@@ -1190,43 +1084,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-14-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Two angles of a triangle are 48° and 67°. Find the third angle.",
-          "answer": "65°"
+          "text": "Two angles of a triangle are 48° and 67°. Find the third angle."
         },
         {
           "id": "m1-14-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "triangle / isosceles / equilateral / right triangle"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-14-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Triangle angles are 50°,60°,x. Find x.",
-          "answer": "70°"
+          "text": "Triangle angles are 50°,60°,x. Find x."
         },
         {
           "id": "m1-14-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "An equilateral triangle angle measures?",
-          "answer": "60°"
+          "text": "An equilateral triangle angle measures?"
         },
         {
           "id": "m1-14-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "A right triangle has another angle 35°. Find the third.",
-          "answer": "55°"
+          "text": "A right triangle has another angle 35°. Find the third."
         }
       ]
     },
@@ -1258,15 +1146,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "quadrilateral"
+          ]
         },
         {
           "id": "m1-15-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: sum of interior angles = 360°",
-          "answer": "sum of interior angles = 360°"
+          "text": "Complete a key rule: sum of interior angles = 360°"
         },
         {
           "id": "m1-15-003",
@@ -1276,43 +1162,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-15-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Three angles of a quadrilateral are 85°, 95°, and 110°. Find the fourth angle.",
-          "answer": "70°"
+          "text": "Three angles of a quadrilateral are 85°, 95°, and 110°. Find the fourth angle."
         },
         {
           "id": "m1-15-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "quadrilateral / parallelogram / trapezoid"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-15-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Three quadrilateral angles are 90°,80°,100°. Find the fourth.",
-          "answer": "90°"
+          "text": "Three quadrilateral angles are 90°,80°,100°. Find the fourth."
         },
         {
           "id": "m1-15-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Sum of interior angles of a quadrilateral?",
-          "answer": "360°"
+          "text": "Sum of interior angles of a quadrilateral?"
         },
         {
           "id": "m1-15-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "How many sides has a quadrilateral?",
-          "answer": "4"
+          "text": "How many sides has a quadrilateral?"
         }
       ]
     },
@@ -1346,15 +1226,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "rectangle"
+          ]
         },
         {
           "id": "m1-16-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: rectangle angles = 90°",
-          "answer": "rectangle angles = 90°"
+          "text": "Complete a key rule: rectangle angles = 90°"
         },
         {
           "id": "m1-16-003",
@@ -1364,43 +1242,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-16-004",
           "type": "proof",
           "difficulty": "medium",
-          "text": "Explain why every square is also a rectangle.",
-          "answer": "A square has four right angles, so it satisfies the defining angle property of a rectangle."
+          "text": "Explain why every square is also a rectangle."
         },
         {
           "id": "m1-16-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "rectangle / rhombus / square / parallelogram"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-16-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "How many right angles has a rectangle?",
-          "answer": "4"
+          "text": "How many right angles has a rectangle?"
         },
         {
           "id": "m1-16-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Which shape has four equal sides and four right angles?",
-          "answer": "square"
+          "text": "Which shape has four equal sides and four right angles?"
         },
         {
           "id": "m1-16-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Opposite sides of a parallelogram are?",
-          "answer": "parallel and equal"
+          "text": "Opposite sides of a parallelogram are?"
         }
       ]
     },
@@ -1432,15 +1304,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "polygon"
+          ]
         },
         {
           "id": "m1-17-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: sum of interior angles = (n−2)×180°",
-          "answer": "sum of interior angles = (n−2)×180°"
+          "text": "Complete a key rule: sum of interior angles = (n−2)×180°"
         },
         {
           "id": "m1-17-003",
@@ -1450,43 +1320,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-17-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Find the sum of the interior angles of an octagon.",
-          "answer": "1080°"
+          "text": "Find the sum of the interior angles of an octagon."
         },
         {
           "id": "m1-17-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "polygon / regular polygon / interior angle"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-17-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Find interior angle sum of a pentagon.",
-          "answer": "540°"
+          "text": "Find interior angle sum of a pentagon."
         },
         {
           "id": "m1-17-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Find interior angle sum of a hexagon.",
-          "answer": "720°"
+          "text": "Find interior angle sum of a hexagon."
         },
         {
           "id": "m1-17-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "How many sides has an octagon?",
-          "answer": "8"
+          "text": "How many sides has an octagon?"
         }
       ]
     },
@@ -1519,15 +1383,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "ordered pair"
+          ]
         },
         {
           "id": "m1-18-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: point = (x,y)",
-          "answer": "point = (x,y)"
+          "text": "Complete a key rule: point = (x,y)"
         },
         {
           "id": "m1-18-003",
@@ -1537,43 +1399,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-18-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "For the point (−3,5), state the x-coordinate and y-coordinate.",
-          "answer": "x = −3, y = 5"
+          "text": "For the point (−3,5), state the x-coordinate and y-coordinate."
         },
         {
           "id": "m1-18-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "ordered pair / x-axis / y-axis / origin"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-18-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "What is the origin?",
-          "answer": "(0,0)"
+          "text": "What is the origin?"
         },
         {
           "id": "m1-18-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "In point (4,−3), what is x-coordinate?",
-          "answer": "4"
+          "text": "In point (4,−3), what is x-coordinate?"
         },
         {
           "id": "m1-18-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Point (0,5) lies on which axis?",
-          "answer": "y-axis"
+          "text": "Point (0,5) lies on which axis?"
         }
       ]
     },
@@ -1605,15 +1461,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "data"
+          ]
         },
         {
           "id": "m1-19-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: frequency = number of occurrences",
-          "answer": "frequency = number of occurrences"
+          "text": "Complete a key rule: frequency = number of occurrences"
         },
         {
           "id": "m1-19-003",
@@ -1623,43 +1477,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-19-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "In the data 2,3,3,4,4,4, find the frequency of 4.",
-          "answer": "3"
+          "text": "In the data 2,3,3,4,4,4, find the frequency of 4."
         },
         {
           "id": "m1-19-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "data / frequency / table"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-19-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Values 2,2,3,5. Frequency of 2?",
-          "answer": "2"
+          "text": "Values 2,2,3,5. Frequency of 2?"
         },
         {
           "id": "m1-19-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "What does frequency mean?",
-          "answer": "number of occurrences"
+          "text": "What does frequency mean?"
         },
         {
           "id": "m1-19-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Organize 1,2,2,3: what is total number of observations?",
-          "answer": "4"
+          "text": "Organize 1,2,2,3: what is total number of observations?"
         }
       ]
     },
@@ -1691,15 +1539,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "arithmetic mean"
+          ]
         },
         {
           "id": "m1-20-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: mean = sum of values / number of values",
-          "answer": "mean = sum of values / number of values"
+          "text": "Complete a key rule: mean = sum of values / number of values"
         },
         {
           "id": "m1-20-003",
@@ -1709,43 +1555,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-20-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "Find the arithmetic mean of 5, 7, 8, and 12.",
-          "answer": "8"
+          "text": "Find the arithmetic mean of 5, 7, 8, and 12."
         },
         {
           "id": "m1-20-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "arithmetic mean / sum / number of values"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-20-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Mean of 4,6,8.",
-          "answer": "6"
+          "text": "Mean of 4,6,8."
         },
         {
           "id": "m1-20-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "Mean of 3,5,7,9.",
-          "answer": "6"
+          "text": "Mean of 3,5,7,9."
         },
         {
           "id": "m1-20-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "If mean of 2 values is 10 and one value is 6, find the other.",
-          "answer": "14"
+          "text": "If mean of 2 values is 10 and one value is 6, find the other."
         }
       ]
     },
@@ -1777,15 +1617,13 @@
             "unrelated topic",
             "chemical bond",
             "historical event"
-          ],
-          "answer": "pie chart"
+          ]
         },
         {
           "id": "m1-21-002",
           "type": "complete",
           "difficulty": "easy",
-          "text": "Complete a key rule: sector angle = value / total × 360°",
-          "answer": "sector angle = value / total × 360°"
+          "text": "Complete a key rule: sector angle = value / total × 360°"
         },
         {
           "id": "m1-21-003",
@@ -1795,43 +1633,37 @@
           "choices": [
             "True",
             "False"
-          ],
-          "answer": "True"
+          ]
         },
         {
           "id": "m1-21-004",
           "type": "find",
           "difficulty": "medium",
-          "text": "A category is 30% of a pie chart. Find its sector angle.",
-          "answer": "108°"
+          "text": "A category is 30% of a pie chart. Find its sector angle."
         },
         {
           "id": "m1-21-005",
           "type": "complete",
           "difficulty": "medium",
-          "text": "Write one key concept from this lesson.",
-          "answer": "pie chart / sector / central angle"
+          "text": "Write one key concept from this lesson."
         },
         {
           "id": "m1-21-006",
           "type": "problem",
           "difficulty": "medium",
-          "text": "A category is 50% of a pie chart. Find its angle.",
-          "answer": "180°"
+          "text": "A category is 50% of a pie chart. Find its angle."
         },
         {
           "id": "m1-21-007",
           "type": "problem",
           "difficulty": "medium",
-          "text": "A category is 25% of a pie chart. Find its angle.",
-          "answer": "90°"
+          "text": "A category is 25% of a pie chart. Find its angle."
         },
         {
           "id": "m1-21-008",
           "type": "problem",
           "difficulty": "hard",
-          "text": "Value 20 out of total 80: find sector angle.",
-          "answer": "90°"
+          "text": "Value 20 out of total 80: find sector angle."
         }
       ]
     }
