@@ -51,13 +51,6 @@
           "text": "State the digit in the ten-millions place of 3,418,079,265.",
           "answer": "1",
           "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-1-q4",
-          "type": "problem",
-          "text": "Explain why the same digit can have different values in different places.",
-          "answer": "A digit's value depends on its place in the number.",
-          "difficulty": "hard"
         }
       ]
     },
@@ -105,13 +98,6 @@
             "one hundred two million four",
             "twelve thousand four"
           ]
-        },
-        {
-          "id": "p4-math-2-q4",
-          "type": "problem",
-          "text": "Why is zero sometimes needed inside a standard-form number?",
-          "answer": "It holds an empty place value.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -213,13 +199,6 @@
           "text": "9,999 ____ 10,000",
           "answer": "<",
           "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-4-q4",
-          "type": "problem",
-          "text": "Explain the first place you compare when two numbers have the same number of digits.",
-          "answer": "Start from the greatest place value on the left.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -266,13 +245,6 @@
           "type": "complete",
           "text": "Ascending means from ______ to greatest.",
           "answer": "least",
-          "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-5-q4",
-          "type": "problem",
-          "text": "Why is place value useful when ordering large numbers?",
-          "answer": "It lets us compare digits from the greatest place first.",
           "difficulty": "medium"
         }
       ]
@@ -325,13 +297,6 @@
             "True",
             "False"
           ]
-        },
-        {
-          "id": "p4-math-6-q4",
-          "type": "problem",
-          "text": "Explain which digit you inspect when rounding to the nearest thousand.",
-          "answer": "The hundreds digit.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -383,13 +348,6 @@
             "True",
             "False"
           ]
-        },
-        {
-          "id": "p4-math-7-q4",
-          "type": "problem",
-          "text": "Why can regrouping addends help mental calculation?",
-          "answer": "It can create easier sums without changing the total.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -545,13 +503,6 @@
           "text": "A letter such as x can represent an ______ quantity.",
           "answer": "unknown",
           "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-10-q4",
-          "type": "problem",
-          "text": "Explain how a bar model helps in a story problem.",
-          "answer": "It shows known and unknown parts and their relationship.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -599,13 +550,6 @@
             "250 + 4,000",
             "None"
           ]
-        },
-        {
-          "id": "p4-math-11-q4",
-          "type": "problem",
-          "text": "Why should you check whether a multistep answer is reasonable?",
-          "answer": "To detect operation or calculation errors.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -857,13 +801,6 @@
           "text": "A tank has 5 L. 1,250 mL is used. How much remains?",
           "answer": "3 L 750 mL",
           "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-16-q4",
-          "type": "problem",
-          "text": "Why must units be converted before adding some measurements?",
-          "answer": "Quantities must be expressed in compatible units.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -904,13 +841,6 @@
           "type": "problem",
           "text": "A tank has 5 L. 1,250 mL is used. How much remains?",
           "answer": "3 L 750 mL",
-          "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-17-q4",
-          "type": "problem",
-          "text": "Why must units be converted before adding some measurements?",
-          "answer": "Quantities must be expressed in compatible units.",
           "difficulty": "medium"
         }
       ]
@@ -959,13 +889,6 @@
             "4 × length × width",
             "length + width"
           ]
-        },
-        {
-          "id": "p4-math-18-q4",
-          "type": "problem",
-          "text": "Why is perimeter measured in linear units?",
-          "answer": "It measures distance around the boundary.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1013,13 +936,6 @@
             "4 × side",
             "length + width"
           ]
-        },
-        {
-          "id": "p4-math-19-q4",
-          "type": "problem",
-          "text": "Why is area measured in square units?",
-          "answer": "It counts how many unit squares cover a surface.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1114,13 +1030,6 @@
           ]
         },
         {
-          "id": "p4-math-21-q3",
-          "type": "problem",
-          "text": "Why should shared internal edges not be counted in the outside perimeter?",
-          "answer": "They are not part of the outside boundary.",
-          "difficulty": "medium"
-        },
-        {
           "id": "p4-math-21-q4",
           "type": "solve",
           "text": "Two non-overlapping rectangles have areas 20 and 35. Combined area?",
@@ -1173,13 +1082,6 @@
           "text": "7 × 8 = 56 means 56 is ______ times 8.",
           "answer": "7",
           "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-22-q4",
-          "type": "problem",
-          "text": "Explain the difference between '3 more than' and '3 times as many'.",
-          "answer": "The first uses addition; the second uses multiplication.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1227,13 +1129,6 @@
             "35 = 7 - 5",
             "35 = 7 ÷ 5"
           ]
-        },
-        {
-          "id": "p4-math-23-q4",
-          "type": "problem",
-          "text": "Why is a variable useful in a comparison equation?",
-          "answer": "It represents the unknown quantity.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1455,13 +1350,6 @@
           "text": "A prime number has exactly ______ positive factors.",
           "answer": "2",
           "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-27-q4",
-          "type": "reason",
-          "text": "Why is 1 neither prime nor composite?",
-          "answer": "It has only one positive factor.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1508,13 +1396,6 @@
           "type": "complete",
           "text": "The G.C.F. is the ______ common factor.",
           "answer": "greatest",
-          "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-28-q4",
-          "type": "problem",
-          "text": "Why can G.C.F. help make equal groups with no leftovers?",
-          "answer": "It is the largest size that divides both quantities exactly.",
           "difficulty": "medium"
         }
       ]
@@ -1625,13 +1506,6 @@
             "9 and 40",
             "6 and 25"
           ]
-        },
-        {
-          "id": "p4-math-30-q4",
-          "type": "reason",
-          "text": "Explain how factors and multiples are related.",
-          "answer": "A factor divides a number exactly; that number is a multiple of the factor.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1677,13 +1551,6 @@
             "True",
             "False"
           ]
-        },
-        {
-          "id": "p4-math-31-q4",
-          "type": "problem",
-          "text": "Why does the distributive property work in an area model?",
-          "answer": "The total area equals the sum of the smaller partial areas.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1724,13 +1591,6 @@
           "type": "complete",
           "text": "Partial products come from multiplying each place-value ______.",
           "answer": "part",
-          "difficulty": "medium"
-        },
-        {
-          "id": "p4-math-32-q4",
-          "type": "problem",
-          "text": "Explain one advantage of partial products.",
-          "answer": "It shows the contribution of each place value clearly.",
           "difficulty": "medium"
         }
       ]
@@ -1779,13 +1639,6 @@
             "1,000",
             "10,000"
           ]
-        },
-        {
-          "id": "p4-math-33-q4",
-          "type": "problem",
-          "text": "Why can 30 be treated as 3 × 10 when multiplying?",
-          "answer": "It uses place value and multiplication properties.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1833,13 +1686,6 @@
             "3",
             "5"
           ]
-        },
-        {
-          "id": "p4-math-34-q4",
-          "type": "reason",
-          "text": "Why can the same remainder be interpreted differently in different problems?",
-          "answer": "The context may require rounding up, ignoring, or reporting the remainder.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -1937,13 +1783,6 @@
             "True",
             "False"
           ]
-        },
-        {
-          "id": "p4-math-36-q4",
-          "type": "reason",
-          "text": "Why is decomposing the dividend useful?",
-          "answer": "It creates easier partial divisions that can be added.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -2043,13 +1882,6 @@
             "True",
             "False"
           ]
-        },
-        {
-          "id": "p4-math-38-q4",
-          "type": "reason",
-          "text": "Why is multiplication a useful way to check division?",
-          "answer": "Multiplying quotient by divisor should reproduce the dividend when there is no remainder.",
-          "difficulty": "medium"
         }
       ]
     },
@@ -2097,13 +1929,6 @@
             "3 × 8",
             "8 - 2"
           ]
-        },
-        {
-          "id": "p4-math-39-q4",
-          "type": "problem",
-          "text": "Why are parentheses important in numerical expressions?",
-          "answer": "They show which calculation must be done first.",
-          "difficulty": "medium"
         }
       ]
     }
