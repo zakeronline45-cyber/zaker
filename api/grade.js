@@ -36,6 +36,7 @@ export default async function handler(req,res){
   if(!authCtx)return;
 
   const {subject='Science',lesson,module,id,childId,studentAnswer,studyLanguage='English'}=req.body||{};
+  if(String(studentAnswer??'').length>5000)return res.status(413).json({error:'Answer too long'});
   const modularSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
   if(!id||!childId||(subject==='Science'&&!lesson)||(modularSubjects.includes(subject)&&!module)){
     return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
