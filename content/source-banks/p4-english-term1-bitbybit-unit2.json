@@ -1,0 +1,1641 @@
+{
+  "schema_version": 1,
+  "source_id": "bitbybit-p4-english-t1-2027",
+  "source_name": "Bit by Bit English Primary 4 First Term 2027",
+  "subject": "P4 English",
+  "grade": "Primary 4",
+  "term": 1,
+  "track": "languages",
+  "source_file": "بت باي بت - لغة انجليزية - 4 ابتدائي - ترم 1 - ذاكرولي.pdf",
+  "extraction_status": {
+    "unit_2": "verified"
+  },
+  "units": [
+    {
+      "unit_id": 2,
+      "unit_title": "My Community",
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "title": "Helping the Community",
+          "questions": [
+            {
+              "id": "bbb-u2l1-001",
+              "type": "mcq",
+              "text": "Many people like to ______ at the community park.",
+              "answer": "volunteer",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "plant",
+                "volunteer",
+                "collect",
+                "give"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-002",
+              "type": "mcq",
+              "text": "Saad is a kind girl. She likes to ______ animals.",
+              "answer": "feed",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "write",
+                "feed",
+                "plant",
+                "give"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-003",
+              "type": "mcq",
+              "text": "Mariam ______ flowers in the park.",
+              "answer": "plants",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "plants",
+                "helps",
+                "volunteers",
+                "feeds"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-004",
+              "type": "mcq",
+              "text": "It is important to help our ______.",
+              "answer": "neighbors",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "neighbors",
+                "school",
+                "toys",
+                "clothes"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-005",
+              "type": "mcq",
+              "text": "I ______ clothes and give them to people who need them.",
+              "answer": "collect",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "plant",
+                "sleep",
+                "collect",
+                "help"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-006",
+              "type": "mcq",
+              "text": "A: I like English. B: ______ about you?",
+              "answer": "What",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "Why",
+                "When",
+                "What",
+                "Who"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-007",
+              "type": "mcq",
+              "text": "I like my cat and ______ it every day.",
+              "answer": "feed",
+              "source_page": 50,
+              "status": "active",
+              "choices": [
+                "feed",
+                "eat",
+                "drink",
+                "follow"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-008",
+              "type": "mcq",
+              "text": "We will go to the ______ to help the environment.",
+              "answer": "community park",
+              "source_page": 51,
+              "status": "active",
+              "choices": [
+                "school",
+                "house",
+                "neighbors",
+                "community park"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-009",
+              "type": "complete",
+              "text": "Amira and Faris like to help the community. Faris cleans ______ from the streets every Saturday.",
+              "answer": "trash",
+              "source_page": 51,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "trees",
+                "dogs",
+                "clothes",
+                "traffic"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-010",
+              "type": "complete",
+              "text": "He also plants ______ in the park.",
+              "answer": "trees",
+              "source_page": 51,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "trees",
+                "dogs",
+                "clothes",
+                "traffic"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-011",
+              "type": "complete",
+              "text": "Sometimes, he feeds ______ and cats.",
+              "answer": "dogs",
+              "source_page": 51,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "trees",
+                "dogs",
+                "clothes",
+                "traffic"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-012",
+              "type": "complete",
+              "text": "Amira collects ______ and gives them to people who need them.",
+              "answer": "clothes",
+              "source_page": 51,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "trees",
+                "dogs",
+                "clothes",
+                "traffic"
+              ]
+            },
+            {
+              "id": "bbb-u2l1-013",
+              "type": "reading_mcq",
+              "text": "Ali likes to ______.",
+              "answer": "collect clothes",
+              "source_page": 51,
+              "status": "active",
+              "choices": [
+                "feed cats",
+                "collect clothes",
+                "clean trash",
+                "plant trees"
+              ],
+              "passage": "My name is Farida. My sister Habiba and I like to help our community. Every Friday, we clean trash from our street and plant trees in the park. Also, we feed dogs and cats in the street. Our brother Ali likes to collect clothes and give them to poor people and help elderly people. When we all help, we make our community great."
+            },
+            {
+              "id": "bbb-u2l1-014",
+              "type": "reading_mcq",
+              "text": "Ali has ______ sister(s).",
+              "answer": "two",
+              "source_page": 51,
+              "status": "active",
+              "choices": [
+                "one",
+                "three",
+                "two",
+                "no"
+              ],
+              "passage_ref": "bbb-u2l1-013"
+            },
+            {
+              "id": "bbb-u2l1-015",
+              "type": "reading_open",
+              "text": "How does Farida help her community?",
+              "answer": "She cleans trash from the street, plants trees in the park, and feeds dogs and cats.",
+              "source_page": 51,
+              "status": "active",
+              "accepted_answers": [
+                "She cleans trash from the street and plants trees in the park.",
+                "She cleans trash, plants trees and feeds dogs and cats."
+              ],
+              "passage_ref": "bbb-u2l1-013"
+            },
+            {
+              "id": "bbb-u2l1-016",
+              "type": "reading_open",
+              "text": "Do you help your community?",
+              "answer": null,
+              "source_page": 51,
+              "status": "inactive_no_model_answer",
+              "passage_ref": "bbb-u2l1-013"
+            },
+            {
+              "id": "bbb-u2l1-017",
+              "type": "reading_summary",
+              "text": "Summarize the text in one sentence.",
+              "answer": null,
+              "source_page": 51,
+              "status": "inactive_no_model_answer",
+              "passage_ref": "bbb-u2l1-013"
+            },
+            {
+              "id": "bbb-u2l1-018",
+              "type": "punctuation",
+              "text": "do you help your community",
+              "answer": "Do you help your community?",
+              "source_page": 52,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l1-019",
+              "type": "punctuation",
+              "text": "mona is a kind girl",
+              "answer": "Mona is a kind girl.",
+              "source_page": 52,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l1-020",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"Helping our community\" using: community park – plant trees – collect trash.",
+              "answer": "We should help our community. We should plant trees and flowers in the community park. We should collect trash from the streets. We should collect clothes and give them to people who need them.",
+              "source_page": 52,
+              "status": "active",
+              "model_answer_page": 71
+            }
+          ],
+          "question_count": 18
+        },
+        {
+          "lesson_id": 2,
+          "title": "Community Problems and Solutions / Present Simple",
+          "questions": [
+            {
+              "id": "bbb-u2l2-001",
+              "type": "mcq",
+              "text": "We can put ______ everywhere, so people can use them to throw rubbish.",
+              "answer": "bins",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "cars",
+                "buses",
+                "traffic",
+                "bins"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-002",
+              "type": "mcq",
+              "text": "The bus helps us reduce ______.",
+              "answer": "traffic",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "schools",
+                "traffic",
+                "ground",
+                "bins"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-003",
+              "type": "mcq",
+              "text": "You shouldn't throw trash on the ______.",
+              "answer": "ground",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "traffic",
+                "moon",
+                "ground",
+                "sky"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-004",
+              "type": "mcq",
+              "text": "Does he ______ the bus to school?",
+              "answer": "take",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "feed",
+                "take",
+                "make",
+                "solve"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-005",
+              "type": "mcq",
+              "text": "She ______ go to school on foot.",
+              "answer": "doesn't",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "don't",
+                "isn't",
+                "doesn't",
+                "hasn't"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-006",
+              "type": "mcq",
+              "text": "Ali doesn't ______ the bus to school every day.",
+              "answer": "take",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "took",
+                "take",
+                "takes",
+                "to take"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-007",
+              "type": "mcq",
+              "text": "______ Amira like ice cream?",
+              "answer": "Does",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "Does",
+                "Is",
+                "Do",
+                "Are"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-008",
+              "type": "mcq",
+              "text": "Do you ______ to school on Friday? No, I don't.",
+              "answer": "go",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "goes",
+                "going",
+                "went",
+                "go"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-009",
+              "type": "mcq",
+              "text": "______ you like sweets?",
+              "answer": "Do",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "Are",
+                "Do",
+                "Is",
+                "Does"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-010",
+              "type": "mcq",
+              "text": "We should ______ or cycle for short distances.",
+              "answer": "walk",
+              "source_page": 56,
+              "status": "active",
+              "choices": [
+                "walk",
+                "take",
+                "make",
+                "solve"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-011",
+              "type": "complete",
+              "text": "Ali and Mona are neighbors. They have many problems in their community. The first ______ is cars.",
+              "answer": "problem",
+              "source_page": 56,
+              "status": "active",
+              "word_bank": [
+                "cars",
+                "solve",
+                "problem",
+                "more",
+                "fewer"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-012",
+              "type": "complete",
+              "text": "They think that we don't need to use ______ every day.",
+              "answer": "cars",
+              "source_page": 56,
+              "status": "active",
+              "word_bank": [
+                "cars",
+                "solve",
+                "problem",
+                "more",
+                "fewer"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-013",
+              "type": "complete",
+              "text": "There will be ______ cars on the road.",
+              "answer": "fewer",
+              "source_page": 56,
+              "status": "active",
+              "word_bank": [
+                "cars",
+                "solve",
+                "problem",
+                "more",
+                "fewer"
+              ]
+            },
+            {
+              "id": "bbb-u2l2-014",
+              "type": "correct_form",
+              "text": "______ (Do) Sally like ice-cream?",
+              "answer": "Does",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-015",
+              "type": "correct_form",
+              "text": "We ______ (studies) English every day.",
+              "answer": "study",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-016",
+              "type": "correct_form",
+              "text": "______ (Do) Adam go to school on foot?",
+              "answer": "Does",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-017",
+              "type": "correct_form",
+              "text": "Ali ______ (not / eat) unhealthy food.",
+              "answer": "doesn't eat",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-018",
+              "type": "correct_form",
+              "text": "The farmers ______ (not / feed) the animals.",
+              "answer": "don't feed",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-019",
+              "type": "correct_form",
+              "text": "I ______ (doesn't) like pizza.",
+              "answer": "don't",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-020",
+              "type": "correct_form",
+              "text": "______ (Does) you travel every summer?",
+              "answer": "Do",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-021",
+              "type": "correct_form",
+              "text": "Does your mum ______ (goes) to work by bus?",
+              "answer": "go",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-022",
+              "type": "correct_form",
+              "text": "They don't ______ (likes) loud noise.",
+              "answer": "like",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-023",
+              "type": "correct_form",
+              "text": "No, she doesn't ______ (has) any books.",
+              "answer": "have",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-024",
+              "type": "punctuation",
+              "text": "does Rana help her community",
+              "answer": "Does Rana help her community?",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-025",
+              "type": "punctuation",
+              "text": "aswan is a nice place",
+              "answer": "Aswan is a nice place.",
+              "source_page": 57,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l2-026",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"Traffic problem\" using: schools – walk – buses.",
+              "answer": "Our community has many problems. Traffic is one of these problems. Cars don't move quickly in the morning, especially near schools. We can walk or take the school buses instead.",
+              "source_page": 57,
+              "status": "active",
+              "model_answer_page": 71
+            }
+          ],
+          "question_count": 26
+        },
+        {
+          "lesson_id": 3,
+          "title": "Egypt – My Culture",
+          "questions": [
+            {
+              "id": "bbb-u2l3-001",
+              "type": "mcq",
+              "text": "The opposite of \"honest\" is ______.",
+              "answer": "dishonest",
+              "source_page": 62,
+              "status": "active",
+              "choices": [
+                "illegal",
+                "dishonest",
+                "disappear",
+                "irregular"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-002",
+              "type": "mcq",
+              "text": "Egyptians are proud of their ______ and love to celebrate together.",
+              "answer": "culture",
+              "source_page": 62,
+              "status": "active",
+              "choices": [
+                "songs",
+                "carpets",
+                "culture",
+                "factories"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-003",
+              "type": "mcq",
+              "text": "Men in Upper Egypt wear galabeyas and sometimes ______.",
+              "answer": "turbans",
+              "source_page": 62,
+              "status": "active",
+              "choices": [
+                "turbans",
+                "dresses",
+                "skirts",
+                "blouses"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-004",
+              "type": "mcq",
+              "text": "People in Upper Egypt ______ the sugar cane harvest with big festivals.",
+              "answer": "celebrate",
+              "source_page": 62,
+              "status": "active",
+              "choices": [
+                "dislike",
+                "feed",
+                "celebrate",
+                "hate"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-005",
+              "type": "mcq",
+              "text": "The cat ______ after it ate all the food.",
+              "answer": "disappeared",
+              "source_page": 62,
+              "status": "active",
+              "choices": [
+                "irregular",
+                "disappeared",
+                "illegal",
+                "dishonest"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-006",
+              "type": "mcq",
+              "text": "There are two special ______ in Egypt, Upper Egypt and the Delta.",
+              "answer": "regions",
+              "source_page": 62,
+              "status": "active",
+              "choices": [
+                "times",
+                "colors",
+                "regions",
+                "subjects"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-007",
+              "type": "complete",
+              "text": "Every summer, I travel to my grandfather. He lives in Luxor. It is a governorate in ______ Egypt.",
+              "answer": "Upper",
+              "source_page": 62,
+              "status": "active",
+              "word_bank": [
+                "galabeyas",
+                "Upper",
+                "sugar cane",
+                "colorful",
+                "helpful"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-008",
+              "type": "complete",
+              "text": "Men there wear ______.",
+              "answer": "galabeyas",
+              "source_page": 62,
+              "status": "active",
+              "word_bank": [
+                "galabeyas",
+                "Upper",
+                "sugar cane",
+                "colorful",
+                "helpful"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-009",
+              "type": "complete",
+              "text": "Women wear ______ dresses.",
+              "answer": "colorful",
+              "source_page": 62,
+              "status": "active",
+              "word_bank": [
+                "galabeyas",
+                "Upper",
+                "sugar cane",
+                "colorful",
+                "helpful"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-010",
+              "type": "complete",
+              "text": "Farmers grow ______.",
+              "answer": "sugar cane",
+              "source_page": 62,
+              "status": "active",
+              "word_bank": [
+                "galabeyas",
+                "Upper",
+                "sugar cane",
+                "colorful",
+                "helpful"
+              ]
+            },
+            {
+              "id": "bbb-u2l3-011",
+              "type": "reading_mcq",
+              "text": "Streets are filled with colorful ______ and flowers.",
+              "answer": "decorations",
+              "source_page": 63,
+              "status": "active",
+              "choices": [
+                "decorations",
+                "plants",
+                "bells",
+                "cars"
+              ],
+              "passage": "In the Delta region of Egypt, people celebrate the Spring Festival with happiness. The fields are green and farmers grow rice and cotton. Families spend time together, have special food and listen to music. Streets are filled with colorful decorations and flowers. Children wear new clothes that women make. It is a happy time for everyone. The Spring Festival shows love for nature, farming and families."
+            },
+            {
+              "id": "bbb-u2l3-012",
+              "type": "reading_mcq",
+              "text": "The opposite of the underlined word \"new\" is ______.",
+              "answer": "old",
+              "source_page": 63,
+              "status": "active",
+              "choices": [
+                "happy",
+                "colorful",
+                "old",
+                "stylish"
+              ],
+              "passage_ref": "bbb-u2l3-011"
+            },
+            {
+              "id": "bbb-u2l3-013",
+              "type": "reading_open",
+              "text": "What is the passage about?",
+              "answer": "The Spring Festival in the Delta.",
+              "source_page": 63,
+              "status": "active",
+              "accepted_answers": [
+                "The Spring Festival.",
+                "The Spring Festival in the Delta."
+              ],
+              "passage_ref": "bbb-u2l3-011"
+            },
+            {
+              "id": "bbb-u2l3-014",
+              "type": "reading_open",
+              "text": "What do families do in the Spring Festival?",
+              "answer": "They spend time together, have special food, and listen to music.",
+              "source_page": 63,
+              "status": "active",
+              "accepted_answers": [
+                "They spend time together, have special food and listen to music.",
+                "Families spend time together and listen to music."
+              ],
+              "passage_ref": "bbb-u2l3-011"
+            },
+            {
+              "id": "bbb-u2l3-015",
+              "type": "reading_summary",
+              "text": "Summarize the passage in one sentence.",
+              "answer": null,
+              "source_page": 63,
+              "status": "inactive_no_model_answer",
+              "passage_ref": "bbb-u2l3-011"
+            },
+            {
+              "id": "bbb-u2l3-016",
+              "type": "correct_form",
+              "text": "It is ______ (legal) to drive here.",
+              "answer": "illegal",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-017",
+              "type": "correct_form",
+              "text": "Ahmed ______ (appears) after eating all sweets.",
+              "answer": "disappears",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-018",
+              "type": "correct_form",
+              "text": "The verb \"see\" has an ______ (regular) past form.",
+              "answer": "irregular",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-019",
+              "type": "correct_form",
+              "text": "He is ______ (responsible); he forgot his keys.",
+              "answer": "irresponsible",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-020",
+              "type": "correct_form",
+              "text": "Hala ______ (like) dirty places.",
+              "answer": "dislikes",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-021",
+              "type": "punctuation",
+              "text": "egyptians are proud of their culture",
+              "answer": "Egyptians are proud of their culture.",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-022",
+              "type": "punctuation",
+              "text": "do all men wear turbans",
+              "answer": "Do all men wear turbans?",
+              "source_page": 63,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l3-023",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"Your community traditions\" using: Delta – rice and cotton – spring festivals.",
+              "answer": "People in the Delta have a lot of traditions. In the Delta region, people celebrate the Spring Festival with colorful decorations. Farmers there grow rice and cotton.",
+              "source_page": 63,
+              "status": "active",
+              "model_answer_page": 71
+            }
+          ],
+          "question_count": 22
+        },
+        {
+          "lesson_id": 4,
+          "title": "Writing: A Diary Entry / Your Community History",
+          "questions": [
+            {
+              "id": "bbb-u2l4-001",
+              "type": "mcq",
+              "text": "My old school still ______ today.",
+              "answer": "stands",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "plays",
+                "stands",
+                "writes",
+                "does"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-002",
+              "type": "mcq",
+              "text": "We can take the ______ from the train station.",
+              "answer": "taxi",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "car",
+                "taxi",
+                "train",
+                "bus"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-003",
+              "type": "mcq",
+              "text": "We go to the market to buy ______.",
+              "answer": "fruits",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "books",
+                "computer",
+                "beds",
+                "fruits"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-004",
+              "type": "mcq",
+              "text": "______ to school to stop air pollution.",
+              "answer": "Walk",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "Walk",
+                "Read",
+                "Wear",
+                "Ask"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-005",
+              "type": "mcq",
+              "text": "My mother told me ______ about my family.",
+              "answer": "stories",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "foods",
+                "letters",
+                "books",
+                "stories"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-006",
+              "type": "mcq",
+              "text": "______ tells us about things from the past.",
+              "answer": "History",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "History",
+                "English",
+                "Music",
+                "Math"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-007",
+              "type": "mcq",
+              "text": "This chair is made of wood. It is ______.",
+              "answer": "wooden",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "plastic",
+                "wooden",
+                "fruit",
+                "vegetables"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-008",
+              "type": "mcq",
+              "text": "I buy fruit and vegetables from the ______.",
+              "answer": "supermarket",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "library",
+                "school",
+                "supermarket",
+                "station"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-009",
+              "type": "mcq",
+              "text": "I like to read about our ______ because it's rich.",
+              "answer": "history",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "photos",
+                "history",
+                "building",
+                "street"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-010",
+              "type": "mcq",
+              "text": "Our ______ is the place where we live.",
+              "answer": "neighborhood",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "garden",
+                "neighborhood",
+                "children",
+                "library"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-011",
+              "type": "mcq",
+              "text": "My house has a beautiful ______.",
+              "answer": "garden",
+              "source_page": 67,
+              "status": "active",
+              "choices": [
+                "car",
+                "garden",
+                "library",
+                "station"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-012",
+              "type": "complete",
+              "text": "I'm Adel. I love my grandpa very much. In the past, my grandpa told me amazing ______ about our community's history.",
+              "answer": "stories",
+              "source_page": 68,
+              "status": "active",
+              "word_bank": [
+                "feed",
+                "sold",
+                "stalls",
+                "stories",
+                "ago"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-013",
+              "type": "complete",
+              "text": "Fifty years ______, our neighborhood was very different.",
+              "answer": "ago",
+              "source_page": 68,
+              "status": "active",
+              "word_bank": [
+                "feed",
+                "sold",
+                "stalls",
+                "stories",
+                "ago"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-014",
+              "type": "complete",
+              "text": "There was a beautiful old supermarket with wooden ______.",
+              "answer": "stalls",
+              "source_page": 68,
+              "status": "active",
+              "word_bank": [
+                "feed",
+                "sold",
+                "stalls",
+                "stories",
+                "ago"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-015",
+              "type": "complete",
+              "text": "People ______ fresh fruits and vegetables every morning.",
+              "answer": "sold",
+              "source_page": 68,
+              "status": "active",
+              "word_bank": [
+                "feed",
+                "sold",
+                "stalls",
+                "stories",
+                "ago"
+              ]
+            },
+            {
+              "id": "bbb-u2l4-016",
+              "type": "correct_form",
+              "text": "We don't ______ (puts) trash in bins.",
+              "answer": "put",
+              "source_page": 68,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l4-017",
+              "type": "correct_form",
+              "text": "Do you ______ (studies) Arabic every day?",
+              "answer": "study",
+              "source_page": 68,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l4-018",
+              "type": "correct_form",
+              "text": "______ (Do) Ramy study English every day?",
+              "answer": "Does",
+              "source_page": 68,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l4-019",
+              "type": "correct_form",
+              "text": "Ali ______ (write) his homework in the evening.",
+              "answer": "writes",
+              "source_page": 68,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l4-020",
+              "type": "punctuation",
+              "text": "hana walks to school every day",
+              "answer": "Hana walks to school every day.",
+              "source_page": 68,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l4-021",
+              "type": "punctuation",
+              "text": "does Ahmed like cats",
+              "answer": "Does Ahmed like cats?",
+              "source_page": 68,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2l4-022",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"Your community history\" using: neighborhood – old market – fresh vegetables.",
+              "answer": "Fifty years ago, our neighborhood was very different. There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning.",
+              "source_page": 68,
+              "status": "active",
+              "model_answer_page": 71
+            }
+          ],
+          "question_count": 22
+        },
+        {
+          "lesson_id": 5,
+          "title": "Unit 2 Review and Tests",
+          "questions": [
+            {
+              "id": "bbb-u2r-001",
+              "type": "dialogue_complete",
+              "text": "How do you help your ______?",
+              "answer": "community",
+              "source_page": 72,
+              "status": "active",
+              "word_bank": [
+                "flowers",
+                "plant",
+                "community",
+                "clean"
+              ]
+            },
+            {
+              "id": "bbb-u2r-002",
+              "type": "dialogue_complete",
+              "text": "I ______ trash from the streets.",
+              "answer": "clean",
+              "source_page": 72,
+              "status": "active",
+              "word_bank": [
+                "flowers",
+                "plant",
+                "community",
+                "clean"
+              ]
+            },
+            {
+              "id": "bbb-u2r-003",
+              "type": "dialogue_complete",
+              "text": "Do you ______ trees?",
+              "answer": "plant",
+              "source_page": 72,
+              "status": "active",
+              "word_bank": [
+                "flowers",
+                "plant",
+                "community",
+                "clean"
+              ]
+            },
+            {
+              "id": "bbb-u2r-004",
+              "type": "dialogue_complete",
+              "text": "Yes, I do. I plant trees and ______ in the garden.",
+              "answer": "flowers",
+              "source_page": 72,
+              "status": "active",
+              "word_bank": [
+                "flowers",
+                "plant",
+                "community",
+                "clean"
+              ]
+            },
+            {
+              "id": "bbb-u2r-005",
+              "type": "mcq",
+              "text": "We put trash in the ______.",
+              "answer": "bins",
+              "source_page": 72,
+              "status": "active",
+              "choices": [
+                "books",
+                "bins",
+                "balls",
+                "parks"
+              ]
+            },
+            {
+              "id": "bbb-u2r-006",
+              "type": "mcq",
+              "text": "I buy food from the ______.",
+              "answer": "supermarket",
+              "source_page": 72,
+              "status": "active",
+              "choices": [
+                "station",
+                "supermarket",
+                "hospital",
+                "school"
+              ]
+            },
+            {
+              "id": "bbb-u2r-007",
+              "type": "mcq",
+              "text": "They ______ bins to put trash in them.",
+              "answer": "use",
+              "source_page": 72,
+              "status": "active",
+              "choices": [
+                "uses",
+                "using",
+                "to use",
+                "use"
+              ]
+            },
+            {
+              "id": "bbb-u2r-008",
+              "type": "mcq",
+              "text": "She ______ use the car.",
+              "answer": "doesn't",
+              "source_page": 72,
+              "status": "active",
+              "choices": [
+                "don't",
+                "isn't",
+                "doesn't",
+                "aren't"
+              ]
+            },
+            {
+              "id": "bbb-u2r-009",
+              "type": "correction",
+              "text": "Does he look the bus to school?",
+              "answer": "Does he take the bus to school?",
+              "source_page": 72,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-010",
+              "type": "correction",
+              "text": "They aren't like pizza.",
+              "answer": "They don't like pizza.",
+              "source_page": 72,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-011",
+              "type": "correction",
+              "text": "She doesn't washes the car.",
+              "answer": "She doesn't wash the car.",
+              "source_page": 72,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-012",
+              "type": "correction",
+              "text": "Do they watch movies? – Yes, I do.",
+              "answer": "Do you watch movies? – Yes, I do.",
+              "source_page": 72,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-013",
+              "type": "true_false",
+              "text": "Cars move slowly in the morning especially near schools.",
+              "answer": "True",
+              "source_page": 73,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "passage": "Our community has many problems. We can solve these problems. The first problem is traffic. Cars move slowly in the morning especially near schools. We can solve this problem. We can take the school bus instead. There will be fewer cars on the road. The second problem is the trash. Some people throw trash on the road. They don't put trash in bins. The streets look dirty. We can solve this problem. We can put bins everywhere."
+            },
+            {
+              "id": "bbb-u2r-014",
+              "type": "true_false",
+              "text": "Some people throw trash on the road.",
+              "answer": "True",
+              "source_page": 73,
+              "status": "active",
+              "choices": [
+                "True",
+                "False"
+              ],
+              "passage_ref": "bbb-u2r-013"
+            },
+            {
+              "id": "bbb-u2r-015",
+              "type": "reading_mcq",
+              "text": "Our community has many ______.",
+              "answer": "problems",
+              "source_page": 73,
+              "status": "active",
+              "choices": [
+                "bins",
+                "pollution",
+                "problems",
+                "trash"
+              ],
+              "passage_ref": "bbb-u2r-013"
+            },
+            {
+              "id": "bbb-u2r-016",
+              "type": "reading_mcq",
+              "text": "The first problem is ______.",
+              "answer": "traffic",
+              "source_page": 73,
+              "status": "active",
+              "choices": [
+                "schools",
+                "trash",
+                "cars",
+                "traffic"
+              ],
+              "passage_ref": "bbb-u2r-013"
+            },
+            {
+              "id": "bbb-u2r-017",
+              "type": "reading_mcq",
+              "text": "We can take the school bus instead of ______.",
+              "answer": "cars",
+              "source_page": 73,
+              "status": "active",
+              "choices": [
+                "cars",
+                "planes",
+                "trains",
+                "bikes"
+              ],
+              "passage_ref": "bbb-u2r-013"
+            },
+            {
+              "id": "bbb-u2r-018",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"My country\" using: Egypt – good weather – kind people.",
+              "answer": "I live in Egypt. It is my country. It has good weather. The people are very kind. I love them very much.",
+              "source_page": 73,
+              "status": "active",
+              "model_answer_page": 71
+            },
+            {
+              "id": "bbb-u2r-019",
+              "type": "mcq",
+              "text": "You should throw trash in the ______.",
+              "answer": "bin",
+              "source_page": 74,
+              "status": "active",
+              "choices": [
+                "bin",
+                "pen",
+                "pin",
+                "book"
+              ]
+            },
+            {
+              "id": "bbb-u2r-020",
+              "type": "mcq",
+              "text": "They ______ the street on Sundays.",
+              "answer": "clean",
+              "source_page": 74,
+              "status": "active",
+              "choices": [
+                "feed",
+                "clean",
+                "help",
+                "collect"
+              ]
+            },
+            {
+              "id": "bbb-u2r-021",
+              "type": "mcq",
+              "text": "The bus helps ______ traffic.",
+              "answer": "reduce",
+              "source_page": 74,
+              "status": "active",
+              "choices": [
+                "reduce",
+                "increase",
+                "plant",
+                "work"
+              ]
+            },
+            {
+              "id": "bbb-u2r-022",
+              "type": "mcq",
+              "text": "It is ______ to smoke here.",
+              "answer": "illegal",
+              "source_page": 74,
+              "status": "active",
+              "choices": [
+                "legal",
+                "illegal",
+                "dislike",
+                "like"
+              ]
+            },
+            {
+              "id": "bbb-u2r-023",
+              "type": "mcq",
+              "text": "He ______ go to school on Friday.",
+              "answer": "doesn't",
+              "source_page": 74,
+              "status": "active",
+              "choices": [
+                "aren't",
+                "isn't",
+                "doesn't",
+                "don't"
+              ]
+            },
+            {
+              "id": "bbb-u2r-024",
+              "type": "mcq",
+              "text": "______ you study English every day?",
+              "answer": "Do",
+              "source_page": 74,
+              "status": "active",
+              "choices": [
+                "Do",
+                "Are",
+                "Does",
+                "Is"
+              ]
+            },
+            {
+              "id": "bbb-u2r-025",
+              "type": "complete",
+              "text": "My community has many ______. Traffic is one of these problems.",
+              "answer": "problems",
+              "source_page": 74,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "buses",
+                "move",
+                "near",
+                "problems"
+              ]
+            },
+            {
+              "id": "bbb-u2r-026",
+              "type": "complete",
+              "text": "Cars ______ slowly in the morning.",
+              "answer": "move",
+              "source_page": 74,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "buses",
+                "move",
+                "near",
+                "problems"
+              ]
+            },
+            {
+              "id": "bbb-u2r-027",
+              "type": "complete",
+              "text": "Cars move slowly in the morning ______ schools.",
+              "answer": "near",
+              "source_page": 74,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "buses",
+                "move",
+                "near",
+                "problems"
+              ]
+            },
+            {
+              "id": "bbb-u2r-028",
+              "type": "complete",
+              "text": "We should use ______ instead of cars.",
+              "answer": "buses",
+              "source_page": 74,
+              "status": "active",
+              "word_bank": [
+                "trash",
+                "buses",
+                "move",
+                "near",
+                "problems"
+              ]
+            },
+            {
+              "id": "bbb-u2r-029",
+              "type": "reading_mcq",
+              "text": "Sandy's grandpa is a ______.",
+              "answer": "farmer",
+              "source_page": 75,
+              "status": "active",
+              "choices": [
+                "farmer",
+                "doctor",
+                "pilot",
+                "sailor"
+              ],
+              "passage": "I'm Sandy. I live in a village in Upper Egypt. Life here is different. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets. My grandpa tells me old stories. My grandpa is a farmer. He grows sugar cane. My grandma wears traditional clothes. He wears a galabeya and a turban. I love him very much."
+            },
+            {
+              "id": "bbb-u2r-030",
+              "type": "reading_mcq",
+              "text": "The underlined word \"traditional\" means ______.",
+              "answer": "not modern",
+              "source_page": 75,
+              "status": "active",
+              "choices": [
+                "not modern",
+                "stylish",
+                "not old",
+                "new"
+              ],
+              "passage_ref": "bbb-u2r-029"
+            },
+            {
+              "id": "bbb-u2r-031",
+              "type": "reading_open",
+              "text": "What's the passage about?",
+              "answer": "Life and traditions in Upper Egypt.",
+              "source_page": 75,
+              "status": "active",
+              "accepted_answers": [
+                "Upper Egypt.",
+                "Life in Upper Egypt.",
+                "Life and traditions in Upper Egypt."
+              ],
+              "passage_ref": "bbb-u2r-029"
+            },
+            {
+              "id": "bbb-u2r-032",
+              "type": "reading_open",
+              "text": "What does Sandy's grandpa wear?",
+              "answer": "A galabeya and a turban.",
+              "source_page": 75,
+              "status": "active",
+              "accepted_answers": [
+                "A galabeya and a turban.",
+                "He wears a galabeya and a turban."
+              ],
+              "passage_ref": "bbb-u2r-029"
+            },
+            {
+              "id": "bbb-u2r-033",
+              "type": "reading_summary",
+              "text": "Summarize the text in one sentence.",
+              "answer": null,
+              "source_page": 75,
+              "status": "inactive_no_model_answer",
+              "passage_ref": "bbb-u2r-029"
+            },
+            {
+              "id": "bbb-u2r-034",
+              "type": "correct_form",
+              "text": "Cars ______ (not move) quickly in the morning.",
+              "answer": "don't move",
+              "source_page": 75,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-035",
+              "type": "correct_form",
+              "text": "We don't ______ (puts) trash in bins.",
+              "answer": "put",
+              "source_page": 75,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-036",
+              "type": "correct_form",
+              "text": "Omar doesn't ______ (has) dinner with his family.",
+              "answer": "have",
+              "source_page": 75,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-037",
+              "type": "correct_form",
+              "text": "The sun ______ (appears) at night.",
+              "answer": "disappears",
+              "source_page": 75,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-038",
+              "type": "punctuation",
+              "text": "this is my father",
+              "answer": "This is my father.",
+              "source_page": 75,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-039",
+              "type": "punctuation",
+              "text": "does Ahmed like cats",
+              "answer": "Does Ahmed like cats?",
+              "source_page": 75,
+              "status": "active"
+            },
+            {
+              "id": "bbb-u2r-040",
+              "type": "writing",
+              "text": "Write a paragraph of FOUR sentences about \"Upper Egypt\" using: sugar cane – pottery – galabeyas.",
+              "answer": "In Upper Egypt, men wear galabeyas. People celebrate the sugar cane harvest with big festivals. They make pottery and weave colorful carpets by hand.",
+              "source_page": 75,
+              "status": "active",
+              "model_answer_page": 71
+            }
+          ],
+          "question_count": 39
+        }
+      ]
+    }
+  ],
+  "total_active_questions": 127
+}
