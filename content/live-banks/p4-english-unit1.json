@@ -419,7 +419,8 @@
               "page": 19,
               "id": "bbb-u1l1-018"
             }
-          ]
+          ],
+          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
         },
         {
           "id": "p4-eng-u1-l1-q019",
@@ -440,7 +441,8 @@
               "page": 19,
               "id": "bbb-u1l1-019"
             }
-          ]
+          ],
+          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
         },
         {
           "id": "p4-eng-u1-l1-q020",
@@ -461,7 +463,8 @@
               "page": 19,
               "id": "bbb-u1l1-020"
             }
-          ]
+          ],
+          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
         },
         {
           "id": "p4-eng-u1-l1-q021",
@@ -482,7 +485,8 @@
               "page": 19,
               "id": "bbb-u1l1-021"
             }
-          ]
+          ],
+          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
         },
         {
           "id": "p4-eng-u1-l1-q022",
@@ -815,7 +819,7 @@
           ],
           "answer": "eyes",
           "context_ref": "The five senses reading text",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "text": "We use our ______ to see shapes and colors.",
           "source_refs": [
             {
@@ -840,7 +844,7 @@
           ],
           "answer": "senses",
           "context_ref": "The five senses reading text",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "text": "The text is about our ______.",
           "source_refs": [
             {
@@ -863,7 +867,7 @@
             "They help us understand the world around us and stay safe."
           ],
           "context_ref": "The five senses reading text",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "text": "What do the five senses help us do?",
           "source_refs": [
             {
@@ -886,7 +890,7 @@
             "The sense of smell."
           ],
           "context_ref": "The five senses reading text",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "text": "Which sense helps us smell flowers?",
           "source_refs": [
             {
@@ -910,7 +914,7 @@
             "The tongue."
           ],
           "context_ref": "The five senses reading text",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "text": "Which body part do we use to taste food?",
           "source_refs": [
             {
@@ -1429,7 +1433,7 @@
           "type": "reading_mcq",
           "prompt": "Our ______ help us hear sounds like music and voices.",
           "answer": "ears",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "eyes",
             "hands",
@@ -1453,7 +1457,7 @@
           "type": "reading_mcq",
           "prompt": "With our nose, we ______ flowers and fresh air.",
           "answer": "smell",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "taste",
             "smell",
@@ -1477,7 +1481,7 @@
           "type": "reading_mcq",
           "prompt": "Our skin helps us feel and ______.",
           "answer": "touch",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "think",
             "eat",
@@ -1947,7 +1951,8 @@
               "page": 26,
               "id": "bbb-u1l2-016"
             }
-          ]
+          ],
+          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
         },
         {
           "id": "p4-eng-u1-l2-q017",
@@ -1968,7 +1973,8 @@
               "page": 26,
               "id": "bbb-u1l2-017"
             }
-          ]
+          ],
+          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
         },
         {
           "id": "p4-eng-u1-l2-q018",
@@ -1989,7 +1995,8 @@
               "page": 26,
               "id": "bbb-u1l2-018"
             }
-          ]
+          ],
+          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
         },
         {
           "id": "p4-eng-u1-l2-q019",
@@ -2005,7 +2012,8 @@
               "page": 26,
               "id": "bbb-u1l2-019"
             }
-          ]
+          ],
+          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
         },
         {
           "id": "p4-eng-u1-l2-q020",
@@ -2418,7 +2426,8 @@
               "page": 43,
               "id": "bbb-u1l2-042"
             }
-          ]
+          ],
+          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
         },
         {
           "id": "p4-eng-u1-l2-q043",
@@ -2440,7 +2449,8 @@
               "page": 43,
               "id": "bbb-u1l2-043"
             }
-          ]
+          ],
+          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
         },
         {
           "id": "p4-eng-u1-l2-q044",
@@ -2462,7 +2472,8 @@
               "page": 43,
               "id": "bbb-u1l2-044"
             }
-          ]
+          ],
+          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
         },
         {
           "id": "p4-eng-u1-l2-q045",
@@ -2705,7 +2716,8 @@
               "page": 45,
               "id": "bbb-u1l2-054"
             }
-          ]
+          ],
+          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
         },
         {
           "id": "p4-eng-u1-l2-q055",
@@ -2725,7 +2737,8 @@
               "page": 45,
               "id": "bbb-u1l2-055"
             }
-          ]
+          ],
+          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
         },
         {
           "id": "p4-eng-u1-l2-q056",
@@ -2746,7 +2759,8 @@
               "page": 45,
               "id": "bbb-u1l2-056"
             }
-          ]
+          ],
+          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
         },
         {
           "id": "p4-eng-u1-l2-q057",
@@ -2766,7 +2780,8 @@
               "page": 45,
               "id": "bbb-u1l2-057"
             }
-          ]
+          ],
+          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
         },
         {
           "id": "p4-eng-u1-l2-q058",
@@ -3111,7 +3126,7 @@
           "type": "reading_mcq",
           "prompt": "Sarah does exercises in the ______.",
           "answer": "garden",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "room",
             "garden",
@@ -3135,7 +3150,7 @@
           "type": "reading_mcq",
           "prompt": "For breakfast, Sarah drinks ______.",
           "answer": "orange juice",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "tea",
             "orange juice",
@@ -3159,7 +3174,7 @@
           "type": "reading_open",
           "prompt": "Why is a good night's sleep important to us?",
           "answer": "It helps our body stay healthy and our mind stay sharp.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "It helps our body stay healthy and our mind stay sharp.",
             "It helps us stay healthy and keeps our mind sharp."
@@ -3631,7 +3646,7 @@
           "type": "reading_mcq",
           "prompt": "This text is about Sarah's ______.",
           "answer": "healthy habits",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "healthy habits",
             "favorite clothes",
@@ -3655,7 +3670,7 @@
           "type": "reading_mcq",
           "prompt": "The opposite of the underlined word \"early\" is ______.",
           "answer": "late",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "strong",
             "late",
@@ -3679,7 +3694,7 @@
           "type": "reading_open",
           "prompt": "What time does Sarah wake up?",
           "answer": "At 6:00 a.m.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "6:00 a.m.",
             "At 6:00 a.m."
@@ -3701,7 +3716,7 @@
           "type": "reading_open",
           "prompt": "How old is Sarah?",
           "answer": "10 years old.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "10 years old.",
             "She is 10 years old."
@@ -3723,7 +3738,7 @@
           "type": "reading_open",
           "prompt": "What does Sarah eat for breakfast?",
           "answer": "Eggs and brown bread.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Eggs and brown bread.",
             "She eats eggs and brown bread."
@@ -4096,7 +4111,7 @@
           "type": "reading_mcq",
           "prompt": "The monkey saw a bird with a broken ______.",
           "answer": "wing",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "leg",
             "wing",
@@ -4120,7 +4135,7 @@
           "type": "reading_mcq",
           "prompt": "The underlined word \"kind\" means ______.",
           "answer": "friendly",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "dangerous",
             "strong",
@@ -4144,7 +4159,7 @@
           "type": "reading_open",
           "prompt": "What is the general idea of the text?",
           "answer": "A kind monkey helps an injured bird.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "A monkey helps an injured bird.",
             "A kind monkey helps a bird."
@@ -4166,7 +4181,7 @@
           "type": "reading_open",
           "prompt": "What did the monkey give the bird?",
           "answer": "Fruits.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Fruits.",
             "It gave the bird fruits."
@@ -4188,7 +4203,7 @@
           "type": "reading_open",
           "prompt": "How did the monkey make a soft bed?",
           "answer": "With leaves.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "With leaves.",
             "It used leaves."
@@ -4403,7 +4418,7 @@
           "type": "reading_mcq",
           "prompt": "A healthy lunch may have chicken, vegetables, fruits, and ______.",
           "answer": "rice",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "water",
             "pizza",
@@ -4427,7 +4442,7 @@
           "type": "reading_mcq",
           "prompt": "A healthy lunch helps children feel ______.",
           "answer": "strong",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "strong",
             "sad",
@@ -4451,7 +4466,7 @@
           "type": "reading_open",
           "prompt": "What shouldn't you eat too much of?",
           "answer": "Sweets or fried food.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Sweets or fried food.",
             "Too many sweets or fried food."
@@ -4473,7 +4488,7 @@
           "type": "reading_open",
           "prompt": "How does healthy food help you at school?",
           "answer": "It helps you run, play and study better.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "It helps you run, play and study better.",
             "It gives you energy to run, play and study better."
@@ -4495,7 +4510,7 @@
           "type": "reading_open",
           "prompt": "Is drinking water important?",
           "answer": "Yes, it is.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Yes.",
             "Yes, it is."
@@ -5366,7 +5381,8 @@
           ],
           "accepted_answers": [
             "pay"
-          ]
+          ],
+          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
         },
         {
           "id": "p4-eng-u1-l3-q016",
@@ -5382,7 +5398,8 @@
               "page": 34,
               "id": "bbb-u1l3-016"
             }
-          ]
+          ],
+          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
         },
         {
           "id": "p4-eng-u1-l3-q017",
@@ -5408,7 +5425,8 @@
               "page": 45,
               "id": "elm-u1l3-029"
             }
-          ]
+          ],
+          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
         },
         {
           "id": "p4-eng-u1-l3-q018",
@@ -5424,7 +5442,8 @@
               "page": 34,
               "id": "bbb-u1l3-018"
             }
-          ]
+          ],
+          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
         },
         {
           "id": "p4-eng-u1-l3-q019",
@@ -6113,7 +6132,7 @@
           "type": "reading_mcq",
           "prompt": "Goha smelled delicious soup from a ______.",
           "answer": "restaurant",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "house",
             "shop",
@@ -6137,7 +6156,7 @@
           "type": "reading_mcq",
           "prompt": "The ______ asked Goha to pay for the smell.",
           "answer": "owner",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "worker",
             "cleaner",
@@ -6161,7 +6180,7 @@
           "type": "reading_mcq",
           "prompt": "Goha offered to pay with the sound of his ______.",
           "answer": "coins",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "bell",
             "music",
@@ -6531,7 +6550,8 @@
               "page": 38,
               "id": "bbb-u1l4-014"
             }
-          ]
+          ],
+          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
         },
         {
           "id": "p4-eng-u1-l4-q015",
@@ -6551,7 +6571,8 @@
               "page": 38,
               "id": "bbb-u1l4-015"
             }
-          ]
+          ],
+          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
         },
         {
           "id": "p4-eng-u1-l4-q016",
@@ -6571,7 +6592,8 @@
               "page": 38,
               "id": "bbb-u1l4-016"
             }
-          ]
+          ],
+          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
         },
         {
           "id": "p4-eng-u1-l4-q017",
@@ -6591,7 +6613,8 @@
               "page": 38,
               "id": "bbb-u1l4-017"
             }
-          ]
+          ],
+          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
         },
         {
           "id": "p4-eng-u1-l4-q018",
@@ -6823,7 +6846,7 @@
           "type": "reading_mcq",
           "prompt": "The text is about ______.",
           "answer": "a daily routine",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "A daily routine",
             "Jobs",
@@ -6847,7 +6870,7 @@
           "type": "reading_mcq",
           "prompt": "The underlined word \"early\" is the opposite of ______.",
           "answer": "late",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "near",
             "late",
@@ -6871,7 +6894,7 @@
           "type": "reading_open",
           "prompt": "When does Lamees wake up?",
           "answer": "At 7 a.m.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "At 7 a.m.",
             "7 a.m."
@@ -6893,7 +6916,7 @@
           "type": "reading_open",
           "prompt": "What does Lamees do after school?",
           "answer": "She has lunch and does her homework.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "She has lunch and does her homework.",
             "She has lunch and does homework."
