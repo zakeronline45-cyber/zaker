@@ -14,7 +14,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "Moseley arranged the elements in the periodic table in ascending order according to their ______.",
-      "answer": "atomic numbers",
       "sourcePage": 76
     },
     {
@@ -22,7 +21,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The modern periodic table consists of ______ vertical groups.",
-      "answer": "18",
       "sourcePage": 76
     },
     {
@@ -30,7 +28,6 @@
       "type": "complete",
       "difficulty": "medium",
       "text": "Elements located in the d-block are called ______ metals.",
-      "answer": "transition",
       "sourcePage": 76
     },
     {
@@ -44,7 +41,6 @@
         "Halogens",
         "Noble gases"
       ],
-      "answer": "Alkali metals",
       "sourcePage": 77
     },
     {
@@ -58,7 +54,6 @@
         "Halogens",
         "Transition metals"
       ],
-      "answer": "Alkaline Earth metals",
       "sourcePage": 77
     },
     {
@@ -72,7 +67,6 @@
         "7A",
         "0"
       ],
-      "answer": "7A",
       "sourcePage": 77
     },
     {
@@ -86,7 +80,6 @@
         "7A",
         "0"
       ],
-      "answer": "0",
       "sourcePage": 77
     },
     {
@@ -94,7 +87,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "All elements of the d-block are transition metals.",
-      "answer": "True",
       "sourcePage": 79
     },
     {
@@ -102,7 +94,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "The p-block is located on the left side of the modern periodic table.",
-      "answer": "False",
       "sourcePage": 79
     },
     {
@@ -110,7 +101,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "The d-block consists of 10 vertical groups.",
-      "answer": "True",
       "sourcePage": 79
     },
     {
@@ -118,7 +108,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Scientists rearranged the elements periodically in the modern periodic table.",
-      "answer": "To facilitate the study of elements and reveal periodic relationships between their properties.",
       "sourcePage": 80
     },
     {
@@ -126,7 +115,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare elements in the same group and elements in the same period in terms of electron configuration.",
-      "answer": "Same group: same number of electrons in the outermost energy level. Same period: same number of occupied energy levels.",
       "sourcePage": 81
     },
     {
@@ -140,7 +128,6 @@
         "Group 7A",
         "Group 0"
       ],
-      "answer": "Group 7A",
       "sourcePage": 82
     },
     {
@@ -154,7 +141,6 @@
         "Halogens",
         "Noble gases"
       ],
-      "answer": "Noble gases",
       "sourcePage": 82
     },
     {
@@ -162,7 +148,6 @@
       "type": "complete",
       "difficulty": "medium",
       "text": "The Lewis dot structure represents the ______ electrons of an atom.",
-      "answer": "valence",
       "sourcePage": 83
     },
     {
@@ -176,7 +161,6 @@
         "3",
         "4"
       ],
-      "answer": "1",
       "sourcePage": 83
     },
     {
@@ -190,7 +174,6 @@
         "Bromine",
         "Iodine"
       ],
-      "answer": "Fluorine",
       "sourcePage": 83
     },
     {
@@ -204,7 +187,6 @@
         "Electronegativity",
         "None"
       ],
-      "answer": "Number of occupied energy levels",
       "sourcePage": 84
     },
     {
@@ -212,7 +194,6 @@
       "type": "reason",
       "difficulty": "hard",
       "text": "Give a reason: Elements of the same group have similar chemical properties.",
-      "answer": "Because they have the same number of electrons in their outermost energy level.",
       "sourcePage": 84
     },
     {
@@ -220,14 +201,12 @@
       "type": "compare",
       "difficulty": "hard",
       "text": "Compare alkali metals and halogens in the trend of chemical activity down their groups.",
-      "answer": "Alkali metals: chemical activity increases down the group. Halogens: chemical activity decreases down the group.",
       "sourcePage": 84
     },
     {
       "type": "complete",
       "difficulty": "medium",
       "text": "The modern periodic table contains ______ periods and ______ groups.",
-      "answer": "7; 18",
       "sourcePage": 78,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 494",
@@ -237,7 +216,6 @@
       "type": "complete",
       "difficulty": "medium",
       "text": "The f-block contains the ______ and ______ series.",
-      "answer": "lanthanides; actinides",
       "sourcePage": 81,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 497",
@@ -247,7 +225,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Potassium is a solid element at room temperature.",
-      "answer": "It is an alkali metal, and the alkali metals studied are solid metals except for the separately noted liquid metals outside this group.",
       "sourcePage": 80,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 496",
@@ -257,7 +234,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "An element has electron configuration 2,8,1. Determine its period and group.",
-      "answer": "Period 3, group 1A.",
       "sourcePage": 80,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 496",
@@ -267,7 +243,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "An element has electron configuration 2,8,7. Determine its period and group.",
-      "answer": "Period 3, group 7A.",
       "sourcePage": 80,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 496",
@@ -277,7 +252,6 @@
       "type": "compare",
       "difficulty": "hard",
       "text": "Compare s-block and p-block in location and number of groups.",
-      "answer": "s-block occupies the left side and contains 2 groups; p-block occupies the right side and contains 6 groups.",
       "sourcePage": 81,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 497",
@@ -287,7 +261,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Metalloids are located in the p-block and cannot be identified only by electron configuration.",
-      "answer": "True",
       "sourcePage": 77,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L2 / PDF 493",
@@ -297,7 +270,6 @@
       "type": "problem",
       "difficulty": "hard",
       "text": "Consultant-generated application: Two elements have the same number of valence electrons but different numbers of occupied energy levels. What is the likely relationship between them?",
-      "answer": "They are likely in the same group but in different periods.",
       "sourcePage": 83,
       "sourceSection": "consultant-generated-from-source",
       "sourceReference": "Generated from verified L2 concepts",
