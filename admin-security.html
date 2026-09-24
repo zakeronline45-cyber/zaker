@@ -1,0 +1,49 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ذاكر | أمان حساب الإدارة</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>
+:root{--p:#6f2392;--bg:#f8f6fa;--line:#eadff0;--m:#766b80;--g:#168b5d;--r:#c82f43}*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial;background:var(--bg);color:#26162f;display:grid;place-items:center;min-height:100vh}.card{width:min(580px,94vw);background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 18px 55px #35104422}.btn{border:0;border-radius:10px;padding:10px 14px;font:inherit;font-weight:900;cursor:pointer}.primary{background:var(--p);color:#fff}.soft{background:#f2e8f7;color:var(--p)}.muted{color:var(--m);line-height:1.8}.ok{color:var(--g);font-weight:900}.bad{color:var(--r)}input{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;font:inherit;margin:8px 0}.qr{display:grid;place-items:center;margin:14px 0}.qr img{width:min(260px,80vw);background:#fff;padding:8px}.secret{direction:ltr;text-align:center;word-break:break-all;background:#f8f5fb;padding:10px;border-radius:10px;font-family:monospace}
+</style></head><body><div class="card"><h1>🔐 أمان حساب الإدارة</h1><p class="muted">استخدم Google Authenticator أو Microsoft Authenticator أو أي تطبيق TOTP. تفعيل العامل الثاني اختياري، لكن بمجرد تفعيله ستحتاج رمز التطبيق عند فتح صفحات الإدارة في جلسة جديدة.</p><div id="state">جاري فحص حالة الحماية...</div><div id="enroll" style="display:none"><button class="btn primary" onclick="startEnroll()">تفعيل 2FA بتطبيق Authenticator</button></div><div id="setup" style="display:none"><div class="qr"><img id="qr" alt="QR Code"></div><p class="muted">امسح الكود بالتطبيق. لو تعذر المسح، أدخل المفتاح التالي يدويًا:</p><div id="secret" class="secret"></div><input id="setupCode" inputmode="numeric" autocomplete="one-time-code" placeholder="رمز التحقق المكون من 6 أرقام"><button class="btn primary" onclick="verifySetup()">تأكيد وتفعيل 2FA</button></div><div id="challenge" style="display:none"><p class="muted">حسابك محمي بعامل ثانٍ. اكتب الرمز الحالي من تطبيق Authenticator للمتابعة إلى الإدارة.</p><input id="challengeCode" inputmode="numeric" autocomplete="one-time-code" placeholder="رمز التحقق"><button class="btn primary" onclick="verifyChallenge()">تحقق والمتابعة</button></div><p id="msg" class="muted"></p><p><a class="btn soft" href="/">العودة للموقع</a></p></div><script>
+const sb=supabase.createClient('https://llhmkyighydokneqwrdj.supabase.co','sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77');
+const qp=new URLSearchParams(location.search),next=qp.get('next')||'/admin-control.html';
+let factorId='',challengeId='';
+async function ensureAdmin(){
+ const {data:ss}=await sb.auth.getSession();if(!ss.session){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return false}
+ const {data:p}=await sb.from('profiles').select('role,is_enabled').eq('id',ss.session.user.id).maybeSingle();
+ if(p?.role!=='admin'||p?.is_enabled===false){location.href='/';return false}
+ return true;
+}
+async function status(){
+ if(!(await ensureAdmin()))return;
+ const {data:aal,error}=await sb.auth.mfa.getAuthenticatorAssuranceLevel();if(error){state.textContent=error.message;return}
+ const {data:factors,error:fe}=await sb.auth.mfa.listFactors();if(fe){state.textContent=fe.message;return}
+ const verified=[...(factors?.totp||[]),...(factors?.phone||[])].filter(x=>x.status==='verified');
+ if(aal?.currentLevel==='aal2'){state.innerHTML='<p class="ok">✓ التحقق بخطوتين مكتمل في هذه الجلسة.</p><button class="btn primary" onclick="location.href=next">فتح لوحة الإدارة</button>';return}
+ if(aal?.nextLevel==='aal2'&&verified.length){factorId=verified[0].id;state.innerHTML='<p class="ok">2FA مفعّل على الحساب.</p>';challenge.style.display='block';await startChallenge();return}
+ state.innerHTML='<p>لا يوجد عامل ثانٍ مفعّل على حساب الإدارة حاليًا.</p>';enroll.style.display='block';
+}
+async function startEnroll(){
+ msg.textContent='جاري إنشاء عامل الحماية...';
+ const {data,error}=await sb.auth.mfa.enroll({factorType:'totp',friendlyName:'Zaker Admin'});
+ if(error){msg.textContent=error.message;return}
+ factorId=data.id;
+ const svg=data.totp?.qr_code||'';
+ qr.src=svg.startsWith('data:')?svg:'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+ secret.textContent=data.totp?.secret||'';
+ enroll.style.display='none';setup.style.display='block';state.innerHTML='<p>أكمل المسح ثم اكتب الرمز لتفعيل العامل.</p>';msg.textContent='';
+ const ch=await sb.auth.mfa.challenge({factorId});if(ch.error){msg.textContent=ch.error.message;return}challengeId=ch.data.id;
+}
+async function verifySetup(){
+ const code=setupCode.value.trim();if(!code)return;
+ const {error}=await sb.auth.mfa.verify({factorId,challengeId,code});
+ if(error){msg.textContent=error.message;return}
+ msg.innerHTML='<span class="ok">✓ تم تفعيل 2FA بنجاح.</span>';setTimeout(()=>location.replace(next),600);
+}
+async function startChallenge(){
+ const ch=await sb.auth.mfa.challenge({factorId});if(ch.error){msg.textContent=ch.error.message;return}challengeId=ch.data.id;
+}
+async function verifyChallenge(){
+ const code=challengeCode.value.trim();if(!code)return;
+ const {error}=await sb.auth.mfa.verify({factorId,challengeId,code});
+ if(error){msg.textContent=error.message;await startChallenge();return}
+ location.replace(next);
+}
+status();
+</script></body></html>
