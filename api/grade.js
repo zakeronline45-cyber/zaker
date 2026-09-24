@@ -1,11 +1,10 @@
 import {requireUser} from './_security.js';
-const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
-const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './_config.js';
 
 async function rpcWithUser(name,token,body){
   const r=await fetch(SUPABASE_URL+'/rest/v1/rpc/'+name,{
     method:'POST',
-    headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
+    headers:{'apikey':SUPABASE_PUBLISHABLE_KEY,'Authorization':'Bearer '+token,'Content-Type':'application/json'},
     body:JSON.stringify(body)
   });
   const data=await r.json().catch(()=>null);
