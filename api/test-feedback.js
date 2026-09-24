@@ -7,7 +7,9 @@ export default async function handler(req,res){
   if(!Array.isArray(wrongAnswers)||!wrongAnswers.length){
     return res.status(200).json({summary:'ممتاز، لا توجد أخطاء تحتاج مراجعة.',topics:[],plan:[]});
   }
-  const key=process.env.OPENAI_API_KEY;
+  if(wrongAnswers.length>30)return res.status(413).json({error:'Too many answers'});
+  if(wrongAnswers.some(x=>String(x?.question||'').length>2500||String(x?.studentAnswer||'').length>5000||String(x?.correctAnswer||'').length>5000))return res.status(413).json({error:'Feedback payload too large'});
+    const key=process.env.OPENAI_API_KEY;
   if(!key){
     return res.status(200).json({
       summary:'عندك أخطاء في بعض مفاهيم هذا الدرس. راجع المفاهيم المرتبطة بالأسئلة التي أخطأت فيها ثم أعد الاختبار.',
