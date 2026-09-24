@@ -115,7 +115,7 @@ function injectContact(s){
  if(!s||document.getElementById('zakerContactBtn'))return;
  const items=[];
  if(s.show_phone&&s.contact_phone)items.push(['☎️','اتصال',s.contact_phone,'tel:'+s.contact_phone]);
- if(s.show_whatsapp&&s.contact_whatsapp)items.push(['💬','WhatsApp',s.contact_whatsapp,'https://wa.me/'+String(s.contact_whatsapp).replace(/\D/g,'')]);
+ if(s.show_whatsapp&&s.contact_whatsapp){let n=String(s.contact_whatsapp).replace(/\D/g,'');if(n.startsWith('0'))n='20'+n.slice(1);items.push(['💬','WhatsApp',s.contact_whatsapp,'https://wa.me/'+n]);}
  if(s.show_email&&s.contact_email)items.push(['✉️','البريد',s.contact_email,'mailto:'+s.contact_email]);
  if(s.show_facebook&&s.contact_facebook)items.push(['f','Facebook','',s.contact_facebook]);
  if(s.show_instagram&&s.contact_instagram)items.push(['◎','Instagram','',s.contact_instagram]);
