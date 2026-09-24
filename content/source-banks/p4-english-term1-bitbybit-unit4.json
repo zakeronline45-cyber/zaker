@@ -482,8 +482,8 @@
             {
               "id": "bbb-u4l2-014",
               "type": "reading_mcq",
-              "text": "Children go to school to ______.",
-              "answer": "study and meet friends",
+              "text": "Children go to school to study and ______.",
+              "answer": "meet friends",
               "source_page": 127,
               "status": "active",
               "choices": [
@@ -822,8 +822,8 @@
             {
               "id": "bbb-u4l3-013",
               "type": "reading_mcq",
-              "text": "Ahmed goes to St. Catherine ______.",
-              "answer": "every year",
+              "text": "Ahmed goes to St. Catherine ______ every year.",
+              "answer": "Mountain",
               "source_page": 133,
               "status": "active",
               "choices": [
