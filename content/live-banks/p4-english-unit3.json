@@ -389,7 +389,8 @@
               "page": 81,
               "id": "bbb-u3l1-015"
             }
-          ]
+          ],
+          "passage": "Lions are wild animals. They are the kings of the forest. They are very strong. They live in groups. They have four legs and long tails. They attack animals, so all animals are afraid of them. Lions sleep in day and hunt at night. They run very fast. We can see them in the zoo or on TV. They can live for 10 to 14 years."
         },
         {
           "id": "p4-eng-u3-l1-q016",
@@ -409,7 +410,8 @@
               "page": 81,
               "id": "bbb-u3l1-017"
             }
-          ]
+          ],
+          "passage": "Lions are wild animals. They are the kings of the forest. They are very strong. They live in groups. They have four legs and long tails. They attack animals, so all animals are afraid of them. Lions sleep in day and hunt at night. They run very fast. We can see them in the zoo or on TV. They can live for 10 to 14 years."
         },
         {
           "id": "p4-eng-u3-l1-q017",
@@ -429,7 +431,8 @@
               "page": 81,
               "id": "bbb-u3l1-018"
             }
-          ]
+          ],
+          "passage": "Lions are wild animals. They are the kings of the forest. They are very strong. They live in groups. They have four legs and long tails. They attack animals, so all animals are afraid of them. Lions sleep in day and hunt at night. They run very fast. We can see them in the zoo or on TV. They can live for 10 to 14 years."
         },
         {
           "id": "p4-eng-u3-l1-q018",
@@ -642,7 +645,8 @@
               "page": 104,
               "id": "bbb-u3r-015"
             }
-          ]
+          ],
+          "passage": "I sometimes go with my father to the forest park. He works there. He is a forest guide. He shows visitors the animals. I love animals. I always watch TV programs about animals to know more about them. The program helped me to know that lions often hunt at night and sleep during the day. Giraffes eat leaves from tall trees."
         },
         {
           "id": "p4-eng-u3-l1-q029",
@@ -664,7 +668,8 @@
               "page": 104,
               "id": "bbb-u3r-016"
             }
-          ]
+          ],
+          "passage": "I sometimes go with my father to the forest park. He works there. He is a forest guide. He shows visitors the animals. I love animals. I always watch TV programs about animals to know more about them. The program helped me to know that lions often hunt at night and sleep during the day. Giraffes eat leaves from tall trees."
         },
         {
           "id": "p4-eng-u3-l1-q030",
@@ -686,7 +691,8 @@
               "page": 104,
               "id": "bbb-u3r-017"
             }
-          ]
+          ],
+          "passage": "I sometimes go with my father to the forest park. He works there. He is a forest guide. He shows visitors the animals. I love animals. I always watch TV programs about animals to know more about them. The program helped me to know that lions often hunt at night and sleep during the day. Giraffes eat leaves from tall trees."
         },
         {
           "id": "p4-eng-u3-l1-q031",
@@ -897,7 +903,8 @@
           ],
           "accepted_answers": [
             "trunk"
-          ]
+          ],
+          "passage": "Elephants are the largest animals in land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunk to drink, eat and spray water on their bodies. Elephants eat leaves and grass. They can live for up to 60–70 years. A baby elephant can weigh 120kg."
         },
         {
           "id": "p4-eng-u3-l1-q040",
@@ -922,7 +929,8 @@
               "page": 117,
               "id": "elm-u3l1-020"
             }
-          ]
+          ],
+          "passage": "Elephants are the largest animals in land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunk to drink, eat and spray water on their bodies. Elephants eat leaves and grass. They can live for up to 60–70 years. A baby elephant can weigh 120kg."
         },
         {
           "id": "p4-eng-u3-l1-q041",
@@ -942,7 +950,8 @@
               "page": 106,
               "id": "bbb-u3r-033"
             }
-          ]
+          ],
+          "passage": "Elephants are the largest animals in land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunk to drink, eat and spray water on their bodies. Elephants eat leaves and grass. They can live for up to 60–70 years. A baby elephant can weigh 120kg."
         },
         {
           "id": "p4-eng-u3-l1-q042",
@@ -1112,7 +1121,7 @@
           "type": "reading_open",
           "prompt": "What do giraffes eat?",
           "answer": "Leaves from tall trees.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Leaves from tall trees.",
             "They eat leaves from tall trees."
@@ -1133,7 +1142,7 @@
           "type": "reading_open",
           "prompt": "When do lions sleep?",
           "answer": "During the day.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "During the day.",
             "They sleep during the day."
@@ -1292,7 +1301,7 @@
           "type": "reading_open",
           "prompt": "Where do elephants live?",
           "answer": "In Africa and Asia.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "In Africa and Asia.",
             "They live in Africa and Asia."
@@ -1658,7 +1667,7 @@
           "type": "reading_mcq",
           "prompt": "Animals need our help to stay ______ and safe.",
           "answer": "healthy",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "sad",
             "hungry",
@@ -1681,7 +1690,7 @@
           "type": "reading_mcq",
           "prompt": "The underlined pronoun \"They\" refers to ______.",
           "answer": "pets",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "zoo animals",
             "wild animals",
@@ -1704,7 +1713,7 @@
           "type": "reading_open",
           "prompt": "What do pets need?",
           "answer": "Daily care from their owners.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Daily care from their owners.",
             "Pets need daily care from their owners."
@@ -1725,7 +1734,7 @@
           "type": "reading_open",
           "prompt": "Where do animals live?",
           "answer": "In the wild, zoos or homes.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "In the wild, zoos or homes.",
             "They live in the wild, zoos or homes."
@@ -1865,7 +1874,7 @@
           "type": "reading_mcq",
           "prompt": "Soha didn't like the ______.",
           "answer": "lions",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "giraffes",
             "lions",
@@ -1888,7 +1897,7 @@
           "type": "reading_mcq",
           "prompt": "The elephant used its ______ to spray water on its body.",
           "answer": "trunk",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "trunk",
             "tail",
@@ -1911,7 +1920,7 @@
           "type": "reading_open",
           "prompt": "When did Soha visit the zoo?",
           "answer": "Yesterday.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Yesterday.",
             "She visited the zoo yesterday."
@@ -1932,7 +1941,7 @@
           "type": "reading_open",
           "prompt": "Who enjoyed watching the monkeys?",
           "answer": "Khaled.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Khaled.",
             "Khaled enjoyed watching the monkeys."
@@ -2321,7 +2330,8 @@
           ],
           "accepted_answers": [
             "bigger"
-          ]
+          ],
+          "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food."
         },
         {
           "id": "p4-eng-u3-l2-q014",
@@ -2347,7 +2357,8 @@
               "page": 125,
               "id": "elm-u3l2-046"
             }
-          ]
+          ],
+          "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food."
         },
         {
           "id": "p4-eng-u3-l2-q015",
@@ -2373,7 +2384,8 @@
               "page": 121,
               "id": "elm-u3l2-012"
             }
-          ]
+          ],
+          "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food."
         },
         {
           "id": "p4-eng-u3-l2-q016",
@@ -2393,7 +2405,8 @@
               "page": 87,
               "id": "bbb-u3l2-016"
             }
-          ]
+          ],
+          "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food."
         },
         {
           "id": "p4-eng-u3-l2-q017",
@@ -3069,7 +3082,7 @@
           "printed_page": 120,
           "type": "mcq",
           "prompt": "Elephants need big ______ to move around.",
-          "answer": "spaces",
+          "answer": "space",
           "status": "active",
           "choices": [
             "food",
@@ -3162,7 +3175,7 @@
           "type": "reading_open",
           "prompt": "Why are the homes of wild animals getting smaller?",
           "answer": "Because of new cities.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Because of new cities.",
             "Their homes are getting smaller because of new cities."
@@ -3702,7 +3715,7 @@
           "type": "reading_open",
           "prompt": "How can lions stay stronger than others?",
           "answer": "By eating a lot of food.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "By eating a lot of food.",
             "They eat a lot of food."
@@ -4163,7 +4176,7 @@
             "cave",
             "clever",
             "stupid",
-            "came out"
+            "come out"
           ],
           "source_refs": [
             {
@@ -4275,7 +4288,8 @@
               "page": 94,
               "id": "bbb-u3l3-014"
             }
-          ]
+          ],
+          "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick."
         },
         {
           "id": "p4-eng-u3-l3-q015",
@@ -4295,7 +4309,8 @@
               "page": 94,
               "id": "bbb-u3l3-015"
             }
-          ]
+          ],
+          "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick."
         },
         {
           "id": "p4-eng-u3-l3-q016",
@@ -4315,7 +4330,8 @@
               "page": 94,
               "id": "bbb-u3l3-016"
             }
-          ]
+          ],
+          "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick."
         },
         {
           "id": "p4-eng-u3-l3-q017",
@@ -4336,7 +4352,8 @@
               "page": 94,
               "id": "bbb-u3l3-017"
             }
-          ]
+          ],
+          "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick."
         },
         {
           "id": "p4-eng-u3-l3-q018",
@@ -4549,7 +4566,7 @@
           "printed_page": 129,
           "type": "mcq",
           "prompt": "The ______ understands the lion's trick.",
-          "answer": "fox",
+          "answer": "wise",
           "status": "active",
           "choices": [
             "healthy",
@@ -4557,7 +4574,7 @@
             "clean",
             "wise"
           ],
-          "text": "The ______ understands the lion's trick.",
+          "text": "The ______ fox understands the lion's trick.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4619,7 +4636,7 @@
           "type": "reading_mcq",
           "prompt": "The text is about ______.",
           "answer": "Old tiger",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "Old elephant",
             "Old zebra",
@@ -4642,7 +4659,7 @@
           "type": "reading_mcq",
           "prompt": "The opposite of the underlined word \"weak\" is ______.",
           "answer": "strong",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "strong",
             "noisy",
@@ -4665,7 +4682,7 @@
           "type": "reading_open",
           "prompt": "What did the monkey see?",
           "answer": "Many footprints going into the cave, but no footprints coming out.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Footprints going into the cave and none coming out.",
             "Many footprints going into the cave, but no footprints coming out."
@@ -4686,7 +4703,7 @@
           "type": "reading_open",
           "prompt": "Why did the monkey refuse to come inside the cave?",
           "answer": "Because he saw footprints going in but none coming out.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Because he saw footprints going in but none coming out.",
             "He noticed that footprints went in but none came out."
@@ -5385,7 +5402,8 @@
               "page": 99,
               "id": "bbb-u3l4-012"
             }
-          ]
+          ],
+          "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals."
         },
         {
           "id": "p4-eng-u3-l4-q013",
@@ -5412,7 +5430,8 @@
               "page": 139,
               "id": "elm-u3l4-024"
             }
-          ]
+          ],
+          "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals."
         },
         {
           "id": "p4-eng-u3-l4-q014",
@@ -5432,7 +5451,8 @@
               "page": 99,
               "id": "bbb-u3l4-014"
             }
-          ]
+          ],
+          "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals."
         },
         {
           "id": "p4-eng-u3-l4-q015",
@@ -5452,7 +5472,8 @@
               "page": 99,
               "id": "bbb-u3l4-015"
             }
-          ]
+          ],
+          "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals."
         },
         {
           "id": "p4-eng-u3-l4-q016",
@@ -5901,7 +5922,7 @@
           "type": "reading_mcq",
           "prompt": "______ is an example of endangered animals.",
           "answer": "Giant panda",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "Dog",
             "Cat",
@@ -5924,7 +5945,7 @@
           "type": "reading_open",
           "prompt": "Where are many animals endangered?",
           "answer": "Around the world.",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "accepted_answers": [
             "Around the world.",
             "Many animals around the world are endangered."
@@ -6013,7 +6034,7 @@
           "type": "reading_mcq",
           "prompt": "The Red Sea Dugong lives in ______.",
           "answer": "Egypt",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "China",
             "England",
@@ -6036,7 +6057,7 @@
           "type": "reading_mcq",
           "prompt": "The Red Sea Dugong eats ______.",
           "answer": "sea grass",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "small insects",
             "sea grass",
@@ -6059,7 +6080,7 @@
           "type": "reading_mcq",
           "prompt": "The Red Sea Dugong is in danger because of ______.",
           "answer": "pollution",
-          "status": "active",
+          "status": "inactive_missing_passage",
           "choices": [
             "clean water",
             "pollution",
