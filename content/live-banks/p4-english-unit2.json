@@ -9,19 +9,19 @@
     "Bit by Bit English Primary 4 First Term 2027",
     "El-Moasser English Primary 4 First Term 2027"
   ],
-  "merge_policy": "Exact normalized question dedupe; source answers preserved; conflicts excluded; review questions assigned to their lesson.",
+  "merge_policy": "Exact normalized question dedupe; source answers preserved; conflicts excluded.",
   "modules": [
     {
       "id": 5,
+      "source_lesson_id": 1,
       "unit": "Unit 2: My Community",
-      "lesson_id": 1,
       "title": "Lesson 1 — Helping the Community",
       "kind": "Vocabulary & Reading",
-      "summary": "Helping, volunteering, cleaning, planting and community actions.",
+      "summary": "Community help, volunteering, cleaning, planting and helping neighbors.",
       "focus": [
-        "Use community vocabulary",
+        "Use community-help vocabulary",
         "Read for details",
-        "Describe ways to help the community"
+        "Answer source-based questions"
       ],
       "terms": [],
       "questions": [
@@ -309,7 +309,7 @@
             {
               "source": "El-Moasser",
               "page": 72,
-              "id": "elm-u2l1-026"
+              "id": "elm-u2l1-028"
             }
           ]
         },
@@ -332,31 +332,11 @@
               "source": "Bit by Bit",
               "page": 51,
               "id": "bbb-u2l1-014"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q015",
-          "type": "reading_open",
-          "text": "How does Farida help her community?",
-          "answer": "She cleans trash from the street, plants trees in the park, and feeds dogs and cats.",
-          "source_page": 51,
-          "status": "active",
-          "accepted_answers": [
-            "She cleans trash from the street and plants trees in the park.",
-            "She cleans trash, plants trees and feeds dogs and cats."
-          ],
-          "passage_ref": "bbb-u2l1-013",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 51,
-              "id": "bbb-u2l1-015"
             },
             {
               "source": "El-Moasser",
               "page": 72,
-              "id": "elm-u2l1-028"
+              "id": "elm-u2l1-029"
             }
           ]
         },
@@ -408,6 +388,27 @@
         },
         {
           "id": "p4-eng-u2-l1-q019",
+          "type": "dialogue_complete",
+          "text": "Yes, I do. I plant trees and ______ in the garden.",
+          "answer": "flowers",
+          "source_page": 72,
+          "status": "active",
+          "word_bank": [
+            "flowers",
+            "plant",
+            "community",
+            "clean"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 72,
+              "id": "bbb-u2r-004"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q020",
           "type": "mcq",
           "text": "I buy food from the ______.",
           "answer": "supermarket",
@@ -428,7 +429,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q020",
+          "id": "p4-eng-u2-l1-q021",
           "type": "mcq",
           "text": "She ______ use the car.",
           "answer": "doesn't",
@@ -449,7 +450,37 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q021",
+          "id": "p4-eng-u2-l1-q022",
+          "type": "correction",
+          "text": "They aren't like pizza.",
+          "answer": "They don't like pizza.",
+          "source_page": 72,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 72,
+              "id": "bbb-u2r-010"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q023",
+          "type": "correction",
+          "text": "Do they watch movies? – Yes, I do.",
+          "answer": "Do you watch movies? – Yes, I do.",
+          "source_page": 72,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 72,
+              "id": "bbb-u2r-012"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q024",
           "type": "reading_mcq",
           "text": "Our community has many ______.",
           "answer": "problems",
@@ -471,7 +502,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q022",
+          "id": "p4-eng-u2-l1-q025",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"My country\" using: Egypt – good weather – kind people.",
           "answer": "I live in Egypt. It is my country. It has good weather. The people are very kind. I love them very much.",
@@ -487,7 +518,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q023",
+          "id": "p4-eng-u2-l1-q026",
           "type": "mcq",
           "text": "They ______ the street on Sundays.",
           "answer": "clean",
@@ -508,7 +539,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q024",
+          "id": "p4-eng-u2-l1-q027",
           "type": "mcq",
           "text": "It is ______ to smoke here.",
           "answer": "illegal",
@@ -529,7 +560,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q025",
+          "id": "p4-eng-u2-l1-q028",
           "type": "mcq",
           "text": "He ______ go to school on Friday.",
           "answer": "doesn't",
@@ -550,7 +581,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q026",
+          "id": "p4-eng-u2-l1-q029",
           "type": "mcq",
           "text": "______ you study English every day?",
           "answer": "Do",
@@ -571,7 +602,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q027",
+          "id": "p4-eng-u2-l1-q030",
           "type": "reading_open",
           "text": "What's the passage about?",
           "answer": "Life and traditions in Upper Egypt.",
@@ -592,7 +623,22 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q028",
+          "id": "p4-eng-u2-l1-q031",
+          "type": "correct_form",
+          "text": "The sun ______ (appears) at night.",
+          "answer": "disappears",
+          "source_page": 75,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 75,
+              "id": "bbb-u2r-037"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q032",
           "type": "punctuation",
           "text": "this is my father",
           "answer": "This is my father.",
@@ -607,12 +653,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q029",
+          "id": "p4-eng-u2-l1-q033",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 68,
           "pdf_page": 62,
           "type": "mcq",
-          "text": "You ______ a great job at the community.",
+          "prompt": "You ______ a great job at the community.",
           "answer": "do",
           "status": "active",
           "choices": [
@@ -621,6 +667,7 @@
             "give",
             "make"
           ],
+          "text": "You ______ a great job at the community.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -630,12 +677,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q030",
+          "id": "p4-eng-u2-l1-q034",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 68,
           "pdf_page": 62,
           "type": "mcq",
-          "text": "Can you ______ me collect the bottles?",
+          "prompt": "Can you ______ me collect the bottles?",
           "answer": "help",
           "status": "active",
           "choices": [
@@ -644,6 +691,7 @@
             "feed",
             "help"
           ],
+          "text": "Can you ______ me collect the bottles?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -653,12 +701,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q031",
+          "id": "p4-eng-u2-l1-q035",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 68,
           "pdf_page": 62,
           "type": "mcq",
-          "text": "We clean ______ from our street to help our community.",
+          "prompt": "We clean ______ from our street to help our community.",
           "answer": "trash",
           "status": "active",
           "choices": [
@@ -667,6 +715,7 @@
             "buildings",
             "lamps"
           ],
+          "text": "We clean ______ from our street to help our community.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -676,12 +725,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q032",
+          "id": "p4-eng-u2-l1-q036",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 68,
           "pdf_page": 62,
           "type": "mcq",
-          "text": "She ______ flowers in her garden.",
+          "prompt": "She ______ flowers in the garden.",
           "answer": "plants",
           "status": "active",
           "choices": [
@@ -690,6 +739,7 @@
             "plants",
             "goes"
           ],
+          "text": "She ______ flowers in the garden.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -699,12 +749,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q033",
+          "id": "p4-eng-u2-l1-q037",
           "section": "Previous Exams",
           "printed_page": 68,
           "pdf_page": 62,
           "type": "mcq",
-          "text": "He ______ clothes and gives them to poor people.",
+          "prompt": "He ______ clothes and gives them to poor people.",
           "answer": "collects",
           "status": "active",
           "choices": [
@@ -713,6 +763,7 @@
             "grows",
             "stays"
           ],
+          "text": "He ______ clothes and gives them to poor people.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -722,12 +773,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q034",
+          "id": "p4-eng-u2-l1-q038",
           "section": "Previous Exams",
           "printed_page": 68,
           "pdf_page": 62,
           "type": "mcq",
-          "text": "It's important to help our ______.",
+          "prompt": "It's important to help our ______.",
           "answer": "neighbors",
           "status": "active",
           "choices": [
@@ -736,6 +787,7 @@
             "books",
             "clothes"
           ],
+          "text": "It's important to help our ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -745,12 +797,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q035",
+          "id": "p4-eng-u2-l1-q039",
           "section": "Previous Exams",
           "printed_page": 69,
           "pdf_page": 63,
           "type": "mcq",
-          "text": "Let's make our park ______! Let's collect the trash.",
+          "prompt": "Let's make our park ______! Let's collect the trash.",
           "answer": "clean",
           "status": "active",
           "choices": [
@@ -759,6 +811,7 @@
             "dirty",
             "hot"
           ],
+          "text": "Let's make our park ______! Let's collect the trash.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -768,12 +821,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q036",
+          "id": "p4-eng-u2-l1-q040",
           "section": "Previous Exams",
           "printed_page": 69,
           "pdf_page": 63,
           "type": "mcq",
-          "text": "We ______ the ducks.",
+          "prompt": "We ______ the ducks.",
           "answer": "feed",
           "status": "active",
           "choices": [
@@ -782,6 +835,7 @@
             "feed",
             "plant"
           ],
+          "text": "We ______ the ducks.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -791,12 +845,56 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q037",
+          "id": "p4-eng-u2-l1-q041",
+          "section": "Reading Detail",
+          "printed_page": 70,
+          "pdf_page": 64,
+          "type": "reading_open",
+          "prompt": "What does Amira do with clothes?",
+          "answer": "She collects clothes and gives them to people who need them.",
+          "status": "active",
+          "accepted_answers": [
+            "She collects clothes and gives them to people who need them.",
+            "She collects clothes and gives them to poor people."
+          ],
+          "text": "What does Amira do with clothes?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 70,
+              "id": "elm-u2l1-010"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q042",
+          "section": "Reading Detail",
+          "printed_page": 70,
+          "pdf_page": 64,
+          "type": "reading_open",
+          "prompt": "Who feeds the dogs and cats?",
+          "answer": "Adam.",
+          "status": "active",
+          "accepted_answers": [
+            "Adam.",
+            "Adam feeds the dogs and cats."
+          ],
+          "text": "Who feeds the dogs and cats?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 70,
+              "id": "elm-u2l1-011"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q043",
           "section": "General Exercises",
           "printed_page": 71,
           "pdf_page": 65,
           "type": "mcq",
-          "text": "We ______ flowers and trees in our garden.",
+          "prompt": "We ______ flowers and trees in our garden.",
           "answer": "plant",
           "status": "active",
           "choices": [
@@ -805,52 +903,7 @@
             "feed",
             "do"
           ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 71,
-              "id": "elm-u2l1-010"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q038",
-          "section": "General Exercises",
-          "printed_page": 71,
-          "pdf_page": 65,
-          "type": "mcq",
-          "text": "My neighbors and I volunteer to help our ______.",
-          "answer": "community",
-          "status": "active",
-          "choices": [
-            "community",
-            "clothes",
-            "food",
-            "senses"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 71,
-              "id": "elm-u2l1-011"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q039",
-          "section": "General Exercises",
-          "printed_page": 71,
-          "pdf_page": 65,
-          "type": "mcq",
-          "text": "They ______ trash from the streets.",
-          "answer": "clean",
-          "status": "active",
-          "choices": [
-            "grow",
-            "stay",
-            "keep",
-            "clean"
-          ],
+          "text": "We ______ flowers and trees in our garden.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -860,20 +913,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q040",
+          "id": "p4-eng-u2-l1-q044",
           "section": "General Exercises",
           "printed_page": 71,
           "pdf_page": 65,
           "type": "mcq",
-          "text": "He ______ toys and gives them to poor children.",
-          "answer": "collects",
+          "prompt": "My neighbors and I volunteer to help our ______.",
+          "answer": "community",
           "status": "active",
           "choices": [
-            "to collect",
-            "collect",
-            "collecting",
-            "collects"
+            "community",
+            "clothes",
+            "food",
+            "senses"
           ],
+          "text": "My neighbors and I volunteer to help our ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -883,20 +937,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q041",
+          "id": "p4-eng-u2-l1-q045",
           "section": "General Exercises",
           "printed_page": 71,
           "pdf_page": 65,
           "type": "mcq",
-          "text": "Omar is a clever player. He always ______ a great job in the matches.",
-          "answer": "does",
+          "prompt": "They ______ trash from the streets.",
+          "answer": "clean",
           "status": "active",
           "choices": [
-            "do",
-            "does",
-            "doing",
-            "to do"
+            "grow",
+            "stay",
+            "keep",
+            "clean"
           ],
+          "text": "They ______ trash from the streets.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -906,20 +961,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q042",
+          "id": "p4-eng-u2-l1-q046",
           "section": "General Exercises",
           "printed_page": 71,
           "pdf_page": 65,
           "type": "mcq",
-          "text": "It's fun to ______ and make the park nice for everyone.",
-          "answer": "volunteer",
+          "prompt": "He ______ toys and gives them to poor children.",
+          "answer": "collects",
           "status": "active",
           "choices": [
-            "volunteers",
-            "volunteering",
-            "volunteer",
-            "to volunteer"
+            "to collect",
+            "collect",
+            "collecting",
+            "collects"
           ],
+          "text": "He ______ toys and gives them to poor children.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -929,21 +985,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q043",
-          "section": "Read and Complete",
+          "id": "p4-eng-u2-l1-q047",
+          "section": "General Exercises",
           "printed_page": 71,
           "pdf_page": 65,
-          "type": "complete",
-          "text": "My family and I help our community. Everyone in our ______ helps.",
-          "answer": "community",
+          "type": "mcq",
+          "prompt": "Omar is a clever player. He always ______ a great job in the matches.",
+          "answer": "does",
           "status": "active",
-          "word_bank": [
-            "clothes",
-            "trash",
-            "great",
-            "community",
-            "plants"
+          "choices": [
+            "do",
+            "does",
+            "doing",
+            "to do"
           ],
+          "text": "Omar is a clever player. He always ______ a great job in the matches.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -953,21 +1009,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q044",
-          "section": "Read and Complete",
+          "id": "p4-eng-u2-l1-q048",
+          "section": "General Exercises",
           "printed_page": 71,
           "pdf_page": 65,
-          "type": "complete",
-          "text": "We clean ______ from the streets with our neighbors.",
-          "answer": "trash",
+          "type": "mcq",
+          "prompt": "It's fun to ______ and make the park nice for everyone.",
+          "answer": "volunteer",
           "status": "active",
-          "word_bank": [
-            "clothes",
-            "trash",
-            "great",
-            "community",
-            "plants"
+          "choices": [
+            "volunteers",
+            "volunteering",
+            "volunteered",
+            "volunteer"
           ],
+          "text": "It's fun to ______ and make the park nice for everyone.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -977,13 +1033,13 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q045",
+          "id": "p4-eng-u2-l1-q049",
           "section": "Read and Complete",
           "printed_page": 71,
           "pdf_page": 65,
           "type": "complete",
-          "text": "My father ______ trees in the park.",
-          "answer": "plants",
+          "prompt": "My family and I help our community. Everyone in our ______ helps.",
+          "answer": "community",
           "status": "active",
           "word_bank": [
             "clothes",
@@ -992,6 +1048,7 @@
             "community",
             "plants"
           ],
+          "text": "My family and I help our community. Everyone in our ______ helps.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1001,13 +1058,13 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q046",
+          "id": "p4-eng-u2-l1-q050",
           "section": "Read and Complete",
           "printed_page": 71,
           "pdf_page": 65,
           "type": "complete",
-          "text": "My mother and aunt Salwa collect ______ and give them to people who need them.",
-          "answer": "clothes",
+          "prompt": "We clean ______ from the streets with our neighbors.",
+          "answer": "trash",
           "status": "active",
           "word_bank": [
             "clothes",
@@ -1016,6 +1073,7 @@
             "community",
             "plants"
           ],
+          "text": "We clean ______ from the streets with our neighbors.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1025,14 +1083,22 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q047",
-          "section": "Punctuation",
+          "id": "p4-eng-u2-l1-q051",
+          "section": "Read and Complete",
           "printed_page": 71,
           "pdf_page": 65,
-          "type": "punctuation",
-          "text": "they make the park nice",
-          "answer": "They make the park nice.",
+          "type": "complete",
+          "prompt": "My father ______ trees in the park.",
+          "answer": "plants",
           "status": "active",
+          "word_bank": [
+            "clothes",
+            "trash",
+            "great",
+            "community",
+            "plants"
+          ],
+          "text": "My father ______ trees in the park.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1042,14 +1108,22 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q048",
-          "section": "Punctuation",
+          "id": "p4-eng-u2-l1-q052",
+          "section": "Read and Complete",
           "printed_page": 71,
           "pdf_page": 65,
-          "type": "punctuation",
-          "text": "why do you help your community",
-          "answer": "Why do you help your community?",
+          "type": "complete",
+          "prompt": "My mother and aunt Salwa collect ______ and give them to people who need them.",
+          "answer": "clothes",
           "status": "active",
+          "word_bank": [
+            "clothes",
+            "trash",
+            "great",
+            "community",
+            "plants"
+          ],
+          "text": "My mother and aunt Salwa collect ______ and give them to people who need them.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1059,12 +1133,48 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q049",
+          "id": "p4-eng-u2-l1-q053",
+          "section": "Punctuation",
+          "printed_page": 71,
+          "pdf_page": 65,
+          "type": "punctuation",
+          "prompt": "they make the park nice",
+          "answer": "They make the park nice.",
+          "status": "active",
+          "text": "they make the park nice",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 71,
+              "id": "elm-u2l1-022"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q054",
+          "section": "Punctuation",
+          "printed_page": 71,
+          "pdf_page": 65,
+          "type": "punctuation",
+          "prompt": "why do you help your community",
+          "answer": "Why do you help your community?",
+          "status": "active",
+          "text": "why do you help your community",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 71,
+              "id": "elm-u2l1-023"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q055",
           "section": "Read and Complete",
           "printed_page": 72,
           "pdf_page": 66,
           "type": "complete",
-          "text": "My name is Hassan. I'm in grade four. My brother and I ______ to help in the park.",
+          "prompt": "My name is Hassan. I'm in grade four. My brother and I ______ to help in the park.",
           "answer": "volunteer",
           "status": "active",
           "word_bank": [
@@ -1074,54 +1184,7 @@
             "clean",
             "happy"
           ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 72,
-              "id": "elm-u2l1-022"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q050",
-          "section": "Read and Complete",
-          "printed_page": 72,
-          "pdf_page": 66,
-          "type": "complete",
-          "text": "We ______ the park and collect bottles.",
-          "answer": "clean",
-          "status": "active",
-          "word_bank": [
-            "plant",
-            "collect",
-            "volunteer",
-            "clean",
-            "happy"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 72,
-              "id": "elm-u2l1-023"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q051",
-          "section": "Read and Complete",
-          "printed_page": 72,
-          "pdf_page": 66,
-          "type": "complete",
-          "text": "We clean the park and ______ bottles.",
-          "answer": "collect",
-          "status": "active",
-          "word_bank": [
-            "plant",
-            "collect",
-            "volunteer",
-            "clean",
-            "happy"
-          ],
+          "text": "My name is Hassan. I'm in grade four. My brother and I ______ to help in the park.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1131,13 +1194,13 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q052",
+          "id": "p4-eng-u2-l1-q056",
           "section": "Read and Complete",
           "printed_page": 72,
           "pdf_page": 66,
           "type": "complete",
-          "text": "We ______ trees and flowers.",
-          "answer": "plant",
+          "prompt": "We ______ the park and ______ bottles.",
+          "answer": "clean",
           "status": "active",
           "word_bank": [
             "plant",
@@ -1146,6 +1209,7 @@
             "clean",
             "happy"
           ],
+          "text": "We ______ the park and ______ bottles.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1155,21 +1219,47 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q053",
-          "section": "Reading",
+          "id": "p4-eng-u2-l1-q057",
+          "section": "Read and Complete",
           "printed_page": 72,
           "pdf_page": 66,
-          "type": "reading_mcq",
-          "text": "Ali has ______ sisters.",
-          "answer": "two",
+          "type": "complete",
+          "prompt": "We clean the park and ______ bottles.",
+          "answer": "collect",
           "status": "active",
-          "choices": [
-            "one",
-            "three",
-            "two",
-            "no"
+          "word_bank": [
+            "plant",
+            "collect",
+            "volunteer",
+            "clean",
+            "happy"
           ],
-          "passage_ref": "elm-u2l1-026",
+          "text": "We clean the park and ______ bottles.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 72,
+              "id": "elm-u2l1-026"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q058",
+          "section": "Read and Complete",
+          "printed_page": 72,
+          "pdf_page": 66,
+          "type": "complete",
+          "prompt": "We ______ trees and flowers.",
+          "answer": "plant",
+          "status": "active",
+          "word_bank": [
+            "plant",
+            "collect",
+            "volunteer",
+            "clean",
+            "happy"
+          ],
+          "text": "We ______ trees and flowers.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1179,12 +1269,30 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q054",
+          "id": "p4-eng-u2-l1-q059",
+          "section": "Review through the Exam",
+          "printed_page": 104,
+          "pdf_page": 98,
+          "type": "reorder",
+          "prompt": "the park - trees - plant - I - in",
+          "answer": "I plant trees in the park.",
+          "status": "active",
+          "text": "the park - trees - plant - I - in",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 104,
+              "id": "elm-u2r-002"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q060",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "mcq",
-          "text": "Every morning, Sara ______ her cats.",
+          "prompt": "Every morning, Sara ______ her cats.",
           "answer": "feeds",
           "status": "active",
           "choices": [
@@ -1193,75 +1301,7 @@
             "shares",
             "buys"
           ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 105,
-              "id": "elm-u2r-002"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q055",
-          "section": "Sample Test 3",
-          "printed_page": 105,
-          "pdf_page": 99,
-          "type": "mcq",
-          "text": "______ you walk to school every day?",
-          "answer": "Do",
-          "status": "active",
-          "choices": [
-            "Do",
-            "Are",
-            "Does",
-            "Is"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 105,
-              "id": "elm-u2r-003"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q056",
-          "section": "Sample Test 3",
-          "printed_page": 105,
-          "pdf_page": 99,
-          "type": "mcq",
-          "text": "Ali ______ like to swim in the pool.",
-          "answer": "doesn't",
-          "status": "active",
-          "choices": [
-            "don't",
-            "doesn't",
-            "isn't",
-            "wasn't"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 105,
-              "id": "elm-u2r-004"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q057",
-          "section": "Sample Test 3",
-          "printed_page": 105,
-          "pdf_page": 99,
-          "type": "mcq",
-          "text": "She ______ to help in the community park.",
-          "answer": "volunteers",
-          "status": "active",
-          "choices": [
-            "don't volunteer",
-            "volunteers",
-            "volunteering",
-            "volunteer"
-          ],
+          "text": "Every morning, Sara ______ her cats.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1271,12 +1311,84 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q058",
+          "id": "p4-eng-u2-l1-q061",
+          "section": "Sample Test 3",
+          "printed_page": 105,
+          "pdf_page": 99,
+          "type": "mcq",
+          "prompt": "______ you walk to school every day?",
+          "answer": "Do",
+          "status": "active",
+          "choices": [
+            "Do",
+            "Are",
+            "Does",
+            "Is"
+          ],
+          "text": "______ you walk to school every day?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 105,
+              "id": "elm-u2r-006"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q062",
+          "section": "Sample Test 3",
+          "printed_page": 105,
+          "pdf_page": 99,
+          "type": "mcq",
+          "prompt": "Ali ______ like to swim in the pool.",
+          "answer": "doesn't",
+          "status": "active",
+          "choices": [
+            "don't",
+            "doesn't",
+            "isn't",
+            "wasn't"
+          ],
+          "text": "Ali ______ like to swim in the pool.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 105,
+              "id": "elm-u2r-007"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q063",
+          "section": "Sample Test 3",
+          "printed_page": 105,
+          "pdf_page": 99,
+          "type": "mcq",
+          "prompt": "She ______ to help in the community park.",
+          "answer": "volunteers",
+          "status": "active",
+          "choices": [
+            "don't volunteer",
+            "volunteers",
+            "volunteering",
+            "volunteer"
+          ],
+          "text": "She ______ to help in the community park.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 105,
+              "id": "elm-u2r-008"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q064",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "complete",
-          "text": "We should take public transportation, like the metro and ______.",
+          "prompt": "We should take public transportation, like the metro and ______.",
           "answer": "buses",
           "status": "active",
           "word_bank": [
@@ -1286,21 +1398,22 @@
             "move",
             "cycle"
           ],
+          "text": "We should take public transportation, like the metro and ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 105,
-              "id": "elm-u2r-009"
+              "id": "elm-u2r-012"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q059",
+          "id": "p4-eng-u2-l1-q065",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "complete",
-          "text": "We can also ______ or walk to near places.",
+          "prompt": "We can also ______ or walk to near places.",
           "answer": "cycle",
           "status": "active",
           "word_bank": [
@@ -1310,21 +1423,22 @@
             "move",
             "cycle"
           ],
+          "text": "We can also ______ or walk to near places.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 105,
-              "id": "elm-u2r-010"
+              "id": "elm-u2r-013"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q060",
+          "id": "p4-eng-u2-l1-q066",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
           "type": "reading_mcq",
-          "text": "This text is about our ______.",
+          "prompt": "This text is about ______.",
           "answer": "community's history",
           "status": "active",
           "choices": [
@@ -1333,22 +1447,22 @@
             "traditional clothes",
             "beautiful school"
           ],
-          "passage": "Dear diary, Today, Grandpa told me amazing stories about our community's history. Fifty years ago, our neighborhood was very different! There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning. The tall buildings weren't here then. Instead, there were small houses with beautiful gardens. Everyone knew their neighbors, and children played safely in the streets. There was even a small train station where our park is now! Grandpa showed me old photos. It was a very nice day.",
+          "text": "This text is about ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
-              "id": "elm-u2r-011"
+              "id": "elm-u2r-014"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q061",
+          "id": "p4-eng-u2-l1-q067",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
           "type": "reading_mcq",
-          "text": "The opposite of the underlined word \"old\" is ______.",
+          "prompt": "The opposite of the underlined word \"old\" is ______.",
           "answer": "new",
           "status": "active",
           "choices": [
@@ -1357,66 +1471,116 @@
             "huge",
             "lazy"
           ],
-          "passage_ref": "elm-u2r-011",
+          "text": "The opposite of the underlined word \"old\" is ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
-              "id": "elm-u2r-012"
+              "id": "elm-u2r-015"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q062",
+          "id": "p4-eng-u2-l1-q068",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
           "type": "reading_open",
-          "text": "Where was the old supermarket?",
-          "answer": "Where the big supermarket stands now.",
+          "prompt": "Where did people sell fresh fruits and vegetables?",
+          "answer": "In the old market.",
           "status": "active",
           "accepted_answers": [
-            "Where the big supermarket stands now.",
-            "It was where the big supermarket stands now."
+            "In the old market.",
+            "They sold them in the old market."
           ],
-          "passage_ref": "elm-u2r-011",
+          "text": "Where did people sell fresh fruits and vegetables?",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
-              "id": "elm-u2r-013"
+              "id": "elm-u2r-016"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q063",
+          "id": "p4-eng-u2-l1-q069",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
-          "type": "punctuation",
-          "text": "i feed the dogs and cats",
-          "answer": "I feed the dogs and cats.",
+          "type": "correct_form",
+          "prompt": "Our teacher ______ (don't) give us homework on holidays.",
+          "answer": "doesn't",
           "status": "active",
+          "text": "Our teacher ______ (don't) give us homework on holidays.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 106,
+              "id": "elm-u2r-018"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q070",
+          "section": "Sample Test 3",
+          "printed_page": 106,
+          "pdf_page": 100,
+          "type": "correct_form",
+          "prompt": "______ (Do) Ehab go running in the morning?",
+          "answer": "Does",
+          "status": "active",
+          "text": "______ (Do) Ehab go running in the morning?",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
               "id": "elm-u2r-019"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 108,
-              "id": "elm-u2r-039"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q064",
+          "id": "p4-eng-u2-l1-q071",
+          "section": "Sample Test 3",
+          "printed_page": 106,
+          "pdf_page": 100,
+          "type": "punctuation",
+          "prompt": "what stories do old buildings tell us",
+          "answer": "What stories do old buildings tell us?",
+          "status": "active",
+          "text": "what stories do old buildings tell us",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 106,
+              "id": "elm-u2r-022"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q072",
+          "section": "Sample Test 3",
+          "printed_page": 106,
+          "pdf_page": 100,
+          "type": "punctuation",
+          "prompt": "when we all help we make our community great",
+          "answer": "When we all help, we make our community great.",
+          "status": "active",
+          "text": "when we all help we make our community great",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 106,
+              "id": "elm-u2r-023"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q073",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "mcq",
-          "text": "She ______ cats in the street.",
+          "prompt": "She ______ cats in the street.",
           "answer": "feeds",
           "status": "active",
           "choices": [
@@ -1425,52 +1589,7 @@
             "feeds",
             "wears"
           ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 107,
-              "id": "elm-u2r-022"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q065",
-          "section": "Sample Test 4",
-          "printed_page": 107,
-          "pdf_page": 101,
-          "type": "mcq",
-          "text": "I want to ______ at a local hospital during the summer holiday.",
-          "answer": "volunteer",
-          "status": "active",
-          "choices": [
-            "catch",
-            "protect",
-            "throw",
-            "volunteer"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 107,
-              "id": "elm-u2r-024"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q066",
-          "section": "Sample Test 4",
-          "printed_page": 107,
-          "pdf_page": 101,
-          "type": "mcq",
-          "text": "We ______ go to school on Fridays.",
-          "answer": "don't",
-          "status": "active",
-          "choices": [
-            "doesn't",
-            "don't",
-            "aren't",
-            "isn't"
-          ],
+          "text": "She ______ cats in the street.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1480,12 +1599,60 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q067",
+          "id": "p4-eng-u2-l1-q074",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "mcq",
-          "text": "______ Amira drink milk with her breakfast?",
+          "prompt": "I want to ______ at a local hospital during the summer holiday.",
+          "answer": "volunteer",
+          "status": "active",
+          "choices": [
+            "catch",
+            "protect",
+            "throw",
+            "volunteer"
+          ],
+          "text": "I want to ______ at a local hospital during the summer holiday.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 107,
+              "id": "elm-u2r-027"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q075",
+          "section": "Sample Test 4",
+          "printed_page": 107,
+          "pdf_page": 101,
+          "type": "mcq",
+          "prompt": "We ______ go to school on Fridays.",
+          "answer": "don't",
+          "status": "active",
+          "choices": [
+            "doesn't",
+            "don't",
+            "aren't",
+            "isn't"
+          ],
+          "text": "We ______ go to school on Fridays.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 107,
+              "id": "elm-u2r-028"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q076",
+          "section": "Sample Test 4",
+          "printed_page": 107,
+          "pdf_page": 101,
+          "type": "mcq",
+          "prompt": "______ Amira drink milk with her breakfast?",
           "answer": "Does",
           "status": "active",
           "choices": [
@@ -1494,31 +1661,7 @@
             "Does",
             "Do"
           ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 107,
-              "id": "elm-u2r-026"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l1-q068",
-          "section": "Sample Test 4",
-          "printed_page": 107,
-          "pdf_page": 101,
-          "type": "complete",
-          "text": "We should ______ trees in our community.",
-          "answer": "plant",
-          "status": "active",
-          "word_bank": [
-            "went",
-            "community",
-            "volunteer",
-            "stop",
-            "plastic",
-            "plant"
-          ],
+          "text": "______ Amira drink milk with her breakfast?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1528,62 +1671,84 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q069",
+          "id": "p4-eng-u2-l1-q077",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "complete",
-          "text": "We should keep our ______ clean.",
-          "answer": "community",
+          "prompt": "We should ______ trees in our community.",
+          "answer": "plant",
           "status": "active",
           "word_bank": [
-            "went",
-            "community",
-            "volunteer",
             "stop",
             "plastic",
-            "plant"
+            "plant",
+            "clean"
           ],
+          "text": "We should ______ trees in our community.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 107,
-              "id": "elm-u2r-030"
+              "id": "elm-u2r-032"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q070",
+          "id": "p4-eng-u2-l1-q078",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "complete",
-          "text": "We should use less ______ and walk to school.",
+          "prompt": "We should keep our streets ______.",
+          "answer": "clean",
+          "status": "active",
+          "word_bank": [
+            "stop",
+            "plastic",
+            "plant",
+            "clean"
+          ],
+          "text": "We should keep our streets ______.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 107,
+              "id": "elm-u2r-033"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q079",
+          "section": "Sample Test 4",
+          "printed_page": 107,
+          "pdf_page": 101,
+          "type": "complete",
+          "prompt": "We should use less ______ and walk to school.",
           "answer": "plastic",
           "status": "active",
           "word_bank": [
-            "went",
-            "community",
-            "volunteer",
             "stop",
             "plastic",
-            "plant"
+            "plant",
+            "clean"
           ],
+          "text": "We should use less ______ and walk to school.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 107,
-              "id": "elm-u2r-031"
+              "id": "elm-u2r-034"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q071",
+          "id": "p4-eng-u2-l1-q080",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
           "type": "reading_mcq",
-          "text": "Ahmed lives in ______.",
+          "prompt": "Ahmed lives in ______.",
           "answer": "Cairo",
           "status": "active",
           "choices": [
@@ -1592,22 +1757,22 @@
             "Cairo",
             "Sohag"
           ],
-          "passage": "My name is Ahmed. I live in Cairo. I have a lot of problems in my community. One of these problems is traffic. There are many cars and buses on the roads. This makes traffic very slow. We wait for a long time in traffic. I am always late for work. The traffic is a very dangerous problem. My neighbors and I decided to use buses or bicycles instead of our private cars.",
+          "text": "Ahmed lives in ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 108,
-              "id": "elm-u2r-032"
+              "id": "elm-u2r-035"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q072",
+          "id": "p4-eng-u2-l1-q081",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
           "type": "reading_mcq",
-          "text": "Ahmed is always ______ for work.",
+          "prompt": "Ahmed is always ______ for work.",
           "answer": "late",
           "status": "active",
           "choices": [
@@ -1616,34 +1781,52 @@
             "lazy",
             "slow"
           ],
-          "passage_ref": "elm-u2r-032",
+          "text": "Ahmed is always ______ for work.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 108,
-              "id": "elm-u2r-033"
+              "id": "elm-u2r-036"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l1-q073",
+          "id": "p4-eng-u2-l1-q082",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
           "type": "reading_open",
-          "text": "What did Ahmed and his neighbors decide?",
-          "answer": "They decided to use buses or bicycles instead of their private cars.",
+          "prompt": "What did Ahmed and his neighbors decide?",
+          "answer": "To use buses or bicycles instead of private cars.",
           "status": "active",
           "accepted_answers": [
             "To use buses or bicycles instead of private cars.",
-            "They decided to use buses or bicycles instead of their private cars."
+            "They decided to use buses or bicycles instead of private cars."
           ],
-          "passage_ref": "elm-u2r-032",
+          "text": "What did Ahmed and his neighbors decide?",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 108,
-              "id": "elm-u2r-035"
+              "id": "elm-u2r-038"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l1-q083",
+          "section": "Sample Test 4",
+          "printed_page": 108,
+          "pdf_page": 102,
+          "type": "punctuation",
+          "prompt": "i feed the dogs and cats",
+          "answer": "I feed the dogs and cats.",
+          "status": "active",
+          "text": "i feed the dogs and cats",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 108,
+              "id": "elm-u2r-043"
             }
           ]
         }
@@ -1651,15 +1834,15 @@
     },
     {
       "id": 6,
+      "source_lesson_id": 2,
       "unit": "Unit 2: My Community",
-      "lesson_id": 2,
       "title": "Lesson 2 — Community Problems and Solutions",
       "kind": "Vocabulary, Reading & Present Simple",
-      "summary": "Traffic, trash, problems and solutions with present-simple negatives and questions.",
+      "summary": "Traffic, trash, solutions and present-simple negatives/questions.",
       "focus": [
-        "Identify problems and solutions",
-        "Use do/does and don't/doesn't",
-        "Read community-problem texts"
+        "Identify community problems",
+        "Suggest solutions",
+        "Use do/does and negative forms"
       ],
       "terms": [],
       "questions": [
@@ -2110,7 +2293,7 @@
             {
               "source": "El-Moasser",
               "page": 108,
-              "id": "elm-u2r-038"
+              "id": "elm-u2r-042"
             }
           ]
         },
@@ -2225,27 +2408,6 @@
         },
         {
           "id": "p4-eng-u2-l2-q030",
-          "type": "dialogue_complete",
-          "text": "Yes, I do. I plant trees and ______ in the garden.",
-          "answer": "flowers",
-          "source_page": 72,
-          "status": "active",
-          "word_bank": [
-            "flowers",
-            "plant",
-            "community",
-            "clean"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 72,
-              "id": "bbb-u2r-004"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q031",
           "type": "mcq",
           "text": "We put trash in the ______.",
           "answer": "bins",
@@ -2266,7 +2428,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q032",
+          "id": "p4-eng-u2-l2-q031",
           "type": "mcq",
           "text": "They ______ bins to put trash in them.",
           "answer": "use",
@@ -2287,7 +2449,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q033",
+          "id": "p4-eng-u2-l2-q032",
           "type": "correction",
           "text": "Does he look the bus to school?",
           "answer": "Does he take the bus to school?",
@@ -2302,22 +2464,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q034",
-          "type": "correction",
-          "text": "They aren't like pizza.",
-          "answer": "They don't like pizza.",
-          "source_page": 72,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 72,
-              "id": "bbb-u2r-010"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q035",
+          "id": "p4-eng-u2-l2-q033",
           "type": "correction",
           "text": "She doesn't washes the car.",
           "answer": "She doesn't wash the car.",
@@ -2332,22 +2479,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q036",
-          "type": "correction",
-          "text": "Do they watch movies? – Yes, I do.",
-          "answer": "Do you watch movies? – Yes, I do.",
-          "source_page": 72,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 72,
-              "id": "bbb-u2r-012"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q037",
+          "id": "p4-eng-u2-l2-q034",
           "type": "true_false",
           "text": "Cars move slowly in the morning especially near schools.",
           "answer": "True",
@@ -2367,7 +2499,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q038",
+          "id": "p4-eng-u2-l2-q035",
           "type": "true_false",
           "text": "Some people throw trash on the road.",
           "answer": "True",
@@ -2387,7 +2519,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q039",
+          "id": "p4-eng-u2-l2-q036",
           "type": "reading_mcq",
           "text": "The first problem is ______.",
           "answer": "traffic",
@@ -2409,7 +2541,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q040",
+          "id": "p4-eng-u2-l2-q037",
           "type": "reading_mcq",
           "text": "We can take the school bus instead of ______.",
           "answer": "cars",
@@ -2431,7 +2563,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q041",
+          "id": "p4-eng-u2-l2-q038",
           "type": "mcq",
           "text": "You should throw trash in the ______.",
           "answer": "bin",
@@ -2452,7 +2584,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q042",
+          "id": "p4-eng-u2-l2-q039",
           "type": "mcq",
           "text": "The bus helps ______ traffic.",
           "answer": "reduce",
@@ -2473,7 +2605,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q043",
+          "id": "p4-eng-u2-l2-q040",
           "type": "complete",
           "text": "My community has many ______. Traffic is one of these problems.",
           "answer": "problems",
@@ -2495,7 +2627,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q044",
+          "id": "p4-eng-u2-l2-q041",
           "type": "complete",
           "text": "Cars ______ slowly in the morning.",
           "answer": "move",
@@ -2517,7 +2649,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q045",
+          "id": "p4-eng-u2-l2-q042",
           "type": "complete",
           "text": "Cars move slowly in the morning ______ schools.",
           "answer": "near",
@@ -2539,7 +2671,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q046",
+          "id": "p4-eng-u2-l2-q043",
           "type": "complete",
           "text": "We should use ______ instead of cars.",
           "answer": "buses",
@@ -2561,7 +2693,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q047",
+          "id": "p4-eng-u2-l2-q044",
           "type": "reading_open",
           "text": "What does Sandy's grandpa wear?",
           "answer": "A galabeya and a turban.",
@@ -2581,7 +2713,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q048",
+          "id": "p4-eng-u2-l2-q045",
           "type": "correct_form",
           "text": "Cars ______ (not move) quickly in the morning.",
           "answer": "don't move",
@@ -2596,7 +2728,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q049",
+          "id": "p4-eng-u2-l2-q046",
           "type": "correct_form",
           "text": "We don't ______ (puts) trash in bins.",
           "answer": "put",
@@ -2611,7 +2743,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q050",
+          "id": "p4-eng-u2-l2-q047",
           "type": "correct_form",
           "text": "Omar doesn't ______ (has) dinner with his family.",
           "answer": "have",
@@ -2626,22 +2758,7 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q051",
-          "type": "correct_form",
-          "text": "The sun ______ (appears) at night.",
-          "answer": "disappears",
-          "source_page": 75,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 75,
-              "id": "bbb-u2r-037"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q052",
+          "id": "p4-eng-u2-l2-q048",
           "type": "punctuation",
           "text": "does Ahmed like cats",
           "answer": "Does Ahmed like cats?",
@@ -2655,23 +2772,18 @@
             },
             {
               "source": "El-Moasser",
-              "page": 106,
-              "id": "elm-u2r-020"
-            },
-            {
-              "source": "El-Moasser",
               "page": 108,
-              "id": "elm-u2r-040"
+              "id": "elm-u2r-044"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q053",
+          "id": "p4-eng-u2-l2-q049",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "Trash is a big ______ in my city.",
+          "prompt": "Trash is a big ______ in my city.",
           "answer": "problem",
           "status": "active",
           "choices": [
@@ -2680,6 +2792,7 @@
             "problem",
             "community"
           ],
+          "text": "Trash is a big ______ in my city.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2689,12 +2802,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q054",
+          "id": "p4-eng-u2-l2-q050",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "The mechanic can ______ cars.",
+          "prompt": "The mechanic can ______ cars.",
           "answer": "fix",
           "status": "active",
           "choices": [
@@ -2703,6 +2816,7 @@
             "feed",
             "fix"
           ],
+          "text": "The mechanic can ______ cars.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2712,12 +2826,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q055",
+          "id": "p4-eng-u2-l2-q051",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "Think of a ______ to the traffic problem.",
+          "prompt": "Think of a ______ to the traffic problem.",
           "answer": "solution",
           "status": "active",
           "choices": [
@@ -2726,6 +2840,7 @@
             "ground",
             "sense"
           ],
+          "text": "Think of a ______ to the traffic problem.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2735,20 +2850,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q056",
+          "id": "p4-eng-u2-l2-q052",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "Good people don't throw trash on the ______.",
+          "prompt": "Good people don't throw trash on the ______.",
           "answer": "ground",
           "status": "active",
           "choices": [
             "bin",
+            "air",
             "ground",
-            "basket",
-            "soil"
+            "basket"
           ],
+          "text": "Good people don't throw trash on the ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2758,12 +2874,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q057",
+          "id": "p4-eng-u2-l2-q053",
           "section": "Pop Quiz on Vocabulary",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "My idea can ______ the problem of traffic.",
+          "prompt": "My idea can ______ the problem of traffic.",
           "answer": "solve",
           "status": "active",
           "choices": [
@@ -2772,6 +2888,7 @@
             "grow",
             "throw"
           ],
+          "text": "My idea can ______ the problem of traffic.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2781,12 +2898,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q058",
+          "id": "p4-eng-u2-l2-q054",
           "section": "Previous Exams",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "We can take the bus ______ of the car.",
+          "prompt": "We can take the bus ______ of the car.",
           "answer": "instead",
           "status": "active",
           "choices": [
@@ -2795,6 +2912,7 @@
             "near",
             "far"
           ],
+          "text": "We can take the bus ______ of the car.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2804,12 +2922,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q059",
+          "id": "p4-eng-u2-l2-q055",
           "section": "Previous Exams",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "There are many cars on the ______.",
+          "prompt": "There are many cars on the ______.",
           "answer": "road",
           "status": "active",
           "choices": [
@@ -2818,6 +2936,7 @@
             "garden",
             "routine"
           ],
+          "text": "There are many cars on the ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2827,13 +2946,13 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q060",
+          "id": "p4-eng-u2-l2-q056",
           "section": "Previous Exams",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "Please, put trash in the ______.",
-          "answer": "bin",
+          "prompt": "Please, put trash in the ______.",
+          "answer": "bins",
           "status": "active",
           "choices": [
             "streets",
@@ -2841,6 +2960,7 @@
             "community",
             "road"
           ],
+          "text": "Please, put trash in the ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2850,12 +2970,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q061",
+          "id": "p4-eng-u2-l2-q057",
           "section": "Previous Exams",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "The problem of ______ happens because there are many cars on the road.",
+          "prompt": "The problem of ______ happens because there are many cars on the road.",
           "answer": "traffic",
           "status": "active",
           "choices": [
@@ -2864,6 +2984,7 @@
             "ground",
             "water"
           ],
+          "text": "The problem of ______ happens because there are many cars on the road.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2873,12 +2994,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q062",
+          "id": "p4-eng-u2-l2-q058",
           "section": "Previous Exams",
           "printed_page": 74,
           "pdf_page": 68,
           "type": "mcq",
-          "text": "Cars ______ quickly in the evening because there is less traffic.",
+          "prompt": "Cars ______ quickly in the evening because there is less traffic.",
           "answer": "move",
           "status": "active",
           "choices": [
@@ -2887,6 +3008,7 @@
             "help",
             "feed"
           ],
+          "text": "Cars ______ quickly in the evening because there is less traffic.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2896,12 +3018,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q063",
-          "section": "Pop Quiz on Language in Use",
+          "id": "p4-eng-u2-l2-q059",
+          "section": "Language in Use",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "She ______ like fast food.",
+          "prompt": "She ______ like fast food.",
           "answer": "doesn't",
           "status": "active",
           "choices": [
@@ -2910,6 +3032,7 @@
             "hasn't",
             "isn't"
           ],
+          "text": "She ______ like fast food.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2919,20 +3042,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q064",
-          "section": "Pop Quiz on Language in Use",
+          "id": "p4-eng-u2-l2-q060",
+          "section": "Language in Use",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "Do you ______ your room every day?",
+          "prompt": "Do you ______ your room every day?",
           "answer": "clean",
           "status": "active",
           "choices": [
-            "clean",
+            "cleans",
             "cleaning",
             "cleaned",
             "clean"
           ],
+          "text": "Do you ______ your room every day?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2942,12 +3066,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q065",
-          "section": "Pop Quiz on Language in Use",
+          "id": "p4-eng-u2-l2-q061",
+          "section": "Language in Use",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "I ______ get up early on the weekend.",
+          "prompt": "I ______ get up early on the weekend.",
           "answer": "don't",
           "status": "active",
           "choices": [
@@ -2956,6 +3080,7 @@
             "am not",
             "haven't"
           ],
+          "text": "I ______ get up early on the weekend.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2965,12 +3090,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q066",
-          "section": "Pop Quiz on Language in Use",
+          "id": "p4-eng-u2-l2-q062",
+          "section": "Language in Use",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "He doesn't ______ the guitar.",
+          "prompt": "He doesn't ______ the guitar.",
           "answer": "play",
           "status": "active",
           "choices": [
@@ -2979,6 +3104,7 @@
             "play",
             "played"
           ],
+          "text": "He doesn't ______ the guitar.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -2988,20 +3114,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q067",
+          "id": "p4-eng-u2-l2-q063",
           "section": "Previous Exams",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "Do you ______ how to solve this problem?",
+          "prompt": "Do you ______ how to solve this problem?",
           "answer": "know",
           "status": "active",
           "choices": [
-            "know",
-            "knowing",
             "knew",
-            "knows"
+            "know",
+            "knows",
+            "knowing"
           ],
+          "text": "Do you ______ how to solve this problem?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3011,12 +3138,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q068",
+          "id": "p4-eng-u2-l2-q064",
           "section": "Previous Exams",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "I ______ drink tea in the morning.",
+          "prompt": "I ______ drink tea in the morning.",
           "answer": "don't",
           "status": "active",
           "choices": [
@@ -3025,6 +3152,7 @@
             "aren't",
             "doesn't"
           ],
+          "text": "I ______ drink tea in the morning.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3034,12 +3162,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q069",
+          "id": "p4-eng-u2-l2-q065",
           "section": "Previous Exams",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "mcq",
-          "text": "She ______ eat pizza for breakfast.",
+          "prompt": "She ______ eat pizza for breakfast.",
           "answer": "doesn't",
           "status": "active",
           "choices": [
@@ -3048,6 +3176,7 @@
             "aren't",
             "not"
           ],
+          "text": "She ______ eat pizza for breakfast.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3057,14 +3186,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q070",
+          "id": "p4-eng-u2-l2-q066",
           "section": "Correct Form",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "correct_form",
-          "text": "She doesn't ______ (eats) unhealthy food.",
+          "prompt": "She doesn't ______ (eats) unhealthy food.",
           "answer": "eat",
           "status": "active",
+          "text": "She doesn't ______ (eats) unhealthy food.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3074,14 +3204,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q071",
+          "id": "p4-eng-u2-l2-q067",
           "section": "Correct Form",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "correct_form",
-          "text": "Does Reda ______ (helps) in the park?",
+          "prompt": "Does Reda ______ (helps) in the park?",
           "answer": "help",
           "status": "active",
+          "text": "Does Reda ______ (helps) in the park?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3091,14 +3222,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q072",
+          "id": "p4-eng-u2-l2-q068",
           "section": "Correct Form",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "correct_form",
-          "text": "We ______ (doesn't) like apples, but we love bananas.",
+          "prompt": "We ______ (doesn't) like apples, but we love bananas.",
           "answer": "don't",
           "status": "active",
+          "text": "We ______ (doesn't) like apples, but we love bananas.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3108,14 +3240,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q073",
+          "id": "p4-eng-u2-l2-q069",
           "section": "Correct Form",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "correct_form",
-          "text": "______ (Does) you take long showers?",
+          "prompt": "______ (Does) you take long showers?",
           "answer": "Do",
           "status": "active",
+          "text": "______ (Does) you take long showers?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3125,14 +3258,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q074",
+          "id": "p4-eng-u2-l2-q070",
           "section": "Previous Exams",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "correct_form",
-          "text": "______ (Do) Ali go running in the morning?",
+          "prompt": "______ (Do) Ali go running in the morning?",
           "answer": "Does",
           "status": "active",
+          "text": "______ (Do) Ali go running in the morning?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3142,14 +3276,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q075",
+          "id": "p4-eng-u2-l2-q071",
           "section": "Previous Exams",
           "printed_page": 77,
           "pdf_page": 71,
           "type": "correct_form",
-          "text": "She ______ (don't like) pollution.",
+          "prompt": "She ______ (don't like) pollution.",
           "answer": "doesn't like",
           "status": "active",
+          "text": "She ______ (don't like) pollution.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3159,12 +3294,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q076",
+          "id": "p4-eng-u2-l2-q072",
           "section": "Read and Complete",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "complete",
-          "text": "Our community is an amazing place to live in. However, there are many ______.",
+          "prompt": "Our community is an amazing place to live in. However, there are many ______.",
           "answer": "problems",
           "status": "active",
           "word_bank": [
@@ -3174,6 +3309,7 @@
             "problems",
             "community"
           ],
+          "text": "Our community is an amazing place to live in. However, there are many ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3183,12 +3319,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q077",
+          "id": "p4-eng-u2-l2-q073",
           "section": "Read and Complete",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "complete",
-          "text": "One of these problems is the ______.",
+          "prompt": "One of these problems is the ______.",
           "answer": "traffic",
           "status": "active",
           "word_bank": [
@@ -3198,6 +3334,7 @@
             "problems",
             "community"
           ],
+          "text": "One of these problems is the ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3207,12 +3344,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q078",
+          "id": "p4-eng-u2-l2-q074",
           "section": "Read and Complete",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "complete",
-          "text": "We think we don't need to use ______ every day.",
+          "prompt": "We think we don't need to use ______ every day.",
           "answer": "cars",
           "status": "active",
           "word_bank": [
@@ -3222,6 +3359,7 @@
             "problems",
             "community"
           ],
+          "text": "We think we don't need to use ______ every day.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3231,12 +3369,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q079",
+          "id": "p4-eng-u2-l2-q075",
           "section": "Read and Complete",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "complete",
-          "text": "We can take the school bus ______.",
+          "prompt": "We can take the school bus ______.",
           "answer": "instead",
           "status": "active",
           "word_bank": [
@@ -3246,6 +3384,7 @@
             "problems",
             "community"
           ],
+          "text": "We can take the school bus ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3255,21 +3394,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q080",
+          "id": "p4-eng-u2-l2-q076",
           "section": "Reading",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "reading_mcq",
-          "text": "The opposite of the underlined word \"dirty\" is ______.",
+          "prompt": "The opposite of the underlined word \"dirty\" is ______.",
           "answer": "clean",
           "status": "active",
           "choices": [
             "harmful",
+            "bad",
             "clean",
-            "fast",
-            "slow"
+            "fast"
           ],
-          "passage": "Trash is one of the biggest problems in my neighborhood. It is a very dangerous problem because it can make many people ill. This problem happens because people don't put trash in bins. They throw the trash on the ground so the streets look dirty. Solving this problem isn't easy. So my parents get together with our neighbors and find a solution to this problem. We put bins everywhere.",
+          "text": "The opposite of the underlined word \"dirty\" is ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3279,12 +3418,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q081",
+          "id": "p4-eng-u2-l2-q077",
           "section": "Reading",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "reading_mcq",
-          "text": "The text is about ______.",
+          "prompt": "This text is about ______.",
           "answer": "Trash",
           "status": "active",
           "choices": [
@@ -3293,7 +3432,7 @@
             "Clothes",
             "Healthy food"
           ],
-          "passage_ref": "elm-u2l2-030",
+          "text": "This text is about ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3303,19 +3442,19 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q082",
+          "id": "p4-eng-u2-l2-q078",
           "section": "Reading",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "reading_open",
-          "text": "Why is trash a dangerous problem?",
+          "prompt": "Why is trash a dangerous problem?",
           "answer": "Because it can make many people ill.",
           "status": "active",
           "accepted_answers": [
             "Because it can make many people ill.",
             "It can make many people ill."
           ],
-          "passage_ref": "elm-u2l2-030",
+          "text": "Why is trash a dangerous problem?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3325,19 +3464,19 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q083",
+          "id": "p4-eng-u2-l2-q079",
           "section": "Reading",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "reading_open",
-          "text": "How can they solve this problem?",
-          "answer": "They can put bins everywhere and stop throwing trash on the ground.",
+          "prompt": "How can they solve this problem?",
+          "answer": "By putting bins everywhere.",
           "status": "active",
           "accepted_answers": [
-            "They can put bins everywhere.",
-            "By putting bins everywhere and not throwing trash on the ground."
+            "By putting bins everywhere.",
+            "They can put bins everywhere."
           ],
-          "passage_ref": "elm-u2l2-030",
+          "text": "How can they solve this problem?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3347,19 +3486,19 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q084",
+          "id": "p4-eng-u2-l2-q080",
           "section": "Reading",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "reading_open",
-          "text": "Why does the problem of trash happen?",
-          "answer": "Because people don't put trash in bins; they throw it on the ground.",
+          "prompt": "Why does the problem of trash happen?",
+          "answer": "Because some people throw trash on the ground.",
           "status": "active",
           "accepted_answers": [
-            "Because people don't put trash in bins.",
-            "Because people throw trash on the ground."
+            "Because some people throw trash on the ground.",
+            "People throw trash on the ground."
           ],
-          "passage_ref": "elm-u2l2-030",
+          "text": "Why does the problem of trash happen?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3369,14 +3508,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q085",
+          "id": "p4-eng-u2-l2-q081",
           "section": "Correct Form",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "correct_form",
-          "text": "Do you ______ (got) up early?",
+          "prompt": "Do you ______ (got) up early?",
           "answer": "get",
           "status": "active",
+          "text": "Do you ______ (got) up early?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3386,31 +3526,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q086",
+          "id": "p4-eng-u2-l2-q082",
           "section": "Correct Form",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "correct_form",
-          "text": "Our teacher ______ (don't) come to school by bus.",
-          "answer": "doesn't",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 78,
-              "id": "elm-u2l2-036"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q087",
-          "section": "Correct Form",
-          "printed_page": 78,
-          "pdf_page": 72,
-          "type": "correct_form",
-          "text": "We ______ (doesn't) need new clothes.",
+          "prompt": "We ______ (doesn't) need new clothes.",
           "answer": "don't",
           "status": "active",
+          "text": "We ______ (doesn't) need new clothes.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3420,14 +3544,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q088",
+          "id": "p4-eng-u2-l2-q083",
           "section": "Correct Form",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "correct_form",
-          "text": "______ (Do) she walk to school every day?",
+          "prompt": "______ (Do) she walk to school every day?",
           "answer": "Does",
           "status": "active",
+          "text": "______ (Do) she walk to school every day?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3437,14 +3562,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q089",
+          "id": "p4-eng-u2-l2-q084",
           "section": "Punctuation",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "punctuation",
-          "text": "yes i use the trash bins",
+          "prompt": "yes I use the trash bins",
           "answer": "Yes, I use the trash bins.",
           "status": "active",
+          "text": "yes I use the trash bins",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3454,14 +3580,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q090",
+          "id": "p4-eng-u2-l2-q085",
           "section": "Punctuation",
           "printed_page": 78,
           "pdf_page": 72,
           "type": "punctuation",
-          "text": "do cars move quickly in the morning",
+          "prompt": "do cars move quickly in the morning",
           "answer": "Do cars move quickly in the morning?",
           "status": "active",
+          "text": "do cars move quickly in the morning",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3471,20 +3598,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q091",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q086",
+          "section": "General Exercises",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "mcq",
-          "text": "How can we ______ traffic?",
+          "prompt": "How can we ______ traffic?",
           "answer": "reduce",
           "status": "active",
           "choices": [
             "throw",
-            "traffic",
+            "fix",
             "reduce",
             "put"
           ],
+          "text": "How can we ______ traffic?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3494,12 +3622,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q092",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q087",
+          "section": "General Exercises",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "mcq",
-          "text": "______ your neighbor help in a community park?",
+          "prompt": "______ your neighbor help in a community park?",
           "answer": "Does",
           "status": "active",
           "choices": [
@@ -3508,6 +3636,7 @@
             "Is",
             "Does"
           ],
+          "text": "______ your neighbor help in a community park?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3517,12 +3646,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q093",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q088",
+          "section": "General Exercises",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "mcq",
-          "text": "Some people ______ put trash in bins.",
+          "prompt": "Some people ______ put trash in bins.",
           "answer": "don't",
           "status": "active",
           "choices": [
@@ -3531,6 +3660,7 @@
             "doesn't",
             "don't"
           ],
+          "text": "Some people ______ put trash in bins.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3540,12 +3670,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q094",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q089",
+          "section": "General Exercises",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "mcq",
-          "text": "We have good solutions to ______ the problems.",
+          "prompt": "We have good solutions to ______ the problems.",
           "answer": "solve",
           "status": "active",
           "choices": [
@@ -3554,6 +3684,7 @@
             "move",
             "have"
           ],
+          "text": "We have good solutions to ______ the problems.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3563,12 +3694,12 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q095",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q090",
+          "section": "General Exercises",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "mcq",
-          "text": "Many streets look ______ because of the trash.",
+          "prompt": "Many streets look ______ because of the trash.",
           "answer": "dirty",
           "status": "active",
           "choices": [
@@ -3577,6 +3708,7 @@
             "clean",
             "awesome"
           ],
+          "text": "Many streets look ______ because of the trash.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3586,20 +3718,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q096",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q091",
+          "section": "General Exercises",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "mcq",
-          "text": "The traffic ______ move fast because there are too many cars.",
+          "prompt": "The traffic ______ move fast because there are too many cars.",
           "answer": "doesn't",
           "status": "active",
           "choices": [
             "haven't",
-            "isn't",
             "doesn't",
+            "isn't",
             "don't"
           ],
+          "text": "The traffic ______ move fast because there are too many cars.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3609,14 +3742,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q097",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q092",
+          "section": "Correct Form",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "correct_form",
-          "text": "Do you ______ (studies) Arabic every day?",
+          "prompt": "Do you ______ (studies) Arabic every day?",
           "answer": "study",
           "status": "active",
+          "text": "Do you ______ (studies) Arabic every day?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3626,14 +3760,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q098",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l2-q093",
+          "section": "Correct Form",
           "printed_page": 79,
           "pdf_page": 73,
           "type": "correct_form",
-          "text": "Hala ______ (don't) like dirty places.",
-          "answer": "doesn't",
+          "prompt": "Hala ______ (don't like) dirty places.",
+          "answer": "doesn't like",
           "status": "active",
+          "text": "Hala ______ (don't like) dirty places.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3643,12 +3778,48 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q099",
+          "id": "p4-eng-u2-l2-q094",
+          "section": "Review through the Exam",
+          "printed_page": 104,
+          "pdf_page": 98,
+          "type": "reorder",
+          "prompt": "does - cats - and - Laila - feed",
+          "answer": "Laila feeds cats and dogs.",
+          "status": "active",
+          "text": "does - cats - and - Laila - feed",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 104,
+              "id": "elm-u2r-001"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l2-q095",
+          "section": "Review through the Exam",
+          "printed_page": 104,
+          "pdf_page": 98,
+          "type": "reorder",
+          "prompt": "clean - I - from - trash - the streets",
+          "answer": "I clean trash from the streets.",
+          "status": "active",
+          "text": "clean - I - from - trash - the streets",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 104,
+              "id": "elm-u2r-003"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l2-q096",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "complete",
-          "text": "Our community has many problems. One of these problems is ______.",
+          "prompt": "Our community has many problems. One of these problems is the ______.",
           "answer": "traffic",
           "status": "active",
           "word_bank": [
@@ -3658,21 +3829,22 @@
             "move",
             "cycle"
           ],
+          "text": "Our community has many problems. One of these problems is the ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 105,
-              "id": "elm-u2r-007"
+              "id": "elm-u2r-010"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q100",
+          "id": "p4-eng-u2-l2-q097",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "complete",
-          "text": "Cars don't ______ quickly in the morning, especially near schools.",
+          "prompt": "Cars don't ______ quickly in the morning, especially near schools.",
           "answer": "move",
           "status": "active",
           "word_bank": [
@@ -3682,89 +3854,58 @@
             "move",
             "cycle"
           ],
+          "text": "Cars don't ______ quickly in the morning, especially near schools.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 105,
-              "id": "elm-u2r-008"
+              "id": "elm-u2r-011"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q101",
+          "id": "p4-eng-u2-l2-q098",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
           "type": "correct_form",
-          "text": "Our teacher ______ (don't) give us homework on holidays.",
-          "answer": "doesn't",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 106,
-              "id": "elm-u2r-015"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q102",
-          "section": "Sample Test 3",
-          "printed_page": 106,
-          "pdf_page": 100,
-          "type": "correct_form",
-          "text": "______ (Does) Ehab go running in the morning?",
-          "answer": "Does",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 106,
-              "id": "elm-u2r-016"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q103",
-          "section": "Sample Test 3",
-          "printed_page": 106,
-          "pdf_page": 100,
-          "type": "correct_form",
-          "text": "Do you ______ (feeds) the fish every day?",
+          "prompt": "Do you ______ (feeds) the fish every day?",
           "answer": "feed",
           "status": "active",
+          "text": "Do you ______ (feeds) the fish every day?",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
-              "id": "elm-u2r-017"
+              "id": "elm-u2r-020"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q104",
+          "id": "p4-eng-u2-l2-q099",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
           "type": "correct_form",
-          "text": "Shaza doesn't ______ (uses) plastic bottles.",
+          "prompt": "Shaza doesn't ______ (uses) plastic bottles.",
           "answer": "use",
           "status": "active",
+          "text": "Shaza doesn't ______ (uses) plastic bottles.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
-              "id": "elm-u2r-018"
+              "id": "elm-u2r-021"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q105",
+          "id": "p4-eng-u2-l2-q100",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "mcq",
-          "text": "She ______ like to see trash on the streets.",
+          "prompt": "She ______ like to see trash on the streets.",
           "answer": "doesn't",
           "status": "active",
           "choices": [
@@ -3773,87 +3914,53 @@
             "isn't",
             "aren't"
           ],
+          "text": "She ______ like to see trash on the streets.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 107,
-              "id": "elm-u2r-027"
+              "id": "elm-u2r-030"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q106",
+          "id": "p4-eng-u2-l2-q101",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "complete",
-          "text": "Air pollution is a very dangerous problem. There are many ways to ______ air pollution.",
+          "prompt": "Air pollution is a very dangerous problem. There are many ways to ______ air pollution.",
           "answer": "stop",
           "status": "active",
           "word_bank": [
-            "went",
-            "community",
-            "volunteer",
             "stop",
             "plastic",
-            "plant"
+            "plant",
+            "clean"
           ],
+          "text": "Air pollution is a very dangerous problem. There are many ways to ______ air pollution.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 107,
-              "id": "elm-u2r-028"
+              "id": "elm-u2r-031"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l2-q107",
+          "id": "p4-eng-u2-l2-q102",
           "section": "Sample Test 4",
           "printed_page": 108,
           "pdf_page": 102,
           "type": "reading_open",
-          "text": "How did Ahmed and his neighbors solve the traffic problem?",
+          "prompt": "How did Ahmed and his neighbors solve the traffic problem?",
           "answer": "They decided to use buses or bicycles instead of private cars.",
           "status": "active",
           "accepted_answers": [
-            "They used buses or bicycles instead of private cars.",
-            "They decided to use buses or bicycles instead of private cars."
+            "They decided to use buses or bicycles instead of private cars.",
+            "By using buses or bicycles instead of private cars."
           ],
-          "passage_ref": "elm-u2r-032",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 108,
-              "id": "elm-u2r-034"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q108",
-          "section": "Sample Test 4",
-          "printed_page": 108,
-          "pdf_page": 102,
-          "type": "correct_form",
-          "text": "______ (Does) they have a dog?",
-          "answer": "Do",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 108,
-              "id": "elm-u2r-036"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l2-q109",
-          "section": "Sample Test 4",
-          "printed_page": 108,
-          "pdf_page": 102,
-          "type": "correct_form",
-          "text": "Nourhan doesn't ______ (goes) to the club after school.",
-          "answer": "go",
-          "status": "active",
+          "text": "How did Ahmed and his neighbors solve the traffic problem?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3861,19 +3968,73 @@
               "id": "elm-u2r-037"
             }
           ]
+        },
+        {
+          "id": "p4-eng-u2-l2-q103",
+          "section": "Sample Test 4",
+          "printed_page": 108,
+          "pdf_page": 102,
+          "type": "correct_form",
+          "prompt": "Dalia doesn't ______ (buys) plastic bottles.",
+          "answer": "buy",
+          "status": "active",
+          "text": "Dalia doesn't ______ (buys) plastic bottles.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 108,
+              "id": "elm-u2r-039"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l2-q104",
+          "section": "Sample Test 4",
+          "printed_page": 108,
+          "pdf_page": 102,
+          "type": "correct_form",
+          "prompt": "______ (Does) they have a dog?",
+          "answer": "Do",
+          "status": "active",
+          "text": "______ (Does) they have a dog?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 108,
+              "id": "elm-u2r-040"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l2-q105",
+          "section": "Sample Test 4",
+          "printed_page": 108,
+          "pdf_page": 102,
+          "type": "correct_form",
+          "prompt": "Nourhan doesn't ______ (goes) to the club after school.",
+          "answer": "go",
+          "status": "active",
+          "text": "Nourhan doesn't ______ (goes) to the club after school.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 108,
+              "id": "elm-u2r-041"
+            }
+          ]
         }
       ]
     },
     {
       "id": 7,
+      "source_lesson_id": 3,
       "unit": "Unit 2: My Community",
-      "lesson_id": 3,
       "title": "Lesson 3 — Egypt: My Culture",
       "kind": "Culture & Language",
-      "summary": "Delta and Upper Egypt, traditions, crafts, celebrations and prefixes.",
+      "summary": "Delta and Upper Egypt traditions, culture, crafts and prefixes.",
       "focus": [
         "Use culture vocabulary",
-        "Read about Egyptian regions",
+        "Understand regional traditions",
         "Use negative prefixes correctly"
       ],
       "terms": [],
@@ -3896,6 +4057,27 @@
               "source": "Bit by Bit",
               "page": 62,
               "id": "bbb-u2l3-001"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q002",
+          "type": "mcq",
+          "text": "Egyptians are proud of their ______ and love to celebrate together.",
+          "answer": "culture",
+          "source_page": 62,
+          "status": "active",
+          "choices": [
+            "songs",
+            "carpets",
+            "culture",
+            "factories"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 62,
+              "id": "bbb-u2l3-002"
             }
           ]
         },
@@ -4006,7 +4188,7 @@
             {
               "source": "El-Moasser",
               "page": 89,
-              "id": "elm-u2l3-039"
+              "id": "elm-u2l3-042"
             }
           ]
         },
@@ -4033,7 +4215,7 @@
             {
               "source": "El-Moasser",
               "page": 89,
-              "id": "elm-u2l3-040"
+              "id": "elm-u2l3-043"
             }
           ]
         },
@@ -4056,11 +4238,6 @@
               "source": "Bit by Bit",
               "page": 62,
               "id": "bbb-u2l3-009"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 89,
-              "id": "elm-u2l3-041"
             }
           ]
         },
@@ -4087,7 +4264,7 @@
             {
               "source": "El-Moasser",
               "page": 89,
-              "id": "elm-u2l3-042"
+              "id": "elm-u2l3-045"
             }
           ]
         },
@@ -4340,7 +4517,7 @@
           "printed_page": 82,
           "pdf_page": 76,
           "type": "mcq",
-          "text": "We ______ Eid Al-Fitr with our families.",
+          "prompt": "We ______ Eid Al-Fitr with our families.",
           "answer": "celebrate",
           "status": "active",
           "choices": [
@@ -4349,6 +4526,7 @@
             "grow",
             "put"
           ],
+          "text": "We ______ Eid Al-Fitr with our families.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4363,7 +4541,7 @@
           "printed_page": 82,
           "pdf_page": 76,
           "type": "mcq",
-          "text": "Our house looks beautiful with these ______.",
+          "prompt": "Our house looks beautiful with these ______.",
           "answer": "decorations",
           "status": "active",
           "choices": [
@@ -4372,6 +4550,7 @@
             "traditions",
             "factories"
           ],
+          "text": "Our house looks beautiful with these ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4386,7 +4565,7 @@
           "printed_page": 82,
           "pdf_page": 76,
           "type": "mcq",
-          "text": "Some people ______ colorful carpets by hand.",
+          "prompt": "Some people ______ colorful carpets by hand.",
           "answer": "weave",
           "status": "active",
           "choices": [
@@ -4395,6 +4574,7 @@
             "grow",
             "tell"
           ],
+          "text": "Some people ______ colorful carpets by hand.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4409,7 +4589,7 @@
           "printed_page": 82,
           "pdf_page": 76,
           "type": "mcq",
-          "text": "Mobiles are ______ inventions.",
+          "prompt": "Mobiles are ______ inventions.",
           "answer": "modern",
           "status": "active",
           "choices": [
@@ -4418,6 +4598,7 @@
             "ancient",
             "modern"
           ],
+          "text": "Mobiles are ______ inventions.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4432,7 +4613,7 @@
           "printed_page": 82,
           "pdf_page": 76,
           "type": "mcq",
-          "text": "Girls like to wear ______ dresses.",
+          "prompt": "Girls like to wear ______ dresses.",
           "answer": "stylish",
           "status": "active",
           "choices": [
@@ -4441,6 +4622,7 @@
             "proud",
             "strong"
           ],
+          "text": "Girls like to wear ______ dresses.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4455,7 +4637,7 @@
           "printed_page": 83,
           "pdf_page": 77,
           "type": "mcq",
-          "text": "Houses are ______ in bright colors.",
+          "prompt": "Houses are ______ in bright colors.",
           "answer": "painted",
           "status": "active",
           "choices": [
@@ -4464,6 +4646,7 @@
             "painted",
             "shared"
           ],
+          "text": "Houses are ______ in bright colors.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4478,7 +4661,7 @@
           "printed_page": 83,
           "pdf_page": 77,
           "type": "mcq",
-          "text": "Egyptians eat colorful eggs in the Spring ______.",
+          "prompt": "Egyptians eat colorful eggs in the Spring ______.",
           "answer": "Festival",
           "status": "active",
           "choices": [
@@ -4487,6 +4670,7 @@
             "Festival",
             "Craft"
           ],
+          "text": "Egyptians eat colorful eggs in the Spring ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4501,7 +4685,7 @@
           "printed_page": 83,
           "pdf_page": 77,
           "type": "mcq",
-          "text": "They make juice from sugar ______.",
+          "prompt": "They make juice from sugar ______.",
           "answer": "cane",
           "status": "active",
           "choices": [
@@ -4510,6 +4694,7 @@
             "cane",
             "coin"
           ],
+          "text": "They make juice from sugar ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4524,8 +4709,8 @@
           "printed_page": 83,
           "pdf_page": 77,
           "type": "mcq",
-          "text": "Ancient Egyptian houses had beautiful ______.",
-          "answer": "designs",
+          "prompt": "Ancient Egyptian houses had beautiful ______.",
+          "answer": "courtyards",
           "status": "active",
           "choices": [
             "designs",
@@ -4533,6 +4718,7 @@
             "turbans",
             "regions"
           ],
+          "text": "Ancient Egyptian houses had beautiful ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4547,7 +4733,7 @@
           "printed_page": 83,
           "pdf_page": 77,
           "type": "mcq",
-          "text": "We wear special ______ in festivals.",
+          "prompt": "We wear special ______ in festivals.",
           "answer": "outfits",
           "status": "active",
           "choices": [
@@ -4556,6 +4742,7 @@
             "outfits",
             "flags"
           ],
+          "text": "We wear special ______ in festivals.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4570,7 +4757,31 @@
           "printed_page": 83,
           "pdf_page": 77,
           "type": "mcq",
-          "text": "My mother told me ______ about her family.",
+          "prompt": "Egyptians are proud of their ______, and they love to celebrate together.",
+          "answer": "culture",
+          "status": "active",
+          "choices": [
+            "culture",
+            "songs",
+            "carpets",
+            "factories"
+          ],
+          "text": "Egyptians are proud of their ______, and they love to celebrate together.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 83,
+              "id": "elm-u2l3-011"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q036",
+          "section": "Previous Exams",
+          "printed_page": 83,
+          "pdf_page": 77,
+          "type": "mcq",
+          "prompt": "My mother told me ______ about her family.",
           "answer": "stories",
           "status": "active",
           "choices": [
@@ -4579,6 +4790,7 @@
             "stories",
             "books"
           ],
+          "text": "My mother told me ______ about her family.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4588,12 +4800,55 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q036",
-          "section": "Pop Quiz on Language in Use",
+          "id": "p4-eng-u2-l3-q037",
+          "section": "Reading Detail",
+          "printed_page": 84,
+          "pdf_page": 78,
+          "type": "reading_open",
+          "prompt": "Where is the Delta?",
+          "answer": "It's in the north of Egypt.",
+          "status": "active",
+          "accepted_answers": [
+            "In the north of Egypt.",
+            "It's in the north of Egypt."
+          ],
+          "text": "Where is the Delta?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 84,
+              "id": "elm-u2l3-013"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q038",
+          "section": "Reading Detail",
+          "printed_page": 84,
+          "pdf_page": 78,
+          "type": "reading_open",
+          "prompt": "Where do people grow sugar cane?",
+          "answer": "In Upper Egypt.",
+          "status": "active",
+          "accepted_answers": [
+            "In Upper Egypt."
+          ],
+          "text": "Where do people grow sugar cane?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 84,
+              "id": "elm-u2l3-014"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q039",
+          "section": "Language in Use",
           "printed_page": 86,
           "pdf_page": 80,
           "type": "mcq",
-          "text": "______ sleep is bad for your health.",
+          "prompt": "______ sleep is bad for your health.",
           "answer": "Irregular",
           "status": "active",
           "choices": [
@@ -4602,52 +4857,7 @@
             "Honest",
             "Responsible"
           ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 86,
-              "id": "elm-u2l3-013"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l3-q037",
-          "section": "Pop Quiz on Language in Use",
-          "printed_page": 86,
-          "pdf_page": 80,
-          "type": "mcq",
-          "text": "Stars ______ in the morning.",
-          "answer": "disappear",
-          "status": "active",
-          "choices": [
-            "appear",
-            "disappear",
-            "dislike",
-            "like"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 86,
-              "id": "elm-u2l3-014"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l3-q038",
-          "section": "Pop Quiz on Language in Use",
-          "printed_page": 86,
-          "pdf_page": 80,
-          "type": "mcq",
-          "text": "It is ______ to take money that is not ours.",
-          "answer": "illegal",
-          "status": "active",
-          "choices": [
-            "legal",
-            "responsible",
-            "illegal",
-            "relevant"
-          ],
+          "text": "______ sleep is bad for your health.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4657,20 +4867,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q039",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l3-q040",
+          "section": "Language in Use",
           "printed_page": 86,
           "pdf_page": 80,
           "type": "mcq",
-          "text": "It is ______ to smoke here.",
-          "answer": "illegal",
+          "prompt": "Stars ______ in the morning.",
+          "answer": "disappear",
           "status": "active",
           "choices": [
-            "legal",
-            "illegal",
-            "like",
-            "dislike"
+            "appear",
+            "disappear",
+            "dislike",
+            "like"
           ],
+          "text": "Stars ______ in the morning.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4680,20 +4891,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q040",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l3-q041",
+          "section": "Language in Use",
           "printed_page": 86,
           "pdf_page": 80,
           "type": "mcq",
-          "text": "What Omar says is ______. It doesn't make sense.",
-          "answer": "illogical",
+          "prompt": "It is ______ to take money that is not ours.",
+          "answer": "illegal",
           "status": "active",
           "choices": [
-            "illogical",
-            "appear",
-            "dishonest",
-            "dislike"
+            "legal",
+            "responsible",
+            "illegal",
+            "relevant"
           ],
+          "text": "It is ______ to take money that is not ours.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4703,65 +4915,50 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q041",
+          "id": "p4-eng-u2-l3-q042",
           "section": "Previous Exams",
-          "printed_page": 87,
-          "pdf_page": 81,
+          "printed_page": 86,
+          "pdf_page": 80,
           "type": "mcq",
-          "text": "The teacher says my question is ______ to the lesson.",
-          "answer": "irrelevant",
+          "prompt": "It is ______ to smoke here.",
+          "answer": "illegal",
           "status": "active",
           "choices": [
             "legal",
-            "irrelevant",
-            "appear",
-            "irresponsible"
+            "illegal",
+            "like",
+            "dislike"
           ],
+          "text": "It is ______ to smoke here.",
           "source_refs": [
             {
               "source": "El-Moasser",
-              "page": 87,
+              "page": 86,
               "id": "elm-u2l3-018"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q042",
+          "id": "p4-eng-u2-l3-q043",
           "section": "Previous Exams",
-          "printed_page": 87,
-          "pdf_page": 81,
+          "printed_page": 86,
+          "pdf_page": 80,
           "type": "mcq",
-          "text": "The cat always ______ after eating all the food.",
-          "answer": "disappears",
+          "prompt": "What Omar says is ______. It doesn't make sense.",
+          "answer": "illogical",
           "status": "active",
           "choices": [
-            "irregular",
-            "disappears",
-            "illegal",
-            "dishonest"
+            "illogical",
+            "appear",
+            "dishonest",
+            "dislike"
           ],
+          "text": "What Omar says is ______. It doesn't make sense.",
           "source_refs": [
             {
               "source": "El-Moasser",
-              "page": 87,
+              "page": 86,
               "id": "elm-u2l3-019"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l3-q043",
-          "section": "Correct Form",
-          "printed_page": 87,
-          "pdf_page": 81,
-          "type": "correct_form",
-          "text": "The plane ______ (appeared) behind the clouds.",
-          "answer": "disappeared",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 87,
-              "id": "elm-u2l3-020"
             }
           ]
         },
@@ -4771,14 +4968,15 @@
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "It's ______ (legal) to use the mobile when you drive.",
-          "answer": "illegal",
+          "prompt": "The plane ______ (appeared) behind the clouds.",
+          "answer": "disappeared",
           "status": "active",
+          "text": "The plane ______ (appeared) behind the clouds.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 87,
-              "id": "elm-u2l3-021"
+              "id": "elm-u2l3-020"
             }
           ]
         },
@@ -4788,14 +4986,15 @@
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "My grandpa ______ (likes) noise and pollution.",
-          "answer": "dislikes",
+          "prompt": "It's ______ (legal) to use the mobile when you drive.",
+          "answer": "illegal",
           "status": "active",
+          "text": "It's ______ (legal) to use the mobile when you drive.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 87,
-              "id": "elm-u2l3-022"
+              "id": "elm-u2l3-021"
             }
           ]
         },
@@ -4805,14 +5004,15 @@
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "Rain is ______ (regular) in the dry desert.",
-          "answer": "irregular",
+          "prompt": "My grandpa ______ (likes) noise and pollution.",
+          "answer": "dislikes",
           "status": "active",
+          "text": "My grandpa ______ (likes) noise and pollution.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 87,
-              "id": "elm-u2l3-023"
+              "id": "elm-u2l3-022"
             }
           ]
         },
@@ -4822,9 +5022,28 @@
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "Your question is ______ (relevant). We are not talking about that.",
+          "prompt": "Rain is ______ (regular) in the dry desert.",
+          "answer": "irregular",
+          "status": "active",
+          "text": "Rain is ______ (regular) in the dry desert.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 87,
+              "id": "elm-u2l3-023"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q048",
+          "section": "Correct Form",
+          "printed_page": 87,
+          "pdf_page": 81,
+          "type": "correct_form",
+          "prompt": "Your question is ______ (relevant). We are not talking about that.",
           "answer": "irrelevant",
           "status": "active",
+          "text": "Your question is ______ (relevant). We are not talking about that.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4834,14 +5053,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q048",
-          "section": "Previous Exams",
+          "id": "p4-eng-u2-l3-q049",
+          "section": "Correct Form",
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "The verb \"make\" has an ______ (regular) past form.",
-          "answer": "irregular",
+          "prompt": "The children are ______ (responsible). They waste their time.",
+          "answer": "irresponsible",
           "status": "active",
+          "text": "The children are ______ (responsible). They waste their time.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4851,14 +5071,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q049",
+          "id": "p4-eng-u2-l3-q050",
           "section": "Previous Exams",
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "He is ______ (responsible). He forgets his keys.",
-          "answer": "irresponsible",
+          "prompt": "The verb \"make\" has an ______ (regular) past form.",
+          "answer": "irregular",
           "status": "active",
+          "text": "The verb \"make\" has an ______ (regular) past form.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4868,14 +5089,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q050",
+          "id": "p4-eng-u2-l3-q051",
           "section": "Previous Exams",
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "It is ______ (legal) to drive here. It isn't safe.",
-          "answer": "illegal",
+          "prompt": "He is ______ (responsible). He forgets his keys.",
+          "answer": "irresponsible",
           "status": "active",
+          "text": "He is ______ (responsible). He forgets his keys.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4885,14 +5107,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q051",
+          "id": "p4-eng-u2-l3-q052",
           "section": "Previous Exams",
           "printed_page": 87,
           "pdf_page": 81,
           "type": "correct_form",
-          "text": "The students are ______ (responsible). Their classroom is very dirty.",
-          "answer": "irresponsible",
+          "prompt": "It is ______ (legal) to drive here. It isn't safe.",
+          "answer": "illegal",
           "status": "active",
+          "text": "It is ______ (legal) to drive here. It isn't safe.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4902,48 +5125,20 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q052",
-          "section": "General Exercises",
-          "printed_page": 88,
-          "pdf_page": 82,
-          "type": "mcq",
-          "text": "We like football, but we ______ tennis.",
-          "answer": "dislike",
-          "status": "active",
-          "choices": [
-            "like",
-            "dislike",
-            "likes",
-            "doesn't like"
-          ],
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 88,
-              "id": "elm-u2l3-029"
-            }
-          ]
-        },
-        {
           "id": "p4-eng-u2-l3-q053",
-          "section": "General Exercises",
-          "printed_page": 88,
-          "pdf_page": 82,
-          "type": "mcq",
-          "text": "Egypt has two special ______: the Delta and Upper Egypt.",
-          "answer": "regions",
+          "section": "Previous Exams",
+          "printed_page": 87,
+          "pdf_page": 81,
+          "type": "correct_form",
+          "prompt": "The students are ______ (responsible). Their classroom is very dirty.",
+          "answer": "irresponsible",
           "status": "active",
-          "choices": [
-            "regions",
-            "flags",
-            "traditions",
-            "events"
-          ],
+          "text": "The students are ______ (responsible). Their classroom is very dirty.",
           "source_refs": [
             {
               "source": "El-Moasser",
-              "page": 88,
-              "id": "elm-u2l3-030"
+              "page": 87,
+              "id": "elm-u2l3-029"
             }
           ]
         },
@@ -4953,20 +5148,21 @@
           "printed_page": 88,
           "pdf_page": 82,
           "type": "mcq",
-          "text": "He is ______ of his famous father.",
-          "answer": "proud",
+          "prompt": "We like football, but we ______ tennis.",
+          "answer": "dislike",
           "status": "active",
           "choices": [
-            "greedy",
-            "honest",
-            "proud",
-            "smart"
+            "like",
+            "dislike",
+            "likes",
+            "doesn't like"
           ],
+          "text": "We like football, but we ______ tennis.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 88,
-              "id": "elm-u2l3-031"
+              "id": "elm-u2l3-030"
             }
           ]
         },
@@ -4976,20 +5172,21 @@
           "printed_page": 88,
           "pdf_page": 82,
           "type": "mcq",
-          "text": "We ______ the floor with beautiful carpets.",
-          "answer": "cover",
+          "prompt": "______ and shirts are modern clothes.",
+          "answer": "Pants",
           "status": "active",
           "choices": [
-            "covers",
-            "doesn't cover",
-            "hasn't cover",
-            "cover"
+            "Galabeyas",
+            "Pants",
+            "Crafts",
+            "Turbans"
           ],
+          "text": "______ and shirts are modern clothes.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 88,
-              "id": "elm-u2l3-032"
+              "id": "elm-u2l3-031"
             }
           ]
         },
@@ -4999,15 +5196,40 @@
           "printed_page": 88,
           "pdf_page": 82,
           "type": "mcq",
-          "text": "Farmers ______ the cotton from fields by hand.",
-          "answer": "harvest",
+          "prompt": "Egypt has two special ______: the Delta and Upper Egypt.",
+          "answer": "regions",
           "status": "active",
           "choices": [
-            "harvest",
-            "harvests",
-            "harvesting",
-            "is harvesting"
+            "regions",
+            "flags",
+            "traditions",
+            "events"
           ],
+          "text": "Egypt has two special ______: the Delta and Upper Egypt.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 88,
+              "id": "elm-u2l3-032"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q057",
+          "section": "General Exercises",
+          "printed_page": 88,
+          "pdf_page": 82,
+          "type": "mcq",
+          "prompt": "He is ______ of his famous father.",
+          "answer": "proud",
+          "status": "active",
+          "choices": [
+            "greedy",
+            "honest",
+            "proud",
+            "smart"
+          ],
+          "text": "He is ______ of his famous father.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5017,14 +5239,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q057",
-          "section": "Correct Form",
+          "id": "p4-eng-u2-l3-q058",
+          "section": "General Exercises",
           "printed_page": 88,
           "pdf_page": 82,
-          "type": "correct_form",
-          "text": "He is ______ (honest). He doesn't tell the truth.",
-          "answer": "dishonest",
+          "type": "mcq",
+          "prompt": "We ______ the floor with beautiful carpets.",
+          "answer": "cover",
           "status": "active",
+          "choices": [
+            "covers",
+            "doesn't cover",
+            "hasn't cover",
+            "cover"
+          ],
+          "text": "We ______ the floor with beautiful carpets.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5034,14 +5263,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q058",
-          "section": "Correct Form",
+          "id": "p4-eng-u2-l3-q059",
+          "section": "General Exercises",
           "printed_page": 88,
           "pdf_page": 82,
-          "type": "correct_form",
-          "text": "It is ______ (responsible) to throw trash on the ground.",
-          "answer": "irresponsible",
+          "type": "mcq",
+          "prompt": "Farmers ______ the cotton from fields by hand.",
+          "answer": "harvest",
           "status": "active",
+          "choices": [
+            "harvest",
+            "harvests",
+            "harvesting",
+            "is harvesting"
+          ],
+          "text": "Farmers ______ the cotton from fields by hand.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5051,14 +5287,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q059",
+          "id": "p4-eng-u2-l3-q060",
           "section": "Correct Form",
           "printed_page": 88,
           "pdf_page": 82,
           "type": "correct_form",
-          "text": "No one likes his idea. It's ______ (logical).",
-          "answer": "illogical",
+          "prompt": "He is ______ (honest). He doesn't tell the truth.",
+          "answer": "dishonest",
           "status": "active",
+          "text": "He is ______ (honest). He doesn't tell the truth.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5068,14 +5305,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q060",
-          "section": "Punctuation",
+          "id": "p4-eng-u2-l3-q061",
+          "section": "Correct Form",
           "printed_page": 88,
           "pdf_page": 82,
-          "type": "punctuation",
-          "text": "my father works in a cotton factory",
-          "answer": "My father works in a cotton factory.",
+          "type": "correct_form",
+          "prompt": "Sara ______ (isn't) study at night.",
+          "answer": "doesn't",
           "status": "active",
+          "text": "Sara ______ (isn't) study at night.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5085,14 +5323,15 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q061",
-          "section": "Punctuation",
+          "id": "p4-eng-u2-l3-q062",
+          "section": "Correct Form",
           "printed_page": 88,
           "pdf_page": 82,
-          "type": "punctuation",
-          "text": "which part of Egypt are you from",
-          "answer": "Which part of Egypt are you from?",
+          "type": "correct_form",
+          "prompt": "It is ______ (responsible) to throw trash on the ground.",
+          "answer": "irresponsible",
           "status": "active",
+          "text": "It is ______ (responsible) to throw trash on the ground.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5102,45 +5341,76 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q062",
-          "section": "Reading",
-          "printed_page": 89,
-          "pdf_page": 83,
-          "type": "reading_mcq",
-          "text": "Upper Egypt is in the ______ part of Egypt.",
-          "answer": "southern",
+          "id": "p4-eng-u2-l3-q063",
+          "section": "Correct Form",
+          "printed_page": 88,
+          "pdf_page": 82,
+          "type": "correct_form",
+          "prompt": "No one likes his idea. It's ______ (logical).",
+          "answer": "illogical",
           "status": "active",
-          "choices": [
-            "northern",
-            "southern",
-            "eastern",
-            "middle"
-          ],
-          "passage": "Northern Egypt has the Delta with rice fields and factories. People wear modern clothes or traditional galabeyas. Southern Upper Egypt has sugar cane farms and hand-made carpets. Nubian villages have bright houses. Both regions share holidays and delicious food. Egyptians work hard, but always make time for family and celebrations. Their culture is old, but still strong today. Egyptians are always proud of their culture and traditions.",
+          "text": "No one likes his idea. It's ______ (logical).",
           "source_refs": [
             {
               "source": "El-Moasser",
-              "page": 89,
-              "id": "elm-u2l3-043"
+              "page": 88,
+              "id": "elm-u2l3-039"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q063",
-          "section": "Reading",
+          "id": "p4-eng-u2-l3-q064",
+          "section": "Punctuation",
+          "printed_page": 88,
+          "pdf_page": 82,
+          "type": "punctuation",
+          "prompt": "my father works in a cotton factory",
+          "answer": "My father works in a cotton factory.",
+          "status": "active",
+          "text": "my father works in a cotton factory",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 88,
+              "id": "elm-u2l3-040"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q065",
+          "section": "Punctuation",
+          "printed_page": 88,
+          "pdf_page": 82,
+          "type": "punctuation",
+          "prompt": "which part of Egypt are you from",
+          "answer": "Which part of Egypt are you from?",
+          "status": "active",
+          "text": "which part of Egypt are you from",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 88,
+              "id": "elm-u2l3-041"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q066",
+          "section": "Read and Complete",
           "printed_page": 89,
           "pdf_page": 83,
-          "type": "reading_mcq",
-          "text": "Egypt's culture is ______.",
-          "answer": "old",
+          "type": "complete",
+          "prompt": "Grandma wears ______ dresses.",
+          "answer": "colorful",
           "status": "active",
-          "choices": [
-            "new",
-            "modern",
-            "small",
-            "old"
+          "word_bank": [
+            "galabeyas",
+            "Upper",
+            "sugar cane",
+            "colorful",
+            "helpful"
           ],
-          "passage_ref": "elm-u2l3-043",
+          "text": "Grandma wears ______ dresses.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5150,41 +5420,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q064",
+          "id": "p4-eng-u2-l3-q067",
           "section": "Reading",
           "printed_page": 89,
           "pdf_page": 83,
-          "type": "reading_open",
-          "text": "What do Nubian villages have?",
-          "answer": "Bright houses.",
+          "type": "reading_mcq",
+          "prompt": "Upper Egypt is in the ______ part of Egypt.",
+          "answer": "southern",
           "status": "active",
-          "accepted_answers": [
-            "Bright houses.",
-            "They have bright houses."
+          "choices": [
+            "northern",
+            "southern",
+            "eastern",
+            "middle"
           ],
-          "passage_ref": "elm-u2l3-043",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 89,
-              "id": "elm-u2l3-045"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l3-q065",
-          "section": "Reading",
-          "printed_page": 89,
-          "pdf_page": 83,
-          "type": "reading_open",
-          "text": "What do both regions share?",
-          "answer": "Holidays and delicious food.",
-          "status": "active",
-          "accepted_answers": [
-            "Holidays and delicious food.",
-            "They share holidays and delicious food."
-          ],
-          "passage_ref": "elm-u2l3-043",
+          "text": "Upper Egypt is in the ______ part of Egypt.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5194,19 +5444,21 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q066",
+          "id": "p4-eng-u2-l3-q068",
           "section": "Reading",
           "printed_page": 89,
           "pdf_page": 83,
-          "type": "reading_open",
-          "text": "What do people wear in Northern Egypt?",
-          "answer": "Modern clothes or traditional galabeyas.",
+          "type": "reading_mcq",
+          "prompt": "Egypt's culture is ______.",
+          "answer": "old",
           "status": "active",
-          "accepted_answers": [
-            "Modern clothes or traditional galabeyas.",
-            "They wear modern clothes or traditional galabeyas."
+          "choices": [
+            "new",
+            "modern",
+            "small",
+            "old"
           ],
-          "passage_ref": "elm-u2l3-043",
+          "text": "Egypt's culture is ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5216,12 +5468,78 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q067",
+          "id": "p4-eng-u2-l3-q069",
+          "section": "Reading",
+          "printed_page": 89,
+          "pdf_page": 83,
+          "type": "reading_open",
+          "prompt": "What do the Nubian villages have?",
+          "answer": "Houses painted in bright colors and special designs.",
+          "status": "active",
+          "accepted_answers": [
+            "Houses painted in bright colors and special designs.",
+            "Brightly painted houses and special designs."
+          ],
+          "text": "What do the Nubian villages have?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 89,
+              "id": "elm-u2l3-048"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q070",
+          "section": "Reading",
+          "printed_page": 89,
+          "pdf_page": 83,
+          "type": "reading_open",
+          "prompt": "What do both regions share?",
+          "answer": "Many of the same traditions.",
+          "status": "active",
+          "accepted_answers": [
+            "Many of the same traditions.",
+            "They share many of the same traditions."
+          ],
+          "text": "What do both regions share?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 89,
+              "id": "elm-u2l3-049"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q071",
+          "section": "Reading",
+          "printed_page": 89,
+          "pdf_page": 83,
+          "type": "reading_open",
+          "prompt": "What do people wear in Northern Egypt?",
+          "answer": "Modern clothes like pants and shirts.",
+          "status": "active",
+          "accepted_answers": [
+            "Modern clothes like pants and shirts.",
+            "Pants and shirts."
+          ],
+          "text": "What do people wear in Northern Egypt?",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 89,
+              "id": "elm-u2l3-050"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l3-q072",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "mcq",
-          "text": "The galabeya is one of the ______ outfits in Egypt.",
+          "prompt": "The galabeya is one of the ______ outfits in Egypt.",
           "answer": "traditional",
           "status": "active",
           "choices": [
@@ -5230,21 +5548,22 @@
             "traditional",
             "healthy"
           ],
+          "text": "The galabeya is one of the ______ outfits in Egypt.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 105,
-              "id": "elm-u2r-001"
+              "id": "elm-u2r-004"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q068",
+          "id": "p4-eng-u2-l3-q073",
           "section": "Sample Test 3",
           "printed_page": 105,
           "pdf_page": 99,
           "type": "mcq",
-          "text": "In Egypt, people ______ colorful carpets by hand.",
+          "prompt": "In Egypt, people ______ colorful carpets by hand.",
           "answer": "weave",
           "status": "active",
           "choices": [
@@ -5253,45 +5572,22 @@
             "plant",
             "share"
           ],
+          "text": "In Egypt, people ______ colorful carpets by hand.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 105,
-              "id": "elm-u2r-006"
+              "id": "elm-u2r-009"
             }
           ]
         },
         {
-          "id": "p4-eng-u2-l3-q069",
-          "section": "Sample Test 3",
-          "printed_page": 106,
-          "pdf_page": 100,
-          "type": "writing",
-          "text": "Write a paragraph of FOUR sentences about \"Culture in Egypt\" using: traditions – regions – weave.",
-          "answer": "Egypt has two special regions: the Delta and Upper Egypt. Each region has its traditions. In the Delta, people celebrate the Spring Festival. In Upper Egypt, people weave colorful carpets by hand.",
-          "status": "active",
-          "model_answer_source": "Important Topics - Culture in Egypt",
-          "model_answer_page": 102,
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 106,
-              "id": "elm-u2r-021"
-            },
-            {
-              "source": "El-Moasser",
-              "page": 108,
-              "id": "elm-u2r-041"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l3-q070",
+          "id": "p4-eng-u2-l3-q074",
           "section": "Sample Test 4",
           "printed_page": 107,
           "pdf_page": 101,
           "type": "mcq",
-          "text": "Weaving carpets is one of the most important ______.",
+          "prompt": "Weaving carpets is one of the most important ______.",
           "answer": "crafts",
           "status": "active",
           "choices": [
@@ -5300,11 +5596,12 @@
             "habits",
             "crafts"
           ],
+          "text": "Weaving carpets is one of the most important ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 107,
-              "id": "elm-u2r-023"
+              "id": "elm-u2r-026"
             }
           ]
         }
@@ -5312,15 +5609,15 @@
     },
     {
       "id": 8,
+      "source_lesson_id": 4,
       "unit": "Unit 2: My Community",
-      "lesson_id": 4,
       "title": "Lessons 4 & 5 — Community History / Writing",
-      "kind": "Writing & Reading",
-      "summary": "Community history, diary entries, old places and environmental writing.",
+      "kind": "Writing & Review",
+      "summary": "Community history, diary entries, air-pollution solutions and writing.",
       "focus": [
         "Read about community history",
-        "Build and reorder sentences",
-        "Write source-modelled paragraphs"
+        "Use writing models",
+        "Review Unit 2 skills"
       ],
       "terms": [],
       "questions": [
@@ -5669,7 +5966,7 @@
             {
               "source": "El-Moasser",
               "page": 96,
-              "id": "elm-u2l4-023"
+              "id": "elm-u2l4-026"
             }
           ]
         },
@@ -5704,7 +6001,7 @@
             {
               "source": "El-Moasser",
               "page": 96,
-              "id": "elm-u2l4-025"
+              "id": "elm-u2l4-028"
             }
           ]
         },
@@ -5797,7 +6094,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "Healthy food is ______ in vitamins.",
+          "prompt": "Healthy food is ______ in vitamins.",
           "answer": "rich",
           "status": "active",
           "choices": [
@@ -5806,6 +6103,7 @@
             "greedy",
             "legal"
           ],
+          "text": "Healthy food is ______ in vitamins.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5820,7 +6118,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "______ tells us about things in the past.",
+          "prompt": "______ tells us about things in the past.",
           "answer": "History",
           "status": "active",
           "choices": [
@@ -5829,6 +6127,7 @@
             "Music",
             "History"
           ],
+          "text": "______ tells us about things in the past.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5843,7 +6142,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "Plant trees to stop air ______.",
+          "prompt": "Plant trees to stop air ______.",
           "answer": "pollution",
           "status": "active",
           "choices": [
@@ -5852,6 +6151,7 @@
             "pollution",
             "routine"
           ],
+          "text": "Plant trees to stop air ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5866,7 +6166,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "The post office is a big ______.",
+          "prompt": "The post office is a big ______.",
           "answer": "building",
           "status": "active",
           "choices": [
@@ -5875,6 +6175,7 @@
             "photo",
             "story"
           ],
+          "text": "The post office is a big ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5889,7 +6190,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "You should walk or ______ to school to stop air pollution.",
+          "prompt": "You should walk or ______ to school to stop air pollution.",
           "answer": "cycle",
           "status": "active",
           "choices": [
@@ -5898,6 +6199,7 @@
             "plant",
             "reduce"
           ],
+          "text": "You should walk or ______ to school to stop air pollution.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5912,7 +6214,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "They buy fresh vegetables from the ______.",
+          "prompt": "They buy fresh vegetables from the ______.",
           "answer": "market",
           "status": "active",
           "choices": [
@@ -5921,6 +6223,7 @@
             "market",
             "cinema"
           ],
+          "text": "They buy fresh vegetables from the ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5935,7 +6238,7 @@
           "printed_page": 91,
           "pdf_page": 85,
           "type": "mcq",
-          "text": "This box is made of wood. It is ______.",
+          "prompt": "This box is made of wood. It is ______.",
           "answer": "wooden",
           "status": "active",
           "choices": [
@@ -5944,6 +6247,7 @@
             "funny",
             "metal"
           ],
+          "text": "This box is made of wood. It is ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5958,7 +6262,7 @@
           "printed_page": 95,
           "pdf_page": 89,
           "type": "mcq",
-          "text": "There are many tall buildings in my ______.",
+          "prompt": "There are many tall buildings in my ______.",
           "answer": "neighborhood",
           "status": "active",
           "choices": [
@@ -5967,6 +6271,7 @@
             "traditions",
             "neighborhood"
           ],
+          "text": "There are many tall buildings in my ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5981,7 +6286,7 @@
           "printed_page": 95,
           "pdf_page": 89,
           "type": "mcq",
-          "text": "______ Yan clean her room every day?",
+          "prompt": "______ Yara clean her room every day?",
           "answer": "Does",
           "status": "active",
           "choices": [
@@ -5990,6 +6295,7 @@
             "Is",
             "Was"
           ],
+          "text": "______ Yara clean her room every day?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6004,7 +6310,7 @@
           "printed_page": 95,
           "pdf_page": 89,
           "type": "mcq",
-          "text": "Grandpa told me ______ about our family's history.",
+          "prompt": "Grandpa told me ______ about our family's history.",
           "answer": "stories",
           "status": "active",
           "choices": [
@@ -6013,6 +6319,7 @@
             "projects",
             "senses"
           ],
+          "text": "Grandpa told me ______ about our family's history.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6027,7 +6334,7 @@
           "printed_page": 95,
           "pdf_page": 89,
           "type": "mcq",
-          "text": "We bought juice from a small ______ in the market.",
+          "prompt": "We bought juice from a small ______ in the market.",
           "answer": "stall",
           "status": "active",
           "choices": [
@@ -6036,6 +6343,7 @@
             "stall",
             "diary"
           ],
+          "text": "We bought juice from a small ______ in the market.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6050,7 +6358,7 @@
           "printed_page": 95,
           "pdf_page": 89,
           "type": "mcq",
-          "text": "We ______ a poster with colorful photos.",
+          "prompt": "We ______ a poster with colorful photos.",
           "answer": "design",
           "status": "active",
           "choices": [
@@ -6059,6 +6367,7 @@
             "designs",
             "designing"
           ],
+          "text": "We ______ a poster with colorful photos.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6073,7 +6382,7 @@
           "printed_page": 95,
           "pdf_page": 89,
           "type": "mcq",
-          "text": "Does the cat ______ on the chairs?",
+          "prompt": "Does the cat ______ on the chairs?",
           "answer": "sleep",
           "status": "active",
           "choices": [
@@ -6082,6 +6391,7 @@
             "slept",
             "sleep"
           ],
+          "text": "Does the cat ______ on the chairs?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6092,13 +6402,21 @@
         },
         {
           "id": "p4-eng-u2-l4-q037",
-          "section": "Punctuation",
+          "section": "Read and Complete",
           "printed_page": 95,
           "pdf_page": 89,
-          "type": "punctuation",
-          "text": "grandma showed me her old photo",
-          "answer": "Grandma showed me her old photo.",
+          "type": "complete",
+          "prompt": "I love my grandma. When we visit her, she ______ us interesting stories.",
+          "answer": "tells",
           "status": "active",
+          "word_bank": [
+            "community",
+            "song",
+            "tells",
+            "traditional",
+            "history"
+          ],
+          "text": "I love my grandma. When we visit her, she ______ us interesting stories.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6109,13 +6427,21 @@
         },
         {
           "id": "p4-eng-u2-l4-q038",
-          "section": "Punctuation",
+          "section": "Read and Complete",
           "printed_page": 95,
           "pdf_page": 89,
-          "type": "punctuation",
-          "text": "what makes you proud of your community's history",
-          "answer": "What makes you proud of your community's history?",
+          "type": "complete",
+          "prompt": "She knows a lot about our community's ______.",
+          "answer": "history",
           "status": "active",
+          "word_bank": [
+            "community",
+            "song",
+            "tells",
+            "traditional",
+            "history"
+          ],
+          "text": "She knows a lot about our community's ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6126,15 +6452,21 @@
         },
         {
           "id": "p4-eng-u2-l4-q039",
-          "section": "Writing",
+          "section": "Read and Complete",
           "printed_page": 95,
           "pdf_page": 89,
-          "type": "writing",
-          "text": "Write a paragraph of FOUR sentences about \"Your community's history\" using: neighborhood – old market – fresh vegetables.",
-          "answer": "Many years ago, our neighborhood was different. There was a beautiful old market with wooden stalls. People sold fresh fruits and vegetables every morning. Children played safely in the streets.",
+          "type": "complete",
+          "prompt": "She sometimes asks us questions after the story, or she sings a ______.",
+          "answer": "song",
           "status": "active",
-          "model_answer_source": "Important Topics - Our community's history",
-          "model_answer_page": 102,
+          "word_bank": [
+            "community",
+            "song",
+            "tells",
+            "traditional",
+            "history"
+          ],
+          "text": "She sometimes asks us questions after the story, or she sings a ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6145,11 +6477,72 @@
         },
         {
           "id": "p4-eng-u2-l4-q040",
+          "section": "Read and Complete",
+          "printed_page": 95,
+          "pdf_page": 89,
+          "type": "complete",
+          "prompt": "We learn a lot about our ______ from our grandma's stories.",
+          "answer": "community",
+          "status": "active",
+          "word_bank": [
+            "community",
+            "song",
+            "tells",
+            "traditional",
+            "history"
+          ],
+          "text": "We learn a lot about our ______ from our grandma's stories.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 95,
+              "id": "elm-u2l4-019"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l4-q041",
+          "section": "Punctuation",
+          "printed_page": 95,
+          "pdf_page": 89,
+          "type": "punctuation",
+          "prompt": "grandma showed me her old photo",
+          "answer": "Grandma showed me her old photo.",
+          "status": "active",
+          "text": "grandma showed me her old photo",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 95,
+              "id": "elm-u2l4-020"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l4-q042",
+          "section": "Punctuation",
+          "printed_page": 95,
+          "pdf_page": 89,
+          "type": "punctuation",
+          "prompt": "what makes you proud of your community's history",
+          "answer": "What makes you proud of your community's history?",
+          "status": "active",
+          "text": "what makes you proud of your community's history",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 95,
+              "id": "elm-u2l4-021"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l4-q043",
           "section": "Reading",
           "printed_page": 96,
           "pdf_page": 90,
           "type": "reading_mcq",
-          "text": "Fifty years ago, the neighborhood was ______.",
+          "prompt": "Fifty years ago, the neighborhood was very ______.",
           "answer": "quiet",
           "status": "active",
           "choices": [
@@ -6158,70 +6551,7 @@
             "noisy",
             "dirty"
           ],
-          "passage": "Hana's grandpa told her about their neighborhood's history. Fifty years ago, it was very quiet. There were small houses with beautiful gardens. Instead of the big supermarkets, there was an old market with wooden stalls. People sold fresh vegetables and fruits every morning. Everyone knew their neighbors and children played safely in the streets.",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 96,
-              "id": "elm-u2l4-019"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q041",
-          "section": "Reading",
-          "printed_page": 96,
-          "pdf_page": 90,
-          "type": "reading_mcq",
-          "text": "There were small houses with beautiful ______.",
-          "answer": "gardens",
-          "status": "active",
-          "choices": [
-            "gardens",
-            "pools",
-            "fields",
-            "rivers"
-          ],
-          "passage_ref": "elm-u2l4-019",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 96,
-              "id": "elm-u2l4-020"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q042",
-          "section": "Reading",
-          "printed_page": 96,
-          "pdf_page": 90,
-          "type": "reading_open",
-          "text": "Where did children play safely?",
-          "answer": "In the streets.",
-          "status": "active",
-          "accepted_answers": [
-            "In the streets.",
-            "They played safely in the streets."
-          ],
-          "passage_ref": "elm-u2l4-019",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 96,
-              "id": "elm-u2l4-021"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q043",
-          "section": "Correct Form",
-          "printed_page": 96,
-          "pdf_page": 90,
-          "type": "correct_form",
-          "text": "______ (Does) they collect plastic bottles from the street?",
-          "answer": "Do",
-          "status": "active",
+          "text": "Fifty years ago, the neighborhood was very ______.",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6232,13 +6562,42 @@
         },
         {
           "id": "p4-eng-u2-l4-q044",
-          "section": "Correct Form",
+          "section": "Reading",
           "printed_page": 96,
           "pdf_page": 90,
-          "type": "correct_form",
-          "text": "The dog took the toy and ______ (appeared). We couldn't find it.",
-          "answer": "disappeared",
+          "type": "reading_mcq",
+          "prompt": "There were small houses with beautiful ______.",
+          "answer": "gardens",
           "status": "active",
+          "choices": [
+            "gardens",
+            "pools",
+            "fields",
+            "rivers"
+          ],
+          "text": "There were small houses with beautiful ______.",
+          "source_refs": [
+            {
+              "source": "El-Moasser",
+              "page": 96,
+              "id": "elm-u2l4-023"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u2-l4-q045",
+          "section": "Reading",
+          "printed_page": 96,
+          "pdf_page": 90,
+          "type": "reading_open",
+          "prompt": "Where did children play safely?",
+          "answer": "In the streets.",
+          "status": "active",
+          "accepted_answers": [
+            "In the streets.",
+            "Children played safely in the streets."
+          ],
+          "text": "Where did children play safely?",
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6248,366 +6607,60 @@
           ]
         },
         {
-          "id": "p4-eng-u2-l4-q045",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "problems - community - Our - many - has",
-          "answer": "Our community has many problems.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-026"
-            }
-          ]
-        },
-        {
           "id": "p4-eng-u2-l4-q046",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "stylish - wear - dresses - Women",
-          "answer": "Women wear stylish dresses.",
+          "section": "Correct Form",
+          "printed_page": 96,
+          "pdf_page": 90,
+          "type": "correct_form",
+          "prompt": "______ (Does) they collect plastic bottles from the street?",
+          "answer": "Do",
           "status": "active",
+          "text": "______ (Does) they collect plastic bottles from the street?",
           "source_refs": [
             {
               "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-027"
+              "page": 96,
+              "id": "elm-u2l4-025"
             }
           ]
         },
         {
           "id": "p4-eng-u2-l4-q047",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "culture - proud of - are - Egyptians - their",
-          "answer": "Egyptians are proud of their culture.",
+          "section": "Correct Form",
+          "printed_page": 96,
+          "pdf_page": 90,
+          "type": "correct_form",
+          "prompt": "The dog took the toy and ______ (appeared). We couldn't find it.",
+          "answer": "disappeared",
           "status": "active",
+          "text": "The dog took the toy and ______ (appeared). We couldn't find it.",
           "source_refs": [
             {
               "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-028"
+              "page": 96,
+              "id": "elm-u2l4-027"
             }
           ]
         },
         {
           "id": "p4-eng-u2-l4-q048",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "helps - traffic - The bus - reduce",
-          "answer": "The bus helps reduce traffic.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-029"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q049",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "The park - They - Friday - clean - on",
-          "answer": "They clean the park on Friday.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-030"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q050",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "two - regions - Egypt - special - has",
-          "answer": "Egypt has two special regions.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-031"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q051",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "he - What - plant - does",
-          "answer": "What does he plant?",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-032"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q052",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "with - your - you - family - How - celebrate - do",
-          "answer": "How do you celebrate with your family?",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-033"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q053",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "plant - Do - trees - you",
-          "answer": "Do you plant trees?",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-034"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q054",
-          "section": "Sentence Building",
-          "printed_page": 100,
-          "pdf_page": 94,
-          "type": "reorder",
-          "text": "Amira - does - What - with - clothes - do",
-          "answer": "What does Amira do with clothes?",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 100,
-              "id": "elm-u2l4-035"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q055",
-          "section": "Build Your Topic",
-          "printed_page": 101,
-          "pdf_page": 95,
-          "type": "reorder",
-          "text": "different - Upper Egypt - is - Life - in",
-          "answer": "Life in Upper Egypt is different.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 101,
-              "id": "elm-u2l4-036"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q056",
-          "section": "Build Your Topic",
-          "printed_page": 101,
-          "pdf_page": 95,
-          "type": "reorder",
-          "text": "galabeyas - Men - wear",
-          "answer": "Men wear galabeyas.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 101,
-              "id": "elm-u2l4-037"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q057",
-          "section": "Build Your Topic",
-          "printed_page": 101,
-          "pdf_page": 95,
-          "type": "reorder",
-          "text": "songs - sing - Families - traditional",
-          "answer": "Families sing traditional songs.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 101,
-              "id": "elm-u2l4-038"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q058",
-          "section": "Build Your Topic",
-          "printed_page": 101,
-          "pdf_page": 95,
-          "type": "reorder",
-          "text": "trees - I - plant",
-          "answer": "I plant trees.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 101,
-              "id": "elm-u2l4-039"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q059",
-          "section": "Build Your Topic",
-          "printed_page": 101,
-          "pdf_page": 95,
-          "type": "reorder",
-          "text": "at - volunteers - the community park - My sister",
-          "answer": "My sister volunteers at the community park.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 101,
-              "id": "elm-u2l4-040"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q060",
-          "section": "Build Your Topic",
-          "printed_page": 101,
-          "pdf_page": 95,
-          "type": "reorder",
-          "text": "the streets - We - from - clean - trash",
-          "answer": "We clean trash from the streets.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 101,
-              "id": "elm-u2l4-041"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q061",
-          "section": "Review through the Exam",
-          "printed_page": 104,
-          "pdf_page": 98,
-          "type": "reorder",
-          "text": "feed - I - dogs - cats - and",
-          "answer": "I feed dogs and cats.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 104,
-              "id": "elm-u2l4-042"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q062",
-          "section": "Review through the Exam",
-          "printed_page": 104,
-          "pdf_page": 98,
-          "type": "reorder",
-          "text": "the park - trees - plant - I - in",
-          "answer": "I plant trees in the park.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 104,
-              "id": "elm-u2l4-043"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q063",
-          "section": "Review through the Exam",
-          "printed_page": 104,
-          "pdf_page": 98,
-          "type": "reorder",
-          "text": "clean - I - from - trash - the streets",
-          "answer": "I clean trash from the streets.",
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 104,
-              "id": "elm-u2l4-044"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q064",
-          "section": "Writing",
-          "printed_page": 104,
-          "pdf_page": 98,
-          "type": "writing",
-          "text": "Write about \"Helping the community\".",
-          "answer": "We can do many things to help our community. I clean trash from the streets with my friends. I plant trees in the park. Sometimes, I feed the dogs and cats. I collect clothes and give them to people who need them.",
-          "status": "active",
-          "model_answer_source": "Reading & Writing through the Exam",
-          "model_answer_page": 104,
-          "source_refs": [
-            {
-              "source": "El-Moasser",
-              "page": 104,
-              "id": "elm-u2l4-045"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u2-l4-q065",
           "section": "Sample Test 3",
           "printed_page": 106,
           "pdf_page": 100,
           "type": "reading_open",
-          "text": "What did Grandpa show Hana?",
+          "prompt": "What did Grandpa show Hana?",
           "answer": "Old photos.",
           "status": "active",
           "accepted_answers": [
             "Old photos.",
             "He showed her old photos."
           ],
-          "passage_ref": "elm-u2r-011",
+          "text": "What did Grandpa show Hana?",
           "source_refs": [
             {
               "source": "El-Moasser",
               "page": 106,
-              "id": "elm-u2r-014"
+              "id": "elm-u2r-017"
             }
           ]
         }
