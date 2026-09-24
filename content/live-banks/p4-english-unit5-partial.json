@@ -28,7 +28,6 @@
           "id": "p4-eng-u5-l1-q001",
           "type": "mcq",
           "text": "A/An ______ designs buildings.",
-          "answer": "engineer",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -49,7 +48,6 @@
           "id": "p4-eng-u5-l1-q002",
           "type": "mcq",
           "text": "A ______ helps sick people.",
-          "answer": "nurse",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -70,7 +68,6 @@
           "id": "p4-eng-u5-l1-q003",
           "type": "mcq",
           "text": "A firefighter wears a ______ to stay safe.",
-          "answer": "helmet",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -91,7 +88,6 @@
           "id": "p4-eng-u5-l1-q004",
           "type": "mcq",
           "text": "A/An ______ wears a white coat.",
-          "answer": "doctor",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -112,7 +108,6 @@
           "id": "p4-eng-u5-l1-q005",
           "type": "mcq",
           "text": "Sara is a/an ______. She helps sick people.",
-          "answer": "doctor",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -133,7 +128,6 @@
           "id": "p4-eng-u5-l1-q006",
           "type": "mcq",
           "text": "The firefighter's job is important because he ______ people.",
-          "answer": "saves",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -154,7 +148,6 @@
           "id": "p4-eng-u5-l1-q007",
           "type": "mcq",
           "text": "A/An ______ can stop fires and save people.",
-          "answer": "firefighter",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -175,7 +168,6 @@
           "id": "p4-eng-u5-l1-q008",
           "type": "mcq",
           "text": "A nurse ______ the patients at the hospital.",
-          "answer": "cares for",
           "source_page": 145,
           "status": "active",
           "choices": [
@@ -196,7 +188,6 @@
           "id": "p4-eng-u5-l1-q009",
           "type": "complete",
           "text": "Amr works in a hospital. He is a ______.",
-          "answer": "doctor",
           "source_page": 146,
           "status": "active",
           "word_bank": [
@@ -218,7 +209,6 @@
           "id": "p4-eng-u5-l1-q010",
           "type": "complete",
           "text": "He wears a ______ coat.",
-          "answer": "white",
           "source_page": 146,
           "status": "active",
           "word_bank": [
@@ -240,7 +230,6 @@
           "id": "p4-eng-u5-l1-q011",
           "type": "complete",
           "text": "Every day he gives ______ to many sick children.",
-          "answer": "care",
           "source_page": 146,
           "status": "active",
           "word_bank": [
@@ -262,7 +251,6 @@
           "id": "p4-eng-u5-l1-q012",
           "type": "complete",
           "text": "He checks on the ______ to make sure they feel better.",
-          "answer": "patients",
           "source_page": 146,
           "status": "active",
           "word_bank": [
@@ -284,7 +272,6 @@
           "id": "p4-eng-u5-l1-q013",
           "type": "reading_mcq",
           "text": "A/An ______ stops fires and saves people.",
-          "answer": "firefighter",
           "source_page": 146,
           "status": "active",
           "choices": [
@@ -306,7 +293,6 @@
           "id": "p4-eng-u5-l1-q014",
           "type": "reading_mcq",
           "text": "Doctors help sick people and ______ their health.",
-          "answer": "check",
           "source_page": 146,
           "status": "active",
           "choices": [
@@ -328,13 +314,8 @@
           "id": "p4-eng-u5-l1-q015",
           "type": "reading_open",
           "text": "Who helps students learn?",
-          "answer": "Teachers.",
           "source_page": 146,
           "status": "active",
-          "accepted_answers": [
-            "Teachers.",
-            "Teachers help students learn."
-          ],
           "passage_ref": "bbb-u5l1-013",
           "source_refs": [
             {
@@ -348,13 +329,8 @@
           "id": "p4-eng-u5-l1-q016",
           "type": "reading_open",
           "text": "Why do people work together?",
-          "answer": "To make life better.",
           "source_page": 146,
           "status": "active",
-          "accepted_answers": [
-            "To make life better.",
-            "People work together to make life better."
-          ],
           "passage_ref": "bbb-u5l1-013",
           "source_refs": [
             {
@@ -368,14 +344,8 @@
           "id": "p4-eng-u5-l1-q017",
           "type": "reading_open",
           "text": "What is the main idea of the text?",
-          "answer": "Different jobs in the community and why they are important.",
           "source_page": 146,
           "status": "active",
-          "accepted_answers": [
-            "Different jobs in the community.",
-            "Jobs in the community and their importance.",
-            "Different jobs in the community and why they are important."
-          ],
           "passage_ref": "bbb-u5l1-013",
           "source_refs": [
             {
@@ -389,7 +359,6 @@
           "id": "p4-eng-u5-l1-q018",
           "type": "punctuation",
           "text": "a doctor helps sick people",
-          "answer": "A doctor helps sick people.",
           "source_page": 146,
           "status": "active",
           "source_refs": [
@@ -404,7 +373,6 @@
           "id": "p4-eng-u5-l1-q019",
           "type": "punctuation",
           "text": "what do you do",
-          "answer": "What do you do?",
           "source_page": 146,
           "status": "active",
           "source_refs": [
@@ -435,7 +403,6 @@
           "id": "p4-eng-u5-l2-q001",
           "type": "correct_form",
           "text": "She is the ______ (kind) mentor.",
-          "answer": "kindest",
           "source_page": 150,
           "status": "active",
           "source_refs": [
@@ -450,7 +417,6 @@
           "id": "p4-eng-u5-l2-q002",
           "type": "correct_form",
           "text": "Omar takes the ______ (great) photos.",
-          "answer": "greatest",
           "source_page": 150,
           "status": "active",
           "source_refs": [
@@ -465,7 +431,6 @@
           "id": "p4-eng-u5-l2-q003",
           "type": "correct_form",
           "text": "My bag is the ______ (heavy) bag.",
-          "answer": "heaviest",
           "source_page": 150,
           "status": "active",
           "source_refs": [
@@ -480,7 +445,6 @@
           "id": "p4-eng-u5-l2-q004",
           "type": "correct_form",
           "text": "My grandpa is the ______ (wise) person I know.",
-          "answer": "wisest",
           "source_page": 150,
           "status": "active",
           "source_refs": [
@@ -495,7 +459,6 @@
           "id": "p4-eng-u5-l2-q005",
           "type": "correct_form",
           "text": "Ahmed told us the ______ (funny) story at the party.",
-          "answer": "funniest",
           "source_page": 150,
           "status": "active",
           "source_refs": [
@@ -510,7 +473,6 @@
           "id": "p4-eng-u5-l2-q006",
           "type": "correct_form",
           "text": "August is the ______ (hot) month of the year.",
-          "answer": "hottest",
           "source_page": 150,
           "status": "active",
           "source_refs": [
