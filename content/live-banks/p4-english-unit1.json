@@ -9,10 +9,11 @@
     "Bit by Bit English Primary 4 First Term 2027",
     "El-Moasser English Primary 4 First Term 2027"
   ],
-  "merge_policy": "Exact normalized question dedupe; source answers preserved; conflicts excluded.",
+  "merge_policy": "Passage-aware normalized dedupe; source answers preserved; unresolved answer conflicts excluded.",
   "modules": [
     {
       "id": 1,
+      "source_lesson_id": 1,
       "unit": "Unit 1: The Five Senses",
       "title": "Lesson 1 — What are the Five Senses?",
       "kind": "Vocabulary & Reading",
@@ -132,6 +133,9 @@
               "page": 25,
               "id": "elm-u1l1-007"
             }
+          ],
+          "accepted_answers": [
+            "senses"
           ]
         },
         {
@@ -158,6 +162,9 @@
               "page": 25,
               "id": "elm-u1l1-009"
             }
+          ],
+          "accepted_answers": [
+            "fire"
           ]
         },
         {
@@ -184,6 +191,9 @@
               "page": 25,
               "id": "elm-u1l1-006"
             }
+          ],
+          "accepted_answers": [
+            "touch"
           ]
         },
         {
@@ -339,6 +349,9 @@
               "page": 28,
               "id": "elm-u1l1-025"
             }
+          ],
+          "accepted_answers": [
+            "flowers"
           ]
         },
         {
@@ -359,6 +372,9 @@
               "page": 28,
               "id": "elm-u1l1-026"
             }
+          ],
+          "accepted_answers": [
+            "hear"
           ]
         },
         {
@@ -403,8 +419,7 @@
               "page": 19,
               "id": "bbb-u1l1-018"
             }
-          ],
-          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
+          ]
         },
         {
           "id": "p4-eng-u1-l1-q019",
@@ -425,8 +440,7 @@
               "page": 19,
               "id": "bbb-u1l1-019"
             }
-          ],
-          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
+          ]
         },
         {
           "id": "p4-eng-u1-l1-q020",
@@ -447,8 +461,7 @@
               "page": 19,
               "id": "bbb-u1l1-020"
             }
-          ],
-          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
+          ]
         },
         {
           "id": "p4-eng-u1-l1-q021",
@@ -469,8 +482,7 @@
               "page": 19,
               "id": "bbb-u1l1-021"
             }
-          ],
-          "passage": "Our five senses – sight, hearing, smell, taste, and touch – are very important. They help us learn and stay safe. Our eyes help us see colorful things around us. Our ears help us hear different sounds, like music and birds. Our nose helps us smell beautiful flowers. Our tongue helps us taste delicious food. Our hands help us touch soft and hard things. Our senses work together every day."
+          ]
         },
         {
           "id": "p4-eng-u1-l1-q022",
@@ -1145,6 +1157,9 @@
               "page": 59,
               "id": "elm-u1r-001"
             }
+          ],
+          "accepted_answers": [
+            "We have five senses."
           ]
         },
         {
@@ -1168,6 +1183,9 @@
               "page": 59,
               "id": "elm-u1r-002"
             }
+          ],
+          "accepted_answers": [
+            "We smell with our nose."
           ]
         },
         {
@@ -1191,6 +1209,9 @@
               "page": 59,
               "id": "elm-u1r-003"
             }
+          ],
+          "accepted_answers": [
+            "We touch with our hands."
           ]
         },
         {
@@ -1566,6 +1587,7 @@
     },
     {
       "id": 2,
+      "source_lesson_id": 2,
       "unit": "Unit 1: The Five Senses",
       "title": "Lesson 2 — Healthy Habits",
       "kind": "Vocabulary, Reading & Present Simple",
@@ -1706,6 +1728,9 @@
               "page": 31,
               "id": "elm-u1l2-007"
             }
+          ],
+          "accepted_answers": [
+            "sharp"
           ]
         },
         {
@@ -1922,8 +1947,7 @@
               "page": 26,
               "id": "bbb-u1l2-016"
             }
-          ],
-          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q017",
@@ -1944,8 +1968,7 @@
               "page": 26,
               "id": "bbb-u1l2-017"
             }
-          ],
-          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q018",
@@ -1966,8 +1989,7 @@
               "page": 26,
               "id": "bbb-u1l2-018"
             }
-          ],
-          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q019",
@@ -1983,8 +2005,7 @@
               "page": 26,
               "id": "bbb-u1l2-019"
             }
-          ],
-          "passage": "My brother Hani follows healthy habits. He wakes up early at 6 am every day. After he wakes up, he always brushes his teeth and washes his face. He eats a healthy breakfast of eggs and milk. This gives him energy for school and helps him stay strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q020",
@@ -2064,6 +2085,9 @@
               "page": 36,
               "id": "elm-u1l2-050"
             }
+          ],
+          "accepted_answers": [
+            "drinks"
           ]
         },
         {
@@ -2084,6 +2108,9 @@
               "page": 34,
               "id": "elm-u1l2-029"
             }
+          ],
+          "accepted_answers": [
+            "wash"
           ]
         },
         {
@@ -2104,6 +2131,9 @@
               "page": 36,
               "id": "elm-u1l2-051"
             }
+          ],
+          "accepted_answers": [
+            "take"
           ]
         },
         {
@@ -2124,6 +2154,9 @@
               "page": 34,
               "id": "elm-u1l2-030"
             }
+          ],
+          "accepted_answers": [
+            "reads"
           ]
         },
         {
@@ -2363,8 +2396,7 @@
               "page": 43,
               "id": "bbb-u1l2-041"
             }
-          ],
-          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q042",
@@ -2386,8 +2418,7 @@
               "page": 43,
               "id": "bbb-u1l2-042"
             }
-          ],
-          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q043",
@@ -2409,8 +2440,7 @@
               "page": 43,
               "id": "bbb-u1l2-043"
             }
-          ],
-          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q044",
@@ -2432,8 +2462,7 @@
               "page": 43,
               "id": "bbb-u1l2-044"
             }
-          ],
-          "passage": "To stay healthy, it's very important to do three things! First, eat fresh and colorful foods like fruits and vegetables, and make sure to drink lots of water every day. Second, be active and play outside! Running, jumping, and riding your bike are great ways to make your body strong. Third, sleep for eight hours so your body can rest and grow. And don't forget to wash your hands and brush your teeth."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q045",
@@ -2496,6 +2525,9 @@
               "page": 34,
               "id": "elm-u1l2-020"
             }
+          ],
+          "accepted_answers": [
+            "carries"
           ]
         },
         {
@@ -2566,6 +2598,9 @@
               "page": 62,
               "id": "elm-u1r-032"
             }
+          ],
+          "accepted_answers": [
+            "vegetables"
           ]
         },
         {
@@ -2593,6 +2628,9 @@
               "page": 62,
               "id": "elm-u1r-033"
             }
+          ],
+          "accepted_answers": [
+            "food"
           ]
         },
         {
@@ -2620,6 +2658,9 @@
               "page": 62,
               "id": "elm-u1r-034"
             }
+          ],
+          "accepted_answers": [
+            "energy"
           ]
         },
         {
@@ -2664,8 +2705,7 @@
               "page": 45,
               "id": "bbb-u1l2-054"
             }
-          ],
-          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q055",
@@ -2685,8 +2725,7 @@
               "page": 45,
               "id": "bbb-u1l2-055"
             }
-          ],
-          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q056",
@@ -2707,8 +2746,7 @@
               "page": 45,
               "id": "bbb-u1l2-056"
             }
-          ],
-          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q057",
@@ -2728,8 +2766,7 @@
               "page": 45,
               "id": "bbb-u1l2-057"
             }
-          ],
-          "passage": "Talia is 10 years old. She is a healthy and active girl. She has good daily habits. She wakes up early in the morning. She eats eggs and brown bread for breakfast. She also drinks hot chocolate. It is a very healthy breakfast. At school, she plays sports. For a snack, she eats fruit and vegetables. In the evening, she has her dinner and then goes for a walk with her dad. Her healthy routine keeps her strong and gives her energy."
+          ]
         },
         {
           "id": "p4-eng-u1-l2-q058",
@@ -2754,6 +2791,9 @@
               "page": 63,
               "id": "elm-u1r-042"
             }
+          ],
+          "accepted_answers": [
+            "helps"
           ]
         },
         {
@@ -3818,6 +3858,9 @@
               "page": 61,
               "id": "elm-u1r-023"
             }
+          ],
+          "accepted_answers": [
+            "Why does Sarah eat healthy food?"
           ]
         },
         {
@@ -4944,6 +4987,7 @@
     },
     {
       "id": 3,
+      "source_lesson_id": 3,
       "unit": "Unit 1: The Five Senses",
       "title": "Lesson 3 — Goha's Great Meal",
       "kind": "Story",
@@ -5000,6 +5044,9 @@
               "page": 39,
               "id": "elm-u1l3-006"
             }
+          ],
+          "accepted_answers": [
+            "restaurant"
           ]
         },
         {
@@ -5174,6 +5221,9 @@
               "page": 45,
               "id": "elm-u1l3-023"
             }
+          ],
+          "accepted_answers": [
+            "smelled"
           ]
         },
         {
@@ -5223,6 +5273,9 @@
               "page": 45,
               "id": "elm-u1l3-025"
             }
+          ],
+          "accepted_answers": [
+            "owner"
           ]
         },
         {
@@ -5250,6 +5303,9 @@
               "page": 45,
               "id": "elm-u1l3-026"
             }
+          ],
+          "accepted_answers": [
+            "coins"
           ]
         },
         {
@@ -5277,6 +5333,9 @@
               "page": 45,
               "id": "elm-u1l3-027"
             }
+          ],
+          "accepted_answers": [
+            "coins"
           ]
         },
         {
@@ -5305,7 +5364,9 @@
               "id": "elm-u1l3-028"
             }
           ],
-          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
+          "accepted_answers": [
+            "pay"
+          ]
         },
         {
           "id": "p4-eng-u1-l3-q016",
@@ -5321,8 +5382,7 @@
               "page": 34,
               "id": "bbb-u1l3-016"
             }
-          ],
-          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
+          ]
         },
         {
           "id": "p4-eng-u1-l3-q017",
@@ -5348,8 +5408,7 @@
               "page": 45,
               "id": "elm-u1l3-029"
             }
-          ],
-          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
+          ]
         },
         {
           "id": "p4-eng-u1-l3-q018",
@@ -5365,8 +5424,7 @@
               "page": 34,
               "id": "bbb-u1l3-018"
             }
-          ],
-          "passage": "Omar was walking home when he smelled soup from a restaurant. He didn't go in, but he stood there smiling. The owner said, \"If you enjoy the smell, you must pay.\" Omar laughed and shook his coins. \"This is the sound of my payment!\" he said. The owner laughed, too."
+          ]
         },
         {
           "id": "p4-eng-u1-l3-q019",
@@ -5386,6 +5444,9 @@
               "page": 45,
               "id": "elm-u1l3-030"
             }
+          ],
+          "accepted_answers": [
+            "Let's share this food."
           ]
         },
         {
@@ -5448,6 +5509,9 @@
               "page": 44,
               "id": "elm-u1l3-013"
             }
+          ],
+          "accepted_answers": [
+            "share"
           ]
         },
         {
@@ -6117,6 +6181,7 @@
     },
     {
       "id": 4,
+      "source_lesson_id": 4,
       "unit": "Unit 1: The Five Senses",
       "title": "Lessons 4 & 5 — Writing / Think and Create",
       "kind": "Writing",
@@ -6152,6 +6217,9 @@
               "page": 47,
               "id": "elm-u1l4-006"
             }
+          ],
+          "accepted_answers": [
+            "healthy"
           ]
         },
         {
@@ -6326,6 +6394,9 @@
               "page": 51,
               "id": "elm-u1l4-026"
             }
+          ],
+          "accepted_answers": [
+            "brushes"
           ]
         },
         {
@@ -6353,6 +6424,9 @@
               "page": 51,
               "id": "elm-u1l4-027"
             }
+          ],
+          "accepted_answers": [
+            "breakfast"
           ]
         },
         {
@@ -6380,6 +6454,9 @@
               "page": 51,
               "id": "elm-u1l4-028"
             }
+          ],
+          "accepted_answers": [
+            "helps"
           ]
         },
         {
@@ -6407,6 +6484,9 @@
               "page": 51,
               "id": "elm-u1l4-029"
             }
+          ],
+          "accepted_answers": [
+            "routines"
           ]
         },
         {
@@ -6451,8 +6531,7 @@
               "page": 38,
               "id": "bbb-u1l4-014"
             }
-          ],
-          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l4-q015",
@@ -6472,8 +6551,7 @@
               "page": 38,
               "id": "bbb-u1l4-015"
             }
-          ],
-          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l4-q016",
@@ -6493,8 +6571,7 @@
               "page": 38,
               "id": "bbb-u1l4-016"
             }
-          ],
-          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l4-q017",
@@ -6514,8 +6591,7 @@
               "page": 38,
               "id": "bbb-u1l4-017"
             }
-          ],
-          "passage": "Healthy lunch helps children feel strong and happy. A good lunch may have rice, chicken, vegetables and fruits. Drinking water is also important. You shouldn't eat too many sweets or fried food. If you eat well, you will be able to run, play and study better. Some children bring lunch from home, while others eat at school. Try to choose healthy food every day to keep your body and mind strong."
+          ]
         },
         {
           "id": "p4-eng-u1-l4-q018",
@@ -6550,6 +6626,9 @@
               "page": 61,
               "id": "elm-u1r-024"
             }
+          ],
+          "accepted_answers": [
+            "Having a daily routine is important."
           ]
         },
         {
