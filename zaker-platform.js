@@ -2,7 +2,73 @@
 const URL='https://llhmkyighydokneqwrdj.supabase.co';
 const KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const client=window.supabase?window.supabase.createClient(URL,KEY):null;
-let settingsCache=null;
+let settingsCache=null,contentCache=new Map();
+const contentStatusLabel={active:'مفعّلة',building:'تحت الإنشاء',review:'تحت المراجعة',disabled:'غير متاحة'};
+function normalizeContentSubject(s){
+ s=String(s||'').trim().toLowerCase();
+ if(['arabic','العربي','اللغة العربية'].includes(s))return 'arabic';
+ if(['studies','social studies','social_studies','الدراسات','الدراسات الاجتماعية'].includes(s))return 'studies';
+ if(['science-ar','العلوم','science arabic'].includes(s))return 'science-ar';
+ if(['math-ar','الرياضيات','رياضيات','mathematics arabic'].includes(s))return 'math-ar';
+ if(s==='science')return 'science';
+ if(s==='math')return 'math';
+ if(s==='english')return 'english';
+ return s;
+}
+function pageContentSubject(){
+ const path=location.pathname.toLowerCase();
+ if(path.endsWith('/primary4.html'))return normalizeContentSubject(new URLSearchParams(location.search).get('subject')||'science');
+ if(path.endsWith('/student.html'))return 'science';
+ if(path.endsWith('/math.html'))return 'math';
+ if(path.endsWith('/math-ar.html'))return 'math-ar';
+ if(path.endsWith('/english.html'))return 'english';
+ if(path.endsWith('/arabic.html'))return 'arabic';
+ if(path.endsWith('/social-studies.html'))return 'studies';
+ return '';
+}
+function releaseContentCheck(){document.documentElement.classList.remove('zk-content-check')}
+if(pageContentSubject()){
+ const st=document.createElement('style');st.id='zakerContentEarlyStyle';st.textContent='html.zk-content-check body{visibility:hidden!important}';document.head.appendChild(st);document.documentElement.classList.add('zk-content-check');
+}
+async function contentAvailability(grade,track,force=false){
+ if(!client||!grade)return [];
+ const key=grade+'|'+(track||'languages');
+ if(contentCache.has(key)&&!force)return contentCache.get(key);
+ const {data,error}=await client.rpc('get_content_availability',{p_grade:grade,p_track:track||'languages'});
+ if(error)throw error;
+ const rows=Array.isArray(data)?data:[];contentCache.set(key,rows);return rows;
+}
+function resolveContentState(rows,grade,track,subject){
+ const gradeRow=(rows||[]).find(x=>x.scope==='grade'&&x.grade===grade);
+ if(!gradeRow||gradeRow.status!=='active')return gradeRow||{scope:'grade',grade,track:'shared',subject_code:'',status:'building',message:'جاري تجهيز محتوى هذا الصف.'};
+ const code=normalizeContentSubject(subject);
+ const row=(rows||[]).find(x=>x.scope==='subject'&&x.grade===grade&&x.track===track&&normalizeContentSubject(x.subject_code)===code);
+ return row||{scope:'subject',grade,track,subject_code:code,status:'building',message:'جاري تجهيز هذه المادة.'};
+}
+function contentDefaultMessage(state){
+ if(state?.message)return state.message;
+ if(state?.status==='review')return 'المادة تحت المراجعة حاليًا للتأكد من المحتوى والأسئلة.';
+ if(state?.status==='disabled')return 'هذه المادة غير متاحة حاليًا.';
+ return 'جاري تجهيز وتحديث هذه المادة، وستتاح فور اعتمادها من الإدارة.';
+}
+function showContentGate(state){
+ releaseContentCheck();
+ const wrap=document.createElement('div');wrap.id='zakerContentGate';wrap.style.cssText='position:fixed;inset:0;z-index:99999;background:linear-gradient(145deg,#351044,#6f2392);display:grid;place-items:center;padding:20px;font-family:Tahoma,Arial,sans-serif;direction:rtl';
+ wrap.innerHTML='<div style="width:min(560px,94vw);background:#fff;border-radius:24px;padding:28px;text-align:center;box-shadow:0 30px 80px #0005;color:#241331"><div style="font-size:54px">'+(state.status==='review'?'🔍':state.status==='disabled'?'⛔':'🚧')+'</div><h1 style="margin:8px 0 10px">'+esc(contentStatusLabel[state.status]||'تحت الإنشاء')+'</h1><p style="line-height:1.9;color:#6f6478">'+esc(contentDefaultMessage(state))+'</p><a href="/" style="display:inline-block;margin-top:12px;background:#ff7418;color:#fff;text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:900">العودة للرئيسية</a></div>';
+ document.body.appendChild(wrap);
+}
+async function enforceContentGate(child){
+ const subject=pageContentSubject();
+ if(!subject||!child){releaseContentCheck();return true}
+ try{
+   const rows=await contentAvailability(child.grade,child.track);
+   const state=resolveContentState(rows,child.grade,child.track,subject);
+   if(state.status==='active'){releaseContentCheck();return true}
+   showContentGate(state);return false;
+ }catch(err){
+   showContentGate({status:'review',message:'تعذر التحقق من حالة المادة الآن. حاول مرة أخرى بعد قليل.'});return false;
+ }
+}
 const gradeAr={p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'ثانية إعدادي',prep3:'ثالثة إعدادي'};
 const termAr=n=>Number(n)===2?'الترم الثاني':'الترم الأول';
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -79,9 +145,20 @@ function updateSettingsUI(s){
  }
 }
 async function init(){
- const s=await settings();updateSettingsUI(s);injectContact(s);const p=await profile();if(p)await log('page_view',{role:p.profile?.role||'unknown'},localStorage.getItem('zaker_active_child_id')||null);await injectChildren();
+ const p=await profile();
+ let activeChild=null;
+ if(p&&p.profile?.role!=='admin'){
+   const children=await getChildren();
+   const saved=localStorage.getItem('zaker_active_child_id');
+   activeChild=children.find(x=>x.id===saved)||children[0]||null;
+   if(activeChild)setChild(activeChild);
+ }
+ await enforceContentGate(activeChild);
+ const s=await settings();updateSettingsUI(s);injectContact(s);
+ if(p)await log('page_view',{role:p.profile?.role||'unknown'},activeChild?.id||null);
+ await injectChildren();
  const rev=document.getElementById('zakerExamReviewNav');if(rev)rev.href='/exam-review.html';
 }
-window.ZakerPlatform={client,settings,session,profile,getChildren,hasAccess,setChild,log,init};
+window.ZakerPlatform={client,settings,session,profile,getChildren,hasAccess,setChild,log,contentAvailability,resolveContentState,normalizeContentSubject,enforceContentGate,init};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
