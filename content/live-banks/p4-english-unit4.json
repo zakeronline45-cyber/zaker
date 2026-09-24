@@ -323,7 +323,8 @@
               "page": 119,
               "id": "bbb-u4l1-014"
             }
-          ]
+          ],
+          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
         },
         {
           "id": "p4-eng-u4-l1-q015",
@@ -343,7 +344,8 @@
               "page": 119,
               "id": "bbb-u4l1-015"
             }
-          ]
+          ],
+          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
         },
         {
           "id": "p4-eng-u4-l1-q016",
@@ -364,7 +366,8 @@
               "page": 119,
               "id": "bbb-u4l1-016"
             }
-          ]
+          ],
+          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
         },
         {
           "id": "p4-eng-u4-l1-q017",
@@ -384,7 +387,8 @@
               "page": 119,
               "id": "bbb-u4l1-017"
             }
-          ]
+          ],
+          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
         },
         {
           "id": "p4-eng-u4-l1-q018",
@@ -438,7 +442,7 @@
           "text": "Many people ride camels near the Pyramids.",
           "answer": "True",
           "source_page": 187,
-          "status": "active",
+          "status": "inactive_missing_audio",
           "assign": {
             "unit": 4,
             "lesson": 1
@@ -462,7 +466,7 @@
           "text": "Many people can visit the Egyptian Museum.",
           "answer": "True",
           "source_page": 187,
-          "status": "active",
+          "status": "inactive_missing_audio",
           "assign": {
             "unit": 4,
             "lesson": 1
@@ -486,7 +490,7 @@
           "text": "The Egyptian Museum has many gifts to see.",
           "answer": "False",
           "source_page": 187,
-          "status": "active",
+          "status": "inactive_missing_audio",
           "assign": {
             "unit": 4,
             "lesson": 1
@@ -510,7 +514,7 @@
           "text": "The Egyptian Museum has a lot of history.",
           "answer": "True",
           "source_page": 187,
-          "status": "active",
+          "status": "inactive_missing_audio",
           "assign": {
             "unit": 4,
             "lesson": 1
@@ -824,8 +828,8 @@
         {
           "id": "p4-eng-u4-l2-q014",
           "type": "reading_mcq",
-          "text": "Children go to school to ______.",
-          "answer": "study and meet friends",
+          "text": "Children go to school to study and ______.",
+          "answer": "meet friends",
           "source_page": 127,
           "status": "active",
           "choices": [
@@ -863,7 +867,8 @@
               "page": 127,
               "id": "bbb-u4l2-015"
             }
-          ]
+          ],
+          "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
         },
         {
           "id": "p4-eng-u4-l2-q016",
@@ -883,7 +888,8 @@
               "page": 127,
               "id": "bbb-u4l2-017"
             }
-          ]
+          ],
+          "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
         },
         {
           "id": "p4-eng-u4-l2-q017",
@@ -903,7 +909,8 @@
               "page": 127,
               "id": "bbb-u4l2-018"
             }
-          ]
+          ],
+          "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
         },
         {
           "id": "p4-eng-u4-l2-q018",
@@ -1389,8 +1396,8 @@
         {
           "id": "p4-eng-u4-l3-q013",
           "type": "reading_mcq",
-          "text": "Ahmed goes to St. Catherine ______.",
-          "answer": "every year",
+          "text": "Ahmed goes to St. Catherine ______ every year.",
+          "answer": "Mountain",
           "source_page": 133,
           "status": "active",
           "choices": [
@@ -1428,7 +1435,8 @@
               "page": 133,
               "id": "bbb-u4l3-014"
             }
-          ]
+          ],
+          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
         },
         {
           "id": "p4-eng-u4-l3-q015",
@@ -1448,7 +1456,8 @@
               "page": 133,
               "id": "bbb-u4l3-015"
             }
-          ]
+          ],
+          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
         },
         {
           "id": "p4-eng-u4-l3-q016",
@@ -1468,7 +1477,8 @@
               "page": 133,
               "id": "bbb-u4l3-016"
             }
-          ]
+          ],
+          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
         },
         {
           "id": "p4-eng-u4-l3-q017",
@@ -1488,7 +1498,8 @@
               "page": 133,
               "id": "bbb-u4l3-017"
             }
-          ]
+          ],
+          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
         },
         {
           "id": "p4-eng-u4-l3-q018",
@@ -1840,7 +1851,8 @@
               "page": 138,
               "id": "bbb-u4r-015"
             }
-          ]
+          ],
+          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
         },
         {
           "id": "p4-eng-u4-l4-q016",
@@ -1862,7 +1874,8 @@
               "page": 138,
               "id": "bbb-u4r-016"
             }
-          ]
+          ],
+          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
         },
         {
           "id": "p4-eng-u4-l4-q017",
@@ -1884,7 +1897,8 @@
               "page": 138,
               "id": "bbb-u4r-017"
             }
-          ]
+          ],
+          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
         },
         {
           "id": "p4-eng-u4-l4-q018",
@@ -2158,7 +2172,8 @@
               "page": 140,
               "id": "bbb-u4r-030"
             }
-          ]
+          ],
+          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
         },
         {
           "id": "p4-eng-u4-l4-q031",
@@ -2178,7 +2193,8 @@
               "page": 140,
               "id": "bbb-u4r-032"
             }
-          ]
+          ],
+          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
         },
         {
           "id": "p4-eng-u4-l4-q032",
@@ -2198,7 +2214,8 @@
               "page": 140,
               "id": "bbb-u4r-033"
             }
-          ]
+          ],
+          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
         },
         {
           "id": "p4-eng-u4-l4-q033",
