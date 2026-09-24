@@ -6,6 +6,8 @@ export default async function handler(req,res){
   const apiKey=process.env.OPENAI_API_KEY;
   const {questions=[],targetLanguage='English'}=req.body||{};
   if(!Array.isArray(questions)) return res.status(400).json({error:'Invalid questions'});
+  if(questions.length>40) return res.status(413).json({error:'Too many questions'});
+  if(questions.some(q=>String(q?.text||'').length>2000)) return res.status(413).json({error:'Question too long'});
   if(targetLanguage!=='Arabic') return res.status(200).json({questions});
   if(!apiKey) return res.status(500).json({error:'OPENAI_API_KEY غير موجود'});
   try{
