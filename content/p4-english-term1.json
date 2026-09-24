@@ -4,15 +4,15 @@
   "grade": "Primary 4",
   "term": 1,
   "track": "languages",
-  "source": "Verified multi-source question bank",
-  "sourceNote": "Questions are extracted from the uploaded Bit by Bit and El-Moasser references. Source answers are preserved; duplicate questions are merged with source references.",
+  "source": "Verified question bank extracted from uploaded Bit by Bit and El-Moasser references",
+  "sourceNote": "Questions only come from uploaded references. Source answers are preserved. Listening items without usable audio and unsupported open-answer items are excluded from automatic tests.",
   "coverage_complete": false,
-  "coverage_note": "Verified bank currently covers Units 1–4 completely from the uploaded sources and the available beginning of Unit 5. The uploaded Bit by Bit PDF ends at page 150 before the rest of Unit 5 and Unit 6, so full-term testing is disabled until the missing source pages are uploaded.",
+  "coverage_note": "Units 1–4 are verified and active. The uploaded Bit by Bit PDF ends during Unit 5 Lesson 2, so the remainder of Unit 5 and Unit 6 are not activated until the missing source pages are provided.",
+  "verified_question_count": 1091,
   "moduleFiles": [
-    "/content/live-banks/p4-english-unit1.json",
-    "/content/live-banks/p4-english-unit2.json",
-    "/content/live-banks/p4-english-unit3.json",
-    "/content/live-banks/p4-english-unit4.json",
-    "/content/live-banks/p4-english-unit5-partial.json"
+    "/content/live-banks/v2/p4-english-unit1.json",
+    "/content/live-banks/v2/p4-english-unit2.json",
+    "/content/live-banks/v2/p4-english-unit3.json",
+    "/content/live-banks/v2/p4-english-unit4.json"
   ]
 }
