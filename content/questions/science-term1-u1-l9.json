@@ -15,7 +15,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "Organisms that make their own food are called ______.",
-      "answer": "autotrophs",
       "sourcePage": 295,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -25,7 +24,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "Organisms that depend directly or indirectly on other organisms for food are ______.",
-      "answer": "heterotrophs",
       "sourcePage": 296,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -35,7 +33,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The process by which green plants make food in the presence of light is ______.",
-      "answer": "photosynthesis",
       "sourcePage": 297,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -45,7 +42,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The breakdown of glucose to release energy in cells is cellular ______.",
-      "answer": "respiration",
       "sourcePage": 298,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -55,7 +51,6 @@
       "type": "reason",
       "difficulty": "easy",
       "text": "Give a reason: Green algae are producers.",
-      "answer": "They can make their own food by photosynthesis.",
       "sourcePage": 299,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -65,7 +60,6 @@
       "type": "reason",
       "difficulty": "easy",
       "text": "Give a reason: Rabbits are heterotrophs.",
-      "answer": "They depend on other organisms to obtain food.",
       "sourcePage": 300,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -75,7 +69,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare photosynthesis and cellular respiration.",
-      "answer": "Photosynthesis occurs in chloroplasts, uses water and carbon dioxide and stores light energy in glucose while releasing oxygen; cellular respiration occurs in mitochondria, uses glucose and oxygen and releases energy, producing water and carbon dioxide.",
       "sourcePage": 301,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -85,7 +78,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "Plant pores controlled by guard cells are called ______.",
-      "answer": "stomata",
       "sourcePage": 302,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -95,7 +87,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Guard cells are important.",
-      "answer": "They control opening and closing of stomata, helping regulate gas exchange and water vapor loss.",
       "sourcePage": 303,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -111,7 +102,6 @@
         "Stomata",
         "Guard cells"
       ],
-      "answer": "Xylem tissue",
       "sourcePage": 304,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -127,7 +117,6 @@
         "Root hair only",
         "Guard cells"
       ],
-      "answer": "Phloem tissue",
       "sourcePage": 305,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -137,7 +126,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Blood flows through the human circulatory system in a closed cycle.",
-      "answer": "The heart and blood vessels are connected in a closed loop that returns blood to the heart.",
       "sourcePage": 306,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -147,7 +135,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Food passage through the digestive system is not a closed path.",
-      "answer": "Food enters through the mouth and undigested wastes leave through the anus.",
       "sourcePage": 307,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -157,7 +144,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "Elimination of metabolic wastes is called ______.",
-      "answer": "excretion",
       "sourcePage": 308,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -167,7 +153,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Kidney failure may require continuous dialysis.",
-      "answer": "Dialysis purifies blood from toxins, excess water, salts and urea when kidneys do not work properly.",
       "sourcePage": 309,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -177,7 +162,6 @@
       "type": "reason",
       "difficulty": "hard",
       "text": "Give a reason: Excretion occurs in plants although they lack specialized excretory organs.",
-      "answer": "Leaves and stomata can eliminate excess water vapor and carbon dioxide.",
       "sourcePage": 310,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -187,7 +171,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare autotrophs and heterotrophs.",
-      "answer": "Autotrophs produce their own food; heterotrophs depend on other organisms for food.",
       "sourcePage": 311,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -197,7 +180,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare transport by xylem and phloem.",
-      "answer": "Xylem transports water and mineral salts from roots upward; phloem transports food made by photosynthesis from leaves to the rest of the plant.",
       "sourcePage": 312,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -207,7 +189,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "What happens if chloroplasts disappear from plant cells?",
-      "answer": "Photosynthesis stops, so the plant cannot make its own food and may die.",
       "sourcePage": 313,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -217,7 +198,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "What happens if the tracheal tubes in insects become blocked?",
-      "answer": "The insect cannot respire properly and may die.",
       "sourcePage": 314,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -227,7 +207,6 @@
       "type": "problem",
       "difficulty": "hard",
       "text": "What happens if the phloem tissue disappears from a plant stem?",
-      "answer": "Food produced in leaves will not be transported to roots and other parts, leading to plant death.",
       "sourcePage": 315,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -243,7 +222,6 @@
         "Bone",
         "Muscle"
       ],
-      "answer": "Kidney",
       "sourcePage": 315,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -253,7 +231,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Plant movement is always locomotion from one place to another.",
-      "answer": "False",
       "sourcePage": 315,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision pp.137-142 / PDF 553-558"
@@ -263,7 +240,6 @@
       "type": "problem",
       "difficulty": "hard",
       "text": "Consultant-generated application: A plant has healthy roots but xylem is blocked. Predict the first major transport problem.",
-      "answer": "Water and mineral salts will not move effectively from roots to leaves.",
       "sourcePage": 315,
       "sourceSection": "consultant-generated-from-source",
       "sourceReference": "Generated from verified lesson concepts"
