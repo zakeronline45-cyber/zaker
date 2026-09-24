@@ -1,5 +1,8 @@
+import {requireUser} from './_security.js';
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'Method not allowed'});
+  const authCtx=await requireUser(req,res,{bucket:'grade',limit:180,windowSeconds:60});
+  if(!authCtx)return;
   const {subject='Science',lesson,module,id,studentAnswer,studyLanguage='English'}=req.body||{};
   const modularSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
   if(!id || (subject==='Science'&&!lesson) || (modularSubjects.includes(subject)&&!module)) return res.status(400).json({error:'بيانات السؤال غير مكتملة'});
