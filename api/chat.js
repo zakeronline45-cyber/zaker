@@ -167,6 +167,9 @@ export default async function handler(req,res){
     const allowedSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','Science','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
     const safeSubject=allowedSubjects.includes(subject)?subject:'Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
+    if(question.length>1200) return res.status(413).json({error:'السؤال طويل جدًا. اختصره إلى 1200 حرف أو أقل.'});
+    if(String(sessionId||'').length>120) return res.status(400).json({error:'Invalid session id'});
+    if(String(lesson||'').length>250) return res.status(400).json({error:'Invalid lesson'});
     const subjectCodeMap={
       'Science':'Science','Math':'Math','Mathematics Arabic':'الرياضيات','English':'English','Arabic':'Arabic','Social Studies':'الدراسات الاجتماعية',
       'P4 Science':'science','P4 Science Arabic':'العلوم','P4 Math':'math','P4 Mathematics Arabic':'الرياضيات','P4 English':'english','P4 Arabic':'arabic','P4 Social Studies':'studies'
