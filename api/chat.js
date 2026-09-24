@@ -1,4 +1,4 @@
-import {requireUser} from './_security.js';
+import {requireUser,authorizeChildSubject} from './_security.js';
 const SUPABASE_URL='https://llhmkyighydokneqwrdj.supabase.co';
 const SUPABASE_KEY='sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77';
 const SCIENCE_SYLLABUS = [
@@ -159,12 +159,20 @@ export default async function handler(req,res){
       subject='Science',
       studyLanguage='English',
       sessionId='',
+      childId='',
+      lessonNo=1,
       curriculumContext=null,
       courseReference=null
     }=req.body||{};
     const allowedSubjects=['English','Arabic','Social Studies','Math','Mathematics Arabic','Science','P4 Math','P4 Mathematics Arabic','P4 Science','P4 Science Arabic','P4 English','P4 Arabic','P4 Social Studies'];
     const safeSubject=allowedSubjects.includes(subject)?subject:'Science';
     if(!question||typeof question!=='string') return res.status(400).json({error:'اكتب سؤالك أولًا'});
+    const subjectCodeMap={
+      'Science':'Science','Math':'Math','Mathematics Arabic':'الرياضيات','English':'English','Arabic':'Arabic','Social Studies':'الدراسات الاجتماعية',
+      'P4 Science':'science','P4 Science Arabic':'العلوم','P4 Math':'math','P4 Mathematics Arabic':'الرياضيات','P4 English':'english','P4 Arabic':'arabic','P4 Social Studies':'studies'
+    };
+    const canUse=await authorizeChildSubject(authCtx,res,{childId,subjectCode:subjectCodeMap[safeSubject],lessonNo});
+    if(!canUse)return;
 
     let history=null;
     if(sessionId){
