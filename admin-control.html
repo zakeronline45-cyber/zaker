@@ -7,10 +7,18 @@
 <section id="p-staff" class="pane"><div class="card"><h2>صلاحيات حسابات الإدارة</h2><p class="muted">الحساب spot.3135a@gmail.com هو Super Admin الرئيسي ولا يمكن خفض صلاحياته.</p><div class="actions" style="justify-content:flex-start"><input id="staffEmail" type="email" placeholder="بريد الحساب الموجود" style="padding:10px;border:1px solid var(--line);border-radius:10px"><select id="newStaffRole"><option value="support">Support</option><option value="payments">Payments</option><option value="content_manager">Content Manager</option><option value="read_only">Read Only</option><option value="super_admin">Super Admin</option></select><button class="btn primary" onclick="addStaff()">إضافة/ترقية حساب إدارة</button></div><div id="staff" style="margin-top:12px"></div></div></section>
 <section id="p-audit" class="pane"><div class="card"><h2>Audit Log</h2><div id="audits"></div></div></section>
 </main><script>
-const sb=supabase.createClient('https://llhmkyighydokneqwrdj.supabase.co','sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77');let isSuper=false,settings=null;
+const sb=supabase.createClient('https://llhmkyighydokneqwrdj.supabase.co','sb_publishable_bGxbtk2yxjDaFACjEGrBWA_1MBC1i77');async function requireAdminMFA(nextPath){
+ const {data,error}=await sb.auth.mfa.getAuthenticatorAssuranceLevel();
+ if(!error&&data?.nextLevel==='aal2'&&data?.currentLevel!=='aal2'){
+   location.href='/admin-security.html?next='+encodeURIComponent(nextPath||location.pathname+location.search);
+   return false;
+ }
+ return true;
+}
+let isSuper=false,settings=null;
 const e=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function show(n){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.p===n));document.querySelectorAll('.pane').forEach(x=>x.classList.toggle('active',x.id==='p-'+n));if(n==='content')loadContentAvailability();if(n==='review')loadReview();if(n==='activity')loadActivity();if(n==='staff')loadStaff();if(n==='audit')loadAudit()}
-async function init(){const {data:s}=await sb.auth.getSession();if(!s.session){location.href='/login.html?next=/admin-control.html';return}const {data:adm}=await sb.rpc('is_admin');if(!adm){location.href='/';return}const {data:su}=await sb.rpc('is_super_admin');isSuper=!!su;status.textContent='حساب إدارة مفعل'+(isSuper?' — Super Admin':'');document.body.dataset.ready='1';activityDay.value=new Date().toLocaleDateString('en-CA');try{await sb.rpc('log_app_event',{p_event_type:'admin_page_view',p_page:'/admin-control.html',p_child_id:null,p_details:{super_admin:isSuper}})}catch(e){}await loadSettings();await loadUsers()}
+async function init(){const {data:s}=await sb.auth.getSession();if(!s.session){location.href='/login.html?next=/admin-control.html';return}if(!(await requireAdminMFA('/admin-control.html')))return;const {data:adm}=await sb.rpc('is_admin');if(!adm){location.href='/';return}const {data:su}=await sb.rpc('is_super_admin');isSuper=!!su;status.textContent='حساب إدارة مفعل'+(isSuper?' — Super Admin':'');document.body.dataset.ready='1';activityDay.value=new Date().toLocaleDateString('en-CA');try{await sb.rpc('log_app_event',{p_event_type:'admin_page_view',p_page:'/admin-control.html',p_child_id:null,p_details:{super_admin:isSuper}})}catch(e){}await loadSettings();await loadUsers()}
 async function loadUsers(){const {data,error}=await sb.rpc('admin_list_guardians',{p_query:uq.value.trim()});if(error){users.textContent=error.message;return}users.innerHTML=(data||[]).map(x=>'<button class="btn soft" style="width:100%;text-align:right;margin:5px 0" onclick="openUser(\''+x.guardian_user_id+'\')"><b>'+e(x.guardian_name||'بدون اسم')+'</b><br><span class="muted">'+e(x.guardian_email)+' — '+e(x.guardian_phone||'')+' — '+x.child_count+' أبناء</span></button>').join('')||'<span class="muted">لا نتائج.</span>'}
 function gradeLabel(g){return ({p4:'رابعة ابتدائي',p5:'خامسة ابتدائي',p6:'سادسة ابتدائي',prep1:'أولى إعدادي',prep2:'ثانية إعدادي',prep3:'ثالثة إعدادي'}[g]||g)}
 function trackLabel(t){return t==='languages'?'لغات':'عربي'}
