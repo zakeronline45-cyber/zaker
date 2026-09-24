@@ -8,19 +8,19 @@
   "sources": [
     "Bit by Bit English Primary 4 First Term 2027"
   ],
-  "merge_policy": "Source-only; exact normalized dedupe; review questions assigned to their lesson.",
+  "coverage": "verified_uploaded_source",
   "modules": [
     {
       "id": 13,
+      "source_lesson_id": 1,
       "unit": "Unit 4: Egypt My Homeland",
-      "lesson_id": 1,
-      "title": "Lesson 1 — Egypt: Places We Visit",
+      "title": "Lesson 1 — Places in Egypt",
       "kind": "Vocabulary & Reading",
-      "summary": "Famous places in Egypt, tourism, the Nile, pyramids and Khan Al-Khalili.",
+      "summary": "Famous places in Egypt, tourism vocabulary and reading.",
       "focus": [
-        "Use Egypt place vocabulary",
-        "Read tourism texts",
-        "Answer source-based questions"
+        "Use places vocabulary",
+        "Read about Egyptian landmarks",
+        "Answer source-based exam questions"
       ],
       "terms": [],
       "questions": [
@@ -84,11 +84,6 @@
               "source": "Bit by Bit",
               "page": 118,
               "id": "bbb-u4l1-003"
-            },
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-021"
             }
           ]
         },
@@ -327,8 +322,7 @@
               "page": 119,
               "id": "bbb-u4l1-014"
             }
-          ],
-          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
+          ]
         },
         {
           "id": "p4-eng-u4-l1-q015",
@@ -348,8 +342,7 @@
               "page": 119,
               "id": "bbb-u4l1-015"
             }
-          ],
-          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
+          ]
         },
         {
           "id": "p4-eng-u4-l1-q016",
@@ -370,8 +363,7 @@
               "page": 119,
               "id": "bbb-u4l1-016"
             }
-          ],
-          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
+          ]
         },
         {
           "id": "p4-eng-u4-l1-q017",
@@ -391,8 +383,7 @@
               "page": 119,
               "id": "bbb-u4l1-017"
             }
-          ],
-          "passage": "Khan Al Khalili is a famous market in Cairo. It is full of shops that sell souvenirs, jewelry and gold. Tourists like walking in its narrow streets. Many people buy gifts for their friends and families. The market is also famous for its old cafés, where people drink tea and watch busy life around them."
+          ]
         },
         {
           "id": "p4-eng-u4-l1-q018",
@@ -439,468 +430,20 @@
               "id": "bbb-u4l1-020"
             }
           ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q021",
-          "type": "dialogue_complete",
-          "text": "Welcome to Egypt! I work as a ______ guide.",
-          "answer": "tour",
-          "source_page": 137,
-          "status": "active",
-          "word_bank": [
-            "ride",
-            "meet",
-            "pictures",
-            "tour"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-001"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q022",
-          "type": "dialogue_complete",
-          "text": "Nice to ______ you!",
-          "answer": "meet",
-          "source_page": 137,
-          "status": "active",
-          "word_bank": [
-            "ride",
-            "meet",
-            "pictures",
-            "tour"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-002"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q023",
-          "type": "dialogue_complete",
-          "text": "You can ______ a camel.",
-          "answer": "ride",
-          "source_page": 137,
-          "status": "active",
-          "word_bank": [
-            "ride",
-            "meet",
-            "pictures",
-            "tour"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-003"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q024",
-          "type": "dialogue_complete",
-          "text": "Great! I can take ______, too.",
-          "answer": "pictures",
-          "source_page": 137,
-          "status": "active",
-          "word_bank": [
-            "ride",
-            "meet",
-            "pictures",
-            "tour"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-004"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q025",
-          "type": "mcq",
-          "text": "A ______ helps tourists learn about places.",
-          "answer": "tour guide",
-          "source_page": 137,
-          "status": "active",
-          "choices": [
-            "tour guide",
-            "doctor",
-            "nurse",
-            "police officer"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-005"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q026",
-          "type": "mcq",
-          "text": "My family picture is ______ the wall of the living room.",
-          "answer": "on",
-          "source_page": 137,
-          "status": "active",
-          "choices": [
-            "behind",
-            "on",
-            "next",
-            "in"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-008"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q027",
-          "type": "correction",
-          "text": "My car is on the bike and the bus.",
-          "answer": "My car is between the bike and the bus.",
-          "source_page": 137,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-012"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q028",
-          "type": "mcq",
-          "text": "Tourists can ______ a camel near the pyramids.",
-          "answer": "ride",
-          "source_page": 139,
-          "status": "active",
-          "choices": [
-            "drink",
-            "guide",
-            "see",
-            "ride"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-019"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q029",
-          "type": "mcq",
-          "text": "A/An ______ is very tall. We can see Cairo from the top.",
-          "answer": "Tower",
-          "source_page": 139,
-          "status": "active",
-          "choices": [
-            "Pyramids",
-            "Tower",
-            "bazaar",
-            "oasis"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-020"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q030",
-          "type": "mcq",
-          "text": "The dog is standing ______ the door.",
-          "answer": "in front of",
-          "source_page": 139,
-          "status": "active",
-          "choices": [
-            "on",
-            "behind",
-            "under",
-            "in front of"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-024"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q031",
-          "type": "complete",
-          "text": "People buy ______, shoes, and toys from them.",
-          "answer": "clothes",
-          "source_page": 139,
-          "status": "active",
-          "word_bank": [
-            "stores",
-            "restaurants",
-            "clothes",
-            "teachers",
-            "treasures"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-026"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q032",
-          "type": "complete",
-          "text": "They eat in ______ and spend happy time together.",
-          "answer": "restaurants",
-          "source_page": 139,
-          "status": "active",
-          "word_bank": [
-            "stores",
-            "restaurants",
-            "clothes",
-            "teachers",
-            "treasures"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-027"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q033",
-          "type": "complete",
-          "text": "The museum has wonderful ______ that teach us about our history.",
-          "answer": "treasures",
-          "source_page": 139,
-          "status": "active",
-          "word_bank": [
-            "stores",
-            "restaurants",
-            "clothes",
-            "teachers",
-            "treasures"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-028"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q034",
-          "type": "reading_mcq",
-          "text": "We went to Khan Al-Khalili ______.",
-          "answer": "bazaar",
-          "source_page": 140,
-          "status": "active",
-          "choices": [
-            "river",
-            "school",
-            "bazaar",
-            "museum"
-          ],
-          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day.",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-029"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q035",
-          "type": "reading_mcq",
-          "text": "There were many shops selling ______ and clothes.",
-          "answer": "gifts",
-          "source_page": 140,
-          "status": "active",
-          "choices": [
-            "gifts",
-            "boats",
-            "trees",
-            "tickets"
-          ],
-          "passage_ref": "bbb-u4r-029",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-030"
-            }
-          ],
-          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
-        },
-        {
-          "id": "p4-eng-u4-l1-q036",
-          "type": "reading_open",
-          "text": "What did you buy?",
-          "answer": "A nice ring for my sister.",
-          "source_page": 140,
-          "status": "active",
-          "accepted_answers": [
-            "A nice ring.",
-            "A nice ring for my sister."
-          ],
-          "passage_ref": "bbb-u4r-029",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-032"
-            }
-          ],
-          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
-        },
-        {
-          "id": "p4-eng-u4-l1-q037",
-          "type": "reading_open",
-          "text": "How was the day?",
-          "answer": "It was a very nice day.",
-          "source_page": 140,
-          "status": "active",
-          "accepted_answers": [
-            "Very nice.",
-            "It was a very nice day."
-          ],
-          "passage_ref": "bbb-u4r-029",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-033"
-            }
-          ],
-          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day."
-        },
-        {
-          "id": "p4-eng-u4-l1-q038",
-          "type": "correct_form",
-          "text": "I took a photo ______ (in) the Cairo Tower.",
-          "answer": "of",
-          "source_page": 140,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-034"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q039",
-          "type": "correct_form",
-          "text": "The chair is ______ (next) the two beds.",
-          "answer": "between",
-          "source_page": 140,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-035"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q040",
-          "type": "correct_form",
-          "text": "The boy hides ______ (on) the bed.",
-          "answer": "under",
-          "source_page": 140,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-037"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q041",
-          "type": "punctuation",
-          "text": "the nile is a very long river",
-          "answer": "The Nile is a very long river.",
-          "source_page": 140,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-038"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q042",
-          "type": "punctuation",
-          "text": "where is the cat",
-          "answer": "Where is the cat?",
-          "source_page": 140,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-039"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l1-q043",
-          "type": "writing",
-          "text": "Write a paragraph of FOUR sentences about \"A place you like to visit with your friends\".",
-          "answer": "I want to visit the Egyptian Museum with my friends. It is in Cairo, Egypt. It has many treasures and history to see. We can also go to Khan Al-Khalili to buy some gifts.",
-          "source_page": 140,
-          "status": "active",
-          "model_answer_page": 136,
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 140,
-              "id": "bbb-u4r-040"
-            }
-          ]
         }
       ]
     },
     {
       "id": 14,
+      "source_lesson_id": 2,
       "unit": "Unit 4: Egypt My Homeland",
-      "lesson_id": 2,
-      "title": "Lessons 2 & 3 — My City / The World of Big Numbers",
-      "kind": "City Places & Prepositions",
-      "summary": "City places, services, prepositions of place and big-number language.",
+      "title": "Lessons 2 & 3 — My City / Big Numbers",
+      "kind": "City Vocabulary & Prepositions",
+      "summary": "City places, prepositions of place and related reading.",
       "focus": [
-        "Name city places",
+        "Use city vocabulary",
         "Use prepositions of place",
-        "Read about city services"
+        "Read for details"
       ],
       "terms": [],
       "questions": [
@@ -1223,8 +766,7 @@
               "page": 127,
               "id": "bbb-u4l2-015"
             }
-          ],
-          "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
+          ]
         },
         {
           "id": "p4-eng-u4-l2-q016",
@@ -1244,8 +786,7 @@
               "page": 127,
               "id": "bbb-u4l2-017"
             }
-          ],
-          "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
+          ]
         },
         {
           "id": "p4-eng-u4-l2-q017",
@@ -1265,8 +806,7 @@
               "page": 127,
               "id": "bbb-u4l2-018"
             }
-          ],
-          "passage": "Our city has many special places that help people every day. These places make our city a safe place to live. Sick people go to hospital to see doctors. Children go to school to study and meet friends. People enjoy going to the supermarket where they can buy different food. On hot days, many families go to the sports club to swim in the pool."
+          ]
         },
         {
           "id": "p4-eng-u4-l2-q018",
@@ -1432,281 +972,20 @@
               "id": "bbb-u4l2-030"
             }
           ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q029",
-          "type": "mcq",
-          "text": "My school is ______ to the post office.",
-          "answer": "next",
-          "source_page": 137,
-          "status": "active",
-          "choices": [
-            "behind",
-            "between",
-            "in front",
-            "next"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-006"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q030",
-          "type": "mcq",
-          "text": "We can read and borrow books at the ______.",
-          "answer": "library",
-          "source_page": 137,
-          "status": "active",
-          "choices": [
-            "restaurant",
-            "museum",
-            "library",
-            "hospital"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-007"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q031",
-          "type": "correction",
-          "text": "The cat is in front off the box.",
-          "answer": "The cat is in front of the box.",
-          "source_page": 137,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-009"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q032",
-          "type": "correction",
-          "text": "The dog is standing under the door.",
-          "answer": "The dog is standing in front of the door.",
-          "source_page": 137,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-010"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q033",
-          "type": "correction",
-          "text": "We throw our trash between the bin.",
-          "answer": "We throw our trash in the bin.",
-          "source_page": 137,
-          "status": "active",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 137,
-              "id": "bbb-u4r-011"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q034",
-          "type": "true_false",
-          "text": "The library is a very noisy place.",
-          "answer": "False",
-          "source_page": 138,
-          "status": "active",
-          "choices": [
-            "True",
-            "False"
-          ],
-          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean.",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 138,
-              "id": "bbb-u4r-013"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q035",
-          "type": "true_false",
-          "text": "You can do your homework at the library.",
-          "answer": "True",
-          "source_page": 138,
-          "status": "active",
-          "choices": [
-            "True",
-            "False"
-          ],
-          "passage_ref": "bbb-u4r-013",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 138,
-              "id": "bbb-u4r-014"
-            }
-          ],
-          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
-        },
-        {
-          "id": "p4-eng-u4-l2-q036",
-          "type": "reading_mcq",
-          "text": "We go to the library to read or ______ books.",
-          "answer": "borrow",
-          "source_page": 138,
-          "status": "active",
-          "choices": [
-            "eat",
-            "throw",
-            "borrow",
-            "make"
-          ],
-          "passage_ref": "bbb-u4r-013",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 138,
-              "id": "bbb-u4r-015"
-            }
-          ],
-          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
-        },
-        {
-          "id": "p4-eng-u4-l2-q037",
-          "type": "reading_mcq",
-          "text": "The library has books about animals, history, and ______.",
-          "answer": "science",
-          "source_page": 138,
-          "status": "active",
-          "choices": [
-            "science",
-            "toys",
-            "clothes",
-            "food"
-          ],
-          "passage_ref": "bbb-u4r-013",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 138,
-              "id": "bbb-u4r-016"
-            }
-          ],
-          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
-        },
-        {
-          "id": "p4-eng-u4-l2-q038",
-          "type": "reading_mcq",
-          "text": "You must keep the library ______.",
-          "answer": "clean",
-          "source_page": 138,
-          "status": "active",
-          "choices": [
-            "dirty",
-            "clean",
-            "dark",
-            "hot"
-          ],
-          "passage_ref": "bbb-u4r-013",
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 138,
-              "id": "bbb-u4r-017"
-            }
-          ],
-          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean."
-        },
-        {
-          "id": "p4-eng-u4-l2-q039",
-          "type": "mcq",
-          "text": "The cat is in front ______ the box.",
-          "answer": "of",
-          "source_page": 139,
-          "status": "active",
-          "choices": [
-            "of",
-            "on",
-            "off",
-            "to"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-022"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q040",
-          "type": "mcq",
-          "text": "The library is next ______ the supermarket.",
-          "answer": "to",
-          "source_page": 139,
-          "status": "active",
-          "choices": [
-            "next",
-            "in",
-            "between",
-            "to"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-023"
-            }
-          ]
-        },
-        {
-          "id": "p4-eng-u4-l2-q041",
-          "type": "complete",
-          "text": "The shopping mall has many ______.",
-          "answer": "stores",
-          "source_page": 139,
-          "status": "active",
-          "word_bank": [
-            "stores",
-            "restaurants",
-            "clothes",
-            "teachers",
-            "treasures"
-          ],
-          "source_refs": [
-            {
-              "source": "Bit by Bit",
-              "page": 139,
-              "id": "bbb-u4r-025"
-            }
-          ]
         }
       ]
     },
     {
       "id": 15,
+      "source_lesson_id": 3,
       "unit": "Unit 4: Egypt My Homeland",
-      "lesson_id": 3,
-      "title": "Lessons 4 & 5 — Writing a Blog / Natural Trips",
-      "kind": "Writing & Reading",
-      "summary": "Natural trips, St. Catherine, Siwa Oasis, blog posts and leaflets.",
+      "title": "Lessons 4 & 5 — Writing a Blog / Natural Trip",
+      "kind": "Writing",
+      "summary": "Natural places, travel vocabulary and writing models.",
       "focus": [
-        "Read travel texts",
-        "Use trip vocabulary",
-        "Write source-modelled paragraphs"
+        "Use travel vocabulary",
+        "Read natural-trip texts",
+        "Write from source models"
       ],
       "terms": [],
       "questions": [
@@ -2008,8 +1287,7 @@
               "page": 133,
               "id": "bbb-u4l3-014"
             }
-          ],
-          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
+          ]
         },
         {
           "id": "p4-eng-u4-l3-q015",
@@ -2029,8 +1307,7 @@
               "page": 133,
               "id": "bbb-u4l3-015"
             }
-          ],
-          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
+          ]
         },
         {
           "id": "p4-eng-u4-l3-q016",
@@ -2050,8 +1327,7 @@
               "page": 133,
               "id": "bbb-u4l3-016"
             }
-          ],
-          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
+          ]
         },
         {
           "id": "p4-eng-u4-l3-q017",
@@ -2071,8 +1347,7 @@
               "page": 133,
               "id": "bbb-u4l3-017"
             }
-          ],
-          "passage": "I'm Ahmed. I always visit St. Catherine Mountain every year. I go there with my family. We wake up early and climb the mountain. We wear warm clothes because it's cold. We visit the old monastery at the top. St. Catherine is a popular place for nature, adventure, and fun with friends and family."
+          ]
         },
         {
           "id": "p4-eng-u4-l3-q018",
@@ -2119,9 +1394,359 @@
               "id": "bbb-u4l3-020"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "source_lesson_id": 4,
+      "unit": "Unit 4: Egypt My Homeland",
+      "title": "Unit 4 Review & Tests",
+      "kind": "Review",
+      "summary": "Verified Unit 4 review and exam questions.",
+      "focus": [
+        "Review Unit 4 vocabulary",
+        "Practice grammar and reading",
+        "Prepare for unit tests"
+      ],
+      "terms": [],
+      "questions": [
+        {
+          "id": "p4-eng-u4-l4-q001",
+          "type": "dialogue_complete",
+          "text": "Welcome to Egypt! I work as a ______ guide.",
+          "answer": "tour",
+          "source_page": 137,
+          "status": "active",
+          "word_bank": [
+            "ride",
+            "meet",
+            "pictures",
+            "tour"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-001"
+            }
+          ]
         },
         {
-          "id": "p4-eng-u4-l3-q021",
+          "id": "p4-eng-u4-l4-q002",
+          "type": "dialogue_complete",
+          "text": "Nice to ______ you!",
+          "answer": "meet",
+          "source_page": 137,
+          "status": "active",
+          "word_bank": [
+            "ride",
+            "meet",
+            "pictures",
+            "tour"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-002"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q003",
+          "type": "dialogue_complete",
+          "text": "You can ______ a camel.",
+          "answer": "ride",
+          "source_page": 137,
+          "status": "active",
+          "word_bank": [
+            "ride",
+            "meet",
+            "pictures",
+            "tour"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-003"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q004",
+          "type": "dialogue_complete",
+          "text": "Great! I can take ______, too.",
+          "answer": "pictures",
+          "source_page": 137,
+          "status": "active",
+          "word_bank": [
+            "ride",
+            "meet",
+            "pictures",
+            "tour"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-004"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q005",
+          "type": "mcq",
+          "text": "A ______ helps tourists learn about places.",
+          "answer": "tour guide",
+          "source_page": 137,
+          "status": "active",
+          "choices": [
+            "tour guide",
+            "doctor",
+            "nurse",
+            "police officer"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-005"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q006",
+          "type": "mcq",
+          "text": "My school is ______ to the post office.",
+          "answer": "next",
+          "source_page": 137,
+          "status": "active",
+          "choices": [
+            "behind",
+            "between",
+            "in front",
+            "next"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-006"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q007",
+          "type": "mcq",
+          "text": "We can read and borrow books at the ______.",
+          "answer": "library",
+          "source_page": 137,
+          "status": "active",
+          "choices": [
+            "restaurant",
+            "museum",
+            "library",
+            "hospital"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-007"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q008",
+          "type": "mcq",
+          "text": "My family picture is ______ the wall of the living room.",
+          "answer": "on",
+          "source_page": 137,
+          "status": "active",
+          "choices": [
+            "behind",
+            "on",
+            "next",
+            "in"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-008"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q009",
+          "type": "correction",
+          "text": "The cat is in front off the box.",
+          "answer": "The cat is in front of the box.",
+          "source_page": 137,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-009"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q010",
+          "type": "correction",
+          "text": "The dog is standing under the door.",
+          "answer": "The dog is standing in front of the door.",
+          "source_page": 137,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-010"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q011",
+          "type": "correction",
+          "text": "We throw our trash between the bin.",
+          "answer": "We throw our trash in the bin.",
+          "source_page": 137,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-011"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q012",
+          "type": "correction",
+          "text": "My car is on the bike and the bus.",
+          "answer": "My car is between the bike and the bus.",
+          "source_page": 137,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 137,
+              "id": "bbb-u4r-012"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q013",
+          "type": "true_false",
+          "text": "The library is a very noisy place.",
+          "answer": "False",
+          "source_page": 138,
+          "status": "active",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "passage": "The library is a quiet place in the city. We go there to read or borrow books. It has books about animals, science, and history. Some people go to study or do their homework. There are chairs and tables for reading. The library helps people learn more. It is usually open during the day. You must be quiet inside the library and keep it clean.",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 138,
+              "id": "bbb-u4r-013"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q014",
+          "type": "true_false",
+          "text": "You can do your homework at the library.",
+          "answer": "True",
+          "source_page": 138,
+          "status": "active",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "passage_ref": "bbb-u4r-013",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 138,
+              "id": "bbb-u4r-014"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q015",
+          "type": "reading_mcq",
+          "text": "We go to the library to read or ______ books.",
+          "answer": "borrow",
+          "source_page": 138,
+          "status": "active",
+          "choices": [
+            "eat",
+            "throw",
+            "borrow",
+            "make"
+          ],
+          "passage_ref": "bbb-u4r-013",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 138,
+              "id": "bbb-u4r-015"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q016",
+          "type": "reading_mcq",
+          "text": "The library has books about animals, history, and ______.",
+          "answer": "science",
+          "source_page": 138,
+          "status": "active",
+          "choices": [
+            "science",
+            "toys",
+            "clothes",
+            "food"
+          ],
+          "passage_ref": "bbb-u4r-013",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 138,
+              "id": "bbb-u4r-016"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q017",
+          "type": "reading_mcq",
+          "text": "You must keep the library ______.",
+          "answer": "clean",
+          "source_page": 138,
+          "status": "active",
+          "choices": [
+            "dirty",
+            "clean",
+            "dark",
+            "hot"
+          ],
+          "passage_ref": "bbb-u4r-013",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 138,
+              "id": "bbb-u4r-017"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q018",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Siwa Oasis\" using: see sunset – good olive oil – cold – light clothes.",
           "answer": "Siwa Oasis is a nice place in Egypt. You can see the sunset there. You should wear light clothes during the day and a jacket at night because it is cold. You can buy good olive oil.",
@@ -2133,6 +1758,395 @@
               "source": "Bit by Bit",
               "page": 138,
               "id": "bbb-u4r-018"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q019",
+          "type": "mcq",
+          "text": "Tourists can ______ a camel near the pyramids.",
+          "answer": "ride",
+          "source_page": 139,
+          "status": "active",
+          "choices": [
+            "drink",
+            "guide",
+            "see",
+            "ride"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-019"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q020",
+          "type": "mcq",
+          "text": "A/An ______ is very tall. We can see Cairo from the top.",
+          "answer": "Tower",
+          "source_page": 139,
+          "status": "active",
+          "choices": [
+            "Pyramids",
+            "Tower",
+            "bazaar",
+            "oasis"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-020"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q021",
+          "type": "mcq",
+          "text": "People buy ______ from the bazaar.",
+          "answer": "gifts",
+          "source_page": 139,
+          "status": "active",
+          "choices": [
+            "gifts",
+            "books",
+            "camels",
+            "Pyramids"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-021"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q022",
+          "type": "mcq",
+          "text": "The cat is in front ______ the box.",
+          "answer": "of",
+          "source_page": 139,
+          "status": "active",
+          "choices": [
+            "of",
+            "on",
+            "off",
+            "to"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-022"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q023",
+          "type": "mcq",
+          "text": "The library is next ______ the supermarket.",
+          "answer": "to",
+          "source_page": 139,
+          "status": "active",
+          "choices": [
+            "next",
+            "in",
+            "between",
+            "to"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-023"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q024",
+          "type": "mcq",
+          "text": "The dog is standing ______ the door.",
+          "answer": "in front of",
+          "source_page": 139,
+          "status": "active",
+          "choices": [
+            "on",
+            "behind",
+            "under",
+            "in front of"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-024"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q025",
+          "type": "complete",
+          "text": "The shopping mall has many ______.",
+          "answer": "stores",
+          "source_page": 139,
+          "status": "active",
+          "word_bank": [
+            "stores",
+            "restaurants",
+            "clothes",
+            "teachers",
+            "treasures"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-025"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q026",
+          "type": "complete",
+          "text": "People buy ______, shoes, and toys from them.",
+          "answer": "clothes",
+          "source_page": 139,
+          "status": "active",
+          "word_bank": [
+            "stores",
+            "restaurants",
+            "clothes",
+            "teachers",
+            "treasures"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-026"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q027",
+          "type": "complete",
+          "text": "They eat in ______ and spend happy time together.",
+          "answer": "restaurants",
+          "source_page": 139,
+          "status": "active",
+          "word_bank": [
+            "stores",
+            "restaurants",
+            "clothes",
+            "teachers",
+            "treasures"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-027"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q028",
+          "type": "complete",
+          "text": "The museum has wonderful ______ that teach us about our history.",
+          "answer": "treasures",
+          "source_page": 139,
+          "status": "active",
+          "word_bank": [
+            "stores",
+            "restaurants",
+            "clothes",
+            "teachers",
+            "treasures"
+          ],
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 139,
+              "id": "bbb-u4r-028"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q029",
+          "type": "reading_mcq",
+          "text": "We went to Khan Al-Khalili ______.",
+          "answer": "bazaar",
+          "source_page": 140,
+          "status": "active",
+          "choices": [
+            "river",
+            "school",
+            "bazaar",
+            "museum"
+          ],
+          "passage": "Yesterday, I went to Khan Al-Khalili Bazaar. I went there with my family. It was a very busy and colorful market. There were many shops selling gifts and clothes. Many tourists go there to buy gifts. I bought a nice ring for my sister. We took photos. It was a very nice day.",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-029"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q030",
+          "type": "reading_mcq",
+          "text": "There were many shops selling ______ and clothes.",
+          "answer": "gifts",
+          "source_page": 140,
+          "status": "active",
+          "choices": [
+            "gifts",
+            "boats",
+            "trees",
+            "tickets"
+          ],
+          "passage_ref": "bbb-u4r-029",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-030"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q031",
+          "type": "reading_open",
+          "text": "What did you buy?",
+          "answer": "A nice ring for my sister.",
+          "source_page": 140,
+          "status": "active",
+          "accepted_answers": [
+            "A nice ring.",
+            "A nice ring for my sister."
+          ],
+          "passage_ref": "bbb-u4r-029",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-032"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q032",
+          "type": "reading_open",
+          "text": "How was the day?",
+          "answer": "It was a very nice day.",
+          "source_page": 140,
+          "status": "active",
+          "accepted_answers": [
+            "Very nice.",
+            "It was a very nice day."
+          ],
+          "passage_ref": "bbb-u4r-029",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-033"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q033",
+          "type": "correct_form",
+          "text": "I took a photo ______ (in) the Cairo Tower.",
+          "answer": "of",
+          "source_page": 140,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-034"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q034",
+          "type": "correct_form",
+          "text": "The chair is ______ (next) the two beds.",
+          "answer": "between",
+          "source_page": 140,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-035"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q035",
+          "type": "correct_form",
+          "text": "The boy hides ______ (on) the bed.",
+          "answer": "under",
+          "source_page": 140,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-037"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q036",
+          "type": "punctuation",
+          "text": "the nile is a very long river",
+          "answer": "The Nile is a very long river.",
+          "source_page": 140,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-038"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q037",
+          "type": "punctuation",
+          "text": "where is the cat",
+          "answer": "Where is the cat?",
+          "source_page": 140,
+          "status": "active",
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-039"
+            }
+          ]
+        },
+        {
+          "id": "p4-eng-u4-l4-q038",
+          "type": "writing",
+          "text": "Write a paragraph of FOUR sentences about \"A place you like to visit with your friends\".",
+          "answer": "I want to visit the Egyptian Museum with my friends. It is in Cairo, Egypt. It has many treasures and history to see. We can also go to Khan Al-Khalili to buy some gifts.",
+          "source_page": 140,
+          "status": "active",
+          "model_answer_page": 136,
+          "source_refs": [
+            {
+              "source": "Bit by Bit",
+              "page": 140,
+              "id": "bbb-u4r-040"
             }
           ]
         }
