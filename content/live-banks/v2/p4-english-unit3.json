@@ -25,7 +25,6 @@
           "id": "p4-eng-u3-l1-q001",
           "type": "mcq",
           "text": "A/An ______ has a spotted coat.",
-          "answer": "giraffe",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -46,7 +45,6 @@
           "id": "p4-eng-u3-l1-q002",
           "type": "mcq",
           "text": "My dad is a ______ guide. He shows visitors the animals.",
-          "answer": "forest",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -72,7 +70,6 @@
           "id": "p4-eng-u3-l1-q003",
           "type": "mcq",
           "text": "______ are very good at climbing trees.",
-          "answer": "Monkeys",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -98,7 +95,6 @@
           "id": "p4-eng-u3-l1-q004",
           "type": "mcq",
           "text": "The ______ is an amazing place; you can see animals up close.",
-          "answer": "forest park",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -119,7 +115,6 @@
           "id": "p4-eng-u3-l1-q005",
           "type": "mcq",
           "text": "The bear has thick ______.",
-          "answer": "fur",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -140,7 +135,6 @@
           "id": "p4-eng-u3-l1-q006",
           "type": "mcq",
           "text": "Giraffes eat green ______.",
-          "answer": "leaves",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -166,7 +160,6 @@
           "id": "p4-eng-u3-l1-q007",
           "type": "mcq",
           "text": "The monkey has a long ______.",
-          "answer": "tail",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -192,7 +185,6 @@
           "id": "p4-eng-u3-l1-q008",
           "type": "mcq",
           "text": "The zebra has a ______ coat.",
-          "answer": "striped",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -223,7 +215,6 @@
           "id": "p4-eng-u3-l1-q009",
           "type": "mcq",
           "text": "______ use their trunks to drink water.",
-          "answer": "Elephants",
           "source_page": 80,
           "status": "active",
           "choices": [
@@ -244,7 +235,6 @@
           "id": "p4-eng-u3-l1-q010",
           "type": "complete",
           "text": "For example, the zebra has a ______ coat.",
-          "answer": "striped",
           "source_page": 81,
           "status": "active",
           "word_bank": [
@@ -266,7 +256,6 @@
           "id": "p4-eng-u3-l1-q011",
           "type": "complete",
           "text": "They run in ______.",
-          "answer": "groups",
           "source_page": 81,
           "status": "active",
           "word_bank": [
@@ -288,7 +277,6 @@
           "id": "p4-eng-u3-l1-q012",
           "type": "complete",
           "text": "Foxes are ______ animals.",
-          "answer": "small",
           "source_page": 81,
           "status": "active",
           "word_bank": [
@@ -310,7 +298,6 @@
           "id": "p4-eng-u3-l1-q013",
           "type": "complete",
           "text": "They have ______-brown fur.",
-          "answer": "red",
           "source_page": 81,
           "status": "active",
           "word_bank": [
@@ -332,7 +319,6 @@
           "id": "p4-eng-u3-l1-q014",
           "type": "reading_mcq",
           "text": "Lions are very ______ animals.",
-          "answer": "strong",
           "source_page": 81,
           "status": "active",
           "choices": [
@@ -354,7 +340,6 @@
           "id": "p4-eng-u3-l1-q015",
           "type": "reading_mcq",
           "text": "The underlined pronoun \"them\" refers to the ______.",
-          "answer": "lions",
           "source_page": 81,
           "status": "active",
           "choices": [
@@ -377,13 +362,8 @@
           "id": "p4-eng-u3-l1-q016",
           "type": "reading_open",
           "text": "When do lions hunt?",
-          "answer": "At night.",
           "source_page": 81,
           "status": "active",
-          "accepted_answers": [
-            "At night.",
-            "They hunt at night."
-          ],
           "passage_ref": "bbb-u3l1-014",
           "passage": "Lions are wild animals. They are the kings of the forest. They are very strong. They live in groups. They have four legs and long tails. They attack animals, so all animals are afraid of them. Lions sleep in day and hunt at night. They run very fast. We can see them in the zoo or on TV. They can live for 10 to 14 years.",
           "source_refs": [
@@ -398,13 +378,8 @@
           "id": "p4-eng-u3-l1-q017",
           "type": "reading_open",
           "text": "Where do lions live?",
-          "answer": "In Africa.",
           "source_page": 81,
           "status": "active",
-          "accepted_answers": [
-            "In Africa.",
-            "They live in Africa."
-          ],
           "passage_ref": "bbb-u3l1-014",
           "passage": "Lions are wild animals. They are the kings of the forest. They are very strong. They live in groups. They have four legs and long tails. They attack animals, so all animals are afraid of them. Lions sleep in day and hunt at night. They run very fast. We can see them in the zoo or on TV. They can live for 10 to 14 years.",
           "source_refs": [
@@ -419,7 +394,6 @@
           "id": "p4-eng-u3-l1-q018",
           "type": "punctuation",
           "text": "which place would you like to visit",
-          "answer": "Which place would you like to visit?",
           "source_page": 81,
           "status": "active",
           "source_refs": [
@@ -434,7 +408,6 @@
           "id": "p4-eng-u3-l1-q019",
           "type": "punctuation",
           "text": "he is a forest guide",
-          "answer": "He is a forest guide.",
           "source_page": 81,
           "status": "active",
           "source_refs": [
@@ -449,7 +422,6 @@
           "id": "p4-eng-u3-l1-q020",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"A day at the forest park\" using: animals – monkeys – elephants.",
-          "answer": "I sometimes go to the forest park with my dad. My dad works as a forest guide. He shows visitors the animals. Visitors see elephants drinking water and monkeys climbing trees.",
           "source_page": 81,
           "status": "active",
           "model_answer_page": 102,
@@ -465,7 +437,6 @@
           "id": "p4-eng-u3-l1-q021",
           "type": "dialogue_complete",
           "text": "What does your dad do at the forest ______?",
-          "answer": "park",
           "source_page": 103,
           "status": "active",
           "word_bank": [
@@ -486,7 +457,6 @@
           "id": "p4-eng-u3-l1-q022",
           "type": "dialogue_complete",
           "text": "Do you usually ______ with him?",
-          "answer": "go",
           "source_page": 103,
           "status": "active",
           "word_bank": [
@@ -507,7 +477,6 @@
           "id": "p4-eng-u3-l1-q023",
           "type": "dialogue_complete",
           "text": "What animals do ______ see?",
-          "answer": "visitors",
           "source_page": 103,
           "status": "active",
           "word_bank": [
@@ -528,7 +497,6 @@
           "id": "p4-eng-u3-l1-q024",
           "type": "dialogue_complete",
           "text": "They ______ elephants, lions, and monkeys.",
-          "answer": "see",
           "source_page": 103,
           "status": "active",
           "word_bank": [
@@ -549,7 +517,6 @@
           "id": "p4-eng-u3-l1-q025",
           "type": "mcq",
           "text": "The lion has yellow fur. It ______ animals at night.",
-          "answer": "hunts",
           "source_page": 103,
           "status": "active",
           "choices": [
@@ -570,7 +537,6 @@
           "id": "p4-eng-u3-l1-q026",
           "type": "true_false",
           "text": "I sometimes go with my father to school.",
-          "answer": "False",
           "source_page": 104,
           "status": "active",
           "choices": [
@@ -590,7 +556,6 @@
           "id": "p4-eng-u3-l1-q027",
           "type": "true_false",
           "text": "My father is a forest guide.",
-          "answer": "True",
           "source_page": 104,
           "status": "active",
           "choices": [
@@ -611,7 +576,6 @@
           "id": "p4-eng-u3-l1-q028",
           "type": "reading_mcq",
           "text": "My father works in the ______.",
-          "answer": "forest park",
           "source_page": 104,
           "status": "active",
           "choices": [
@@ -634,7 +598,6 @@
           "id": "p4-eng-u3-l1-q029",
           "type": "reading_mcq",
           "text": "Giraffes eat ______.",
-          "answer": "leaves",
           "source_page": 104,
           "status": "active",
           "choices": [
@@ -657,7 +620,6 @@
           "id": "p4-eng-u3-l1-q030",
           "type": "reading_mcq",
           "text": "Lions often ______ at night and sleep during the day.",
-          "answer": "hunt",
           "source_page": 104,
           "status": "active",
           "choices": [
@@ -680,7 +642,6 @@
           "id": "p4-eng-u3-l1-q031",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Helping Animals\" using: help – in the wild – live – zoos.",
-          "answer": "Animals need our help to stay healthy and safe. Some animals live in the wild, while others live in zoos or homes. Each animal needs special care to live well.",
           "source_page": 104,
           "status": "active",
           "model_answer_page": 102,
@@ -696,7 +657,6 @@
           "id": "p4-eng-u3-l1-q032",
           "type": "mcq",
           "text": "Rabbits eat fresh ______.",
-          "answer": "vegetables",
           "source_page": 105,
           "status": "active",
           "choices": [
@@ -722,7 +682,6 @@
           "id": "p4-eng-u3-l1-q033",
           "type": "mcq",
           "text": "The monkey has a ______ tail.",
-          "answer": "long",
           "source_page": 105,
           "status": "active",
           "choices": [
@@ -743,7 +702,6 @@
           "id": "p4-eng-u3-l1-q034",
           "type": "mcq",
           "text": "A/An ______ is one who shows visitors the animals.",
-          "answer": "forest guide",
           "source_page": 105,
           "status": "active",
           "choices": [
@@ -764,7 +722,6 @@
           "id": "p4-eng-u3-l1-q035",
           "type": "mcq",
           "text": "Sally is a ______ girl.",
-          "answer": "taller",
           "source_page": 105,
           "status": "active",
           "choices": [
@@ -785,7 +742,6 @@
           "id": "p4-eng-u3-l1-q036",
           "type": "complete",
           "text": "______ often check these animals' health.",
-          "answer": "Vets",
           "source_page": 105,
           "status": "active",
           "word_bank": [
@@ -807,7 +763,6 @@
           "id": "p4-eng-u3-l1-q037",
           "type": "reading_mcq",
           "text": "The opposite of the underlined word \"large\" is ______.",
-          "answer": "small",
           "source_page": 106,
           "status": "active",
           "choices": [
@@ -829,7 +784,6 @@
           "id": "p4-eng-u3-l1-q038",
           "type": "reading_mcq",
           "text": "Elephants use their ______ to drink water.",
-          "answer": "trunk",
           "source_page": 106,
           "status": "active",
           "choices": [
@@ -852,13 +806,8 @@
           "id": "p4-eng-u3-l1-q039",
           "type": "reading_open",
           "text": "What do elephants eat?",
-          "answer": "Leaves and grass.",
           "source_page": 106,
           "status": "active",
-          "accepted_answers": [
-            "Leaves and grass.",
-            "They eat leaves and grass."
-          ],
           "passage_ref": "bbb-u3r-029",
           "passage": "Elephants are the largest animals in land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunk to drink, eat and spray water on their bodies. Elephants eat leaves and grass. They can live for up to 60–70 years. A baby elephant can weigh 120kg.",
           "source_refs": [
@@ -873,13 +822,8 @@
           "id": "p4-eng-u3-l1-q040",
           "type": "reading_open",
           "text": "How many years can elephants live?",
-          "answer": "Up to 60–70 years.",
           "source_page": 106,
           "status": "active",
-          "accepted_answers": [
-            "60–70 years.",
-            "Up to 60–70 years."
-          ],
           "passage_ref": "bbb-u3r-029",
           "passage": "Elephants are the largest animals in land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunk to drink, eat and spray water on their bodies. Elephants eat leaves and grass. They can live for up to 60–70 years. A baby elephant can weigh 120kg.",
           "source_refs": [
@@ -894,7 +838,6 @@
           "id": "p4-eng-u3-l1-q041",
           "type": "punctuation",
           "text": "how old are you",
-          "answer": "How old are you?",
           "source_page": 106,
           "status": "active",
           "source_refs": [
@@ -909,7 +852,6 @@
           "id": "p4-eng-u3-l1-q042",
           "type": "punctuation",
           "text": "i'm a student in grade four",
-          "answer": "I'm a student in grade four.",
           "source_page": 106,
           "status": "active",
           "source_refs": [
@@ -927,7 +869,6 @@
           "pdf_page": 107,
           "type": "mcq",
           "text": "The fish ______ in the river.",
-          "answer": "swims",
           "status": "active",
           "choices": [
             "climbs",
@@ -950,7 +891,6 @@
           "pdf_page": 107,
           "type": "mcq",
           "text": "The lion can ______ zebras.",
-          "answer": "hunt",
           "status": "active",
           "choices": [
             "collect",
@@ -973,7 +913,6 @@
           "pdf_page": 107,
           "type": "mcq",
           "text": "The elephant ______ is big and gray.",
-          "answer": "elephant",
           "status": "active",
           "choices": [
             "elephant",
@@ -996,7 +935,6 @@
           "pdf_page": 107,
           "type": "mcq",
           "text": "She is watching a TV ______ about animals.",
-          "answer": "program",
           "status": "active",
           "choices": [
             "book",
@@ -1019,7 +957,6 @@
           "pdf_page": 108,
           "type": "mcq",
           "text": "The bear has sharp ______.",
-          "answer": "claws",
           "status": "active",
           "choices": [
             "feathers",
@@ -1042,12 +979,7 @@
           "pdf_page": 109,
           "type": "reading_open",
           "text": "When do lions sleep?",
-          "answer": "During the day.",
           "status": "active",
-          "accepted_answers": [
-            "During the day.",
-            "They sleep during the day."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1063,7 +995,6 @@
           "pdf_page": 111,
           "type": "mcq",
           "text": "The ______ is the king of the jungle land.",
-          "answer": "lion",
           "status": "active",
           "choices": [
             "zebra",
@@ -1086,7 +1017,6 @@
           "pdf_page": 111,
           "type": "mcq",
           "text": "The giraffe has a ______ coat.",
-          "answer": "spotted",
           "status": "active",
           "choices": [
             "striped",
@@ -1109,7 +1039,6 @@
           "pdf_page": 111,
           "type": "mcq",
           "text": "The elephant ______ its trunk to drink water.",
-          "answer": "uses",
           "status": "active",
           "choices": [
             "to use",
@@ -1132,7 +1061,6 @@
           "pdf_page": 111,
           "type": "mcq",
           "text": "Some animals ______ thick fur.",
-          "answer": "have",
           "status": "active",
           "choices": [
             "does",
@@ -1155,7 +1083,6 @@
           "pdf_page": 111,
           "type": "mcq",
           "text": "My father works ______ a forest guide at the forest park.",
-          "answer": "as",
           "status": "active",
           "choices": [
             "in",
@@ -1178,7 +1105,6 @@
           "pdf_page": 111,
           "type": "mcq",
           "text": "Lions have yellow ______.",
-          "answer": "fur",
           "status": "active",
           "choices": [
             "trunk",
@@ -1201,7 +1127,6 @@
           "pdf_page": 111,
           "type": "reading_mcq",
           "text": "The opposite of the underlined word \"large\" is ______.",
-          "answer": "small",
           "status": "active",
           "choices": [
             "young",
@@ -1225,7 +1150,6 @@
           "pdf_page": 111,
           "type": "reading_mcq",
           "text": "Elephants use their ______ to drink water.",
-          "answer": "trunks",
           "status": "active",
           "choices": [
             "teeth",
@@ -1250,12 +1174,7 @@
           "pdf_page": 111,
           "type": "reading_open",
           "text": "What do elephants eat?",
-          "answer": "Leaves and grass.",
           "status": "active",
-          "accepted_answers": [
-            "Leaves and grass.",
-            "They eat leaves and grass."
-          ],
           "passage_ref": "elm-u3l1-018",
           "passage": "Elephants are the largest animals on land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunks to drink, eat and spray water on their bodies. Elephants eat leaves and grass.",
           "source_refs": [
@@ -1273,12 +1192,7 @@
           "pdf_page": 111,
           "type": "reading_open",
           "text": "Where do elephants live?",
-          "answer": "In Africa and Asia.",
           "status": "active",
-          "accepted_answers": [
-            "In Africa and Asia.",
-            "They live in Africa and Asia."
-          ],
           "passage_ref": "elm-u3l1-018",
           "passage": "Elephants are the largest animals on land. They live in Africa and Asia. They have large ears and a long trunk. They use their trunks to drink, eat and spray water on their bodies. Elephants eat leaves and grass.",
           "source_refs": [
@@ -1296,7 +1210,6 @@
           "pdf_page": 112,
           "type": "complete",
           "text": "My father's job is very interesting. He is a forest ______.",
-          "answer": "guide",
           "status": "active",
           "word_bank": [
             "climb",
@@ -1320,7 +1233,6 @@
           "pdf_page": 112,
           "type": "complete",
           "text": "He works in a forest ______.",
-          "answer": "park",
           "status": "active",
           "word_bank": [
             "climb",
@@ -1344,7 +1256,6 @@
           "pdf_page": 112,
           "type": "complete",
           "text": "His job is to show ______ the animals.",
-          "answer": "visitors",
           "status": "active",
           "word_bank": [
             "climb",
@@ -1368,7 +1279,6 @@
           "pdf_page": 112,
           "type": "complete",
           "text": "Many people visit the forest park to enjoy watching the animals up ______.",
-          "answer": "close",
           "status": "active",
           "word_bank": [
             "climb",
@@ -1392,7 +1302,6 @@
           "pdf_page": 112,
           "type": "punctuation",
           "text": "when do lions often hunt",
-          "answer": "When do lions often hunt?",
           "status": "active",
           "source_refs": [
             {
@@ -1409,7 +1318,6 @@
           "pdf_page": 112,
           "type": "punctuation",
           "text": "the bear has thick fur",
-          "answer": "The bear has thick fur.",
           "status": "active",
           "source_refs": [
             {
@@ -1426,7 +1334,6 @@
           "pdf_page": 142,
           "type": "mcq",
           "text": "Teachers give correct ______ for students to study well.",
-          "answer": "advice",
           "status": "active",
           "choices": [
             "habits",
@@ -1449,7 +1356,6 @@
           "pdf_page": 142,
           "type": "mcq",
           "text": "I take my cat to the ______ to check its health.",
-          "answer": "vet",
           "status": "active",
           "choices": [
             "engineer",
@@ -1472,7 +1378,6 @@
           "pdf_page": 142,
           "type": "mcq",
           "text": "The lion stays in a strong ______ at the zoo for safety.",
-          "answer": "cage",
           "status": "active",
           "choices": [
             "river",
@@ -1495,7 +1400,6 @@
           "pdf_page": 142,
           "type": "complete",
           "text": "Everyone can help protect animals in simple ways. Small acts of ______ make our world better.",
-          "answer": "kindness",
           "status": "active",
           "word_bank": [
             "kindness",
@@ -1519,7 +1423,6 @@
           "pdf_page": 142,
           "type": "complete",
           "text": "When we ______ for animals, we create a safe place for them.",
-          "answer": "care",
           "status": "active",
           "word_bank": [
             "kindness",
@@ -1543,7 +1446,6 @@
           "pdf_page": 142,
           "type": "complete",
           "text": "Being kind to ______ teaches us to be better people.",
-          "answer": "animals",
           "status": "active",
           "word_bank": [
             "kindness",
@@ -1567,7 +1469,6 @@
           "pdf_page": 143,
           "type": "reading_mcq",
           "text": "Animals need our help to stay ______ and safe.",
-          "answer": "healthy",
           "status": "active",
           "choices": [
             "sad",
@@ -1591,7 +1492,6 @@
           "pdf_page": 143,
           "type": "reading_mcq",
           "text": "The underlined pronoun \"They\" refers to ______.",
-          "answer": "animals",
           "status": "active",
           "choices": [
             "zoo animals",
@@ -1616,12 +1516,7 @@
           "pdf_page": 143,
           "type": "reading_open",
           "text": "Where do animals live?",
-          "answer": "In the wild, zoos, or homes.",
           "status": "active",
-          "accepted_answers": [
-            "In the wild, zoos, or homes.",
-            "They live in the wild, zoos or homes."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1637,7 +1532,6 @@
           "pdf_page": 144,
           "type": "mcq",
           "text": "I take my dog to the ______ to check its health.",
-          "answer": "vet",
           "status": "active",
           "choices": [
             "vet",
@@ -1660,7 +1554,6 @@
           "pdf_page": 144,
           "type": "complete",
           "text": "Elephants use their ______ to spray water on their body.",
-          "answer": "trunks",
           "status": "active",
           "word_bank": [
             "monkeys",
@@ -1684,7 +1577,6 @@
           "pdf_page": 144,
           "type": "complete",
           "text": "We also saw ______.",
-          "answer": "monkeys",
           "status": "active",
           "word_bank": [
             "monkeys",
@@ -1708,7 +1600,6 @@
           "pdf_page": 144,
           "type": "complete",
           "text": "Monkeys are small and have long ______.",
-          "answer": "tails",
           "status": "active",
           "word_bank": [
             "monkeys",
@@ -1732,7 +1623,6 @@
           "pdf_page": 144,
           "type": "complete",
           "text": "They ______ trees.",
-          "answer": "climb",
           "status": "active",
           "word_bank": [
             "monkeys",
@@ -1756,7 +1646,6 @@
           "pdf_page": 145,
           "type": "reading_mcq",
           "text": "Sohad liked the ______.",
-          "answer": "lions",
           "status": "active",
           "choices": [
             "giraffes",
@@ -1780,7 +1669,6 @@
           "pdf_page": 145,
           "type": "reading_mcq",
           "text": "The elephant used its ______ to spray water on its body.",
-          "answer": "trunk",
           "status": "active",
           "choices": [
             "trunk",
@@ -1805,12 +1693,7 @@
           "pdf_page": 145,
           "type": "reading_open",
           "text": "When did Soha visit the zoo?",
-          "answer": "Yesterday.",
           "status": "active",
-          "accepted_answers": [
-            "Yesterday.",
-            "She visited the zoo yesterday."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1826,12 +1709,7 @@
           "pdf_page": 145,
           "type": "reading_open",
           "text": "Who enjoyed watching the monkeys?",
-          "answer": "Khaled.",
           "status": "active",
-          "accepted_answers": [
-            "Khaled.",
-            "Her brother Khaled."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -1847,7 +1725,6 @@
           "pdf_page": 145,
           "type": "punctuation",
           "text": "i am a student in grade four",
-          "answer": "I am a student in grade four.",
           "status": "active",
           "source_refs": [
             {
@@ -1864,7 +1741,6 @@
           "pdf_page": 146,
           "type": "dialogue_complete",
           "text": "My father is a forest ______.",
-          "answer": "guide",
           "status": "active",
           "word_bank": [
             "visitors",
@@ -1887,7 +1763,6 @@
           "pdf_page": 146,
           "type": "dialogue_complete",
           "text": "Where does he ______?",
-          "answer": "work",
           "status": "active",
           "word_bank": [
             "visitors",
@@ -1910,7 +1785,6 @@
           "pdf_page": 146,
           "type": "dialogue_complete",
           "text": "He works at the ______ park.",
-          "answer": "forest",
           "status": "active",
           "word_bank": [
             "visitors",
@@ -1933,7 +1807,6 @@
           "pdf_page": 146,
           "type": "dialogue_complete",
           "text": "He shows ______ the animals.",
-          "answer": "visitors",
           "status": "active",
           "word_bank": [
             "visitors",
@@ -1956,7 +1829,6 @@
           "pdf_page": 146,
           "type": "true_false",
           "text": "Zoo animals need clean clothes and enough food.",
-          "answer": "False",
           "status": "active",
           "choices": [
             "True",
@@ -1979,7 +1851,6 @@
           "pdf_page": 146,
           "type": "reading_mcq",
           "text": "The text is about ______.",
-          "answer": "Animals",
           "status": "active",
           "choices": [
             "Animals",
@@ -2004,7 +1875,6 @@
           "pdf_page": 146,
           "type": "reading_mcq",
           "text": "The opposite of \"safe\" is ______.",
-          "answer": "dangerous",
           "status": "active",
           "choices": [
             "clean",
@@ -2029,7 +1899,6 @@
           "pdf_page": 147,
           "type": "dialogue_complete",
           "text": "I went to the ______ park.",
-          "answer": "forest",
           "status": "active",
           "word_bank": [
             "see",
@@ -2052,7 +1921,6 @@
           "pdf_page": 147,
           "type": "dialogue_complete",
           "text": "What did you ______ there?",
-          "answer": "see",
           "status": "active",
           "word_bank": [
             "see",
@@ -2075,7 +1943,6 @@
           "pdf_page": 147,
           "type": "dialogue_complete",
           "text": "I saw giraffes and ______.",
-          "answer": "monkeys",
           "status": "active",
           "word_bank": [
             "see",
@@ -2098,7 +1965,6 @@
           "pdf_page": 147,
           "type": "dialogue_complete",
           "text": "Giraffes eat ______ from tall trees.",
-          "answer": "leaves",
           "status": "active",
           "word_bank": [
             "see",
@@ -2121,7 +1987,6 @@
           "pdf_page": 147,
           "type": "mcq",
           "text": "A ______ is a large hole in a mountain where animals can live.",
-          "answer": "cave",
           "status": "active",
           "choices": [
             "cage",
@@ -2144,7 +2009,6 @@
           "pdf_page": 147,
           "type": "mcq",
           "text": "Bears have thick ______.",
-          "answer": "fur",
           "status": "active",
           "choices": [
             "fur",
@@ -2167,7 +2031,6 @@
           "pdf_page": 147,
           "type": "mcq",
           "text": "My new T-shirt is nicer ______ the old one.",
-          "answer": "than",
           "status": "active",
           "choices": [
             "that",
@@ -2190,7 +2053,6 @@
           "pdf_page": 147,
           "type": "correction",
           "text": "The blue kite is higher then the red kite.",
-          "answer": "The blue kite is higher than the red kite.",
           "status": "active",
           "source_refs": [
             {
@@ -2216,7 +2078,6 @@
           "id": "p4-eng-u3-l2-q001",
           "type": "mcq",
           "text": "The lion is a ______ animal.",
-          "answer": "wild",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2237,7 +2098,6 @@
           "id": "p4-eng-u3-l2-q002",
           "type": "mcq",
           "text": "Wild animals need ______ and safe homes to live well.",
-          "answer": "clean water",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2258,7 +2118,6 @@
           "id": "p4-eng-u3-l2-q003",
           "type": "mcq",
           "text": "Climbing the mountain was one of my biggest ______.",
-          "answer": "challenges",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2279,7 +2138,6 @@
           "id": "p4-eng-u3-l2-q004",
           "type": "mcq",
           "text": "The red car is slower ______ the blue car.",
-          "answer": "than",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2300,7 +2158,6 @@
           "id": "p4-eng-u3-l2-q005",
           "type": "mcq",
           "text": "Today is ______ than yesterday.",
-          "answer": "hotter",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2321,7 +2178,6 @@
           "id": "p4-eng-u3-l2-q006",
           "type": "mcq",
           "text": "My room is ______ than your room.",
-          "answer": "cleaner",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2347,7 +2203,6 @@
           "id": "p4-eng-u3-l2-q007",
           "type": "mcq",
           "text": "The cat is ______ than the mouse.",
-          "answer": "bigger",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2373,7 +2228,6 @@
           "id": "p4-eng-u3-l2-q008",
           "type": "mcq",
           "text": "The blue dress is ______ than the red one.",
-          "answer": "nicer",
           "source_page": 86,
           "status": "active",
           "choices": [
@@ -2394,7 +2248,6 @@
           "id": "p4-eng-u3-l2-q009",
           "type": "complete",
           "text": "Their homes are getting smaller because people ______ new cities.",
-          "answer": "build",
           "source_page": 87,
           "status": "active",
           "word_bank": [
@@ -2416,7 +2269,6 @@
           "id": "p4-eng-u3-l2-q010",
           "type": "complete",
           "text": "They need our help to find clean water and ______ places to live.",
-          "answer": "safe",
           "source_page": 87,
           "status": "active",
           "word_bank": [
@@ -2438,7 +2290,6 @@
           "id": "p4-eng-u3-l2-q011",
           "type": "complete",
           "text": "Forest ______ work harder than before to protect these animals and their homes.",
-          "answer": "officers",
           "source_page": 87,
           "status": "active",
           "word_bank": [
@@ -2460,7 +2311,6 @@
           "id": "p4-eng-u3-l2-q012",
           "type": "reading_mcq",
           "text": "Giraffes need taller ______.",
-          "answer": "trees",
           "source_page": 87,
           "status": "active",
           "choices": [
@@ -2487,7 +2337,6 @@
           "id": "p4-eng-u3-l2-q013",
           "type": "reading_mcq",
           "text": "Elephants need ______ spaces than monkeys.",
-          "answer": "bigger",
           "source_page": 87,
           "status": "active",
           "choices": [
@@ -2515,13 +2364,8 @@
           "id": "p4-eng-u3-l2-q014",
           "type": "reading_open",
           "text": "What do zoo animals need?",
-          "answer": "Special attention.",
           "source_page": 87,
           "status": "active",
-          "accepted_answers": [
-            "Special attention.",
-            "They need special attention."
-          ],
           "passage_ref": "bbb-u3l2-012",
           "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food.",
           "source_refs": [
@@ -2536,13 +2380,8 @@
           "id": "p4-eng-u3-l2-q015",
           "type": "reading_open",
           "text": "Why do lions eat a lot of food?",
-          "answer": "To stay stronger than other animals.",
           "source_page": 87,
           "status": "active",
-          "accepted_answers": [
-            "To stay stronger.",
-            "To stay stronger than other animals."
-          ],
           "passage_ref": "bbb-u3l2-012",
           "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food.",
           "source_refs": [
@@ -2557,13 +2396,8 @@
           "id": "p4-eng-u3-l2-q016",
           "type": "reading_open",
           "text": "What is the main idea of the text?",
-          "answer": "The different needs of zoo animals.",
           "source_page": 87,
           "status": "active",
-          "accepted_answers": [
-            "Zoo animals need special care.",
-            "The different needs of zoo animals."
-          ],
           "passage_ref": "bbb-u3l2-012",
           "passage": "Zoo animals need special attention. Elephants need bigger spaces than monkeys to move around. Lions eat a lot of food to stay stronger than other animals. Giraffes need taller trees to reach their food.",
           "source_refs": [
@@ -2578,7 +2412,6 @@
           "id": "p4-eng-u3-l2-q017",
           "type": "correct_form",
           "text": "Ahmed is ______ (short) than Ali.",
-          "answer": "shorter",
           "source_page": 87,
           "status": "active",
           "source_refs": [
@@ -2593,7 +2426,6 @@
           "id": "p4-eng-u3-l2-q018",
           "type": "correct_form",
           "text": "Sally is ______ (lazy) than Rana.",
-          "answer": "lazier",
           "source_page": 87,
           "status": "active",
           "source_refs": [
@@ -2608,7 +2440,6 @@
           "id": "p4-eng-u3-l2-q019",
           "type": "correct_form",
           "text": "Elephants are ______ (big) than cats.",
-          "answer": "bigger",
           "source_page": 87,
           "status": "active",
           "source_refs": [
@@ -2623,7 +2454,6 @@
           "id": "p4-eng-u3-l2-q020",
           "type": "correct_form",
           "text": "Cats are ______ (safe) than lions.",
-          "answer": "safer",
           "source_page": 87,
           "status": "active",
           "source_refs": [
@@ -2643,7 +2473,6 @@
           "id": "p4-eng-u3-l2-q021",
           "type": "correct_form",
           "text": "Fruit is ______ (healthy) than sweets.",
-          "answer": "healthier",
           "source_page": 87,
           "status": "active",
           "source_refs": [
@@ -2663,7 +2492,6 @@
           "id": "p4-eng-u3-l2-q022",
           "type": "correct_form",
           "text": "Mazen is shorter ______ (then) Amany.",
-          "answer": "than",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2678,7 +2506,6 @@
           "id": "p4-eng-u3-l2-q023",
           "type": "correct_form",
           "text": "Nashwa is ______ (thin) than Hala.",
-          "answer": "thinner",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2693,7 +2520,6 @@
           "id": "p4-eng-u3-l2-q024",
           "type": "correct_form",
           "text": "Dina is ______ (pretty) than Amira.",
-          "answer": "prettier",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2708,7 +2534,6 @@
           "id": "p4-eng-u3-l2-q025",
           "type": "correct_form",
           "text": "Hana is taller ______ (then) Ali.",
-          "answer": "than",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2723,7 +2548,6 @@
           "id": "p4-eng-u3-l2-q026",
           "type": "correct_form",
           "text": "Arabic is ______ (easy) than French.",
-          "answer": "easier",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2743,7 +2567,6 @@
           "id": "p4-eng-u3-l2-q027",
           "type": "correct_form",
           "text": "Trains are ______ (fast) than bikes.",
-          "answer": "faster",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2758,7 +2581,6 @@
           "id": "p4-eng-u3-l2-q028",
           "type": "correct_form",
           "text": "A lion is ______ (strong) than a rabbit.",
-          "answer": "stronger",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2773,7 +2595,6 @@
           "id": "p4-eng-u3-l2-q029",
           "type": "punctuation",
           "text": "he likes animals",
-          "answer": "He likes animals.",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2788,7 +2609,6 @@
           "id": "p4-eng-u3-l2-q030",
           "type": "punctuation",
           "text": "which pet do you like most",
-          "answer": "Which pet do you like most?",
           "source_page": 88,
           "status": "active",
           "source_refs": [
@@ -2803,7 +2623,6 @@
           "id": "p4-eng-u3-l2-q031",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Your favorite animal\" using: animals – monkey – climb trees.",
-          "answer": "I like animals very much. My favorite animal is the monkey. It is clever. It has a long tail. It can climb trees.",
           "source_page": 88,
           "status": "active",
           "model_answer_page": 102,
@@ -2819,7 +2638,6 @@
           "id": "p4-eng-u3-l2-q032",
           "type": "mcq",
           "text": "A giraffe is ______ than a zebra.",
-          "answer": "taller",
           "source_page": 103,
           "status": "active",
           "choices": [
@@ -2840,7 +2658,6 @@
           "id": "p4-eng-u3-l2-q033",
           "type": "mcq",
           "text": "Rabbits are healthier ______ other animals.",
-          "answer": "than",
           "source_page": 103,
           "status": "active",
           "choices": [
@@ -2861,7 +2678,6 @@
           "id": "p4-eng-u3-l2-q034",
           "type": "correction",
           "text": "Amr is tall than Samy.",
-          "answer": "Amr is taller than Samy.",
           "source_page": 103,
           "status": "active",
           "source_refs": [
@@ -2876,7 +2692,6 @@
           "id": "p4-eng-u3-l2-q035",
           "type": "correction",
           "text": "Sally is healthy than Nada.",
-          "answer": "Sally is healthier than Nada.",
           "source_page": 103,
           "status": "active",
           "source_refs": [
@@ -2891,7 +2706,6 @@
           "id": "p4-eng-u3-l2-q036",
           "type": "correction",
           "text": "Cats are small than dogs.",
-          "answer": "Cats are smaller than dogs.",
           "source_page": 103,
           "status": "active",
           "source_refs": [
@@ -2906,7 +2720,6 @@
           "id": "p4-eng-u3-l2-q037",
           "type": "correction",
           "text": "English is easy than math.",
-          "answer": "English is easier than math.",
           "source_page": 103,
           "status": "active",
           "source_refs": [
@@ -2921,7 +2734,6 @@
           "id": "p4-eng-u3-l2-q038",
           "type": "mcq",
           "text": "Noha is ______ than Nashwa.",
-          "answer": "shorter",
           "source_page": 105,
           "status": "active",
           "choices": [
@@ -2947,7 +2759,6 @@
           "id": "p4-eng-u3-l2-q039",
           "type": "mcq",
           "text": "Sama is lazier ______ Abeer.",
-          "answer": "than",
           "source_page": 105,
           "status": "active",
           "choices": [
@@ -2968,7 +2779,6 @@
           "id": "p4-eng-u3-l2-q040",
           "type": "complete",
           "text": "Zoo animals need special attention. ______ need bigger spaces than monkeys to move around.",
-          "answer": "Elephants",
           "source_page": 105,
           "status": "active",
           "word_bank": [
@@ -2990,7 +2800,6 @@
           "id": "p4-eng-u3-l2-q041",
           "type": "complete",
           "text": "Lions eat a lot of food to stay ______ than other animals.",
-          "answer": "stronger",
           "source_page": 105,
           "status": "active",
           "word_bank": [
@@ -3012,7 +2821,6 @@
           "id": "p4-eng-u3-l2-q042",
           "type": "complete",
           "text": "Giraffes need taller ______ to reach their food.",
-          "answer": "trees",
           "source_page": 105,
           "status": "active",
           "word_bank": [
@@ -3034,7 +2842,6 @@
           "id": "p4-eng-u3-l2-q043",
           "type": "correct_form",
           "text": "The plane is ______ (fast) than the train.",
-          "answer": "faster",
           "source_page": 106,
           "status": "active",
           "source_refs": [
@@ -3049,7 +2856,6 @@
           "id": "p4-eng-u3-l2-q044",
           "type": "correct_form",
           "text": "Sara is ______ (pretty) than Heba.",
-          "answer": "prettier",
           "source_page": 106,
           "status": "active",
           "source_refs": [
@@ -3064,7 +2870,6 @@
           "id": "p4-eng-u3-l2-q045",
           "type": "correct_form",
           "text": "Hana is taller ______ (then) Rana.",
-          "answer": "than",
           "source_page": 106,
           "status": "active",
           "source_refs": [
@@ -3082,7 +2887,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Our teacher asked us a question to get our ______.",
-          "answer": "attention",
           "status": "active",
           "choices": [
             "kindness",
@@ -3105,7 +2909,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Noha faces many ______, so she has a difficult life.",
-          "answer": "challenges",
           "status": "active",
           "choices": [
             "cities",
@@ -3128,7 +2931,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Who is the ______ of this dog?",
-          "answer": "owner",
           "status": "active",
           "choices": [
             "challenge",
@@ -3151,7 +2953,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Giraffes need tall trees to ______ their food.",
-          "answer": "reach",
           "status": "active",
           "choices": [
             "reach",
@@ -3174,7 +2975,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Lions live inside ______.",
-          "answer": "forests",
           "status": "active",
           "choices": [
             "mountains",
@@ -3197,7 +2997,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Everyone can help protect animals by showing ______ and caring for them.",
-          "answer": "kindness",
           "status": "active",
           "choices": [
             "fear",
@@ -3220,7 +3019,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Animals need care to stay ______.",
-          "answer": "safe",
           "status": "active",
           "choices": [
             "fast",
@@ -3243,7 +3041,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Elephants need big ______ to move around.",
-          "answer": "space",
           "status": "active",
           "choices": [
             "food",
@@ -3266,7 +3063,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Vets check animals' ______ to keep them healthy.",
-          "answer": "health",
           "status": "active",
           "choices": [
             "kindness",
@@ -3289,7 +3085,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Forest ______ work hard to protect animals' homes.",
-          "answer": "officers",
           "status": "active",
           "choices": [
             "insects",
@@ -3312,7 +3107,6 @@
           "pdf_page": 114,
           "type": "mcq",
           "text": "Pets need ______ care from their owners.",
-          "answer": "daily",
           "status": "active",
           "choices": [
             "monthly",
@@ -3335,12 +3129,7 @@
           "pdf_page": 115,
           "type": "reading_open",
           "text": "Why do lions eat a lot of food?",
-          "answer": "To stay stronger than other animals.",
           "status": "active",
-          "accepted_answers": [
-            "To stay stronger than other animals.",
-            "They eat a lot of food to stay stronger than other animals."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3356,12 +3145,7 @@
           "pdf_page": 115,
           "type": "reading_open",
           "text": "Why are the homes of wild animals getting smaller?",
-          "answer": "Because of new cities.",
           "status": "active",
-          "accepted_answers": [
-            "Because of new cities.",
-            "Their homes are getting smaller because of new cities."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3377,7 +3161,6 @@
           "pdf_page": 117,
           "type": "mcq",
           "text": "Amira is ______ than her sister.",
-          "answer": "younger",
           "status": "active",
           "choices": [
             "young",
@@ -3400,7 +3183,6 @@
           "pdf_page": 117,
           "type": "mcq",
           "text": "Their life is ______ than before.",
-          "answer": "happier",
           "status": "active",
           "choices": [
             "happy",
@@ -3423,7 +3205,6 @@
           "pdf_page": 117,
           "type": "mcq",
           "text": "Elephants are heavier ______ lions.",
-          "answer": "than",
           "status": "active",
           "choices": [
             "there",
@@ -3446,7 +3227,6 @@
           "pdf_page": 117,
           "type": "mcq",
           "text": "He is ______ than his brother.",
-          "answer": "taller",
           "status": "active",
           "choices": [
             "tall",
@@ -3469,7 +3249,6 @@
           "pdf_page": 117,
           "type": "mcq",
           "text": "A zebra is shorter ______ a giraffe.",
-          "answer": "than",
           "status": "active",
           "choices": [
             "the",
@@ -3492,7 +3271,6 @@
           "pdf_page": 117,
           "type": "correct_form",
           "text": "Salma is ______ (old) than Reem.",
-          "answer": "older",
           "status": "active",
           "source_refs": [
             {
@@ -3509,7 +3287,6 @@
           "pdf_page": 117,
           "type": "correct_form",
           "text": "Magdy is taller ______ (then) Injy.",
-          "answer": "than",
           "status": "active",
           "source_refs": [
             {
@@ -3526,7 +3303,6 @@
           "pdf_page": 117,
           "type": "correct_form",
           "text": "Camels are ______ (strong) than goats.",
-          "answer": "stronger",
           "status": "active",
           "source_refs": [
             {
@@ -3543,7 +3319,6 @@
           "pdf_page": 117,
           "type": "correct_form",
           "text": "Sally is ______ (lazy) than Ranna.",
-          "answer": "lazier",
           "status": "active",
           "source_refs": [
             {
@@ -3560,7 +3335,6 @@
           "pdf_page": 117,
           "type": "correct_form",
           "text": "English is ______ (easy) than Arabic.",
-          "answer": "easier",
           "status": "active",
           "source_refs": [
             {
@@ -3577,7 +3351,6 @@
           "pdf_page": 117,
           "type": "correct_form",
           "text": "The cat is ______ (small) than the dog.",
-          "answer": "smaller",
           "status": "active",
           "source_refs": [
             {
@@ -3594,7 +3367,6 @@
           "pdf_page": 118,
           "type": "mcq",
           "text": "My cat is ______ than my neighbor's cat.",
-          "answer": "fatter",
           "status": "active",
           "choices": [
             "fat",
@@ -3617,7 +3389,6 @@
           "pdf_page": 118,
           "type": "mcq",
           "text": "Some animals like lions and tigers live in the ______.",
-          "answer": "wild",
           "status": "active",
           "choices": [
             "sea",
@@ -3640,7 +3411,6 @@
           "pdf_page": 118,
           "type": "mcq",
           "text": "Asser is taller ______ his brother.",
-          "answer": "than",
           "status": "active",
           "choices": [
             "the",
@@ -3663,7 +3433,6 @@
           "pdf_page": 118,
           "type": "mcq",
           "text": "Showing ______ to animals can protect them.",
-          "answer": "kindness",
           "status": "active",
           "choices": [
             "crops",
@@ -3686,7 +3455,6 @@
           "pdf_page": 118,
           "type": "mcq",
           "text": "Rabbits are ______ than turtles.",
-          "answer": "faster",
           "status": "active",
           "choices": [
             "as fast",
@@ -3709,7 +3477,6 @@
           "pdf_page": 118,
           "type": "mcq",
           "text": "Babies need special ______ to stay safe.",
-          "answer": "care",
           "status": "active",
           "choices": [
             "attention",
@@ -3732,7 +3499,6 @@
           "pdf_page": 118,
           "type": "complete",
           "text": "Wild animals face different challenges. Their ______ are getting smaller because of new cities.",
-          "answer": "homes",
           "status": "active",
           "word_bank": [
             "protect",
@@ -3756,7 +3522,6 @@
           "pdf_page": 118,
           "type": "complete",
           "text": "They need ______ water and safe places to live in.",
-          "answer": "clean",
           "status": "active",
           "word_bank": [
             "protect",
@@ -3780,7 +3545,6 @@
           "pdf_page": 118,
           "type": "complete",
           "text": "Forest ______ now work harder than before.",
-          "answer": "officers",
           "status": "active",
           "word_bank": [
             "protect",
@@ -3804,7 +3568,6 @@
           "pdf_page": 118,
           "type": "complete",
           "text": "Forest officers work harder than before to ______ these animals and their homes.",
-          "answer": "protect",
           "status": "active",
           "word_bank": [
             "protect",
@@ -3828,7 +3591,6 @@
           "pdf_page": 118,
           "type": "correct_form",
           "text": "My grandfather is ______ (old) than my father.",
-          "answer": "older",
           "status": "active",
           "source_refs": [
             {
@@ -3845,7 +3607,6 @@
           "pdf_page": 118,
           "type": "correct_form",
           "text": "Elephants are ______ (big) than monkeys.",
-          "answer": "bigger",
           "status": "active",
           "source_refs": [
             {
@@ -3862,7 +3623,6 @@
           "pdf_page": 118,
           "type": "punctuation",
           "text": "he keeps a rabbit at home",
-          "answer": "He keeps a rabbit at home.",
           "status": "active",
           "source_refs": [
             {
@@ -3879,7 +3639,6 @@
           "pdf_page": 118,
           "type": "punctuation",
           "text": "how do vets help animals",
-          "answer": "How do vets help animals?",
           "status": "active",
           "source_refs": [
             {
@@ -3896,12 +3655,7 @@
           "pdf_page": 119,
           "type": "reading_open",
           "text": "What do zoo animals need?",
-          "answer": "Special attention.",
           "status": "active",
-          "accepted_answers": [
-            "Special attention.",
-            "They need special attention."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3917,12 +3671,7 @@
           "pdf_page": 119,
           "type": "reading_open",
           "text": "How can lions stay stronger than others?",
-          "answer": "By eating a lot of food.",
           "status": "active",
-          "accepted_answers": [
-            "By eating a lot of food.",
-            "They eat a lot of food."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -3938,7 +3687,6 @@
           "pdf_page": 142,
           "type": "mcq",
           "text": "Elephants are ______ than lions.",
-          "answer": "bigger",
           "status": "active",
           "choices": [
             "big",
@@ -3961,7 +3709,6 @@
           "pdf_page": 142,
           "type": "mcq",
           "text": "No one in the class is ______ than Hatem.",
-          "answer": "smarter",
           "status": "active",
           "choices": [
             "smarter",
@@ -3984,7 +3731,6 @@
           "pdf_page": 142,
           "type": "mcq",
           "text": "My bag is heavier ______ my sister's bag.",
-          "answer": "than",
           "status": "active",
           "choices": [
             "that",
@@ -4007,7 +3753,6 @@
           "pdf_page": 142,
           "type": "complete",
           "text": "Together, we can make their lives ______ and healthier.",
-          "answer": "happier",
           "status": "active",
           "word_bank": [
             "kindness",
@@ -4031,12 +3776,7 @@
           "pdf_page": 143,
           "type": "reading_open",
           "text": "What do pets need?",
-          "answer": "Daily care, exercise, fresh food and vet visits.",
           "status": "active",
-          "accepted_answers": [
-            "Daily care, exercise and fresh food.",
-            "They need daily care, exercise, fresh food and vet visits."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -4052,7 +3792,6 @@
           "pdf_page": 143,
           "type": "correct_form",
           "text": "The factory is ______ (big) than the museum.",
-          "answer": "bigger",
           "status": "active",
           "source_refs": [
             {
@@ -4069,7 +3808,6 @@
           "pdf_page": 143,
           "type": "correct_form",
           "text": "Adam is ______ (strong) than his little brother.",
-          "answer": "stronger",
           "status": "active",
           "source_refs": [
             {
@@ -4086,7 +3824,6 @@
           "pdf_page": 143,
           "type": "correct_form",
           "text": "His house is bigger ______ (the) mine.",
-          "answer": "than",
           "status": "active",
           "source_refs": [
             {
@@ -4103,7 +3840,6 @@
           "pdf_page": 143,
           "type": "correct_form",
           "text": "Flowers are ______ (pretty) than grass.",
-          "answer": "prettier",
           "status": "active",
           "source_refs": [
             {
@@ -4120,7 +3856,6 @@
           "pdf_page": 143,
           "type": "punctuation",
           "text": "the weather today is colder than yesterday",
-          "answer": "The weather today is colder than yesterday.",
           "status": "active",
           "source_refs": [
             {
@@ -4137,7 +3872,6 @@
           "pdf_page": 144,
           "type": "mcq",
           "text": "The dogs are ______ than the cats.",
-          "answer": "fitter",
           "status": "active",
           "choices": [
             "fitter",
@@ -4160,7 +3894,6 @@
           "pdf_page": 145,
           "type": "correct_form",
           "text": "Sama is ______ (lazy) than Hana.",
-          "answer": "lazier",
           "status": "active",
           "source_refs": [
             {
@@ -4177,7 +3910,6 @@
           "pdf_page": 145,
           "type": "correct_form",
           "text": "Oceans are ______ (large) than seas.",
-          "answer": "larger",
           "status": "active",
           "source_refs": [
             {
@@ -4194,7 +3926,6 @@
           "pdf_page": 145,
           "type": "correct_form",
           "text": "The music is ______ (loud) than the conversation.",
-          "answer": "louder",
           "status": "active",
           "source_refs": [
             {
@@ -4211,7 +3942,6 @@
           "pdf_page": 145,
           "type": "correct_form",
           "text": "Rami is taller ______ (then) Marwan.",
-          "answer": "than",
           "status": "active",
           "source_refs": [
             {
@@ -4228,7 +3958,6 @@
           "pdf_page": 146,
           "type": "mcq",
           "text": "______ need taller trees to reach their food.",
-          "answer": "Giraffes",
           "status": "active",
           "choices": [
             "Giraffes",
@@ -4251,7 +3980,6 @@
           "pdf_page": 146,
           "type": "mcq",
           "text": "Lions are ______ than cats.",
-          "answer": "stronger",
           "status": "active",
           "choices": [
             "as strong",
@@ -4274,7 +4002,6 @@
           "pdf_page": 146,
           "type": "mcq",
           "text": "The plane is ______ than the train.",
-          "answer": "faster",
           "status": "active",
           "choices": [
             "the fastest",
@@ -4297,7 +4024,6 @@
           "pdf_page": 146,
           "type": "correction",
           "text": "Noha is short than Amira.",
-          "answer": "Noha is shorter than Amira.",
           "status": "active",
           "source_refs": [
             {
@@ -4314,7 +4040,6 @@
           "pdf_page": 146,
           "type": "correction",
           "text": "Rabbits are faster then turtles.",
-          "answer": "Rabbits are faster than turtles.",
           "status": "active",
           "source_refs": [
             {
@@ -4331,7 +4056,6 @@
           "pdf_page": 146,
           "type": "correction",
           "text": "A monkey is small than an elephant.",
-          "answer": "A monkey is smaller than an elephant.",
           "status": "active",
           "source_refs": [
             {
@@ -4348,7 +4072,6 @@
           "pdf_page": 146,
           "type": "correction",
           "text": "My father is old than my mother.",
-          "answer": "My father is older than my mother.",
           "status": "active",
           "source_refs": [
             {
@@ -4365,7 +4088,6 @@
           "pdf_page": 146,
           "type": "true_false",
           "text": "Animals need care to live well.",
-          "answer": "True",
           "status": "active",
           "choices": [
             "True",
@@ -4387,7 +4109,6 @@
           "pdf_page": 146,
           "type": "reading_mcq",
           "text": "______ need love and care from their owners.",
-          "answer": "Pets",
           "status": "active",
           "choices": [
             "Zoo animals",
@@ -4412,7 +4133,6 @@
           "pdf_page": 147,
           "type": "mcq",
           "text": "The elephant is ______ than the lion.",
-          "answer": "heavier",
           "status": "active",
           "choices": [
             "heavy as",
@@ -4435,7 +4155,6 @@
           "pdf_page": 147,
           "type": "correction",
           "text": "Winter is cold than spring.",
-          "answer": "Winter is colder than spring.",
           "status": "active",
           "source_refs": [
             {
@@ -4452,7 +4171,6 @@
           "pdf_page": 147,
           "type": "correction",
           "text": "The village is calm than the city.",
-          "answer": "The village is calmer than the city.",
           "status": "active",
           "source_refs": [
             {
@@ -4469,7 +4187,6 @@
           "pdf_page": 147,
           "type": "correction",
           "text": "Science is easiest than math for me.",
-          "answer": "Science is easier than math for me.",
           "status": "active",
           "source_refs": [
             {
@@ -4495,7 +4212,6 @@
           "id": "p4-eng-u3-l3-q001",
           "type": "mcq",
           "text": "Some animals sleep at ______ in mountains.",
-          "answer": "caves",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4516,7 +4232,6 @@
           "id": "p4-eng-u3-l3-q002",
           "type": "mcq",
           "text": "The lion went into his cave and ______ to be very sick.",
-          "answer": "pretended",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4537,7 +4252,6 @@
           "id": "p4-eng-u3-l3-q003",
           "type": "mcq",
           "text": "We should learn from our ______.",
-          "answer": "mistakes",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4558,7 +4272,6 @@
           "id": "p4-eng-u3-l3-q004",
           "type": "mcq",
           "text": "Lions hunt at night. The word \"hunt\" means ______.",
-          "answer": "catch",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4579,7 +4292,6 @@
           "id": "p4-eng-u3-l3-q005",
           "type": "mcq",
           "text": "The lion thought of a clever ______ to catch animals.",
-          "answer": "trick",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4600,7 +4312,6 @@
           "id": "p4-eng-u3-l3-q006",
           "type": "mcq",
           "text": "A ______ is a small, quick animal with a fluffy tail and red-brown fur.",
-          "answer": "fox",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4621,7 +4332,6 @@
           "id": "p4-eng-u3-l3-q007",
           "type": "mcq",
           "text": "\"Pretended\" means acted like something was true but it wasn't.",
-          "answer": "Pretended",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4642,7 +4352,6 @@
           "id": "p4-eng-u3-l3-q008",
           "type": "mcq",
           "text": "A wise fox noticed the one-way ______.",
-          "answer": "footprints",
           "source_page": 93,
           "status": "active",
           "choices": [
@@ -4663,7 +4372,6 @@
           "id": "p4-eng-u3-l3-q009",
           "type": "complete",
           "text": "The old lion pretended to be very sick. Many animals came into the lion's ______ to visit him.",
-          "answer": "cave",
           "source_page": 93,
           "status": "active",
           "word_bank": [
@@ -4685,7 +4393,6 @@
           "id": "p4-eng-u3-l3-q010",
           "type": "complete",
           "text": "Many animals came into the lion's cave to visit him but they didn't ______.",
-          "answer": "come out",
           "source_page": 93,
           "status": "active",
           "word_bank": [
@@ -4712,7 +4419,6 @@
           "id": "p4-eng-u3-l3-q011",
           "type": "complete",
           "text": "The fox was very ______.",
-          "answer": "clever",
           "source_page": 93,
           "status": "active",
           "word_bank": [
@@ -4734,7 +4440,6 @@
           "id": "p4-eng-u3-l3-q012",
           "type": "complete",
           "text": "He learned from the ______ of others.",
-          "answer": "mistakes",
           "source_page": 93,
           "status": "active",
           "word_bank": [
@@ -4756,7 +4461,6 @@
           "id": "p4-eng-u3-l3-q013",
           "type": "reading_mcq",
           "text": "The general idea of the text is about ______.",
-          "answer": "a trick",
           "source_page": 94,
           "status": "active",
           "choices": [
@@ -4778,7 +4482,6 @@
           "id": "p4-eng-u3-l3-q014",
           "type": "reading_mcq",
           "text": "The underlined word \"him\" refers to the ______.",
-          "answer": "lion",
           "source_page": 94,
           "status": "active",
           "choices": [
@@ -4801,13 +4504,8 @@
           "id": "p4-eng-u3-l3-q015",
           "type": "reading_open",
           "text": "What was the lion's trick?",
-          "answer": "He pretended to be sick in his cave to catch animals.",
           "source_page": 94,
           "status": "active",
-          "accepted_answers": [
-            "He pretended to be sick.",
-            "He pretended to be sick in his cave to catch animals."
-          ],
           "passage_ref": "bbb-u3l3-013",
           "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick.",
           "source_refs": [
@@ -4822,13 +4520,8 @@
           "id": "p4-eng-u3-l3-q016",
           "type": "reading_open",
           "text": "Why didn't the animals come out?",
-          "answer": "Because the lion caught and ate them.",
           "source_page": 94,
           "status": "active",
-          "accepted_answers": [
-            "Because the lion caught and ate them.",
-            "The lion was catching and eating them."
-          ],
           "passage_ref": "bbb-u3l3-013",
           "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick.",
           "source_refs": [
@@ -4843,14 +4536,8 @@
           "id": "p4-eng-u3-l3-q017",
           "type": "reading_open",
           "text": "Is the fox wise?",
-          "answer": "Yes, it is.",
           "source_page": 94,
           "status": "active",
-          "accepted_answers": [
-            "Yes.",
-            "Yes, it is.",
-            "Yes, the fox is wise."
-          ],
           "passage_ref": "bbb-u3l3-013",
           "passage": "Once upon a time, an old, weak lion could no longer hunt for food. He thought of a trick to catch animals in his cave. He pretended to be sick in his cave. He called out for visitors and many animals heard, then came to see him. The lion was catching and eating them so no one came out. The lion could not catch the fox, as he was wise, he ran away safely, laughing at the lion's trick.",
           "source_refs": [
@@ -4865,7 +4552,6 @@
           "id": "p4-eng-u3-l3-q018",
           "type": "correct_form",
           "text": "Amir is ______ (tall) than Adel.",
-          "answer": "taller",
           "source_page": 94,
           "status": "active",
           "source_refs": [
@@ -4880,7 +4566,6 @@
           "id": "p4-eng-u3-l3-q019",
           "type": "correct_form",
           "text": "Soha is ______ (thin) than Salma.",
-          "answer": "thinner",
           "source_page": 94,
           "status": "active",
           "source_refs": [
@@ -4895,7 +4580,6 @@
           "id": "p4-eng-u3-l3-q020",
           "type": "correct_form",
           "text": "Today's weather is ______ (good) than yesterday.",
-          "answer": "better",
           "source_page": 94,
           "status": "active",
           "source_refs": [
@@ -4910,7 +4594,6 @@
           "id": "p4-eng-u3-l3-q021",
           "type": "correct_form",
           "text": "The turtle is slower ______ (then) the rabbit.",
-          "answer": "than",
           "source_page": 94,
           "status": "active",
           "source_refs": [
@@ -4925,7 +4608,6 @@
           "id": "p4-eng-u3-l3-q022",
           "type": "punctuation",
           "text": "it is seven o clock",
-          "answer": "It is seven o'clock.",
           "source_page": 94,
           "status": "active",
           "source_refs": [
@@ -4940,7 +4622,6 @@
           "id": "p4-eng-u3-l3-q023",
           "type": "punctuation",
           "text": "can you help animals",
-          "answer": "Can you help animals?",
           "source_page": 94,
           "status": "active",
           "source_refs": [
@@ -4955,7 +4636,6 @@
           "id": "p4-eng-u3-l3-q024",
           "type": "correct_form",
           "text": "The lion is ______ (strong) than the hunter.",
-          "answer": "stronger",
           "source_page": 106,
           "status": "active",
           "source_refs": [
@@ -4970,7 +4650,6 @@
           "id": "p4-eng-u3-l3-q025",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"The king of the forest\" using: strong – hunt – zoo or wild.",
-          "answer": "I like animals very much. My favorite animal is the lion. Lions are very strong animals. They hunt at night and sleep during the day.",
           "source_page": 106,
           "status": "active",
           "model_answer_page": 102,
@@ -4989,7 +4668,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "The fox has a ______ tail with soft fur.",
-          "answer": "fluffy",
           "status": "active",
           "choices": [
             "hard",
@@ -5012,7 +4690,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "To ______ means to act like something is true when it isn't.",
-          "answer": "pretend",
           "status": "active",
           "choices": [
             "pretend",
@@ -5035,7 +4712,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "The dog ______ down on the ground and slept.",
-          "answer": "lay",
           "status": "active",
           "choices": [
             "saw",
@@ -5058,7 +4734,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "To ______ means to look for and catch animals for food.",
-          "answer": "hunt",
           "status": "active",
           "choices": [
             "protect",
@@ -5081,7 +4756,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "______ are marks left by feet.",
-          "answer": "Footprints",
           "status": "active",
           "choices": [
             "Fingerprints",
@@ -5104,7 +4778,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "The ______ understands the lion's trick.",
-          "answer": "fox",
           "status": "active",
           "choices": [
             "healthy",
@@ -5127,7 +4800,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "A ______ is a large hole in a mountain.",
-          "answer": "cave",
           "status": "active",
           "choices": [
             "surface",
@@ -5150,7 +4822,6 @@
           "pdf_page": 123,
           "type": "mcq",
           "text": "We should learn from the ______ of others.",
-          "answer": "mistakes",
           "status": "active",
           "choices": [
             "mistakes",
@@ -5173,7 +4844,6 @@
           "pdf_page": 126,
           "type": "reading_mcq",
           "text": "The text is about ______.",
-          "answer": "an old tiger",
           "status": "active",
           "choices": [
             "An old tiger",
@@ -5197,7 +4867,6 @@
           "pdf_page": 126,
           "type": "reading_mcq",
           "text": "The opposite of the underlined word \"weak\" is ______.",
-          "answer": "strong",
           "status": "active",
           "choices": [
             "strong",
@@ -5222,12 +4891,7 @@
           "pdf_page": 126,
           "type": "reading_open",
           "text": "What did the monkey see?",
-          "answer": "Many footprints going into the cave, but no footprint coming out.",
           "status": "active",
-          "accepted_answers": [
-            "Many footprints going into the cave, but none coming out.",
-            "He saw many footprints going into the cave and none coming out."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5243,12 +4907,7 @@
           "pdf_page": 126,
           "type": "reading_open",
           "text": "Why did the monkey refuse to come inside the cave?",
-          "answer": "Because he learned from the animals' mistakes and realized the danger.",
           "status": "active",
-          "accepted_answers": [
-            "Because he learned from the animals' mistakes.",
-            "He realized the danger from the footprints."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -5264,7 +4923,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "The fox is ______ (wise) than the lion.",
-          "answer": "wiser",
           "status": "active",
           "source_refs": [
             {
@@ -5281,7 +4939,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "Jackets are ______ (heavy) than shirts.",
-          "answer": "heavier",
           "status": "active",
           "source_refs": [
             {
@@ -5298,7 +4955,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "Bears' fur is ______ (thick) than camels' fur.",
-          "answer": "thicker",
           "status": "active",
           "source_refs": [
             {
@@ -5315,7 +4971,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "Cities are ______ (noisy) than villages.",
-          "answer": "noisier",
           "status": "active",
           "source_refs": [
             {
@@ -5332,7 +4987,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "My room is ______ (clean) than yours.",
-          "answer": "cleaner",
           "status": "active",
           "source_refs": [
             {
@@ -5349,7 +5003,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "The drum is ______ (loud) than the violin.",
-          "answer": "louder",
           "status": "active",
           "source_refs": [
             {
@@ -5366,7 +5019,6 @@
           "pdf_page": 126,
           "type": "correct_form",
           "text": "He is kinder to animals ______ (then) his friends.",
-          "answer": "than",
           "status": "active",
           "source_refs": [
             {
@@ -5383,7 +5035,6 @@
           "pdf_page": 126,
           "type": "punctuation",
           "text": "why did the lion trick the animals",
-          "answer": "Why did the lion trick the animals?",
           "status": "active",
           "source_refs": [
             {
@@ -5400,7 +5051,6 @@
           "pdf_page": 126,
           "type": "punctuation",
           "text": "the lion pretended to be sick",
-          "answer": "The lion pretended to be sick.",
           "status": "active",
           "source_refs": [
             {
@@ -5417,7 +5067,6 @@
           "pdf_page": 127,
           "type": "mcq",
           "text": "Many animals visited the sick lion in its ______.",
-          "answer": "cave",
           "status": "active",
           "choices": [
             "design",
@@ -5440,7 +5089,6 @@
           "pdf_page": 127,
           "type": "mcq",
           "text": "The lion is ______ than the rabbit.",
-          "answer": "stronger",
           "status": "active",
           "choices": [
             "as strong",
@@ -5463,7 +5111,6 @@
           "pdf_page": 127,
           "type": "mcq",
           "text": "The cat is ______ than the fox.",
-          "answer": "nicer",
           "status": "active",
           "choices": [
             "nicer",
@@ -5486,7 +5133,6 @@
           "pdf_page": 127,
           "type": "mcq",
           "text": "The lion tricked the animals and ______ to be sick.",
-          "answer": "pretended",
           "status": "active",
           "choices": [
             "remembered",
@@ -5509,7 +5155,6 @@
           "pdf_page": 127,
           "type": "mcq",
           "text": "My father is ______ than me.",
-          "answer": "wiser",
           "status": "active",
           "choices": [
             "as wise",
@@ -5532,7 +5177,6 @@
           "pdf_page": 127,
           "type": "mcq",
           "text": "A ______ is a small, quick animal with red-brown fur.",
-          "answer": "fox",
           "status": "active",
           "choices": [
             "zebra",
@@ -5555,7 +5199,6 @@
           "pdf_page": 127,
           "type": "complete",
           "text": "The old lion ______ to be very sick.",
-          "answer": "pretended",
           "status": "active",
           "word_bank": [
             "mistakes",
@@ -5579,7 +5222,6 @@
           "pdf_page": 127,
           "type": "complete",
           "text": "Many animals came into the lion's ______ to visit him.",
-          "answer": "cave",
           "status": "active",
           "word_bank": [
             "mistakes",
@@ -5603,7 +5245,6 @@
           "pdf_page": 127,
           "type": "complete",
           "text": "The fox was very clever. He learned from the ______ of others.",
-          "answer": "mistakes",
           "status": "active",
           "word_bank": [
             "mistakes",
@@ -5627,7 +5268,6 @@
           "pdf_page": 143,
           "type": "punctuation",
           "text": "how did the fox know it was in danger",
-          "answer": "How did the fox know it was in danger?",
           "status": "active",
           "source_refs": [
             {
@@ -5644,7 +5284,6 @@
           "pdf_page": 144,
           "type": "mcq",
           "text": "The bear is ______ than the fox.",
-          "answer": "bigger",
           "status": "active",
           "choices": [
             "biggest",
@@ -5667,7 +5306,6 @@
           "pdf_page": 147,
           "type": "true_false",
           "text": "The lion couldn't hunt.",
-          "answer": "True",
           "status": "active",
           "choices": [
             "True",
@@ -5689,7 +5327,6 @@
           "pdf_page": 147,
           "type": "true_false",
           "text": "The fox was wise.",
-          "answer": "True",
           "status": "active",
           "choices": [
             "True",
@@ -5712,7 +5349,6 @@
           "pdf_page": 147,
           "type": "reading_mcq",
           "text": "The lion tricked animals and pretended to be ______.",
-          "answer": "sick",
           "status": "active",
           "choices": [
             "scared",
@@ -5737,7 +5373,6 @@
           "pdf_page": 147,
           "type": "reading_mcq",
           "text": "Many ______ entered the cave and never returned.",
-          "answer": "animals",
           "status": "active",
           "choices": [
             "animals",
@@ -5762,7 +5397,6 @@
           "pdf_page": 147,
           "type": "reading_mcq",
           "text": "The fox learned from the ______ of others.",
-          "answer": "mistakes",
           "status": "active",
           "choices": [
             "mistakes",
@@ -5796,7 +5430,6 @@
           "id": "p4-eng-u3-l4-q001",
           "type": "mcq",
           "text": "Some animals are in danger of ______.",
-          "answer": "disappearing",
           "source_page": 98,
           "status": "active",
           "choices": [
@@ -5817,7 +5450,6 @@
           "id": "p4-eng-u3-l4-q002",
           "type": "mcq",
           "text": "The Arabian ______ is one of the most endangered animals.",
-          "answer": "Leopard",
           "source_page": 98,
           "status": "active",
           "choices": [
@@ -5838,7 +5470,6 @@
           "id": "p4-eng-u3-l4-q003",
           "type": "mcq",
           "text": "Let's all work together to reduce ______.",
-          "answer": "pollution",
           "source_page": 98,
           "status": "active",
           "choices": [
@@ -5859,7 +5490,6 @@
           "id": "p4-eng-u3-l4-q004",
           "type": "mcq",
           "text": "The Red Sea Dugong is a/an ______ animal. This means it can disappear.",
-          "answer": "endangered",
           "source_page": 98,
           "status": "active",
           "choices": [
@@ -5880,7 +5510,6 @@
           "id": "p4-eng-u3-l4-q005",
           "type": "mcq",
           "text": "______ are groups of animals or plants.",
-          "answer": "Species",
           "source_page": 98,
           "status": "active",
           "choices": [
@@ -5901,7 +5530,6 @@
           "id": "p4-eng-u3-l4-q006",
           "type": "mcq",
           "text": "We should ______ endangered animals.",
-          "answer": "protect",
           "source_page": 98,
           "status": "active",
           "choices": [
@@ -5922,7 +5550,6 @@
           "id": "p4-eng-u3-l4-q007",
           "type": "complete",
           "text": "Many animals around the world are in danger of disappearing forever. These animals are called endangered ______.",
-          "answer": "species",
           "source_page": 98,
           "status": "active",
           "word_bank": [
@@ -5944,7 +5571,6 @@
           "id": "p4-eng-u3-l4-q008",
           "type": "complete",
           "text": "The Red Sea ______ is another endangered animal in Egypt.",
-          "answer": "Dugong",
           "source_page": 98,
           "status": "active",
           "word_bank": [
@@ -5966,7 +5592,6 @@
           "id": "p4-eng-u3-l4-q009",
           "type": "complete",
           "text": "These gentle sea animals eat sea ______.",
-          "answer": "grass",
           "source_page": 98,
           "status": "active",
           "word_bank": [
@@ -5988,7 +5613,6 @@
           "id": "p4-eng-u3-l4-q010",
           "type": "complete",
           "text": "They are in danger because of ______ and fishing nets.",
-          "answer": "pollution",
           "source_page": 98,
           "status": "active",
           "word_bank": [
@@ -6015,7 +5639,6 @@
           "id": "p4-eng-u3-l4-q011",
           "type": "reading_mcq",
           "text": "Some animals are in danger because of ______.",
-          "answer": "hunting animals and cutting down trees",
           "source_page": 99,
           "status": "active",
           "choices": [
@@ -6037,7 +5660,6 @@
           "id": "p4-eng-u3-l4-q012",
           "type": "reading_mcq",
           "text": "The ______ is an example of an endangered animal.",
-          "answer": "giant panda",
           "source_page": 99,
           "status": "active",
           "choices": [
@@ -6060,13 +5682,8 @@
           "id": "p4-eng-u3-l4-q013",
           "type": "reading_open",
           "text": "How can we protect endangered animals?",
-          "answer": "By protecting their homes, planting trees, keeping the environment clean and not hunting animals.",
           "source_page": 99,
           "status": "active",
-          "accepted_answers": [
-            "Protect their homes, plant trees, keep the environment clean and don't hunt them.",
-            "By protecting their homes and not hunting them."
-          ],
           "passage_ref": "bbb-u3l4-011",
           "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals.",
           "source_refs": [
@@ -6081,13 +5698,8 @@
           "id": "p4-eng-u3-l4-q014",
           "type": "reading_open",
           "text": "Write a suitable title for the passage.",
-          "answer": "Endangered Animals",
           "source_page": 99,
           "status": "active",
-          "accepted_answers": [
-            "Endangered Animals",
-            "Protecting Endangered Animals"
-          ],
           "passage_ref": "bbb-u3l4-011",
           "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals.",
           "source_refs": [
@@ -6102,13 +5714,8 @@
           "id": "p4-eng-u3-l4-q015",
           "type": "reading_open",
           "text": "Why are some animals in danger of disappearing?",
-          "answer": "Because of cutting down trees, pollution and hunting animals.",
           "source_page": 99,
           "status": "active",
-          "accepted_answers": [
-            "Because of cutting down trees, pollution and hunting animals.",
-            "Because people cut down trees, pollute and hunt animals."
-          ],
           "passage_ref": "bbb-u3l4-011",
           "passage": "Many animals around the world are in danger. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals.",
           "source_refs": [
@@ -6123,7 +5730,6 @@
           "id": "p4-eng-u3-l4-q016",
           "type": "punctuation",
           "text": "hala is a student",
-          "answer": "Hala is a student.",
           "source_page": 99,
           "status": "active",
           "source_refs": [
@@ -6138,7 +5744,6 @@
           "id": "p4-eng-u3-l4-q017",
           "type": "punctuation",
           "text": "are you happy",
-          "answer": "Are you happy?",
           "source_page": 99,
           "status": "active",
           "source_refs": [
@@ -6153,7 +5758,6 @@
           "id": "p4-eng-u3-l4-q018",
           "type": "writing",
           "text": "Write a paragraph of FOUR sentences about \"Red Sea Dugong\" using: sea grass – danger – pollution.",
-          "answer": "The Red Sea dugong is an endangered animal in Egypt. These gentle sea animals eat sea grass. They are in danger because of pollution and fishing nets.",
           "source_page": 99,
           "status": "active",
           "model_answer_page": 102,
@@ -6172,7 +5776,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "There are many ______ of birds.",
-          "answer": "species",
           "status": "active",
           "choices": [
             "species",
@@ -6195,7 +5798,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "A little water ______ in the bottle.",
-          "answer": "remains",
           "status": "active",
           "choices": [
             "stops",
@@ -6218,7 +5820,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "The ______ is a big wild cat.",
-          "answer": "leopard",
           "status": "active",
           "choices": [
             "bear",
@@ -6241,7 +5842,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "The Red Sea ______ is an endangered animal.",
-          "answer": "Dugong",
           "status": "active",
           "choices": [
             "Coast",
@@ -6264,7 +5864,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "Animals are in ______ because of pollution.",
-          "answer": "danger",
           "status": "active",
           "choices": [
             "danger",
@@ -6287,7 +5886,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "Some animals are in danger of ______ forever.",
-          "answer": "disappearing",
           "status": "active",
           "choices": [
             "growing",
@@ -6310,7 +5908,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "Fishermen catch dugongs in their fishing ______.",
-          "answer": "nets",
           "status": "active",
           "choices": [
             "trains",
@@ -6333,7 +5930,6 @@
           "pdf_page": 129,
           "type": "mcq",
           "text": "We need to create safe ______ to help endangered animals.",
-          "answer": "areas",
           "status": "active",
           "choices": [
             "grass",
@@ -6356,7 +5952,6 @@
           "pdf_page": 132,
           "type": "mcq",
           "text": "People work hard to create safe places for ______ animals.",
-          "answer": "endangered",
           "status": "active",
           "choices": [
             "deep",
@@ -6379,7 +5974,6 @@
           "pdf_page": 132,
           "type": "mcq",
           "text": "The ______ is a gentle sea animal.",
-          "answer": "dugong",
           "status": "active",
           "choices": [
             "bear",
@@ -6402,7 +5996,6 @@
           "pdf_page": 132,
           "type": "mcq",
           "text": "After lunch, little food ______ in the dishes.",
-          "answer": "remains",
           "status": "active",
           "choices": [
             "remains",
@@ -6425,7 +6018,6 @@
           "pdf_page": 132,
           "type": "mcq",
           "text": "She is ______ than her brother.",
-          "answer": "faster",
           "status": "active",
           "choices": [
             "fast",
@@ -6448,7 +6040,6 @@
           "pdf_page": 132,
           "type": "mcq",
           "text": "The red dress is longer ______ the blue one.",
-          "answer": "than",
           "status": "active",
           "choices": [
             "than",
@@ -6471,7 +6062,6 @@
           "pdf_page": 132,
           "type": "mcq",
           "text": "My cousin is ______ than my brother.",
-          "answer": "younger",
           "status": "active",
           "choices": [
             "youngest",
@@ -6494,7 +6084,6 @@
           "pdf_page": 132,
           "type": "complete",
           "text": "The Red Sea Dugong is an endangered animal in Egypt. These gentle sea animals eat sea ______.",
-          "answer": "grass",
           "status": "active",
           "word_bank": [
             "stop",
@@ -6518,7 +6107,6 @@
           "pdf_page": 132,
           "type": "complete",
           "text": "To help these ______, we need to protect their homes.",
-          "answer": "animals",
           "status": "active",
           "word_bank": [
             "stop",
@@ -6542,7 +6130,6 @@
           "pdf_page": 132,
           "type": "complete",
           "text": "We need to protect their homes and ______ pollution.",
-          "answer": "stop",
           "status": "active",
           "word_bank": [
             "stop",
@@ -6566,7 +6153,6 @@
           "pdf_page": 133,
           "type": "reading_mcq",
           "text": "Some animals are in danger because of ______.",
-          "answer": "cutting down trees and hunting animals",
           "status": "active",
           "choices": [
             "planting trees",
@@ -6590,7 +6176,6 @@
           "pdf_page": 133,
           "type": "reading_mcq",
           "text": "The ______ is an example of an endangered animal.",
-          "answer": "Giant panda",
           "status": "active",
           "choices": [
             "Dog",
@@ -6615,12 +6200,7 @@
           "pdf_page": 133,
           "type": "reading_open",
           "text": "Where are many animals endangered?",
-          "answer": "Around the world.",
           "status": "active",
-          "accepted_answers": [
-            "Around the world.",
-            "Many animals around the world are endangered."
-          ],
           "passage_ref": "elm-u3l4-019",
           "passage": "Many animals around the world are endangered. This means they are in danger of disappearing forever. Some animals are in danger because of cutting down trees, pollution and hunting animals. Examples of endangered animals are the Arabian Leopard, the Red Sea Dugong and giant panda. We can protect endangered animals by protecting their homes, planting trees, keeping the environment clean and not hunting animals.",
           "source_refs": [
@@ -6638,12 +6218,7 @@
           "pdf_page": 133,
           "type": "reading_open",
           "text": "How can we protect endangered animals?",
-          "answer": "By protecting their homes, planting trees, keeping the environment clean and not hunting them.",
           "status": "active",
-          "accepted_answers": [
-            "Protect their homes, plant trees, keep the environment clean and don't hunt them.",
-            "By protecting their homes and not hunting them."
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6659,12 +6234,7 @@
           "pdf_page": 133,
           "type": "reading_open",
           "text": "Write a suitable title for the passage.",
-          "answer": "Endangered Animals",
           "status": "active",
-          "accepted_answers": [
-            "Endangered Animals",
-            "Protecting Endangered Animals"
-          ],
           "source_refs": [
             {
               "source": "El-Moasser",
@@ -6680,7 +6250,6 @@
           "pdf_page": 133,
           "type": "correct_form",
           "text": "Today is ______ (hot) than yesterday.",
-          "answer": "hotter",
           "status": "active",
           "source_refs": [
             {
@@ -6697,7 +6266,6 @@
           "pdf_page": 133,
           "type": "correct_form",
           "text": "Bears are ______ (fat) than lions.",
-          "answer": "fatter",
           "status": "active",
           "source_refs": [
             {
@@ -6714,7 +6282,6 @@
           "pdf_page": 133,
           "type": "correct_form",
           "text": "Amany is ______ (smart) than her sister.",
-          "answer": "smarter",
           "status": "active",
           "source_refs": [
             {
@@ -6731,7 +6298,6 @@
           "pdf_page": 135,
           "type": "reading_mcq",
           "text": "Endangered species are animals which are ______ forever.",
-          "answer": "disappearing",
           "status": "active",
           "choices": [
             "Sea",
@@ -6754,7 +6320,6 @@
           "pdf_page": 135,
           "type": "reading_mcq",
           "text": "Leopards are beautiful ______.",
-          "answer": "cats",
           "status": "active",
           "choices": [
             "dogs",
@@ -6777,7 +6342,6 @@
           "pdf_page": 135,
           "type": "reading_mcq",
           "text": "The Red Sea Dugong lives in ______.",
-          "answer": "Egypt",
           "status": "active",
           "choices": [
             "China",
@@ -6801,7 +6365,6 @@
           "pdf_page": 135,
           "type": "reading_mcq",
           "text": "The Red Sea Dugong eats ______.",
-          "answer": "sea grass",
           "status": "active",
           "choices": [
             "small insects",
@@ -6826,7 +6389,6 @@
           "pdf_page": 135,
           "type": "reading_mcq",
           "text": "The Red Sea Dugong is in danger because of ______.",
-          "answer": "pollution",
           "status": "active",
           "choices": [
             "clean water",
@@ -6851,7 +6413,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "Lions are ______ (strong) than monkeys.",
-          "answer": "stronger",
           "status": "active",
           "source_refs": [
             {
@@ -6868,7 +6429,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "The bear is ______ (big) than the fox.",
-          "answer": "bigger",
           "status": "active",
           "source_refs": [
             {
@@ -6885,7 +6445,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "Elephants are ______ (heavy) than giraffes.",
-          "answer": "heavier",
           "status": "active",
           "source_refs": [
             {
@@ -6902,7 +6461,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "Cats are safer ______ (then) lions.",
-          "answer": "than",
           "status": "active",
           "source_refs": [
             {
@@ -6919,7 +6477,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "A monkey is ______ (small) than an elephant.",
-          "answer": "smaller",
           "status": "active",
           "source_refs": [
             {
@@ -6936,7 +6493,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "Vegetables are ______ (healthy) than junk food.",
-          "answer": "healthier",
           "status": "active",
           "source_refs": [
             {
@@ -6953,7 +6509,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "His house is ______ (big) than mine.",
-          "answer": "bigger",
           "status": "active",
           "source_refs": [
             {
@@ -6970,7 +6525,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "The fox is ______ (smart) than other animals.",
-          "answer": "smarter",
           "status": "active",
           "source_refs": [
             {
@@ -6987,7 +6541,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "A mouse is ______ (small) than a rabbit.",
-          "answer": "smaller",
           "status": "active",
           "source_refs": [
             {
@@ -7004,7 +6557,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "The green shirt is ______ (nice) than the red shirt.",
-          "answer": "nicer",
           "status": "active",
           "source_refs": [
             {
@@ -7021,7 +6573,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "Noha is ______ (young) than Rana.",
-          "answer": "younger",
           "status": "active",
           "source_refs": [
             {
@@ -7038,7 +6589,6 @@
           "pdf_page": 136,
           "type": "correct_form",
           "text": "Cats are nicer ______ (then) dogs.",
-          "answer": "than",
           "status": "active",
           "source_refs": [
             {
@@ -7055,7 +6605,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "a long - The monkey - tail - has",
-          "answer": "The monkey has a long tail.",
           "status": "active",
           "source_refs": [
             {
@@ -7072,7 +6621,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "special - animals - Zoo - attention - need",
-          "answer": "Zoo animals need special attention.",
           "status": "active",
           "source_refs": [
             {
@@ -7089,7 +6637,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "pretended - very - The lion - to be - sick",
-          "answer": "The lion pretended to be very sick.",
           "status": "active",
           "source_refs": [
             {
@@ -7106,7 +6653,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "has - fur - The bear - thick",
-          "answer": "The bear has thick fur.",
           "status": "active",
           "source_refs": [
             {
@@ -7123,7 +6669,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "officers - animals - Forest - protect",
-          "answer": "Forest officers protect animals.",
           "status": "active",
           "source_refs": [
             {
@@ -7140,7 +6685,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "do - see - What - visitors - animals",
-          "answer": "What animals do visitors see?",
           "status": "active",
           "source_refs": [
             {
@@ -7157,7 +6701,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "giraffes - What - eat - do",
-          "answer": "What do giraffes eat?",
           "status": "active",
           "source_refs": [
             {
@@ -7174,7 +6717,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "they - lions - Do - see",
-          "answer": "Do they see lions?",
           "status": "active",
           "source_refs": [
             {
@@ -7191,7 +6733,6 @@
           "pdf_page": 137,
           "type": "reorder",
           "text": "do - animals - Why - exercise - need",
-          "answer": "Why do animals need exercise?",
           "status": "active",
           "source_refs": [
             {
@@ -7208,7 +6749,6 @@
           "pdf_page": 138,
           "type": "reorder",
           "text": "animal - is - My favorite - the monkey",
-          "answer": "My favorite animal is the monkey.",
           "status": "active",
           "source_refs": [
             {
@@ -7225,7 +6765,6 @@
           "pdf_page": 138,
           "type": "reorder",
           "text": "tail - The monkey - a long - has",
-          "answer": "The monkey has a long tail.",
           "status": "active",
           "source_refs": [
             {
@@ -7242,7 +6781,6 @@
           "pdf_page": 138,
           "type": "reorder",
           "text": "trees - climbs - It",
-          "answer": "It climbs trees.",
           "status": "active",
           "source_refs": [
             {
@@ -7259,7 +6797,6 @@
           "pdf_page": 138,
           "type": "reorder",
           "text": "care - Pets - daily - need",
-          "answer": "Pets need daily care.",
           "status": "active",
           "source_refs": [
             {
@@ -7276,7 +6813,6 @@
           "pdf_page": 138,
           "type": "reorder",
           "text": "vegetables - Rabbits - fresh - eat",
-          "answer": "Rabbits eat fresh vegetables.",
           "status": "active",
           "source_refs": [
             {
@@ -7293,7 +6829,6 @@
           "pdf_page": 138,
           "type": "reorder",
           "text": "exercise - Dogs - need",
-          "answer": "Dogs need exercise.",
           "status": "active",
           "source_refs": [
             {
@@ -7310,7 +6845,6 @@
           "pdf_page": 141,
           "type": "reorder",
           "text": "striped - a - The zebra - coat - has",
-          "answer": "The zebra has a striped coat.",
           "status": "active",
           "source_refs": [
             {
@@ -7327,7 +6861,6 @@
           "pdf_page": 141,
           "type": "reorder",
           "text": "has - a long - The monkey - tail",
-          "answer": "The monkey has a long tail.",
           "status": "active",
           "source_refs": [
             {
@@ -7344,7 +6877,6 @@
           "pdf_page": 141,
           "type": "reorder",
           "text": "is - and - big - The elephant - gray",
-          "answer": "The elephant is big and gray.",
           "status": "active",
           "source_refs": [
             {
@@ -7361,7 +6893,6 @@
           "pdf_page": 146,
           "type": "mcq",
           "text": "The ______ eats the sea grass.",
-          "answer": "dugong",
           "status": "active",
           "choices": [
             "monkey",
