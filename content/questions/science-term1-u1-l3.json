@@ -20,7 +20,6 @@
         "Oil and water",
         "Iron filings and sulfur"
       ],
-      "answer": "Salt solution",
       "sourcePage": 119
     },
     {
@@ -34,7 +33,6 @@
         "Compound",
         "Element"
       ],
-      "answer": "Heterogeneous mixture",
       "sourcePage": 119
     },
     {
@@ -42,7 +40,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The molecular formula of water is ______.",
-      "answer": "H2O",
       "sourcePage": 120
     },
     {
@@ -50,7 +47,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The molecular formula of ozone is ______.",
-      "answer": "O3",
       "sourcePage": 120
     },
     {
@@ -58,7 +54,6 @@
       "type": "complete",
       "difficulty": "easy",
       "text": "The molecular formula of carbon dioxide is ______.",
-      "answer": "CO2",
       "sourcePage": 120
     },
     {
@@ -66,7 +61,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Seawater is a homogeneous mixture.",
-      "answer": "Because its components are uniformly distributed and cannot be distinguished from each other.",
       "sourcePage": 120
     },
     {
@@ -74,7 +68,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Sand can be separated from water by filtration.",
-      "answer": "Because sand is an insoluble solid in water and can be retained by the filter.",
       "sourcePage": 120
     },
     {
@@ -82,7 +75,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Salt can be separated from water by evaporation.",
-      "answer": "Because water evaporates while dissolved salt remains.",
       "sourcePage": 120
     },
     {
@@ -90,7 +82,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare homogeneous and heterogeneous mixtures.",
-      "answer": "Homogeneous mixture: components are uniformly distributed and cannot be distinguished. Heterogeneous mixture: components are non-uniform and can be distinguished.",
       "sourcePage": 121
     },
     {
@@ -98,7 +89,6 @@
       "type": "complete",
       "difficulty": "medium",
       "text": "Viscosity is a physical property that expresses a liquid's resistance to ______.",
-      "answer": "flow",
       "sourcePage": 123
     },
     {
@@ -106,7 +96,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Density is a physical property of matter.",
-      "answer": "True",
       "sourcePage": 123
     },
     {
@@ -114,7 +103,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Rusting of iron is a physical change.",
-      "answer": "False",
       "sourcePage": 123
     },
     {
@@ -128,7 +116,6 @@
         "Boiling point",
         "Formation of a precipitate"
       ],
-      "answer": "Formation of a precipitate",
       "sourcePage": 124
     },
     {
@@ -142,7 +129,6 @@
         "High electrical conductivity",
         "High melting point only"
       ],
-      "answer": "Low density and good thermal insulation",
       "sourcePage": 124
     },
     {
@@ -156,7 +142,6 @@
         "Metalloid",
         "Noble gas"
       ],
-      "answer": "Metalloid",
       "sourcePage": 124
     },
     {
@@ -164,7 +149,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Silicon is used in manufacturing electronic chips.",
-      "answer": "Because it is a semiconductor.",
       "sourcePage": 125
     },
     {
@@ -172,7 +156,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Helium gas is used to fill air tires/balloons where low density is required.",
-      "answer": "Because helium has a low density.",
       "sourcePage": 125
     },
     {
@@ -180,7 +163,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare water and honey in terms of viscosity.",
-      "answer": "Honey has higher viscosity than water.",
       "sourcePage": 126
     },
     {
@@ -194,7 +176,6 @@
         "Distillation only",
         "Magnetic separation only"
       ],
-      "answer": "Filtration then evaporation",
       "sourcePage": 127
     },
     {
@@ -202,14 +183,12 @@
       "type": "reason",
       "difficulty": "hard",
       "text": "Give a reason: Salt solutions are mixtures, not pure substances.",
-      "answer": "Because they consist of more than one substance physically mixed and their components can be separated by physical methods.",
       "sourcePage": 127
     },
     {
       "type": "complete",
       "difficulty": "easy",
       "text": "A substance whose components cannot be separated by physical methods is a ______ substance.",
-      "answer": "pure",
       "sourcePage": 87,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 503",
@@ -219,7 +198,6 @@
       "type": "compare",
       "difficulty": "medium",
       "text": "Compare an element and a compound.",
-      "answer": "Element: simplest pure substance composed of one type of atom and cannot be decomposed chemically. Compound: pure substance formed by chemical combination of two or more elements in fixed ratios.",
       "sourcePage": 91,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 507",
@@ -229,7 +207,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Table salt solution is a homogeneous mixture while table salt itself is a pure substance.",
-      "answer": "The solution contains more than one substance physically mixed and uniformly distributed, while table salt is a single compound.",
       "sourcePage": 89,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 505",
@@ -239,7 +216,6 @@
       "type": "reason",
       "difficulty": "medium",
       "text": "Give a reason: Aerogel is used in jackets for researchers in cold regions.",
-      "answer": "Because it is very light and has excellent thermal insulation properties.",
       "sourcePage": 89,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 505",
@@ -255,7 +231,6 @@
         "Water",
         "Mercury oxide"
       ],
-      "answer": "Methane",
       "sourcePage": 87,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 503",
@@ -265,7 +240,6 @@
       "type": "problem",
       "difficulty": "medium",
       "text": "A sample separates into sand and water by filtration. What does this indicate about the sample?",
-      "answer": "It is a heterogeneous mixture containing an insoluble solid that can be separated physically.",
       "sourcePage": 90,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 506",
@@ -275,7 +249,6 @@
       "type": "true_false",
       "difficulty": "medium",
       "text": "Heating red mercury oxide produces new substances, so it is a chemical change/property example.",
-      "answer": "True",
       "sourcePage": 91,
       "sourceSection": "source-derived",
       "sourceReference": "Final Revision L3 / PDF 507",
@@ -285,7 +258,6 @@
       "type": "problem",
       "difficulty": "hard",
       "text": "Consultant-generated application: A material has very low density and strong thermal insulation. Which lesson material best matches these properties and why?",
-      "answer": "Aerogel, because the lesson describes it as a very low-density material with excellent insulating properties.",
       "sourcePage": 88,
       "sourceSection": "consultant-generated-from-source",
       "sourceReference": "Generated from verified L3 concepts",
