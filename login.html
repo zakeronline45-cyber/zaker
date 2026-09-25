@@ -93,7 +93,17 @@ async function signup(e){
    password:signupPassword.value,
    options:{emailRedirectTo:PUBLIC_ORIGIN+'/auth-callback.html',data:{guardian_name:guardianName.value.trim(),full_name:guardianName.value.trim(),phone:phone.value.trim(),role:'parent',child_name:childName.value.trim(),track:track.value,grade:grade.value}}
  });
- if(error){message(error.message);return}
+ if(error){
+   const msg=String(error.message||'');
+   if(/already|registered|exists/i.test(msg)){message(window.zakerT('هذا البريد مسجل بالفعل. استخدم تسجيل الدخول أو «نسيت كلمة المرور».','This email is already registered. Sign in or use Forgot password.'));return}
+   message(msg);return
+ }
+ // Supabase may intentionally return a neutral signup response for an existing email.
+ // An empty identities array means no new identity was created, so do not show a false success message.
+ if(data?.user&&Array.isArray(data.user.identities)&&data.user.identities.length===0){
+   message(window.zakerT('هذا البريد مسجل بالفعل. استخدم تسجيل الدخول أو «نسيت كلمة المرور».','This email is already registered. Sign in or use Forgot password.'));
+   return
+ }
  localStorage.setItem('zaker_student_track',track.value);
  if(data.session){location.href='/account.html'} else message(window.zakerT('تم إنشاء الحساب ✓ افتح رسالة التأكيد في بريدك واضغط تأكيد البريد. بعد التأكيد سيعيدك ذاكر تلقائيًا للموقع.','Account created ✓ Open the confirmation email and confirm your address. Zaker will bring you back automatically after confirmation.'),true);
 }
