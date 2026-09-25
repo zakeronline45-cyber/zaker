@@ -35,7 +35,7 @@ main{max-width:1100px;margin:34px auto;padding:0 16px 40px;display:grid;grid-tem
     <div class="field"><label>المسار الدراسي</label><select id="track" required><option value="languages">لغات</option><option value="arabic">عربي</option></select></div>
     <div class="field"><label>الصف الدراسي</label><select id="grade" required><option value="p4">رابعة ابتدائي</option><option value="p5">خامسة ابتدائي</option><option value="p6">سادسة ابتدائي</option><option value="prep1">أولى إعدادي</option><option value="prep2">تانية إعدادي</option><option value="prep3">تالتة إعدادي</option></select></div>
     <div class="form-intro" style="background:#fff7e8;border:1px solid #ffd6aa;border-radius:12px;padding:10px 12px">بعد إنشاء الحساب سنرسل رسالة تأكيد إلى بريدك. اضغط رابط التأكيد، وسيتم إعادتك إلى ذاكر تلقائيًا.</div>
-    <button class="btn primary" type="submit">إنشاء الحساب</button>
+    <button id="signupSubmit" class="btn primary" type="submit">إنشاء الحساب</button>
   </form>
 
   <div id="msg" class="msg"></div>
@@ -86,8 +86,12 @@ async function login(e){
 }
 async function forgotPassword(){hideMsg();const email=(loginEmail.value||signupEmail.value||'').trim();if(!email){message('اكتب بريدك الإلكتروني أولًا');return}const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:PUBLIC_ORIGIN+'/reset-password.html'});if(error){message(error.message);return}message('تم إرسال رابط تعيين كلمة مرور جديدة إلى بريدك.',true)}
 async function signup(e){
- if(signupPassword.value.length<10){message(window.zakerT('كلمة المرور يجب ألا تقل عن 10 أحرف.','Password must be at least 10 characters.'));return}
  e.preventDefault();hideMsg();
+ if(signupPassword.value.length<10){message(window.zakerT('كلمة المرور يجب ألا تقل عن 10 أحرف.','Password must be at least 10 characters.'));return}
+ const button=document.getElementById('signupSubmit');
+ if(button.disabled)return;
+ button.disabled=true;button.textContent='جاري إنشاء الحساب...';
+ try{
  const {data,error}=await sb.auth.signUp({
    email:signupEmail.value.trim(),
    password:signupPassword.value,
@@ -95,6 +99,8 @@ async function signup(e){
  });
  if(error){
    const msg=String(error.message||'');
+   if(error.status===429||/rate.limit|too.many.requests/i.test(msg)){message(window.zakerT('تم تجاوز عدد المحاولات المسموح. انتظر قليلًا قبل المحاولة مرة أخرى ولا تضغط إنشاء الحساب بشكل متكرر.','Too many attempts. Please wait before trying again.'));return}
+   if(error.status===504||/timeout|deadline exceeded|sending.*email|smtp/i.test(msg)){message(window.zakerT('تعذر إرسال رسالة التأكيد من خدمة البريد حاليًا. لم يكتمل التسجيل؛ يرجى المحاولة لاحقًا مرة واحدة.','The confirmation email service timed out. Registration did not complete; please try once later.'));return}
    if(/already|registered|exists/i.test(msg)){message(window.zakerT('هذا البريد مسجل بالفعل. استخدم تسجيل الدخول أو «نسيت كلمة المرور».','This email is already registered. Sign in or use Forgot password.'));return}
    message(msg);return
  }
@@ -106,6 +112,8 @@ async function signup(e){
  }
  localStorage.setItem('zaker_student_track',track.value);
  if(data.session){location.href='/account.html'} else message(window.zakerT('تم إنشاء الحساب ✓ افتح رسالة التأكيد في بريدك واضغط تأكيد البريد. بعد التأكيد سيعيدك ذاكر تلقائيًا للموقع.','Account created ✓ Open the confirmation email and confirm your address. Zaker will bring you back automatically after confirmation.'),true);
+ }catch(err){message(window.zakerT('تعذر الاتصال بخدمة التسجيل. حاول مرة أخرى لاحقًا.','Could not reach the registration service. Please try later.'))}
+ finally{button.disabled=false;button.textContent='إنشاء الحساب'}
 }
 (async()=>{if(params.get('confirmed')==='1')message(window.zakerT('تم تأكيد بريدك بنجاح ✓ يمكنك تسجيل الدخول الآن.','Email confirmed successfully ✓ You can sign in now.'),true);const {data}=await sb.auth.getSession();if(data.session) await routeAfterLogin(data.session)})();
 </script>
