@@ -59,7 +59,7 @@
     </label>
   </div>
   <div id="subjectChoices" class="status" style="margin-top:14px"></div>
-  <div class="price" id="calcPrice">— <small>جنيه / شهر</small></div>
+  <div class="price" id="calcPrice">— <small>جنيه / الترم</small></div>
   <p class="muted" id="calcNote">اختر الطفل وعدد المواد لحساب الاشتراك.</p>
   <button class="btn primary" style="width:100%" onclick="startBankTransfer()">ابدأ طلب تحويل بنكي</button>
 </div>
@@ -167,7 +167,7 @@ async function calc(){
   const base=first+(n-1)*extra;
   const discount=childIndex===2?25:childIndex===3?50:0;
   const total=Math.round(base*(1-discount/100)*100)/100;
-  document.getElementById('calcPrice').innerHTML=total+' <small>'+(window.zakerLang?.()==='en'?'EGP / month':'جنيه / شهر')+'</small>';
+  document.getElementById('calcPrice').innerHTML=total+' <small>'+(window.zakerLang?.()==='en'?'EGP / term':'جنيه / الترم')+'</small>';
   const baseText=(n===1?'أول مادة = '+first+' جنيه':first+' لأول مادة + '+(n-1)+' × '+extra+' للمواد الإضافية');
   document.getElementById('calcNote').textContent=baseText+(discount?'، وخصم الطفل '+(childIndex===2?'الثاني 25%':'الثالث 50%')+' مطبق تلقائيًا.':'');
 }
