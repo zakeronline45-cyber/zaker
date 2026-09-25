@@ -1,4 +1,4 @@
-/* Zaker shared visual identity */
+/* Zaker shared visual identity — authoritative across the whole product */
 :root{
   --z-navy:#16324f;
   --z-navy-dark:#0f2740;
@@ -11,38 +11,167 @@
   --z-bg:#f4f8fa;
   --z-soft:#eaf2f6;
   --z-white:#fff;
+  --z-success:#24765f;
+  --z-danger:#a84d52;
   --z-shadow:0 14px 36px rgba(15,39,64,.09);
+
+  /* Map legacy page variables to the same identity */
+  --b:var(--z-navy);
+  --n:var(--z-navy-dark);
+  --p:var(--z-navy);
+  --bg:var(--z-bg);
+  --line:var(--z-line);
+  --m:var(--z-muted);
+  --g:var(--z-success);
+  --r:var(--z-danger);
+  --purple:var(--z-navy);
+  --purple-dark:var(--z-navy-dark);
+  --orange:var(--z-gold);
+  --teal:var(--z-teal);
+  --ink:var(--z-ink);
+  --muted:var(--z-muted);
+  --surface:#fff;
+  --soft:var(--z-soft);
+  --shadow:var(--z-shadow);
 }
-html,body{background:linear-gradient(180deg,#edf4f7 0,#f6f9fb 260px,#f7f9fb 100%)!important;color:var(--z-ink)}
+
+html,body{
+  background:linear-gradient(180deg,#edf4f7 0,#f6f9fb 260px,#f7f9fb 100%)!important;
+  color:var(--z-ink)!important;
+}
+
+/* One header identity everywhere */
 .top{
   background:linear-gradient(135deg,var(--z-navy-dark) 0%,var(--z-navy) 62%,var(--z-navy-light) 100%)!important;
   color:#fff!important;
   border-bottom:1px solid rgba(255,255,255,.08)!important;
   box-shadow:0 12px 34px rgba(15,39,64,.18)!important;
 }
-.top .brand,.top .brand span,.top a,.top button{color:#fff}
-.top .nav a,.top .nav button,.top .account-nav a,.top .desktop-nav a{color:rgba(255,255,255,.78)!important}
+.top .brand,.top .brand span,.top a,.top button{color:#fff!important}
+.top .brand-mark{
+  background:rgba(255,255,255,.13)!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  color:#fff!important;
+  box-shadow:0 10px 24px rgba(0,0,0,.10)!important
+}
+.top .brand-copy strong{color:#fff!important}
+.top .brand-copy small,.top .student-label,.top .student-meta small{color:rgba(255,255,255,.68)!important}
+.top .nav-row{border-top-color:rgba(255,255,255,.10)!important}
+.top .nav a,.top .nav button,.top .account-nav a,.top .desktop-nav a{
+  color:rgba(255,255,255,.78)!important
+}
 .top .nav a:hover,.top .nav button:hover,.top .account-nav a:hover,.top .desktop-nav a:hover,
 .top .nav .active,.top .account-nav .active,.top .desktop-nav .active{
   color:#fff!important;background:rgba(255,255,255,.11)!important
 }
-.top .soft,.top select,.top .btn.soft,.top .logout,.top .child-switch,.top .lang-switch{
+.top .soft,.top select,.top .btn.soft,.top .logout,.top .child-switch,.top .lang-switch,.top .student-chip{
   color:#fff!important;background:rgba(255,255,255,.10)!important;border-color:rgba(255,255,255,.16)!important
 }
-.top select option{color:#1d2939;background:#fff}
-.card,.track>div,.trackbar-inner,.section,.exam,.qbox,.kpi,.stat{
-  border-color:var(--z-line)!important
+.top .avatar{background:rgba(255,255,255,.14)!important}
+.top select option{color:#1d2939!important;background:#fff!important}
+
+/* Surfaces */
+.card,.track>div,.trackbar-inner,.section,.exam,.qbox,.kpi,.stat,.status,.plan,
+.subject-ribbon,.side,.content,.right,.track-card,.ai-guide,.feedback-item,.history-item,
+.deep-points,.check-understanding,.exam-builder,.milestone{
+  background:#fff!important;
+  border-color:var(--z-line)!important;
+  box-shadow:none;
 }
+.card,.plan,.track>div,.trackbar-inner{box-shadow:var(--z-shadow)!important}
+
+/* Buttons, tabs and pills */
 .primary,.tab.active,.progress i,.subbtn{
-  background:var(--z-navy)!important;color:#fff!important
+  background:var(--z-navy)!important;color:#fff!important;border-color:var(--z-navy)!important
 }
-.soft,.pill{
+.primary:hover,.subbtn:hover:not(:disabled){background:var(--z-navy-dark)!important}
+.soft,.pill,.status:not(.err):not(.ok){
   background:var(--z-soft)!important;color:var(--z-navy)!important
 }
-a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{
+.tab,.lesson,.choice,.check{border-color:var(--z-line)!important}
+.tab.active,.lesson.active,.choice.selected{
+  background:var(--z-soft)!important;color:var(--z-navy)!important;border-color:#aac2cf!important
+}
+.unit-title,.lesson-section-title,.side h3,.content h2,.section h3,.kpi b,.stat b,.result b,
+.subject-ribbon h3,.ai-guide h3{color:var(--z-navy-dark)!important}
+
+/* Internal page heroes: same family as the main site */
+.hero,.content .hero{
+  background:linear-gradient(135deg,#e8f0f4 0%,#f7fafb 100%)!important;
+  border-color:#d6e2e8!important;
+  color:var(--z-ink)!important
+}
+.hero h1,.hero h2,.hero h3{color:var(--z-navy-dark)!important}
+
+/* Home hero is intentionally the dark flagship variation */
+.welcome>.hero{
+  background:
+    radial-gradient(circle at 14% 16%,rgba(255,255,255,.14),transparent 28%),
+    radial-gradient(circle at 82% 86%,rgba(31,122,120,.18),transparent 24%),
+    linear-gradient(135deg,var(--z-navy-dark) 0%,var(--z-navy-light) 58%,var(--z-teal) 125%)!important;
+  color:#fff!important
+}
+.welcome>.hero h1,.welcome>.hero h2,.welcome>.hero h3{color:#fff!important}
+.welcome>.hero .continue{background:var(--z-gold)!important;color:#162231!important}
+
+/* Remove legacy rainbow/adventure palettes while keeping layouts */
+.adventure-hero{
+  background:
+    radial-gradient(circle at 82% 12%,rgba(255,255,255,.28),transparent 22%),
+    linear-gradient(145deg,#dbe9ef 0%,#edf5f6 52%,#dcefeb 100%)!important;
+  border-color:#fff!important;
+  box-shadow:var(--z-shadow)!important
+}
+.adventure-title{
+  background:#fff!important;border-color:#d9e3e8!important;box-shadow:0 8px 18px rgba(15,39,64,.06)!important
+}
+.adventure-title h2{color:var(--z-navy-dark)!important}
+.adventure-title p{color:var(--z-muted)!important}
+.path-node{border-color:#cbdbe2!important}
+.path-step.done .path-node{border-color:#8fc8bd!important;background:#edf8f5!important}
+.path-step.current .path-node{border-color:#dfbd73!important;background:#fff8e8!important}
+.subject-card,.subject-card.sci,.subject-card.math,.subject-card.eng,.subject-card.ar,.subject-card.soc{
+  background:#f7fafb!important;border-color:var(--z-line)!important;color:var(--z-ink)!important
+}
+
+/* Question/explanation accents */
+.en,.ar,.formula,.objectives,.answer,.exam-builder,.check-understanding{
+  border-color:#cfdfe6!important
+}
+.en,.ar,.formula,.objectives,.answer,.exam-builder,.check-understanding,.result,.profile-kpi,.right .stat{
+  background:#f7fafb!important
+}
+.review-plan,.example-card,.kid-motivation{background:#fff9ed!important;border-color:#ecd49e!important}
+.submitted{background:#eef8f5!important;border-color:#b9ddd4!important;color:var(--z-success)!important}
+
+/* Subject/home cards */
+.subject.on,.subject.active-sub{background:#f3f8f9!important;border-color:#bed7d9!important}
+.subject.pending{background:#fff9ed!important;border-color:#ead5a5!important}
+.subject.locked{background:#fff!important;border-color:var(--z-line)!important}
+.action{border-color:var(--z-line)!important}
+
+/* Forms */
+input,select,textarea{
+  border-color:var(--z-line)!important;
+}
+input:focus,select:focus,textarea:focus{
+  border-color:#7fa7b7!important;
+  box-shadow:0 0 0 3px rgba(31,122,120,.08)!important;
+  outline:none
+}
+a:focus-visible,button:focus-visible{
   outline:3px solid rgba(31,122,120,.22);outline-offset:2px
 }
+
+/* Bottom navigation */
 .account-bottom,.bottom{
   background:var(--z-navy-dark)!important;color:#fff!important
 }
 .account-bottom .active,.bottom .active{color:var(--z-gold)!important}
+
+/* Floating AI uses same identity */
+.ai-fab,.notice{
+  background:linear-gradient(145deg,var(--z-navy-light),var(--z-navy-dark))!important;
+  color:#fff!important;
+  box-shadow:0 12px 30px rgba(15,39,64,.26)!important
+}
