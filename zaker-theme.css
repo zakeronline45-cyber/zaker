@@ -1,0 +1,48 @@
+/* Zaker shared visual identity */
+:root{
+  --z-navy:#16324f;
+  --z-navy-dark:#0f2740;
+  --z-navy-light:#1d4669;
+  --z-teal:#1f7a78;
+  --z-gold:#d9a441;
+  --z-ink:#1d2939;
+  --z-muted:#667085;
+  --z-line:#dfe6ec;
+  --z-bg:#f4f8fa;
+  --z-soft:#eaf2f6;
+  --z-white:#fff;
+  --z-shadow:0 14px 36px rgba(15,39,64,.09);
+}
+html,body{background:linear-gradient(180deg,#edf4f7 0,#f6f9fb 260px,#f7f9fb 100%)!important;color:var(--z-ink)}
+.top{
+  background:linear-gradient(135deg,var(--z-navy-dark) 0%,var(--z-navy) 62%,var(--z-navy-light) 100%)!important;
+  color:#fff!important;
+  border-bottom:1px solid rgba(255,255,255,.08)!important;
+  box-shadow:0 12px 34px rgba(15,39,64,.18)!important;
+}
+.top .brand,.top .brand span,.top a,.top button{color:#fff}
+.top .nav a,.top .nav button,.top .account-nav a,.top .desktop-nav a{color:rgba(255,255,255,.78)!important}
+.top .nav a:hover,.top .nav button:hover,.top .account-nav a:hover,.top .desktop-nav a:hover,
+.top .nav .active,.top .account-nav .active,.top .desktop-nav .active{
+  color:#fff!important;background:rgba(255,255,255,.11)!important
+}
+.top .soft,.top select,.top .btn.soft,.top .logout,.top .child-switch,.top .lang-switch{
+  color:#fff!important;background:rgba(255,255,255,.10)!important;border-color:rgba(255,255,255,.16)!important
+}
+.top select option{color:#1d2939;background:#fff}
+.card,.track>div,.trackbar-inner,.section,.exam,.qbox,.kpi,.stat{
+  border-color:var(--z-line)!important
+}
+.primary,.tab.active,.progress i,.subbtn{
+  background:var(--z-navy)!important;color:#fff!important
+}
+.soft,.pill{
+  background:var(--z-soft)!important;color:var(--z-navy)!important
+}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:3px solid rgba(31,122,120,.22);outline-offset:2px
+}
+.account-bottom,.bottom{
+  background:var(--z-navy-dark)!important;color:#fff!important
+}
+.account-bottom .active,.bottom .active{color:var(--z-gold)!important}
