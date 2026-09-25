@@ -18,7 +18,7 @@ main{padding:28px 0 100px}.welcome{display:grid;grid-template-columns:minmax(0,1
 <div class="section-title"><h2>إحصائياتك</h2></div><section class="stats"><div class="stat"><span>الاختبارات</span><b id="statTests">0</b></div><div class="stat"><span>متوسط الأداء</span><b id="statAvg">—</b></div><div class="stat"><span>أفضل نتيجة</span><b id="bestResult">—</b></div><div class="stat"><span>أخطاء للمراجعة</span><b id="wrongCount">0</b></div></section>
 
 <section class="subbox" id="homeSubscriptionBox">
-  <div class="subhead"><div class="subhead-copy"><h2>اشتراك المواد</h2><p>اختر المسار والمادة، راجع السعر، ثم أكمل طلب الاشتراك. المواد تحت المراجعة أو غير المتاحة لن يمكن حجزها.</p></div><span class="subhead-badge">اشتراك شهري</span></div>
+  <div class="subhead"><div class="subhead-copy"><h2>اشتراك المواد</h2><p>اختر المسار والمادة، راجع السعر، ثم أكمل طلب الاشتراك. المواد تحت المراجعة أو غير المتاحة لن يمكن حجزها.</p></div><span class="subhead-badge">اشتراك للترم</span></div>
   <div class="subbody">
     <div class="substeps"><div class="substep"><i>1</i><span>حدد المسار</span></div><div class="substep"><i>2</i><span>اختر المادة</span></div><div class="substep"><i>3</i><span>راجع السعر وأكمل</span></div></div>
     <div class="subplans">
@@ -182,7 +182,7 @@ function calcHomeSubscription(){
  if(!selected.length){price.textContent='اختر مادة واحدة على الأقل';note.textContent='';btn.disabled=true;return}
  const idx=homeChildren.findIndex(x=>x.id===homeChild.id),childIndex=idx+1,isAr=homeChild.track==='arabic',ps=window.homePlatformSettings||{};
  const first=isAr?Number(ps.arabic_first_subject_price||200):Number(ps.languages_first_subject_price||250),extra=isAr?Number(ps.arabic_additional_subject_price||175):Number(ps.languages_additional_subject_price||225),base=first+(selected.length-1)*extra,discount=childIndex===2?25:childIndex===3?50:0,total=Math.round(base*(1-discount/100)*100)/100;
- price.textContent=total+' جنيه / شهر';
+ price.textContent=total+' جنيه / الترم';
  note.textContent=selected.length+' مادة — '+first+' لأول مادة'+(selected.length>1?' + '+(selected.length-1)+' × '+extra:'')+(discount?' — خصم الطفل '+(childIndex===2?'الثاني 25%':'الثالث 50%'):'');
  btn.disabled=false;
 }
